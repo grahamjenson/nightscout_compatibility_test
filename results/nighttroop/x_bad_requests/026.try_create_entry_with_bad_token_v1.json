@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v1/entries?token=badtoken",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "date": 1787095095612,
+      "sgv": 105,
+      "type": "sgv"
+    }
+  },
+  "statusCode": 401,
+  "headers": {
+    "Content-Length": [
+      "51"
+    ],
+    "Content-Type": [
+      "text/plain; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ]
+  },
+  "body": "Unauthorized: No valid authentication method found\n",
+  "durationMs": 0
+}

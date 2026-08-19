@@ -1,0 +1,62 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/food/K3cF4kS1",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "asd",
+      "carbs": 30,
+      "category": "Snacks",
+      "date": "2026-08-19T11:38:15+12:00",
+      "name": "Banana2",
+      "subcategory": "Candy"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Length": [
+      "352"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "identifier": "K3cF4kS1",
+    "lastModified": 1787096295479,
+    "result": {
+      "app": "asd",
+      "carbs": 30,
+      "category": "Snacks",
+      "created_at": "2026-08-18T23:38:15.479Z",
+      "date": 1787096295479,
+      "identifier": "K3cF4kS1",
+      "isValid": true,
+      "name": "Banana2",
+      "srvCreated": 1787096295479,
+      "srvModified": 1787096295479,
+      "subcategory": "Candy",
+      "subject": "pwd_phone",
+      "utcOffset": 0
+    },
+    "status": 200
+  },
+  "durationMs": 0
+}

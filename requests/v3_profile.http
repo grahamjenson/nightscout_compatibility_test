@@ -1,0 +1,200 @@
+#####
+# CREATE
+#####
+
+NAME create_profile_v3
+POST http://{{ .site }}/api/v3/profile
+H Authorization: Bearer {{ jwt }}
+B {
+  "defaultProfile": "profile_1",
+  "app": "asd", 
+  "date": "{{ time 0 }}",
+  "store": {
+    "profile_1": {
+      "dia": 6,
+
+      "carbratio": [
+        { "time": "00:00", "value": 12 },
+        { "time": "06:00", "value": 10 },
+        { "time": "12:00", "value": 11 },
+        { "time": "18:00", "value": 13 }
+      ],
+
+      "sens": [
+        { "time": "00:00", "value": 2.5 },
+        { "time": "06:00", "value": 2.2 },
+        { "time": "12:00", "value": 2.0 },
+        { "time": "18:00", "value": 2.3 }
+      ],
+
+      "basal": [
+        { "time": "00:00", "value": 0.9 },
+        { "time": "03:00", "value": 0.85 },
+        { "time": "06:00", "value": 0.8 },
+        { "time": "12:00", "value": 0.75 },
+        { "time": "18:00", "value": 0.85 }
+      ],
+
+      "target_low": [
+        { "time": "00:00", "value": 5 },
+        { "time": "06:00", "value": 4.7 },
+        { "time": "12:00", "value": 5 },
+        { "time": "18:00", "value": 5.3 }
+      ],
+
+      "target_high": [
+        { "time": "00:00", "value": 6.1 },
+        { "time": "06:00", "value": 5.8 },
+        { "time": "12:00", "value": 6.1 },
+        { "time": "18:00", "value": 6.7 }
+      ],
+
+      "timezone": "Pacific/Auckland",
+      "units": "mmol"
+    }
+  },
+
+  "startDate": "{{ time 1 }}",
+  "mills": {{ itime 0 }}
+ }
+
+
+NAME create_put_profile_v3
+PUT http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier"  }}custom
+H Authorization: Bearer {{ jwt }}
+B { "defaultProfile": "profile_2", "store": { 
+  "profile_2": { 
+    "dia": 7, 
+    "carbratio": [{ "time": "00:00", "value": 12 }],
+    "sens": [{ "time": "00:00", "value": 2.5 }],
+    "basal": [{ "time": "00:00", "value": 0.9 }],
+    "target_low": [{ "time": "00:00", "value": 5 }],
+    "target_high": [{ "time": "00:00", "value": 6.1 }]
+    } 
+  } 
+ }
+
+
+#####
+# READ 
+#####
+
+NAME get_profile_v3
+H Authorization: Bearer {{ jwt }}
+GET http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier"  }}
+
+
+NAME get_profile_v3_with_fields
+GET http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier"  }}?fields=defaultProfile
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profiles_v3
+GET http://{{ .site }}/api/v3/profile
+H Authorization: Bearer {{ jwt }}
+
+NAME get_history_profile_v3
+GET http://{{ .site }}/api/v3/profile/history/{{ itime 30}}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_limit_v3
+GET http://{{ .site }}/api/v3/profile?limit=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_skip_v3
+GET http://{{ .site }}/api/v3/profile?skip=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_sort_date_v3
+GET http://{{ .site }}/api/v3/profile?sort=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_sort_date_desc_v3
+GET http://{{ .site }}/api/v3/profile?sort$desc=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_fields_v3
+GET http://{{ .site }}/api/v3/profile?fields=date,sgv,notes
+H Authorization: Bearer {{ jwt }}
+
+
+NAME get_profile_sgv_gt_v3
+GET http://{{ .site }}/api/v3/profile?sgv$gt=115
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_sgv_lt_v3
+GET http://{{ .site }}/api/v3/profile?sgv$lt=120
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_sgv_lte_v3
+GET http://{{ .site }}/api/v3/profile?sgv$lte=120
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_re_v3
+GET http://{{ .site }}/api/v3/profile?direction$re=Flat|Up
+H Authorization: Bearer {{ jwt }}
+
+NAME get_profile_multi_query_in_v3
+GET http://{{ .site }}/api/v3/profile?limit=5&skip=2&sort$desc=date&type$eq=sgv&fields=defaultProfile
+H Authorization: Bearer {{ jwt }}
+
+####
+# UPDATE
+####
+
+# replace
+
+NAME get_profile_before_update_v3
+GET http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME update_put_profile_v3
+PUT http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+B { "defaultProfile": "updated_profile", "store": { 
+  "updated_profile": {
+    "dia": 7, 
+    "carbratio": [{ "time": "00:00", "value": 12 }],
+    "sens": [{ "time": "00:00", "value": 2.5 }],
+    "basal": [{ "time": "00:00", "value": 0.9 }],
+    "target_low": [{ "time": "00:00", "value": 5 }],
+    "target_high": [{ "time": "00:00", "value": 6.1 }]
+    },
+  "updated_profile_2": {
+    "dia": 7, 
+    "carbratio": [{ "time": "00:00", "value": 12 }],
+    "sens": [{ "time": "00:00", "value": 2.5 }],
+    "basal": [{ "time": "00:00", "value": 0.9 }],
+    "target_low": [{ "time": "00:00", "value": 5 }],
+    "target_high": [{ "time": "00:00", "value": 6.1 }]
+    }, 
+  } 
+ }
+
+NAME get_profile_after_put_v3
+GET http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+#patch
+NAME update_patch_profile_v3
+PATCH http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier" }}
+B {"defaultProfile":  "profile_updated_2"}
+H Authorization: Bearer {{ jwt }}
+
+
+NAME get_profile_after_patch_v3
+GET http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_profile_v3
+DELETE http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME delete_profile2_v3
+DELETE http://{{ .site }}/api/v3/profile/{{ dig "create_put_profile_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}

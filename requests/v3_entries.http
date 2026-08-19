@@ -1,0 +1,153 @@
+#####
+# CREATE
+#####
+
+NAME create_entries_v3
+POST http://{{ .site }}/api/v3/entries
+B {"sgv": 100, "date": {{ itime 0 }}, "mills": {{ itime 0 }}, "type": "sgv", "app": "test-app", "device": "test-device", "direction": "Flat", "trend": 3, "dateString": "{{ time 0 }}", "filtered": 139.2, "unfiltered": 141.7, "rssi": -62, "noise": 1 }
+H Authorization: Bearer {{ jwt }}
+
+NAME create_put_entries_v3
+PUT http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier"  }}custom
+B {"sgv": 100, "date": {{ itime 2 }}, "mills": {{ itime 0 }}, "type": "sgv", "app": "test-app", "device": "test-device", "direction": "Flat", "trend": 3, "dateString": "{{ time 0 }}", "filtered": 139.2, "unfiltered": 141.7, "rssi": -62, "noise": 1 }
+H Authorization: Bearer {{ jwt }}
+
+#####
+# READ 
+#####
+
+NAME get_entries_v3
+GET http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier"  }}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_v3_with_fields
+GET http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier"  }}?fields=date,sgv,notes
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entriess_v3
+GET http://{{ .site }}/api/v3/entries
+H Authorization: Bearer {{ jwt }}
+
+NAME get_history_entries_v3
+GET http://{{ .site }}/api/v3/entries/history/{{ itime 30}}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_limit_v3
+GET http://{{ .site }}/api/v3/entries?limit=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_skip_v3
+GET http://{{ .site }}/api/v3/entries?skip=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_sort_date_v3
+GET http://{{ .site }}/api/v3/entries?sort=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_sort_date_desc_v3
+GET http://{{ .site }}/api/v3/entries?sort$desc=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_fields_v3
+GET http://{{ .site }}/api/v3/entries?fields=date,sgv,notes
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_type_eq_v3
+GET http://{{ .site }}/api/v3/entries?type$eq=sgv
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_type_ne_v3
+GET http://{{ .site }}/api/v3/entries?type$ne=sgv
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_sgv_gt_v3
+GET http://{{ .site }}/api/v3/entries?sgv$gt=115
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_sgv_lt_v3
+GET http://{{ .site }}/api/v3/entries?sgv$lt=120
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_sgv_lte_v3
+GET http://{{ .site }}/api/v3/entries?sgv$lte=120
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_type_in_v3
+GET http://{{ .site }}/api/v3/entries?type$in=sgv|mbg
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_type_nin_v3
+GET http://{{ .site }}/api/v3/entries?type$nin=mbg
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_re_v3
+GET http://{{ .site }}/api/v3/entries?direction$re=Flat|Up
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_multi_query_v3
+GET http://{{ .site }}/api/v3/entries?type$eq=sgv&sgv$gte=100&sgv$lte=130
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_multi_query_in_v3
+GET http://{{ .site }}/api/v3/entries?limit=5&skip=2&sort$desc=date&type$eq=sgv&fields=date,sgv
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_example_from_docs_v3
+GET http://{{ .site }}/api/v3/entries?sort$desc=date&limit=100&fields=sgv,date,direction
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_with_lots_of_query_v3
+GET http://{{ .site }}/api/v3/entries?limit=5&skip=2&sort$desc=date&type$eq=sgv&fields=date,sgv
+H Authorization: Bearer {{ jwt }}
+
+####
+# UPDATE
+####
+
+# replace
+NAME get_entries_before_update_v3
+GET http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME update_put_entries_v3
+PUT http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier" }}
+B {"sgv": 104, "app": "test-app", "date": {{ dig "get_entries_before_update_v3.result.date"}}}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_after_put_v3
+GET http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+#patch
+NAME update_patch_entries_v3
+PATCH http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier" }}
+B {"sgv":  "250"}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_after_patch_v3
+GET http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME update_put_entries_noid_v3
+PUT http://{{ .site }}/api/v3/entries/myveryownidentifier
+B {"sgv": 104, "app": "test-app", "date": {{ dig "get_entries_before_update_v3.result.date"}}}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_after_patch_noid_v3
+GET http://{{ .site }}/api/v3/entries/myveryownidentifier
+H Authorization: Bearer {{ jwt }}
+
+
+
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_entries_v3
+DELETE http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME delete_entries2_v3
+DELETE http://{{ .site }}/api/v3/entries/{{ dig "create_put_entries_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}

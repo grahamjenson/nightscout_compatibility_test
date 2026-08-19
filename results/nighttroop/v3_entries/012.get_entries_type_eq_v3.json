@@ -1,0 +1,228 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/entries?type$eq=sgv",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "created_at": "2026-08-18T23:38:15.317Z",
+        "date": 1787096295317,
+        "dateString": "2026-08-18T23:38:15.317Z",
+        "identifier": "s0GN7IN1",
+        "isValid": true,
+        "mills": 1787096295317,
+        "sgv": 100,
+        "srvCreated": 1787096295318,
+        "srvModified": 1787096295318,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 0
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:38:15Z",
+        "date": 1787096295000,
+        "dateString": "2026-08-19T11:38:15+12:00",
+        "device": "test-device",
+        "identifier": "7wevOq2M",
+        "isValid": true,
+        "mills": 1787096295000,
+        "sgv": 100,
+        "srvCreated": 1787096295318,
+        "srvModified": 1787096295318,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:38:15Z",
+        "date": 1787096295000,
+        "dateString": "2026-08-19T11:38:15+12:00",
+        "device": "test-device",
+        "identifier": "CCxBMwYC",
+        "isValid": true,
+        "mills": 1787096295000,
+        "sgv": 100,
+        "srvCreated": 1787096295376,
+        "srvModified": 1787096295376,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:38:15Z",
+        "date": 1787096295000,
+        "dateString": "2026-08-19T11:38:15+12:00",
+        "device": "test-device",
+        "identifier": "CCxBMwYCcustom",
+        "isValid": true,
+        "mills": 1787096295000,
+        "sgv": 100,
+        "srvCreated": 1787096295376,
+        "srvModified": 1787096295376,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:37:15Z",
+        "date": 1787096235000,
+        "dateString": "2026-08-19T11:37:15+12:00",
+        "identifier": "jbGOQVit",
+        "isValid": true,
+        "mbg": 5.8,
+        "mills": 1787096235000,
+        "srvCreated": 1787096295346,
+        "srvModified": 1787096295346,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:36:15Z",
+        "date": 1787096175000,
+        "dateString": "2026-08-19T11:36:15+12:00",
+        "identifier": "UJXoi26Y",
+        "isValid": true,
+        "mbg": 145,
+        "mills": 1787096175000,
+        "srvCreated": 1787096295346,
+        "srvModified": 1787096295346,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:32:15Z",
+        "date": 1787095935000,
+        "dateString": "2026-08-19T11:32:15+12:00",
+        "identifier": "569D1BGC",
+        "isValid": true,
+        "mbg": 11.7,
+        "mills": 1787095935000,
+        "srvCreated": 1787096295347,
+        "srvModified": 1787096295347,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:28:15.319Z",
+        "date": 1787095695319,
+        "dateString": "2026-08-18T23:28:15.319Z",
+        "device": "test-device",
+        "identifier": "64UFzUTp",
+        "isValid": false,
+        "mbg": 110,
+        "mills": 1787095695319,
+        "srvCreated": 1787096295319,
+        "srvModified": 1787096295319,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 0
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:28:15.318Z",
+        "date": 1787095695318,
+        "dateString": "2026-08-18T23:28:15.318Z",
+        "device": "test-device",
+        "identifier": "B3VVwf5K",
+        "isValid": false,
+        "mills": 1787095695318,
+        "sgv": 101,
+        "srvCreated": 1787096295319,
+        "srvModified": 1787096295319,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-08-18T23:27:15Z",
+        "date": 1787095635000,
+        "dateString": "2026-08-19T11:27:15+12:00",
+        "identifier": "eqs7KYBh",
+        "isValid": true,
+        "mbg": 6.8,
+        "mills": 1787095635000,
+        "srvCreated": 1787096295341,
+        "srvModified": 1787096295341,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:26:15.318Z",
+        "date": 1787095575318,
+        "dateString": "2026-08-18T23:26:15.318Z",
+        "device": "test-device",
+        "identifier": "4ZUTHY34",
+        "isValid": false,
+        "mbg": 102,
+        "mills": 1787095575318,
+        "srvCreated": 1787096295319,
+        "srvModified": 1787096295319,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-08-18T23:26:15Z",
+        "date": 1787095575000,
+        "dateString": "2026-08-19T11:26:15+12:00",
+        "identifier": "sA27ALTD",
+        "isValid": true,
+        "mbg": 9.1,
+        "mills": 1787095575000,
+        "srvCreated": 1787096295341,
+        "srvModified": 1787096295341,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:08:15Z",
+        "date": 1787094495000,
+        "dateString": "2026-08-19T11:08:15+12:00",
+        "identifier": "E0nD18Pn",
+        "isValid": true,
+        "mbg": 6.2,
+        "mills": 1787094495000,
+        "srvCreated": 1787096295351,
+        "srvModified": 1787096295351,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 0
+}

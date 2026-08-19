@@ -1,0 +1,133 @@
+#####
+# CREATE
+#####
+
+NAME create_food_v3
+POST http://{{ .site }}/api/v3/food
+B { "name": "Banana2", "app": "asd", "date": "{{ time 0 }}", "category": "Snacks", "subcategory": "Fruit", "portion": 1, "unit": "serving", "carbs": 27, "fat": 0.3, "protein": 1.3, "energy": 105, "gi": 51 }
+H Authorization: Bearer {{ jwt }}
+
+NAME create_put_food_v3
+PUT http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier"  }}custom
+B { "name": "Banana2Again", "app": "asd", "date": "{{ time 0 }}", "category": "Snacks", "subcategory": "Fruit", "portion": 1, "unit": "serving", "carbs": 27, "fat": 0.3, "protein": 1.3, "energy": 105, "gi": 51 }
+H Authorization: Bearer {{ jwt }}
+
+#####
+# READ 
+#####
+
+NAME get_food_v3
+GET http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier"  }}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_v3_with_fields
+GET http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier"  }}?fields=date,sgv,notes
+H Authorization: Bearer {{ jwt }}
+
+NAME get_foods_v3
+GET http://{{ .site }}/api/v3/food
+H Authorization: Bearer {{ jwt }}
+
+NAME get_history_food_v3
+GET http://{{ .site }}/api/v3/food/history/{{ itime 30}}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_limit_v3
+GET http://{{ .site }}/api/v3/food?limit=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_skip_v3
+GET http://{{ .site }}/api/v3/food?skip=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_sort_date_v3
+GET http://{{ .site }}/api/v3/food?sort=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_sort_date_desc_v3
+GET http://{{ .site }}/api/v3/food?sort$desc=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_fields_v3
+GET http://{{ .site }}/api/v3/food?fields=date,sgv,notes
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_type_eq_v3
+GET http://{{ .site }}/api/v3/food?type$eq=sgv
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_type_ne_v3
+GET http://{{ .site }}/api/v3/food?type$ne=sgv
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_sgv_gt_v3
+GET http://{{ .site }}/api/v3/food?sgv$gt=115
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_sgv_lt_v3
+GET http://{{ .site }}/api/v3/food?sgv$lt=120
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_sgv_lte_v3
+GET http://{{ .site }}/api/v3/food?sgv$lte=120
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_type_in_v3
+GET http://{{ .site }}/api/v3/food?type$in=sgv|mbg
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_type_nin_v3
+GET http://{{ .site }}/api/v3/food?type$nin=mbg
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_re_v3
+GET http://{{ .site }}/api/v3/food?direction$re=Flat|Up
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_multi_query_v3
+GET http://{{ .site }}/api/v3/food?type$eq=sgv&sgv$gte=100&sgv$lte=130
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_multi_query_in_v3
+GET http://{{ .site }}/api/v3/food?limit=5&skip=2&sort$desc=date&type$eq=sgv&fields=date,sgv
+H Authorization: Bearer {{ jwt }}
+
+####
+# UPDATE
+####
+
+# replace
+NAME update_put_food_v3
+PUT http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier" }}
+B { "name": "Banana2", "app": "asd", "date": "{{ time 0 }}", "category": "Snacks", "subcategory": "Candy", "carbs": 30 }
+H Authorization: Bearer {{ jwt }}
+
+NAME get_food_after_put_v3
+GET http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+#patch
+NAME update_patch_food_v3
+PATCH http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier" }}
+B {"notes":  "test food 222"}
+H Authorization: Bearer {{ jwt }}
+
+
+NAME get_food_after_patch_v3
+GET http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+
+
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_food_v3
+DELETE http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME delete_food2_v3
+DELETE http://{{ .site }}/api/v3/food/{{ dig "create_put_food_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}

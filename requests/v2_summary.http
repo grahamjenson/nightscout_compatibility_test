@@ -1,0 +1,57 @@
+NAME create_loop_devicestatus_for_summary_v1
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B {
+    "device": "loop://iPhone",
+    "uploader": {
+        "battery": 80,
+        "name": "iPhone",
+        "timestamp": "2025-05-14T02:13:21Z"
+    },
+    "loop": {
+        "predicted": {
+            "startDate": "2025-05-14T02:13:07Z",
+            "values": [ 114, 115.88, 120.29, 123.05, 123.98, 123.57, 122.9, 121.95, 120.71, 119.17, 117.34, 115.4, 113.75, 112.21, 110.79, 109.46, 108.24, 107.1, 106.05, 105.09, 104.19, 103.37, 102.62, 101.94, 101.31, 100.74, 100.23, 99.77, 99.37, 99, 98.69, 98.41, 98.18, 97.99, 97.83, 97.7, 97.6, 97.53, 97.48, 97.46, 97.46, 97.49, 97.53, 97.58, 97.66, 97.75, 97.86, 97.98, 98.11, 98.26, 98.41, 98.57, 98.75, 98.93, 99.11, 99.26, 99.4, 99.53, 99.63, 99.72, 99.8, 99.87, 99.93, 99.97, 100.01, 100.04, 100.06, 100.08, 100.09, 100.1, 100.11, 100.11, 100.12, 100.12, 100.12, 100.12]
+        },
+        "timestamp": "2025-05-14T02:13:21Z",
+        "automaticDoseRecommendation": {
+            "bolusVolume": 0.05,
+            "timestamp": "2025-05-14T02:13:21Z"
+        },
+        "iob": {
+            "iob": 1.0870623804830117,
+            "timestamp": "2025-05-14T02:10:00Z"
+        },
+        "name": "Loop",
+        "cob": {
+            "cob": 5.0947962907626785,
+            "timestamp": "2025-05-14T02:10:00Z"
+        },
+        "recommendedBolus": 0.15,
+        "enacted": {
+            "timestamp": "2025-05-14T02:13:13Z",
+            "rate": 0,
+            "received": true,
+            "duration": 0,
+            "bolusVolume": 0
+        },
+        "version": "3.2.2.65"
+    },
+    "override": {
+        "timestamp": "2025-05-14T02:13:21Z",
+        "active": false
+    },
+    "created_at": "2025-05-14T02:13:21.000Z",
+    "pump": {
+        "bolusing": false,
+        "secondsFromGMT": 28800,
+        "manufacturer": "Insulet",
+        "pumpID": "1F068529",
+        "clock": "2025-05-14T02:13:21Z",
+        "model": "Eros",
+        "suspended": false
+    },
+    "utcOffset": 0
+ }
+
+NAME get_summary_v2
+GET http://{{ .site }}/api/v2/summary?token={{ token }}

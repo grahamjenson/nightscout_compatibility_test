@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "",
+    "path": "",
+    "url": "",
+    "headers": null,
+    "body": null
+  },
+  "statusCode": 0,
+  "headers": null,
+  "body": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE",
+  "durationMs": 0
+}

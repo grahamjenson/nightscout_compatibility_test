@@ -1,0 +1,60 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/authorization/subjects",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Api-Secret": [
+        "384fcd160ab3b33174ea279ad26052eee191508a"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "name": "write",
+      "roles": [
+        "admin"
+      ]
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "107"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:09 GMT"
+    ],
+    "Etag": [
+      "W/\"6b-DdAbYKeWL2LnFOKaOpoqk4CzY88\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "_id": "6a84ea4d3fab588a53776077",
+    "created_at": "2026-08-18T23:27:09.725Z",
+    "name": "write",
+    "roles": [
+      "admin"
+    ]
+  },
+  "durationMs": 40
+}

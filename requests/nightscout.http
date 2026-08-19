@@ -1,0 +1,48 @@
+NAME site
+SET localhost:1337
+
+NAME api_secret
+SET 384fcd160ab3b33174ea279ad26052eee191508a
+
+# Most services probably implement their own auth so probably not the same as NS
+# These calls are about taking the secret token and getting a valid user token out of it
+NAME create_write_subject
+POST http://{{ .site }}/api/v2/authorization/subjects
+H api-secret: {{ .api_secret }} 
+B {"name": "write", "roles": ["admin"]}
+
+NAME create_read_subject
+POST http://{{ .site }}/api/v2/authorization/subjects
+H api-secret: {{ .api_secret }} 
+B {"name": "read", "roles": ["readable"]}
+
+NAME subjects
+GET http://{{ .site }}/api/v2/authorization/subjects
+H api-secret: {{ .api_secret }}
+
+# This assigns the token variable in context
+NAME token
+SET {{ tokenByName .subjects "write" }}
+
+NAME read_token
+SET {{ tokenByName .subjects "read" }}
+
+
+NAME jwtauth
+GET http://{{ .site }}/api/v2/authorization/request/token={{ .token }}
+
+
+# This assigns the jwt variable in context
+NAME jwt
+SET {{ .jwtauth.token }}
+
+NAME jwtreadauth
+GET http://{{ .site }}/api/v2/authorization/request/token={{ .read_token }}
+
+
+NAME time_0
+SET {{ time 0 }}
+
+# This assigns the jwt variable in context
+NAME read_jwt
+SET {{ .jwtreadauth.token }}

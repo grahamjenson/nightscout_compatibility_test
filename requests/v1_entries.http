@@ -1,0 +1,92 @@
+#####
+# CREATE
+#####
+
+NAME create_simple_entry_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token}}
+B {"sgv": 100, "date": {{ itime 0 }}, "type": "sgv" }
+
+NAME create_single_entry_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token}}
+B {"sgv": 100, "date": {{ itime 0 }}, "mills": {{ itime 0 }}, "type": "sgv", "app": "test-app", "device": "test-device", "direction": "Flat", "trend": 3, "dateString": "{{ time 0 }}", "filtered": 139.2, "unfiltered": 141.7, "rssi": -62, "noise": 1 }
+
+NAME create_entries_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [{"sgv": 101, "date": {{ itime 10 }}, "type": "sgv", "app": "test-app", "device": "test-device"}, {"mbg": 102, "date": {{ itime 12 }}, "type": "mbg", "app": "test-app", "device": "test-device"}]
+
+NAME create_mbg_entries_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [{"mbg": 110, "date": {{ itime 10 }}, "type": "mbg", "app": "test-app", "device": "test-device"}]
+
+
+#####
+# READ 
+#####
+
+NAME get_entries_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}
+
+NAME get_entries_count_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&count=1
+
+NAME get_entries_sort_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&sort=date
+
+
+NAME get_entries_with_gte_sgv_v1
+GET http://{{ .site }}/api/v1/entries?find[sgv][$gte]=101&token={{ token }}
+
+NAME get_entries_with_lte_sgv_v1
+GET http://{{ .site }}/api/v1/entries?find[sgv][$lte]=102&token={{ token }}
+
+NAME get_entries_date_gte_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&find[date][$gte]={{ itime 15 }}
+
+NAME get_entries_date_lte_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&find[date][$lte]={{ itime 15 }}
+
+NAME get_entries_spec_v1
+GET http://{{ .site }}/api/v1/entries/{{ dig "create_entries_v1.0._id"  }}?token={{ token }}
+
+
+# sepc
+
+NAME get_mbg_entries_v1
+GET http://{{ .site }}/api/v1/entries/mbg?token={{ token }}
+
+NAME get_mbg_type_entries_v1
+GET http://{{ .site }}/api/v1/entries?type=mbg&token={{ token }}
+
+NAME get_entries_sgv_v1
+GET http://{{ .site }}/api/v1/entries/sgv?token={{ token }}
+
+NAME get_sgv_type_entries_v1
+GET http://{{ .site }}/api/v1/entries?type=sgv&token={{ token }}
+
+NAME get_current_entries_v1
+GET http://{{ .site }}/api/v1/entries/current.json?token={{ token }}
+
+
+####
+# UPDATE
+####
+
+# No canonical way to update entries
+
+
+
+#####
+# DELETE/CLEAN UP
+#####
+NAME delete_single_entry_v1
+DELETE http://{{ .site }}/api/v1/entries/{{ dig "create_entries_v1.0._id" }}?token={{ token }}
+
+NAME delete_single_non_entry_v1
+DELETE http://{{ .site }}/api/v1/entries/notAGoodID?token={{ token }}
+
+NAME delete_entries_mbg_v1
+DELETE http://{{ .site }}/api/v1/entries/mbg?token={{ token }}
+
+NAME delete_entries_badtype_v1
+DELETE http://{{ .site }}/api/v1/entries/badtype?token={{ token }}
+

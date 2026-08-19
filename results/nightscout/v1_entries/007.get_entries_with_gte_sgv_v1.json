@@ -1,0 +1,59 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries?find[sgv][$gte]=101&token=write-0acbea8106c5420d",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "171"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:09 GMT"
+    ],
+    "Etag": [
+      "W/\"ab-MSoD7NmMCxH2zVzIUB4Q+lfUBSM\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:17:09 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a84ea4d99873f4a1ea957e2",
+      "app": "test-app",
+      "date": 1787095029775,
+      "device": "test-device",
+      "sgv": 101,
+      "sysTime": "2026-08-18T23:17:09.775Z",
+      "type": "sgv",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 3
+}

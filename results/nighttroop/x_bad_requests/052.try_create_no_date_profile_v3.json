@@ -1,0 +1,54 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/profile",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "device": "test-device",
+      "duration": 3600,
+      "notes": "test profile no date",
+      "type": "walking"
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Content-Length": [
+      "160"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Location": [
+      "/api/v3/profile/"
+    ]
+  },
+  "body": {
+    "result": {
+      "created_at": "1970-01-01T00:00:00Z",
+      "date": 0,
+      "identifier": "",
+      "isValid": true,
+      "srvCreated": 0,
+      "srvModified": 0,
+      "subject": "",
+      "utcOffset": 0
+    },
+    "status": 201
+  },
+  "durationMs": 0
+}

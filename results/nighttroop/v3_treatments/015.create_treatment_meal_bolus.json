@@ -1,0 +1,66 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/treatments",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "AndroidAPS",
+      "carbs": 62,
+      "created_at": "2026-08-19T11:35:15+12:00",
+      "eventType": "Meal Bolus",
+      "insulin": 6.2,
+      "notes": "Breakfast"
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Content-Length": [
+      "381"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/8RaM7gmv"
+    ]
+  },
+  "body": {
+    "identifier": "8RaM7gmv",
+    "lastModified": 1787096295527,
+    "result": {
+      "app": "AndroidAPS",
+      "carbs": 62,
+      "created_at": "2026-08-18T23:35:15Z",
+      "date": 1787096115000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "identifier": "8RaM7gmv",
+      "insulin": 6.2,
+      "isValid": true,
+      "notes": "Breakfast",
+      "srvCreated": 1787096295527,
+      "srvModified": 1787096295527,
+      "subject": "pwd_phone",
+      "utcOffset": 720
+    },
+    "status": 201
+  },
+  "durationMs": 0
+}

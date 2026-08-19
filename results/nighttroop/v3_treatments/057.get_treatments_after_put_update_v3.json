@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/treatments/OD8Gbv7a",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Length": [
+      "387"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "identifier": "OD8Gbv7a",
+    "lastModified": 1787096295577,
+    "result": {
+      "app": "asd",
+      "created_at": "2026-08-18T23:38:15Z",
+      "date": 1787096295000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "identifier": "OD8Gbv7a",
+      "insulin": 1,
+      "isValid": true,
+      "notes": "updated by update_put_treatments_v3",
+      "srvCreated": 1787096295577,
+      "srvModified": 1787096295577,
+      "subject": "pwd_phone",
+      "utcOffset": 720
+    },
+    "status": 200
+  },
+  "durationMs": 0
+}

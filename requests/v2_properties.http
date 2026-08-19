@@ -1,0 +1,2 @@
+NAME get_properties_v2
+GET http://{{ .site }}/api/v2/properties?token={{ token }}

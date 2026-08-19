@@ -1,0 +1,111 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/devicestatus",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "created_at": "2026-08-19T11:27:10+12:00",
+      "device": "aaps",
+      "loop": {
+        "cob": {
+          "cob": 18
+        },
+        "enacted": {
+          "duration": 30,
+          "rate": 1.2,
+          "reason": "BG rising faster than expected"
+        },
+        "failureReason": "",
+        "iob": {
+          "devicestatus": 0.024,
+          "iob": 1.73
+        },
+        "predicted": {
+          "values": [
+            112,
+            114,
+            117,
+            120,
+            123,
+            126
+          ]
+        },
+        "timestamp": "2026-06-16T08:42:00Z"
+      },
+      "openaps": {
+        "enacted": {
+          "duration": 30,
+          "rate": 1.2,
+          "timestamp": "2026-06-16T08:42:00Z"
+        },
+        "suggested": {
+          "duration": 30,
+          "rate": 1.2,
+          "reason": "Eventual BG 126",
+          "timestamp": "2026-06-16T08:41:55Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 68,
+          "voltage": 1.42
+        },
+        "clock": "2026-06-16T08:42:15Z",
+        "reservoir": 97.4,
+        "status": {
+          "bolusing": false,
+          "suspended": false
+        }
+      },
+      "uploader": {
+        "battery": 87,
+        "batteryVoltage": 4.05
+      }
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "95"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Location": [
+      "/api/v3/devicestatus/28f1dc55-bb3e-51ee-88b9-e0077cef3394"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "identifier": "28f1dc55-bb3e-51ee-88b9-e0077cef3394",
+    "lastModified": 1787095630143,
+    "status": 201
+  },
+  "durationMs": 4
+}

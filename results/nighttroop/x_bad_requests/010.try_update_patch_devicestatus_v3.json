@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "PATCH",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/devicestatus/qn4kNSzk",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "date": 123
+    }
+  },
+  "statusCode": 500,
+  "headers": {
+    "Content-Length": [
+      "49"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "message": "internal server error",
+    "status": 500
+  },
+  "durationMs": 0
+}

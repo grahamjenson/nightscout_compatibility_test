@@ -1,0 +1,564 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/profile",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "created_at": "2017-07-02T00:25:33.154Z",
+        "defaultProfile": "Default",
+        "identifier": "6a84ea4d3fab588a53776080",
+        "mills": "1498954920000",
+        "srvCreated": 1498955133154,
+        "srvModified": 1498955133154,
+        "startDate": "2017-07-02T00:22:00.000Z",
+        "store": {
+          "Default": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "0.35"
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": "10800",
+                "value": "0.35"
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": "18000",
+                "value": "0.35"
+              },
+              {
+                "time": "07:00",
+                "timeAsSeconds": "25200",
+                "value": "0.3"
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": "61200",
+                "value": "0.45"
+              },
+              {
+                "time": "19:00",
+                "timeAsSeconds": "68400",
+                "value": "0.35"
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "33"
+              }
+            ],
+            "carbs_hr": "20",
+            "delay": "20",
+            "dia": "5",
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "110"
+              }
+            ],
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "100"
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "100"
+              }
+            ],
+            "timezone": "US/Eastern",
+            "units": "mg/dl"
+          }
+        },
+        "units": "mg/dl"
+      },
+      {
+        "app": "AAPS",
+        "created_at": "2026-08-09T05:33:53.284Z",
+        "date": 1786253633284,
+        "defaultProfile": "ArmDash-2025",
+        "identifier": "6a84ea4d3fab588a53776081",
+        "srvCreated": 1786253633284,
+        "srvModified": 1786253633284,
+        "startDate": "2026-08-09T05:33:53.2840000Z",
+        "store": {
+          "ArmDash-2025": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.25
+              },
+              {
+                "time": "01:00",
+                "timeAsSeconds": 3600,
+                "value": 0.25
+              },
+              {
+                "time": "02:00",
+                "timeAsSeconds": 7200,
+                "value": 0.25
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 0.25
+              },
+              {
+                "time": "04:00",
+                "timeAsSeconds": 14400,
+                "value": 0.35
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": 18000,
+                "value": 0.35
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 0.5
+              },
+              {
+                "time": "07:00",
+                "timeAsSeconds": 25200,
+                "value": 0.55
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 0.4
+              },
+              {
+                "time": "09:00",
+                "timeAsSeconds": 32400,
+                "value": 0.35
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 0.35
+              },
+              {
+                "time": "11:00",
+                "timeAsSeconds": 39600,
+                "value": 0.4
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 0.4
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 0.3
+              },
+              {
+                "time": "14:00",
+                "timeAsSeconds": 50400,
+                "value": 0.3
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 0.35
+              },
+              {
+                "time": "16:00",
+                "timeAsSeconds": 57600,
+                "value": 0.45
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 0.45
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 0.45
+              },
+              {
+                "time": "19:00",
+                "timeAsSeconds": 68400,
+                "value": 0.55
+              },
+              {
+                "time": "20:00",
+                "timeAsSeconds": 72000,
+                "value": 0.5
+              },
+              {
+                "time": "21:00",
+                "timeAsSeconds": 75600,
+                "value": 0.5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 0.4
+              },
+              {
+                "time": "23:00",
+                "timeAsSeconds": 82800,
+                "value": 0.3
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 16
+              },
+              {
+                "time": "02:00",
+                "timeAsSeconds": 7200,
+                "value": 16
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": 18000,
+                "value": 7.5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 11.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 12
+              },
+              {
+                "time": "20:00",
+                "timeAsSeconds": 72000,
+                "value": 14
+              }
+            ],
+            "dia": 6,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 12
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 12
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 8.5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 11
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 12
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 11
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 12
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 8.5
+              },
+              {
+                "time": "23:00",
+                "timeAsSeconds": 82800,
+                "value": 10
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 6.5
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 7.6
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 6.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 7
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 6
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 6.5
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 7.5
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 6.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 7
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 6
+              }
+            ],
+            "timezone": "Pacific/Auckland",
+            "units": "mmol"
+          }
+        },
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:27:09.929Z",
+        "defaultProfile": "profile_2",
+        "identifier": "6a84ea4d3fab588a5377607e",
+        "srvCreated": 1787095629929,
+        "srvModified": 1787095629929,
+        "store": {
+          "profile_2": {
+            "dia": 7
+          }
+        }
+      },
+      {
+        "created_at": "2026-08-18T23:27:09.929Z",
+        "defaultProfile": "profile_3",
+        "identifier": "6a84ea4d3fab588a5377607f",
+        "srvCreated": 1787095629929,
+        "srvModified": 1787095629929,
+        "store": {
+          "profile_3": {
+            "dia": 8
+          }
+        }
+      },
+      {
+        "app": "asd",
+        "created_at": "2026-08-18T23:27:10.000Z",
+        "date": 1787095630000,
+        "defaultProfile": "profile_1",
+        "identifier": "a050a8c2-6e85-5c98-a319-316bddef626e",
+        "mills": 1787095630352,
+        "srvCreated": 1787095630423,
+        "srvModified": 1787095630423,
+        "startDate": "2026-08-19T11:26:10+12:00",
+        "store": {
+          "profile_1": {
+            "basal": [
+              {
+                "time": "00:00",
+                "value": 0.9
+              },
+              {
+                "time": "03:00",
+                "value": 0.85
+              },
+              {
+                "time": "06:00",
+                "value": 0.8
+              },
+              {
+                "time": "12:00",
+                "value": 0.75
+              },
+              {
+                "time": "18:00",
+                "value": 0.85
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "value": 12
+              },
+              {
+                "time": "06:00",
+                "value": 10
+              },
+              {
+                "time": "12:00",
+                "value": 11
+              },
+              {
+                "time": "18:00",
+                "value": 13
+              }
+            ],
+            "dia": 6,
+            "sens": [
+              {
+                "time": "00:00",
+                "value": 2.5
+              },
+              {
+                "time": "06:00",
+                "value": 2.2
+              },
+              {
+                "time": "12:00",
+                "value": 2
+              },
+              {
+                "time": "18:00",
+                "value": 2.3
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "value": 6.1
+              },
+              {
+                "time": "06:00",
+                "value": 5.8
+              },
+              {
+                "time": "12:00",
+                "value": 6.1
+              },
+              {
+                "time": "18:00",
+                "value": 6.7
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "value": 5
+              },
+              {
+                "time": "06:00",
+                "value": 4.7
+              },
+              {
+                "time": "12:00",
+                "value": 5
+              },
+              {
+                "time": "18:00",
+                "value": 5.3
+              }
+            ],
+            "timezone": "Pacific/Auckland",
+            "units": "mmol"
+          }
+        },
+        "subject": "write",
+        "utcOffset": 720
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 2
+}

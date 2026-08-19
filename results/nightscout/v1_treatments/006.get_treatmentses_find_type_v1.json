@@ -1,0 +1,94 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-0acbea8106c5420d&find[eventType]=Meal%20Bolus",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "828"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Etag": [
+      "W/\"33c-Ymek6oNjMYu8Xm3imcHWReHaxgY\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:27:09 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a84ea4d99873f4a1ea9580a",
+      "absolute": 0,
+      "carbs": 45,
+      "created_at": "2026-08-18T23:27:09.000Z",
+      "duration": 0,
+      "enteredBy": "aaps-loop",
+      "eventType": "Meal Bolus",
+      "glucose": 148,
+      "glucoseType": "Sensor",
+      "insulin": 4.2,
+      "notes": "Lunch pasta + insulin pre-bolus",
+      "percentage": 10,
+      "reason": "lunch",
+      "targetBottom": 85,
+      "targetTop": 110,
+      "treatments": "treatments_1",
+      "utcOffset": 720
+    },
+    {
+      "_id": "6a84ea4e99873f4a1ea95824",
+      "carbs": 62,
+      "created_at": "2026-08-18T23:24:09.000Z",
+      "eventType": "Meal Bolus",
+      "insulin": 6.2,
+      "utcOffset": 720
+    },
+    {
+      "_id": "6a84ea4d99873f4a1ea95815",
+      "carbs": 72,
+      "created_at": "2026-08-18T23:08:09.000Z",
+      "eventType": "Meal Bolus",
+      "insulin": 7,
+      "utcOffset": 720
+    },
+    {
+      "_id": "6a84ea4e99873f4a1ea95841",
+      "carbs": 95,
+      "created_at": "2026-08-18T22:54:09.000Z",
+      "enteredBy": "AndroidAPS",
+      "eventType": "Meal Bolus",
+      "insulin": 9.5,
+      "notes": "Pizza",
+      "utcOffset": 720
+    }
+  ],
+  "durationMs": 3
+}

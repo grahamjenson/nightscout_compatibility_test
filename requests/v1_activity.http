@@ -1,0 +1,43 @@
+#####
+# CREATE
+#####
+
+NAME create_activity_v1
+POST http://{{ .site }}/api/v1/activity?token={{ token }}
+B {"activityType": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "activity walking", "heartRate": 120, "steps": 1000}
+
+NAME create_activitys_v1
+POST http://{{ .site }}/api/v1/activity?token={{ token }}
+B [{"activityType": "running", "created_at": "{{ time 1 }}", "duration": 3600, "notes": "activity running"}, {"activityType": "running", "created_at": "{{ time 2 }}", "duration": 3600, "notes": "activity running 2"}]
+
+#####
+# READ 
+#####
+
+NAME get_activities_find_walking_v1
+GET http://{{ .site }}/api/v1/activity?token={{ token }}&find[activityType]=walking
+
+NAME get_activities_find_id_v1
+GET http://{{ .site }}/api/v1/activity?token={{ token }}&find[_id]={{ dig "create_activity_v1.0._id"  }}
+
+NAME get_activities_v1
+GET http://{{ .site }}/api/v1/activity?token={{ token }}
+
+####
+# UPDATE
+####
+
+NAME update_activity_v1
+PUT http://{{ .site }}/api/v1/activity?token={{ token }}
+B {"_id": "{{ dig "create_activity_v1.0._id" }}", "duration": 30}
+
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_activity_v1
+DELETE http://{{ .site }}/api/v1/activity/{{ dig "create_activity_v1.0._id" }}?token={{ token }}
+
+NAME get_activities_after_delete_find_id_v1
+GET http://{{ .site }}/api/v1/activity?token={{ token }}&find[_id]={{ dig "create_activity_v1.0._id"  }}

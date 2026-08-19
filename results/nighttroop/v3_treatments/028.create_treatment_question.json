@@ -1,0 +1,62 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/treatments",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "Carer",
+      "created_at": "2026-08-19T11:22:15+12:00",
+      "eventType": "Question",
+      "notes": "Should basal be adjusted overnight?"
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Content-Length": [
+      "375"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/3xQWON9r"
+    ]
+  },
+  "body": {
+    "identifier": "3xQWON9r",
+    "lastModified": 1787096295533,
+    "result": {
+      "app": "Carer",
+      "created_at": "2026-08-18T23:22:15Z",
+      "date": 1787095335000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Question",
+      "identifier": "3xQWON9r",
+      "isValid": true,
+      "notes": "Should basal be adjusted overnight?",
+      "srvCreated": 1787096295533,
+      "srvModified": 1787096295533,
+      "subject": "pwd_phone",
+      "utcOffset": 720
+    },
+    "status": 201
+  },
+  "durationMs": 0
+}

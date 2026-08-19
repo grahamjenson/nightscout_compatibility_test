@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "",
+    "path": "",
+    "url": "",
+    "headers": null,
+    "body": null
+  },
+  "statusCode": 0,
+  "headers": null,
+  "body": "eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0",
+  "durationMs": 0
+}

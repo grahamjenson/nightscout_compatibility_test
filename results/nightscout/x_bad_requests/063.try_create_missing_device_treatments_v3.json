@@ -1,0 +1,58 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/treatments",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "created_at": "2026-08-19T11:27:10+12:00",
+      "duration": 3600,
+      "eventType": "walking",
+      "notes": "test treatments missing device"
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "95"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/e3ddb296-0eb6-5f53-8806-8043735414f2"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "identifier": "e3ddb296-0eb6-5f53-8806-8043735414f2",
+    "lastModified": 1787095630904,
+    "status": 201
+  },
+  "durationMs": 2
+}

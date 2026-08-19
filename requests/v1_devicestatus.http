@@ -1,0 +1,245 @@
+#####
+# CREATE
+#####
+
+NAME create_devicestatus_v1
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B {
+  "device": "aaps",
+  "created_at": "{{ time 0 }}",
+
+  "uploader": {
+    "battery": 87,
+    "batteryVoltage": 4.05
+  },
+
+  "loop": {
+    "timestamp": "2026-06-16T08:42:00Z",
+    "iob": {
+      "iob": 1.73,
+      "devicestatus": 0.024
+    },
+    "cob": {
+      "cob": 18
+    },
+    "predicted": {
+      "values": [112, 114, 117, 120, 123, 126]
+    },
+    "enacted": {
+      "rate": 1.2,
+      "duration": 30,
+      "reason": "BG rising faster than expected"
+    },
+    "failureReason": ""
+  },
+
+  "pump": {
+    "clock": "2026-06-16T08:42:15Z",
+    "reservoir": 97.4,
+    "battery": {
+      "percent": 68,
+      "voltage": 1.42
+    },
+    "status": {
+      "bolusing": false,
+      "suspended": false
+    }
+  },
+
+  "openaps": {
+    "enacted": {
+      "timestamp": "2026-06-16T08:42:00Z",
+      "rate": 1.2,
+      "duration": 30
+    },
+    "suggested": {
+      "timestamp": "2026-06-16T08:41:55Z",
+      "rate": 1.2,
+      "duration": 30,
+      "reason": "Eventual BG 126"
+    }
+  }
+ }
+
+NAME create_devicestatuss_v1
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B [{ "device": "aaps1", "created_at": "{{ time 1 }}", "uploader": { "battery": 87, "batteryVoltage": 4.05 } }, { "device": "aaps", "created_at": "{{ time 2 }}",   "uploader": { "battery": 87, "batteryVoltage": 4.05 } }]
+
+#####
+# READ 
+#####
+
+
+NAME get_devicestatuses_find_device_v1
+GET http://{{ .site }}/api/v1/devicestatus?token={{ token }}&find[device]=aaps
+
+NAME get_devicestatuses_find_id_v1
+GET http://{{ .site }}/api/v1/devicestatus?token={{ token }}&find[_id]={{ dig "create_devicestatus_v1.0._id"  }}
+
+NAME get_devicestatuses_v1
+GET http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_devicestatus_v1
+DELETE http://{{ .site }}/api/v1/devicestatus/{{ dig "create_devicestatus_v1.0._id" }}?token={{ token }}
+
+NAME get_devicestatuses_find_after_delete_v1
+GET http://{{ .site }}/api/v1/devicestatus?token={{ token }}&find[_id]={{ dig "create_devicestatus_v1.0._id"  }}
+
+
+
+####
+# AAPS
+####
+
+NAME create_aaps_devicestatus_v1
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B {
+    "app": "AAPS",
+    "configuration": {},
+    "date": 1786919988777,
+    "device": "openaps://CUBOT KINGKONG MINI 3",
+    "isCharging": false,
+    "openaps": {
+        "iob": {
+            "iob": 0.736,
+            "basaliob": -0.332,
+            "activity": 0.007,
+            "time": "2026-08-16T22:39:43.738Z"
+        },
+        "suggested": {
+            "algorithm": "SMB",
+            "runningDynamicIsf": true,
+            "timestamp": "2026-08-16T22:39:43.738Z",
+            "bg": 150,
+            "tick": "-6",
+            "eventualBG": 41,
+            "targetBG": 123,
+            "insulinReq": 0,
+            "deliverAt": "2026-08-16T22:39:41.740Z",
+            "sensitivityRatio": 1.2055221584632745,
+            "reason": "Dosing sensitivity: 330.0 using eventual BG;COB: 0, Dev: -0.6, BGI: -0.3, ISF: 7.5, CR: 11.5, Target: 6.8, minPredBG 3.3, minGuardBG -1.1, IOBpredBG 2.2; minGuardBG -1.1<4.5",
+            "duration": 120,
+            "rate": 0,
+            "predBGs": {
+                "IOB": [ 150, 144, 138, 132, 126, 120, 115, 109, 104, 99, 94, 89, 85, 80, 76, 71, 67, 62, 58, 53, 49, 44, 40, 39],
+                "ZT": [150,145,141,136,131,127,123,118,114,111,107,104,101,98,95,93,92,90,89,89,89,89,90,91,92,94,96,98,101,103,106,109,112,116,119,123]
+            },
+            "COB": 0,
+            "IOB": 0.736,
+            "variable_sens": 134.4,
+            "consoleLog": [
+                "Autosens ratio: 1.2055221584632745; ",
+                "Adjusting basal from 0.35 to 0.42193275546214604; ",
+                "target_bg from 135.9 to 123.0; ",
+                "EventualBG is 41.0 ;",
+                "Future state sensitivity is 330.0 based on eventual bg due to -ve delta",
+                "minPredBG: 59.0 minIOBPredBG: 39.0 minZTGuardBG: 89.0",
+                " minUAMPredBG: 39.0"
+            ],
+            "consoleError": [
+                "---------------------------------------------------------",
+                " Dynamic ISF version 2.0 ",
+                "---------------------------------------------------------",
+                "CR:11.5",
+                "SMB enabled due to enableSMB_always",
+                "profile.sens: 134.4, sens: 134.4, CSF: 11.68695652173913",
+                "Last carbs 143minutes ago; remainingCATime:6.1hours;100% carbs absorbed",
+                "Carb Impact: -1.6 mg/dL per 5m; CI Duration: 0.0 hours; remaining CI (~2h peak): 0.0 mg/dL per 5m",
+                "UAM Impact: -1.6 mg/dL per 5m; UAM Duration: 0.0 hours",
+                " avgPredBG: 89.0 COB: 0.0 / 26.0",
+                "minGuardBG -1.1 projected below 4.5 - disabling SMB",
+                "BG projected to remain above 6.8 for 25 minutes",
+                "BG projected to remain above 4.5 for 65 minutes",
+                "naive_eventualBG: 51.0 bgUndershoot: 30.0 zeroTempDuration 65 zeroTempEffect: 51 carbsReq: -2"
+            ],
+            "isfMgdlForCarbs": 137.59339622641514
+        }
+    },
+    "pump": {
+        "battery": {},
+        "clock": "2026-08-16T22:39:48.777Z",
+        "extended": {
+            "Version": "3.3.1.0-2ac634c908-2025.01.10",
+            "ActiveProfile": "Dash-2025",
+            "TempBasalAbsoluteRate": 0,
+            "TempBasalStart": "17/08/26 10:24am",
+            "TempBasalRemaining": 105,
+            "LastBolus": "17/08/26 10:22am",
+            "LastBolusAmount": 0.3,
+            "BaseBasalRate": 0.35
+        },
+        "reservoir": 38,
+        "status": {
+            "status": "normal",
+            "timestamp": "2026-08-16T22:24:50.892Z"
+        }
+    },
+    "uploader": {},
+    "uploaderBattery": 88,
+    "utcOffset": 720,
+    "created_at": "2026-08-16T22:39:48.777Z"
+ }
+
+
+####
+# Loop
+####
+
+NAME create_loop_devicestatus_v1
+POST http://{{ .site }}.ns.localhosthttp://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B {
+    "device": "loop://iPhone",
+    "uploader": {
+        "battery": 80,
+        "name": "iPhone",
+        "timestamp": "2025-05-14T02:13:21Z"
+    },
+    "loop": {
+        "predicted": {
+            "startDate": "2025-05-14T02:13:07Z",
+            "values": [ 114, 115.88, 120.29, 123.05, 123.98, 123.57, 122.9, 121.95, 120.71, 119.17, 117.34, 115.4, 113.75, 112.21, 110.79, 109.46, 108.24, 107.1, 106.05, 105.09, 104.19, 103.37, 102.62, 101.94, 101.31, 100.74, 100.23, 99.77, 99.37, 99, 98.69, 98.41, 98.18, 97.99, 97.83, 97.7, 97.6, 97.53, 97.48, 97.46, 97.46, 97.49, 97.53, 97.58, 97.66, 97.75, 97.86, 97.98, 98.11, 98.26, 98.41, 98.57, 98.75, 98.93, 99.11, 99.26, 99.4, 99.53, 99.63, 99.72, 99.8, 99.87, 99.93, 99.97, 100.01, 100.04, 100.06, 100.08, 100.09, 100.1, 100.11, 100.11, 100.12, 100.12, 100.12, 100.12]
+        },
+        "timestamp": "2025-05-14T02:13:21Z",
+        "automaticDoseRecommendation": {
+            "bolusVolume": 0.05,
+            "timestamp": "2025-05-14T02:13:21Z"
+        },
+        "iob": {
+            "iob": 1.0870623804830117,
+            "timestamp": "2025-05-14T02:10:00Z"
+        },
+        "name": "Loop",
+        "cob": {
+            "cob": 5.0947962907626785,
+            "timestamp": "2025-05-14T02:10:00Z"
+        },
+        "recommendedBolus": 0.15,
+        "enacted": {
+            "timestamp": "2025-05-14T02:13:13Z",
+            "rate": 0,
+            "received": true,
+            "duration": 0,
+            "bolusVolume": 0
+        },
+        "version": "3.2.2.65"
+    },
+    "override": {
+        "timestamp": "2025-05-14T02:13:21Z",
+        "active": false
+    },
+    "created_at": "2025-05-14T02:13:21.000Z",
+    "pump": {
+        "bolusing": false,
+        "secondsFromGMT": 28800,
+        "manufacturer": "Insulet",
+        "pumpID": "1F068529",
+        "clock": "2025-05-14T02:13:21Z",
+        "model": "Eros",
+        "suspended": false
+    },
+    "utcOffset": 0
+ }

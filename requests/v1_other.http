@@ -1,0 +1,6 @@
+NAME get_status_v1
+GET http://{{ .site }}/api/v1/status?token={{ token }}
+
+NAME get_times_entries_v1
+GET http://{{ .site }}/api/v1/times/20?token={{ token }}
+

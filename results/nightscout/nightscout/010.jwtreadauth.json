@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/authorization/request/token=read-00fe94ad1cd2baaf",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "272"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:09 GMT"
+    ],
+    "Etag": [
+      "W/\"110-iQDCwPxPSgM3/TLhrNvnGKv5F8Y\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "exp": 1787124429,
+    "iat": 1787095629,
+    "permissionGroups": [
+      [
+        "*:*:read"
+      ]
+    ],
+    "sub": "read",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtMDBmZTk0YWQxY2QyYmFhZiIsImlhdCI6MTc4NzA5NTYyOSwiZXhwIjoxNzg3MTI0NDI5fQ.fWlr5Q63mTJhIe3m9PTPGnAcclnLdxE1A9og8W2lllc"
+  },
+  "durationMs": 2
+}

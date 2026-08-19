@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/profile/a050a8c2-6e85-5c98-a319-316bddef626e",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": "{ \"defaultProfile\": \"updated_profile\", \"store\": {\n\"updated_profile\": {\n\"dia\": 7, \n\"carbratio\": [{ \"time\": \"00:00\", \"value\": 12 }],\n\"sens\": [{ \"time\": \"00:00\", \"value\": 2.5 }],\n\"basal\": [{ \"time\": \"00:00\", \"value\": 0.9 }],\n\"target_low\": [{ \"time\": \"00:00\", \"value\": 5 }],\n\"target_high\": [{ \"time\": \"00:00\", \"value\": 6.1 }]\n},\n\"updated_profile_2\": {\n\"dia\": 7, \n\"carbratio\": [{ \"time\": \"00:00\", \"value\": 12 }],\n\"sens\": [{ \"time\": \"00:00\", \"value\": 2.5 }],\n\"basal\": [{ \"time\": \"00:00\", \"value\": 0.9 }],\n\"target_low\": [{ \"time\": \"00:00\", \"value\": 5 }],\n\"target_high\": [{ \"time\": \"00:00\", \"value\": 6.1 }]\n}, \n} \n}"
+  },
+  "statusCode": 500,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "48"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "message": "Internal Server Error",
+    "status": 500
+  },
+  "durationMs": 2
+}

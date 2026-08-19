@@ -1,0 +1,32 @@
+NAME create_new_site
+POST http://localhost:8080/site
+
+# Assign the token to a variable
+NAME token
+SET {{ .create_new_site.pwd_nstoken }}
+
+NAME read_token
+SET {{ .create_new_site.read_only_nstoken }}
+
+NAME site
+SET {{ .create_new_site.site_subdomain }}.ns.localhost:8080
+
+
+NAME jwtauth
+GET http://{{ .site }}/api/v2/authorization/request/token={{ .token }}
+
+
+# This assigns the jwt variable in context
+NAME jwt
+SET {{ .jwtauth.token }}
+
+NAME jwtreadauth
+GET http://{{ .site }}/api/v2/authorization/request/token={{ .read_token }}
+
+
+NAME time_0
+SET {{ time 0 }}
+
+# This assigns the jwt variable in context
+NAME read_jwt
+SET {{ .jwtreadauth.token }}

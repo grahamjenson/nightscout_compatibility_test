@@ -1,0 +1,159 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/treatments?sgv$lt=120",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "created_at": "2026-08-18T23:37:15Z",
+        "date": 1787096235000,
+        "enteredBy": "pwd_phone",
+        "eventType": "BG Check",
+        "glucose": 5.8,
+        "glucoseType": "mbg",
+        "identifier": "I5YHSCC1",
+        "isValid": true,
+        "srvCreated": 1787096295346,
+        "srvModified": 1787096295346,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "app": "Carer",
+        "created_at": "2026-08-18T23:37:15Z",
+        "date": 1787096235000,
+        "enteredBy": "pwd_phone",
+        "eventType": "BG Check",
+        "glucose": 5.8,
+        "glucoseType": "sgv",
+        "identifier": "lHj343c1",
+        "isValid": true,
+        "notes": "Routine glucose check",
+        "srvCreated": 1787096295526,
+        "srvModified": 1787096295526,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "app": "Carer",
+        "created_at": "2026-08-18T23:36:15Z",
+        "date": 1787096175000,
+        "enteredBy": "pwd_phone",
+        "eventType": "BG Check",
+        "glucose": 6.4,
+        "glucoseType": "mbg",
+        "identifier": "u0z9dQUq",
+        "isValid": true,
+        "notes": "Fingerstick confirmation",
+        "srvCreated": 1787096295527,
+        "srvModified": 1787096295527,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "carbs": 70,
+        "created_at": "2026-08-18T23:32:15Z",
+        "date": 1787095935000,
+        "enteredBy": "pwd_phone",
+        "eventType": "Bolus Wizard",
+        "glucose": 11.7,
+        "glucoseType": "mbg",
+        "identifier": "bRu580Nc",
+        "insulin": 7.8,
+        "isValid": true,
+        "notes": "Suggested by pump wizard",
+        "srvCreated": 1787096295347,
+        "srvModified": 1787096295347,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "app": "Pump",
+        "carbs": 75,
+        "created_at": "2026-08-18T23:32:15Z",
+        "date": 1787095935000,
+        "enteredBy": "pwd_phone",
+        "eventType": "Bolus Wizard",
+        "glucose": 9.2,
+        "glucoseType": "sgv",
+        "identifier": "9JG0A5tq",
+        "insulin": 7.5,
+        "isValid": true,
+        "notes": "Wizard calculation",
+        "srvCreated": 1787096295529,
+        "srvModified": 1787096295529,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:27:15Z",
+        "date": 1787095635000,
+        "enteredBy": "pwd_phone",
+        "eventType": "BG Check",
+        "glucose": 6.8,
+        "glucoseType": "mbg",
+        "identifier": "CsUfHSUD",
+        "isValid": true,
+        "srvCreated": 1787096295341,
+        "srvModified": 1787096295341,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "carbs": 48,
+        "created_at": "2026-08-18T23:26:15Z",
+        "date": 1787095575000,
+        "enteredBy": "pwd_phone",
+        "eventType": "Bolus Wizard",
+        "glucose": 9.1,
+        "glucoseType": "mbg",
+        "identifier": "5yBSB7Fa",
+        "insulin": 4.2,
+        "isValid": true,
+        "srvCreated": 1787096295342,
+        "srvModified": 1787096295342,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:08:15Z",
+        "date": 1787094495000,
+        "enteredBy": "pwd_phone",
+        "eventType": "Calibration",
+        "glucose": 6.2,
+        "glucoseType": "mbg",
+        "identifier": "y9SRAXl8",
+        "isValid": true,
+        "srvCreated": 1787096295351,
+        "srvModified": 1787096295351,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 1
+}

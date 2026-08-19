@@ -1,0 +1,69 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries/mbg?token=write-0acbea8106c5420d",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "341"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:09 GMT"
+    ],
+    "Etag": [
+      "W/\"155-IRgMpuIUvsGXURJhwJ1RqLcIFDU\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:17:09 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a84ea4d99873f4a1ea957e5",
+      "app": "test-app",
+      "date": 1787095029778,
+      "device": "test-device",
+      "mbg": 110,
+      "sysTime": "2026-08-18T23:17:09.778Z",
+      "type": "mbg",
+      "utcOffset": 0
+    },
+    {
+      "_id": "6a84ea4d99873f4a1ea957e3",
+      "app": "test-app",
+      "date": 1787094909775,
+      "device": "test-device",
+      "mbg": 102,
+      "sysTime": "2026-08-18T23:15:09.775Z",
+      "type": "mbg",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 2
+}

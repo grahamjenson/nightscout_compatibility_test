@@ -1,0 +1,60 @@
+#####
+# CREATE
+#####
+
+NAME create_settings_v3
+POST http://{{ .site }}/api/v3/settings
+B {"app": "asd", "identifier": "units", "type": "string", "value": "mmol/L", "date": "{{ time 0 }}"}
+H Authorization: Bearer {{ jwt }}
+
+NAME create_put_settings_v3
+PUT http://{{ .site }}/api/v3/settings/timezone
+B {"app": "asd", "type": "string", "value": "Europe/Paris", "date": "{{ time 0 }}"}
+H Authorization: Bearer {{ jwt }}
+
+#####
+# READ 
+#####
+
+NAME get_settings_v3
+GET http://{{ .site }}/api/v3/settings/units
+H Authorization: Bearer {{ jwt }}
+
+
+####
+# UPDATE
+####
+
+# replace
+NAME update_put_settings_v3
+PUT http://{{ .site }}/api/v3/settings/language
+B {"app": "asd", "identifier": "language", "type": "string", "value": "en", "date": "{{ time 0 }}"}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_settings_after_put_v3
+GET http://{{ .site }}/api/v3/settings/language
+H Authorization: Bearer {{ jwt }}
+
+#patch
+NAME update_patch_settings_v3
+PATCH http://{{ .site }}/api/v3/settings/language
+B {"value":  "fr"}
+H Authorization: Bearer {{ jwt }}
+
+
+NAME get_settings_after_patch_v3
+GET http://{{ .site }}/api/v3/settings/language
+H Authorization: Bearer {{ jwt }}
+
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_settings_v3
+DELETE http://{{ .site }}/api/v3/settings/units
+H Authorization: Bearer {{ jwt }}
+
+NAME delete_settings2_v3
+DELETE http://{{ .site }}/api/v3/settings/language
+H Authorization: Bearer {{ jwt }}

@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "DELETE",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/activity/6a7938cb537eacafae0eba5f?token=write-0acbea8106c5420d",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "2"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Etag": [
+      "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {},
+  "durationMs": 2
+}

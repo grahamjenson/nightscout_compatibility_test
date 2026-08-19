@@ -1,0 +1,52 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/treatments",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtMDBmZTk0YWQxY2QyYmFhZiIsImlhdCI6MTc4NzA5NTYyOSwiZXhwIjoxNzg3MTI0NDI5fQ.fWlr5Q63mTJhIe3m9PTPGnAcclnLdxE1A9og8W2lllc"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "created_at": "2026-08-19T11:27:10+12:00",
+      "device": "test-device",
+      "duration": 3600,
+      "notes": "test treatments with jwt read token",
+      "type": "walking"
+    }
+  },
+  "statusCode": 403,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "67"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "message": "Missing permission api:treatments:create",
+    "status": 403
+  },
+  "durationMs": 2
+}

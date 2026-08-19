@@ -1,0 +1,299 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/devicestatus",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "app": "AAPS",
+        "configuration": {},
+        "created_at": "2026-08-16T22:39:48.777Z",
+        "date": 1786919988777,
+        "device": "openaps://CUBOT KINGKONG MINI 3",
+        "identifier": "6a84ea4d3fab588a5377607c",
+        "isCharging": false,
+        "openaps": {
+          "iob": {
+            "activity": 0.007,
+            "basaliob": -0.332,
+            "iob": 0.736,
+            "time": "2026-08-16T22:39:43.738Z"
+          },
+          "suggested": {
+            "COB": 0,
+            "IOB": 0.736,
+            "algorithm": "SMB",
+            "bg": 150,
+            "consoleError": [
+              "---------------------------------------------------------",
+              " Dynamic ISF version 2.0 ",
+              "---------------------------------------------------------",
+              "CR:11.5",
+              "SMB enabled due to enableSMB_always",
+              "profile.sens: 134.4, sens: 134.4, CSF: 11.68695652173913",
+              "Last carbs 143minutes ago; remainingCATime:6.1hours;100% carbs absorbed",
+              "Carb Impact: -1.6 mg/dL per 5m; CI Duration: 0.0 hours; remaining CI (~2h peak): 0.0 mg/dL per 5m",
+              "UAM Impact: -1.6 mg/dL per 5m; UAM Duration: 0.0 hours",
+              " avgPredBG: 89.0 COB: 0.0 / 26.0",
+              "minGuardBG -1.1 projected below 4.5 - disabling SMB",
+              "BG projected to remain above 6.8 for 25 minutes",
+              "BG projected to remain above 4.5 for 65 minutes",
+              "naive_eventualBG: 51.0 bgUndershoot: 30.0 zeroTempDuration 65 zeroTempEffect: 51 carbsReq: -2"
+            ],
+            "consoleLog": [
+              "Autosens ratio: 1.2055221584632745; ",
+              "Adjusting basal from 0.35 to 0.42193275546214604; ",
+              "target_bg from 135.9 to 123.0; ",
+              "EventualBG is 41.0 ;",
+              "Future state sensitivity is 330.0 based on eventual bg due to -ve delta",
+              "minPredBG: 59.0 minIOBPredBG: 39.0 minZTGuardBG: 89.0",
+              " minUAMPredBG: 39.0"
+            ],
+            "deliverAt": "2026-08-16T22:39:41.740Z",
+            "duration": 120,
+            "eventualBG": 41,
+            "insulinReq": 0,
+            "isfMgdlForCarbs": 137.59339622641514,
+            "predBGs": {
+              "IOB": [
+                150,
+                144,
+                138,
+                132,
+                126,
+                120,
+                115,
+                109,
+                104,
+                99,
+                94,
+                89,
+                85,
+                80,
+                76,
+                71,
+                67,
+                62,
+                58,
+                53,
+                49,
+                44,
+                40,
+                39
+              ],
+              "ZT": [
+                150,
+                145,
+                141,
+                136,
+                131,
+                127,
+                123,
+                118,
+                114,
+                111,
+                107,
+                104,
+                101,
+                98,
+                95,
+                93,
+                92,
+                90,
+                89,
+                89,
+                89,
+                89,
+                90,
+                91,
+                92,
+                94,
+                96,
+                98,
+                101,
+                103,
+                106,
+                109,
+                112,
+                116,
+                119,
+                123
+              ]
+            },
+            "rate": 0,
+            "reason": "Dosing sensitivity: 330.0 using eventual BG;COB: 0, Dev: -0.6, BGI: -0.3, ISF: 7.5, CR: 11.5, Target: 6.8, minPredBG 3.3, minGuardBG -1.1, IOBpredBG 2.2; minGuardBG -1.1&lt;4.5",
+            "runningDynamicIsf": true,
+            "sensitivityRatio": 1.2055221584632745,
+            "targetBG": 123,
+            "tick": "-6",
+            "timestamp": "2026-08-16T22:39:43.738Z",
+            "variable_sens": 134.4
+          }
+        },
+        "pump": {
+          "battery": {},
+          "clock": "2026-08-16T22:39:48.777Z",
+          "extended": {
+            "ActiveProfile": "Dash-2025",
+            "BaseBasalRate": 0.35,
+            "LastBolus": "17/08/26 10:22am",
+            "LastBolusAmount": 0.3,
+            "TempBasalAbsoluteRate": 0,
+            "TempBasalRemaining": 105,
+            "TempBasalStart": "17/08/26 10:24am",
+            "Version": "3.3.1.0-2ac634c908-2025.01.10"
+          },
+          "reservoir": 38,
+          "status": {
+            "status": "normal",
+            "timestamp": "2026-08-16T22:24:50.892Z"
+          }
+        },
+        "srvCreated": 1786919988777,
+        "srvModified": 1786919988777,
+        "uploader": {},
+        "uploaderBattery": 88,
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-08-18T23:25:09.000Z",
+        "device": "aaps",
+        "identifier": "6a84ea4d3fab588a5377607b",
+        "srvCreated": 1787095509000,
+        "srvModified": 1787095509000,
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05
+        },
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:26:09.000Z",
+        "device": "aaps1",
+        "identifier": "6a84ea4d3fab588a5377607a",
+        "srvCreated": 1787095569000,
+        "srvModified": 1787095569000,
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05
+        },
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:27:10.000Z",
+        "date": 1787095630000,
+        "device": "aaps",
+        "identifier": "28f1dc55-bb3e-51ee-88b9-e0077cef3394",
+        "loop": {
+          "cob": {
+            "cob": 18
+          },
+          "enacted": {
+            "duration": 30,
+            "rate": 1.2,
+            "reason": "BG rising faster than expected"
+          },
+          "failureReason": "",
+          "iob": {
+            "devicestatus": 0.024,
+            "iob": 1.73
+          },
+          "predicted": {
+            "values": [
+              112,
+              114,
+              117,
+              120,
+              123,
+              126
+            ]
+          },
+          "timestamp": "2026-06-16T08:42:00Z"
+        },
+        "openaps": {
+          "enacted": {
+            "duration": 30,
+            "rate": 1.2,
+            "timestamp": "2026-06-16T08:42:00Z"
+          },
+          "suggested": {
+            "duration": 30,
+            "rate": 1.2,
+            "reason": "Eventual BG 126",
+            "timestamp": "2026-06-16T08:41:55Z"
+          }
+        },
+        "pump": {
+          "battery": {
+            "percent": 68,
+            "voltage": 1.42
+          },
+          "clock": "2026-06-16T08:42:15Z",
+          "reservoir": 97.4,
+          "status": {
+            "bolusing": false,
+            "suspended": false
+          }
+        },
+        "srvCreated": 1787095630143,
+        "srvModified": 1787095630143,
+        "subject": "write",
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05
+        },
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:26:10.000Z",
+        "date": 1787095570000,
+        "device": "aapsv3",
+        "identifier": "28f1dc55-bb3e-51ee-88b9-e0077cef3394custom",
+        "srvCreated": 1787095630148,
+        "srvModified": 1787095630148,
+        "subject": "write",
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05
+        },
+        "utcOffset": 720
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 3
+}

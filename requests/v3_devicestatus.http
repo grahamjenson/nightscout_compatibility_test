@@ -1,0 +1,174 @@
+#####
+# CREATE
+#####
+
+NAME create_devicestatus_v3
+POST http://{{ .site }}/api/v3/devicestatus
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "test-app",
+  "device": "aaps",
+  "created_at": "{{ time 0 }}",
+
+  "uploader": {
+    "battery": 87,
+    "batteryVoltage": 4.05
+  },
+
+  "loop": {
+    "timestamp": "2026-06-16T08:42:00Z",
+    "iob": {
+      "iob": 1.73,
+      "devicestatus": 0.024
+    },
+    "cob": {
+      "cob": 18
+    },
+    "predicted": {
+      "values": [112, 114, 117, 120, 123, 126]
+    },
+    "enacted": {
+      "rate": 1.2,
+      "duration": 30,
+      "reason": "BG rising faster than expected"
+    },
+    "failureReason": ""
+  },
+
+  "pump": {
+    "clock": "2026-06-16T08:42:15Z",
+    "reservoir": 97.4,
+    "battery": {
+      "percent": 68,
+      "voltage": 1.42
+    },
+    "status": {
+      "bolusing": false,
+      "suspended": false
+    }
+  },
+
+  "openaps": {
+    "enacted": {
+      "timestamp": "2026-06-16T08:42:00Z",
+      "rate": 1.2,
+      "duration": 30
+    },
+    "suggested": {
+      "timestamp": "2026-06-16T08:41:55Z",
+      "rate": 1.2,
+      "duration": 30,
+      "reason": "Eventual BG 126"
+    }
+  }
+ }
+
+
+NAME create_put_devicestatus_v3
+PUT http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier"  }}custom
+H Authorization: Bearer {{ jwt }}
+B { "device": "aapsv3", "created_at": "{{ time 1 }}", "uploader": { "battery": 87, "batteryVoltage": 4.05 }, "app": "test-app"}
+
+
+#####
+# READ 
+#####
+
+NAME get_devicestatus_v3
+GET http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier"  }}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatus_v3_with_fields
+GET http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier"  }}?fields=device,created_at
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatuss_v3
+GET http://{{ .site }}/api/v3/devicestatus
+H Authorization: Bearer {{ jwt }}
+
+NAME get_history_devicestatus_v3
+GET http://{{ .site }}/api/v3/devicestatus/history/{{ itime 30}}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatus_limit_v3
+GET http://{{ .site }}/api/v3/devicestatus?limit=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatus_skip_v3
+GET http://{{ .site }}/api/v3/devicestatus?skip=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatus_sort_date_v3
+GET http://{{ .site }}/api/v3/devicestatus?sort=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatus_sort_date_desc_v3
+GET http://{{ .site }}/api/v3/devicestatus?sort$desc=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatus_fields_v3
+GET http://{{ .site }}/api/v3/devicestatus?fields=date,sgv,notes
+H Authorization: Bearer {{ jwt }}
+
+
+
+NAME get_devicestatus_re_v3
+GET http://{{ .site }}/api/v3/devicestatus?direction$re=Flat|Up
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatus_multi_query_v3
+GET http://{{ .site }}/api/v3/devicestatus?type$eq=sgv&sgv$gte=100&sgv$lte=130
+H Authorization: Bearer {{ jwt }}
+
+NAME get_devicestatus_multi_query_in_v3
+GET http://{{ .site }}/api/v3/devicestatus?limit=5&skip=2&sort$desc=date&fields=date,sgv
+H Authorization: Bearer {{ jwt }}
+
+####
+# UPDATE
+####
+
+# replace
+NAME update_put_devicestatus_v3
+PUT http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "test-app",
+  "device": "aaps",
+  "created_at": "{{ time 0 }}",
+
+  "uploader": {
+    "battery": 100,
+    "batteryVoltage": 3.2
+  }
+ }
+
+
+NAME get_devicestatus_after_put_v3
+GET http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+#patch
+NAME update_patch_devicestatus_v3
+PATCH http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier" }}
+B {"notes":  "updated by update_patch_devicestatus_v3"}
+H Authorization: Bearer {{ jwt }}
+
+
+NAME get_devicestatus_after_patch_v3
+GET http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_devicestatus_v3
+DELETE http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME delete_devicestatus2_v3
+DELETE http://{{ .site }}/api/v3/devicestatus/{{ dig "create_put_devicestatus_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}

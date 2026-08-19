@@ -1,0 +1,452 @@
+#####
+# CREATE
+#####
+
+NAME create_treatments_v1
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B {
+  "eventType": "Meal Bolus",
+  "created_at": "{{ time 0 }}",
+
+  "glucose": 148,
+  "glucoseType": "Sensor",
+
+  "carbs": 45,
+  "insulin": 4.2,
+
+  "duration": 0,
+
+  "notes": "Lunch pasta + insulin pre-bolus",
+  "enteredBy": "aaps-loop",
+
+  "treatments": "treatments_1",
+  "percentage": 10,
+  "absolute": null,
+
+  "reason": "lunch",
+  "targetTop": 110,
+  "targetBottom": 85
+ }
+
+
+NAME create_treatmentses_v1
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B [
+  {
+    "eventType": "Announcement",
+    "created_at": "{{ time 9 }}",
+    "notes": "School swimming lesson today."
+  },
+  {
+    "eventType": "BG Check",
+    "created_at": "{{ time 11 }}",
+    "glucose": 6.8,
+    "glucoseType": "Finger"
+  },
+  {
+    "eventType": "Bolus Wizard",
+    "created_at": "{{ time 12 }}",
+    "carbs": 48,
+    "insulin": 4.2,
+    "glucose": 9.1,
+    "glucoseType": "Finger"
+  },
+  {
+    "eventType": "Carb Correction",
+    "created_at": "{{ time 13 }}",
+    "carbs": 12,
+    "notes": "Treated mild low"
+  },
+  {
+    "eventType": "Combo Bolus",
+    "created_at": "{{ time 14 }}",
+    "carbs": 65,
+    "insulin": 6.5,
+    "splitNow": 50,
+    "splitExt": 50,
+    "duration": 120
+  },
+  {
+    "eventType": "Correction Bolus",
+    "created_at": "{{ time 15 }}",
+    "insulin": 1.4,
+    "glucose": 13.7
+  },
+  {
+    "eventType": "D.A.D. Alert",
+    "created_at": "{{ time 16 }}",
+    "notes": "Missed meal bolus detected."
+  },
+  {
+    "eventType": "Exercise",
+    "created_at": "{{ time 17 }}",
+    "duration": 45,
+    "notes": "Soccer training"
+  },
+  {
+    "eventType": "Insulin Change",
+    "created_at": "{{ time 18 }}",
+    "insulin": 1.2,
+    "notes": "Started new insulin vial."
+  },
+  {
+    "eventType": "Meal Bolus",
+    "created_at": "{{ time 19 }}",
+    "carbs": 72,
+    "insulin": 7.0
+  },
+  {
+    "eventType": "Note",
+    "created_at": "{{ time 8 }}",
+    "notes": "Running higher than usual after breakfast."
+  },
+  {
+    "eventType": "OpenAPS Offline",
+    "created_at": "{{ time 20 }}",
+    "reason": "Phone battery depleted"
+  },
+  {
+    "eventType": "Profile Switch",
+    "created_at": "{{ time 21 }}",
+    "profile": "Weekend"
+  },
+  {
+    "eventType": "Pump Battery Change",
+    "created_at": "{{ time 22 }}",
+    "notes": "Battery replaced."
+  },
+  {
+    "eventType": "Question",
+    "created_at": "{{ time 23 }}",
+    "notes": "Should I reduce basal overnight?"
+  },
+  {
+    "eventType": "Sensor Change",
+    "created_at": "{{ time 24 }}",
+    "notes": "Dexcom G7 sensor replaced."
+  },
+  {
+    "eventType": "Sensor Start",
+    "created_at": "{{ time 7 }}",
+    "notes": "Started new CGM sensor."
+  },
+  {
+    "eventType": "Site Change",
+    "created_at": "{{ time 6 }}",
+    "notes": "Pump cannula moved to left arm."
+  },
+  {
+    "eventType": "Snack Bolus",
+    "created_at": "{{ time 25 }}",
+    "carbs": 18,
+    "insulin": 1.8
+  },
+  {
+    "eventType": "Temp Basal",
+    "created_at": "{{ time 4 }}",
+    "absolute": 0.35,
+    "duration": 60
+  },
+  {
+    "eventType": "Temporary Target",
+    "created_at": "{{ time 26 }}",
+    "targetTop": 8.0,
+    "targetBottom": 7.0,
+    "duration": 90,
+    "reason": "Exercise"
+  }
+ ]
+
+NAME create_treatmentses_more_v1
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B [
+  {
+    "eventType": "BG Check",
+    "created_at": "{{ time 1 }}",
+    "glucose": 5.8,
+    "glucoseType": "Finger",
+    "units": "mmol"
+  },
+  {
+    "eventType": "BG Check",
+    "created_at": "{{ time 2 }}",
+    "glucose": 145,
+    "glucoseType": "Meter",
+    "units": "mg/dl"
+  },
+
+  {
+    "eventType": "Meal Bolus",
+    "created_at": "{{ time 3 }}",
+    "carbs": 62,
+    "insulin": 6.2
+  },
+  {
+    "eventType": "Snack Bolus",
+    "created_at": "{{ time 4 }}",
+    "carbs": 18,
+    "insulin": 1.6,
+    "notes": "Afternoon snack"
+  },
+  {
+    "eventType": "Correction Bolus",
+    "created_at": "{{ time 5 }}",
+    "insulin": 1.3,
+    "glucose": 13.2,
+    "glucoseType": "Sensor"
+  },
+
+  {
+    "eventType": "Bolus Wizard",
+    "created_at": "{{ time 6 }}",
+    "carbs": 70,
+    "glucose": 11.7,
+    "glucoseType": "Finger",
+    "insulin": 7.8,
+    "notes": "Suggested by pump wizard"
+  },
+
+  {
+    "eventType": "Combo Bolus",
+    "created_at": "{{ time 7 }}",
+    "carbs": 85,
+    "insulin": 8.4,
+    "splitNow": 40,
+    "splitExt": 60,
+    "duration": 180
+  },
+
+  {
+    "eventType": "Carb Correction",
+    "created_at": "{{ time 8 }}",
+    "carbs": 16,
+    "notes": "Hypo treatment"
+  },
+
+  {
+    "eventType": "Temp Basal",
+    "created_at": "{{ time 9 }}",
+    "absolute": 0.45,
+    "duration": 30
+  },
+  {
+    "eventType": "Temp Basal",
+    "created_at": "{{ time 10 }}",
+    "percent": 50,
+    "duration": 90
+  },
+  {
+    "eventType": "Temp Basal",
+    "created_at": "{{ time 11 }}",
+    "absolute": 1.2,
+    "rate": 1.2,
+    "duration": 120
+  },
+
+  {
+    "eventType": "Temporary Target",
+    "created_at": "{{ time 12 }}",
+    "targetBottom": 6,
+    "targetTop": 7,
+    "duration": 60,
+    "reason": "Eating Soon"
+  },
+  {
+    "eventType": "Temporary Target",
+    "created_at": "{{ time 13 }}",
+    "targetBottom": 8,
+    "targetTop": 9,
+    "duration": 120,
+    "reason": "Exercise"
+  },
+
+  {
+    "eventType": "Exercise",
+    "created_at": "{{ time 14 }}",
+    "duration": 75,
+    "notes": "Mountain biking"
+  },
+
+  {
+    "eventType": "Profile Switch",
+    "created_at": "{{ time 15 }}",
+    "profile": "Weekend"
+  },
+  {
+    "eventType": "Profile Switch",
+    "created_at": "{{ time 16 }}",
+    "profile": "Sick Day",
+    "notes": "Activated manually"
+  },
+
+  {
+    "eventType": "Sensor Start",
+    "created_at": "{{ time 17 }}",
+    "notes": "Dexcom G7"
+  },
+
+  {
+    "eventType": "Sensor Change",
+    "created_at": "{{ time 18 }}",
+    "enteredBy": "AndroidAPS",
+    "notes": "New sensor inserted"
+  },
+
+  {
+    "eventType": "Site Change",
+    "created_at": "{{ time 19 }}",
+    "enteredBy": "Loop",
+    "notes": "Right thigh"
+  },
+
+  {
+    "eventType": "Pump Battery Change",
+    "created_at": "{{ time 20 }}",
+    "enteredBy": "OpenAPS"
+  },
+
+  {
+    "eventType": "Insulin Change",
+    "created_at": "{{ time 21 }}",
+    "insulin": 2.6,
+    "notes": "Started new pen"
+  },
+
+  {
+    "eventType": "Announcement",
+    "created_at": "{{ time 22 }}",
+    "notes": "Travelling today"
+  },
+
+  {
+    "eventType": "Question",
+    "created_at": "{{ time 23 }}",
+    "notes": "Should I extend temp target?"
+  },
+
+  {
+    "eventType": "Note",
+    "created_at": "{{ time 24 }}",
+    "notes": "Forgot pre-bolus"
+  },
+
+  {
+    "eventType": "OpenAPS Offline",
+    "created_at": "{{ time 25 }}",
+    "reason": "Rig lost WiFi"
+  },
+
+  {
+    "eventType": "D.A.D. Alert",
+    "created_at": "{{ time 26 }}",
+    "notes": "Possible missed bolus"
+  },
+
+  {
+    "eventType": "Cannula Fill",
+    "created_at": "{{ time 27 }}",
+    "insulin": 0.7
+  },
+
+  {
+    "eventType": "Prime",
+    "created_at": "{{ time 28 }}",
+    "insulin": 8.5
+  },
+
+  {
+    "eventType": "Reservoir Change",
+    "created_at": "{{ time 29 }}",
+    "notes": "Filled with 200U"
+  },
+
+  {
+    "eventType": "Calibration",
+    "created_at": "{{ time 30 }}",
+    "glucose": 6.2,
+    "glucoseType": "Finger"
+  },
+
+  {
+    "eventType": "Bolus",
+    "created_at": "{{ time 31 }}",
+    "insulin": 2.8
+  },
+
+  {
+    "eventType": "Correction Bolus",
+    "created_at": "{{ time 32 }}",
+    "insulin": 2.1,
+    "enteredBy": "Loop",
+    "notes": "Automatic correction"
+  },
+
+  {
+    "eventType": "Meal Bolus",
+    "created_at": "{{ time 33 }}",
+    "carbs": 95,
+    "insulin": 9.5,
+    "enteredBy": "AndroidAPS",
+    "notes": "Pizza"
+  }
+ ]
+
+#####
+# READ 
+#####
+
+
+
+NAME get_treatmentses_find_device_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[defaultProfile]=treatments_1
+
+NAME get_treatmentses_find_id_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[_id]={{ dig "create_treatments_v1.0._id"  }}
+
+NAME get_treatmentses_find_type_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[eventType]=Meal%20Bolus
+
+NAME get_treatmentses_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}
+
+
+####
+# UPDATE
+####
+
+NAME get_treatments_before_update_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[_id]={{ dig "create_treatments_v1.0._id"  }}
+
+NAME update_put_root_treatments_v1
+PUT http://{{ .site }}/api/v1/treatments?token={{ token }}
+B {"_id": "{{ dig "create_treatments_v1.0._id" }}", "eventType": "Meal Bolus", "created_at": "{{ time 0 }}", "notes": "updated by update_put_root_treatments_v1", "carbs": 1}
+
+NAME get_treatments_after_put_root_update_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[_id]={{ dig "create_treatments_v1.0._id"  }}
+
+NAME update_put_root_treatments_noid_v1
+PUT http://{{ .site }}/api/v1/treatments?token={{ token }}
+B {"_id": "treatmentv1t1", "eventType": "Meal Bolus", "created_at": "{{ time 0 }}", "notes": "updated by update_put_root_treatments_noid_v1", "carbs": 1}
+
+NAME get_treatments_after_put_root_noid_update_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[_id]={{ dig "update_put_root_treatments_noid_v1._id"  }}
+
+NAME get_treatments_v3_with_self_identifier_v1
+GET http://{{ .site }}/api/v3/treatments/treatmentv1t1
+H Authorization: Bearer {{ jwt }}
+
+
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_treatments_v1
+DELETE http://{{ .site }}/api/v1/treatments/{{ dig "create_treatments_v1.0._id" }}?token={{ token }}
+
+NAME delete_treatments_noid_v1
+DELETE http://{{ .site }}/api/v1/treatments/treatmentfdsfdsf?token={{ token }}
+
+NAME get_treatments_after_delete_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[_id]={{ dig "create_treatments_v1.0._id"  }}
+

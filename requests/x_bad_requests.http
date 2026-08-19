@@ -1,0 +1,374 @@
+# There are so many things that nightscout should error on but doesnt, but I want to see what other systems do.
+
+#######
+# ACTIVITIES
+#######
+
+NAME try_create_garbage_activity_v1
+POST http://{{ .site }}/api/v1/activity?token={{ token }}
+B {"activityType": "walkingdgsjoihgdiosghiodshghiodsijo", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "activity walking", "heartRate": 120, "steps": 1000}
+
+NAME try_create_garbage_data_activity_v1
+POST http://{{ .site }}/api/v1/activity?token={{ token }}
+B {"activityType": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "activity walking", "heartRate": "NaN nope", "steps": 1000}
+
+
+NAME try_get_activities_find_notid_v1
+GET http://{{ .site }}/api/v1/activity?token={{ token }}&find[_id]=notAnID
+
+NAME try_delete_activity_not_an_id_v1
+DELETE http://{{ .site }}/api/v1/activity/6a7938cb537eacafae0eba5f?token={{ token }}
+
+
+#######
+# DEVICE STATUS
+#######
+
+NAME try_create_garbage_devicestatus_v1
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B { "device": "aaps1", "created_at": "{{ time 1 }}",   "uploader": "not an object" }
+
+NAME try_create_garbage_data_devicestatus_v1
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B { "device": "aaps1", "created_at": "{{ time 1 }}", "random": 123 }
+
+
+NAME try_get_devicestatuss_find_notid_v1
+GET http://{{ .site }}/api/v1/devicestatus?token={{ token }}&find[_id]=notAnID
+
+NAME try_delete_devicestatus_not_an_id_v1
+DELETE http://{{ .site }}/api/v1/devicestatus/6a7928cb537eacafae0eba5a?token={{ token }}
+
+# V3
+
+
+
+NAME try_get_devicestatus_notfound_v3
+GET http://{{ .site }}/api/v3/devicestatus/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_update_patch_devicestatus_v3
+PATCH http://{{ .site }}/api/v3/devicestatus/{{ dig "create_devicestatus_v3.identifier" }}
+B {"date":  123}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_delete_notfound_devicestatus_v3
+DELETE http://{{ .site }}/api/v3/devicestatus/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_no_date_devicestatus_v3
+POST http://{{ .site }}/api/v3/devicestatus
+B {"type": "walking", "duration": 3600, "notes": "test devicestatus no date", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_device_devicestatus_v3
+POST http://{{ .site }}/api/v3/devicestatus
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test devicestatus missing device", "app": "test-app"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_app_devicestatus_v3
+POST http://{{ .site }}/api/v3/devicestatus
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test devicestatus missing app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_with_jwt_read_token_devicestatus_v3
+POST http://{{ .site }}/api/v3/devicestatus
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test devicestatus with jwt read token", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ read_jwt }}
+
+NAME create__devicestatus_v3
+POST http://{{ .site }}/api/v3/devicestatus
+B {"app": "test-app", "device": "test-device", "subject": "test-subject", "created_at": "{{ time 0 }}"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_change_ds_app_v3
+PUT http://{{ .site }}/api/v3/devicestatus/{{ dig "create__devicestatus_v3.identifier" }}
+B {"app": "test-appa", "device": "test-device", "subject": "test-subject", "created_at": "{{ time 0 }}"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_change_ds_device_v3
+PUT http://{{ .site }}/api/v3/devicestatus/{{ dig "create__devicestatus_v3.identifier" }}
+B {"app": "test-app", "device": "test-devicea", "subject": "test-subject", "created_at": "{{ time 0 }}"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_change_ds_subject_v3
+PUT http://{{ .site }}/api/v3/devicestatus/{{ dig "create__devicestatus_v3.identifier" }}
+B {"app": "test-app", "device": "test-device", "subject": "test-subjecta", "created_at": "{{ time 0 }}"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_change_ds_date_v3
+PUT http://{{ .site }}/api/v3/devicestatus/{{ dig "create__devicestatus_v3.identifier" }}
+B {"app": "test-app", "device": "test-device", "subject": "test-subjecta", "created_at": "{{ time 2 }}"}
+H Authorization: Bearer {{ jwt }}
+
+#######
+# ENTRIES
+#######
+
+
+NAME try_create_entry_with_read_token_v1
+POST http://{{ .site }}/api/v1/entries?token={{ read_token }}
+B {"sgv": 105, "date": {{ itime 20 }},"type": "sgv", "app": "test-app"}
+
+NAME create_mbg_with_sgv_entries_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [{"sgv": 110, "date": {{ itime 10 }}, "type": "mbg", "app": "test-app", "device": "test-device"}]
+
+NAME try_create_entry_with_bad_json
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B {"}
+
+
+NAME try_create_entry_with_no_enought_data_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B {}
+
+NAME try_create_entry_with_not_enought_data_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B {"sgv": 105 }
+
+NAME try_create_entry_with_bad_token_v1
+POST http://{{ .site }}/api/v1/entries?token=badtoken
+B {"sgv": 105, "date": {{ itime 20 }},"type": "sgv", "app": "test-app"}
+
+NAME try_to_create_entry_with_bad_type_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B {"sgv": 105, "date": {{ itime 20 }},"type": "badentrytype", "app": "test-app"}
+
+NAME try_get_bad_typed_entries_v1
+GET http://{{ .site }}/api/v1/entries/badtype?token={{ token }}
+
+NAME try_delete_entries_badid_v1
+DELETE http://{{ .site }}/api/v1/entries/bad_id?token={{ token }}
+
+# V3
+
+
+
+NAME try_get_entries_notfound_v3
+GET http://{{ .site }}/api/v3/entries/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_update_patch_entries_v3
+PATCH http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier" }}
+B {"date":  123}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_delete_notfound_entries_v3
+DELETE http://{{ .site }}/api/v3/entries/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_no_date_entries_v3
+POST http://{{ .site }}/api/v3/entries
+B {"type": "walking", "duration": 3600, "notes": "test entries no date", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_device_entries_v3
+POST http://{{ .site }}/api/v3/entries
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test entries missing device", "app": "test-app"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_app_entries_v3
+POST http://{{ .site }}/api/v3/entries
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test entries missing app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_with_jwt_read_token_entries_v3
+POST http://{{ .site }}/api/v3/entries
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test entries with jwt read token", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ read_jwt }}
+
+
+#######
+# FOOD
+#######
+
+NAME try_create_garbage_foods_v1
+POST http://{{ .site }}/api/v1/food?token={{ token }}
+B [{ "category": "Snacks", "carbs": 27 },{ "name": "Banana3", "category": "Snacks", "carbs": "NaN aaa" } ]
+
+NAME try_delete_food_not_found_id_v1
+DELETE http://{{ .site }}/api/v1/food/6a7928cbed64e0bb77a604f2?token={{ token }}
+
+# V3
+
+
+NAME try_get_food_notfound_v3
+GET http://{{ .site }}/api/v3/food/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_update_patch_food_v3
+PATCH http://{{ .site }}/api/v3/food/{{ dig "create_food_v3.identifier" }}
+B {"date":  123}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_delete_notfound_food_v3
+DELETE http://{{ .site }}/api/v3/food/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_no_date_food_v3
+POST http://{{ .site }}/api/v3/food
+B {"type": "walking", "duration": 3600, "notes": "test food no date", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_device_food_v3
+POST http://{{ .site }}/api/v3/food
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test food missing device", "app": "test-app"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_app_food_v3
+POST http://{{ .site }}/api/v3/food
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test food missing app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_with_jwt_read_token_food_v3
+POST http://{{ .site }}/api/v3/food
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test food with jwt read token", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ read_jwt }}
+
+
+#######
+# PROFILE
+#######
+
+NAME try_create_garbage_profiles_v1
+POST http://{{ .site }}/api/v1/profile?token={{ token }}
+B [{ "defaultProfile": 1, "store": { "profile_2": { "dia": 7 } } }] 
+
+NAME try_create_garbage_profile_store_v1
+POST http://{{ .site }}/api/v1/profile?token={{ token }}
+B [{ "defaultProfile": 1, "store": ["asd"]}] 
+
+NAME try_delete_profile_badid_v1
+DELETE http://{{ .site }}/api/v1/profile/bad_id?token={{ token }}
+
+# V3
+
+
+
+NAME try_get_profile_notfound_v3
+GET http://{{ .site }}/api/v3/profile/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_update_patch_profile_v3
+PATCH http://{{ .site }}/api/v3/profile/{{ dig "create_profile_v3.identifier" }}
+B {"date":  123}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_delete_notfound_profile_v3
+DELETE http://{{ .site }}/api/v3/profile/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_no_date_profile_v3
+POST http://{{ .site }}/api/v3/profile
+B {"type": "walking", "duration": 3600, "notes": "test profile no date", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_device_profile_v3
+POST http://{{ .site }}/api/v3/profile
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test profile missing device", "app": "test-app"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_app_profile_v3
+POST http://{{ .site }}/api/v3/profile
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test profile missing app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_with_jwt_read_token_profile_v3
+POST http://{{ .site }}/api/v3/profile
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test profile with jwt read token", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ read_jwt }}
+
+
+#######
+# TREATMENTS
+#######
+
+NAME try_create_treatments_with_bad_type_v1
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B { "eventType": "BAD TYPE", "created_at": "{{ time 1 }}", "insulin": 4.2, "reason": "1" }
+
+NAME try_get_treatmentses_with_bad_type_v1
+GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[_id]={{ dig "try_create_treatments_with_bad_type_v1.0._id"  }}
+
+# V3
+
+
+
+NAME try_create_battype_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd", "eventType": "fhisadfhiusahf", "created_at": "{{ time 10 }}", "insulin": 2, "reason": "10" }
+
+NAME try_get_treatments_notfound_v3
+GET http://{{ .site }}/api/v3/treatments/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_update_patch_treatments_v3
+PATCH http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier" }}
+B {"date":  123}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_delete_notfound_treatments_v3
+DELETE http://{{ .site }}/api/v3/treatments/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_no_date_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+B {"eventType": "note", "duration": 3600, "notes": "test treatments no date", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_device_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+B {"eventType": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test treatments missing device", "app": "test-app"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_app_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+B {"eventType": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test treatments missing app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_with_jwt_read_token_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test treatments with jwt read token", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ read_jwt }}
+
+
+
+######
+# SETTINGS
+######
+
+
+NAME try_get_settings_notfound_v3
+GET http://{{ .site }}/api/v3/settings/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_update_patch_settings_v3
+PATCH http://{{ .site }}/api/v3/settings/{{ dig "create_settings_v3.identifier" }}
+B {"date":  123}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_delete_notfound_settings_v3
+DELETE http://{{ .site }}/api/v3/settings/notFound
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_no_date_settings_v3
+POST http://{{ .site }}/api/v3/settings
+B {"type": "walking", "duration": 3600, "notes": "test settings no date", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_device_settings_v3
+POST http://{{ .site }}/api/v3/settings
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test settings missing device", "app": "test-app"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_missing_app_settings_v3
+POST http://{{ .site }}/api/v3/settings
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test settings missing app", "device": "test-device"}
+H Authorization: Bearer {{ jwt }}
+
+NAME try_create_with_jwt_read_token_settings_v3
+POST http://{{ .site }}/api/v3/settings
+B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test settings with jwt read token", "app": "test-app", "device": "test-device"}
+H Authorization: Bearer {{ read_jwt }}

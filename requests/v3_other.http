@@ -1,0 +1,11 @@
+NAME get_status_v3
+GET http://{{ .site }}/api/v3/status
+H Authorization: Bearer {{ jwt }}
+
+NAME get_version_v3
+GET http://{{ .site }}/api/v3/version
+H Authorization: Bearer {{ jwt }}
+
+NAME get_lastmodified_v3
+GET http://{{ .site }}/api/v3/lastmodified
+H Authorization: Bearer {{ jwt }}

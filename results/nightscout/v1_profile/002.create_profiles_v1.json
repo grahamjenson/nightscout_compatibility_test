@@ -1,0 +1,83 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/profile?token=write-0acbea8106c5420d",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "defaultProfile": "profile_2",
+        "store": {
+          "profile_2": {
+            "dia": 7
+          }
+        }
+      },
+      {
+        "defaultProfile": "profile_3",
+        "store": {
+          "profile_3": {
+            "dia": 8
+          }
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "273"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:09 GMT"
+    ],
+    "Etag": [
+      "W/\"111-uTh5cKvk/CoX8GLcDPxDSdDK8T4\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a84ea4d3fab588a5377607e",
+      "created_at": "2026-08-18T23:27:09.929Z",
+      "defaultProfile": "profile_2",
+      "store": {
+        "profile_2": {
+          "dia": 7
+        }
+      }
+    },
+    {
+      "_id": "6a84ea4d3fab588a5377607f",
+      "created_at": "2026-08-18T23:27:09.929Z",
+      "defaultProfile": "profile_3",
+      "store": {
+        "profile_3": {
+          "dia": 8
+        }
+      }
+    }
+  ],
+  "durationMs": 3
+}

@@ -1,0 +1,528 @@
+#####
+# CREATE
+#####
+
+NAME create_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "asd",
+  "eventType": "Meal Bolus",
+  "created_at": "{{ .time_0 }}",
+
+  "glucose": 148,
+  "glucoseType": "Sensor",
+
+  "carbs": 45,
+  "insulin": 4.2,
+
+  "duration": 0,
+
+  "notes": "Lunch pasta + insulin pre-bolus",
+  "enteredBy": "aaps-loop",
+
+  "treatments": "treatments_1",
+  "percentage": 10,
+  "absolute": null,
+
+  "reason": "lunch",
+  "targetTop": 110,
+  "targetBottom": 85
+ }
+
+
+NAME create_put_treatments_v3
+PUT http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier"  }}custom
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "asd",
+  "eventType": "Temp Basal",
+  "created_at": "{{ time 0 }}",
+
+  "glucose": 148,
+  "glucoseType": "Sensor",
+
+  "carbs": 45,
+  "insulin": 4.2,
+
+  "duration": 0,
+
+  "notes": "Lunch pasta + insulin pre-bolus",
+  "enteredBy": "aaps-loop",
+
+  "treatments": "treatments_1",
+  "percentage": 10,
+  "absolute": null,
+
+  "reason": "lunch",
+  "targetTop": 110,
+  "targetBottom": 85
+ }
+
+NAME create_correction_bolus_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Correction Bolus", "created_at": "{{ time 1 }}", "insulin": 4.2, "reason": "1" } 
+
+NAME create_meal_bolus_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Meal Bolus", "created_at": "{{ time 2 }}", "insulin": 2, "reason": "2" }
+
+NAME create_carb_correction_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Carb Correction", "created_at": "{{ time 3 }}", "insulin": 2, "reason": "3" }
+
+NAME create_temp_basal_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Temp Basal", "created_at": "{{ time 4 }}", "insulin": 2, "reason": "4" }
+
+NAME create_profile_switch_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Profile Switch", "created_at": "{{ time 5 }}", "insulin": 2, "reason": "5" }
+
+NAME create_site_change_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Site Change", "created_at": "{{ time 6 }}", "insulin": 2, "reason": "6" }
+
+NAME create_sensor_start_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Sensor Start", "created_at": "{{ time 7 }}", "insulin": 2, "reason": "7" }
+
+NAME create_note_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Note", "created_at": "{{ time 8 }}", "insulin": 2, "reason": "8" }
+
+NAME create_announcement_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd","eventType": "Announcement", "created_at": "{{ time 9 }}", "insulin": 2, "reason": "9" }
+
+NAME create_question_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B { "app": "asd", "eventType": "Question", "created_at": "{{ time 10 }}", "insulin": 2, "reason": "10" }
+
+NAME create_treatment_bg_check_sensor
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "BG Check",
+  "created_at": "{{ time 1 }}",
+  "glucose": 5.8,
+  "glucoseType": "Sensor",
+  "notes": "Routine glucose check"
+ }
+
+
+NAME create_treatment_bg_check_meter
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "BG Check",
+  "created_at": "{{ time 2 }}",
+  "glucose": 6.4,
+  "glucoseType": "Finger",
+  "notes": "Fingerstick confirmation"
+ }
+
+
+NAME create_treatment_meal_bolus
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "Meal Bolus",
+  "created_at": "{{ time 3 }}",
+  "carbs": 62,
+  "insulin": 6.2,
+  "notes": "Breakfast"
+ }
+
+
+NAME create_treatment_snack_bolus
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "Snack Bolus",
+  "created_at": "{{ time 4 }}",
+  "carbs": 18,
+  "insulin": 1.8,
+  "notes": "Afternoon snack"
+ }
+
+
+NAME create_treatment_correction_bolus
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "Correction Bolus",
+  "created_at": "{{ time 5 }}",
+  "insulin": 1.4,
+  "glucose": 13.5,
+  "notes": "High glucose correction"
+ }
+
+
+NAME create_treatment_bolus_wizard
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Pump",
+  "eventType": "Bolus Wizard",
+  "created_at": "{{ time 6 }}",
+  "carbs": 75,
+  "glucose": 9.2,
+  "insulin": 7.5,
+  "insulinOnBoard": 1.1,
+  "notes": "Wizard calculation"
+ }
+
+
+NAME create_treatment_combo_bolus
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Pump",
+  "eventType": "Combo Bolus",
+  "created_at": "{{ time 7 }}",
+  "carbs": 90,
+  "insulin": 9,
+  "splitNow": 4.5,
+  "splitExt": 4.5,
+  "duration": 120
+ }
+
+
+NAME create_treatment_temp_basal_absolute
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "Temp Basal",
+  "created_at": "{{ time 8 }}",
+  "absolute": 0.4,
+  "duration": 60,
+  "reason": "Exercise"
+ }
+
+
+NAME create_treatment_temp_basal_percent
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "Temp Basal",
+  "created_at": "{{ time 9 }}",
+  "percent": -50,
+  "duration": 90,
+  "reason": "Activity"
+ }
+
+
+NAME create_treatment_temp_target
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "Temporary Target",
+  "created_at": "{{ time 10 }}",
+  "targetBottom": 7,
+  "targetTop": 8,
+  "duration": 120,
+  "reason": "Exercise"
+ }
+
+
+NAME create_treatment_profile_switch
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "Profile Switch",
+  "created_at": "{{ time 11 }}",
+  "profile": "Weekend"
+ }
+
+
+NAME create_treatment_exercise
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "Exercise",
+  "created_at": "{{ time 12 }}",
+  "duration": 45,
+  "notes": "Bike ride"
+ }
+
+
+NAME create_treatment_carbs_only
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "Carb Correction",
+  "created_at": "{{ time 13 }}",
+  "carbs": 20,
+  "notes": "Hypoglycemia treatment"
+ }
+
+
+NAME create_treatment_note
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "Note",
+  "created_at": "{{ time 14 }}",
+  "notes": "Running higher after lunch"
+ }
+
+
+NAME create_treatment_announcement
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "Announcement",
+  "created_at": "{{ time 15 }}",
+  "notes": "Going swimming today"
+ }
+
+
+NAME create_treatment_question
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "Question",
+  "created_at": "{{ time 16 }}",
+  "notes": "Should basal be adjusted overnight?"
+ }
+
+
+NAME create_treatment_sensor_start
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "xDrip",
+  "eventType": "Sensor Start",
+  "created_at": "{{ time 17 }}",
+  "notes": "Dexcom G7 sensor started"
+ }
+
+
+NAME create_treatment_sensor_change
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "xDrip",
+  "eventType": "Sensor Change",
+  "created_at": "{{ time 18 }}",
+  "notes": "New CGM sensor inserted"
+ }
+
+
+NAME create_treatment_site_change
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "Site Change",
+  "created_at": "{{ time 19 }}",
+  "notes": "Pod changed on left arm"
+ }
+
+
+NAME create_treatment_insulin_change
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Carer",
+  "eventType": "Insulin Change",
+  "created_at": "{{ time 20 }}",
+  "insulin": "NovoRapid",
+  "notes": "New insulin vial"
+ }
+
+
+NAME create_treatment_pump_battery_change
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "Pump",
+  "eventType": "Pump Battery Change",
+  "created_at": "{{ time 21 }}",
+  "notes": "Battery replaced"
+ }
+
+
+NAME create_treatment_openaps_offline
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "OpenAPS Offline",
+  "created_at": "{{ time 22 }}",
+  "reason": "Phone disconnected"
+ }
+
+
+NAME create_treatment_dad_alert
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+  "app": "AndroidAPS",
+  "eventType": "D.A.D. Alert",
+  "created_at": "{{ time 23 }}",
+  "notes": "Possible missed bolus"
+ }
+
+#####
+# READ 
+#####
+
+NAME get_treatments_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier"  }}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_v3_with_fields
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier"  }}?fields=date,sgv,notes
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatmentss_v3
+GET http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+
+NAME get_history_treatments_v3
+GET http://{{ .site }}/api/v3/treatments/history/{{ itime 30}}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_limit_v3
+GET http://{{ .site }}/api/v3/treatments?limit=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_skip_v3
+GET http://{{ .site }}/api/v3/treatments?skip=1
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_sort_date_v3
+GET http://{{ .site }}/api/v3/treatments?sort=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_sort_date_desc_v3
+GET http://{{ .site }}/api/v3/treatments?sort$desc=date
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_fields_v3
+GET http://{{ .site }}/api/v3/treatments?fields=date,sgv,notes
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_type_eq_v3
+GET http://{{ .site }}/api/v3/treatments?type$eq=sgv
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_type_ne_v3
+GET http://{{ .site }}/api/v3/treatments?type$ne=sgv
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_sgv_gt_v3
+GET http://{{ .site }}/api/v3/treatments?sgv$gt=115
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_sgv_lt_v3
+GET http://{{ .site }}/api/v3/treatments?sgv$lt=120
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_sgv_lte_v3
+GET http://{{ .site }}/api/v3/treatments?sgv$lte=120
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_type_in_v3
+GET http://{{ .site }}/api/v3/treatments?eventType$in=Temp%20Basal|Temporary%20Target
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_type_nin_v3
+GET http://{{ .site }}/api/v3/treatments?eventType$nin=Temp%20Basal|Temporary%20Target
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_re_v3
+GET http://{{ .site }}/api/v3/treatments?direction$re=Flat|Up
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_multi_query_v3
+GET http://{{ .site }}/api/v3/treatments?type$eq=Temp%20Basal
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_multi_query_in_v3
+GET http://{{ .site }}/api/v3/treatments?limit=5&skip=2&sort$desc=date&type$eq=Temp%20Basal&fields=date,sgv
+H Authorization: Bearer {{ jwt }}
+
+####
+# UPDATE
+####
+
+NAME get_treatments_before_update_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier"  }}
+H Authorization: Bearer {{ jwt }}
+
+NAME update_put_treatments_v3
+PUT http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier" }}
+B { "app": "asd", "eventType": "Meal Bolus", "created_at": "{{  .time_0 }}",  "notes": "updated by update_put_treatments_v3", "insulin": 1}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_after_put_update_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier"  }}
+H Authorization: Bearer {{ jwt }}
+
+NAME update_patch_treatments_v3
+PATCH http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier" }}
+B { "app": "asd", "eventType": "Meal Bolus", "created_at": "{{ .time_0 }}",  "notes": "updated by update_patch_treatments_v3", "glucose": 1}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_after_patch_update_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier"  }}
+H Authorization: Bearer {{ jwt }}
+
+NAME update_put_treatments_noid_v3
+PUT http://{{ .site }}/api/v3/treatments/treatmentv3t1
+B { "app": "asd", "eventType": "Meal Bolus", "created_at": "{{ time 0 }}",  "notes": "updated by update_put_treatments_v3", "insulin": 1}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_after_put_noid_update_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "update_put_treatments_noid_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME update_patch_treatments_noid_v3
+PATCH http://{{ .site }}/api/v3/treatments/treatmentv3t2
+B { "app": "asd", "eventType": "Meal Bolus", "created_at": "{{ time 0 }}",  "notes": "updated by update_patch_treatments_v3", "glucose": 1}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_after_patch_update_noid_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "update_patch_treatments_noid_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_treatments_v3
+DELETE http://{{ .site }}/api/v3/treatments/{{ dig "create_treatments_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME delete_treatments2_v3
+DELETE http://{{ .site }}/api/v3/treatments/{{ dig "create_put_treatments_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}

@@ -1,0 +1,59 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/settings/language",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "240"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": {
+      "app": "asd",
+      "created_at": "2026-08-18T23:27:10.000Z",
+      "date": 1787095630000,
+      "identifier": "language",
+      "srvCreated": 1787095630725,
+      "srvModified": 1787095630725,
+      "subject": "write",
+      "type": "string",
+      "utcOffset": 720,
+      "value": "en"
+    },
+    "status": 200
+  },
+  "durationMs": 2
+}

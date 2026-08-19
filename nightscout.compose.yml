@@ -1,0 +1,27 @@
+services:
+  nightscout:
+    image: nightscout/cgm-remote-monitor:latest
+    container_name: nightscout
+    restart: always
+    ports:
+      - "1337:1337"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_CONNECTION=mongodb://mongo_user:secure_password@mongo:27017/nightscout?authSource=admin
+      - API_SECRET=aaaaaaaaaaaa
+      - DISPLAY_UNITS=mmmol/L
+      - ENABLE=careportal treatmentprofile bgnow delta direction upbat openaps profile
+      - TZ=UTC
+      - NODE_ENV=production
+      - INSECURE_COOKIE=true
+      - HTTP_ONLY=true
+      - INSECURE_USE_HTTP=true
+  mongo:
+    image: mongo:6.0
+    container_name: nightscout_db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo_user
+      - MONGO_INITDB_ROOT_PASSWORD=secure_password
+    tmpfs:
+      - /data/db

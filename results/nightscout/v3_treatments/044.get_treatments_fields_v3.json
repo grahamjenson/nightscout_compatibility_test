@@ -1,0 +1,275 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/treatments?fields=date,sgv,notes",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "notes": "Pizza"
+      },
+      {
+        "notes": "Automatic correction"
+      },
+      {},
+      {},
+      {
+        "notes": "Filled with 200U"
+      },
+      {},
+      {},
+      {},
+      {
+        "notes": "Possible missed bolus"
+      },
+      {},
+      {},
+      {
+        "notes": "Dexcom G7 sensor replaced."
+      },
+      {
+        "notes": "Forgot pre-bolus"
+      },
+      {
+        "notes": "Should I extend temp target?"
+      },
+      {
+        "notes": "Battery replaced."
+      },
+      {
+        "notes": "Travelling today"
+      },
+      {},
+      {
+        "notes": "Started new pen"
+      },
+      {},
+      {},
+      {},
+      {
+        "notes": "Right thigh"
+      },
+      {
+        "notes": "Started new insulin vial."
+      },
+      {
+        "notes": "New sensor inserted"
+      },
+      {
+        "notes": "Soccer training"
+      },
+      {
+        "notes": "Dexcom G7"
+      },
+      {
+        "notes": "Missed meal bolus detected."
+      },
+      {
+        "notes": "Activated manually"
+      },
+      {},
+      {},
+      {},
+      {
+        "notes": "Mountain biking"
+      },
+      {
+        "notes": "Treated mild low"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "notes": "School swimming lesson today."
+      },
+      {},
+      {
+        "notes": "Running higher than usual after breakfast."
+      },
+      {
+        "notes": "Hypo treatment"
+      },
+      {
+        "notes": "Started new CGM sensor."
+      },
+      {},
+      {
+        "notes": "Pump cannula moved to left arm."
+      },
+      {
+        "notes": "Suggested by pump wizard"
+      },
+      {},
+      {},
+      {
+        "notes": "Afternoon snack"
+      },
+      {},
+      {},
+      {},
+      {
+        "date": 1787095090000
+      },
+      {
+        "date": 1787095270000,
+        "notes": "Wizard calculation"
+      },
+      {
+        "date": 1787095510000
+      },
+      {
+        "date": 1787095150000
+      },
+      {
+        "date": 1787094730000,
+        "notes": "Going swimming today"
+      },
+      {
+        "date": 1787095030000
+      },
+      {
+        "date": 1787094370000,
+        "notes": "Battery replaced"
+      },
+      {
+        "date": 1787094610000,
+        "notes": "Dexcom G7 sensor started"
+      },
+      {
+        "date": 1787095270000
+      },
+      {
+        "date": 1787095570000,
+        "notes": "Routine glucose check"
+      },
+      {
+        "date": 1787094490000,
+        "notes": "Pod changed on left arm"
+      },
+      {
+        "date": 1787095390000,
+        "notes": "Afternoon snack"
+      },
+      {
+        "date": 1787095390000
+      },
+      {
+        "date": 1787094550000,
+        "notes": "New CGM sensor inserted"
+      },
+      {
+        "date": 1787095330000,
+        "notes": "High glucose correction"
+      },
+      {
+        "date": 1787095150000
+      },
+      {
+        "date": 1787094910000,
+        "notes": "Bike ride"
+      },
+      {
+        "date": 1787094670000,
+        "notes": "Should basal be adjusted overnight?"
+      },
+      {
+        "date": 1787094430000,
+        "notes": "New insulin vial"
+      },
+      {
+        "date": 1787095629000,
+        "notes": "Lunch pasta + insulin pre-bolus"
+      },
+      {
+        "date": 1787095630000,
+        "notes": "Lunch pasta + insulin pre-bolus"
+      },
+      {
+        "date": 1787095450000
+      },
+      {
+        "date": 1787094790000,
+        "notes": "Running higher after lunch"
+      },
+      {
+        "date": 1787094250000,
+        "notes": "Possible missed bolus"
+      },
+      {
+        "date": 1787094310000
+      },
+      {
+        "date": 1787094970000
+      },
+      {
+        "date": 1787095570000
+      },
+      {
+        "date": 1787095090000
+      },
+      {
+        "date": 1787095030000
+      },
+      {
+        "date": 1787095450000,
+        "notes": "Breakfast"
+      },
+      {
+        "date": 1787094850000,
+        "notes": "Hypoglycemia treatment"
+      },
+      {
+        "date": 1787095330000
+      },
+      {
+        "date": 1787095510000,
+        "notes": "Fingerstick confirmation"
+      },
+      {
+        "date": 1787095210000
+      },
+      {
+        "date": 1787095210000
+      },
+      {
+        "notes": "updated by update_put_root_treatments_noid_v1"
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 5
+}

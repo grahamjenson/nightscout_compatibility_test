@@ -1,0 +1,99 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/food?type$eq=sgv&sgv$gte=100&sgv$lte=130",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Length": [
+      "1141"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "app": "asd",
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-08-18T23:38:15.403Z",
+        "date": 1787096295403,
+        "energy": 105,
+        "fat": 0.3,
+        "identifier": "K3cF4kS1custom",
+        "isValid": true,
+        "name": "Banana2Again",
+        "protein": 1.3,
+        "srvCreated": 1787096295403,
+        "srvModified": 1787096295403,
+        "subcategory": "Fruit",
+        "subject": "pwd_phone",
+        "utcOffset": 0
+      },
+      {
+        "app": "asd",
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-08-18T23:38:15.402Z",
+        "date": 1787096295402,
+        "energy": 105,
+        "fat": 0.3,
+        "identifier": "K3cF4kS1",
+        "isValid": true,
+        "name": "Banana2",
+        "protein": 1.3,
+        "srvCreated": 1787096295402,
+        "srvModified": 1787096295402,
+        "subcategory": "Fruit",
+        "subject": "pwd_phone",
+        "utcOffset": 0
+      },
+      {
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-08-18T23:38:15.33Z",
+        "date": 1787096295330,
+        "identifier": "uhzB1SX8",
+        "isValid": true,
+        "name": "Banana2",
+        "srvCreated": 1787096295330,
+        "srvModified": 1787096295330,
+        "subject": "pwd_phone",
+        "utcOffset": 0
+      },
+      {
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-08-18T23:38:15.33Z",
+        "date": 1787096295330,
+        "identifier": "wvqkvM0a",
+        "isValid": true,
+        "name": "Banana3",
+        "srvCreated": 1787096295330,
+        "srvModified": 1787096295330,
+        "subject": "pwd_phone",
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 0
+}

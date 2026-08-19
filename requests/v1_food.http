@@ -1,0 +1,35 @@
+#####
+# CREATE
+#####
+
+NAME create_food_v1
+POST http://{{ .site }}/api/v1/food?token={{ token }}
+B { "name": "Banana", "category": "Snacks", "subcategory": "Fruit", "portion": 1, "unit": "serving", "carbs": 27, "fat": 0.3, "protein": 1.3, "energy": 105, "gi": 51 }
+
+NAME create_foods_v1
+POST http://{{ .site }}/api/v1/food?token={{ token }}
+B [{ "name": "Banana2", "category": "Snacks", "carbs": 27 },{ "name": "Banana3", "category": "Snacks", "carbs": 27 } ]
+
+#####
+# READ 
+#####
+
+NAME get_foodes_find_device_v1
+GET http://{{ .site }}/api/v1/food?token={{ token }}&find[device]=aaps
+
+NAME get_foodes_find_id_v1
+GET http://{{ .site }}/api/v1/food?token={{ token }}&find[_id]={{ dig "create_food_v1.0._id"  }}
+
+NAME get_foodes_v1
+GET http://{{ .site }}/api/v1/food?token={{ token }}
+
+####
+# UPDATE
+####
+
+#####
+# DELETE/CLEAN UP
+#####
+
+NAME delete_food_v1
+DELETE http://{{ .site }}/api/v1/food/{{ dig "create_food_v1.0._id" }}?token={{ token }}

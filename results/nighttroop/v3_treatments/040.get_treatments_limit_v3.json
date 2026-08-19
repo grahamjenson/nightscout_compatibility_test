@@ -1,0 +1,51 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/treatments?limit=1",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Length": [
+      "328"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "carbs": 1,
+        "created_at": "2026-08-18T23:38:15Z",
+        "date": 1787096295000,
+        "enteredBy": "pwd_phone",
+        "eventType": "Meal Bolus",
+        "identifier": "i23zIHYa",
+        "isValid": false,
+        "notes": "updated by update_put_root_treatments_v1",
+        "srvCreated": 1787096295356,
+        "srvModified": 1787096295356,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 0
+}

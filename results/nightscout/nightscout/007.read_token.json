@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "",
+    "path": "",
+    "url": "",
+    "headers": null,
+    "body": null
+  },
+  "statusCode": 0,
+  "headers": null,
+  "body": "read-00fe94ad1cd2baaf",
+  "durationMs": 0
+}

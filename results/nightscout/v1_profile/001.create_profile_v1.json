@@ -1,0 +1,259 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/profile?token=write-0acbea8106c5420d",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "defaultProfile": "profile_1",
+      "mills": 1787095629853,
+      "startDate": "2026-08-19T11:26:09+12:00",
+      "store": {
+        "profile_1": {
+          "basal": [
+            {
+              "time": "00:00",
+              "value": 0.9
+            },
+            {
+              "time": "03:00",
+              "value": 0.85
+            },
+            {
+              "time": "06:00",
+              "value": 0.8
+            },
+            {
+              "time": "12:00",
+              "value": 0.75
+            },
+            {
+              "time": "18:00",
+              "value": 0.85
+            }
+          ],
+          "carbratio": [
+            {
+              "time": "00:00",
+              "value": 12
+            },
+            {
+              "time": "06:00",
+              "value": 10
+            },
+            {
+              "time": "12:00",
+              "value": 11
+            },
+            {
+              "time": "18:00",
+              "value": 13
+            }
+          ],
+          "dia": 6,
+          "sens": [
+            {
+              "time": "00:00",
+              "value": 2.5
+            },
+            {
+              "time": "06:00",
+              "value": 2.2
+            },
+            {
+              "time": "12:00",
+              "value": 2
+            },
+            {
+              "time": "18:00",
+              "value": 2.3
+            }
+          ],
+          "target_high": [
+            {
+              "time": "00:00",
+              "value": 6.1
+            },
+            {
+              "time": "06:00",
+              "value": 5.8
+            },
+            {
+              "time": "12:00",
+              "value": 6.1
+            },
+            {
+              "time": "18:00",
+              "value": 6.7
+            }
+          ],
+          "target_low": [
+            {
+              "time": "00:00",
+              "value": 5
+            },
+            {
+              "time": "06:00",
+              "value": 4.7
+            },
+            {
+              "time": "12:00",
+              "value": 5
+            },
+            {
+              "time": "18:00",
+              "value": 5.3
+            }
+          ],
+          "timezone": "Pacific/Auckland",
+          "units": "mmol"
+        }
+      }
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "910"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:09 GMT"
+    ],
+    "Etag": [
+      "W/\"38e-ZnEB1bI24xXef8UYQyoiD/Gt7cc\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a84ea4d3fab588a5377607d",
+      "created_at": "2026-08-18T23:27:09.925Z",
+      "defaultProfile": "profile_1",
+      "mills": 1787095629853,
+      "startDate": "2026-08-19T11:26:09+12:00",
+      "store": {
+        "profile_1": {
+          "basal": [
+            {
+              "time": "00:00",
+              "value": 0.9
+            },
+            {
+              "time": "03:00",
+              "value": 0.85
+            },
+            {
+              "time": "06:00",
+              "value": 0.8
+            },
+            {
+              "time": "12:00",
+              "value": 0.75
+            },
+            {
+              "time": "18:00",
+              "value": 0.85
+            }
+          ],
+          "carbratio": [
+            {
+              "time": "00:00",
+              "value": 12
+            },
+            {
+              "time": "06:00",
+              "value": 10
+            },
+            {
+              "time": "12:00",
+              "value": 11
+            },
+            {
+              "time": "18:00",
+              "value": 13
+            }
+          ],
+          "dia": 6,
+          "sens": [
+            {
+              "time": "00:00",
+              "value": 2.5
+            },
+            {
+              "time": "06:00",
+              "value": 2.2
+            },
+            {
+              "time": "12:00",
+              "value": 2
+            },
+            {
+              "time": "18:00",
+              "value": 2.3
+            }
+          ],
+          "target_high": [
+            {
+              "time": "00:00",
+              "value": 6.1
+            },
+            {
+              "time": "06:00",
+              "value": 5.8
+            },
+            {
+              "time": "12:00",
+              "value": 6.1
+            },
+            {
+              "time": "18:00",
+              "value": 6.7
+            }
+          ],
+          "target_low": [
+            {
+              "time": "00:00",
+              "value": 5
+            },
+            {
+              "time": "06:00",
+              "value": 4.7
+            },
+            {
+              "time": "12:00",
+              "value": 5
+            },
+            {
+              "time": "18:00",
+              "value": 5.3
+            }
+          ],
+          "timezone": "Pacific/Auckland",
+          "units": "mmol"
+        }
+      }
+    }
+  ],
+  "durationMs": 4
+}

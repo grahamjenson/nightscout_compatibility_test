@@ -1,0 +1,59 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/treatments",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "AndroidAPS",
+      "created_at": "2026-08-19T11:18:10+12:00",
+      "duration": 90,
+      "eventType": "Temp Basal",
+      "percent": -50,
+      "reason": "Activity"
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "95"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/be3e7d1c-b3b3-55a7-aa4c-e22499f8b2a6"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "identifier": "be3e7d1c-b3b3-55a7-aa4c-e22499f8b2a6",
+    "lastModified": 1787095630551,
+    "status": 201
+  },
+  "durationMs": 3
+}

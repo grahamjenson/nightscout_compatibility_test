@@ -1,0 +1,79 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/treatments",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "absolute": null,
+      "app": "asd",
+      "carbs": 45,
+      "created_at": "2026-08-19T11:38:15+12:00",
+      "duration": 0,
+      "enteredBy": "aaps-loop",
+      "eventType": "Meal Bolus",
+      "glucose": 148,
+      "glucoseType": "Sensor",
+      "insulin": 4.2,
+      "notes": "Lunch pasta + insulin pre-bolus",
+      "percentage": 10,
+      "reason": "lunch",
+      "targetBottom": 85,
+      "targetTop": 110,
+      "treatments": "treatments_1"
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Content-Length": [
+      "447"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/OD8Gbv7a"
+    ]
+  },
+  "body": {
+    "identifier": "OD8Gbv7a",
+    "lastModified": 1787096295518,
+    "result": {
+      "app": "asd",
+      "carbs": 45,
+      "created_at": "2026-08-18T23:38:15Z",
+      "date": 1787096295000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "glucose": 148,
+      "glucoseType": "sgv",
+      "identifier": "OD8Gbv7a",
+      "insulin": 4.2,
+      "isValid": true,
+      "notes": "Lunch pasta + insulin pre-bolus",
+      "reason": "lunch",
+      "srvCreated": 1787096295518,
+      "srvModified": 1787096295518,
+      "subject": "pwd_phone",
+      "utcOffset": 720
+    },
+    "status": 201
+  },
+  "durationMs": 0
+}

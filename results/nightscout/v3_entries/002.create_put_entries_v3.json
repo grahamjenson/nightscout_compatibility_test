@@ -1,0 +1,66 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/entries/9bfcba59-e363-5098-b501-c2e2e2687992custom",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "date": 1787095510142,
+      "dateString": "2026-08-19T11:27:10+12:00",
+      "device": "test-device",
+      "direction": "Flat",
+      "filtered": 139.2,
+      "mills": 1787095630142,
+      "noise": 1,
+      "rssi": -62,
+      "sgv": 100,
+      "trend": 3,
+      "type": "sgv",
+      "unfiltered": 141.7
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "101"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Location": [
+      "/api/v3/entries/9bfcba59-e363-5098-b501-c2e2e2687992custom/9bfcba59-e363-5098-b501-c2e2e2687992custom"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "identifier": "9bfcba59-e363-5098-b501-c2e2e2687992custom",
+    "lastModified": 1787095630214,
+    "status": 201
+  },
+  "durationMs": 3
+}

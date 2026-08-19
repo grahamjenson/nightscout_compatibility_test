@@ -1,0 +1,198 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v3/devicestatus?direction$re=Flat|Up",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Length": [
+      "1923"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "created_at": "2026-08-18T23:38:15Z",
+        "date": 1787096295000,
+        "device": "aaps",
+        "identifier": "e6YjCgWQ",
+        "isValid": false,
+        "loop": {
+          "cob": {
+            "cob": 18
+          },
+          "iob": {
+            "iob": 1.73
+          },
+          "predicted": {
+            "values": [
+              112,
+              114,
+              117,
+              120,
+              123,
+              126
+            ]
+          }
+        },
+        "pump": {
+          "battery": {
+            "percent": 68
+          },
+          "reservoir": 97.4
+        },
+        "srvCreated": 1787096295312,
+        "srvModified": 1787096295312,
+        "subject": "pwd_phone",
+        "uploaderBattery": 87,
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:38:15Z",
+        "date": 1787096295000,
+        "device": "aaps",
+        "identifier": "qn4kNSzk",
+        "isValid": true,
+        "loop": {
+          "cob": {
+            "cob": 18
+          },
+          "iob": {
+            "iob": 1.73
+          },
+          "predicted": {
+            "values": [
+              112,
+              114,
+              117,
+              120,
+              123,
+              126
+            ]
+          }
+        },
+        "pump": {
+          "battery": {
+            "percent": 68
+          },
+          "reservoir": 97.4
+        },
+        "srvCreated": 1787096295365,
+        "srvModified": 1787096295365,
+        "subject": "pwd_phone",
+        "uploaderBattery": 87,
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:37:15Z",
+        "date": 1787096235000,
+        "device": "aaps1",
+        "identifier": "93IPApzX",
+        "isValid": true,
+        "srvCreated": 1787096295313,
+        "srvModified": 1787096295313,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-18T23:37:15Z",
+        "date": 1787096235000,
+        "device": "aapsv3",
+        "identifier": "qn4kNSzkcustom",
+        "isValid": true,
+        "srvCreated": 1787096295365,
+        "srvModified": 1787096295365,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-18T23:36:15Z",
+        "date": 1787096175000,
+        "device": "aaps",
+        "identifier": "UPsn78ZU",
+        "isValid": true,
+        "srvCreated": 1787096295313,
+        "srvModified": 1787096295313,
+        "subject": "pwd_phone",
+        "utcOffset": 720
+      },
+      {
+        "app": "AAPS",
+        "created_at": "2026-08-16T22:39:48.777Z",
+        "date": 1786919988777,
+        "device": "openaps://CUBOT KINGKONG MINI 3",
+        "identifier": "1tUPt72U",
+        "isCharging": false,
+        "isValid": true,
+        "openaps": {
+          "iob": {
+            "basaliob": -0.332,
+            "iob": 0.736
+          },
+          "suggested": {
+            "COB": 0,
+            "predBGs": {
+              "IOB": [
+                150,
+                144,
+                138,
+                132,
+                126,
+                120,
+                115,
+                109,
+                104,
+                99,
+                94,
+                89,
+                85,
+                80,
+                76,
+                71,
+                67,
+                62,
+                58,
+                53,
+                49,
+                44,
+                40,
+                39
+              ]
+            }
+          }
+        },
+        "pump": {
+          "reservoir": 38
+        },
+        "srvCreated": 1787096295316,
+        "srvModified": 1787096295316,
+        "subject": "pwd_phone",
+        "uploaderBattery": 88,
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 0
+}

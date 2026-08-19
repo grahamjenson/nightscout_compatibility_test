@@ -1,0 +1,126 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/profile?limit=1",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "1006"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:10 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "created_at": "2017-07-02T00:25:33.154Z",
+        "defaultProfile": "Default",
+        "identifier": "6a84ea4d3fab588a53776080",
+        "mills": "1498954920000",
+        "srvCreated": 1498955133154,
+        "srvModified": 1498955133154,
+        "startDate": "2017-07-02T00:22:00.000Z",
+        "store": {
+          "Default": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "0.35"
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": "10800",
+                "value": "0.35"
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": "18000",
+                "value": "0.35"
+              },
+              {
+                "time": "07:00",
+                "timeAsSeconds": "25200",
+                "value": "0.3"
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": "61200",
+                "value": "0.45"
+              },
+              {
+                "time": "19:00",
+                "timeAsSeconds": "68400",
+                "value": "0.35"
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "33"
+              }
+            ],
+            "carbs_hr": "20",
+            "delay": "20",
+            "dia": "5",
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "110"
+              }
+            ],
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "100"
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": "0",
+                "value": "100"
+              }
+            ],
+            "timezone": "US/Eastern",
+            "units": "mg/dl"
+          }
+        },
+        "units": "mg/dl"
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 2
+}

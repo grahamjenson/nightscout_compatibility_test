@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "",
+    "path": "",
+    "url": "",
+    "headers": null,
+    "body": null
+  },
+  "statusCode": 0,
+  "headers": null,
+  "body": "localhost:1337",
+  "durationMs": 0
+}

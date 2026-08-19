@@ -1,0 +1,7 @@
+echo -n "aaaaaaaaaaaa" | sha1sum | awk '{print $1}'
+
+curl -X POST -H "Content-Type: application/json" -H "api-secret: 384fcd160ab3b33174ea279ad26052eee191508a" http://localhost:1337/api/v2/authorization/subjects -d '{"name": "test", "roles": ["admin"]}'
+
+curl -H "Content-Type: application/json" -H "api-secret: 384fcd160ab3b33174ea279ad26052eee191508a" http://localhost:1337/api/v2/authorization/subjects 
+
+curl -H "Content-Type: application/json" http://localhost:1337/api/v2/authorization/request/token=test-a2f51a59d1cad28a

@@ -1,0 +1,117 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/devicestatus?token=write-0acbea8106c5420d&find[device]=aaps",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "887"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:27:09 GMT"
+    ],
+    "Etag": [
+      "W/\"377-kMpDQS9bsMNcs1OP+xuszwyvWZM\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a84ea4d3fab588a53776079",
+      "created_at": "2026-08-18T23:27:09.000Z",
+      "device": "aaps",
+      "loop": {
+        "cob": {
+          "cob": 18
+        },
+        "enacted": {
+          "duration": 30,
+          "rate": 1.2,
+          "reason": "BG rising faster than expected"
+        },
+        "failureReason": "",
+        "iob": {
+          "devicestatus": 0.024,
+          "iob": 1.73
+        },
+        "predicted": {
+          "values": [
+            112,
+            114,
+            117,
+            120,
+            123,
+            126
+          ]
+        },
+        "timestamp": "2026-06-16T08:42:00Z"
+      },
+      "openaps": {
+        "enacted": {
+          "duration": 30,
+          "rate": 1.2,
+          "timestamp": "2026-06-16T08:42:00Z"
+        },
+        "suggested": {
+          "duration": 30,
+          "rate": 1.2,
+          "reason": "Eventual BG 126",
+          "timestamp": "2026-06-16T08:41:55Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 68,
+          "voltage": 1.42
+        },
+        "clock": "2026-06-16T08:42:15Z",
+        "reservoir": 97.4,
+        "status": {
+          "bolusing": false,
+          "suspended": false
+        }
+      },
+      "uploader": {
+        "battery": 87,
+        "batteryVoltage": 4.05
+      },
+      "utcOffset": 720
+    },
+    {
+      "_id": "6a84ea4d3fab588a5377607b",
+      "created_at": "2026-08-18T23:25:09.000Z",
+      "device": "aaps",
+      "uploader": {
+        "battery": 87,
+        "batteryVoltage": 4.05
+      },
+      "utcOffset": 720
+    }
+  ],
+  "durationMs": 5
+}

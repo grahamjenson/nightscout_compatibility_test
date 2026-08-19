@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://evezzzzz.ns.localhost:8080/api/v1/treatments?token=QWNlRzVYckRUWGppUmZVS3JLYnJqWmNnZjI0bjIvVE5mMnl4U0tNSVJXUUtoY29uUVRZYTAzeFlJa21sUTNSYlh5QlZhb2FTQ1RSVm5aa3prbDZWdVB4bEkxQlJFcFBockxSSTZuSQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "_id": "treatmentv1t1",
+      "carbs": 1,
+      "created_at": "2026-08-19T11:38:15+12:00",
+      "eventType": "Meal Bolus",
+      "notes": "updated by update_put_root_treatments_noid_v1"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Length": [
+      "213"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Tue, 18 Aug 2026 23:38:15 GMT"
+    ]
+  },
+  "body": {
+    "_id": "treatmentv1t1",
+    "carbs": 1,
+    "created_at": "2026-08-18T23:38:15Z",
+    "enteredBy": "pwd_phone",
+    "eventType": "Meal Bolus",
+    "notes": "updated by update_put_root_treatments_noid_v1",
+    "subject": "pwd_phone",
+    "utcOffset": 720
+  },
+  "durationMs": 0
+}
