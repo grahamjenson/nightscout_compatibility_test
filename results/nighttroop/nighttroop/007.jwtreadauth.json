@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://evezzzzz.ns.localhost:8080/api/v2/authorization/request/token=QWNlRzVYb0pSRkUrNS80T0xmbnpicXZIbDc0ZHFSejliY0MxSG1QOVA2bDhoTmYxMDBmYWVVbm51R0ZHQ0w0SzNvVWxLUlI2SStHRXFEZTBjY3BaaUNXUGhGT1RIN2pD",
+    "url": "http://alicezzz.ns.localhost:8080/api/v2/authorization/request/token=QWNlRzVYcGtZcURMdEYxWXpILzJMRHdHajVlTU5Tb29uU2MrY0lYbzJCYXdXQitsekxTWnhRaE96cXE1Qkd3dFNxZFdZVVNqeVQxRHQwSWZraHlLcVVMRE9qVFlIM3Jm",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,19 +22,19 @@
       "application/json"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:38:15 GMT"
+      "Thu, 20 Aug 2026 05:06:12 GMT"
     ]
   },
   "body": {
-    "exp": 1787099895,
-    "iat": 1787096295,
+    "exp": 1787205972,
+    "iat": 1787202372,
     "permissionGroups": [
       [
         "api:*:read"
       ]
     ],
     "sub": "read_only",
-    "token": "eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcmVhZCIsICJzdWIiOiJyZWFkX29ubHkifQ._UflS66-PEKKj8H-OaMA4_XJ0TgY6SwYDIvhC5LIsas"
+    "token": "eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcmVhZCIsICJzdWIiOiJyZWFkX29ubHkifQ.rvaHFL9NVsr7PXH0rfMC3eq6ElCh2XhzSX1rlRFMChI"
   },
-  "durationMs": 63
+  "durationMs": 64
 }

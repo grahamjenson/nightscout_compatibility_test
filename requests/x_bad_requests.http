@@ -320,13 +320,13 @@ H Authorization: Bearer {{ jwt }}
 
 NAME try_create_missing_device_treatments_v3
 POST http://{{ .site }}/api/v3/treatments
-B {"eventType": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test treatments missing device", "app": "test-app"}
 H Authorization: Bearer {{ jwt }}
+B {"eventType": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test treatments missing device", "app": "test-app"}
 
 NAME try_create_missing_app_treatments_v3
 POST http://{{ .site }}/api/v3/treatments
-B {"eventType": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test treatments missing app", "device": "test-device"}
 H Authorization: Bearer {{ jwt }}
+B {"eventType": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test treatments missing app", "device": "test-device"}
 
 NAME try_create_with_jwt_read_token_treatments_v3
 POST http://{{ .site }}/api/v3/treatments

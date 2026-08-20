@@ -2,13 +2,13 @@
   "request": {
     "method": "DELETE",
     "path": "",
-    "url": "http://evezzzzz.ns.localhost:8080/api/v3/treatments/OD8Gbv7a",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments/RDV1g558",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
       ],
       "Content-Type": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:38:15 GMT"
+      "Thu, 20 Aug 2026 05:06:12 GMT"
     ]
   },
   "body": {

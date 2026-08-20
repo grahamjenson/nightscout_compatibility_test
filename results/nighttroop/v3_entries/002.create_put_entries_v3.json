@@ -2,13 +2,13 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://evezzzzz.ns.localhost:8080/api/v3/entries/CCxBMwYCcustom",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/entries/7Xz9WU26custom",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
       ],
       "Content-Type": [
         "application/json"
@@ -16,12 +16,12 @@
     },
     "body": {
       "app": "test-app",
-      "date": 1787096175376,
-      "dateString": "2026-08-19T11:38:15+12:00",
+      "date": 1787202252393,
+      "dateString": "2026-08-20T17:06:12+12:00",
       "device": "test-device",
       "direction": "Flat",
       "filtered": 139.2,
-      "mills": 1787096295376,
+      "mills": 1787202372393,
       "noise": 1,
       "rssi": -62,
       "sgv": 100,
@@ -33,35 +33,41 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "406"
+      "492"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:38:15 GMT"
+      "Thu, 20 Aug 2026 05:06:12 GMT"
     ],
     "Last-Modified": [
-      "Tue, 18 Aug 2026 23:38:15 GMT"
+      "Thu, 20 Aug 2026 05:06:12 GMT"
     ]
   },
   "body": {
-    "identifier": "CCxBMwYCcustom",
-    "lastModified": 1787096295376,
+    "identifier": "7Xz9WU26custom",
+    "lastModified": 1787202372393,
     "result": {
       "app": "test-app",
-      "created_at": "2026-08-18T23:38:15Z",
-      "date": 1787096295000,
-      "dateString": "2026-08-19T11:38:15+12:00",
+      "created_at": "2026-08-20T05:06:12Z",
+      "date": 1787202372000,
+      "dateString": "2026-08-20T17:06:12+12:00",
       "device": "test-device",
-      "identifier": "CCxBMwYCcustom",
+      "direction": "Flat",
+      "filtered": 139.2,
+      "identifier": "7Xz9WU26custom",
       "isValid": true,
-      "mills": 1787096295000,
+      "mills": 1787202372000,
+      "noise": 1,
+      "rssi": -62,
       "sgv": 100,
-      "srvCreated": 1787096295376,
-      "srvModified": 1787096295376,
+      "srvCreated": 1787202372393,
+      "srvModified": 1787202372393,
       "subject": "pwd_phone",
+      "trend": 3,
       "type": "sgv",
+      "unfiltered": 141.7,
       "utcOffset": 720
     },
     "status": 201

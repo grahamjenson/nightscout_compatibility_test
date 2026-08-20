@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://evezzzzz.ns.localhost:8080/api/v1/food?token=QWNlRzVYckRUWGppUmZVS3JLYnJqWmNnZjI0bjIvVE5mMnl4U0tNSVJXUUtoY29uUVRZYTAzeFlJa21sUTNSYlh5QlZhb2FTQ1RSVm5aa3prbDZWdVB4bEkxQlJFcFBockxSSTZuSQ",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/food?token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -27,30 +27,30 @@
   "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "286"
+      "288"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:38:15 GMT"
+      "Thu, 20 Aug 2026 05:06:12 GMT"
     ]
   },
   "body": [
     {
-      "_id": "uhzB1SX8",
+      "_id": "iy4XCI3G",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-08-18T23:38:15.33Z",
+      "created_at": "2026-08-20T05:06:12.331Z",
       "name": "Banana2",
       "subject": "pwd_phone",
       "utcOffset": 0
     },
     {
-      "_id": "wvqkvM0a",
+      "_id": "V8TNCR10",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-08-18T23:38:15.33Z",
+      "created_at": "2026-08-20T05:06:12.332Z",
       "name": "Banana3",
       "subject": "pwd_phone",
       "utcOffset": 0

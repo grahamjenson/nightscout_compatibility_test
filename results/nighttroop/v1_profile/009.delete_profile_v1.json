@@ -2,7 +2,7 @@
   "request": {
     "method": "DELETE",
     "path": "",
-    "url": "http://evezzzzz.ns.localhost:8080/api/v1/profile/\u003cno value\u003e?token=QWNlRzVYckRUWGppUmZVS3JLYnJqWmNnZjI0bjIvVE5mMnl4U0tNSVJXUUtoY29uUVRZYTAzeFlJa21sUTNSYlh5QlZhb2FTQ1RSVm5aa3prbDZWdVB4bEkxQlJFcFBockxSSTZuSQ",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/profile/\u003cno value\u003e?token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,7 +22,7 @@
       "application/json"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:38:15 GMT"
+      "Thu, 20 Aug 2026 05:06:12 GMT"
     ]
   },
   "body": {

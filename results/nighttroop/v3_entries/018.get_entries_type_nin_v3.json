@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://evezzzzz.ns.localhost:8080/api/v3/entries?type$nin=mbg",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/entries?type$nin=mbg",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzA5OTg5NSwgImlhdCI6MTc4NzA5NjI5NSwgImlzcyI6ImV2ZXp6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.c9nu_P3y4QriSgPqFYGF35KMupAUaItEetz9_U3M_w0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
       ],
       "Content-Type": [
         "application/json"
@@ -18,95 +18,138 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "1580"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:38:15 GMT"
+      "Thu, 20 Aug 2026 05:06:12 GMT"
     ]
   },
   "body": {
     "result": [
       {
-        "created_at": "2026-08-18T23:38:15.317Z",
-        "date": 1787096295317,
-        "dateString": "2026-08-18T23:38:15.317Z",
-        "identifier": "s0GN7IN1",
+        "created_at": "2026-08-20T05:06:12.318Z",
+        "date": 1787202372318,
+        "dateString": "2026-08-20T05:06:12.318Z",
+        "identifier": "50KU434O",
         "isValid": true,
-        "mills": 1787096295317,
+        "mills": 1787202372318,
         "sgv": 100,
-        "srvCreated": 1787096295318,
-        "srvModified": 1787096295318,
+        "srvCreated": 1787202372318,
+        "srvModified": 1787202372318,
         "subject": "pwd_phone",
         "type": "sgv",
         "utcOffset": 0
       },
       {
         "app": "test-app",
-        "created_at": "2026-08-18T23:38:15Z",
-        "date": 1787096295000,
-        "dateString": "2026-08-19T11:38:15+12:00",
+        "created_at": "2026-08-20T05:06:12Z",
+        "date": 1787202372000,
+        "dateString": "2026-08-20T17:06:12+12:00",
         "device": "test-device",
-        "identifier": "7wevOq2M",
+        "direction": "Flat",
+        "filtered": 139.2,
+        "identifier": "w87nl5z4",
         "isValid": true,
-        "mills": 1787096295000,
+        "mills": 1787202372000,
+        "noise": 1,
+        "rssi": -62,
         "sgv": 100,
-        "srvCreated": 1787096295318,
-        "srvModified": 1787096295318,
+        "srvCreated": 1787202372319,
+        "srvModified": 1787202372319,
+        "subject": "pwd_phone",
+        "trend": 3,
+        "type": "sgv",
+        "unfiltered": 141.7,
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-20T05:06:12Z",
+        "date": 1787202372000,
+        "dateString": "2026-08-20T17:06:12+12:00",
+        "device": "test-device",
+        "direction": "Flat",
+        "filtered": 139.2,
+        "identifier": "7Xz9WU26",
+        "isValid": true,
+        "mills": 1787202372000,
+        "noise": 1,
+        "rssi": -62,
+        "sgv": 100,
+        "srvCreated": 1787202372393,
+        "srvModified": 1787202372393,
+        "subject": "pwd_phone",
+        "trend": 3,
+        "type": "sgv",
+        "unfiltered": 141.7,
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-08-20T05:06:12Z",
+        "date": 1787202372000,
+        "dateString": "2026-08-20T17:06:12+12:00",
+        "device": "test-device",
+        "direction": "Flat",
+        "filtered": 139.2,
+        "identifier": "7Xz9WU26custom",
+        "isValid": true,
+        "mills": 1787202372000,
+        "noise": 1,
+        "rssi": -62,
+        "sgv": 100,
+        "srvCreated": 1787202372393,
+        "srvModified": 1787202372393,
+        "subject": "pwd_phone",
+        "trend": 3,
+        "type": "sgv",
+        "unfiltered": 141.7,
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-08-20T05:01:12Z",
+        "date": 1787202072000,
+        "dateString": "2026-08-20T17:01:12+12:00",
+        "identifier": "X04JXd4t",
+        "isValid": true,
+        "mills": 1787202072000,
+        "sgv": 13.2,
+        "srvCreated": 1787202372350,
+        "srvModified": 1787202372350,
         "subject": "pwd_phone",
         "type": "sgv",
         "utcOffset": 720
       },
       {
         "app": "test-app",
-        "created_at": "2026-08-18T23:38:15Z",
-        "date": 1787096295000,
-        "dateString": "2026-08-19T11:38:15+12:00",
+        "created_at": "2026-08-20T04:56:12.32Z",
+        "date": 1787201772320,
+        "dateString": "2026-08-20T04:56:12.32Z",
         "device": "test-device",
-        "identifier": "CCxBMwYC",
-        "isValid": true,
-        "mills": 1787096295000,
-        "sgv": 100,
-        "srvCreated": 1787096295376,
-        "srvModified": 1787096295376,
-        "subject": "pwd_phone",
-        "type": "sgv",
-        "utcOffset": 720
-      },
-      {
-        "app": "test-app",
-        "created_at": "2026-08-18T23:38:15Z",
-        "date": 1787096295000,
-        "dateString": "2026-08-19T11:38:15+12:00",
-        "device": "test-device",
-        "identifier": "CCxBMwYCcustom",
-        "isValid": true,
-        "mills": 1787096295000,
-        "sgv": 100,
-        "srvCreated": 1787096295376,
-        "srvModified": 1787096295376,
-        "subject": "pwd_phone",
-        "type": "sgv",
-        "utcOffset": 720
-      },
-      {
-        "app": "test-app",
-        "created_at": "2026-08-18T23:28:15.318Z",
-        "date": 1787095695318,
-        "dateString": "2026-08-18T23:28:15.318Z",
-        "device": "test-device",
-        "identifier": "B3VVwf5K",
+        "identifier": "UHCqE6n4",
         "isValid": false,
-        "mills": 1787095695318,
+        "mills": 1787201772320,
         "sgv": 101,
-        "srvCreated": 1787096295319,
-        "srvModified": 1787096295319,
+        "srvCreated": 1787202372320,
+        "srvModified": 1787202372320,
         "subject": "pwd_phone",
         "type": "sgv",
         "utcOffset": 0
+      },
+      {
+        "created_at": "2026-08-20T04:51:12Z",
+        "date": 1787201472000,
+        "dateString": "2026-08-20T16:51:12+12:00",
+        "identifier": "99727IwR",
+        "isValid": true,
+        "mills": 1787201472000,
+        "sgv": 13.7,
+        "srvCreated": 1787202372345,
+        "srvModified": 1787202372345,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 720
       }
     ],
     "status": 200

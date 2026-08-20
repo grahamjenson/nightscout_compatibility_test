@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://evezzzzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYckRUWGppUmZVS3JLYnJqWmNnZjI0bjIvVE5mMnl4U0tNSVJXUUtoY29uUVRZYTAzeFlJa21sUTNSYlh5QlZhb2FTQ1RSVm5aa3prbDZWdVB4bEkxQlJFcFBockxSSTZuSQ&find[device]=aaps",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ&find[device]=aaps",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,13 +22,13 @@
       "application/json"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:38:15 GMT"
+      "Thu, 20 Aug 2026 05:06:12 GMT"
     ]
   },
   "body": [
     {
-      "_id": "e6YjCgWQ",
-      "created_at": "2026-08-18T23:38:15Z",
+      "_id": "8pblk1p7",
+      "created_at": "2026-08-20T05:06:12Z",
       "device": "aaps",
       "loop": {
         "cob": {
@@ -59,15 +59,15 @@
       "utcOffset": 720
     },
     {
-      "_id": "93IPApzX",
-      "created_at": "2026-08-18T23:37:15Z",
+      "_id": "u3uO881e",
+      "created_at": "2026-08-20T05:05:12Z",
       "device": "aaps1",
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     {
-      "_id": "UPsn78ZU",
-      "created_at": "2026-08-18T23:36:15Z",
+      "_id": "wPntXOA3",
+      "created_at": "2026-08-20T05:04:12Z",
       "device": "aaps",
       "subject": "pwd_phone",
       "utcOffset": 720
