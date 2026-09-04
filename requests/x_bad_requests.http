@@ -76,6 +76,11 @@ POST http://{{ .site }}/api/v3/devicestatus
 B {"type": "walking", "created_at": "{{ time 0 }}", "duration": 3600, "notes": "test devicestatus with jwt read token", "app": "test-app", "device": "test-device"}
 H Authorization: Bearer {{ read_jwt }}
 
+NAME create_with_bad_jwt
+POST http://{{ .site }}/api/v3/devicestatus
+B {"app": "test-app", "device": "test-device", "subject": "test-subject", "created_at": "{{ time 0 }}"}
+H Authorization: Bearer wrongbadjwt
+
 NAME create__devicestatus_v3
 POST http://{{ .site }}/api/v3/devicestatus
 B {"app": "test-app", "device": "test-device", "subject": "test-subject", "created_at": "{{ time 0 }}"}

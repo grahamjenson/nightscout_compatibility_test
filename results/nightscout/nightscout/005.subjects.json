@@ -28,10 +28,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:39:59 GMT"
     ],
     "Etag": [
-      "W/\"d8-vn6x1g1DIPoiy+aPURs/ZG6s4as\""
+      "W/\"d8-oZeZRmdtrPIfg/Gr1nbuKWJ8vBs\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -45,21 +45,21 @@
   },
   "body": [
     {
-      "_id": "6a84ea4d3fab588a53776078",
-      "accessToken": "read-00fe94ad1cd2baaf",
+      "_id": "6a9a2f7f6e924a337c97e38f",
+      "accessToken": "read-4dafd523765dc7a0",
       "name": "read",
       "roles": [
         "readable"
       ]
     },
     {
-      "_id": "6a84ea4d3fab588a53776077",
-      "accessToken": "write-0acbea8106c5420d",
+      "_id": "6a9a2f7f6e924a337c97e38e",
+      "accessToken": "write-d1e2709a9d2611d2",
       "name": "write",
       "roles": [
         "admin"
       ]
     }
   ],
-  "durationMs": 3
+  "durationMs": 2
 }

@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/entries/7Xz9WU26?fields=date,sgv,notes",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/entries/8ruy1ZpE?fields=date,sgv,notes",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -25,20 +25,23 @@
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611374\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": {
-    "identifier": "7Xz9WU26",
-    "lastModified": 1787202372393,
+    "identifier": "8ruy1ZpE",
+    "lastModified": 1788489611374,
     "result": {
-      "date": 1787202372000,
+      "date": 1788489611000,
       "sgv": 100
     },
     "status": 200
   },
-  "durationMs": 0
+  "durationMs": 7
 }

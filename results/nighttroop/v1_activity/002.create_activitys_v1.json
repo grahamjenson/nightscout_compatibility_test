@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/activity?token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/activity?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,13 +14,13 @@
     "body": [
       {
         "activityType": "running",
-        "created_at": "2026-08-20T17:05:12+12:00",
+        "created_at": "2026-09-04T14:39:11+12:00",
         "duration": 3600,
         "notes": "activity running"
       },
       {
         "activityType": "running",
-        "created_at": "2026-08-20T17:04:12+12:00",
+        "created_at": "2026-09-04T14:38:11+12:00",
         "duration": 3600,
         "notes": "activity running 2"
       }
@@ -29,29 +29,37 @@
   "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "326"
+      "368"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611363\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": [
     {
-      "_id": "u2zlgd6g",
+      "_id": "j6QP1Itx",
       "activityType": "running",
-      "created_at": "2026-08-20T05:05:12Z",
+      "created_at": "2026-09-04T02:39:11Z",
+      "date": 1788489551000,
       "duration": 3600,
       "notes": "activity running",
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     {
-      "_id": "fNPC3J2r",
+      "_id": "olZsN6sr",
       "activityType": "running",
-      "created_at": "2026-08-20T05:04:12Z",
+      "created_at": "2026-09-04T02:38:11Z",
+      "date": 1788489491000,
       "duration": 3600,
       "notes": "activity running 2",
       "subject": "pwd_phone",

@@ -1,6 +1,18 @@
+NAME create_other_entry_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token}}
+B {"sgv": 100, "date": 1767355994, "dateString": "2026-01-02T12:13:14Z", "type": "sgv" }
+
 NAME get_status_v1
 GET http://{{ .site }}/api/v1/status?token={{ token }}
 
 NAME get_times_entries_v1
-GET http://{{ .site }}/api/v1/times/20?token={{ token }}
+GET http://{{ .site }}/api/v1/times/2026-01-02?token={{ token }}
 
+NAME get_count_entries_v1
+GET http://{{ .site }}/api/v1/count/entries/where?token={{ token }}
+
+NAME get_slice_entries_v1
+GET http://{{ .site }}/api/v1/slice/entries/dateString/sgv/2026-01?token={{ token }}
+
+NAME get_echo_entries_v1
+GET http://{{ .site }}/api/v1/echo/entries/sgv?token={{ token }}&find[sgv][$gte]=100

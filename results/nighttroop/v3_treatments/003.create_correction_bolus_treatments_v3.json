@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "asd",
-      "created_at": "2026-08-20T17:05:12+12:00",
+      "created_at": "2026-09-04T14:39:11+12:00",
       "eventType": "Correction Bolus",
       "insulin": 4.2,
       "reason": "1"
@@ -25,40 +25,44 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "362"
+      "381"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611648\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/nEur8vQ0"
+      "/api/v3/treatments/W22947Eb"
     ]
   },
   "body": {
-    "identifier": "nEur8vQ0",
-    "lastModified": 1787202372480,
+    "identifier": "W22947Eb",
+    "lastModified": 1788489611648,
     "result": {
       "app": "asd",
-      "created_at": "2026-08-20T05:05:12Z",
-      "date": 1787202312000,
+      "created_at": "2026-09-04T02:39:11Z",
+      "date": 1788489551000,
       "enteredBy": "pwd_phone",
       "eventType": "Correction Bolus",
-      "identifier": "nEur8vQ0",
+      "identifier": "W22947Eb",
       "insulin": 4.2,
+      "isReadOnly": false,
       "isValid": true,
       "reason": "1",
-      "srvCreated": 1787202372480,
-      "srvModified": 1787202372480,
+      "srvCreated": 1788489611648,
+      "srvModified": 1788489611648,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     "status": 201
   },
-  "durationMs": 2
+  "durationMs": 1
 }

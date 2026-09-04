@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
       ],
       "Content-Type": [
         "application/json"
@@ -28,7 +28,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -42,11 +42,11 @@
       {
         "carbs": 27,
         "category": "Snacks",
-        "created_at": "2026-08-18T23:27:09.910Z",
-        "identifier": "6a84ea4d99873f4a1ea957f9",
+        "created_at": "2026-09-04T02:40:00.041Z",
+        "identifier": "6a9a2f8049a97a563d84f77e",
         "name": "Banana2",
-        "srvCreated": 1787095629910,
-        "srvModified": 1787095629910
+        "srvCreated": 1788489600041,
+        "srvModified": 1788489600041
       }
     ],
     "status": 200

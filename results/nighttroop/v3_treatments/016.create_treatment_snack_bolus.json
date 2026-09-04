@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -17,50 +17,55 @@
     "body": {
       "app": "AndroidAPS",
       "carbs": 18,
-      "created_at": "2026-08-20T17:02:12+12:00",
+      "created_at": "2026-09-04T14:36:11+12:00",
       "eventType": "Snack Bolus",
       "insulin": 1.8,
       "notes": "Afternoon snack"
     }
   },
-  "statusCode": 201,
+  "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "388"
+      "447"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611425\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/d04sUWgK"
+      "/api/v3/treatments/xTxK595C"
     ]
   },
   "body": {
-    "identifier": "d04sUWgK",
-    "lastModified": 1787202372494,
+    "deduplicatedIdentifier": "xTxK595C",
+    "identifier": "xTxK595C",
+    "isDeduplication": true,
+    "lastModified": 1788489611425,
     "result": {
-      "app": "AndroidAPS",
       "carbs": 18,
-      "created_at": "2026-08-20T05:02:12Z",
-      "date": 1787202132000,
+      "created_at": "2026-09-04T02:36:11Z",
+      "date": 1788489371000,
       "enteredBy": "pwd_phone",
       "eventType": "Snack Bolus",
-      "identifier": "d04sUWgK",
-      "insulin": 1.8,
+      "identifier": "xTxK595C",
+      "insulin": 1.6,
+      "isReadOnly": false,
       "isValid": true,
       "notes": "Afternoon snack",
-      "srvCreated": 1787202372494,
-      "srvModified": 1787202372494,
+      "srvCreated": 1788489611425,
+      "srvModified": 1788489611425,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
-    "status": 201
+    "status": 200
   },
-  "durationMs": 0
+  "durationMs": 1
 }

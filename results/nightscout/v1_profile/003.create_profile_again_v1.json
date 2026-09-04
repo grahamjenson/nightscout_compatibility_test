@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile?token=write-0acbea8106c5420d",
+    "url": "http://localhost:1337/api/v1/profile?token=write-d1e2709a9d2611d2",
     "headers": {
       "Accept": [
         "application/json"
@@ -101,10 +101,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Etag": [
-      "W/\"398-/FZe2S9bU20dLlMUkVoLU9CqazM\""
+      "W/\"398-zaRAMu0dyn4JJvPXxLuvqP7UppA\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -118,7 +118,7 @@
   },
   "body": [
     {
-      "_id": "6a84ea4d3fab588a53776080",
+      "_id": "6a9a2f806e924a337c97e397",
       "created_at": "2017-07-02T00:25:33.154Z",
       "defaultProfile": "Default",
       "mills": "1498954920000",
@@ -196,5 +196,5 @@
       "units": "mg/dl"
     }
   ],
-  "durationMs": 2
+  "durationMs": 3
 }

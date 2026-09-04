@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,53 +16,57 @@
     },
     "body": {
       "app": "AndroidAPS",
-      "created_at": "2026-08-20T16:57:12+12:00",
+      "created_at": "2026-09-04T14:31:11+12:00",
       "duration": 90,
       "eventType": "Temp Basal",
       "percent": -50,
       "reason": "Activity"
     }
   },
-  "statusCode": 201,
+  "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "425"
+      "470"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611430\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/Cgwa6vds"
+      "/api/v3/treatments/s5JhrY2P"
     ]
   },
   "body": {
-    "identifier": "Cgwa6vds",
-    "lastModified": 1787202372498,
+    "deduplicatedIdentifier": "s5JhrY2P",
+    "identifier": "s5JhrY2P",
+    "isDeduplication": true,
+    "lastModified": 1788489611430,
     "result": {
-      "absolute": 0,
-      "app": "AndroidAPS",
-      "created_at": "2026-08-20T04:57:12Z",
-      "date": 1787201832000,
-      "duration": 90,
-      "durationInMilliseconds": 5400000,
+      "absolute": 0.45,
+      "created_at": "2026-09-04T02:31:11Z",
+      "date": 1788489071000,
+      "duration": 30,
+      "durationInMilliseconds": 1800000,
       "enteredBy": "pwd_phone",
       "eventType": "Temp Basal",
-      "identifier": "Cgwa6vds",
+      "identifier": "s5JhrY2P",
+      "isReadOnly": false,
       "isValid": true,
-      "rate": 0,
-      "reason": "Activity",
-      "srvCreated": 1787202372498,
-      "srvModified": 1787202372498,
+      "rate": 0.45,
+      "srvCreated": 1788489611430,
+      "srvModified": 1788489611430,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
-    "status": 201
+    "status": 200
   },
-  "durationMs": 0
+  "durationMs": 1
 }

@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/entries?token=QWNlRzVYclBHSHJaQ1QySEVCdDJpTWpSc1dON0JHc3ZCb0lOam9RSFBzVmhjY1R3M3BpQ2JoZG9ESWhZQndkWVZydm9seEhTUHYvTzlYOWJiQnVEbjBaSFJFcXRKNjhE",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "date": 1788488411795,
+      "sgv": 105,
+      "type": "sgv"
+    }
+  },
+  "statusCode": 403,
+  "headers": {
+    "Content-Length": [
+      "65"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ]
+  },
+  "body": {
+    "message": "Missing permission api:entries:create",
+    "status": 403
+  },
+  "durationMs": 0
+}

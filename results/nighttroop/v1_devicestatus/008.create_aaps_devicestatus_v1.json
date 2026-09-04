@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -162,30 +162,70 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "565"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611372\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": [
     {
-      "_id": "xkhRRXRA",
+      "_id": "NvYe8ml4",
       "app": "AAPS",
+      "configuration": {},
       "created_at": "2026-08-16T22:39:48.777Z",
+      "date": 1786919988777,
       "device": "openaps://CUBOT KINGKONG MINI 3",
       "isCharging": false,
       "openaps": {
         "iob": {
+          "activity": 0.007,
           "basaliob": -0.332,
-          "iob": 0.736
+          "iob": 0.736,
+          "time": "2026-08-16T22:39:43.738Z"
         },
         "suggested": {
           "COB": 0,
+          "IOB": 0.736,
+          "algorithm": "SMB",
+          "bg": 150,
+          "consoleError": [
+            "---------------------------------------------------------",
+            " Dynamic ISF version 2.0 ",
+            "---------------------------------------------------------",
+            "CR:11.5",
+            "SMB enabled due to enableSMB_always",
+            "profile.sens: 134.4, sens: 134.4, CSF: 11.68695652173913",
+            "Last carbs 143minutes ago; remainingCATime:6.1hours;100% carbs absorbed",
+            "Carb Impact: -1.6 mg/dL per 5m; CI Duration: 0.0 hours; remaining CI (~2h peak): 0.0 mg/dL per 5m",
+            "UAM Impact: -1.6 mg/dL per 5m; UAM Duration: 0.0 hours",
+            " avgPredBG: 89.0 COB: 0.0 / 26.0",
+            "minGuardBG -1.1 projected below 4.5 - disabling SMB",
+            "BG projected to remain above 6.8 for 25 minutes",
+            "BG projected to remain above 4.5 for 65 minutes",
+            "naive_eventualBG: 51.0 bgUndershoot: 30.0 zeroTempDuration 65 zeroTempEffect: 51 carbsReq: -2"
+          ],
+          "consoleLog": [
+            "Autosens ratio: 1.2055221584632745; ",
+            "Adjusting basal from 0.35 to 0.42193275546214604; ",
+            "target_bg from 135.9 to 123.0; ",
+            "EventualBG is 41.0 ;",
+            "Future state sensitivity is 330.0 based on eventual bg due to -ve delta",
+            "minPredBG: 59.0 minIOBPredBG: 39.0 minZTGuardBG: 89.0",
+            " minUAMPredBG: 39.0"
+          ],
+          "deliverAt": "2026-08-16T22:39:41.740Z",
+          "duration": 120,
+          "eventualBG": 41,
+          "insulinReq": 0,
+          "isfMgdlForCarbs": 137.59339622641514,
           "predBGs": {
             "IOB": [
               150,
@@ -252,7 +292,14 @@
               123
             ]
           },
-          "timestamp": "2026-08-16T22:39:43.738Z"
+          "rate": 0,
+          "reason": "Dosing sensitivity: 330.0 using eventual BG;COB: 0, Dev: -0.6, BGI: -0.3, ISF: 7.5, CR: 11.5, Target: 6.8, minPredBG 3.3, minGuardBG -1.1, IOBpredBG 2.2; minGuardBG -1.1\u003c4.5",
+          "runningDynamicIsf": true,
+          "sensitivityRatio": 1.2055221584632745,
+          "targetBG": 123,
+          "tick": "-6",
+          "timestamp": "2026-08-16T22:39:43.738Z",
+          "variable_sens": 134.4
         }
       },
       "pump": {
@@ -260,7 +307,7 @@
       },
       "subject": "pwd_phone",
       "uploaderBattery": 88,
-      "utcOffset": 0
+      "utcOffset": 720
     }
   ],
   "durationMs": 0

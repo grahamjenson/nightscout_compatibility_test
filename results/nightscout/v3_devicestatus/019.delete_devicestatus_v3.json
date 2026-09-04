@@ -2,13 +2,13 @@
   "request": {
     "method": "DELETE",
     "path": "",
-    "url": "http://localhost:1337/api/v3/devicestatus/28f1dc55-bb3e-51ee-88b9-e0077cef3394",
+    "url": "http://localhost:1337/api/v3/devicestatus/33a6c737-04a9-5d4a-886c-779e72b7a2c8",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
       ],
       "Content-Type": [
         "application/json"
@@ -28,7 +28,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -40,5 +40,5 @@
   "body": {
     "status": 200
   },
-  "durationMs": 3
+  "durationMs": 4
 }

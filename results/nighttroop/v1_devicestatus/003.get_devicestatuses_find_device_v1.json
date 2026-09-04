@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ&find[device]=aaps",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ&find[device]=aaps",
     "headers": {
       "Accept": [
         "application/json"
@@ -16,25 +16,39 @@
   "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "496"
+      "713"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611368\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": [
     {
-      "_id": "8pblk1p7",
-      "created_at": "2026-08-20T05:06:12Z",
+      "_id": "VTTAnsLM",
+      "created_at": "2026-09-04T02:40:11Z",
+      "date": 1788489611000,
       "device": "aaps",
       "loop": {
         "cob": {
           "cob": 18
         },
+        "enacted": {
+          "duration": 30,
+          "rate": 1.2,
+          "reason": "BG rising faster than expected"
+        },
+        "failureReason": "",
         "iob": {
+          "devicestatus": 0.024,
           "iob": 1.73
         },
         "predicted": {
@@ -46,7 +60,8 @@
             123,
             126
           ]
-        }
+        },
+        "timestamp": "2026-06-16T08:42:00Z"
       },
       "pump": {
         "battery": {
@@ -59,15 +74,17 @@
       "utcOffset": 720
     },
     {
-      "_id": "u3uO881e",
-      "created_at": "2026-08-20T05:05:12Z",
+      "_id": "X7CWSrIJ",
+      "created_at": "2026-09-04T02:39:11Z",
+      "date": 1788489551000,
       "device": "aaps1",
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     {
-      "_id": "wPntXOA3",
-      "created_at": "2026-08-20T05:04:12Z",
+      "_id": "q7k3z9sA",
+      "created_at": "2026-09-04T02:38:11Z",
+      "date": 1788489491000,
       "device": "aaps",
       "subject": "pwd_phone",
       "utcOffset": 720

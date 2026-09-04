@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/entries?find[sgv][$gte]=101&token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/entries?find[sgv][$gte]=101&token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -16,51 +16,57 @@
   "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "719"
+      "725"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611376\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": [
     {
-      "_id": "UHCqE6n4",
+      "_id": "Y2Rbc115",
       "app": "test-app",
-      "created_at": "2026-08-20T04:56:12.32Z",
-      "date": 1787201772320,
-      "dateString": "2026-08-20T04:56:12.32Z",
+      "created_at": "2026-09-04T02:30:11.376Z",
+      "date": 1788489011376,
+      "dateString": "2026-09-04T02:30:11.376Z",
       "device": "test-device",
-      "mills": 1787201772320,
+      "mbg": 110,
+      "mills": 1788489011376,
+      "subject": "pwd_phone",
+      "type": "mbg",
+      "utcOffset": 0
+    },
+    {
+      "_id": "ADw052QU",
+      "app": "test-app",
+      "created_at": "2026-09-04T02:30:11.374Z",
+      "date": 1788489011374,
+      "dateString": "2026-09-04T02:30:11.374Z",
+      "device": "test-device",
+      "mills": 1788489011374,
       "sgv": 101,
       "subject": "pwd_phone",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "48ZUz9rY",
+      "_id": "3F73Sfga",
       "app": "test-app",
-      "created_at": "2026-08-20T04:56:12.32Z",
-      "date": 1787201772320,
-      "dateString": "2026-08-20T04:56:12.32Z",
-      "device": "test-device",
-      "mbg": 110,
-      "mills": 1787201772320,
-      "subject": "pwd_phone",
-      "type": "mbg",
-      "utcOffset": 0
-    },
-    {
-      "_id": "jDqjj59p",
-      "app": "test-app",
-      "created_at": "2026-08-20T04:54:12.32Z",
-      "date": 1787201652320,
-      "dateString": "2026-08-20T04:54:12.32Z",
+      "created_at": "2026-09-04T02:28:11.374Z",
+      "date": 1788488891374,
+      "dateString": "2026-09-04T02:28:11.374Z",
       "device": "test-device",
       "mbg": 102,
-      "mills": 1787201652320,
+      "mills": 1788488891374,
       "subject": "pwd_phone",
       "type": "mbg",
       "utcOffset": 0

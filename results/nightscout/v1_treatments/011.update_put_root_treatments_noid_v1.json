@@ -2,7 +2,7 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments?token=write-0acbea8106c5420d",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-d1e2709a9d2611d2",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,7 +14,7 @@
     "body": {
       "_id": "treatmentv1t1",
       "carbs": 1,
-      "created_at": "2026-08-19T11:27:10+12:00",
+      "created_at": "2026-09-04T14:40:00+12:00",
       "eventType": "Meal Bolus",
       "notes": "updated by update_put_root_treatments_noid_v1"
     }
@@ -31,10 +31,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Etag": [
-      "W/\"d2-FtnD1GFjCQlouBXQ0dFiahucbnw\""
+      "W/\"d2-KDzHcSZSt0XOqWxKnujfo+ZMvbM\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -47,9 +47,9 @@
     ]
   },
   "body": {
-    "_id": "6a84ea4e99873f4a1ea9584a",
+    "_id": "6a9a2f8049a97a563d84f7d0",
     "carbs": 1,
-    "created_at": "2026-08-18T23:27:10.000Z",
+    "created_at": "2026-09-04T02:40:00.000Z",
     "eventType": "Meal Bolus",
     "identifier": "treatmentv1t1",
     "notes": "updated by update_put_root_treatments_noid_v1",

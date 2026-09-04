@@ -2,13 +2,13 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments/RDV1g558custom",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments/R1eNolpUcustom",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -18,11 +18,11 @@
       "absolute": null,
       "app": "asd",
       "carbs": 45,
-      "created_at": "2026-08-20T17:06:12+12:00",
+      "created_at": "2026-09-04T14:40:11+12:00",
       "duration": 0,
       "enteredBy": "aaps-loop",
       "eventType": "Temp Basal",
-      "glucose": 148,
+      "glucose": 100,
       "glucoseType": "Sensor",
       "insulin": 4.2,
       "notes": "Lunch pasta + insulin pre-bolus",
@@ -36,42 +36,46 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "478"
+      "497"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611646\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": {
-    "identifier": "RDV1g558custom",
-    "lastModified": 1787202372478,
+    "identifier": "R1eNolpUcustom",
+    "lastModified": 1788489611646,
     "result": {
       "absolute": 0,
       "app": "asd",
-      "created_at": "2026-08-20T05:06:12Z",
-      "date": 1787202372000,
+      "created_at": "2026-09-04T02:40:11Z",
+      "date": 1788489611000,
       "duration": 0,
       "durationInMilliseconds": 0,
       "enteredBy": "pwd_phone",
       "eventType": "Temp Basal",
-      "identifier": "RDV1g558custom",
+      "identifier": "R1eNolpUcustom",
+      "isReadOnly": false,
       "isValid": true,
       "notes": "Lunch pasta + insulin pre-bolus",
       "percentage": 10,
       "rate": 0,
       "reason": "lunch",
-      "srvCreated": 1787202372478,
-      "srvModified": 1787202372478,
+      "srvCreated": 1788489611646,
+      "srvModified": 1788489611646,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     "status": 201
   },
-  "durationMs": 9
+  "durationMs": 0
 }

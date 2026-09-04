@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/treatments?token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ&find[eventType]=Meal%20Bolus",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/treatments?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ&find[eventType]=Meal%20Bolus",
     "headers": {
       "Accept": [
         "application/json"
@@ -16,20 +16,28 @@
   "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "780"
+      "877"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611448\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": [
     {
-      "_id": "6XvELrxE",
+      "_id": "R1eNolpU",
       "carbs": 45,
-      "created_at": "2026-08-20T05:06:12Z",
+      "created_at": "2026-09-04T02:40:11Z",
+      "date": 1788489611000,
+      "duration": 0,
       "enteredBy": "pwd_phone",
       "eventType": "Meal Bolus",
       "glucose": 148,
@@ -41,9 +49,10 @@
       "utcOffset": 720
     },
     {
-      "_id": "obJf21CU",
+      "_id": "GOjoyRqG",
       "carbs": 62,
-      "created_at": "2026-08-20T05:03:12Z",
+      "created_at": "2026-09-04T02:37:11Z",
+      "date": 1788489431000,
       "enteredBy": "pwd_phone",
       "eventType": "Meal Bolus",
       "insulin": 6.2,
@@ -51,9 +60,10 @@
       "utcOffset": 720
     },
     {
-      "_id": "FX69O0ok",
+      "_id": "pNy0kZIk",
       "carbs": 72,
-      "created_at": "2026-08-20T04:47:12Z",
+      "created_at": "2026-09-04T02:21:11Z",
+      "date": 1788488471000,
       "enteredBy": "pwd_phone",
       "eventType": "Meal Bolus",
       "insulin": 7,
@@ -61,9 +71,10 @@
       "utcOffset": 720
     },
     {
-      "_id": "39VZbYPl",
+      "_id": "qTIJxFnA",
       "carbs": 95,
-      "created_at": "2026-08-20T04:33:12Z",
+      "created_at": "2026-09-04T02:07:11Z",
+      "date": 1788487631000,
       "enteredBy": "pwd_phone",
       "eventType": "Meal Bolus",
       "insulin": 9.5,

@@ -9,7 +9,7 @@ H Authorization: Bearer {{ jwt }}
 
 NAME create_put_entries_v3
 PUT http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier"  }}custom
-B {"sgv": 100, "date": {{ itime 2 }}, "mills": {{ itime 0 }}, "type": "sgv", "app": "test-app", "device": "test-device", "direction": "Flat", "trend": 3, "dateString": "{{ time 0 }}", "filtered": 139.2, "unfiltered": 141.7, "rssi": -62, "noise": 1 }
+B {"sgv": 90, "date": {{ itime 2 }}, "mills": {{ itime 0 }}, "type": "sgv", "app": "test-app", "device": "test-device", "direction": "Flat", "trend": 3, "dateString": "{{ time 0 }}", "filtered": 139.2, "unfiltered": 141.7, "rssi": -62, "noise": 1 }
 H Authorization: Bearer {{ jwt }}
 
 #####
@@ -30,6 +30,10 @@ H Authorization: Bearer {{ jwt }}
 
 NAME get_history_entries_v3
 GET http://{{ .site }}/api/v3/entries/history/{{ itime 30}}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_history_entries_v3_with_query
+GET http://{{ .site }}/api/v3/entries/history/{{ itime 30}}?sgv$lt=95&limit=1
 H Authorization: Bearer {{ jwt }}
 
 NAME get_entries_limit_v3
@@ -61,11 +65,11 @@ GET http://{{ .site }}/api/v3/entries?type$ne=sgv
 H Authorization: Bearer {{ jwt }}
 
 NAME get_entries_sgv_gt_v3
-GET http://{{ .site }}/api/v3/entries?sgv$gt=115
+GET http://{{ .site }}/api/v3/entries?sgv$gt=95
 H Authorization: Bearer {{ jwt }}
 
 NAME get_entries_sgv_lt_v3
-GET http://{{ .site }}/api/v3/entries?sgv$lt=120
+GET http://{{ .site }}/api/v3/entries?sgv$lt=95
 H Authorization: Bearer {{ jwt }}
 
 NAME get_entries_sgv_lte_v3

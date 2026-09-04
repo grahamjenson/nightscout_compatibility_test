@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,10 +16,10 @@
     },
     "body": {
       "app": "asd",
-      "date": "2026-08-20T17:06:12+12:00",
+      "date": "2026-09-04T14:40:11+12:00",
       "defaultProfile": "profile_1",
-      "mills": 1787202372438,
-      "startDate": "2026-08-20T17:05:12+12:00",
+      "mills": 1788489611624,
+      "startDate": "2026-09-04T14:39:11+12:00",
       "store": {
         "profile_1": {
           "basal": [
@@ -123,38 +123,43 @@
       }
     }
   },
-  "statusCode": 201,
+  "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "1575"
+      "1641"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611390\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/profile/hSmefsWB"
+      "/api/v3/profile/pXR2QVlW"
     ]
   },
   "body": {
-    "identifier": "hSmefsWB",
-    "lastModified": 1787202372439,
+    "deduplicatedIdentifier": "pXR2QVlW",
+    "identifier": "pXR2QVlW",
+    "isDeduplication": true,
+    "lastModified": 1788489611390,
     "result": {
-      "app": "asd",
-      "created_at": "2026-08-20T05:05:12Z",
-      "date": 1787202312000,
+      "created_at": "2026-09-04T02:39:11Z",
+      "date": 1788489551000,
       "defaultProfile": "profile_1",
-      "identifier": "hSmefsWB",
+      "identifier": "pXR2QVlW",
+      "isReadOnly": false,
       "isValid": true,
-      "mills": 1787202312000,
-      "srvCreated": 1787202372439,
-      "srvModified": 1787202372439,
-      "startDate": "2026-08-20T17:05:12+12:00",
+      "mills": 1788489551000,
+      "srvCreated": 1788489611390,
+      "srvModified": 1788489611390,
+      "startDate": "2026-09-04T14:39:11+12:00",
       "store": {
         "profile_1": {
           "basal": [
@@ -281,7 +286,7 @@
       "units": "mmol/L",
       "utcOffset": 720
     },
-    "status": 201
+    "status": 200
   },
   "durationMs": 0
 }

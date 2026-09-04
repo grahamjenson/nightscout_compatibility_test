@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/activity?token=write-0acbea8106c5420d",
+    "url": "http://localhost:1337/api/v1/activity?token=write-d1e2709a9d2611d2",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,13 +14,13 @@
     "body": [
       {
         "activityType": "running",
-        "created_at": "2026-08-19T11:26:09+12:00",
+        "created_at": "2026-09-04T14:38:59+12:00",
         "duration": 3600,
         "notes": "activity running"
       },
       {
         "activityType": "running",
-        "created_at": "2026-08-19T11:25:09+12:00",
+        "created_at": "2026-09-04T14:37:59+12:00",
         "duration": 3600,
         "notes": "activity running 2"
       }
@@ -38,10 +38,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:39:59 GMT"
     ],
     "Etag": [
-      "W/\"123-/zHNHNBMtdGL1q9R5JupuwACo4I\""
+      "W/\"123-FUhY0szVZUdAwWAKddjXc0YILcM\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -55,16 +55,16 @@
   },
   "body": [
     {
-      "_id": "6a84ea4d99873f4a1ea957c1",
+      "_id": "6a9a2f7f49a97a563d84f742",
       "activityType": "running",
-      "created_at": "2026-08-19T11:26:09+12:00",
+      "created_at": "2026-09-04T14:38:59+12:00",
       "duration": 3600,
       "notes": "activity running"
     },
     {
-      "_id": "6a84ea4d99873f4a1ea957c2",
+      "_id": "6a9a2f7f49a97a563d84f743",
       "activityType": "running",
-      "created_at": "2026-08-19T11:25:09+12:00",
+      "created_at": "2026-09-04T14:37:59+12:00",
       "duration": 3600,
       "notes": "activity running 2"
     }

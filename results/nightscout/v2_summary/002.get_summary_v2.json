@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/summary?token=write-0acbea8106c5420d",
+    "url": "http://localhost:1337/api/v2/summary?token=write-d1e2709a9d2611d2",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,7 +22,7 @@
       "application/json"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:01 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -49,5 +49,5 @@
       "treatments": []
     }
   },
-  "durationMs": 3
+  "durationMs": 2
 }

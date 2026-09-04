@@ -10,7 +10,7 @@ B {
   "eventType": "Meal Bolus",
   "created_at": "{{ .time_0 }}",
 
-  "glucose": 148,
+  "glucose": 90,
   "glucoseType": "Sensor",
 
   "carbs": 45,
@@ -39,7 +39,7 @@ B {
   "eventType": "Temp Basal",
   "created_at": "{{ time 0 }}",
 
-  "glucose": 148,
+  "glucose": 100,
   "glucoseType": "Sensor",
 
   "carbs": 45,
@@ -429,28 +429,29 @@ NAME get_treatments_fields_v3
 GET http://{{ .site }}/api/v3/treatments?fields=date,sgv,notes
 H Authorization: Bearer {{ jwt }}
 
-NAME get_treatments_type_eq_v3
-GET http://{{ .site }}/api/v3/treatments?type$eq=sgv
-H Authorization: Bearer {{ jwt }}
 
 NAME get_treatments_type_ne_v3
-GET http://{{ .site }}/api/v3/treatments?type$ne=sgv
+GET http://{{ .site }}/api/v3/treatments?eventType$ne=Temp%20Basal
 H Authorization: Bearer {{ jwt }}
 
 NAME get_treatments_sgv_gt_v3
-GET http://{{ .site }}/api/v3/treatments?sgv$gt=115
+GET http://{{ .site }}/api/v3/treatments?glucose$gt=95
 H Authorization: Bearer {{ jwt }}
 
 NAME get_treatments_sgv_lt_v3
-GET http://{{ .site }}/api/v3/treatments?sgv$lt=120
+GET http://{{ .site }}/api/v3/treatments?glucose$lt=95
 H Authorization: Bearer {{ jwt }}
 
 NAME get_treatments_sgv_lte_v3
-GET http://{{ .site }}/api/v3/treatments?sgv$lte=120
+GET http://{{ .site }}/api/v3/treatments?glucose$lte=100
 H Authorization: Bearer {{ jwt }}
 
 NAME get_treatments_type_in_v3
 GET http://{{ .site }}/api/v3/treatments?eventType$in=Temp%20Basal|Temporary%20Target
+H Authorization: Bearer {{ jwt }}
+
+NAME get_treatments_type_eq_v3
+GET http://{{ .site }}/api/v3/treatments?eventType$eq=Temp%20Basal
 H Authorization: Bearer {{ jwt }}
 
 NAME get_treatments_type_nin_v3
@@ -459,10 +460,6 @@ H Authorization: Bearer {{ jwt }}
 
 NAME get_treatments_re_v3
 GET http://{{ .site }}/api/v3/treatments?direction$re=Flat|Up
-H Authorization: Bearer {{ jwt }}
-
-NAME get_treatments_multi_query_v3
-GET http://{{ .site }}/api/v3/treatments?type$eq=Temp%20Basal
 H Authorization: Bearer {{ jwt }}
 
 NAME get_treatments_multi_query_in_v3
@@ -526,3 +523,37 @@ H Authorization: Bearer {{ jwt }}
 NAME delete_treatments2_v3
 DELETE http://{{ .site }}/api/v3/treatments/{{ dig "create_put_treatments_v3.identifier" }}
 H Authorization: Bearer {{ jwt }}
+
+
+
+#######
+# DEDUPELICATION
+#######
+
+NAME create_first_identical_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+    "app": "AAPS",
+    "carbs": 25.0,
+    "date": 1787624277000,
+    "eventType": "Meal Bolus",
+    "isReadOnly": false,
+    "isValid": false,
+    "notes": "",
+    "utcOffset": 720
+ }
+
+NAME create_second_identical_treatments_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {
+    "app": "AAPS",
+    "carbs": 25.0,
+    "date": 1787624277000,
+    "eventType": "Meal Bolus",
+    "isReadOnly": false,
+    "isValid": false,
+    "notes": "",
+    "utcOffset": 720
+ }

@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,48 +16,53 @@
     },
     "body": {
       "app": "asd",
-      "created_at": "2026-08-20T17:00:12+12:00",
+      "created_at": "2026-09-04T14:34:11+12:00",
       "eventType": "Site Change",
       "insulin": 2,
       "reason": "6"
     }
   },
-  "statusCode": 201,
+  "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "343"
+      "438"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611418\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/Ap96ZADK"
+      "/api/v3/treatments/rqp0EIbP"
     ]
   },
   "body": {
-    "identifier": "Ap96ZADK",
-    "lastModified": 1787202372486,
+    "deduplicatedIdentifier": "rqp0EIbP",
+    "identifier": "rqp0EIbP",
+    "isDeduplication": true,
+    "lastModified": 1788489611418,
     "result": {
-      "app": "asd",
-      "created_at": "2026-08-20T05:00:12Z",
-      "date": 1787202012000,
+      "created_at": "2026-09-04T02:34:11Z",
+      "date": 1788489251000,
       "enteredBy": "pwd_phone",
       "eventType": "Site Change",
-      "identifier": "Ap96ZADK",
+      "identifier": "rqp0EIbP",
+      "isReadOnly": false,
       "isValid": true,
-      "reason": "6",
-      "srvCreated": 1787202372486,
-      "srvModified": 1787202372486,
+      "notes": "Pump cannula moved to left arm.",
+      "srvCreated": 1788489611418,
+      "srvModified": 1788489611418,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
-    "status": 201
+    "status": 200
   },
-  "durationMs": 0
+  "durationMs": 1
 }

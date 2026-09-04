@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "AndroidAPS",
-      "created_at": "2026-08-20T16:56:12+12:00",
+      "created_at": "2026-09-04T14:30:11+12:00",
       "duration": 120,
       "eventType": "Temporary Target",
       "reason": "Exercise",
@@ -27,41 +27,45 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "465"
+      "484"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611673\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/85S60iTL"
+      "/api/v3/treatments/Xsh96Kvm"
     ]
   },
   "body": {
-    "identifier": "85S60iTL",
-    "lastModified": 1787202372499,
+    "identifier": "Xsh96Kvm",
+    "lastModified": 1788489611673,
     "result": {
       "app": "AndroidAPS",
       "correctionRange": [
         7,
         8
       ],
-      "created_at": "2026-08-20T04:56:12Z",
-      "date": 1787201772000,
+      "created_at": "2026-09-04T02:30:11Z",
+      "date": 1788489011000,
       "duration": 120,
       "durationInMilliseconds": 7200000,
       "enteredBy": "pwd_phone",
       "eventType": "Temporary Target",
-      "identifier": "85S60iTL",
+      "identifier": "Xsh96Kvm",
+      "isReadOnly": false,
       "isValid": true,
       "reason": "Exercise",
-      "srvCreated": 1787202372499,
-      "srvModified": 1787202372499,
+      "srvCreated": 1788489611673,
+      "srvModified": 1788489611673,
       "subject": "pwd_phone",
       "targetBottom": 7,
       "targetTop": 8,
@@ -69,5 +73,5 @@
     },
     "status": 201
   },
-  "durationMs": 0
+  "durationMs": 1
 }

@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -144,28 +144,50 @@
   "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "720"
+      "1127"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611784\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": [
     {
-      "_id": "8ytqP7qn",
+      "_id": "sfWTW8Wx",
       "created_at": "2025-05-14T02:13:21Z",
+      "date": 1747188801000,
       "device": "loop://iPhone",
       "loop": {
+        "automaticDoseRecommendation": {
+          "bolusVolume": 0.05,
+          "timestamp": "2025-05-14T02:13:21Z"
+        },
         "cob": {
-          "cob": 5.0947962907626785
+          "cob": 5.0947962907626785,
+          "timestamp": "2025-05-14T02:10:00Z"
+        },
+        "enacted": {
+          "bolusVolume": 0,
+          "duration": 0,
+          "rate": 0,
+          "received": true,
+          "timestamp": "2025-05-14T02:13:13Z"
         },
         "iob": {
-          "iob": 1.0870623804830117
+          "iob": 1.0870623804830117,
+          "timestamp": "2025-05-14T02:10:00Z"
         },
+        "name": "Loop",
         "predicted": {
+          "startDate": "2025-05-14T02:13:07Z",
           "values": [
             114,
             115.88,
@@ -244,12 +266,15 @@
             100.12,
             100.12
           ]
-        }
+        },
+        "recommendedBolus": 0.15,
+        "timestamp": "2025-05-14T02:13:21Z",
+        "version": "3.2.2.65"
       },
       "subject": "pwd_phone",
       "uploaderBattery": 80,
       "utcOffset": 0
     }
   ],
-  "durationMs": 1
+  "durationMs": 0
 }

@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
       ],
       "Content-Type": [
         "application/json"
@@ -16,10 +16,10 @@
     },
     "body": {
       "app": "asd",
-      "date": "2026-08-19T11:27:10+12:00",
+      "date": "2026-09-04T14:40:00+12:00",
       "defaultProfile": "profile_1",
-      "mills": 1787095630352,
-      "startDate": "2026-08-19T11:26:10+12:00",
+      "mills": 1788489600517,
+      "startDate": "2026-09-04T14:39:00+12:00",
       "store": {
         "profile_1": {
           "basal": [
@@ -135,25 +135,25 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Location": [
-      "/api/v3/profile/a050a8c2-6e85-5c98-a319-316bddef626e"
+      "/api/v3/profile/f6cef19d-2aec-5e73-938e-b00522c9a7e1"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "a050a8c2-6e85-5c98-a319-316bddef626e",
-    "lastModified": 1787095630423,
+    "identifier": "f6cef19d-2aec-5e73-938e-b00522c9a7e1",
+    "lastModified": 1788489600577,
     "status": 201
   },
-  "durationMs": 2
+  "durationMs": 4
 }

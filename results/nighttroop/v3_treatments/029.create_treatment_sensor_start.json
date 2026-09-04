@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,47 +16,52 @@
     },
     "body": {
       "app": "xDrip",
-      "created_at": "2026-08-20T16:49:12+12:00",
+      "created_at": "2026-09-04T14:23:11+12:00",
       "eventType": "Sensor Start",
       "notes": "Dexcom G7 sensor started"
     }
   },
-  "statusCode": 201,
+  "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "368"
+      "417"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611436\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/cn1D8f22"
+      "/api/v3/treatments/go1IkdpO"
     ]
   },
   "body": {
-    "identifier": "cn1D8f22",
-    "lastModified": 1787202372502,
+    "deduplicatedIdentifier": "go1IkdpO",
+    "identifier": "go1IkdpO",
+    "isDeduplication": true,
+    "lastModified": 1788489611436,
     "result": {
-      "app": "xDrip",
-      "created_at": "2026-08-20T04:49:12Z",
-      "date": 1787201352000,
+      "created_at": "2026-09-04T02:23:11Z",
+      "date": 1788488591000,
       "enteredBy": "pwd_phone",
       "eventType": "Sensor Start",
-      "identifier": "cn1D8f22",
+      "identifier": "go1IkdpO",
+      "isReadOnly": false,
       "isValid": true,
-      "notes": "Dexcom G7 sensor started",
-      "srvCreated": 1787202372502,
-      "srvModified": 1787202372502,
+      "notes": "Dexcom G7",
+      "srvCreated": 1788489611436,
+      "srvModified": 1788489611436,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
-    "status": 201
+    "status": 200
   },
-  "durationMs": 0
+  "durationMs": 1
 }

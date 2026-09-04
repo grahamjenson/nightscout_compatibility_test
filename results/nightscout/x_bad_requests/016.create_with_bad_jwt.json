@@ -1,0 +1,50 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/devicestatus",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer wrongbadjwt"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "created_at": "2026-09-04T14:40:00+12:00",
+      "device": "test-device",
+      "subject": "test-subject"
+    }
+  },
+  "statusCode": 401,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "50"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:01 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "message": "Bad access token or JWT",
+    "status": 401
+  },
+  "durationMs": 1
+}

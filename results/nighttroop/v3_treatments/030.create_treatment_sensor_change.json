@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,47 +16,52 @@
     },
     "body": {
       "app": "xDrip",
-      "created_at": "2026-08-20T16:48:12+12:00",
+      "created_at": "2026-09-04T14:22:11+12:00",
       "eventType": "Sensor Change",
       "notes": "New CGM sensor inserted"
     }
   },
-  "statusCode": 201,
+  "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "368"
+      "428"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611437\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/pv7zl0cx"
+      "/api/v3/treatments/Jql2N3HH"
     ]
   },
   "body": {
-    "identifier": "pv7zl0cx",
-    "lastModified": 1787202372503,
+    "deduplicatedIdentifier": "Jql2N3HH",
+    "identifier": "Jql2N3HH",
+    "isDeduplication": true,
+    "lastModified": 1788489611437,
     "result": {
-      "app": "xDrip",
-      "created_at": "2026-08-20T04:48:12Z",
-      "date": 1787201292000,
+      "created_at": "2026-09-04T02:22:11Z",
+      "date": 1788488531000,
       "enteredBy": "pwd_phone",
       "eventType": "Sensor Change",
-      "identifier": "pv7zl0cx",
+      "identifier": "Jql2N3HH",
+      "isReadOnly": false,
       "isValid": true,
-      "notes": "New CGM sensor inserted",
-      "srvCreated": 1787202372503,
-      "srvModified": 1787202372503,
+      "notes": "New sensor inserted",
+      "srvCreated": 1788489611437,
+      "srvModified": 1788489611437,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
-    "status": 201
+    "status": 200
   },
-  "durationMs": 0
+  "durationMs": 1
 }

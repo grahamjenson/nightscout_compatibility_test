@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/authorization/request/token=read-00fe94ad1cd2baaf",
+    "url": "http://localhost:1337/api/v2/authorization/request/token=read-4dafd523765dc7a0",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,10 +25,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:39:59 GMT"
     ],
     "Etag": [
-      "W/\"110-iQDCwPxPSgM3/TLhrNvnGKv5F8Y\""
+      "W/\"110-lUljX1g1IPRhOdAlUsHMl3EuZHs\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -41,15 +41,15 @@
     ]
   },
   "body": {
-    "exp": 1787124429,
-    "iat": 1787095629,
+    "exp": 1788518399,
+    "iat": 1788489599,
     "permissionGroups": [
       [
         "*:*:read"
       ]
     ],
     "sub": "read",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtMDBmZTk0YWQxY2QyYmFhZiIsImlhdCI6MTc4NzA5NTYyOSwiZXhwIjoxNzg3MTI0NDI5fQ.fWlr5Q63mTJhIe3m9PTPGnAcclnLdxE1A9og8W2lllc"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtNGRhZmQ1MjM3NjVkYzdhMCIsImlhdCI6MTc4ODQ4OTU5OSwiZXhwIjoxNzg4NTE4Mzk5fQ.t_yygwWVhbjgma8LCVMUZR88b_ZRmVbWkcWnWBprEpk"
   },
   "durationMs": 2
 }

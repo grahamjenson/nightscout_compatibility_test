@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,51 +16,56 @@
     },
     "body": {
       "app": "Carer",
-      "created_at": "2026-08-20T17:04:12+12:00",
+      "created_at": "2026-09-04T14:38:11+12:00",
       "eventType": "BG Check",
       "glucose": 6.4,
       "glucoseType": "Finger",
       "notes": "Fingerstick confirmation"
     }
   },
-  "statusCode": 201,
+  "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "401"
+      "445"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611423\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/1sj6AO1D"
+      "/api/v3/treatments/94RtHM66"
     ]
   },
   "body": {
-    "identifier": "1sj6AO1D",
-    "lastModified": 1787202372494,
+    "deduplicatedIdentifier": "94RtHM66",
+    "identifier": "94RtHM66",
+    "isDeduplication": true,
+    "lastModified": 1788489611423,
     "result": {
-      "app": "Carer",
-      "created_at": "2026-08-20T05:04:12Z",
-      "date": 1787202252000,
+      "created_at": "2026-09-04T02:38:11Z",
+      "date": 1788489491000,
       "enteredBy": "pwd_phone",
       "eventType": "BG Check",
-      "glucose": 6.4,
-      "glucoseType": "Finger",
-      "identifier": "1sj6AO1D",
+      "glucose": 145,
+      "glucoseType": "Meter",
+      "identifier": "94RtHM66",
+      "isReadOnly": false,
       "isValid": true,
-      "notes": "Fingerstick confirmation",
-      "srvCreated": 1787202372494,
-      "srvModified": 1787202372494,
+      "srvCreated": 1788489611423,
+      "srvModified": 1788489611423,
       "subject": "pwd_phone",
+      "units": "mg/dL",
       "utcOffset": 720
     },
-    "status": 201
+    "status": 200
   },
-  "durationMs": 0
+  "durationMs": 1
 }

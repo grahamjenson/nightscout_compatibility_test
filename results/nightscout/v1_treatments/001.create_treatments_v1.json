@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments?token=write-0acbea8106c5420d",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-d1e2709a9d2611d2",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,7 +14,7 @@
     "body": {
       "absolute": null,
       "carbs": 45,
-      "created_at": "2026-08-19T11:27:09+12:00",
+      "created_at": "2026-09-04T14:40:00+12:00",
       "duration": 0,
       "enteredBy": "aaps-loop",
       "eventType": "Meal Bolus",
@@ -41,10 +41,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Etag": [
-      "W/\"16e-gIvHz3ncgfxrYr9jwueJSKL5UrQ\""
+      "W/\"16e-QZn36G5cqQW6uOSbooC7kS65/wk\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -58,10 +58,10 @@
   },
   "body": [
     {
-      "_id": "6a84ea4d99873f4a1ea9580a",
+      "_id": "6a9a2f8049a97a563d84f790",
       "absolute": 0,
       "carbs": 45,
-      "created_at": "2026-08-18T23:27:09.000Z",
+      "created_at": "2026-09-04T02:40:00.000Z",
       "duration": 0,
       "enteredBy": "aaps-loop",
       "eventType": "Meal Bolus",
@@ -77,5 +77,5 @@
       "utcOffset": 720
     }
   ],
-  "durationMs": 3
+  "durationMs": 4
 }

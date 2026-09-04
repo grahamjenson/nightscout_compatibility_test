@@ -2,13 +2,13 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/devicestatus/60ZlDpy6custom",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/devicestatus/VTTAnsLMcustom",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "test-app",
-      "created_at": "2026-08-20T17:05:12+12:00",
+      "created_at": "2026-09-04T14:39:11+12:00",
       "device": "aapsv3",
       "uploader": {
         "battery": 87,
@@ -27,30 +27,34 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "315"
+      "334"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611470\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": {
-    "identifier": "60ZlDpy6custom",
-    "lastModified": 1787202372376,
+    "identifier": "VTTAnsLMcustom",
+    "lastModified": 1788489611470,
     "result": {
       "app": "test-app",
-      "created_at": "2026-08-20T05:05:12Z",
-      "date": 1787202312000,
+      "created_at": "2026-09-04T02:39:11Z",
+      "date": 1788489551000,
       "device": "aapsv3",
-      "identifier": "60ZlDpy6custom",
+      "identifier": "VTTAnsLMcustom",
+      "isReadOnly": false,
       "isValid": true,
-      "srvCreated": 1787202372376,
-      "srvModified": 1787202372376,
+      "srvCreated": 1788489611470,
+      "srvModified": 1788489611470,
       "subject": "pwd_phone",
       "utcOffset": 720
     },

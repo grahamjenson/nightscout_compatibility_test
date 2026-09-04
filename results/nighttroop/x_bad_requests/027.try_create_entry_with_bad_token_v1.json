@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/entries?token=badtoken",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "date": 1788488411797,
+      "sgv": 105,
+      "type": "sgv"
+    }
+  },
+  "statusCode": 401,
+  "headers": {
+    "Content-Length": [
+      "51"
+    ],
+    "Content-Type": [
+      "text/plain; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ]
+  },
+  "body": "Unauthorized: No valid authentication method found\n",
+  "durationMs": 0
+}

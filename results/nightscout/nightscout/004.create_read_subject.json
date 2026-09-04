@@ -33,10 +33,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:39:59 GMT"
     ],
     "Etag": [
-      "W/\"6d-a8OESsNTfZAKcexrwHNXNlF5hLE\""
+      "W/\"6d-E/SjPb0lr7LLO0EpyxHa1mTWR50\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -49,12 +49,12 @@
     ]
   },
   "body": {
-    "_id": "6a84ea4d3fab588a53776078",
-    "created_at": "2026-08-18T23:27:09.737Z",
+    "_id": "6a9a2f7f6e924a337c97e38f",
+    "created_at": "2026-09-04T02:39:59.809Z",
     "name": "read",
     "roles": [
       "readable"
     ]
   },
-  "durationMs": 7
+  "durationMs": 5
 }

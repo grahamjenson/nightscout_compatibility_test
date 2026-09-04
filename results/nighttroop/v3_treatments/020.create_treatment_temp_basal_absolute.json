@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -17,7 +17,7 @@
     "body": {
       "absolute": 0.4,
       "app": "AndroidAPS",
-      "created_at": "2026-08-20T16:58:12+12:00",
+      "created_at": "2026-09-04T14:32:11+12:00",
       "duration": 60,
       "eventType": "Temp Basal",
       "reason": "Exercise"
@@ -26,43 +26,47 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "429"
+      "448"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611670\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/hDZ223Bu"
+      "/api/v3/treatments/GhXAPsX0"
     ]
   },
   "body": {
-    "identifier": "hDZ223Bu",
-    "lastModified": 1787202372497,
+    "identifier": "GhXAPsX0",
+    "lastModified": 1788489611670,
     "result": {
       "absolute": 0.4,
       "app": "AndroidAPS",
-      "created_at": "2026-08-20T04:58:12Z",
-      "date": 1787201892000,
+      "created_at": "2026-09-04T02:32:11Z",
+      "date": 1788489131000,
       "duration": 60,
       "durationInMilliseconds": 3600000,
       "enteredBy": "pwd_phone",
       "eventType": "Temp Basal",
-      "identifier": "hDZ223Bu",
+      "identifier": "GhXAPsX0",
+      "isReadOnly": false,
       "isValid": true,
       "rate": 0.4,
       "reason": "Exercise",
-      "srvCreated": 1787202372497,
-      "srvModified": 1787202372497,
+      "srvCreated": 1788489611670,
+      "srvModified": 1788489611670,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     "status": 201
   },
-  "durationMs": 0
+  "durationMs": 1
 }

@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/food?token=write-0acbea8106c5420d",
+    "url": "http://localhost:1337/api/v1/food?token=write-d1e2709a9d2611d2",
     "headers": {
       "Accept": [
         "application/json"
@@ -36,10 +36,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Etag": [
-      "W/\"db-wtKHsv6L4SsQE4SFi0Bx9jlwbJ4\""
+      "W/\"db-ooRcc5g0rOTT60Tp/NvWXtyQQrs\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -53,10 +53,10 @@
   },
   "body": [
     {
-      "_id": "6a84ea4d99873f4a1ea957f7",
+      "_id": "6a9a2f8049a97a563d84f77c",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-08-18T23:27:09.907Z",
+      "created_at": "2026-09-04T02:40:00.038Z",
       "energy": 105,
       "fat": 0.3,
       "gi": 51,

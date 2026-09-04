@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "asd",
-      "created_at": "2026-08-20T17:01:12+12:00",
+      "created_at": "2026-09-04T14:35:11+12:00",
       "eventType": "Profile Switch",
       "insulin": 2,
       "reason": "5"
@@ -25,39 +25,43 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "346"
+      "365"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611653\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/2vYj8HQy"
+      "/api/v3/treatments/E9mGJT76"
     ]
   },
   "body": {
-    "identifier": "2vYj8HQy",
-    "lastModified": 1787202372485,
+    "identifier": "E9mGJT76",
+    "lastModified": 1788489611653,
     "result": {
       "app": "asd",
-      "created_at": "2026-08-20T05:01:12Z",
-      "date": 1787202072000,
+      "created_at": "2026-09-04T02:35:11Z",
+      "date": 1788489311000,
       "enteredBy": "pwd_phone",
       "eventType": "Profile Switch",
-      "identifier": "2vYj8HQy",
+      "identifier": "E9mGJT76",
+      "isReadOnly": false,
       "isValid": true,
       "reason": "5",
-      "srvCreated": 1787202372485,
-      "srvModified": 1787202372485,
+      "srvCreated": 1788489611653,
+      "srvModified": 1788489611653,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     "status": 201
   },
-  "durationMs": 0
+  "durationMs": 1
 }

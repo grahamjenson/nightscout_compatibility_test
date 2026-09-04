@@ -1,0 +1,105 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries.json?token=write-d1e2709a9d2611d2",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "961"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:39:59 GMT"
+    ],
+    "Etag": [
+      "W/\"3c1-AYT8Ov/wTYqraFZ0iiK8reD2uHc\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:39:59 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a9a2f7f49a97a563d84f765",
+      "app": "test-app",
+      "date": 1788489599863,
+      "dateString": "2026-09-04T02:39:59.000Z",
+      "device": "test-device",
+      "direction": "Flat",
+      "filtered": 139.2,
+      "mills": 1788489599863,
+      "noise": 1,
+      "rssi": -62,
+      "sgv": 100,
+      "sysTime": "2026-09-04T02:39:59.000Z",
+      "trend": 3,
+      "type": "sgv",
+      "unfiltered": 141.7,
+      "utcOffset": 720
+    },
+    {
+      "_id": "6a9a2f7f49a97a563d84f763",
+      "date": 1788489599857,
+      "sgv": 100,
+      "sysTime": "2026-09-04T02:39:59.857Z",
+      "type": "sgv",
+      "utcOffset": 0
+    },
+    {
+      "_id": "6a9a2f7f49a97a563d84f76a",
+      "app": "test-app",
+      "date": 1788488999895,
+      "device": "test-device",
+      "mbg": 110,
+      "sysTime": "2026-09-04T02:29:59.895Z",
+      "type": "mbg",
+      "utcOffset": 0
+    },
+    {
+      "_id": "6a9a2f7f49a97a563d84f767",
+      "app": "test-app",
+      "date": 1788488999878,
+      "device": "test-device",
+      "sgv": 101,
+      "sysTime": "2026-09-04T02:29:59.878Z",
+      "type": "sgv",
+      "utcOffset": 0
+    },
+    {
+      "_id": "6a9a2f7f49a97a563d84f768",
+      "app": "test-app",
+      "date": 1788488879878,
+      "device": "test-device",
+      "mbg": 102,
+      "sysTime": "2026-09-04T02:27:59.878Z",
+      "type": "mbg",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 7
+}

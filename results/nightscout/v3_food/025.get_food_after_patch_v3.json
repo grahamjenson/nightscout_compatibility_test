@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v3/food/a050a8c2-6e85-5c98-a319-316bddef626e",
+    "url": "http://localhost:1337/api/v3/food/f6cef19d-2aec-5e73-938e-b00522c9a7e1",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
       ],
       "Content-Type": [
         "application/json"
@@ -28,13 +28,13 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Vary": [
       "Accept, Accept-Encoding"
@@ -45,19 +45,19 @@
       "app": "asd",
       "carbs": 30,
       "category": "Snacks",
-      "created_at": "2026-08-18T23:27:10.000Z",
-      "date": 1787095630000,
-      "identifier": "a050a8c2-6e85-5c98-a319-316bddef626e",
+      "created_at": "2026-09-04T02:40:00.000Z",
+      "date": 1788489600000,
+      "identifier": "f6cef19d-2aec-5e73-938e-b00522c9a7e1",
       "modifiedBy": "write",
       "name": "Banana2",
       "notes": "test food 222",
-      "srvCreated": 1787095630352,
-      "srvModified": 1787095630410,
+      "srvCreated": 1788489600502,
+      "srvModified": 1788489600563,
       "subcategory": "Candy",
       "subject": "write",
       "utcOffset": 720
     },
     "status": 200
   },
-  "durationMs": 2
+  "durationMs": 1
 }

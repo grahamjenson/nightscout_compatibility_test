@@ -1,0 +1,73 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/entries/history/1788487800345?sgv$lt=95&limit=1",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "439"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:00 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489600387\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:00 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "app": "test-app",
+        "created_at": "2026-09-04T02:40:00.328Z",
+        "date": 1788489600328,
+        "dateString": "2026-09-04T14:40:00+12:00",
+        "device": "test-device",
+        "direction": "Flat",
+        "filtered": 139.2,
+        "identifier": "211d0d27-19a2-5b44-a6fc-32d8f7393a8f",
+        "mills": 1788489600328,
+        "noise": 1,
+        "rssi": -62,
+        "sgv": 100,
+        "srvCreated": 1788489600387,
+        "srvModified": 1788489600387,
+        "subject": "write",
+        "trend": 3,
+        "type": "sgv",
+        "unfiltered": 141.7,
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 2
+}

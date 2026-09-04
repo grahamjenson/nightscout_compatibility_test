@@ -1,0 +1,58 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-d1e2709a9d2611d2&find[_id]=6a9a2f8649a97a563d84f938",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "155"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:06 GMT"
+    ],
+    "Etag": [
+      "W/\"9b-ntzcAhgja8RvfE/gFeG1INOdHsg\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:39:06 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a9a2f8649a97a563d84f938",
+      "carbs": null,
+      "created_at": "2026-09-04T02:39:06.000Z",
+      "eventType": "BAD TYPE",
+      "insulin": 4.2,
+      "reason": "1",
+      "utcOffset": 720
+    }
+  ],
+  "durationMs": 7
+}

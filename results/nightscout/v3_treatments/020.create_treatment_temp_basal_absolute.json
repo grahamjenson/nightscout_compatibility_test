@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
       ],
       "Content-Type": [
         "application/json"
@@ -17,7 +17,7 @@
     "body": {
       "absolute": 0.4,
       "app": "AndroidAPS",
-      "created_at": "2026-08-19T11:19:10+12:00",
+      "created_at": "2026-09-04T14:32:00+12:00",
       "duration": 60,
       "eventType": "Temp Basal",
       "reason": "Exercise"
@@ -35,24 +35,24 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/2acda8c7-53d3-56cc-8514-d7fb3af7d0c8"
+      "/api/v3/treatments/9eb07e22-031e-5bb4-a7aa-b74ef29402a7"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "2acda8c7-53d3-56cc-8514-d7fb3af7d0c8",
-    "lastModified": 1787095630548,
+    "identifier": "9eb07e22-031e-5bb4-a7aa-b74ef29402a7",
+    "lastModified": 1788489600711,
     "status": 201
   },
   "durationMs": 3

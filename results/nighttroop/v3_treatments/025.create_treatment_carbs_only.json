@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -17,48 +17,53 @@
     "body": {
       "app": "Carer",
       "carbs": 20,
-      "created_at": "2026-08-20T16:53:12+12:00",
+      "created_at": "2026-09-04T14:27:11+12:00",
       "eventType": "Carb Correction",
       "notes": "Hypoglycemia treatment"
     }
   },
-  "statusCode": 201,
+  "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "380"
+      "438"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611407\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/Y1iY5H9M"
+      "/api/v3/treatments/CY090lk7"
     ]
   },
   "body": {
-    "identifier": "Y1iY5H9M",
-    "lastModified": 1787202372500,
+    "deduplicatedIdentifier": "CY090lk7",
+    "identifier": "CY090lk7",
+    "isDeduplication": true,
+    "lastModified": 1788489611407,
     "result": {
-      "app": "Carer",
-      "carbs": 20,
-      "created_at": "2026-08-20T04:53:12Z",
-      "date": 1787201592000,
+      "carbs": 12,
+      "created_at": "2026-09-04T02:27:11Z",
+      "date": 1788488831000,
       "enteredBy": "pwd_phone",
       "eventType": "Carb Correction",
-      "identifier": "Y1iY5H9M",
+      "identifier": "CY090lk7",
+      "isReadOnly": false,
       "isValid": true,
-      "notes": "Hypoglycemia treatment",
-      "srvCreated": 1787202372500,
-      "srvModified": 1787202372500,
+      "notes": "Treated mild low",
+      "srvCreated": 1788489611407,
+      "srvModified": 1788489611407,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
-    "status": 201
+    "status": 200
   },
-  "durationMs": 0
+  "durationMs": 1
 }

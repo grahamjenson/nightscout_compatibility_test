@@ -1,0 +1,67 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries/current.json?token=write-d1e2709a9d2611d2",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "321"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:00 GMT"
+    ],
+    "Etag": [
+      "W/\"141-z0QT7lWiSxmy+F+aYDkiCwYdfR8\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:39:59 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a9a2f7f49a97a563d84f765",
+      "app": "test-app",
+      "date": 1788489599863,
+      "dateString": "2026-09-04T02:39:59.000Z",
+      "device": "test-device",
+      "direction": "Flat",
+      "filtered": 139.2,
+      "mills": 1788489599863,
+      "noise": 1,
+      "rssi": -62,
+      "sgv": 100,
+      "sysTime": "2026-09-04T02:39:59.000Z",
+      "trend": 3,
+      "type": "sgv",
+      "unfiltered": 141.7,
+      "utcOffset": 720
+    }
+  ],
+  "durationMs": 3
+}

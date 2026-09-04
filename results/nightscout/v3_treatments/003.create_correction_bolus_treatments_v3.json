@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "asd",
-      "created_at": "2026-08-19T11:26:10+12:00",
+      "created_at": "2026-09-04T14:39:00+12:00",
       "eventType": "Correction Bolus",
       "insulin": 4.2,
       "reason": "1"
@@ -34,24 +34,24 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/bda3ff1b-9fad-5329-a0b7-68d3375a541b"
+      "/api/v3/treatments/aa3be43e-1e44-5cfe-a809-ab4ef4541dce"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "bda3ff1b-9fad-5329-a0b7-68d3375a541b",
-    "lastModified": 1787095630491,
+    "identifier": "aa3be43e-1e44-5cfe-a809-ab4ef4541dce",
+    "lastModified": 1788489600661,
     "status": 201
   },
   "durationMs": 3

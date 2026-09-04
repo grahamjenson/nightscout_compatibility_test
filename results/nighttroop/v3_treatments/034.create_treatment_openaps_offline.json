@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "AndroidAPS",
-      "created_at": "2026-08-20T16:44:12+12:00",
+      "created_at": "2026-09-04T14:18:11+12:00",
       "eventType": "OpenAPS Offline",
       "reason": "Phone disconnected"
     }
@@ -24,39 +24,43 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "371"
+      "390"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611690\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/l8qTnLPb"
+      "/api/v3/treatments/SC7m4NzT"
     ]
   },
   "body": {
-    "identifier": "l8qTnLPb",
-    "lastModified": 1787202372504,
+    "identifier": "SC7m4NzT",
+    "lastModified": 1788489611690,
     "result": {
       "app": "AndroidAPS",
-      "created_at": "2026-08-20T04:44:12Z",
-      "date": 1787201052000,
+      "created_at": "2026-09-04T02:18:11Z",
+      "date": 1788488291000,
       "enteredBy": "pwd_phone",
       "eventType": "OpenAPS Offline",
-      "identifier": "l8qTnLPb",
+      "identifier": "SC7m4NzT",
+      "isReadOnly": false,
       "isValid": true,
       "reason": "Phone disconnected",
-      "srvCreated": 1787202372504,
-      "srvModified": 1787202372504,
+      "srvCreated": 1788489611690,
+      "srvModified": 1788489611690,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     "status": 201
   },
-  "durationMs": 0
+  "durationMs": 1
 }

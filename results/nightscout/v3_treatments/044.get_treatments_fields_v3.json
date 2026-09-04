@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTBhY2JlYTgxMDZjNTQyMGQiLCJpYXQiOjE3ODcwOTU2MjksImV4cCI6MTc4NzEyNDQyOX0.yJ8feTryWR_B1n3zTiGF_iqDepmFi1zSQiwpFfLhluE"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
       ],
       "Content-Type": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:10 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -142,128 +142,67 @@
       {},
       {},
       {
-        "date": 1787095090000
-      },
-      {
-        "date": 1787095270000,
-        "notes": "Wizard calculation"
-      },
-      {
-        "date": 1787095510000
-      },
-      {
-        "date": 1787095150000
-      },
-      {
-        "date": 1787094730000,
-        "notes": "Going swimming today"
-      },
-      {
-        "date": 1787095030000
-      },
-      {
-        "date": 1787094370000,
-        "notes": "Battery replaced"
-      },
-      {
-        "date": 1787094610000,
-        "notes": "Dexcom G7 sensor started"
-      },
-      {
-        "date": 1787095270000
-      },
-      {
-        "date": 1787095570000,
-        "notes": "Routine glucose check"
-      },
-      {
-        "date": 1787094490000,
-        "notes": "Pod changed on left arm"
-      },
-      {
-        "date": 1787095390000,
-        "notes": "Afternoon snack"
-      },
-      {
-        "date": 1787095390000
-      },
-      {
-        "date": 1787094550000,
-        "notes": "New CGM sensor inserted"
-      },
-      {
-        "date": 1787095330000,
-        "notes": "High glucose correction"
-      },
-      {
-        "date": 1787095150000
-      },
-      {
-        "date": 1787094910000,
+        "date": 1788488880000,
         "notes": "Bike ride"
       },
       {
-        "date": 1787094670000,
-        "notes": "Should basal be adjusted overnight?"
+        "date": 1788488280000
       },
       {
-        "date": 1787094430000,
-        "notes": "New insulin vial"
-      },
-      {
-        "date": 1787095629000,
-        "notes": "Lunch pasta + insulin pre-bolus"
-      },
-      {
-        "date": 1787095630000,
-        "notes": "Lunch pasta + insulin pre-bolus"
-      },
-      {
-        "date": 1787095450000
-      },
-      {
-        "date": 1787094790000,
-        "notes": "Running higher after lunch"
-      },
-      {
-        "date": 1787094250000,
+        "date": 1788488220000,
         "notes": "Possible missed bolus"
       },
       {
-        "date": 1787094310000
+        "date": 1788489420000
       },
       {
-        "date": 1787094970000
+        "date": 1788489480000
       },
       {
-        "date": 1787095570000
+        "date": 1788488760000,
+        "notes": "Running higher after lunch"
       },
       {
-        "date": 1787095090000
+        "date": 1788488940000
       },
       {
-        "date": 1787095030000
+        "date": 1788489000000
       },
       {
-        "date": 1787095450000,
-        "notes": "Breakfast"
+        "date": 1788488400000,
+        "notes": "New insulin vial"
       },
       {
-        "date": 1787094850000,
-        "notes": "Hypoglycemia treatment"
+        "date": 1788489000000
       },
       {
-        "date": 1787095330000
+        "date": 1788489300000
       },
       {
-        "date": 1787095510000,
-        "notes": "Fingerstick confirmation"
+        "date": 1788488340000,
+        "notes": "Battery replaced"
       },
       {
-        "date": 1787095210000
+        "date": 1788488640000,
+        "notes": "Should basal be adjusted overnight?"
       },
       {
-        "date": 1787095210000
+        "date": 1788489120000
+      },
+      {
+        "date": 1788489540000
+      },
+      {
+        "date": 1788489599000,
+        "notes": "Lunch pasta + insulin pre-bolus"
+      },
+      {
+        "date": 1788489600000,
+        "notes": "Lunch pasta + insulin pre-bolus"
+      },
+      {
+        "date": 1788488700000,
+        "notes": "Going swimming today"
       },
       {
         "notes": "updated by update_put_root_treatments_noid_v1"

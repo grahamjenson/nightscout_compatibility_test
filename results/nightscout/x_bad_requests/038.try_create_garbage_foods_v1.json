@@ -1,0 +1,69 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/food?token=write-d1e2709a9d2611d2",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "carbs": 27,
+        "category": "Snacks"
+      },
+      {
+        "carbs": "NaN aaa",
+        "category": "Snacks",
+        "name": "Banana3"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "237"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:06 GMT"
+    ],
+    "Etag": [
+      "W/\"ed-WllcHq3gnQZJXAtJE4d355TlM3k\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a9a2f8649a97a563d84f922",
+      "carbs": 27,
+      "category": "Snacks",
+      "created_at": "2026-09-04T02:40:06.122Z"
+    },
+    {
+      "_id": "6a9a2f8649a97a563d84f923",
+      "carbs": "NaN aaa",
+      "category": "Snacks",
+      "created_at": "2026-09-04T02:40:06.122Z",
+      "name": "Banana3"
+    }
+  ],
+  "durationMs": 3
+}

@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile?token=write-0acbea8106c5420d",
+    "url": "http://localhost:1337/api/v1/profile?token=write-d1e2709a9d2611d2",
     "headers": {
       "Accept": [
         "application/json"
@@ -13,8 +13,8 @@
     },
     "body": {
       "defaultProfile": "profile_1",
-      "mills": 1787095629853,
-      "startDate": "2026-08-19T11:26:09+12:00",
+      "mills": 1788489600005,
+      "startDate": "2026-09-04T14:39:00+12:00",
       "store": {
         "profile_1": {
           "basal": [
@@ -130,10 +130,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:40:00 GMT"
     ],
     "Etag": [
-      "W/\"38e-ZnEB1bI24xXef8UYQyoiD/Gt7cc\""
+      "W/\"38e-qrGnBvH//AmQ277LNXYvTXtHbcA\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -147,11 +147,11 @@
   },
   "body": [
     {
-      "_id": "6a84ea4d3fab588a5377607d",
-      "created_at": "2026-08-18T23:27:09.925Z",
+      "_id": "6a9a2f806e924a337c97e394",
+      "created_at": "2026-09-04T02:40:00.063Z",
       "defaultProfile": "profile_1",
-      "mills": 1787095629853,
-      "startDate": "2026-08-19T11:26:09+12:00",
+      "mills": 1788489600005,
+      "startDate": "2026-09-04T14:39:00+12:00",
       "store": {
         "profile_1": {
           "basal": [

@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/devicestatus/history/1787200572378",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/devicestatus/history/1788487811471",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -22,133 +22,106 @@
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611470\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": {
     "result": [
       {
-        "created_at": "2026-08-20T05:06:12Z",
-        "date": 1787202372000,
-        "device": "aaps",
-        "identifier": "8pblk1p7",
-        "isValid": false,
-        "loop": {
-          "cob": {
-            "cob": 18
-          },
-          "iob": {
-            "iob": 1.73
-          },
-          "predicted": {
-            "values": [
-              112,
-              114,
-              117,
-              120,
-              123,
-              126
-            ]
-          }
-        },
-        "pump": {
-          "battery": {
-            "percent": 68
-          },
-          "reservoir": 97.4
-        },
-        "srvCreated": 1787202372312,
-        "srvModified": 1787202372312,
-        "subject": "pwd_phone",
-        "uploaderBattery": 87,
-        "utcOffset": 720
-      },
-      {
-        "app": "test-app",
-        "created_at": "2026-08-20T05:06:12Z",
-        "date": 1787202372000,
-        "device": "aaps",
-        "identifier": "60ZlDpy6",
-        "isValid": true,
-        "loop": {
-          "cob": {
-            "cob": 18
-          },
-          "iob": {
-            "iob": 1.73
-          },
-          "predicted": {
-            "values": [
-              112,
-              114,
-              117,
-              120,
-              123,
-              126
-            ]
-          }
-        },
-        "pump": {
-          "battery": {
-            "percent": 68
-          },
-          "reservoir": 97.4
-        },
-        "srvCreated": 1787202372376,
-        "srvModified": 1787202372376,
-        "subject": "pwd_phone",
-        "uploaderBattery": 87,
-        "utcOffset": 720
-      },
-      {
-        "created_at": "2026-08-20T05:05:12Z",
-        "date": 1787202312000,
+        "created_at": "2026-09-04T02:39:11Z",
+        "date": 1788489551000,
         "device": "aaps1",
-        "identifier": "u3uO881e",
+        "identifier": "X7CWSrIJ",
+        "isReadOnly": false,
         "isValid": true,
-        "srvCreated": 1787202372313,
-        "srvModified": 1787202372313,
+        "srvCreated": 1788489611368,
+        "srvModified": 1788489611368,
         "subject": "pwd_phone",
         "utcOffset": 720
       },
       {
         "app": "test-app",
-        "created_at": "2026-08-20T05:05:12Z",
-        "date": 1787202312000,
+        "created_at": "2026-09-04T02:39:11Z",
+        "date": 1788489551000,
         "device": "aapsv3",
-        "identifier": "60ZlDpy6custom",
+        "identifier": "VTTAnsLMcustom",
+        "isReadOnly": false,
         "isValid": true,
-        "srvCreated": 1787202372376,
-        "srvModified": 1787202372376,
+        "srvCreated": 1788489611470,
+        "srvModified": 1788489611470,
         "subject": "pwd_phone",
         "utcOffset": 720
       },
       {
-        "created_at": "2026-08-20T05:04:12Z",
-        "date": 1787202252000,
+        "created_at": "2026-09-04T02:38:11Z",
+        "date": 1788489491000,
         "device": "aaps",
-        "identifier": "wPntXOA3",
+        "identifier": "q7k3z9sA",
+        "isReadOnly": false,
         "isValid": true,
-        "srvCreated": 1787202372313,
-        "srvModified": 1787202372313,
+        "srvCreated": 1788489611368,
+        "srvModified": 1788489611368,
         "subject": "pwd_phone",
         "utcOffset": 720
       },
       {
         "app": "AAPS",
+        "configuration": {},
         "created_at": "2026-08-16T22:39:48.777Z",
         "date": 1786919988777,
         "device": "openaps://CUBOT KINGKONG MINI 3",
-        "identifier": "xkhRRXRA",
+        "identifier": "NvYe8ml4",
         "isCharging": false,
+        "isReadOnly": false,
         "isValid": true,
         "openaps": {
           "iob": {
+            "activity": 0.007,
             "basaliob": -0.332,
-            "iob": 0.736
+            "iob": 0.736,
+            "time": "2026-08-16T22:39:43.738Z"
           },
           "suggested": {
             "COB": 0,
+            "IOB": 0.736,
+            "algorithm": "SMB",
+            "bg": 150,
+            "consoleError": [
+              "---------------------------------------------------------",
+              " Dynamic ISF version 2.0 ",
+              "---------------------------------------------------------",
+              "CR:11.5",
+              "SMB enabled due to enableSMB_always",
+              "profile.sens: 134.4, sens: 134.4, CSF: 11.68695652173913",
+              "Last carbs 143minutes ago; remainingCATime:6.1hours;100% carbs absorbed",
+              "Carb Impact: -1.6 mg/dL per 5m; CI Duration: 0.0 hours; remaining CI (~2h peak): 0.0 mg/dL per 5m",
+              "UAM Impact: -1.6 mg/dL per 5m; UAM Duration: 0.0 hours",
+              " avgPredBG: 89.0 COB: 0.0 / 26.0",
+              "minGuardBG -1.1 projected below 4.5 - disabling SMB",
+              "BG projected to remain above 6.8 for 25 minutes",
+              "BG projected to remain above 4.5 for 65 minutes",
+              "naive_eventualBG: 51.0 bgUndershoot: 30.0 zeroTempDuration 65 zeroTempEffect: 51 carbsReq: -2"
+            ],
+            "consoleLog": [
+              "Autosens ratio: 1.2055221584632745; ",
+              "Adjusting basal from 0.35 to 0.42193275546214604; ",
+              "target_bg from 135.9 to 123.0; ",
+              "EventualBG is 41.0 ;",
+              "Future state sensitivity is 330.0 based on eventual bg due to -ve delta",
+              "minPredBG: 59.0 minIOBPredBG: 39.0 minZTGuardBG: 89.0",
+              " minUAMPredBG: 39.0"
+            ],
+            "deliverAt": "2026-08-16T22:39:41.740Z",
+            "duration": 120,
+            "eventualBG": 41,
+            "insulinReq": 0,
+            "isfMgdlForCarbs": 137.59339622641514,
             "predBGs": {
               "IOB": [
                 150,
@@ -215,17 +188,24 @@
                 123
               ]
             },
-            "timestamp": "2026-08-16T22:39:43.738Z"
+            "rate": 0,
+            "reason": "Dosing sensitivity: 330.0 using eventual BG;COB: 0, Dev: -0.6, BGI: -0.3, ISF: 7.5, CR: 11.5, Target: 6.8, minPredBG 3.3, minGuardBG -1.1, IOBpredBG 2.2; minGuardBG -1.1\u003c4.5",
+            "runningDynamicIsf": true,
+            "sensitivityRatio": 1.2055221584632745,
+            "targetBG": 123,
+            "tick": "-6",
+            "timestamp": "2026-08-16T22:39:43.738Z",
+            "variable_sens": 134.4
           }
         },
         "pump": {
           "reservoir": 38
         },
-        "srvCreated": 1787202372316,
-        "srvModified": 1787202372316,
+        "srvCreated": 1788489611372,
+        "srvModified": 1788489611372,
         "subject": "pwd_phone",
         "uploaderBattery": 88,
-        "utcOffset": 0
+        "utcOffset": 720
       }
     ],
     "status": 200

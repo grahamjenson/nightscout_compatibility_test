@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/devicestatus?token=write-0acbea8106c5420d",
+    "url": "http://localhost:1337/api/v1/devicestatus?token=write-d1e2709a9d2611d2",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Tue, 18 Aug 2026 23:27:09 GMT"
+      "Fri, 04 Sep 2026 02:39:59 GMT"
     ],
     "Etag": [
-      "W/\"413-KFi1laxmerNJQEGSu4soYap36TI\""
+      "W/\"413-kfZsLZ7y3Lk5QKoMY6Ndsko6LCI\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -39,8 +39,8 @@
   },
   "body": [
     {
-      "_id": "6a84ea4d3fab588a53776079",
-      "created_at": "2026-08-18T23:27:09.000Z",
+      "_id": "6a9a2f7f6e924a337c97e390",
+      "created_at": "2026-09-04T02:39:59.000Z",
       "device": "aaps",
       "loop": {
         "cob": {
@@ -100,8 +100,8 @@
       "utcOffset": 720
     },
     {
-      "_id": "6a84ea4d3fab588a5377607a",
-      "created_at": "2026-08-18T23:26:09.000Z",
+      "_id": "6a9a2f7f6e924a337c97e391",
+      "created_at": "2026-09-04T02:38:59.000Z",
       "device": "aaps1",
       "uploader": {
         "battery": 87,
@@ -110,8 +110,8 @@
       "utcOffset": 720
     },
     {
-      "_id": "6a84ea4d3fab588a5377607b",
-      "created_at": "2026-08-18T23:25:09.000Z",
+      "_id": "6a9a2f7f6e924a337c97e392",
+      "created_at": "2026-09-04T02:37:59.000Z",
       "device": "aaps",
       "uploader": {
         "battery": 87,

@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "Carer",
-      "created_at": "2026-08-20T16:50:12+12:00",
+      "created_at": "2026-09-04T14:24:11+12:00",
       "eventType": "Question",
       "notes": "Should basal be adjusted overnight?"
     }
@@ -24,39 +24,44 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "375"
+      "412"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611683\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/z6psg29K"
+      "/api/v3/treatments/U2Zw66E9"
     ]
   },
   "body": {
-    "identifier": "z6psg29K",
-    "lastModified": 1787202372502,
+    "identifier": "U2Zw66E9",
+    "lastModified": 1788489611683,
     "result": {
       "app": "Carer",
-      "created_at": "2026-08-20T04:50:12Z",
-      "date": 1787201412000,
+      "created_at": "2026-09-04T02:24:11Z",
+      "date": 1788488651000,
       "enteredBy": "pwd_phone",
       "eventType": "Question",
-      "identifier": "z6psg29K",
+      "identifier": "U2Zw66E9",
+      "isReadOnly": false,
       "isValid": true,
+      "name": "Question",
       "notes": "Should basal be adjusted overnight?",
-      "srvCreated": 1787202372502,
-      "srvModified": 1787202372502,
+      "srvCreated": 1788489611683,
+      "srvModified": 1788489611683,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     "status": 201
   },
-  "durationMs": 0
+  "durationMs": 1
 }

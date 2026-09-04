@@ -1,0 +1,71 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "AAPS",
+      "carbs": 25,
+      "date": 1787624277000,
+      "eventType": "Meal Bolus",
+      "isReadOnly": false,
+      "isValid": false,
+      "notes": "",
+      "utcOffset": 720
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Content-Length": [
+      "371"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611762\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/Jol8o550"
+    ]
+  },
+  "body": {
+    "identifier": "Jol8o550",
+    "lastModified": 1788489611762,
+    "result": {
+      "app": "AAPS",
+      "carbs": 25,
+      "created_at": "2026-08-25T02:17:57Z",
+      "date": 1787624277000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "identifier": "Jol8o550",
+      "isReadOnly": false,
+      "isValid": true,
+      "notes": "",
+      "srvCreated": 1788489611762,
+      "srvModified": 1788489611762,
+      "subject": "pwd_phone",
+      "utcOffset": 720
+    },
+    "status": 201
+  },
+  "durationMs": 1
+}

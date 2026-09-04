@@ -1,0 +1,81 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries?token=write-d1e2709a9d2611d2",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "app": "test-app",
+        "date": 1788488999878,
+        "device": "test-device",
+        "sgv": 101,
+        "type": "sgv"
+      },
+      {
+        "app": "test-app",
+        "date": 1788488879878,
+        "device": "test-device",
+        "mbg": 102,
+        "type": "mbg"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "341"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:39:59 GMT"
+    ],
+    "Etag": [
+      "W/\"155-oj1GYAr6hswTUtDZ22r2MeMbLUQ\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6a9a2f7f49a97a563d84f767",
+      "app": "test-app",
+      "date": 1788488999878,
+      "device": "test-device",
+      "sgv": 101,
+      "sysTime": "2026-09-04T02:29:59.878Z",
+      "type": "sgv",
+      "utcOffset": 0
+    },
+    {
+      "_id": "6a9a2f7f49a97a563d84f768",
+      "app": "test-app",
+      "date": 1788488879878,
+      "device": "test-device",
+      "mbg": 102,
+      "sysTime": "2026-09-04T02:27:59.878Z",
+      "type": "mbg",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 16
+}

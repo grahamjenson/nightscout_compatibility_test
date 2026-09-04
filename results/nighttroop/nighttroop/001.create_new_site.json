@@ -22,16 +22,16 @@
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": {
     "api_key": "password",
-    "backup_key": "alicezzz:pBuCKzxWmM4l",
-    "pwd_nstoken": "QWNlRzVYb3hFNXJqOG14NXJWSmYxUkR6ZlAxV0pHV3RuOU1sTzRlSkxudWk3MHJOTUZhN0EyQVgxSHdPbjVBMlpKbnByNThwckJlNlpxeWxXa1FPRTVaeXdMSXhEWGpmbkNNWUdiQQ",
-    "read_only_nstoken": "QWNlRzVYcGtZcURMdEYxWXpILzJMRHdHajVlTU5Tb29uU2MrY0lYbzJCYXdXQitsekxTWnhRaE96cXE1Qkd3dFNxZFdZVVNqeVQxRHQwSWZraHlLcVVMRE9qVFlIM3Jm",
+    "backup_key": "alicezzz:v9Ne5S54ISuU",
+    "pwd_nstoken": "QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
+    "read_only_nstoken": "QWNlRzVYclBHSHJaQ1QySEVCdDJpTWpSc1dON0JHc3ZCb0lOam9RSFBzVmhjY1R3M3BpQ2JoZG9ESWhZQndkWVZydm9seEhTUHYvTzlYOWJiQnVEbjBaSFJFcXRKNjhE",
     "site_subdomain": "alicezzz",
     "totp_secret": "FakeTOTPSecretForDevOnly"
   },
-  "durationMs": 458
+  "durationMs": 15
 }

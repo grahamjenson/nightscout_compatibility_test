@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "AndroidAPS",
-      "created_at": "2026-08-20T16:43:12+12:00",
+      "created_at": "2026-09-04T14:17:11+12:00",
       "eventType": "D.A.D. Alert",
       "notes": "Possible missed bolus"
     }
@@ -24,39 +24,43 @@
   "statusCode": 201,
   "headers": {
     "Content-Length": [
-      "370"
+      "389"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611692\""
     ],
     "Last-Modified": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/g1XuN31U"
+      "/api/v3/treatments/T7EaEBA9"
     ]
   },
   "body": {
-    "identifier": "g1XuN31U",
-    "lastModified": 1787202372505,
+    "identifier": "T7EaEBA9",
+    "lastModified": 1788489611692,
     "result": {
       "app": "AndroidAPS",
-      "created_at": "2026-08-20T04:43:12Z",
-      "date": 1787200992000,
+      "created_at": "2026-09-04T02:17:11Z",
+      "date": 1788488231000,
       "enteredBy": "pwd_phone",
       "eventType": "D.A.D. Alert",
-      "identifier": "g1XuN31U",
+      "identifier": "T7EaEBA9",
+      "isReadOnly": false,
       "isValid": true,
       "notes": "Possible missed bolus",
-      "srvCreated": 1787202372505,
-      "srvModified": 1787202372505,
+      "srvCreated": 1788489611692,
+      "srvModified": 1788489611692,
       "subject": "pwd_phone",
       "utcOffset": 720
     },
     "status": 201
   },
-  "durationMs": 0
+  "durationMs": 1
 }

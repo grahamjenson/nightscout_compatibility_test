@@ -1,0 +1,221 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/entries?skip=1",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611550\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "app": "test-app",
+        "created_at": "2026-09-04T02:40:11Z",
+        "date": 1788489611000,
+        "dateString": "2026-09-04T14:40:11+12:00",
+        "device": "test-device",
+        "direction": "Flat",
+        "filtered": 139.2,
+        "identifier": "8ruy1ZpE",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1788489611000,
+        "noise": 1,
+        "rssi": -62,
+        "sgv": 100,
+        "srvCreated": 1788489611374,
+        "srvModified": 1788489611374,
+        "subject": "pwd_phone",
+        "trend": 3,
+        "type": "sgv",
+        "unfiltered": 141.7,
+        "utcOffset": 720
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-09-04T02:40:11Z",
+        "date": 1788489611000,
+        "dateString": "2026-09-04T14:40:11+12:00",
+        "device": "test-device",
+        "direction": "Flat",
+        "filtered": 139.2,
+        "identifier": "8ruy1ZpEcustom",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1788489611000,
+        "noise": 1,
+        "rssi": -62,
+        "sgv": 90,
+        "srvCreated": 1788489611550,
+        "srvModified": 1788489611550,
+        "subject": "pwd_phone",
+        "trend": 3,
+        "type": "sgv",
+        "unfiltered": 141.7,
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-09-04T02:39:11Z",
+        "date": 1788489551000,
+        "dateString": "2026-09-04T14:39:11+12:00",
+        "identifier": "1CHSNdZ3",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 5.8,
+        "mills": 1788489551000,
+        "srvCreated": 1788489611422,
+        "srvModified": 1788489611422,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-09-04T02:38:11Z",
+        "date": 1788489491000,
+        "dateString": "2026-09-04T14:38:11+12:00",
+        "identifier": "l33PT10L",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 145,
+        "mills": 1788489491000,
+        "srvCreated": 1788489611423,
+        "srvModified": 1788489611423,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-09-04T02:35:11Z",
+        "date": 1788489311000,
+        "dateString": "2026-09-04T14:35:11+12:00",
+        "identifier": "1j09A9ow",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1788489311000,
+        "sgv": 13.2,
+        "srvCreated": 1788489611426,
+        "srvModified": 1788489611426,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-09-04T02:34:11Z",
+        "date": 1788489251000,
+        "dateString": "2026-09-04T14:34:11+12:00",
+        "identifier": "9dgpZ7iQ",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 11.7,
+        "mills": 1788489251000,
+        "srvCreated": 1788489611427,
+        "srvModified": 1788489611427,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-09-04T02:29:11Z",
+        "date": 1788488951000,
+        "dateString": "2026-09-04T14:29:11+12:00",
+        "identifier": "Oe96pECl",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 6.8,
+        "mills": 1788488951000,
+        "srvCreated": 1788489611405,
+        "srvModified": 1788489611405,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-09-04T02:28:11Z",
+        "date": 1788488891000,
+        "dateString": "2026-09-04T14:28:11+12:00",
+        "identifier": "0PTEQuIq",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 9.1,
+        "mills": 1788488891000,
+        "srvCreated": 1788489611406,
+        "srvModified": 1788489611406,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-09-04T02:25:11Z",
+        "date": 1788488711000,
+        "dateString": "2026-09-04T14:25:11+12:00",
+        "identifier": "lq0rl7X4",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1788488711000,
+        "sgv": 13.7,
+        "srvCreated": 1788489611408,
+        "srvModified": 1788489611408,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-09-04T02:10:11Z",
+        "date": 1788487811000,
+        "dateString": "2026-09-04T14:10:11+12:00",
+        "identifier": "c39CWppm",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 6.2,
+        "mills": 1788487811000,
+        "srvCreated": 1788489611446,
+        "srvModified": 1788489611446,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "utcOffset": 720
+      },
+      {
+        "created_at": "2026-01-02T12:13:14Z",
+        "date": 1767355994000,
+        "dateString": "2026-01-02T12:13:14Z",
+        "identifier": "sWcY84Kt",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1767355994000,
+        "sgv": 100,
+        "srvCreated": 1788489611466,
+        "srvModified": 1788489611466,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 0
+}

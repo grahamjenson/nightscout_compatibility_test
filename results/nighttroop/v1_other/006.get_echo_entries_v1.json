@@ -1,0 +1,64 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://alicezzz.ns.localhost:8080/api/v1/echo/entries/sgv?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ&find[sgv][$gte]=100",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Length": [
+      "651"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ]
+  },
+  "body": {
+    "collection": "entries",
+    "input": {
+      "header": {
+        "Accept": [
+          "application/json"
+        ],
+        "Accept-Encoding": [
+          "gzip"
+        ],
+        "Content-Type": [
+          "application/json"
+        ],
+        "User-Agent": [
+          "Go-http-client/1.1"
+        ]
+      },
+      "method": "GET",
+      "query": {
+        "find[sgv][$gte]": [
+          "100"
+        ],
+        "token": [
+          "QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ"
+        ]
+      },
+      "url": "/api/v1/echo/entries/sgv?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ&find[sgv][$gte]=100"
+    },
+    "query": {
+      "has_filters": true,
+      "limit": 1000,
+      "sgv_gte": 100
+    },
+    "storage": "entries"
+  },
+  "durationMs": 0
+}

@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/profile/history/1787200572441",
+    "url": "http://alicezzz.ns.localhost:8080/api/v3/profile/history/1788487811627",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4NzIwNTk3MiwgImlhdCI6MTc4NzIwMjM3MiwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.LEud5HNy2Wfbrm_lZFNyK7veJtMrBjSPdxyzuPVQdZ0"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
       ],
       "Content-Type": [
         "application/json"
@@ -19,34 +19,159 @@
   "statusCode": 200,
   "headers": {
     "Content-Length": [
-      "341"
+      "1531"
     ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Thu, 20 Aug 2026 05:06:12 GMT"
+      "Fri, 04 Sep 2026 02:40:11 GMT"
+    ],
+    "Etag": [
+      "W/\"1788489611390\""
+    ],
+    "Last-Modified": [
+      "Fri, 04 Sep 2026 02:40:11 GMT"
     ]
   },
   "body": {
     "result": [
       {
-        "created_at": "2026-08-20T05:06:12.335Z",
-        "date": 1787202372335,
-        "defaultProfile": "profile_2",
-        "identifier": "1l8yFhbF",
+        "created_at": "2026-09-04T02:39:11Z",
+        "date": 1788489551000,
+        "defaultProfile": "profile_1",
+        "identifier": "pXR2QVlW",
+        "isReadOnly": false,
         "isValid": true,
-        "mills": 1787202372335,
-        "srvCreated": 1787202372335,
-        "srvModified": 1787202372335,
-        "startDate": "2026-08-20T05:06:12.335Z",
+        "mills": 1788489551000,
+        "srvCreated": 1788489611390,
+        "srvModified": 1788489611390,
+        "startDate": "2026-09-04T14:39:11+12:00",
         "store": {
-          "profile_2": {
-            "dia": 7
+          "profile_1": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.9
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 0.85
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 0.8
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 0.75
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 0.85
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 12
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 10
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 11
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 13
+              }
+            ],
+            "dia": 6,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 2.5
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 2.2
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 2
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 2.3
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6.1
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 5.8
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 6.1
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 6.7
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 5
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 4.7
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 5
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 5.3
+              }
+            ],
+            "timezone": "Pacific/Auckland",
+            "units": "mmol/L"
           }
         },
         "subject": "pwd_phone",
-        "utcOffset": 0
+        "units": "mmol/L",
+        "utcOffset": 720
       }
     ],
     "status": 200
