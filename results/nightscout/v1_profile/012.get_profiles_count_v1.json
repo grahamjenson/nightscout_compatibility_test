@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/profiles?token=write-4d6054505d826635&count=1",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "2"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:21 GMT"
+    ],
+    "Etag": [
+      "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [],
+  "durationMs": 3
+}

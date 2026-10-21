@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/verifyauth?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "128"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:22 GMT"
+    ],
+    "Etag": [
+      "W/\"80-BD+8usVmezP6TKugKstxaQOiNKU\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "message": {
+      "canRead": true,
+      "canWrite": true,
+      "isAdmin": true,
+      "message": "OK",
+      "permissions": "ROLE",
+      "rolefound": "FOUND"
+    },
+    "status": 200
+  },
+  "durationMs": 3
+}

@@ -1,0 +1,63 @@
+#####
+# API v2 authorization: subjects, roles and permissions
+# (the setup file already creates subjects and requests JWTs)
+#####
+
+NAME get_permissions_v2
+GET http://{{ .site }}/api/v2/authorization/permissions?token={{ token }}
+
+NAME get_permissions_trie_v2
+GET http://{{ .site }}/api/v2/authorization/permissions/trie?token={{ token }}
+
+NAME get_roles_v2
+GET http://{{ .site }}/api/v2/authorization/roles?token={{ token }}
+
+NAME create_role_v2
+POST http://{{ .site }}/api/v2/authorization/roles?token={{ token }}
+B {"name": "compat-test-role", "permissions": ["api:treatments:read"], "notes": "created by the compatibility tests"}
+
+NAME update_role_v2
+PUT http://{{ .site }}/api/v2/authorization/roles?token={{ token }}
+B {"_id": "{{ dig "create_role_v2._id" }}", "name": "compat-test-role", "permissions": ["api:treatments:read", "api:entries:read"], "notes": "updated by the compatibility tests"}
+
+NAME get_roles_after_update_v2
+GET http://{{ .site }}/api/v2/authorization/roles?token={{ token }}
+
+NAME create_subject_v2
+POST http://{{ .site }}/api/v2/authorization/subjects?token={{ token }}
+B {"name": "compat-test-subject", "roles": ["compat-test-role"], "notes": "created by the compatibility tests"}
+
+NAME get_subjects_after_create_v2
+GET http://{{ .site }}/api/v2/authorization/subjects?token={{ token }}
+
+NAME update_subject_v2
+PUT http://{{ .site }}/api/v2/authorization/subjects?token={{ token }}
+B {"_id": "{{ dig "create_subject_v2._id" }}", "name": "compat-test-subject", "roles": ["readable"], "notes": "updated by the compatibility tests"}
+
+NAME request_jwt_for_new_subject_v2
+GET http://{{ .site }}/api/v2/authorization/request/{{ tokenByName .get_subjects_after_create_v2 "compat-test-subject" }}
+
+NAME delete_subject_v2
+DELETE http://{{ .site }}/api/v2/authorization/subjects/{{ dig "create_subject_v2._id" }}?token={{ token }}
+
+NAME delete_role_v2
+DELETE http://{{ .site }}/api/v2/authorization/roles/{{ dig "create_role_v2._id" }}?token={{ token }}
+
+NAME debug_check_permission_v2
+GET http://{{ .site }}/api/v2/authorization/debug/check/api:entries:read?token={{ token }}
+
+NAME debug_check_permission_read_token_v2
+GET http://{{ .site }}/api/v2/authorization/debug/check/api:entries:create?token={{ read_token }}
+
+#####
+# Not allowed
+#####
+
+NAME get_subjects_with_read_token_v2
+GET http://{{ .site }}/api/v2/authorization/subjects?token={{ read_token }}
+
+NAME get_roles_no_auth_v2
+GET http://{{ .site }}/api/v2/authorization/roles
+
+NAME request_jwt_bad_token_v2
+GET http://{{ .site }}/api/v2/authorization/request/not-a-real-token

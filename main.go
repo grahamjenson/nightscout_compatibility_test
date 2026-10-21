@@ -40,6 +40,8 @@ func main() {
 		// v2 (end to get all created things)
 		"requests/v2_properties.http",
 		"requests/v2_summary.http",
+		"requests/v2_authorization.http",
+		"requests/v2_other.http",
 
 		"requests/x_bad_requests.http",
 	}

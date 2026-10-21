@@ -1,0 +1,83 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/authorization/permissions?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "839"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Etag": [
+      "W/\"347-Va3Hxj389k2n9+IKUGP1UPUqlEo\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    "admin:api:permissions:read",
+    "admin:api:roles:create",
+    "admin:api:roles:delete",
+    "admin:api:roles:list",
+    "admin:api:roles:update",
+    "admin:api:subjects:create",
+    "admin:api:subjects:delete",
+    "admin:api:subjects:read",
+    "admin:api:subjects:update",
+    "api:*:read",
+    "api:activity:create",
+    "api:activity:delete",
+    "api:activity:read",
+    "api:activity:update",
+    "api:devicestatus:create",
+    "api:devicestatus:delete",
+    "api:devicestatus:read",
+    "api:entries:create",
+    "api:entries:delete",
+    "api:entries:read",
+    "api:food:create",
+    "api:food:delete",
+    "api:food:read",
+    "api:food:update",
+    "api:pebble,entries:read",
+    "api:profile:create",
+    "api:profile:delete",
+    "api:profile:read",
+    "api:profile:update",
+    "api:status:read",
+    "api:treatments:create",
+    "api:treatments:delete",
+    "api:treatments:read",
+    "api:treatments:update",
+    "authorization:debug:test",
+    "notifications:*:ack",
+    "notifications:loop:push"
+  ],
+  "durationMs": 4
+}

@@ -1,0 +1,87 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/devicestatus/history/1792616182989?limit=5",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTRkNjA1NDUwNWQ4MjY2MzUiLCJpYXQiOjE3OTI2MTc5ODEsImV4cCI6MTc5MjY0Njc4MX0.1Ln8pTNeuQamiANln_HhdBRMDJR3Gi1Qd_n_bxG0LAA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "723"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Etag": [
+      "W/\"1792617982261\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Wed, 21 Oct 2026 21:26:22 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "app": "test-app",
+        "created_at": "2026-10-21T21:26:22.000Z",
+        "date": 1792617982000,
+        "device": "aaps",
+        "identifier": "bfa6a484-a6c7-5234-ba8a-02b4a3d96bc0",
+        "isValid": false,
+        "modifiedBy": "write",
+        "notes": "updated by update_patch_devicestatus_v3",
+        "srvCreated": 1792617982171,
+        "srvModified": 1792617982256,
+        "subject": "write",
+        "uploader": {
+          "battery": 100,
+          "batteryVoltage": 3.2
+        },
+        "utcOffset": 0
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-10-21T21:25:22.000Z",
+        "date": 1792617922000,
+        "device": "aapsv3",
+        "identifier": "bfa6a484-a6c7-5234-ba8a-02b4a3d96bc0custom",
+        "isValid": false,
+        "modifiedBy": "write",
+        "srvCreated": 1792617982178,
+        "srvModified": 1792617982261,
+        "subject": "write",
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05
+        },
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 20
+}

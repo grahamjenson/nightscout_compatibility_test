@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "DELETE",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/treatments/c73b417a-1a5e-58a9-95ca-706a4ebd3c02?permanent=true",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTRkNjA1NDUwNWQ4MjY2MzUiLCJpYXQiOjE3OTI2MTc5ODEsImV4cCI6MTc5MjY0Njc4MX0.1Ln8pTNeuQamiANln_HhdBRMDJR3Gi1Qd_n_bxG0LAA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "14"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "status": 200
+  },
+  "durationMs": 4
+}

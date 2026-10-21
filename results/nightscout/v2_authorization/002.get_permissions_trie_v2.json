@@ -1,0 +1,199 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/authorization/permissions/trie?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "877"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Etag": [
+      "W/\"36d-caHt2j9FH3z1SSgzDy95cJLSGUY\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "data": {
+      "admin": {
+        "api": {
+          "permissions": {
+            "read": {
+              "*": {}
+            }
+          },
+          "roles": {
+            "create": {
+              "*": {}
+            },
+            "delete": {
+              "*": {}
+            },
+            "list": {
+              "*": {}
+            },
+            "update": {
+              "*": {}
+            }
+          },
+          "subjects": {
+            "create": {
+              "*": {}
+            },
+            "delete": {
+              "*": {}
+            },
+            "read": {
+              "*": {}
+            },
+            "update": {
+              "*": {}
+            }
+          }
+        }
+      },
+      "api": {
+        "*": {
+          "read": {
+            "*": {}
+          }
+        },
+        "activity": {
+          "create": {
+            "*": {}
+          },
+          "delete": {
+            "*": {}
+          },
+          "read": {
+            "*": {}
+          },
+          "update": {
+            "*": {}
+          }
+        },
+        "devicestatus": {
+          "create": {
+            "*": {}
+          },
+          "delete": {
+            "*": {}
+          },
+          "read": {
+            "*": {}
+          }
+        },
+        "entries": {
+          "create": {
+            "*": {}
+          },
+          "delete": {
+            "*": {}
+          },
+          "read": {
+            "*": {}
+          }
+        },
+        "food": {
+          "create": {
+            "*": {}
+          },
+          "delete": {
+            "*": {}
+          },
+          "read": {
+            "*": {}
+          },
+          "update": {
+            "*": {}
+          }
+        },
+        "pebble": {
+          "read": {
+            "*": {}
+          }
+        },
+        "profile": {
+          "create": {
+            "*": {}
+          },
+          "delete": {
+            "*": {}
+          },
+          "read": {
+            "*": {}
+          },
+          "update": {
+            "*": {}
+          }
+        },
+        "status": {
+          "read": {
+            "*": {}
+          }
+        },
+        "treatments": {
+          "create": {
+            "*": {}
+          },
+          "delete": {
+            "*": {}
+          },
+          "read": {
+            "*": {}
+          },
+          "update": {
+            "*": {}
+          }
+        }
+      },
+      "authorization": {
+        "debug": {
+          "test": {
+            "*": {}
+          }
+        }
+      },
+      "notifications": {
+        "*": {
+          "ack": {
+            "*": {}
+          }
+        },
+        "loop": {
+          "push": {
+            "*": {}
+          }
+        }
+      }
+    }
+  },
+  "durationMs": 4
+}

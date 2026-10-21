@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/alarm/subscribe",
+    "url": "http://localhost:1337/socket.io/alarm/subscribe",
+    "connectUrl": "http://localhost:1337/alarm",
+    "namespace": "/alarm",
+    "event": "subscribe",
+    "connection": "alarm_jwt_connect",
+    "ack": true,
+    "args": [
+      {
+        "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtOGUxNWI5OTBjYjhjNTUzNyIsImlhdCI6MTc5MjYxNzk4MSwiZXhwIjoxNzkyNjQ2NzgxfQ.2nVQP_kCXLolRw736rZCPONeH2jGUfkWxKTPqCXdCac"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "ack": false,
+    "message": "Subscribed for alarms",
+    "read": true,
+    "success": true
+  },
+  "durationMs": 1
+}

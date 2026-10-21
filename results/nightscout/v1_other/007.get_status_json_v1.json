@@ -1,0 +1,205 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/status.json?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:22 GMT"
+    ],
+    "Etag": [
+      "W/\"912-/aTWQ3vF+bujTbWl8oYkozmIG9o\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "apiEnabled": true,
+    "authorized": {
+      "exp": 1792646782,
+      "iat": 1792617982,
+      "permissionGroups": [
+        [
+          "*"
+        ],
+        [
+          "*:*:read"
+        ]
+      ],
+      "sub": "write",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTRkNjA1NDUwNWQ4MjY2MzUiLCJpYXQiOjE3OTI2MTc5ODIsImV4cCI6MTc5MjY0Njc4Mn0.UONoPvijWrQJvrDjnmxyNaIqT1xretQugaWSfJW1DEc"
+    },
+    "boluscalcEnabled": false,
+    "careportalEnabled": true,
+    "extendedSettings": {
+      "devicestatus": {
+        "advanced": true,
+        "days": 1
+      }
+    },
+    "name": "nightscout",
+    "runtimeState": "loaded",
+    "serverTime": "2026-10-21T21:26:22.107Z",
+    "serverTimeEpoch": 1792617982107,
+    "settings": {
+      "DEFAULT_FEATURES": [
+        "bgnow",
+        "delta",
+        "direction",
+        "timeago",
+        "devicestatus",
+        "upbat",
+        "errorcodes",
+        "profile",
+        "bolus",
+        "dbsize",
+        "runtimestate",
+        "basal",
+        "careportal"
+      ],
+      "adminNotifiesEnabled": true,
+      "alarmHigh": true,
+      "alarmHighMins": [
+        30,
+        60,
+        90,
+        120
+      ],
+      "alarmLow": true,
+      "alarmLowMins": [
+        15,
+        30,
+        45,
+        60
+      ],
+      "alarmPumpBatteryLow": false,
+      "alarmTimeagoUrgent": true,
+      "alarmTimeagoUrgentMins": 30,
+      "alarmTimeagoWarn": true,
+      "alarmTimeagoWarnMins": 15,
+      "alarmTypes": [
+        "predict"
+      ],
+      "alarmUrgentHigh": true,
+      "alarmUrgentHighMins": [
+        30,
+        60,
+        90,
+        120
+      ],
+      "alarmUrgentLow": true,
+      "alarmUrgentLowMins": [
+        15,
+        30,
+        45
+      ],
+      "alarmUrgentMins": [
+        30,
+        60,
+        90,
+        120
+      ],
+      "alarmWarnMins": [
+        30,
+        60,
+        90,
+        120
+      ],
+      "authDefaultRoles": "readable",
+      "authFailDelay": 5000,
+      "authenticationPromptOnLoad": false,
+      "baseURL": "",
+      "customTitle": "Nightscout",
+      "dayEnd": 21,
+      "dayStart": 7,
+      "deNormalizeDates": false,
+      "editMode": true,
+      "enable": [
+        "careportal",
+        "treatmentprofile",
+        "bgnow",
+        "delta",
+        "direction",
+        "upbat",
+        "openaps",
+        "profile",
+        "treatmentnotify",
+        "timeago",
+        "devicestatus",
+        "errorcodes",
+        "bolus",
+        "dbsize",
+        "runtimestate",
+        "basal",
+        "ar2"
+      ],
+      "focusHours": 3,
+      "frameName1": "",
+      "frameName2": "",
+      "frameName3": "",
+      "frameName4": "",
+      "frameName5": "",
+      "frameName6": "",
+      "frameName7": "",
+      "frameName8": "",
+      "frameUrl1": "",
+      "frameUrl2": "",
+      "frameUrl3": "",
+      "frameUrl4": "",
+      "frameUrl5": "",
+      "frameUrl6": "",
+      "frameUrl7": "",
+      "frameUrl8": "",
+      "heartbeat": 60,
+      "insecureUseHttp": true,
+      "language": "en",
+      "nightMode": false,
+      "scaleY": "log",
+      "secureCsp": false,
+      "secureHstsHeader": true,
+      "secureHstsHeaderIncludeSubdomains": false,
+      "secureHstsHeaderPreload": false,
+      "showClockDelta": false,
+      "showClockLastTime": false,
+      "showForecast": "ar2",
+      "showPlugins": "dbsize delta direction upbat",
+      "showRawbg": "never",
+      "theme": "default",
+      "thresholds": {
+        "bgHigh": 260,
+        "bgLow": 55,
+        "bgTargetBottom": 80,
+        "bgTargetTop": 180
+      },
+      "timeFormat": 12,
+      "units": "mmol"
+    },
+    "status": "ok",
+    "version": "15.0.8"
+  },
+  "durationMs": 2
+}

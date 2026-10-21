@@ -1,0 +1,59 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/authorization/roles?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "name": "compat-test-role",
+      "notes": "created by the compatibility tests",
+      "permissions": [
+        "api:treatments:read"
+      ]
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "183"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Etag": [
+      "W/\"b7-zsact+pIQY5l8Deixh9ZSPDzMsw\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "_id": "6ad92dff4fc2f9571e953d1f",
+    "created_at": "2026-10-21T21:26:23.100Z",
+    "name": "compat-test-role",
+    "notes": "created by the compatibility tests",
+    "permissions": [
+      "api:treatments:read"
+    ]
+  },
+  "durationMs": 5
+}

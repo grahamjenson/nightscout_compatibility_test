@@ -1,0 +1,67 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/food?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "carbs": 20,
+      "category": "Fruit",
+      "gi": 2,
+      "name": "Apple",
+      "portion": 1,
+      "subcategory": "Fresh",
+      "type": "food",
+      "unit": "pcs"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "189"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:21 GMT"
+    ],
+    "Etag": [
+      "W/\"bd-q1Wucm+ide4+ax/dMUq/H2KgBNA\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ad92dfd4fc2f9571e953ce5",
+      "carbs": 20,
+      "category": "Fruit",
+      "created_at": "2026-10-21T21:26:21.878Z",
+      "gi": 2,
+      "name": "Apple",
+      "portion": 1,
+      "subcategory": "Fresh",
+      "type": "food",
+      "unit": "pcs"
+    }
+  ],
+  "durationMs": 4
+}

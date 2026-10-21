@@ -1,0 +1,58 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/treatments.json?token=write-4d6054505d826635&find[_id]=6ad92e064fc2f9571e953d32",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "182"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:30 GMT"
+    ],
+    "Etag": [
+      "W/\"b6-l5FcCX4ioiB3cgyP4Btv1tFMuJE\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Wed, 21 Oct 2026 21:26:30 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ad92e064fc2f9571e953d32",
+      "carbs": null,
+      "created_at": "2026-10-21T21:26:30Z",
+      "enteredBy": "socket-test-unset",
+      "eventType": "Note",
+      "insulin": null,
+      "notes": "unset over socket.io"
+    }
+  ],
+  "durationMs": 3
+}

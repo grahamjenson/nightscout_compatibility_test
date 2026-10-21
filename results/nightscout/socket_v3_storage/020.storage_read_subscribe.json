@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/storage/subscribe",
+    "url": "http://localhost:1337/socket.io/storage/subscribe",
+    "connectUrl": "http://localhost:1337/storage",
+    "namespace": "/storage",
+    "event": "subscribe",
+    "connection": "storage_all_connect",
+    "ack": true,
+    "args": [
+      {
+        "accessToken": "read-8e15b990cb8c5537",
+        "collections": [
+          "entries",
+          "settings"
+        ]
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "collections": [
+      "entries"
+    ],
+    "success": true
+  },
+  "durationMs": 0
+}

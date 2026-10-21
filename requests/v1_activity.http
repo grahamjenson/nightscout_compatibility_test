@@ -41,3 +41,15 @@ DELETE http://{{ .site }}/api/v1/activity/{{ dig "create_activity_v1.0._id" }}?t
 
 NAME get_activities_after_delete_find_id_v1
 GET http://{{ .site }}/api/v1/activity?token={{ token }}&find[_id]={{ dig "create_activity_v1.0._id"  }}
+
+
+#####
+# MORE ENDPOINTS
+#####
+
+NAME get_activities_count_v1
+GET http://{{ .site }}/api/v1/activity?token={{ token }}&count=1
+
+NAME get_activities_if_modified_since_future_v1
+GET http://{{ .site }}/api/v1/activity?token={{ token }}
+H If-Modified-Since: {{ httptime -60 }}

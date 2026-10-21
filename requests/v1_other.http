@@ -16,3 +16,71 @@ GET http://{{ .site }}/api/v1/slice/entries/dateString/sgv/2026-01?token={{ toke
 
 NAME get_echo_entries_v1
 GET http://{{ .site }}/api/v1/echo/entries/sgv?token={{ token }}&find[sgv][$gte]=100
+
+
+#####
+# MORE ENDPOINTS
+#####
+
+NAME get_status_json_v1
+GET http://{{ .site }}/api/v1/status.json?token={{ token }}
+
+NAME get_status_no_auth_v1
+GET http://{{ .site }}/api/v1/status.json
+
+NAME get_status_read_token_v1
+GET http://{{ .site }}/api/v1/status.json?token={{ read_token }}
+
+NAME get_versions
+GET http://{{ .site }}/api/versions
+
+# AAPS, xDrip and others check their credentials with verifyauth
+NAME get_verifyauth_token_v1
+GET http://{{ .site }}/api/v1/verifyauth?token={{ token }}
+
+NAME get_verifyauth_read_token_v1
+GET http://{{ .site }}/api/v1/verifyauth?token={{ read_token }}
+
+NAME get_verifyauth_jwt_v1
+GET http://{{ .site }}/api/v1/verifyauth
+H Authorization: Bearer {{ jwt }}
+
+NAME get_verifyauth_no_auth_v1
+GET http://{{ .site }}/api/v1/verifyauth
+
+NAME get_verifyauth_bad_token_v1
+GET http://{{ .site }}/api/v1/verifyauth?token=not-a-real-token
+
+NAME get_adminnotifies_v1
+GET http://{{ .site }}/api/v1/adminnotifies?token={{ token }}
+
+NAME get_times_echo_v1
+GET http://{{ .site }}/api/v1/times/echo/2026-01-02?token={{ token }}
+
+NAME get_times_regex_v1
+GET http://{{ .site }}/api/v1/times/2026-01-02/T1[0-9]?token={{ token }}
+
+NAME get_count_treatments_v1
+GET http://{{ .site }}/api/v1/count/treatments/where?token={{ token }}&find[eventType]=Note
+
+NAME get_count_entries_find_v1
+GET http://{{ .site }}/api/v1/count/entries/where?token={{ token }}&find[sgv][$gte]=100
+
+NAME get_count_devicestatus_v1
+GET http://{{ .site }}/api/v1/count/devicestatus/where?token={{ token }}
+
+NAME get_slice_entries_regex_v1
+GET http://{{ .site }}/api/v1/slice/entries/dateString/sgv/2026-01-02/T1[0-9]?token={{ token }}
+
+NAME get_echo_treatments_v1
+GET http://{{ .site }}/api/v1/echo/treatments?token={{ token }}&find[eventType]=Note
+
+NAME ack_notifications_v1
+GET http://{{ .site }}/api/v1/notifications/ack?token={{ token }}&level=1&group=default&time=60000
+
+# Pebble and other watch faces
+NAME get_pebble
+GET http://{{ .site }}/pebble?token={{ token }}
+
+NAME get_pebble_count_mmol
+GET http://{{ .site }}/pebble?token={{ token }}&count=3&units=mmol

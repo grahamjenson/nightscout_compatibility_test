@@ -1,0 +1,53 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/treatments/c73b417a-1a5e-58a9-95ca-706a4ebd3c02",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTRkNjA1NDUwNWQ4MjY2MzUiLCJpYXQiOjE3OTI2MTc5ODEsImV4cCI6MTc5MjY0Njc4MX0.1Ln8pTNeuQamiANln_HhdBRMDJR3Gi1Qd_n_bxG0LAA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "If-Unmodified-Since": [
+        "Tue, 20 Oct 2026 21:26:23 GMT"
+      ]
+    },
+    "body": {
+      "app": "compat-test",
+      "date": 1792617923032,
+      "device": "compat-test",
+      "eventType": "Note",
+      "notes": "should not be saved"
+    }
+  },
+  "statusCode": 412,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "14"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "status": 412
+  },
+  "durationMs": 2
+}

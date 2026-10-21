@@ -33,3 +33,35 @@ GET http://{{ .site }}/api/v1/food?token={{ token }}
 
 NAME delete_food_v1
 DELETE http://{{ .site }}/api/v1/food/{{ dig "create_food_v1.0._id" }}?token={{ token }}
+
+
+#####
+# MORE ENDPOINTS
+#####
+
+NAME create_quickpick_food_v1
+POST http://{{ .site }}/api/v1/food?token={{ token }}
+B {"type": "quickpick", "name": "Breakfast", "foods": [{"name": "Toast", "carbs": 15, "portions": 2}], "carbs": 30, "hideafteruse": "true", "hidden": "false", "position": 1}
+
+NAME get_food_quickpicks_v1
+GET http://{{ .site }}/api/v1/food/quickpicks?token={{ token }}
+
+NAME create_regular_food_v1
+POST http://{{ .site }}/api/v1/food?token={{ token }}
+B {"type": "food", "name": "Apple", "category": "Fruit", "subcategory": "Fresh", "portion": 1, "unit": "pcs", "carbs": 20, "gi": 2}
+
+NAME get_food_regular_v1
+GET http://{{ .site }}/api/v1/food/regular?token={{ token }}
+
+NAME update_food_v1
+PUT http://{{ .site }}/api/v1/food?token={{ token }}
+B {"_id": "{{ dig "create_regular_food_v1.0._id" }}", "type": "food", "name": "Green Apple", "category": "Fruit", "subcategory": "Fresh", "portion": 1, "unit": "pcs", "carbs": 18, "gi": 2}
+
+NAME get_food_after_update_v1
+GET http://{{ .site }}/api/v1/food?token={{ token }}&find[_id]={{ dig "create_regular_food_v1.0._id" }}
+
+NAME delete_quickpick_food_v1
+DELETE http://{{ .site }}/api/v1/food/{{ dig "create_quickpick_food_v1.0._id" }}?token={{ token }}
+
+NAME delete_regular_food_v1
+DELETE http://{{ .site }}/api/v1/food/{{ dig "create_regular_food_v1.0._id" }}?token={{ token }}

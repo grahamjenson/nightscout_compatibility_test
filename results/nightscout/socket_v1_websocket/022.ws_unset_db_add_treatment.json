@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://localhost:1337/socket.io/dbAdd",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_unset_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "treatments",
+        "data": {
+          "carbs": 5,
+          "created_at": "2026-10-21T21:26:30Z",
+          "enteredBy": "socket-test-unset",
+          "eventType": "Note",
+          "notes": "unset over socket.io"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": [
+    {
+      "_id": "6ad92e064fc2f9571e953d32",
+      "carbs": 5,
+      "created_at": "2026-10-21T21:26:30Z",
+      "enteredBy": "socket-test-unset",
+      "eventType": "Note",
+      "notes": "unset over socket.io"
+    }
+  ],
+  "durationMs": 4
+}
