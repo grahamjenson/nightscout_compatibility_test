@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "CONNECT",
+    "path": "/socket.io/connect",
+    "url": "http://localhost:1337/socket.io/connect",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "connect",
+    "connection": "ws_read_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "sid": "21gtOtErW5rjaiRjAAAD"
+  },
+  "durationMs": 5
+}

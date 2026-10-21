@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/authorize",
+    "url": "http://localhost:1337/socket.io/authorize",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "authorize",
+    "connection": "ws_connect",
+    "ack": true,
+    "args": [
+      {
+        "client": "web",
+        "history": 1,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWEzNzMzMzZiNWQ0YzQwZmYiLCJpYXQiOjE3OTI1Nzg3MTgsImV4cCI6MTc5MjYwNzUxOH0.zqRhlFGZT_rGJdNmNQwqTzSpGy9RhzGV1CSLJ2Mdhxc"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "read": true,
+    "write": true,
+    "write_treatment": true
+  },
+  "durationMs": 6
+}

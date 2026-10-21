@@ -36,7 +36,7 @@ func ParseRequestFile(file string, ctx map[string]any) (*RequestFile, error) {
 	}
 	defer r.Close()
 
-	requests, err := parseFile(r)
+	requests, err := ParseRequests(r)
 	if err != nil {
 		return nil, err
 	}
@@ -50,7 +50,8 @@ func ParseRequestFile(file string, ctx map[string]any) (*RequestFile, error) {
 	}, nil
 }
 
-func parseFile(r io.Reader) ([]Request, error) {
+// ParseRequests parses the HTTP request DSL from r
+func ParseRequests(r io.Reader) ([]Request, error) {
 	scanner := bufio.NewScanner(r)
 
 	var requests []Request
@@ -191,18 +192,23 @@ func (rf *RequestFile) Execute(client *http.Client) error {
 			return fmt.Errorf("error executing request %q: %w", req.Name, err)
 		}
 
-		var parsed any
-		if json.Unmarshal(resp.Body, &parsed) == nil {
-			rf.CTX[req.Name] = parsed
-		} else {
-			rf.CTX[req.Name] = string(resp.Body)
-		}
+		SetContext(rf.CTX, req.Name, resp.Body)
 
 		rf.Responses = append(rf.Responses, resp)
 		fmt.Printf("[%d/%d] %s -> %d\n", i+1, len(rf.Requests), req.Name, resp.StatusCode)
 	}
 
 	return nil
+}
+
+// SetContext stores a response body in ctx under name, as JSON if it parses, otherwise as a string
+func SetContext(ctx map[string]any, name string, body []byte) {
+	var parsed any
+	if json.Unmarshal(body, &parsed) == nil {
+		ctx[name] = parsed
+	} else {
+		ctx[name] = string(body)
+	}
 }
 
 type savedResponse struct {
@@ -228,43 +234,52 @@ func (rf *RequestFile) WriteResponsesToFolder(name string) error {
 	}
 
 	for i, resp := range rf.Responses {
-
-		out := savedResponse{
-			Request:    createSavedRequest(resp.Request),
-			StatusCode: resp.StatusCode,
-			Headers:    resp.Headers,
-			DurationMs: resp.Duration.Milliseconds(),
-		}
-
-		// If the body is JSON, embed it as JSON.
-		// Otherwise store it as a string.
-		if len(resp.Body) > 0 {
-			var body any
-			if err := json.Unmarshal(resp.Body, &body); err == nil {
-				out.Body = body
-			} else {
-				out.Body = string(resp.Body)
-			}
-		}
-
-		data, err := json.MarshalIndent(out, "", "  ")
-		if err != nil {
-			return err
-		}
-
 		filename := filepath.Join(
 			folder,
-			fmt.Sprintf("%03d.%s.json", i+1, sanitizeFilename(resp.Name)),
+			fmt.Sprintf("%03d.%s.json", i+1, SanitizeFilename(resp.Name)),
 		)
-
-		data = []byte(strings.ReplaceAll(string(data), `\u0026`, "&"))
-		if err := os.WriteFile(filename, data, 0o644); err != nil {
+		if err := SaveResponse(filename, resp); err != nil {
 			return err
 		}
 	}
 
 	return nil
 }
+
+// SaveResponse writes a single response (and the request that made it) as JSON to filename
+func SaveResponse(filename string, resp Response) error {
+	out := savedResponse{
+		Request:    createSavedRequest(resp.Request),
+		StatusCode: resp.StatusCode,
+		Headers:    resp.Headers,
+		DurationMs: resp.Duration.Milliseconds(),
+	}
+
+	// If the body is JSON, embed it as JSON.
+	// Otherwise store it as a string.
+	if len(resp.Body) > 0 {
+		var body any
+		if err := json.Unmarshal(resp.Body, &body); err == nil {
+			out.Body = body
+		} else {
+			out.Body = string(resp.Body)
+		}
+	}
+
+	return WriteJSONFile(filename, out)
+}
+
+// WriteJSONFile writes v as indented JSON to filename
+func WriteJSONFile(filename string, v any) error {
+	data, err := json.MarshalIndent(v, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	data = []byte(strings.ReplaceAll(string(data), `\u0026`, "&"))
+	return os.WriteFile(filename, data, 0o644)
+}
+
 func createSavedRequest(req Request) savedRequest {
 
 	var body any
@@ -282,7 +297,7 @@ func createSavedRequest(req Request) savedRequest {
 	}
 }
 
-func sanitizeFilename(s string) string {
+func SanitizeFilename(s string) string {
 	s = strings.ToLower(s)
 	s = strings.ReplaceAll(s, " ", "-")
 

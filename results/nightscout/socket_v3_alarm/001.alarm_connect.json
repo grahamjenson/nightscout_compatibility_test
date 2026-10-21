@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "CONNECT",
+    "path": "/socket.io/alarm/connect",
+    "url": "http://localhost:1337/socket.io/alarm/connect",
+    "connectUrl": "http://localhost:1337/alarm",
+    "namespace": "/alarm",
+    "event": "connect",
+    "connection": "alarm_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "sid": "xsXC7sBYYSYwvaxUAAAJ"
+  },
+  "durationMs": 2
+}

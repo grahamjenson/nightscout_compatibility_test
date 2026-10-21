@@ -121,6 +121,12 @@ func main() {
 				"PUT":    3,
 				"PATCH":  4,
 				"DELETE": 5,
+				// socket.io
+				"CONNECT":    6,
+				"EMIT":       7,
+				"WAIT":       8,
+				"COLLECT":    9,
+				"DISCONNECT": 10,
 			}
 			if order[a.Method] < order[b.Method] {
 				return -1

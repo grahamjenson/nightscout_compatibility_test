@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/alarm/subscribe",
+    "url": "http://localhost:1337/socket.io/alarm/subscribe",
+    "connectUrl": "http://localhost:1337/alarm",
+    "namespace": "/alarm",
+    "event": "subscribe",
+    "connection": "alarm_connect",
+    "ack": true,
+    "args": [
+      {
+        "accessToken": "write-a373336b5d4c40ff"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "message": "Subscribed for alarms",
+    "success": true
+  },
+  "durationMs": 0
+}

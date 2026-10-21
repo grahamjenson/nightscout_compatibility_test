@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbRemove",
+    "url": "http://localhost:1337/socket.io/dbRemove",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "dbRemove",
+    "connection": "ws_connect",
+    "ack": true,
+    "args": [
+      {
+        "_id": "6ad894a554e1327fb959c5d6",
+        "collection": "treatments"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "success"
+  },
+  "durationMs": 2
+}

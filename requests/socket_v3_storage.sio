@@ -1,0 +1,58 @@
+#####
+# API v3 "/storage" namespace, it broadcasts create/update/delete of documents
+# made through API v3 to subscribers of that collection
+#####
+
+NAME storage_connect
+CONNECT http://{{ .site }}/storage
+
+NAME storage_subscribe
+EMIT subscribe
+B {"accessToken": "{{ token }}", "collections": ["entries", "treatments"]}
+ACK
+
+NAME storage_create_treatment_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {"eventType": "Note", "notes": "storage socket", "app": "socket-test", "date": {{ itime 0 }}}
+
+NAME storage_create_event
+WAIT create
+
+NAME storage_update_treatment_v3
+PATCH http://{{ .site }}/api/v3/treatments/{{ dig "storage_create_treatment_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+B {"notes": "storage socket patched"}
+
+NAME storage_update_event
+WAIT update
+
+NAME storage_delete_treatment_v3
+DELETE http://{{ .site }}/api/v3/treatments/{{ dig "storage_create_treatment_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME storage_delete_event
+WAIT delete
+
+NAME storage_disconnect
+DISCONNECT
+
+#####
+# Subscribing without a valid access token fails
+#####
+
+NAME storage_bad_connect
+CONNECT http://{{ .site }}/storage
+
+NAME storage_bad_subscribe
+EMIT subscribe
+B {"accessToken": "not-a-real-token", "collections": ["entries"]}
+ACK
+
+NAME storage_no_token_subscribe
+EMIT subscribe
+B {"collections": ["entries"]}
+ACK
+
+NAME storage_bad_disconnect
+DISCONNECT

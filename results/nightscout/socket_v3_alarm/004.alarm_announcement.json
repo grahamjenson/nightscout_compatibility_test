@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/alarm/announcement",
+    "url": "http://localhost:1337/socket.io/alarm/announcement",
+    "connectUrl": "http://localhost:1337/alarm",
+    "namespace": "/alarm",
+    "event": "announcement",
+    "connection": "alarm_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "group": "Announcement",
+    "isAnnouncement": true,
+    "key": "5c035b6b489495fce4a6f2fd3f215fcde186ce75",
+    "level": 0,
+    "message": "socket test announcement 1792578726655",
+    "plugin": {
+      "enabled": true,
+      "label": "Treatment Notifications",
+      "name": "treatmentnotify",
+      "pluginType": "notification"
+    },
+    "title": "Announcement"
+  },
+  "durationMs": 1020
+}

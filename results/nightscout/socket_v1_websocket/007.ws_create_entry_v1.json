@@ -1,0 +1,62 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries?token=write-a373336b5d4c40ff",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "date": 1792578724517,
+        "device": "socket-test",
+        "sgv": 123,
+        "type": "sgv"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "154"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 10:32:04 GMT"
+    ],
+    "Etag": [
+      "W/\"9a-Fk+mxh7ApBHOPA/xu4DWCGwHrv4\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ad894a435ff2fed012a42da",
+      "date": 1792578724517,
+      "device": "socket-test",
+      "sgv": 123,
+      "sysTime": "2026-10-21T10:32:04.517Z",
+      "type": "sgv",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 4
+}

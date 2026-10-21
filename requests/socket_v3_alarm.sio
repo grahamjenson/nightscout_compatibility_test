@@ -1,0 +1,24 @@
+#####
+# API v3 "/alarm" namespace, it broadcasts notifications, announcements and alarms
+#####
+
+NAME alarm_connect
+CONNECT http://{{ .site }}/alarm
+
+NAME alarm_subscribe
+EMIT subscribe
+B {"accessToken": "{{ token }}"}
+ACK
+
+# A careportal announcement is sent to every alarm subscriber.
+# Only the most recent treatment is announced, so created_at is left for the server to set (with ms)
+NAME alarm_create_announcement
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B {"eventType": "Announcement", "notes": "socket test announcement {{ itime 0 }}", "isAnnouncement": true, "enteredBy": "socket-test"}
+
+NAME alarm_announcement
+WAIT announcement
+T 30s
+
+NAME alarm_disconnect
+DISCONNECT

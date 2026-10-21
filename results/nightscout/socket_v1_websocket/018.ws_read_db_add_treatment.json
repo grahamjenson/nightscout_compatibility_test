@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://localhost:1337/socket.io/dbAdd",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_read_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "treatments",
+        "data": {
+          "created_at": "2026-10-21T10:32:06Z",
+          "eventType": "Note",
+          "notes": "should not be added"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "Not permitted"
+  },
+  "durationMs": 0
+}
