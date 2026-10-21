@@ -31,6 +31,61 @@ H Authorization: Bearer {{ jwt }}
 
 Where `{{ dig "create_entries_v3.identifier"  }}` will do a json search through the previous output to get the identifier.
 
+# Socket.io (`.sio`) files
+
+Nightscout also pushes data to clients over [socket.io](https://socket.io) (v4). The `requests/socket_*.sio` files describe socket.io conversations with a DSL that extends the HTTP one. They run after the `.http` files, share the same context (`.site`, `token`, `jwt`, ...) and results are written to `results/<name>/<file>/` the same way.
+
+```
+NAME storage_connect
+CONNECT http://{{ .site }}/storage
+
+NAME storage_subscribe
+EMIT subscribe
+B {"accessToken": "{{ token }}", "collections": ["treatments"]}
+ACK
+
+NAME storage_create_treatment_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {"eventType": "Note", "app": "socket-test", "date": {{ itime 0 }}}
+
+NAME storage_create_event
+WAIT create
+T 30s
+
+NAME storage_disconnect
+DISCONNECT
+```
+
+Steps:
+
+| Verb | Meaning |
+| --- | --- |
+| `CONNECT <url>` | Open a socket.io connection. The URL path is the namespace (`/`, `/storage`, `/alarm`), the socket.io path is always `/socket.io/`. `H` lines are sent with the websocket handshake, an optional `B` is the namespace auth payload. |
+| `EMIT <event>` | Send an event. Each `B` line is one JSON argument. Add `ACK` to wait for the server's acknowledgement, the result is what the server acked with. |
+| `WAIT <event>` | Wait for the server to send `<event>`. Every event received on a connection is queued, `WAIT` takes the oldest matching one, so it can come before or after the `WAIT`. If the server kicks the client out of the namespace, a `disconnect` event is queued. |
+| `COLLECT <duration>` | Wait for e.g. `2s` then record every event still queued. |
+| `DISCONNECT` | Close the connection. |
+| `GET`/`POST`/.../`SET` | Exactly as in `.http` files, so a script can change data and then `WAIT` for the push. |
+
+Modifiers: `C <connect step name>` picks the connection (default: the most recent `CONNECT`), `T <duration>` sets the timeout for `CONNECT`, `ACK` and `WAIT` (default `10s`).
+
+The result of a step (the ack or event arguments, a single argument is unwrapped) is stored in the context like HTTP responses, so `{{ dig "ws_db_add_treatment.0._id" }}` works.
+
+Socket.io has no status codes, so results get `200` on success, `408` on a timeout and `500` for any other error (e.g. the service has no socket.io), with the message in `error`. The result `url` is `/socket.io/<namespace>/<event>` so `diff/diff.go` groups and compares them like HTTP endpoints:
+
+```
+EMIT         /socket.io/authorize            Status Score 100.00   Body Score 100.00   Overall Score 100.00   Duration200Diff 0   Total Tests 2
+WAIT         /socket.io/dataUpdate           Status Score 100.00   Body Score 100.00   Overall Score 100.00   Duration200Diff 0   Total Tests 5
+WAIT         /socket.io/storage/create       Status Score 100.00   Body Score 100.00   Overall Score 100.00   Duration200Diff 0   Total Tests 1
+```
+
+Current scripts:
+
+* `socket_v1_websocket.sio`: the original `/` namespace used by the Nightscout web client: `authorize`, `dataUpdate`, `loadRetro`/`retroUpdate`, `dbAdd`/`dbUpdate`/`dbRemove`, read only permissions.
+* `socket_v3_storage.sio`: API v3 `/storage` namespace `create`/`update`/`delete` events.
+* `socket_v3_alarm.sio`: API v3 `/alarm` namespace, announcements.
+
 
 # Other Services
 You will see the output from `nighttroop` (still in development)
@@ -70,5 +125,5 @@ The goal of this report is not to get services to be 100% compatible, but highli
 # TODO
 
 1. Have service specific read and write queries so that we can check compatibility with say AAPS. For exmaple, if AAPS uses PATCH /api/v3/treatments in a specific way, then we can encode and make sure responses are in the right shape.
-2. Test Web services API, a whole other can of worms.
+2. Test Web services API, a whole other can of worms. Started with the socket.io `.sio` files, needs more coverage (alarms, `dbUpdateUnset`, devicestatus/profile pushes) and a better body comparison for pushed deltas.
 3. Add nocturne

@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/storage/delete",
+    "url": "http://localhost:1337/socket.io/storage/delete",
+    "connectUrl": "http://localhost:1337/storage",
+    "namespace": "/storage",
+    "event": "delete",
+    "connection": "storage_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "colName": "treatments",
+    "identifier": "ce0abc32-ab36-5709-a502-5aa4a9d0196c"
+  },
+  "durationMs": 0
+}

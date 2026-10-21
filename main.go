@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"nsc/req"
+	"nsc/sio"
 	"os"
 	"strings"
 )
@@ -43,6 +44,13 @@ func main() {
 		"requests/x_bad_requests.http",
 	}
 
+	// socket.io scripts run after the HTTP files so they can use the same context (site, tokens, ...)
+	socketFiles := []string{
+		"requests/socket_v1_websocket.sio",
+		"requests/socket_v3_storage.sio",
+		"requests/socket_v3_alarm.sio",
+	}
+
 	// Add requests/<name>.http to the front of the list if it exists
 	_, err := os.Stat("requests/" + name + ".http")
 	if err != nil {
@@ -51,7 +59,7 @@ func main() {
 
 	files = append([]string{"requests/" + name + ".http"}, files...)
 
-	for _, f := range files {
+	for _, f := range append(files, socketFiles...) {
 		if _, err := os.Stat(f); os.IsNotExist(err) {
 			fmt.Fprintf(os.Stderr, "file does not exist: %s\n", f)
 			os.Exit(1)
@@ -78,6 +86,27 @@ func main() {
 		os.Exit(1)
 	}
 
+	scripts := make([]*sio.ScriptFile, 0, len(socketFiles))
+	for _, file := range socketFiles {
+		sf, err := sio.ParseScriptFile(file)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "error parsing socket file: %v\n error %v\n", file, err)
+			os.Exit(1)
+		}
+		scripts = append(scripts, sf)
+	}
+
+	usedNames := map[string]bool{}
+	for _, rf := range requests {
+		for _, r := range rf.Requests {
+			usedNames[r.Name] = true
+		}
+	}
+	if err := sio.Validate(scripts, usedNames); err != nil {
+		fmt.Fprintf(os.Stderr, "error validating socket files: %v\n", err)
+		os.Exit(1)
+	}
+
 	// Delete old requests
 	if err := os.RemoveAll("./results/" + name); err != nil {
 		log.Fatal(err)
@@ -92,7 +121,25 @@ func main() {
 			os.Exit(1)
 		}
 	}
+
+	for _, sf := range scripts {
+		sf.CTX = ctx
+		if err := ExecuteScriptFile(sf, name); err != nil {
+			fmt.Fprintf(os.Stderr, "error fatal executing socket file: %v\n with context: %+v\n", err, ctx)
+			os.Exit(1)
+		}
+	}
 	fmt.Println("done")
+}
+
+func ExecuteScriptFile(sf *sio.ScriptFile, name string) error {
+	client := &http.Client{}
+
+	if err := sf.Execute(client); err != nil {
+		fmt.Fprintf(os.Stderr, "error executing socket file: %v\n", err)
+	}
+
+	return sf.WriteResultsToFolder(name)
 }
 
 func ExecuteReqesutsFile(rf *req.RequestFile, name string) (newctx map[string]any, err error) {

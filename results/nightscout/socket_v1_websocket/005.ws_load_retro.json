@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/loadRetro",
+    "url": "http://localhost:1337/socket.io/loadRetro",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "loadRetro",
+    "connection": "ws_connect",
+    "ack": true,
+    "args": [
+      {}
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "success"
+  },
+  "durationMs": 0
+}

@@ -1,0 +1,95 @@
+#####
+# Nightscout's original websocket API, on the default "/" namespace.
+# The Nightscout web client and many follower apps use this.
+#####
+
+NAME ws_connect
+CONNECT http://{{ .site }}/
+
+# authorize acks with the client's permissions,
+# then emits "connected" and a full "dataUpdate" if the client can read
+NAME ws_authorize
+EMIT authorize
+B {"client": "web", "token": "{{ jwt }}", "history": 1}
+ACK
+
+NAME ws_connected
+WAIT connected
+
+NAME ws_initial_data_update
+WAIT dataUpdate
+
+NAME ws_load_retro
+EMIT loadRetro
+B {}
+ACK
+
+NAME ws_retro_update
+WAIT retroUpdate
+
+#####
+# Data created through the REST API is pushed to readers as a delta "dataUpdate"
+#####
+
+NAME ws_create_entry_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [{"type": "sgv", "sgv": 123, "date": {{ itime 0 }}, "device": "socket-test"}]
+
+NAME ws_data_update_after_create_entry
+WAIT dataUpdate
+T 30s
+
+#####
+# Clients with write permission can change data over the websocket
+#####
+
+NAME ws_db_add_treatment
+EMIT dbAdd
+B {"collection": "treatments", "data": {"eventType": "Note", "notes": "added over socket.io", "created_at": "{{ time 0 }}", "enteredBy": "socket-test"}}
+ACK
+
+NAME ws_data_update_after_db_add
+WAIT dataUpdate
+T 30s
+
+NAME ws_db_update_treatment
+EMIT dbUpdate
+B {"collection": "treatments", "_id": "{{ dig "ws_db_add_treatment.0._id" }}", "data": {"notes": "updated over socket.io"}}
+ACK
+
+NAME ws_data_update_after_db_update
+WAIT dataUpdate
+T 30s
+
+NAME ws_db_remove_treatment
+EMIT dbRemove
+B {"collection": "treatments", "_id": "{{ dig "ws_db_add_treatment.0._id" }}"}
+ACK
+
+NAME ws_data_update_after_db_remove
+WAIT dataUpdate
+T 30s
+
+NAME ws_disconnect
+DISCONNECT
+
+#####
+# A second connection with a read only token
+#####
+
+NAME ws_read_connect
+CONNECT http://{{ .site }}/
+
+NAME ws_read_authorize
+EMIT authorize
+B {"client": "web", "token": "{{ read_jwt }}", "history": 1}
+ACK
+
+# writes are refused without write permission
+NAME ws_read_db_add_treatment
+EMIT dbAdd
+B {"collection": "treatments", "data": {"eventType": "Note", "notes": "should not be added", "created_at": "{{ time 0 }}"}}
+ACK
+
+NAME ws_read_disconnect
+DISCONNECT

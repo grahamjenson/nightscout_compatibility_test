@@ -1,0 +1,143 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/retroUpdate",
+    "url": "http://localhost:1337/socket.io/retroUpdate",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "retroUpdate",
+    "connection": "ws_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "devicestatus": [
+      {
+        "_id": "6ad8949e54e1327fb959c595",
+        "created_at": "2026-10-21T10:29:58.000Z",
+        "device": "aaps",
+        "mills": 1792578598000,
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05,
+          "display": "87%",
+          "level": 75,
+          "value": 87,
+          "voltage": 4.05,
+          "voltageDisplay": "4.050v"
+        },
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad8949e54e1327fb959c5a0",
+        "app": "test-app",
+        "created_at": "2026-10-21T10:30:58.000Z",
+        "date": 1792578658000,
+        "device": "aapsv3",
+        "identifier": "cab7bb66-1e5f-5486-9ff2-81eb97e5469dcustom",
+        "isValid": false,
+        "mills": 1792578658000,
+        "modifiedBy": "write",
+        "srvCreated": 1792578718549,
+        "srvModified": 1792578718630,
+        "subject": "write",
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05,
+          "display": "87%",
+          "level": 75,
+          "value": 87,
+          "voltage": 4.05,
+          "voltageDisplay": "4.050v"
+        },
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad8949e54e1327fb959c594",
+        "created_at": "2026-10-21T10:30:58.000Z",
+        "device": "aaps1",
+        "mills": 1792578658000,
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05,
+          "display": "87%",
+          "level": 75,
+          "value": 87,
+          "voltage": 4.05,
+          "voltageDisplay": "4.050v"
+        },
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad8949f54e1327fb959c5c9",
+        "created_at": "2026-10-21T10:30:59.000Z",
+        "device": "aaps1",
+        "mills": 1792578659000,
+        "random": 123,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad8949f54e1327fb959c5c8",
+        "created_at": "2026-10-21T10:30:59.000Z",
+        "device": "aaps1",
+        "mills": 1792578659000,
+        "uploader": "not an object",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad8949e54e1327fb959c59f",
+        "app": "test-app",
+        "created_at": "2026-10-21T10:31:58.000Z",
+        "date": 1792578718000,
+        "device": "aaps",
+        "identifier": "cab7bb66-1e5f-5486-9ff2-81eb97e5469d",
+        "isValid": false,
+        "mills": 1792578718000,
+        "modifiedBy": "write",
+        "notes": "updated by update_patch_devicestatus_v3",
+        "srvCreated": 1792578718543,
+        "srvModified": 1792578718625,
+        "subject": "write",
+        "uploader": {
+          "battery": 100,
+          "batteryVoltage": 3.2,
+          "display": "100%",
+          "level": 100,
+          "value": 100,
+          "voltage": 3.2,
+          "voltageDisplay": "3.200v"
+        },
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad894a454e1327fb959c5cb",
+        "app": "test-app",
+        "created_at": "2026-10-21T10:31:59.000Z",
+        "date": 1792578719000,
+        "device": "test-device",
+        "identifier": "859f4108-ac78-56b2-bd6c-215a8ba20228",
+        "mills": 1792578719000,
+        "srvCreated": 1792578724324,
+        "srvModified": 1792578724324,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad8949f54e1327fb959c5ca",
+        "app": "test-app",
+        "created_at": "2026-10-21T10:31:59.000Z",
+        "date": 1792578719000,
+        "duration": 3600,
+        "endmills": 1792794719000,
+        "identifier": "a951afc4-ec8f-5c02-8e9c-62639faf6ef6",
+        "mills": 1792578719000,
+        "notes": "test devicestatus missing device",
+        "srvCreated": 1792578719316,
+        "srvModified": 1792578719316,
+        "subject": "write",
+        "type": "walking",
+        "utcOffset": 0
+      }
+    ]
+  },
+  "durationMs": 0
+}

@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbUpdate",
+    "url": "http://localhost:1337/socket.io/dbUpdate",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "dbUpdate",
+    "connection": "ws_connect",
+    "ack": true,
+    "args": [
+      {
+        "_id": "6ad894a554e1327fb959c5d6",
+        "collection": "treatments",
+        "data": {
+          "notes": "updated over socket.io"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "success"
+  },
+  "durationMs": 4
+}

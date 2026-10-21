@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/storage/update",
+    "url": "http://localhost:1337/socket.io/storage/update",
+    "connectUrl": "http://localhost:1337/storage",
+    "namespace": "/storage",
+    "event": "update",
+    "connection": "storage_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "colName": "treatments",
+    "doc": {
+      "app": "socket-test",
+      "created_at": "2026-10-21T10:32:06.624Z",
+      "date": 1792578726624,
+      "eventType": "Note",
+      "identifier": "ce0abc32-ab36-5709-a502-5aa4a9d0196c",
+      "modifiedBy": "write",
+      "notes": "storage socket patched",
+      "srvCreated": 1792578726627,
+      "srvModified": 1792578726631,
+      "subject": "write",
+      "utcOffset": 0
+    }
+  },
+  "durationMs": 0
+}

@@ -91,7 +91,7 @@ func (req Request) Execute(client *http.Client) (Response, error) {
 
 func (req Request) BuildRealRequest(ctx map[string]any) (Request, error) {
 
-	url, err := renderTemplate(req.URL, ctx)
+	url, err := RenderTemplate(req.URL, ctx)
 	if err != nil {
 		return Request{}, fmt.Errorf("request %s url render failed: %w", req.Name, err)
 	}
@@ -108,7 +108,7 @@ func (req Request) BuildRealRequest(ctx map[string]any) (Request, error) {
 	}
 
 	// ---- render body ----
-	bodyStr, err := renderTemplate(string(req.Body), ctx)
+	bodyStr, err := RenderTemplate(string(req.Body), ctx)
 	if err != nil {
 		return Request{}, fmt.Errorf("request %s body render failed: %w", req.Name, err)
 	}
@@ -117,7 +117,7 @@ func (req Request) BuildRealRequest(ctx map[string]any) (Request, error) {
 	renderedHeaders := make(http.Header)
 	for k, vv := range req.Headers {
 		for _, v := range vv {
-			renderedValue, err := renderTemplate(v, ctx)
+			renderedValue, err := RenderTemplate(v, ctx)
 			if err != nil {
 				return Request{}, fmt.Errorf("request %s header %s render failed: %w", req.Name, k, err)
 			}
@@ -185,7 +185,8 @@ func templateDig(root any, path string) any {
 	return cur
 }
 
-func renderTemplate(input string, ctx map[string]any) (string, error) {
+// RenderTemplate renders a DSL template string against ctx
+func RenderTemplate(input string, ctx map[string]any) (string, error) {
 	tmpl, err := template.New("req").
 		Option("missingkey=error").
 		Funcs(template.FuncMap{
