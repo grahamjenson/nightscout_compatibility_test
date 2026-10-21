@@ -300,7 +300,7 @@ func savedRequestFor(res Result, connectURL string) savedSocketRequest {
 	case VerbDisconnect:
 		event = "disconnect"
 	case VerbCollect:
-		event = "*"
+		event = "events"
 	}
 
 	out := savedSocketRequest{

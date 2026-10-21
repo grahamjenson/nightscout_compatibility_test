@@ -2,290 +2,386 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
+	"io"
+	"io/fs"
+	"mime"
 	"net/url"
 	"os"
 	"path/filepath"
-	"reflect"
 	"slices"
+	"strconv"
 	"strings"
 	"text/tabwriter"
 )
 
-type CompareFile struct {
-	ServiceName1 string // should be nightscout
-	ServiceName2 string // should be other service name
-	GroupName    string
-	TestName     string
-	Method       string // GET, POST, etc.
-	Path         string // /api/v1/entries.json, etc.
+// Compares the results of two services, e.g.
+//
+//	go run diff/diff.go results/nightscout results/nighttroop
+//
+// The first folder is the reference (nightscout). Every result in it is
+// compared to the result with the same group and name in the second folder.
+
+type Options struct {
+	IncludeBad bool // also compare x_bad_requests
+	Details    bool // print the differences of every test that is not identical
+	Worst      int  // number of worst tests to print with their differences
+	MaxDiffs   int  // differences printed per test, 0 is unlimited
 }
 
-func (c CompareFile) Name() string {
-	return fmt.Sprintf("%s.%s", c.GroupName, c.TestName)
-}
-func (c CompareFile) FilePaths() (string, string) {
-	return filepath.Join(PREFIX, c.ServiceName1, c.GroupName, fmt.Sprintf("%s.json", c.TestName)), filepath.Join(PREFIX, c.ServiceName2, c.GroupName, fmt.Sprintf("%s.json", c.TestName))
+// Result is one saved request/response (HTTP or socket.io) from main.go
+type Result struct {
+	Method      string
+	URL         string
+	Endpoint    string // METHOD grouping path, e.g. /api/v1/entries
+	Status      int
+	DurationMs  int
+	Body        any
+	ContentType string
 }
 
-func (c CompareFile) MethodPath() string {
-	return fmt.Sprintf("%s %s", c.Method, c.Path)
+// Difference is one way the second service's result differs from the reference
+type Difference struct {
+	Kind   string // status, type, missing, extra, length, value, null, content-type, format
+	Path   string // JSON path with array indexes generalised, e.g. $[].sgv
+	Detail string
+	Count  int
 }
 
-type EndpointCompatibility struct {
+func (d Difference) String() string {
+	s := d.Kind
+	if d.Path != "" {
+		s += " " + d.Path
+	}
+	if d.Detail != "" {
+		s += ": " + d.Detail
+	}
+	if d.Count > 1 {
+		s += fmt.Sprintf(" (x%d)", d.Count)
+	}
+	return s
+}
+
+type TestResult struct {
+	Group  string
+	Test   string
 	Method string
 	Path   string
 
-	StatusScoreTotal float64 // 0-100
-	BodyScoreTotal   float64 // 0-100
+	Status1 int
+	Status2 int
+
+	StatusScore float64
+	BodyScore   float64
+	Score       float64
+
+	// Duration of the second minus the first, only when both succeeded
+	DurationDiff int
+	HasDuration  bool
+
+	Differences []Difference
+}
+
+func (t TestResult) Name() string {
+	return t.Group + "/" + t.Test
+}
+
+type EndpointReport struct {
+	Method string
+	Path   string
+
+	StatusScoreTotal float64
+	BodyScoreTotal   float64
+	ScoreTotal       float64
 	Duration200Diff  int
-	TestN            int     // number of tests compared
-	ScoreTotal       float64 // weighted overall
+	TestN            int
 }
 
-var PREFIX = "results"
-
-func getNameFromFolder(path string) string {
-	return strings.TrimPrefix(path, PREFIX)
+// MissingResult is a reference result the second service has no result for
+type MissingResult struct {
+	Name     string
+	Method   string
+	Endpoint string
 }
+
+const (
+	statusWeight = 0.7
+	bodyWeight   = 0.3
+
+	// Score for two values of the same type that differ, ids and dates are rarely the same
+	valueMismatchScore = 90
+	// Score for booleans that differ, e.g. success true vs false
+	boolMismatchScore = 50
+	// Score when the reference is null/empty and the other has data
+	extraDataScore = 50
+	// Each key only the second service returns costs this much of a key the reference returns
+	extraKeyWeight = 0.25
+)
 
 func main() {
-	// the two args are folder 1 and folder 2
-	folder1 := os.Args[1]
-	folder2 := os.Args[2]
-
-	// check folder 1 and folder 2 exist
-	if _, err := os.Stat(folder1); os.IsNotExist(err) {
-		fmt.Println("Folder 1 does not exist", folder1)
-		return
+	opts := Options{}
+	flag.BoolVar(&opts.IncludeBad, "bad", false, "also compare the x_bad_requests results")
+	flag.BoolVar(&opts.Details, "details", false, "print the differences of every test that is not identical")
+	flag.IntVar(&opts.Worst, "worst", 15, "number of worst scoring tests to print with their differences")
+	flag.IntVar(&opts.MaxDiffs, "max-diffs", 10, "differences to print per test, 0 is unlimited")
+	flag.Usage = func() {
+		fmt.Fprintln(os.Stderr, "usage: go run diff/diff.go [flags] results/nightscout results/<other service>")
+		flag.PrintDefaults()
 	}
-	if _, err := os.Stat(folder2); os.IsNotExist(err) {
-		fmt.Println("Folder 2 does not exist", folder2)
-		return
-	}
-	name1 := getNameFromFolder(folder1)
-	name2 := getNameFromFolder(folder2)
-	compareFiles := getCompareFiles(folder1, name1, name2)
+	flag.Parse()
 
-	fmt.Println("Comparing folders...")
-	reports := map[string]*EndpointCompatibility{}
-
-	for _, file := range compareFiles {
-		statusCompatibility, bodyCompatibility, duration200diff, err := generateDiffReport(file)
-		if err != nil {
-			fmt.Println("Error generating diff report for file", file.Name(), ":", err)
-			continue
-		}
-		if reports[file.MethodPath()] == nil {
-			reports[file.MethodPath()] = &EndpointCompatibility{
-				Method:           file.Method,
-				Path:             file.Path,
-				StatusScoreTotal: statusCompatibility,
-				BodyScoreTotal:   bodyCompatibility,
-				ScoreTotal:       (statusCompatibility*0.7 + bodyCompatibility*0.3),
-				Duration200Diff:  duration200diff,
-				TestN:            1,
-			}
-		} else {
-			ec := reports[file.MethodPath()]
-			ec.StatusScoreTotal += statusCompatibility
-			ec.BodyScoreTotal += bodyCompatibility
-			ec.ScoreTotal += (statusCompatibility*0.7 + bodyCompatibility*0.3)
-			ec.Duration200Diff += duration200diff
-			ec.TestN++
-		}
-
+	if flag.NArg() != 2 {
+		flag.Usage()
+		os.Exit(1)
 	}
 
-	reportsList := []*EndpointCompatibility{}
-	for _, report := range reports {
-		reportsList = append(reportsList, report)
+	results, missing, err := CompareFolders(flag.Arg(0), flag.Arg(1), opts)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
 	}
 
-	// sort reports by overall score
-	slices.SortFunc(reportsList, func(a, b *EndpointCompatibility) int {
-		// 1. Compare the primary field (Path)
-		if a.Path != b.Path {
-			if a.Path < b.Path {
-				return -1
-			}
-			return 1
-		}
-
-		// 2. Fallback to secondary field (Method) if Paths match
-		if a.Method != b.Method {
-			// sort GET, POST, PUT, PATCH, DELETE
-			order := map[string]int{
-				"GET":    1,
-				"POST":   2,
-				"PUT":    3,
-				"PATCH":  4,
-				"DELETE": 5,
-				// socket.io
-				"CONNECT":    6,
-				"EMIT":       7,
-				"WAIT":       8,
-				"COLLECT":    9,
-				"DISCONNECT": 10,
-			}
-			if order[a.Method] < order[b.Method] {
-				return -1
-			}
-			return 1
-		}
-
-		return 0
-	})
-
-	w := tabwriter.NewWriter(os.Stdout, 0, 0, 3, ' ', 0)
-	totalTests := 0
-	totalStatusScore := 0.0
-	totalBodyScore := 0.0
-	totalDurationDiff := 0
-	for _, report := range reportsList {
-		statusScore := report.StatusScoreTotal / float64(report.TestN)
-		bodyScore := report.BodyScoreTotal / float64(report.TestN)
-		overallScore := report.ScoreTotal / float64(report.TestN)
-		totalTests += report.TestN
-		totalStatusScore += report.StatusScoreTotal
-		totalBodyScore += report.BodyScoreTotal
-		totalDurationDiff += report.Duration200Diff
-		fmt.Fprintf(w, "%s\t%s\tStatus Score %.2f\tBody Score %.2f\tOverall Score %.2f\tDuration200Diff %d\tTotal Tests %d\n", report.Method, report.Path, statusScore, bodyScore, overallScore, report.Duration200Diff, report.TestN)
-	}
-
-	fmt.Fprintf(w, "TOTAL\t\tStatus Score %.2f\tBody Score %.2f\tOverall Score %.2f\tDuration200Diff %d\tTotal Tests %d\n", totalStatusScore/float64(totalTests), totalBodyScore/float64(totalTests), (totalStatusScore*0.7+totalBodyScore*0.3)/float64(totalTests), totalDurationDiff, totalTests)
-	w.Flush()
+	PrintReport(os.Stdout, results, missing, opts)
 }
 
-func getCompareFiles(folder string, name1, name2 string) []CompareFile {
-	// get all subfolders and files in the folder
-	comparefiles := []CompareFile{}
+// CompareFolders compares every result in folder1 with the result at the same
+// relative path in folder2
+func CompareFolders(folder1, folder2 string, opts Options) ([]TestResult, []MissingResult, error) {
+	for _, f := range []string{folder1, folder2} {
+		info, err := os.Stat(f)
+		if err != nil {
+			return nil, nil, fmt.Errorf("folder %s: %w", f, err)
+		}
+		if !info.IsDir() {
+			return nil, nil, fmt.Errorf("%s is not a folder", f)
+		}
+	}
 
-	err := filepath.Walk(folder, func(path string, info os.FileInfo, err error) error {
+	// The setup file is named after the service (requests/<name>.http) and is
+	// expected to be different for every service
+	setupGroup := filepath.Base(filepath.Clean(folder1))
+
+	results := []TestResult{}
+	missing := []MissingResult{}
+
+	err := filepath.WalkDir(folder1, func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}
-		if !info.IsDir() {
-			// split path into parts
-			parts := strings.Split(path, string(os.PathSeparator))
-			if len(parts) < 4 {
-				fmt.Println("Skipping file with unexpected path format:", path)
-				return nil
-			}
-			// parts[0] is results, parts[1] is name1 or name 2
-			groupName := parts[2]
-
-			method, apiPath, err := getMethodAndPathFromFile(path)
-			if err != nil {
-				fmt.Println("Error getting method and path from file", path, ":", err)
-				return nil
-			}
-			if method == "" || apiPath == "" {
-				fmt.Println("Skipping file with missing method or path:", path)
-				return nil
-			}
-			testName := strings.TrimSuffix(parts[3], ".json")
-			comparefiles = append(comparefiles, CompareFile{
-				ServiceName1: name1,
-				ServiceName2: name2,
-				GroupName:    groupName,
-				TestName:     testName,
-				Method:       method,
-				Path:         apiPath,
-			})
+		if d.IsDir() || !strings.HasSuffix(path, ".json") {
+			return nil
 		}
+
+		rel, err := filepath.Rel(folder1, path)
+		if err != nil {
+			return err
+		}
+		parts := strings.Split(rel, string(os.PathSeparator))
+		if len(parts) != 2 {
+			fmt.Fprintln(os.Stderr, "skipping file with unexpected path:", path)
+			return nil
+		}
+		group, test := parts[0], strings.TrimSuffix(parts[1], ".json")
+
+		if group == setupGroup {
+			return nil
+		}
+		if !opts.IncludeBad && strings.Contains(group, "x_bad_requests") {
+			return nil
+		}
+
+		r1, err := LoadResult(path)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, "skipping", path, ":", err)
+			return nil
+		}
+		// SET only assigns a context value, it is not part of any API
+		if r1.Method == "SET" || r1.Method == "" || r1.Endpoint == "" {
+			return nil
+		}
+
+		other := filepath.Join(folder2, rel)
+		r2, err := LoadResult(other)
+		if err != nil {
+			if !os.IsNotExist(err) {
+				fmt.Fprintln(os.Stderr, "unreadable result", other, ":", err)
+			}
+			missing = append(missing, MissingResult{Name: group + "/" + test, Method: r1.Method, Endpoint: r1.Endpoint})
+			return nil
+		}
+
+		tr := CompareResults(r1, r2)
+		tr.Group = group
+		tr.Test = test
+		results = append(results, tr)
 		return nil
 	})
 	if err != nil {
-		fmt.Println("Error walking the path", folder, ":", err)
+		return nil, nil, err
 	}
-	fmt.Println("Found", len(comparefiles), "files to compare", folder, "with", name1, "and", name2)
-	// only keep compare file if both files exist in folder 1 and folder 2
-	cleanCompareFiles := []CompareFile{}
-	for _, compareFile := range comparefiles {
-		file1, file2 := compareFile.FilePaths()
-		if _, err := os.Stat(file1); os.IsNotExist(err) {
-			fmt.Println("File", file1, "does not exist")
-			continue
-		}
-		if _, err := os.Stat(file2); os.IsNotExist(err) {
-			fmt.Println("File", file2, "does not exist")
-			continue
-		}
 
-		if strings.Contains(compareFile.GroupName, "x_bad_requests") {
-			fmt.Println("Skipping bad request file", compareFile.Name())
-			continue
-		}
-		cleanCompareFiles = append(cleanCompareFiles, compareFile)
-	}
-	return cleanCompareFiles
+	return results, missing, nil
 }
 
-func generateDiffReport(compare CompareFile) (float64, float64, int, error) {
-	file1, file2 := compare.FilePaths()
-	body1, status1, duration1, err := getBodyStatusTimeFromFile(file1)
+// LoadResult reads a result file written by main.go
+func LoadResult(file string) (Result, error) {
+	raw, err := os.ReadFile(file)
 	if err != nil {
-		return 0, 0, 0, fmt.Errorf("error getting body and status from file %s: %w", file1, err)
-	}
-	body2, status2, duration2, err := getBodyStatusTimeFromFile(file2)
-	if err != nil {
-		return 0, 0, 0, fmt.Errorf("error getting body and status from file %s: %w", file2, err)
+		return Result{}, err
 	}
 
-	statusCompatibility := statusScore(status1, status2)
-	bodyCompatibility := bodyCompatabilityScore(body1, body2)
-
-	durationdiff := 0
-	if status1 == 200 || status1 == 201 && status2 == 200 || status2 == 201 {
-		durationdiff = duration2 - duration1
+	var saved struct {
+		Request *struct {
+			Method string `json:"method"`
+			URL    string `json:"url"`
+		} `json:"request"`
+		StatusCode *float64            `json:"statusCode"`
+		DurationMs *float64            `json:"durationMs"`
+		Headers    map[string][]string `json:"headers"`
+		Body       any                 `json:"body"`
 	}
-	return statusCompatibility, bodyCompatibility, durationdiff, nil
+	if err := json.Unmarshal(raw, &saved); err != nil {
+		return Result{}, fmt.Errorf("invalid JSON: %w", err)
+	}
+	if saved.Request == nil {
+		return Result{}, fmt.Errorf("missing 'request'")
+	}
+	if saved.StatusCode == nil {
+		return Result{}, fmt.Errorf("missing 'statusCode'")
+	}
+
+	r := Result{
+		Method:   saved.Request.Method,
+		URL:      saved.Request.URL,
+		Endpoint: EndpointPath(saved.Request.URL),
+		Status:   int(*saved.StatusCode),
+		Body:     saved.Body,
+	}
+	if saved.DurationMs != nil {
+		r.DurationMs = int(*saved.DurationMs)
+	}
+	for k, v := range saved.Headers {
+		if strings.EqualFold(k, "Content-Type") && len(v) > 0 {
+			r.ContentType = v[0]
+		}
+	}
+	return r, nil
 }
 
-// If the first fails and the second succeeds, it is not bad
-// If the first succeeds and the second fails, it is bad
-// 200 vs 201 is bad but not as bad as 200 vs 500
-func statusScore(a, b int) float64 {
+// EndpointPath groups URLs by the first three path segments without .json,
+// e.g. http://x/api/v3/entries/abc -> /api/v3/entries
+func EndpointPath(rawURL string) string {
+	u, err := url.Parse(rawURL)
+	if err != nil || u.Path == "" {
+		return ""
+	}
+	clean := strings.TrimSuffix(strings.TrimSuffix(u.Path, "/"), ".json")
+	parts := strings.Split(clean, "/")
+	if len(parts) > 4 {
+		parts = parts[:4]
+	}
+	path := strings.Join(parts, "/")
+	if path == "" {
+		return "/"
+	}
+	return path
+}
+
+// CompareResults scores how compatible r2 is with the reference r1
+func CompareResults(r1, r2 Result) TestResult {
+	tr := TestResult{
+		Method:  r1.Method,
+		Path:    r1.Endpoint,
+		Status1: r1.Status,
+		Status2: r2.Status,
+	}
+
+	d := newDiffs()
+
+	tr.StatusScore = StatusScore(r1.Status, r2.Status)
+	if r1.Status != r2.Status {
+		d.add("status", "", fmt.Sprintf("%d vs %d", r1.Status, r2.Status))
+	}
+
+	if ct1, ct2 := mediaType(r1.ContentType), mediaType(r2.ContentType); ct1 != "" && ct2 != "" && ct1 != ct2 {
+		d.add("content-type", "", ct1+" vs "+ct2)
+	}
+
+	tr.BodyScore = BodyScore(r1.Body, r2.Body, d)
+	tr.Score = statusWeight*tr.StatusScore + bodyWeight*tr.BodyScore
+
+	if isSuccess(r1.Status) && isSuccess(r2.Status) {
+		tr.DurationDiff = r2.DurationMs - r1.DurationMs
+		tr.HasDuration = true
+	}
+
+	tr.Differences = d.list()
+	return tr
+}
+
+func mediaType(contentType string) string {
+	if contentType == "" {
+		return ""
+	}
+	mt, _, err := mime.ParseMediaType(contentType)
+	if err != nil {
+		return strings.ToLower(strings.TrimSpace(strings.Split(contentType, ";")[0]))
+	}
+	return mt
+}
+
+func isSuccess(status int) bool {
+	return status >= 200 && status < 300
+}
+
+// StatusScore: identical 100, same class (e.g. 400 vs 404) 80, the other
+// service succeeding where the reference failed 20, failing where the
+// reference succeeded (or any other mismatch) 0
+func StatusScore(a, b int) float64 {
 	if a == b {
 		return 100
 	}
 
-	classA := a / 100
-	classB := b / 100
-	// Same class of error at least ball park
+	classA, classB := a/100, b/100
 	if classA == classB {
 		return 80
 	}
-
-	if classA == 2 && (classB == 1 || classB == 3 || classB == 4 || classB == 5) {
-		// A succeeded and B did not, bad
-		return 0
-	}
-
-	if classB == 2 && (classA == 1 || classA == 3 || classA == 4 || classA == 5) {
-		// B succeeded and A did not, not as bad but still bad
+	if classB == 2 && classA >= 1 && classA <= 5 {
 		return 20
 	}
-
 	return 0
 }
 
-// If body 1 is not json, but body 2 is, that is fine.
-// Types matter above all else, e.g. if it is an array return then must return an array
-// Then number of values matter next
-// Then key names of first type matter next
-// Values matter the least
-func bodyCompatabilityScore(body1, body2 any) float64 {
-	return compatibility(body1, body2)
+// BodyScore compares the body of the other service to the reference body. If the
+// reference body is not JSON (a plain string) but the other is, that is fine.
+func BodyScore(a, b any, d *diffs) float64 {
+	if d == nil {
+		d = newDiffs()
+	}
+
+	if s, ok := a.(string); ok {
+		switch b.(type) {
+		case map[string]any, []any:
+			d.add("format", "$", fmt.Sprintf("text %s vs JSON %s", truncate(s, 40), typeName(b)))
+			return 100
+		}
+	}
+	return compare(a, b, "$", d)
 }
 
-func compatibility(a, b any) float64 {
-	// nil handling
+// compare scores b against the reference a from 0 to 100. Types matter most,
+// then missing keys and array lengths, values matter least.
+func compare(a, b any, path string, d *diffs) float64 {
 	if a == nil && b == nil {
 		return 100
 	}
-	if a == nil || b == nil {
+	if a == nil {
+		d.add("null", path, "null vs "+typeName(b))
+		return extraDataScore
+	}
+	if b == nil {
+		d.add("null", path, typeName(a)+" vs null")
 		return 0
 	}
 
@@ -293,200 +389,331 @@ func compatibility(a, b any) float64 {
 	case map[string]any:
 		bv, ok := b.(map[string]any)
 		if !ok {
+			d.add("type", path, "object vs "+typeName(b))
 			return 0
 		}
-
-		if len(av) == 0 && len(bv) == 0 {
-			return 100
-		}
-
-		// 30% key compatibility
-		keyMatches := 0
-		for k := range av {
-			if _, ok := bv[k]; ok {
-				keyMatches++
-			}
-		}
-
-		keyScore := float64(keyMatches) / float64(max(len(av), 1))
-
-		// 20% count compatibility
-		countScore := 1.0
-		if len(av) > 0 || len(bv) > 0 {
-			countScore = float64(min(len(av), len(bv))) /
-				float64(max(len(av), len(bv)))
-		}
-
-		// 10% value compatibility
-		valueScore := 0.0
-		if keyMatches > 0 {
-			total := 0.0
-			for k := range av {
-				if bvv, ok := bv[k]; ok {
-					total += compatibility(av[k], bvv) / 100
-				}
-			}
-			valueScore = total / float64(keyMatches)
-		}
-
-		return 40 +
-			(30 * keyScore) +
-			(20 * countScore) +
-			(10 * valueScore)
+		return compareObjects(av, bv, path, d)
 
 	case []any:
 		bv, ok := b.([]any)
 		if !ok {
+			d.add("type", path, "array vs "+typeName(b))
 			return 0
 		}
-
-		if len(av) == 0 && len(bv) == 0 {
-			return 100
-		}
-
-		// 20% count compatibility
-		countScore := float64(min(len(av), len(bv))) /
-			float64(max(len(av), len(bv)))
-
-		// Compare elements by position
-		valueScore := 0.0
-		n := min(len(av), len(bv))
-
-		if n > 0 {
-			for i := 0; i < n; i++ {
-				valueScore += compatibility(av[i], bv[i]) / 100
-			}
-			valueScore /= float64(n)
-		}
-
-		return 40 + // type matched
-			30 + // arrays matched
-			(20 * countScore) +
-			(10 * valueScore)
-
-	case string:
-		bv, ok := b.(string)
-		if !ok {
-			return 0
-		}
-
-		if av == bv {
-			return 100
-		}
-
-		return 90
-
-	case float64:
-		_, ok := b.(float64)
-		if !ok {
-			return 0
-		}
-
-		if reflect.DeepEqual(a, b) {
-			return 100
-		}
-
-		return 90
+		return compareArrays(av, bv, path, d)
 
 	case bool:
 		bv, ok := b.(bool)
 		if !ok {
+			d.add("type", path, "boolean vs "+typeName(b))
 			return 0
 		}
-
-		if av == bv {
-			return 100
+		if av != bv {
+			d.add("value", path, fmt.Sprintf("%v vs %v", av, bv))
+			return boolMismatchScore
 		}
+		return 100
 
-		return 90
+	case string:
+		bv, ok := b.(string)
+		if !ok {
+			d.add("type", path, "string vs "+typeName(b))
+			return 0
+		}
+		if av != bv {
+			return valueMismatchScore
+		}
+		return 100
+
+	case float64:
+		bv, ok := b.(float64)
+		if !ok {
+			d.add("type", path, "number vs "+typeName(b))
+			return 0
+		}
+		if av != bv {
+			return valueMismatchScore
+		}
+		return 100
 
 	default:
-		if reflect.DeepEqual(a, b) {
+		if typeName(a) != typeName(b) {
+			d.add("type", path, typeName(a)+" vs "+typeName(b))
+			return 0
+		}
+		return 100
+	}
+}
+
+func compareObjects(a, b map[string]any, path string, d *diffs) float64 {
+	total := 0.0
+	for _, k := range sortedKeys(a) {
+		bv, ok := b[k]
+		if !ok {
+			d.add("missing", joinKey(path, k), "")
+			continue
+		}
+		total += compare(a[k], bv, joinKey(path, k), d)
+	}
+
+	extra := 0
+	for _, k := range sortedKeys(b) {
+		if _, ok := a[k]; !ok {
+			extra++
+			d.add("extra", joinKey(path, k), "")
+		}
+	}
+
+	if len(a) == 0 {
+		if len(b) == 0 {
 			return 100
 		}
-		return 50
+		return extraDataScore
+	}
+
+	return total / (float64(len(a)) + extraKeyWeight*float64(extra))
+}
+
+func compareArrays(a, b []any, path string, d *diffs) float64 {
+	if len(a) != len(b) {
+		d.add("length", path, fmt.Sprintf("%d vs %d", len(a), len(b)))
+	}
+
+	switch {
+	case len(a) == 0 && len(b) == 0:
+		return 100
+	case len(a) == 0:
+		return extraDataScore
+	case len(b) == 0:
+		return 0
+	}
+
+	n := min(len(a), len(b))
+	total := 0.0
+	for i := 0; i < n; i++ {
+		total += compare(a[i], b[i], path+"[]", d)
+	}
+
+	lengthFactor := 0.5 + 0.5*float64(n)/float64(max(len(a), len(b)))
+	return total / float64(n) * lengthFactor
+}
+
+func joinKey(path, key string) string {
+	return path + "." + key
+}
+
+func sortedKeys(m map[string]any) []string {
+	keys := make([]string, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+	slices.Sort(keys)
+	return keys
+}
+
+func typeName(v any) string {
+	switch v.(type) {
+	case nil:
+		return "null"
+	case map[string]any:
+		return "object"
+	case []any:
+		return "array"
+	case string:
+		return "string"
+	case float64:
+		return "number"
+	case bool:
+		return "boolean"
+	default:
+		return fmt.Sprintf("%T", v)
 	}
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
+func truncate(s string, n int) string {
+	s = strconv.Quote(s)
+	if len(s) <= n {
+		return s
 	}
-	return b
+	return s[:n] + `..."`
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
+// diffs collects differences, merging the same kind at the same path
+// (array indexes are generalised so one difference in every element is reported once)
+type diffs struct {
+	order []string
+	byKey map[string]*Difference
 }
 
-func getMethodAndPathFromFile(file string) (string, string, error) {
-	var jsonmap map[string]any
-	fileRaw, err := os.ReadFile(file)
-	if err != nil {
-		return "", "", fmt.Errorf("error reading file: %w", err)
+func newDiffs() *diffs {
+	return &diffs{byKey: map[string]*Difference{}}
+}
+
+func (d *diffs) add(kind, path, detail string) {
+	key := kind + " " + path
+	if existing, ok := d.byKey[key]; ok {
+		existing.Count++
+		return
 	}
-	if err := json.Unmarshal(fileRaw, &jsonmap); err != nil {
-		return "", "", fmt.Errorf("error unmarshaling JSON: %w", err)
+	d.byKey[key] = &Difference{Kind: kind, Path: path, Detail: detail, Count: 1}
+	d.order = append(d.order, key)
+}
+
+func (d *diffs) list() []Difference {
+	out := make([]Difference, 0, len(d.order))
+	for _, k := range d.order {
+		out = append(out, *d.byKey[k])
+	}
+	return out
+}
+
+var methodOrder = map[string]int{
+	"GET":    1,
+	"POST":   2,
+	"PUT":    3,
+	"PATCH":  4,
+	"DELETE": 5,
+	// socket.io
+	"CONNECT":    6,
+	"EMIT":       7,
+	"WAIT":       8,
+	"COLLECT":    9,
+	"DISCONNECT": 10,
+}
+
+func compareMethods(a, b string) int {
+	oa, ok := methodOrder[a]
+	if !ok {
+		oa = len(methodOrder) + 1
+	}
+	ob, ok := methodOrder[b]
+	if !ok {
+		ob = len(methodOrder) + 1
+	}
+	if oa != ob {
+		return oa - ob
+	}
+	return strings.Compare(a, b)
+}
+
+// Aggregate groups test results by METHOD and endpoint path
+func Aggregate(results []TestResult) []*EndpointReport {
+	byKey := map[string]*EndpointReport{}
+	for _, r := range results {
+		key := r.Method + " " + r.Path
+		er, ok := byKey[key]
+		if !ok {
+			er = &EndpointReport{Method: r.Method, Path: r.Path}
+			byKey[key] = er
+		}
+		er.StatusScoreTotal += r.StatusScore
+		er.BodyScoreTotal += r.BodyScore
+		er.ScoreTotal += r.Score
+		er.Duration200Diff += r.DurationDiff
+		er.TestN++
 	}
 
-	request, ok := jsonmap["request"]
-	if !ok {
-		return "", "", fmt.Errorf("missing 'request' field in JSON")
+	reports := make([]*EndpointReport, 0, len(byKey))
+	for _, er := range byKey {
+		reports = append(reports, er)
 	}
-	requestMap, ok := request.(map[string]any)
-	if !ok {
-		return "", "", fmt.Errorf("'request' field is not an object")
+	slices.SortFunc(reports, func(a, b *EndpointReport) int {
+		if c := strings.Compare(a.Path, b.Path); c != 0 {
+			return c
+		}
+		return compareMethods(a.Method, b.Method)
+	})
+	return reports
+}
+
+// WorstTests returns the tests that are not identical, lowest score first
+func WorstTests(results []TestResult) []TestResult {
+	worst := []TestResult{}
+	for _, r := range results {
+		if r.Score < 100 || len(r.Differences) > 0 {
+			worst = append(worst, r)
+		}
+	}
+	slices.SortStableFunc(worst, func(a, b TestResult) int {
+		switch {
+		case a.Score < b.Score:
+			return -1
+		case a.Score > b.Score:
+			return 1
+		}
+		return strings.Compare(a.Name(), b.Name())
+	})
+	return worst
+}
+
+func PrintReport(out io.Writer, results []TestResult, missing []MissingResult, opts Options) {
+	w := tabwriter.NewWriter(out, 0, 0, 3, ' ', 0)
+
+	reports := Aggregate(results)
+	total := EndpointReport{}
+	for _, r := range reports {
+		n := float64(r.TestN)
+		fmt.Fprintf(w, "%s\t%s\tStatus Score %.2f\tBody Score %.2f\tOverall Score %.2f\tDuration200Diff %d\tTotal Tests %d\n",
+			r.Method, r.Path, r.StatusScoreTotal/n, r.BodyScoreTotal/n, r.ScoreTotal/n, r.Duration200Diff, r.TestN)
+		total.StatusScoreTotal += r.StatusScoreTotal
+		total.BodyScoreTotal += r.BodyScoreTotal
+		total.ScoreTotal += r.ScoreTotal
+		total.Duration200Diff += r.Duration200Diff
+		total.TestN += r.TestN
 	}
 
-	method, ok := requestMap["method"].(string)
-	if !ok {
-		return "", "", fmt.Errorf("missing or invalid 'method' field in 'request'")
-	}
-
-	urlString, ok := requestMap["url"].(string)
-	if !ok {
-		return "", "", fmt.Errorf("missing or invalid 'url' field in 'request'")
-	}
-
-	path := urlString
-	u, err := url.Parse(urlString)
-	if err != nil {
-		return "", "", fmt.Errorf("missing or invalid 'url' field in 'request'")
+	if total.TestN == 0 {
+		fmt.Fprintln(w, "TOTAL\t\tno results to compare")
 	} else {
-		cleanPath := strings.TrimSuffix(strings.TrimSuffix(u.Path, "/"), ".json")
-		pathParts := strings.Split(cleanPath, "/")
-		if len(pathParts) >= 4 {
-			path = strings.Join(pathParts[:4], "/")
+		n := float64(total.TestN)
+		fmt.Fprintf(w, "TOTAL\t\tStatus Score %.2f\tBody Score %.2f\tOverall Score %.2f\tDuration200Diff %d\tTotal Tests %d\n",
+			total.StatusScoreTotal/n, total.BodyScoreTotal/n, total.ScoreTotal/n, total.Duration200Diff, total.TestN)
+	}
+	w.Flush()
+
+	if len(missing) > 0 {
+		fmt.Fprintf(out, "\nMissing results (%d, not scored):\n", len(missing))
+		if opts.Details {
+			for _, m := range missing {
+				fmt.Fprintf(out, "  %s  %s %s\n", m.Name, m.Method, m.Endpoint)
+			}
 		} else {
-			path = u.Path
+			groups := []string{}
+			counts := map[string]int{}
+			for _, m := range missing {
+				group, _, _ := strings.Cut(m.Name, "/")
+				if counts[group] == 0 {
+					groups = append(groups, group)
+				}
+				counts[group]++
+			}
+			for _, g := range groups {
+				fmt.Fprintf(out, "  %s: %d\n", g, counts[g])
+			}
 		}
 	}
 
-	fmt.Println("Extracted method and path from file", file, ":", method, " -- ", path)
-	return method, path, nil
-}
-
-func getBodyStatusTimeFromFile(file string) (any, int, int, error) {
-	var jsonmap map[string]any
-	fileRaw, err := os.ReadFile(file)
-	if err != nil {
-		return nil, 0, 0, fmt.Errorf("error reading file: %w", err)
+	worst := WorstTests(results)
+	if !opts.Details && opts.Worst >= 0 && len(worst) > opts.Worst {
+		worst = worst[:opts.Worst]
 	}
-	if err := json.Unmarshal(fileRaw, &jsonmap); err != nil {
-		return nil, 0, 0, fmt.Errorf("error unmarshaling JSON: %w", err)
+	if len(worst) == 0 {
+		return
 	}
 
-	status, ok := jsonmap["statusCode"].(float64)
-	if !ok {
-		return nil, 0, 0, fmt.Errorf("missing or invalid 'statusCode' field in JSON")
+	if opts.Details {
+		fmt.Fprintf(out, "\nDifferences (%d tests):\n", len(worst))
+	} else {
+		fmt.Fprintf(out, "\nWorst tests (lowest score first, -details for all):\n")
 	}
-
-	duration, ok := jsonmap["durationMs"].(float64)
-	if !ok {
-		return nil, 0, 0, fmt.Errorf("missing or invalid 'durationMs' field in JSON")
+	for _, t := range worst {
+		fmt.Fprintf(out, "  %.2f  %s  %s %s  (%d vs %d)\n", t.Score, t.Name(), t.Method, t.Path, t.Status1, t.Status2)
+		for i, diff := range t.Differences {
+			if opts.MaxDiffs > 0 && i >= opts.MaxDiffs {
+				fmt.Fprintf(out, "        ... %d more\n", len(t.Differences)-i)
+				break
+			}
+			fmt.Fprintf(out, "        %s\n", diff)
+		}
 	}
-	return jsonmap["body"], int(status), int(duration), nil
 }

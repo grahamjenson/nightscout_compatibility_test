@@ -101,26 +101,52 @@ If you run:
 go run diff/diff.go results/nightscout results/nighttroop
 ```
 
-This will compare response bodies, status and headers for each METHOD and PATH pair to compare all results, e.g.
+Every result in the first folder (the reference, Nightscout) is compared with the result with the same group and name in the second. The scores are grouped by METHOD and PATH, followed by the tests that differ the most and exactly how they differ, e.g.
 
 ```
-GET      /api/v3/profile        Status Score 100.00   Body Score 96.31    Overall Score 98.89    Duration200Diff -14    Total Tests 17
-POST     /api/v3/profile        Status Score 100.00   Body Score 94.33    Overall Score 98.30    Duration200Diff -1     Total Tests 1
-PUT      /api/v3/profile        Status Score 50.00    Body Score 86.75    Overall Score 61.02    Duration200Diff 0      Total Tests 2
-PATCH    /api/v3/profile        Status Score 0.00     Body Score 89.00    Overall Score 26.70    Duration200Diff -3     Total Tests 1
-DELETE   /api/v3/profile        Status Score 90.00    Body Score 94.50    Overall Score 91.35    Duration200Diff -2     Total Tests 2
-GET      /api/v3/treatments     Status Score 99.20    Body Score 96.19    Overall Score 98.30    Duration200Diff -44    Total Tests 25
-POST     /api/v3/treatments     Status Score 97.06    Body Score 93.69    Overall Score 96.05    Duration200Diff -94    Total Tests 34
-PUT      /api/v3/treatments     Status Score 100.00   Body Score 92.83    Overall Score 97.85    Duration200Diff -8     Total Tests 3
-PATCH    /api/v3/treatments     Status Score 100.00   Body Score 87.50    Overall Score 96.25    Duration200Diff -2     Total Tests 2
-DELETE   /api/v3/treatments     Status Score 100.00   Body Score 100.00   Overall Score 100.00   Duration200Diff -5     Total Tests 2
-GET      /api/v3/version        Status Score 100.00   Body Score 99.33    Overall Score 99.80    Duration200Diff -1     Total Tests 1
-TOTAL                           Status Score 97.93    Body Score 93.05    Overall Score 96.47    Duration200Diff -627   Total Tests 232
+GET      /api/v3/profile        Status Score 100.00   Body Score 72.46    Overall Score 91.74    Duration200Diff -34    Total Tests 17
+PUT      /api/v3/profile        Status Score 0.00     Body Score 33.85    Overall Score 10.15    Duration200Diff 0      Total Tests 2
+POST     /api/v3/treatments     Status Score 58.89    Body Score 56.48    Overall Score 58.17    Duration200Diff -36    Total Tests 36
+...
+TOTAL                           Status Score 89.19    Body Score 68.20    Overall Score 82.89    Duration200Diff -683   Total Tests 259
+
+Missing results (37, not scored):
+  socket_v1_websocket: 19
+
+Worst tests (lowest score first, -details for all):
+  0.00  v1_treatments/016.get_treatments_after_delete_v1  GET /api/v1/treatments  (200 vs 404)
+        status: 200 vs 404
+        type $: array vs object
+  87.74  v1_devicestatus/001.create_devicestatus_v1  POST /api/v1/devicestatus  (200 vs 200)
+        missing $[].openaps
+        missing $[].pump.status
+        extra $[].date
 ```
 
-These numbers are just heuristics, and could be improved greatly.
+Flags (before the folders):
 
-The goal of this report is not to get services to be 100% compatible, but highlight the differences between OG Nightscout.
+* `-details` print every test that is not identical and every missing result
+* `-worst N` number of worst tests to print (default 15)
+* `-max-diffs N` differences printed per test (default 10, 0 for all)
+* `-bad` also compare `x_bad_requests`
+
+How tests are scored:
+
+* **Status** (70% of overall): identical 100, same class (`400` vs `404`) 80, the other service succeeding where Nightscout failed 20, failing where Nightscout succeeded 0.
+* **Body** (30% of overall): a structural comparison against the Nightscout body. Types matter most (`100` vs `"100"`, object vs array score 0), then keys Nightscout returns that are missing, then array lengths. Extra keys cost a quarter of a missing key. Values matter least: strings and numbers that differ (ids, dates) score 90, booleans that differ 50. If Nightscout returned text and the other service JSON, that is fine.
+* Differences are listed with their JSON path. Array indexes are generalised (`$[].sgv`) so a difference in every element is listed once with a count.
+* `Duration200Diff` is the other service's duration minus Nightscout's, in ms, for tests where both succeeded.
+* The setup group (named after the first folder) and `SET` steps are not compared. Results the other service has no file for are listed as missing and not scored.
+
+These numbers are just heuristics. The goal of this report is not to get services to be 100% compatible, but highlight the differences between OG Nightscout.
+
+# Tests
+
+```
+go test ./...
+```
+
+`diff` also has fuzz tests, e.g. `go test ./diff -run XXX -fuzz FuzzCompareIsBounded -fuzztime 30s`.
 
 # TODO
 
