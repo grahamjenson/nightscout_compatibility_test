@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/alarm/clear_alarm",
+    "url": "http://localhost:1337/socket.io/alarm/clear_alarm",
+    "connectUrl": "http://localhost:1337/alarm",
+    "namespace": "/alarm",
+    "event": "clear_alarm",
+    "connection": "alarm_levels_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "clear": true,
+    "group": "default",
+    "message": "default - Urgent was ack'd",
+    "title": "All Clear"
+  },
+  "durationMs": 2
+}

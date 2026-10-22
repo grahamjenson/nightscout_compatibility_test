@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/alarm/notification",
+    "url": "http://localhost:1337/socket.io/alarm/notification",
+    "connectUrl": "http://localhost:1337/alarm",
+    "namespace": "/alarm",
+    "event": "notification",
+    "connection": "alarm_levels_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "group": "default",
+    "key": "3568a77bdd5f5b38e1ba8c69da706104e8eb909e",
+    "level": 0,
+    "message": "\nEntered By: alarm-test\nNotes: alarm levels note 1792695811599",
+    "notifyhash": "3568a77bdd5f5b38e1ba8c69da706104e8eb909e",
+    "plugin": {
+      "enabled": true,
+      "label": "Treatment Notifications",
+      "name": "treatmentnotify",
+      "pluginType": "notification"
+    },
+    "title": "Note"
+  },
+  "durationMs": 1021
+}

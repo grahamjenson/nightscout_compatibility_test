@@ -83,9 +83,10 @@ WAIT         /socket.io/storage/create       Status Score 100.00   Body Score 10
 
 Current scripts:
 
-* `socket_v1_websocket.sio`: the original `/` namespace used by the Nightscout web client: `authorize`, `dataUpdate`, `loadRetro`/`retroUpdate`, `dbAdd`/`dbUpdate`/`dbRemove`, read only permissions.
+* `socket_v1_websocket.sio`: the original `/` namespace used by the Nightscout web client: `authorize` (including `status` and a rejected token), `clients`, `dataUpdate`, `loadRetro`/`retroUpdate`, `dbAdd`/`dbUpdate`/`dbUpdateUnset`/`dbRemove` on every collection, deduplication, read only permissions.
 * `socket_v3_storage.sio`: API v3 `/storage` namespace `create`/`update`/`delete` events.
-* `socket_v3_alarm.sio`: API v3 `/alarm` namespace, announcements.
+* `socket_v3_alarm_levels.sio`: API v3 `/alarm` namespace `alarm`, `urgent_alarm`, `clear_alarm` and `notification`. Alarms come from the AR2 forecast, so it deletes the last 30 minutes of entries first to control the readings.
+* `socket_v3_alarm.sio`: API v3 `/alarm` namespace, announcements, subscribing and `ack`.
 
 
 # Other Services

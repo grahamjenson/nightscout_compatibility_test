@@ -1,0 +1,49 @@
+{
+  "request": {
+    "method": "DELETE",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries?token=write-2fa396b791909491&find[date][$gte]=1792694010530&count=1000",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "46"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Thu, 22 Oct 2026 19:03:30 GMT"
+    ],
+    "Etag": [
+      "W/\"2e-wDVHeg2XPdCFFqHKwXcNyioJt5w\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "acknowledged": true,
+    "deletedCount": 10,
+    "n": 10
+  },
+  "durationMs": 6
+}

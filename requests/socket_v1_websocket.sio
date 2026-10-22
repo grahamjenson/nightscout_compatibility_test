@@ -138,3 +138,159 @@ ACK
 
 NAME ws_unset_disconnect
 DISCONNECT
+
+
+#####
+# Every client on "/" is told how many clients are connected
+#####
+
+NAME ws_clients_connect
+CONNECT http://{{ .site }}/
+
+NAME ws_clients_count
+WAIT clients
+
+NAME ws_clients_second_connect
+CONNECT http://{{ .site }}/
+
+NAME ws_clients_count_after_second_connect
+WAIT clients
+C ws_clients_connect
+
+NAME ws_clients_second_disconnect
+DISCONNECT
+C ws_clients_second_connect
+
+NAME ws_clients_count_after_second_disconnect
+WAIT clients
+C ws_clients_connect
+
+#####
+# authorize with status adds the server status to the first dataUpdate
+#####
+
+NAME ws_status_authorize
+EMIT authorize
+C ws_clients_connect
+B {"client": "web", "token": "{{ jwt }}", "history": 1, "status": true}
+ACK
+
+NAME ws_status_data_update
+WAIT dataUpdate
+C ws_clients_connect
+
+#####
+# dbAdd, dbUpdate and dbRemove work on every supported collection
+#####
+
+NAME ws_db_add_devicestatus
+EMIT dbAdd
+C ws_clients_connect
+B {"collection": "devicestatus", "data": {"device": "socket-test", "created_at": "{{ time 0 }}", "uploader": {"battery": 42}}}
+ACK
+
+NAME ws_db_update_devicestatus
+EMIT dbUpdate
+C ws_clients_connect
+B {"collection": "devicestatus", "_id": "{{ dig "ws_db_add_devicestatus.0._id" }}", "data": {"uploader": {"battery": 41}}}
+ACK
+
+NAME ws_db_remove_devicestatus
+EMIT dbRemove
+C ws_clients_connect
+B {"collection": "devicestatus", "_id": "{{ dig "ws_db_add_devicestatus.0._id" }}"}
+ACK
+
+NAME ws_db_add_entry
+EMIT dbAdd
+C ws_clients_connect
+B {"collection": "entries", "data": {"type": "sgv", "sgv": 120, "date": {{ itime 0 }}, "device": "socket-test"}}
+ACK
+
+NAME ws_db_remove_entry
+EMIT dbRemove
+C ws_clients_connect
+B {"collection": "entries", "_id": "{{ dig "ws_db_add_entry.0._id" }}"}
+ACK
+
+NAME ws_db_add_food
+EMIT dbAdd
+C ws_clients_connect
+B {"collection": "food", "data": {"type": "food", "name": "Socket Apple", "category": "Fruit", "carbs": 20, "portion": 1, "unit": "pcs"}}
+ACK
+
+NAME ws_db_update_food
+EMIT dbUpdate
+C ws_clients_connect
+B {"collection": "food", "_id": "{{ dig "ws_db_add_food.0._id" }}", "data": {"carbs": 18}}
+ACK
+
+NAME ws_db_remove_food
+EMIT dbRemove
+C ws_clients_connect
+B {"collection": "food", "_id": "{{ dig "ws_db_add_food.0._id" }}"}
+ACK
+
+NAME ws_db_add_profile
+EMIT dbAdd
+C ws_clients_connect
+B {"collection": "profile", "data": {"defaultProfile": "Socket", "startDate": "{{ time 30 }}", "units": "mg/dl", "store": {"Socket": {"dia": 5, "carbratio": [{"time": "00:00", "value": 10, "timeAsSeconds": 0}], "sens": [{"time": "00:00", "value": 50, "timeAsSeconds": 0}], "basal": [{"time": "00:00", "value": 0.8, "timeAsSeconds": 0}], "target_low": [{"time": "00:00", "value": 90, "timeAsSeconds": 0}], "target_high": [{"time": "00:00", "value": 120, "timeAsSeconds": 0}], "timezone": "UTC", "units": "mg/dl"}}}}
+ACK
+
+NAME ws_db_remove_profile
+EMIT dbRemove
+C ws_clients_connect
+B {"collection": "profile", "_id": "{{ dig "ws_db_add_profile.0._id" }}"}
+ACK
+
+NAME ws_db_add_activity
+EMIT dbAdd
+C ws_clients_connect
+B {"collection": "activity", "data": {"activityType": "walking", "created_at": "{{ time 0 }}", "duration": 10, "steps": 500}}
+ACK
+
+NAME ws_db_remove_activity
+EMIT dbRemove
+C ws_clients_connect
+B {"collection": "activity", "_id": "{{ dig "ws_db_add_activity.0._id" }}"}
+ACK
+
+# Adding the same treatment again finds the first one instead of adding a copy
+NAME ws_db_add_treatment_for_dedup
+EMIT dbAdd
+C ws_clients_connect
+B {"collection": "treatments", "data": {"eventType": "Note", "notes": "dedup over socket.io", "created_at": "{{ time 0 }}", "enteredBy": "socket-test-dedup"}}
+ACK
+
+NAME ws_db_add_treatment_duplicate
+EMIT dbAdd
+C ws_clients_connect
+B {"collection": "treatments", "data": {"eventType": "Note", "notes": "dedup over socket.io", "created_at": "{{ dig "ws_db_add_treatment_for_dedup.0.created_at" }}", "enteredBy": "socket-test-dedup"}}
+ACK
+
+NAME ws_get_treatments_after_dedup
+GET http://{{ .site }}/api/v1/treatments.json?token={{ token }}&find[enteredBy]=socket-test-dedup
+
+NAME ws_db_remove_dedup_treatment
+EMIT dbRemove
+C ws_clients_connect
+B {"collection": "treatments", "_id": "{{ dig "ws_db_add_treatment_for_dedup.0._id" }}"}
+ACK
+
+NAME ws_clients_disconnect
+DISCONNECT
+C ws_clients_connect
+
+#####
+# A rejected authorize disconnects the client
+#####
+
+NAME ws_rejected_connect
+CONNECT http://{{ .site }}/
+
+NAME ws_rejected_authorize
+EMIT authorize
+B {"client": "web", "token": "not-a-real-token", "history": 1}
+
+NAME ws_rejected_disconnected
+WAIT disconnect

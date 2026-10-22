@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/alarm/alarm",
+    "url": "http://localhost:1337/socket.io/alarm/alarm",
+    "connectUrl": "http://localhost:1337/alarm",
+    "namespace": "/alarm",
+    "event": "alarm",
+    "connection": "alarm_levels_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "debug": {
+      "forecast": {
+        "avgLoss": 0.08661604775708241,
+        "predicted": "3.7, 3.6, 3.6, 3.6, 3.6, 3.6"
+      }
+    },
+    "eventName": "low",
+    "group": "default",
+    "key": "ar2_1",
+    "level": 1,
+    "message": "BG Now: 3.9 -0.3 - mmol/L\nBG 15m: 3.6 mmol/L",
+    "plugin": {
+      "enabled": true,
+      "label": "AR2",
+      "name": "ar2",
+      "pluginType": "forecast",
+      "virtAsst": {
+        "intentHandlers": [
+          {
+            "intent": "MetricNow",
+            "metrics": [
+              "ar2 forecast",
+              "forecast"
+            ]
+          }
+        ]
+      }
+    },
+    "pushoverSound": "falling",
+    "title": "Warning, LOW"
+  },
+  "durationMs": 1018
+}
