@@ -20,6 +20,7 @@ H Authorization: Bearer {{ jwt }}
 ```
 
 It uses Go templates to replace parts of the request, e.g. `{{ jwt }}` replaces with jwt token, and `{{ time 0 }}` replaces with a time string `0` minutes ago.
+`{{ itime 5 }}` is epoch milliseconds 5 minutes ago and `{{ httptime -60 }}` is an HTTP date an hour from now, for headers like `If-Modified-Since`. `{{ tokenByName .subjects "read" }}` finds a subject's access token.
 
 You can also reference previous requests output like:
 

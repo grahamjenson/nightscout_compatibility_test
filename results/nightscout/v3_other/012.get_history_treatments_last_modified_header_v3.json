@@ -1,0 +1,117 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/treatments/history?limit=5",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTRkNjA1NDUwNWQ4MjY2MzUiLCJpYXQiOjE3OTI2MTc5ODEsImV4cCI6MTc5MjY0Njc4MX0.1Ln8pTNeuQamiANln_HhdBRMDJR3Gi1Qd_n_bxG0LAA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "Last-Modified": [
+        "Wed, 21 Oct 2026 20:56:22 GMT"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:22 GMT"
+    ],
+    "Etag": [
+      "W/\"1792617982614\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Wed, 21 Oct 2026 21:26:22 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "app": "asd",
+        "created_at": "2026-10-21T21:25:22.000Z",
+        "date": 1792617922000,
+        "eventType": "Correction Bolus",
+        "identifier": "4a2b247c-c54d-5392-9b8d-7c32a4c271f4",
+        "insulin": 4.2,
+        "reason": "1",
+        "srvCreated": 1792617982596,
+        "srvModified": 1792617982596,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "app": "asd",
+        "created_at": "2026-10-21T21:24:22.000Z",
+        "date": 1792617862000,
+        "eventType": "Meal Bolus",
+        "identifier": "149359a7-f120-54f2-819c-255f7a3c8784",
+        "insulin": 2,
+        "reason": "2",
+        "srvCreated": 1792617982602,
+        "srvModified": 1792617982602,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "app": "asd",
+        "created_at": "2026-10-21T21:23:22.000Z",
+        "date": 1792617802000,
+        "eventType": "Carb Correction",
+        "identifier": "20b62a0c-e233-508c-b768-3f301f79fcae",
+        "insulin": 2,
+        "reason": "3",
+        "srvCreated": 1792617982605,
+        "srvModified": 1792617982605,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "app": "asd",
+        "created_at": "2026-10-21T21:22:22.000Z",
+        "date": 1792617742000,
+        "eventType": "Temp Basal",
+        "identifier": "ecf0d09b-82be-5c84-a4d6-86190f5498ac",
+        "insulin": 2,
+        "reason": "4",
+        "srvCreated": 1792617982609,
+        "srvModified": 1792617982609,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "app": "asd",
+        "created_at": "2026-10-21T21:21:22.000Z",
+        "date": 1792617682000,
+        "eventType": "Profile Switch",
+        "identifier": "b1b70733-b860-5745-ada4-904eac499bfb",
+        "insulin": 2,
+        "reason": "5",
+        "srvCreated": 1792617982614,
+        "srvModified": 1792617982614,
+        "subject": "write",
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 10
+}

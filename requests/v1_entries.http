@@ -90,3 +90,49 @@ DELETE http://{{ .site }}/api/v1/entries/mbg?token={{ token }}
 NAME delete_entries_badtype_v1
 DELETE http://{{ .site }}/api/v1/entries/badtype?token={{ token }}
 
+
+#####
+# MORE ENDPOINTS
+#####
+
+# Preview validates and normalises entries without saving them
+NAME preview_entries_v1
+POST http://{{ .site }}/api/v1/entries/preview?token={{ token }}
+B [{"type": "sgv", "sgv": 111, "date": {{ itime 0 }}, "direction": "Flat", "device": "preview-test"}]
+
+NAME get_entries_after_preview_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&find[device]=preview-test
+
+# Followers poll with If-Modified-Since, nothing newer than the future means 304
+NAME get_entries_if_modified_since_future_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&count=1
+H If-Modified-Since: {{ httptime -60 }}
+
+NAME get_entries_if_modified_since_past_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&count=1
+H If-Modified-Since: {{ httptime 1440 }}
+
+# The tab separated format older clients read
+NAME get_entries_text_v1
+GET http://{{ .site }}/api/v1/entries/sgv.txt?token={{ token }}&count=2
+H Accept: text/plain
+
+NAME get_entries_find_date_range_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&find[date][$gte]={{ itime 60 }}&find[date][$lte]={{ itime -1 }}&count=100
+
+NAME get_entries_with_read_token_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ read_token }}&count=1
+
+NAME get_entries_with_jwt_v1
+GET http://{{ .site }}/api/v1/entries.json?count=1
+H Authorization: Bearer {{ jwt }}
+
+NAME create_entries_for_bulk_delete_v1
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [{"type": "sgv", "sgv": 150, "date": {{ itime 2 }}, "device": "bulk-delete-test"}, {"type": "sgv", "sgv": 151, "date": {{ itime 1 }}, "device": "bulk-delete-test"}]
+
+NAME delete_entries_find_v1
+DELETE http://{{ .site }}/api/v1/entries?token={{ token }}&find[device]=bulk-delete-test
+
+NAME get_entries_after_bulk_delete_v1
+GET http://{{ .site }}/api/v1/entries.json?token={{ token }}&find[device]=bulk-delete-test

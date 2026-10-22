@@ -1,0 +1,42 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/entries.xml?limit=1&fields=date,sgv,type",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTRkNjA1NDUwNWQ4MjY2MzUiLCJpYXQiOjE3OTI2MTc5ODEsImV4cCI6MTc5MjY0Njc4MX0.1Ln8pTNeuQamiANln_HhdBRMDJR3Gi1Qd_n_bxG0LAA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "143"
+    ],
+    "Content-Type": [
+      "application/xml; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:22 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": "\u003c?xml version='1.0' encoding='utf-8'?\u003e\n\u003citems\u003e\n  \u003citem\u003e\n    \u003ctype\u003esgv\u003c/type\u003e\n    \u003cdate\u003e1767355994\u003c/date\u003e\n    \u003csgv\u003e100\u003c/sgv\u003e\n  \u003c/item\u003e\n\u003c/items\u003e\n",
+  "durationMs": 11
+}

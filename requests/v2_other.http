@@ -1,0 +1,32 @@
+#####
+# API v2 data endpoints
+#####
+
+# Everything the web client loads, at the current time or a given time
+NAME get_ddata_v2
+GET http://{{ .site }}/api/v2/ddata/at?token={{ token }}
+
+NAME get_ddata_at_iso_time_v2
+GET http://{{ .site }}/api/v2/ddata/at/{{ time 60 }}?token={{ token }}
+
+# Nightscout parses the time as a date string, so epoch milliseconds fail
+NAME get_ddata_at_epoch_time_v2
+GET http://{{ .site }}/api/v2/ddata/at/{{ itime 60 }}?token={{ token }}
+
+NAME get_ddata_read_token_v2
+GET http://{{ .site }}/api/v2/ddata/at?token={{ read_token }}
+
+# API v2 also serves every v1 endpoint
+NAME get_entries_through_v2
+GET http://{{ .site }}/api/v2/entries.json?token={{ token }}&count=1
+
+NAME get_treatments_through_v2
+GET http://{{ .site }}/api/v2/treatments.json?token={{ token }}&count=1
+
+NAME get_status_through_v2
+GET http://{{ .site }}/api/v2/status.json?token={{ token }}
+
+# Loop remote commands are pushed through Apple's push service, which this server is not set up for
+NAME post_loop_notification_v2
+POST http://{{ .site }}/api/v2/notifications/loop?token={{ token }}
+B {"eventType": "Temporary Override", "reason": "compat test", "reasonDisplay": "Compat test", "duration": 30, "notes": "", "enteredBy": "compat-test"}

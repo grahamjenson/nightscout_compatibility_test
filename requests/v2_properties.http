@@ -1,2 +1,17 @@
 NAME get_properties_v2
 GET http://{{ .site }}/api/v2/properties?token={{ token }}
+
+NAME get_properties_subset_v2
+GET http://{{ .site }}/api/v2/properties/bgnow,delta,direction,iob,cob?token={{ token }}
+
+NAME get_properties_single_v2
+GET http://{{ .site }}/api/v2/properties/basal?token={{ token }}
+
+NAME get_properties_unknown_v2
+GET http://{{ .site }}/api/v2/properties/notaproperty?token={{ token }}
+
+NAME get_properties_read_token_v2
+GET http://{{ .site }}/api/v2/properties/bgnow?token={{ read_token }}
+
+NAME get_properties_no_auth_v2
+GET http://{{ .site }}/api/v2/properties

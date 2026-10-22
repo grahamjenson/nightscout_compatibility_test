@@ -1,0 +1,65 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/times/echo/2026-01-02?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "147"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:22 GMT"
+    ],
+    "Etag": [
+      "W/\"93-6fMiinnKZXm3KhomM/kBpi9rLho\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "pattern": [
+      ""
+    ],
+    "req": {
+      "params": {
+        "prefix": "2026-01-02"
+      },
+      "query": {
+        "find": {
+          "dateString": {
+            "$in": [
+              {}
+            ],
+            "$regex": {}
+          }
+        },
+        "token": "write-4d6054505d826635"
+      }
+    }
+  },
+  "durationMs": 4
+}

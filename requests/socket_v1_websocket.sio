@@ -93,3 +93,48 @@ ACK
 
 NAME ws_read_disconnect
 DISCONNECT
+
+
+#####
+# dbUpdateUnset removes fields from a document
+#####
+
+NAME ws_unset_connect
+CONNECT http://{{ .site }}/
+
+NAME ws_unset_authorize
+EMIT authorize
+B {"client": "web", "token": "{{ jwt }}", "history": 1}
+ACK
+
+NAME ws_unset_db_add_treatment
+EMIT dbAdd
+B {"collection": "treatments", "data": {"eventType": "Note", "notes": "unset over socket.io", "carbs": 5, "created_at": "{{ time 0 }}", "enteredBy": "socket-test-unset"}}
+ACK
+
+NAME ws_db_update_unset_treatment
+EMIT dbUpdateUnset
+B {"collection": "treatments", "_id": "{{ dig "ws_unset_db_add_treatment.0._id" }}", "data": {"carbs": 1}}
+ACK
+
+NAME ws_get_treatment_after_unset
+GET http://{{ .site }}/api/v1/treatments.json?token={{ token }}&find[_id]={{ dig "ws_unset_db_add_treatment.0._id" }}
+
+NAME ws_db_remove_unset_treatment
+EMIT dbRemove
+B {"collection": "treatments", "_id": "{{ dig "ws_unset_db_add_treatment.0._id" }}"}
+ACK
+
+# Unknown collections and missing ids are rejected
+NAME ws_db_add_unknown_collection
+EMIT dbAdd
+B {"collection": "notacollection", "data": {"a": 1}}
+ACK
+
+NAME ws_db_remove_missing_id
+EMIT dbRemove
+B {"collection": "treatments"}
+ACK
+
+NAME ws_unset_disconnect
+DISCONNECT

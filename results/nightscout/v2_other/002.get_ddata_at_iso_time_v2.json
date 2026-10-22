@@ -1,0 +1,951 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/ddata/at/2026-10-21T20:26:23Z?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Etag": [
+      "W/\"3dde-7LdtvfrKFCM1YeBZvzoD7dLVdzA\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "activity": [],
+    "batteryTreatments": [],
+    "cals": [],
+    "combobolusTreatments": [],
+    "dbstats": {
+      "dataSize": 36549,
+      "indexSize": 253952
+    },
+    "devicestatus": [],
+    "entries": [],
+    "food": [
+      {
+        "_id": "6ad92dfd4fc2f9571e953ce2",
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-10-21T21:26:21.853Z",
+        "name": "Banana2"
+      },
+      {
+        "_id": "6ad92dfd4fc2f9571e953ce3",
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-10-21T21:26:21.853Z",
+        "name": "Banana3"
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cf1",
+        "app": "asd",
+        "carbs": 30,
+        "category": "Snacks",
+        "created_at": "2026-10-21T21:26:22.000Z",
+        "date": 1792617982000,
+        "identifier": "b2d1ca4a-669c-5a09-aadb-4d558ebefd62",
+        "isValid": false,
+        "modifiedBy": "write",
+        "name": "Banana2",
+        "notes": "test food 222",
+        "srvCreated": 1792617982400,
+        "srvModified": 1792617982495,
+        "subcategory": "Candy",
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cf2",
+        "app": "asd",
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-10-21T21:26:22.000Z",
+        "date": 1792617982000,
+        "energy": 105,
+        "fat": 0.3,
+        "gi": 51,
+        "identifier": "b2d1ca4a-669c-5a09-aadb-4d558ebefd62custom",
+        "isValid": false,
+        "modifiedBy": "write",
+        "name": "Banana2Again",
+        "portion": 1,
+        "protein": 1.3,
+        "srvCreated": 1792617982405,
+        "srvModified": 1792617982498,
+        "subcategory": "Fruit",
+        "subject": "write",
+        "unit": "serving",
+        "utcOffset": 0
+      }
+    ],
+    "insulinchangeTreatments": [],
+    "lastProfileFromSwitch": null,
+    "lastUpdated": 1792614383000,
+    "mbgs": [],
+    "page": {
+      "after": 1792614383000,
+      "frame": true
+    },
+    "profileTreatments": [],
+    "profiles": [
+      {
+        "_id": "6ad92dfd4fc2f9571e953cea",
+        "app": "AAPS",
+        "created_at": "2026-08-09T05:33:53.284Z",
+        "date": 1786253633284,
+        "defaultProfile": "ArmDash-2025",
+        "startDate": "2026-08-09T05:33:53.2840000Z",
+        "store": {
+          "ArmDash-2025": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.25
+              },
+              {
+                "time": "01:00",
+                "timeAsSeconds": 3600,
+                "value": 0.25
+              },
+              {
+                "time": "02:00",
+                "timeAsSeconds": 7200,
+                "value": 0.25
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 0.25
+              },
+              {
+                "time": "04:00",
+                "timeAsSeconds": 14400,
+                "value": 0.35
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": 18000,
+                "value": 0.35
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 0.5
+              },
+              {
+                "time": "07:00",
+                "timeAsSeconds": 25200,
+                "value": 0.55
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 0.4
+              },
+              {
+                "time": "09:00",
+                "timeAsSeconds": 32400,
+                "value": 0.35
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 0.35
+              },
+              {
+                "time": "11:00",
+                "timeAsSeconds": 39600,
+                "value": 0.4
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 0.4
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 0.3
+              },
+              {
+                "time": "14:00",
+                "timeAsSeconds": 50400,
+                "value": 0.3
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 0.35
+              },
+              {
+                "time": "16:00",
+                "timeAsSeconds": 57600,
+                "value": 0.45
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 0.45
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 0.45
+              },
+              {
+                "time": "19:00",
+                "timeAsSeconds": 68400,
+                "value": 0.55
+              },
+              {
+                "time": "20:00",
+                "timeAsSeconds": 72000,
+                "value": 0.5
+              },
+              {
+                "time": "21:00",
+                "timeAsSeconds": 75600,
+                "value": 0.5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 0.4
+              },
+              {
+                "time": "23:00",
+                "timeAsSeconds": 82800,
+                "value": 0.3
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 16
+              },
+              {
+                "time": "02:00",
+                "timeAsSeconds": 7200,
+                "value": 16
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": 18000,
+                "value": 7.5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 11.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 12
+              },
+              {
+                "time": "20:00",
+                "timeAsSeconds": 72000,
+                "value": 14
+              }
+            ],
+            "dia": 6,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 12
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 12
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 8.5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 11
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 12
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 11
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 12
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 8.5
+              },
+              {
+                "time": "23:00",
+                "timeAsSeconds": 82800,
+                "value": 10
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 6.5
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 7.6
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 6.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 7
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 6
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 6.5
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 7.5
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 6.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 7
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 6
+              }
+            ],
+            "timezone": "Pacific/Auckland",
+            "units": "mmol"
+          }
+        },
+        "utcOffset": 720
+      }
+    ],
+    "sensorTreatments": [],
+    "sgvs": [
+      {
+        "_id": "6ad92dfe4fc2f9571e953cf0",
+        "mgdl": 104,
+        "mills": 1792617982269,
+        "type": "sgv"
+      }
+    ],
+    "sitechangeTreatments": [],
+    "tempTargetTreatments": [],
+    "tempbasalTreatments": [],
+    "treatments": [
+      {
+        "_id": "6ad92dfe4fc2f9571e953d18",
+        "app": "asd",
+        "created_at": "2026-10-21T21:26:22.000Z",
+        "date": 1792617982000,
+        "eventType": "Meal Bolus",
+        "identifier": "treatmentv3t1",
+        "insulin": 1,
+        "mgdl": 180,
+        "notes": "updated by update_put_treatments_v3",
+        "srvCreated": 1792617982850,
+        "srvModified": 1792617982850,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d01",
+        "app": "Carer",
+        "created_at": "2026-10-21T21:25:22.000Z",
+        "date": 1792617922000,
+        "eventType": "BG Check",
+        "glucose": 5.8,
+        "glucoseType": "Sensor",
+        "identifier": "50625fe6-3f2c-54b7-9bf1-634d22ecd8d7",
+        "mmol": 5.8,
+        "notes": "Routine glucose check",
+        "srvCreated": 1792617982636,
+        "srvModified": 1792617982636,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cf7",
+        "app": "asd",
+        "created_at": "2026-10-21T21:25:22.000Z",
+        "date": 1792617922000,
+        "eventType": "Correction Bolus",
+        "identifier": "4a2b247c-c54d-5392-9b8d-7c32a4c271f4",
+        "insulin": 4.2,
+        "mgdl": 180,
+        "reason": "1",
+        "srvCreated": 1792617982596,
+        "srvModified": 1792617982596,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d02",
+        "app": "Carer",
+        "created_at": "2026-10-21T21:24:22.000Z",
+        "date": 1792617862000,
+        "eventType": "BG Check",
+        "glucose": 6.4,
+        "glucoseType": "Finger",
+        "identifier": "6b76572c-7a9c-5e68-9bcc-c998ee8a16a9",
+        "mmol": 6.4,
+        "notes": "Fingerstick confirmation",
+        "srvCreated": 1792617982640,
+        "srvModified": 1792617982640,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cf8",
+        "app": "asd",
+        "created_at": "2026-10-21T21:24:22.000Z",
+        "date": 1792617862000,
+        "eventType": "Meal Bolus",
+        "identifier": "149359a7-f120-54f2-819c-255f7a3c8784",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "2",
+        "srvCreated": 1792617982602,
+        "srvModified": 1792617982602,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d03",
+        "app": "AndroidAPS",
+        "carbs": 62,
+        "created_at": "2026-10-21T21:23:22.000Z",
+        "date": 1792617802000,
+        "eventType": "Meal Bolus",
+        "identifier": "50e15ef0-fc32-5f87-947a-380eb5c460dd",
+        "insulin": 6.2,
+        "mgdl": 180,
+        "notes": "Breakfast",
+        "srvCreated": 1792617982644,
+        "srvModified": 1792617982644,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cf9",
+        "app": "asd",
+        "created_at": "2026-10-21T21:23:22.000Z",
+        "date": 1792617802000,
+        "eventType": "Carb Correction",
+        "identifier": "20b62a0c-e233-508c-b768-3f301f79fcae",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "3",
+        "srvCreated": 1792617982605,
+        "srvModified": 1792617982605,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d04",
+        "app": "AndroidAPS",
+        "carbs": 18,
+        "created_at": "2026-10-21T21:22:22.000Z",
+        "date": 1792617742000,
+        "eventType": "Snack Bolus",
+        "identifier": "4b773a7f-d5f7-57f7-b457-38b74d23b1e8",
+        "insulin": 1.8,
+        "mgdl": 180,
+        "notes": "Afternoon snack",
+        "srvCreated": 1792617982648,
+        "srvModified": 1792617982648,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cfa",
+        "app": "asd",
+        "created_at": "2026-10-21T21:22:22.000Z",
+        "date": 1792617742000,
+        "eventType": "Temp Basal",
+        "identifier": "ecf0d09b-82be-5c84-a4d6-86190f5498ac",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "4",
+        "srvCreated": 1792617982609,
+        "srvModified": 1792617982609,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d05",
+        "app": "AndroidAPS",
+        "created_at": "2026-10-21T21:21:22.000Z",
+        "date": 1792617682000,
+        "eventType": "Correction Bolus",
+        "glucose": 13.5,
+        "identifier": "462df969-20c5-5b48-bcd6-877be1678f09",
+        "insulin": 1.4,
+        "mmol": 13.5,
+        "notes": "High glucose correction",
+        "srvCreated": 1792617982652,
+        "srvModified": 1792617982652,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cfb",
+        "app": "asd",
+        "created_at": "2026-10-21T21:21:22.000Z",
+        "date": 1792617682000,
+        "eventType": "Profile Switch",
+        "identifier": "b1b70733-b860-5745-ada4-904eac499bfb",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "5",
+        "srvCreated": 1792617982614,
+        "srvModified": 1792617982614,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d06",
+        "app": "Pump",
+        "carbs": 75,
+        "created_at": "2026-10-21T21:20:22.000Z",
+        "date": 1792617622000,
+        "eventType": "Bolus Wizard",
+        "glucose": 9.2,
+        "identifier": "3150aa4a-9f26-5e5b-902a-572186cd8f4e",
+        "insulin": 7.5,
+        "insulinOnBoard": 1.1,
+        "mmol": 9.2,
+        "notes": "Wizard calculation",
+        "srvCreated": 1792617982655,
+        "srvModified": 1792617982655,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cfc",
+        "app": "asd",
+        "created_at": "2026-10-21T21:20:22.000Z",
+        "date": 1792617622000,
+        "eventType": "Site Change",
+        "identifier": "37a0bdf9-8aaa-5c3c-ae0f-4fcb6160c442",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "6",
+        "srvCreated": 1792617982617,
+        "srvModified": 1792617982617,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d07",
+        "app": "Pump",
+        "carbs": 90,
+        "created_at": "2026-10-21T21:19:22.000Z",
+        "date": 1792617562000,
+        "duration": 120,
+        "eventType": "Combo Bolus",
+        "identifier": "2bea65c2-5acd-5701-ad3e-feecdabe0467",
+        "insulin": 9,
+        "mgdl": 180,
+        "splitExt": 4.5,
+        "splitNow": 4.5,
+        "srvCreated": 1792617982659,
+        "srvModified": 1792617982659,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cfd",
+        "app": "asd",
+        "created_at": "2026-10-21T21:19:22.000Z",
+        "date": 1792617562000,
+        "eventType": "Sensor Start",
+        "identifier": "851a0f7b-3ac5-5573-b012-372018c81ebf",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "7",
+        "srvCreated": 1792617982621,
+        "srvModified": 1792617982621,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d08",
+        "absolute": 0.4,
+        "app": "AndroidAPS",
+        "created_at": "2026-10-21T21:18:22.000Z",
+        "date": 1792617502000,
+        "duration": 60,
+        "eventType": "Temp Basal",
+        "identifier": "4c95cf85-d207-5bb9-9ac5-4711a9a29060",
+        "mgdl": 180,
+        "reason": "Exercise",
+        "srvCreated": 1792617982663,
+        "srvModified": 1792617982663,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cfe",
+        "app": "asd",
+        "created_at": "2026-10-21T21:18:22.000Z",
+        "date": 1792617502000,
+        "eventType": "Note",
+        "identifier": "8b5eac1a-22e1-5a39-bc66-385611ceaa92",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "8",
+        "srvCreated": 1792617982624,
+        "srvModified": 1792617982624,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d09",
+        "app": "AndroidAPS",
+        "created_at": "2026-10-21T21:17:22.000Z",
+        "date": 1792617442000,
+        "duration": 90,
+        "eventType": "Temp Basal",
+        "identifier": "aadf1229-1c33-5f20-a05a-3387eacfebae",
+        "mgdl": 180,
+        "percent": -50,
+        "reason": "Activity",
+        "srvCreated": 1792617982667,
+        "srvModified": 1792617982667,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953cff",
+        "app": "asd",
+        "created_at": "2026-10-21T21:17:22.000Z",
+        "date": 1792617442000,
+        "eventType": "Announcement",
+        "identifier": "473befdf-0ecb-5889-a50b-f49abe76c1e9",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "9",
+        "srvCreated": 1792617982628,
+        "srvModified": 1792617982628,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d0a",
+        "app": "AndroidAPS",
+        "created_at": "2026-10-21T21:16:22.000Z",
+        "date": 1792617382000,
+        "duration": 120,
+        "eventType": "Temporary Target",
+        "identifier": "e2e418f3-53a8-5ec3-8928-d27a627bb65e",
+        "mgdl": 180,
+        "reason": "Exercise",
+        "srvCreated": 1792617982671,
+        "srvModified": 1792617982671,
+        "subject": "write",
+        "targetBottom": 7,
+        "targetTop": 8,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d00",
+        "app": "asd",
+        "created_at": "2026-10-21T21:16:22.000Z",
+        "date": 1792617382000,
+        "eventType": "Question",
+        "identifier": "5397f7f0-9a85-51fb-a36a-def23e78ed46",
+        "insulin": 2,
+        "mgdl": 180,
+        "reason": "10",
+        "srvCreated": 1792617982632,
+        "srvModified": 1792617982632,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d0b",
+        "app": "AndroidAPS",
+        "created_at": "2026-10-21T21:15:22.000Z",
+        "date": 1792617322000,
+        "eventType": "Profile Switch",
+        "identifier": "9b3f1261-914c-5254-aaab-4c64d5db0fab",
+        "mgdl": 180,
+        "profile": "Weekend",
+        "srvCreated": 1792617982676,
+        "srvModified": 1792617982676,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d0c",
+        "app": "Carer",
+        "created_at": "2026-10-21T21:14:22.000Z",
+        "date": 1792617262000,
+        "duration": 45,
+        "eventType": "Exercise",
+        "identifier": "cf93e530-d4d5-59e8-8073-6261acf2298a",
+        "mgdl": 180,
+        "notes": "Bike ride",
+        "srvCreated": 1792617982681,
+        "srvModified": 1792617982681,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d0d",
+        "app": "Carer",
+        "carbs": 20,
+        "created_at": "2026-10-21T21:13:22.000Z",
+        "date": 1792617202000,
+        "eventType": "Carb Correction",
+        "identifier": "09296275-cefd-5b2f-bd17-2c247f54e84f",
+        "mgdl": 180,
+        "notes": "Hypoglycemia treatment",
+        "srvCreated": 1792617982686,
+        "srvModified": 1792617982686,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d0e",
+        "app": "Carer",
+        "created_at": "2026-10-21T21:12:22.000Z",
+        "date": 1792617142000,
+        "eventType": "Note",
+        "identifier": "c63300c9-be60-5340-b605-f93e0d927bbb",
+        "mgdl": 180,
+        "notes": "Running higher after lunch",
+        "srvCreated": 1792617982690,
+        "srvModified": 1792617982690,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d0f",
+        "app": "Carer",
+        "created_at": "2026-10-21T21:11:22.000Z",
+        "date": 1792617082000,
+        "eventType": "Announcement",
+        "identifier": "b9ae425d-fecd-5f49-9c62-91d9d0136109",
+        "mgdl": 180,
+        "notes": "Going swimming today",
+        "srvCreated": 1792617982695,
+        "srvModified": 1792617982695,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d10",
+        "app": "Carer",
+        "created_at": "2026-10-21T21:10:22.000Z",
+        "date": 1792617022000,
+        "eventType": "Question",
+        "identifier": "78d047c3-647a-58ce-b7d8-d0f9caba9274",
+        "mgdl": 180,
+        "notes": "Should basal be adjusted overnight?",
+        "srvCreated": 1792617982699,
+        "srvModified": 1792617982699,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d11",
+        "app": "xDrip",
+        "created_at": "2026-10-21T21:09:22.000Z",
+        "date": 1792616962000,
+        "eventType": "Sensor Start",
+        "identifier": "fae7bc22-9568-5d6c-97f2-0b0354b36929",
+        "mgdl": 180,
+        "notes": "Dexcom G7 sensor started",
+        "srvCreated": 1792617982706,
+        "srvModified": 1792617982706,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d12",
+        "app": "xDrip",
+        "created_at": "2026-10-21T21:08:22.000Z",
+        "date": 1792616902000,
+        "eventType": "Sensor Change",
+        "identifier": "c99e5afe-4192-557e-83c3-60872e054004",
+        "mgdl": 180,
+        "notes": "New CGM sensor inserted",
+        "srvCreated": 1792617982712,
+        "srvModified": 1792617982712,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d13",
+        "app": "Carer",
+        "created_at": "2026-10-21T21:07:22.000Z",
+        "date": 1792616842000,
+        "eventType": "Site Change",
+        "identifier": "bddfd1a1-956d-5c75-bb1a-25e432c4f1cc",
+        "mgdl": 180,
+        "notes": "Pod changed on left arm",
+        "srvCreated": 1792617982716,
+        "srvModified": 1792617982716,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d14",
+        "app": "Carer",
+        "created_at": "2026-10-21T21:06:22.000Z",
+        "date": 1792616782000,
+        "eventType": "Insulin Change",
+        "identifier": "be273005-5b13-5913-b39e-2cda5083c8da",
+        "insulin": "NovoRapid",
+        "mgdl": 180,
+        "notes": "New insulin vial",
+        "srvCreated": 1792617982721,
+        "srvModified": 1792617982721,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d15",
+        "app": "Pump",
+        "created_at": "2026-10-21T21:05:22.000Z",
+        "date": 1792616722000,
+        "eventType": "Pump Battery Change",
+        "identifier": "61aa318d-4212-56de-8273-7287c34bdab7",
+        "mgdl": 180,
+        "notes": "Battery replaced",
+        "srvCreated": 1792617982725,
+        "srvModified": 1792617982725,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d16",
+        "app": "AndroidAPS",
+        "created_at": "2026-10-21T21:04:22.000Z",
+        "date": 1792616662000,
+        "eventType": "OpenAPS Offline",
+        "identifier": "32cde27e-669b-538b-bf07-9ddbffbad83c",
+        "mgdl": 180,
+        "reason": "Phone disconnected",
+        "srvCreated": 1792617982729,
+        "srvModified": 1792617982729,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ad92dfe4fc2f9571e953d17",
+        "app": "AndroidAPS",
+        "created_at": "2026-10-21T21:03:22.000Z",
+        "date": 1792616602000,
+        "eventType": "D.A.D. Alert",
+        "identifier": "f1d11498-eca7-5f6f-b9ca-4bac41e8b307",
+        "mgdl": 180,
+        "notes": "Possible missed bolus",
+        "srvCreated": 1792617982733,
+        "srvModified": 1792617982733,
+        "subject": "write",
+        "utcOffset": 0
+      }
+    ]
+  },
+  "durationMs": 14
+}

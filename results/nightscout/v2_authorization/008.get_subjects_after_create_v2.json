@@ -1,0 +1,70 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/authorization/subjects?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "353"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Etag": [
+      "W/\"161-YbGEiURdig1DZ6WGVcZXZ7m6u30\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ad92dff4fc2f9571e953d20",
+      "accessToken": "compattest-4159bf0712f4180c",
+      "name": "compat-test-subject",
+      "roles": [
+        "compat-test-role"
+      ]
+    },
+    {
+      "_id": "6ad92dfd4fc2f9571e953cd6",
+      "accessToken": "read-8e15b990cb8c5537",
+      "name": "read",
+      "roles": [
+        "readable"
+      ]
+    },
+    {
+      "_id": "6ad92dfd4fc2f9571e953cd5",
+      "accessToken": "write-4d6054505d826635",
+      "name": "write",
+      "roles": [
+        "admin"
+      ]
+    }
+  ],
+  "durationMs": 1
+}

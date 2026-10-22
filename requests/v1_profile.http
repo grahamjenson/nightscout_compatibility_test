@@ -425,3 +425,35 @@ DELETE http://{{ .site }}/api/v1/profile/{{ dig "get_current_profile_v1._id" }}?
 
 NAME delete_current_profile_v1
 GET http://{{ .site }}/api/v1/profile/current?token={{ token }}
+
+
+#####
+# MORE ENDPOINTS
+#####
+
+NAME get_profiles_v1
+GET http://{{ .site }}/api/v1/profiles?token={{ token }}
+
+NAME get_profiles_count_v1
+GET http://{{ .site }}/api/v1/profiles?token={{ token }}&count=1
+
+NAME get_profile_count_v1
+GET http://{{ .site }}/api/v1/profile?token={{ token }}&count=1
+
+NAME create_profile_for_update_v1
+POST http://{{ .site }}/api/v1/profile?token={{ token }}
+B {"defaultProfile": "Update", "startDate": "{{ time 5 }}", "units": "mg/dl", "store": {"Update": {"dia": 5, "carbratio": [{"time": "00:00", "value": 10, "timeAsSeconds": 0}], "sens": [{"time": "00:00", "value": 50, "timeAsSeconds": 0}], "basal": [{"time": "00:00", "value": 0.8, "timeAsSeconds": 0}], "target_low": [{"time": "00:00", "value": 90, "timeAsSeconds": 0}], "target_high": [{"time": "00:00", "value": 120, "timeAsSeconds": 0}], "timezone": "UTC", "units": "mg/dl"}}}
+
+NAME update_profile_v1
+PUT http://{{ .site }}/api/v1/profile?token={{ token }}
+B {"_id": "{{ dig "create_profile_for_update_v1.0._id" }}", "defaultProfile": "Update", "startDate": "{{ time 5 }}", "units": "mg/dl", "store": {"Update": {"dia": 6, "carbratio": [{"time": "00:00", "value": 12, "timeAsSeconds": 0}], "sens": [{"time": "00:00", "value": 55, "timeAsSeconds": 0}], "basal": [{"time": "00:00", "value": 0.9, "timeAsSeconds": 0}], "target_low": [{"time": "00:00", "value": 90, "timeAsSeconds": 0}], "target_high": [{"time": "00:00", "value": 120, "timeAsSeconds": 0}], "timezone": "UTC", "units": "mg/dl"}}}
+
+NAME update_profile_bad_id_v1
+PUT http://{{ .site }}/api/v1/profile?token={{ token }}
+B {"_id": "not-an-id", "defaultProfile": "Update", "store": {}}
+
+NAME get_profile_after_update_v1
+GET http://{{ .site }}/api/v1/profile/current?token={{ token }}
+
+NAME delete_updated_profile_v1
+DELETE http://{{ .site }}/api/v1/profile/{{ dig "create_profile_for_update_v1.0._id" }}?token={{ token }}

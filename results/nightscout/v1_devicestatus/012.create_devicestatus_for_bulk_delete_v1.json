@@ -1,0 +1,79 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/devicestatus?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "created_at": "2026-10-21T21:24:21Z",
+        "device": "bulk-delete-test",
+        "uploader": {
+          "battery": 50
+        }
+      },
+      {
+        "created_at": "2026-10-21T21:25:21Z",
+        "device": "bulk-delete-test",
+        "uploader": {
+          "battery": 49
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "287"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:21 GMT"
+    ],
+    "Etag": [
+      "W/\"11f-QsZKoRPXUv6pG+Kd9clmSKp7IrE\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ad92dfd4fc2f9571e953cdf",
+      "created_at": "2026-10-21T21:24:21.000Z",
+      "device": "bulk-delete-test",
+      "uploader": {
+        "battery": 50
+      },
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ad92dfd4fc2f9571e953ce0",
+      "created_at": "2026-10-21T21:25:21.000Z",
+      "device": "bulk-delete-test",
+      "uploader": {
+        "battery": 49
+      },
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 3
+}

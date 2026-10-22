@@ -9,3 +9,125 @@ H Authorization: Bearer {{ jwt }}
 NAME get_lastmodified_v3
 GET http://{{ .site }}/api/v3/lastmodified
 H Authorization: Bearer {{ jwt }}
+
+#####
+# MORE ENDPOINTS
+#####
+
+NAME get_lastmodified_camelcase_v3
+GET http://{{ .site }}/api/v3/lastModified
+H Authorization: Bearer {{ jwt }}
+
+NAME get_status_read_jwt_v3
+GET http://{{ .site }}/api/v3/status
+H Authorization: Bearer {{ read_jwt }}
+
+NAME get_version_no_auth_v3
+GET http://{{ .site }}/api/v3/version
+
+NAME get_status_no_auth_v3
+GET http://{{ .site }}/api/v3/status
+
+NAME get_unknown_collection_v3
+GET http://{{ .site }}/api/v3/activity
+H Authorization: Bearer {{ jwt }}
+
+# Output formats chosen by extension
+NAME get_entries_csv_v3
+GET http://{{ .site }}/api/v3/entries.csv?limit=2&fields=date,sgv,type
+H Authorization: Bearer {{ jwt }}
+
+NAME get_entries_xml_v3
+GET http://{{ .site }}/api/v3/entries.xml?limit=1&fields=date,sgv,type
+H Authorization: Bearer {{ jwt }}
+
+#####
+# History, used by AAPS to sync everything changed since it last looked
+#####
+
+NAME get_history_treatments_no_date_v3
+GET http://{{ .site }}/api/v3/treatments/history?limit=5
+H Authorization: Bearer {{ jwt }}
+
+NAME get_history_treatments_last_modified_header_v3
+GET http://{{ .site }}/api/v3/treatments/history?limit=5
+H Authorization: Bearer {{ jwt }}
+H Last-Modified: {{ httptime 30 }}
+
+NAME get_recent_history_devicestatus_v3
+GET http://{{ .site }}/api/v3/devicestatus/history/{{ itime 30 }}?limit=5
+H Authorization: Bearer {{ jwt }}
+
+NAME get_recent_history_profile_v3
+GET http://{{ .site }}/api/v3/profile/history/{{ itime 30 }}?limit=5
+H Authorization: Bearer {{ jwt }}
+
+NAME get_recent_history_food_v3
+GET http://{{ .site }}/api/v3/food/history/{{ itime 30 }}?limit=5
+H Authorization: Bearer {{ jwt }}
+
+NAME get_recent_history_settings_v3
+GET http://{{ .site }}/api/v3/settings/history/{{ itime 30 }}?limit=5
+H Authorization: Bearer {{ jwt }}
+
+NAME get_history_future_v3
+GET http://{{ .site }}/api/v3/entries/history/{{ itime -60 }}
+H Authorization: Bearer {{ jwt }}
+
+#####
+# Conditional requests and deleted documents
+#####
+
+NAME create_treatment_for_conditional_v3
+POST http://{{ .site }}/api/v3/treatments
+H Authorization: Bearer {{ jwt }}
+B {"eventType": "Note", "notes": "conditional requests", "app": "compat-test", "device": "compat-test", "date": {{ itime 1 }}}
+
+NAME get_treatment_if_modified_since_future_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+H If-Modified-Since: {{ httptime -60 }}
+
+NAME get_treatment_if_modified_since_past_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+H If-Modified-Since: {{ httptime 1440 }}
+
+NAME update_treatment_if_unmodified_since_past_v3
+PUT http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+H If-Unmodified-Since: {{ httptime 1440 }}
+B {"eventType": "Note", "notes": "should not be saved", "app": "compat-test", "device": "compat-test", "date": {{ itime 1 }}}
+
+NAME patch_treatment_if_unmodified_since_past_v3
+PATCH http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+H If-Unmodified-Since: {{ httptime 1440 }}
+B {"notes": "should not be saved"}
+
+NAME patch_treatment_if_unmodified_since_future_v3
+PATCH http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+H If-Unmodified-Since: {{ httptime -60 }}
+B {"notes": "saved"}
+
+NAME delete_treatment_for_conditional_v3
+DELETE http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+# A soft deleted document is gone, not missing
+NAME get_deleted_treatment_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME get_deleted_treatment_in_history_v3
+GET http://{{ .site }}/api/v3/treatments/history/{{ itime 5 }}?identifier$eq={{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME delete_treatment_permanently_v3
+DELETE http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}?permanent=true
+H Authorization: Bearer {{ jwt }}
+
+NAME get_permanently_deleted_treatment_v3
+GET http://{{ .site }}/api/v3/treatments/{{ dig "create_treatment_for_conditional_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}

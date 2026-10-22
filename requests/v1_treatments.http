@@ -450,3 +450,32 @@ DELETE http://{{ .site }}/api/v1/treatments/treatmentfdsfdsf?token={{ token }}
 NAME get_treatments_after_delete_v1
 GET http://{{ .site }}/api/v1/treatments?token={{ token }}&find[_id]={{ dig "create_treatments_v1.0._id"  }}
 
+
+#####
+# MORE ENDPOINTS
+#####
+
+NAME get_treatments_if_modified_since_future_v1
+GET http://{{ .site }}/api/v1/treatments.json?token={{ token }}&count=1
+H If-Modified-Since: {{ httptime -60 }}
+
+NAME get_treatments_if_modified_since_past_v1
+GET http://{{ .site }}/api/v1/treatments.json?token={{ token }}&count=1
+H If-Modified-Since: {{ httptime 1440 }}
+
+# How AAPS and xDrip ask for recent treatments
+NAME get_treatments_created_at_gte_v1
+GET http://{{ .site }}/api/v1/treatments.json?token={{ token }}&find[created_at][$gte]={{ time 60 }}&count=100
+
+NAME get_treatments_count_v1
+GET http://{{ .site }}/api/v1/treatments.json?token={{ token }}&count=2
+
+NAME create_treatments_for_bulk_delete_v1
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B [{"eventType": "Note", "notes": "bulk delete 1", "enteredBy": "bulk-delete-test", "created_at": "{{ time 3 }}"}, {"eventType": "Note", "notes": "bulk delete 2", "enteredBy": "bulk-delete-test", "created_at": "{{ time 2 }}"}]
+
+NAME delete_treatments_find_v1
+DELETE http://{{ .site }}/api/v1/treatments?token={{ token }}&find[enteredBy]=bulk-delete-test
+
+NAME get_treatments_after_bulk_delete_v1
+GET http://{{ .site }}/api/v1/treatments.json?token={{ token }}&find[enteredBy]=bulk-delete-test

@@ -242,6 +242,63 @@ func TestTemplateTime(t *testing.T) {
 	}
 }
 
+func TestTemplateHTTPTime(t *testing.T) {
+	got, err := RenderTemplate("{{ httptime 10 }}", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	parsed, err := http.ParseTime(got)
+	if err != nil {
+		t.Fatalf("not an HTTP date: %q", got)
+	}
+	if !strings.HasSuffix(got, " GMT") {
+		t.Errorf("HTTP dates are in GMT, got %q", got)
+	}
+	want := time.Now().Add(-10 * time.Minute)
+	if d := parsed.Sub(want); d > time.Second || d < -2*time.Second {
+		t.Errorf("httptime 10 = %v, want about %v", parsed, want)
+	}
+	future, _ := RenderTemplate("{{ httptime -60 }}", nil)
+	if p, _ := http.ParseTime(future); !p.After(time.Now()) {
+		t.Errorf("httptime -60 = %s should be in the future", future)
+	}
+}
+
+func TestTemplateTokenByName(t *testing.T) {
+	subjects := []any{
+		"not an object",
+		map[string]any{"name": "write"},
+		map[string]any{"name": "read", "accessToken": 12},
+		map[string]any{"name": "read", "accessToken": "r-1"},
+		map[string]any{"name": "admin", "accessToken": "a-1"},
+	}
+	cases := []struct {
+		list any
+		name string
+		want string
+	}{
+		{subjects, "admin", "a-1"},
+		{subjects, "write", ""}, // no token
+		{subjects, "read", ""},  // first match has a non string token
+		{subjects, "nope", ""},
+		{nil, "admin", ""},
+		{map[string]any{"name": "admin", "accessToken": "a-1"}, "admin", ""},
+		{"text", "admin", ""},
+		{[]any{}, "admin", ""},
+	}
+	for _, c := range cases {
+		if got := templateTokenByName(c.list, c.name); got != c.want {
+			t.Errorf("tokenByName(%v, %q) = %q want %q", c.list, c.name, got, c.want)
+		}
+	}
+
+	// works from a template with a response that is not a list
+	got, err := RenderTemplate(`{{ tokenByName .subjects "admin" }}`, map[string]any{"subjects": map[string]any{"error": "nope"}})
+	if err != nil || got != "" {
+		t.Errorf("got %q %v", got, err)
+	}
+}
+
 func TestTemplateDig(t *testing.T) {
 	root := map[string]any{"a": []any{[]any{"x"}}, "n": nil}
 	if templateDig(root, "a.0.0") != "x" {

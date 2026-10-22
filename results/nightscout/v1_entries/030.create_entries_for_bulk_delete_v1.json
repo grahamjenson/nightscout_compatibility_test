@@ -1,0 +1,77 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "date": 1792617861834,
+        "device": "bulk-delete-test",
+        "sgv": 150,
+        "type": "sgv"
+      },
+      {
+        "date": 1792617921834,
+        "device": "bulk-delete-test",
+        "sgv": 151,
+        "type": "sgv"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "317"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:21 GMT"
+    ],
+    "Etag": [
+      "W/\"13d-vm+nFb6GGFC8uLjY1bDW8O6hnlo\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ad92dfd6b4f3a493ba543a3",
+      "date": 1792617861834,
+      "device": "bulk-delete-test",
+      "sgv": 150,
+      "sysTime": "2026-10-21T21:24:21.834Z",
+      "type": "sgv",
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ad92dfd6b4f3a493ba543a4",
+      "date": 1792617921834,
+      "device": "bulk-delete-test",
+      "sgv": 151,
+      "sysTime": "2026-10-21T21:25:21.834Z",
+      "type": "sgv",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 4
+}

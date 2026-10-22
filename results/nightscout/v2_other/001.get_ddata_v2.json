@@ -1,0 +1,143 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/ddata/at?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Etag": [
+      "W/\"572-NMIaQNB2tORdooI2zi27u5wsab4\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "activity": [
+      {
+        "mills": "2026-10-21T21:24:21.000Z"
+      },
+      {
+        "mills": "2026-10-21T21:25:21.000Z"
+      }
+    ],
+    "batteryTreatments": [],
+    "cals": [],
+    "combobolusTreatments": [],
+    "dbstats": {
+      "dataSize": 1242,
+      "indexSize": 253952
+    },
+    "devicestatus": [
+      {
+        "_id": "6ad92dfd4fc2f9571e953cda",
+        "created_at": "2026-10-21T21:26:21.000Z",
+        "device": "aaps",
+        "loop": {
+          "cob": {
+            "cob": 18
+          },
+          "enacted": {
+            "duration": 30,
+            "rate": 1.2,
+            "reason": "BG rising faster than expected"
+          },
+          "failureReason": "",
+          "iob": {
+            "devicestatus": 0.024,
+            "iob": 1.73
+          },
+          "predicted": {
+            "values": [
+              112,
+              114,
+              117,
+              120,
+              123,
+              126
+            ]
+          },
+          "timestamp": "2026-06-16T08:42:00Z"
+        },
+        "mills": 1792617981000,
+        "openaps": {
+          "enacted": {
+            "duration": 30,
+            "moment": "2026-06-16T08:42:00.000Z",
+            "rate": 1.2,
+            "timestamp": "2026-06-16T08:42:00Z"
+          },
+          "suggested": {
+            "duration": 30,
+            "moment": "2026-06-16T08:41:55.000Z",
+            "rate": 1.2,
+            "reason": "Eventual BG 126",
+            "timestamp": "2026-06-16T08:41:55Z"
+          }
+        },
+        "pump": {
+          "battery": {
+            "percent": 68,
+            "voltage": 1.42
+          },
+          "clock": "2026-06-16T08:42:15Z",
+          "reservoir": 97.4,
+          "status": {
+            "bolusing": false,
+            "suspended": false
+          }
+        },
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05,
+          "display": "87%",
+          "level": 75,
+          "value": 87,
+          "voltage": 4.05,
+          "voltageDisplay": "4.050v"
+        },
+        "utcOffset": 0
+      }
+    ],
+    "entries": [],
+    "food": [],
+    "insulinchangeTreatments": [],
+    "lastProfileFromSwitch": null,
+    "lastUpdated": 1792617981659,
+    "mbgs": [],
+    "profileTreatments": [],
+    "profiles": [],
+    "sensorTreatments": [],
+    "sgvs": [],
+    "sitechangeTreatments": [],
+    "tempTargetTreatments": [],
+    "tempbasalTreatments": [],
+    "treatments": []
+  },
+  "durationMs": 3
+}

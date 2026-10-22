@@ -190,7 +190,7 @@ B {
 ####
 
 NAME create_loop_devicestatus_v1
-POST http://{{ .site }}.ns.localhosthttp://{{ .site }}/api/v1/devicestatus?token={{ token }}
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
 B {
     "device": "loop://iPhone",
     "uploader": {
@@ -243,3 +243,25 @@ B {
     },
     "utcOffset": 0
  }
+
+
+#####
+# MORE ENDPOINTS
+#####
+
+# Followers read the latest loop status
+NAME get_devicestatus_count_v1
+GET http://{{ .site }}/api/v1/devicestatus.json?token={{ token }}&count=1
+
+NAME get_devicestatus_created_at_gte_v1
+GET http://{{ .site }}/api/v1/devicestatus.json?token={{ token }}&find[created_at][$gte]={{ time 60 }}&count=100
+
+NAME create_devicestatus_for_bulk_delete_v1
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B [{"device": "bulk-delete-test", "created_at": "{{ time 2 }}", "uploader": {"battery": 50}}, {"device": "bulk-delete-test", "created_at": "{{ time 1 }}", "uploader": {"battery": 49}}]
+
+NAME delete_devicestatus_find_v1
+DELETE http://{{ .site }}/api/v1/devicestatus?token={{ token }}&find[device]=bulk-delete-test
+
+NAME get_devicestatus_after_bulk_delete_v1
+GET http://{{ .site }}/api/v1/devicestatus.json?token={{ token }}&find[device]=bulk-delete-test

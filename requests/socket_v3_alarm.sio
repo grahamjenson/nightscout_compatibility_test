@@ -22,3 +22,35 @@ T 30s
 
 NAME alarm_disconnect
 DISCONNECT
+
+
+#####
+# Acknowledging alarms and subscribing with a JWT like the web client
+#####
+
+NAME alarm_jwt_connect
+CONNECT http://{{ .site }}/alarm
+
+NAME alarm_jwt_subscribe
+EMIT subscribe
+B {"jwtToken": "{{ jwt }}"}
+ACK
+
+NAME alarm_ack
+EMIT ack
+B 1
+B "default"
+B 60000
+
+NAME alarm_read_subscribe
+EMIT subscribe
+B {"jwtToken": "{{ read_jwt }}"}
+ACK
+
+NAME alarm_bad_subscribe
+EMIT subscribe
+B {"accessToken": "not-a-real-token"}
+ACK
+
+NAME alarm_jwt_disconnect
+DISCONNECT

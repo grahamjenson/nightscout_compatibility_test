@@ -1,0 +1,63 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/treatments/c73b417a-1a5e-58a9-95ca-706a4ebd3c02",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTRkNjA1NDUwNWQ4MjY2MzUiLCJpYXQiOjE3OTI2MTc5ODEsImV4cCI6MTc5MjY0Njc4MX0.1Ln8pTNeuQamiANln_HhdBRMDJR3Gi1Qd_n_bxG0LAA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "If-Modified-Since": [
+        "Tue, 20 Oct 2026 21:26:23 GMT"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "318"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": {
+      "app": "compat-test",
+      "created_at": "2026-10-21T21:25:23.022Z",
+      "date": 1792617923022,
+      "device": "compat-test",
+      "eventType": "Note",
+      "identifier": "c73b417a-1a5e-58a9-95ca-706a4ebd3c02",
+      "notes": "conditional requests",
+      "srvCreated": 1792617983025,
+      "srvModified": 1792617983025,
+      "subject": "write",
+      "utcOffset": 0
+    },
+    "status": 200
+  },
+  "durationMs": 2
+}

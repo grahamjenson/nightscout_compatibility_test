@@ -1,0 +1,54 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/notifications/loop?token=write-4d6054505d826635",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "duration": 30,
+      "enteredBy": "compat-test",
+      "eventType": "Temporary Override",
+      "notes": "",
+      "reason": "compat test",
+      "reasonDisplay": "Compat test"
+    }
+  },
+  "statusCode": 500,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "error": {
+      "message": "Cannot read properties of undefined (reading 'apnsKey')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'apnsKey')\n    at Function.sendNotification (/opt/app/lib/server/loop.js:16:35)\n    at /opt/app/lib/api2/notifications-v2.js:18:14\n    at Layer.handle [as handle_request] (/opt/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/opt/app/node_modules/express/lib/router/route.js:149:13)\n    at check (/opt/app/lib/authorization/index.js:263:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)"
+    }
+  },
+  "durationMs": 3
+}

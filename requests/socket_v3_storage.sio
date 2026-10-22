@@ -56,3 +56,39 @@ ACK
 
 NAME storage_bad_disconnect
 DISCONNECT
+
+
+#####
+# Subscribing without a collection list subscribes to every allowed collection
+#####
+
+NAME storage_all_connect
+CONNECT http://{{ .site }}/storage
+
+NAME storage_all_subscribe
+EMIT subscribe
+B {"accessToken": "{{ token }}"}
+ACK
+
+NAME storage_all_create_entry_v3
+POST http://{{ .site }}/api/v3/entries
+H Authorization: Bearer {{ jwt }}
+B {"type": "sgv", "sgv": 133, "app": "socket-test", "device": "socket-test", "date": {{ itime 0 }}}
+
+NAME storage_all_entry_create_event
+WAIT create
+
+NAME storage_all_delete_entry_v3
+DELETE http://{{ .site }}/api/v3/entries/{{ dig "storage_all_create_entry_v3.identifier" }}
+H Authorization: Bearer {{ jwt }}
+
+NAME storage_all_entry_delete_event
+WAIT delete
+
+NAME storage_read_subscribe
+EMIT subscribe
+B {"accessToken": "{{ read_token }}", "collections": ["entries", "settings"]}
+ACK
+
+NAME storage_all_disconnect
+DISCONNECT

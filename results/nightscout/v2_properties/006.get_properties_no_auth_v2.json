@@ -1,0 +1,176 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:23 GMT"
+    ],
+    "Etag": [
+      "W/\"6ba-B15Z/rZLHMuMd8XX2UFVTbMHHbE\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "ar2": {
+      "forecast": {
+        "avgLoss": 0,
+        "predicted": []
+      }
+    },
+    "bgnow": {},
+    "buckets": [
+      {
+        "fromMills": null,
+        "index": 0,
+        "isEmpty": true,
+        "sgvs": [],
+        "toMills": null
+      },
+      {
+        "fromMills": null,
+        "index": 1,
+        "isEmpty": true,
+        "sgvs": [],
+        "toMills": null
+      },
+      {
+        "fromMills": null,
+        "index": 2,
+        "isEmpty": true,
+        "sgvs": [],
+        "toMills": null
+      },
+      {
+        "fromMills": null,
+        "index": 3,
+        "isEmpty": true,
+        "sgvs": [],
+        "toMills": null
+      }
+    ],
+    "dbsize": {
+      "dataPercentage": 0,
+      "details": {
+        "dataSize": 0.24,
+        "maxSize": 496
+      },
+      "display": "0%",
+      "notificationLevel": 0,
+      "status": "current",
+      "totalDataSize": 0.24337196350097656
+    },
+    "openaps": {
+      "lastEnacted": null,
+      "lastIOB": null,
+      "lastLoopMoment": "2026-06-16T08:41:55.000Z",
+      "lastMMTune": null,
+      "lastNotEnacted": {
+        "duration": 30,
+        "moment": "2026-06-16T08:42:00.000Z",
+        "rate": 1.2,
+        "timestamp": "2026-06-16T08:42:00Z"
+      },
+      "lastPredBGs": null,
+      "lastSuggested": {
+        "duration": 30,
+        "moment": "2026-06-16T08:41:55.000Z",
+        "rate": 1.2,
+        "reason": "Eventual BG 126",
+        "timestamp": "2026-06-16T08:41:55Z"
+      },
+      "seenDevices": {
+        "aaps": {
+          "name": "aaps",
+          "status": {
+            "code": "waiting",
+            "label": "Waiting",
+            "symbol": "◉",
+            "when": "2026-10-21T21:26:21.000Z"
+          },
+          "uri": "aaps"
+        }
+      },
+      "status": {
+        "code": "warning",
+        "label": "Warning",
+        "symbol": "⚠"
+      }
+    },
+    "runtimestate": {
+      "state": "loaded"
+    },
+    "upbat": {
+      "devices": {
+        "aaps": {
+          "min": {
+            "battery": 87,
+            "batteryVoltage": 4.05,
+            "display": "87%",
+            "level": 75,
+            "value": 87,
+            "voltage": 4.05,
+            "voltageDisplay": "4.050v"
+          },
+          "name": "aaps",
+          "statuses": [
+            {
+              "_id": "6ad92dfd4fc2f9571e953cda",
+              "created_at": "2026-10-21T21:26:21.000Z",
+              "mills": 1792617981000,
+              "uploader": {
+                "battery": 87,
+                "batteryVoltage": 4.05,
+                "display": "87%",
+                "level": 75,
+                "value": 87,
+                "voltage": 4.05,
+                "voltageDisplay": "4.050v"
+              }
+            }
+          ],
+          "uri": "aaps"
+        }
+      },
+      "display": "87%",
+      "level": 75,
+      "min": {
+        "battery": 87,
+        "batteryVoltage": 4.05,
+        "display": "87%",
+        "level": 75,
+        "value": 87,
+        "voltage": 4.05,
+        "voltageDisplay": "4.050v"
+      },
+      "status": "current"
+    }
+  },
+  "durationMs": 1
+}

@@ -155,6 +155,27 @@ func templateITime(offset int) int64 {
 	return t.UnixMilli()
 }
 
+// templateHTTPTime is an HTTP date (as used by If-Modified-Since) offset minutes ago
+func templateHTTPTime(offset int) string {
+	t := time.Now().Add(-time.Duration(offset) * time.Minute)
+	return t.UTC().Format(http.TimeFormat)
+}
+
+// templateTokenByName finds the accessToken of the subject called name in a
+// list of subjects, or "" so one odd response does not stop the whole file
+func templateTokenByName(list any, name string) string {
+	items, _ := list.([]any)
+	for _, item := range items {
+		m, ok := item.(map[string]any)
+		if !ok || m["name"] != name {
+			continue
+		}
+		token, _ := m["accessToken"].(string)
+		return token
+	}
+	return ""
+}
+
 func templateDig(root any, path string) any {
 	parts := strings.Split(path, ".")
 	var cur any = root
@@ -205,17 +226,10 @@ func RenderTemplate(input string, ctx map[string]any) (string, error) {
 			"read_jwt": func() string {
 				return ctx["read_jwt"].(string)
 			},
-			"time":  templateTime,
-			"itime": templateITime,
-			"tokenByName": func(list []any, name string) string {
-				for _, item := range list {
-					m := item.(map[string]any)
-					if m["name"] == name {
-						return m["accessToken"].(string)
-					}
-				}
-				return ""
-			},
+			"time":        templateTime,
+			"itime":       templateITime,
+			"httptime":    templateHTTPTime,
+			"tokenByName": templateTokenByName,
 		}).
 		Parse(input)
 	if err != nil {

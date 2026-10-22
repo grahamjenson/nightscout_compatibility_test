@@ -1,0 +1,70 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries.json?token=write-4d6054505d826635&count=1",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "If-Modified-Since": [
+        "Tue, 20 Oct 2026 21:26:21 GMT"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "319"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:26:21 GMT"
+    ],
+    "Etag": [
+      "W/\"13f-gRxYCz7E6oRuJYyDUVafJMdKeHo\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Last-Modified": [
+      "Wed, 21 Oct 2026 21:26:21 GMT"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ad92dfd6b4f3a493ba54385",
+      "app": "test-app",
+      "date": 1792617981732,
+      "dateString": "2026-10-21T21:26:21.000Z",
+      "device": "test-device",
+      "direction": "Flat",
+      "filtered": 139.2,
+      "mills": 1792617981732,
+      "noise": 1,
+      "rssi": -62,
+      "sgv": 100,
+      "sysTime": "2026-10-21T21:26:21.000Z",
+      "trend": 3,
+      "type": "sgv",
+      "unfiltered": 141.7,
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 3
+}
