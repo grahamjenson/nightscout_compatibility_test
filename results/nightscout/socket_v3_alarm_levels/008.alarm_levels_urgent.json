@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/alarm/urgent_alarm",
+    "url": "http://localhost:1337/socket.io/alarm/urgent_alarm",
+    "connectUrl": "http://localhost:1337/alarm",
+    "namespace": "/alarm",
+    "event": "urgent_alarm",
+    "connection": "alarm_levels_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "debug": {
+      "forecast": {
+        "avgLoss": 0.2824784976778394,
+        "predicted": "2.7, 2.3, 2.2, 2.1, 2, 2"
+      }
+    },
+    "eventName": "low",
+    "group": "default",
+    "key": "ar2_2",
+    "level": 2,
+    "message": "BG Now: 2.5 -1 - mmol/L\nBG 15m: 2.2 mmol/L",
+    "plugin": {
+      "enabled": true,
+      "label": "AR2",
+      "name": "ar2",
+      "pluginType": "forecast",
+      "virtAsst": {
+        "intentHandlers": [
+          {
+            "intent": "MetricNow",
+            "metrics": [
+              "ar2 forecast",
+              "forecast"
+            ]
+          }
+        ]
+      }
+    },
+    "pushoverSound": "persistent",
+    "title": "Urgent, LOW"
+  },
+  "durationMs": 15
+}

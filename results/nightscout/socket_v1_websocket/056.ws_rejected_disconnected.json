@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/disconnect",
+    "url": "http://localhost:1337/socket.io/disconnect",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "disconnect",
+    "connection": "ws_rejected_connect"
+  },
+  "statusCode": 200,
+  "body": "io server disconnect",
+  "durationMs": 1
+}

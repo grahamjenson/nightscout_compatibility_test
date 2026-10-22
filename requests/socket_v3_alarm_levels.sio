@@ -1,0 +1,70 @@
+#####
+# Alarms on the API v3 "/alarm" namespace. With ALARM_TYPES=predict
+# (the default) they are raised by the AR2 forecast of recent readings.
+# Runs before socket_v3_alarm.sio, whose ack silences warnings for a minute.
+#####
+
+NAME alarm_levels_connect
+CONNECT http://{{ .site }}/alarm
+
+NAME alarm_levels_subscribe
+EMIT subscribe
+B {"accessToken": "{{ token }}"}
+ACK
+
+# The forecast uses the latest readings and earlier tests create readings "now",
+# so start from a clean timeline
+NAME alarm_levels_delete_recent_entries
+DELETE http://{{ .site }}/api/v1/entries?token={{ token }}&find[date][$gte]={{ itime 30 }}&count=1000
+
+# Alarms are snoozed while the latest treatment is recent, unless it is an announcement.
+# Announcements are graded by their glucose, so give it a normal one
+NAME alarm_levels_announcement
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B {"eventType": "Announcement", "notes": "alarm levels {{ itime 0 }}", "isAnnouncement": true, "glucose": 100, "glucoseType": "Finger", "units": "mg/dl", "enteredBy": "alarm-test"}
+
+# A slow fall to 70 mg/dL forecasts a low, a warning
+NAME alarm_levels_falling_entries
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [{"type": "sgv", "sgv": 90, "date": {{ itime 15 }}, "device": "alarm-test"}, {"type": "sgv", "sgv": 82, "date": {{ itime 10 }}, "device": "alarm-test"}, {"type": "sgv", "sgv": 75, "date": {{ itime 5 }}, "device": "alarm-test"}, {"type": "sgv", "sgv": 70, "date": {{ itime 0 }}, "device": "alarm-test"}]
+
+NAME alarm_levels_warning
+WAIT alarm
+T 30s
+
+# A drop to 45 mg/dL is urgent
+NAME alarm_levels_low_entry
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [{"type": "sgv", "sgv": 45, "date": {{ itime 0 }}, "device": "alarm-test"}]
+
+NAME alarm_levels_urgent
+WAIT urgent_alarm
+T 30s
+
+# Acknowledging the urgent alarm clears it for every client
+NAME alarm_levels_ack
+EMIT ack
+B 2
+B "default"
+B 60000
+
+NAME alarm_levels_clear
+WAIT clear_alarm
+T 30s
+
+# Other treatments are sent as info notifications
+NAME alarm_levels_note
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B {"eventType": "Note", "notes": "alarm levels note {{ itime 0 }}", "enteredBy": "alarm-test"}
+
+NAME alarm_levels_notification
+WAIT notification
+T 30s
+
+# Back to a normal reading, announcements are graded by the current reading
+NAME alarm_levels_normal_entry
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [{"type": "sgv", "sgv": 100, "date": {{ itime 0 }}, "device": "alarm-test"}]
+
+NAME alarm_levels_disconnect
+DISCONNECT

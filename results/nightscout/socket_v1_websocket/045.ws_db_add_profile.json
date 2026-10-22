@@ -1,0 +1,117 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://localhost:1337/socket.io/dbAdd",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_clients_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "profile",
+        "data": {
+          "defaultProfile": "Socket",
+          "startDate": "2026-10-22T18:33:25Z",
+          "store": {
+            "Socket": {
+              "basal": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 0.8
+                }
+              ],
+              "carbratio": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 10
+                }
+              ],
+              "dia": 5,
+              "sens": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 50
+                }
+              ],
+              "target_high": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 120
+                }
+              ],
+              "target_low": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 90
+                }
+              ],
+              "timezone": "UTC",
+              "units": "mg/dl"
+            }
+          },
+          "units": "mg/dl"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": [
+    {
+      "_id": "6ada5dfd6c7ffcd2f3a64d55",
+      "created_at": "2026-10-22T19:03:25.426Z",
+      "defaultProfile": "Socket",
+      "startDate": "2026-10-22T18:33:25Z",
+      "store": {
+        "Socket": {
+          "basal": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 0.8
+            }
+          ],
+          "carbratio": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 10
+            }
+          ],
+          "dia": 5,
+          "sens": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 50
+            }
+          ],
+          "target_high": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 120
+            }
+          ],
+          "target_low": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 90
+            }
+          ],
+          "timezone": "UTC",
+          "units": "mg/dl"
+        }
+      },
+      "units": "mg/dl"
+    }
+  ],
+  "durationMs": 3
+}

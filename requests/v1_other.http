@@ -76,7 +76,7 @@ NAME get_echo_treatments_v1
 GET http://{{ .site }}/api/v1/echo/treatments?token={{ token }}&find[eventType]=Note
 
 NAME ack_notifications_v1
-GET http://{{ .site }}/api/v1/notifications/ack?token={{ token }}&level=1&group=default&time=60000
+GET http://{{ .site }}/api/v1/notifications/ack?token={{ token }}&level=1&group=compat-test&time=60000
 
 # Pebble and other watch faces
 NAME get_pebble

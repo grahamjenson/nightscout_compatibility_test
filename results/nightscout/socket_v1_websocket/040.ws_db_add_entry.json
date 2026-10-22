@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://localhost:1337/socket.io/dbAdd",
+    "connectUrl": "http://localhost:1337/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_clients_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "entries",
+        "data": {
+          "date": 1792695805413,
+          "device": "socket-test",
+          "sgv": 120,
+          "type": "sgv"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": [
+    {
+      "_id": "6ada5dfd6c7ffcd2f3a64d53",
+      "created_at": "2026-10-22T19:03:25.414Z",
+      "date": 1792695805413,
+      "device": "socket-test",
+      "sgv": 120,
+      "type": "sgv"
+    }
+  ],
+  "durationMs": 1
+}

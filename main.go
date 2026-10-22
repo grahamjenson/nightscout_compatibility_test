@@ -50,6 +50,7 @@ func main() {
 	socketFiles := []string{
 		"requests/socket_v1_websocket.sio",
 		"requests/socket_v3_storage.sio",
+		"requests/socket_v3_alarm_levels.sio",
 		"requests/socket_v3_alarm.sio",
 	}
 
