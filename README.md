@@ -94,6 +94,11 @@ You will see the output from `nighttroop` (still in development)
 
 You can skip the auth (since your service may do it differently and then just )
 
+## Nocturne
+
+1. RUN `docker compose -f nocturne.compose.yml up`: starts an ephemeral Nocturne (Postgres on tmpfs) with its gateway on `localhost:1612`.
+2. RUN `go run main.go nocturne`: `requests/nocturne.http` seeds a tenant with the dev-only `seed-tenant` endpoint (Nocturne has no `API_SECRET`), then creates the `write`/`read` subjects with the owner's session and swaps their tokens for JWTs, like `nightscout.http`.
+
 
 # Comparison
 
@@ -154,4 +159,3 @@ go test ./...
 
 1. Have service specific read and write queries so that we can check compatibility with say AAPS. For exmaple, if AAPS uses PATCH /api/v3/treatments in a specific way, then we can encode and make sure responses are in the right shape.
 2. Test Web services API, a whole other can of worms. Started with the socket.io `.sio` files, needs more coverage (alarms, `dbUpdateUnset`, devicestatus/profile pushes) and a better body comparison for pushed deltas.
-3. Add nocturne

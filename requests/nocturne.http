@@ -1,0 +1,47 @@
+NAME site
+SET localhost:1612
+
+# Nocturne has no API_SECRET to start from, so seed a tenant with the dev-only endpoint
+# (enabled by NOCTURNE_ENABLE_DEV_ONLY_ENDPOINTS in nocturne.compose.yml).
+# With a single tenant the apex domain (localhost) serves it, so no subdomain is needed.
+NAME seed_tenant
+POST http://{{ .site }}/api/v4/dev-only/admin/seed-tenant
+B {"slug": "compat", "displayName": "Compat", "ownerUsername": "compat"}
+
+# Nocturne only returns a subject's access token when it is created, so take it from the create response
+NAME create_write_subject
+POST http://{{ .site }}/api/v2/authorization/subjects
+H Authorization: Bearer {{ .seed_tenant.accessToken }}
+B {"name": "write", "roles": ["admin"]}
+
+NAME create_read_subject
+POST http://{{ .site }}/api/v2/authorization/subjects
+H Authorization: Bearer {{ .seed_tenant.accessToken }}
+B {"name": "read", "roles": ["readable"]}
+
+# This assigns the token variable in context
+NAME token
+SET {{ .create_write_subject.accessToken }}
+
+NAME read_token
+SET {{ .create_read_subject.accessToken }}
+
+
+NAME jwtauth
+GET http://{{ .site }}/api/v2/authorization/request/{{ .token }}
+
+
+# This assigns the jwt variable in context
+NAME jwt
+SET {{ .jwtauth.token }}
+
+NAME jwtreadauth
+GET http://{{ .site }}/api/v2/authorization/request/{{ .read_token }}
+
+
+NAME time_0
+SET {{ time 0 }}
+
+# This assigns the jwt variable in context
+NAME read_jwt
+SET {{ .jwtreadauth.token }}
