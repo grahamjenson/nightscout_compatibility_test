@@ -2,13 +2,13 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://localhost:1337/api/v3/food/f6cef19d-2aec-5e73-938e-b00522c9a7e1custom",
+    "url": "http://localhost:1337/api/v3/food/ebc3dc90-4035-5762-9178-e393b44fe375custom",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
       ],
       "Content-Type": [
         "application/json"
@@ -18,7 +18,7 @@
       "app": "asd",
       "carbs": 27,
       "category": "Snacks",
-      "date": "2026-09-04T14:40:00+12:00",
+      "date": "2026-10-22T10:19:54+13:00",
       "energy": 105,
       "fat": 0.3,
       "gi": 51,
@@ -41,25 +41,25 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Location": [
-      "/api/v3/food/f6cef19d-2aec-5e73-938e-b00522c9a7e1custom/f6cef19d-2aec-5e73-938e-b00522c9a7e1custom"
+      "/api/v3/food/ebc3dc90-4035-5762-9178-e393b44fe375custom/ebc3dc90-4035-5762-9178-e393b44fe375custom"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "f6cef19d-2aec-5e73-938e-b00522c9a7e1custom",
-    "lastModified": 1788489600506,
+    "identifier": "ebc3dc90-4035-5762-9178-e393b44fe375custom",
+    "lastModified": 1792617594687,
     "status": 201
   },
-  "durationMs": 3
+  "durationMs": 2
 }

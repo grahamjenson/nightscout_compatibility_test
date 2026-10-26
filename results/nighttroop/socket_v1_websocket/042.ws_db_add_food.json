@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbAdd",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_clients_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "food",
+        "data": {
+          "carbs": 20,
+          "category": "Fruit",
+          "name": "Socket Apple",
+          "portion": 1,
+          "type": "food",
+          "unit": "pcs"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": [
+    {
+      "_id": "aWW16BY4",
+      "carbs": 20,
+      "category": "Fruit",
+      "created_at": "2026-10-26T22:48:36.062Z",
+      "name": "Socket Apple",
+      "subject": "pwd_phone",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 0
+}

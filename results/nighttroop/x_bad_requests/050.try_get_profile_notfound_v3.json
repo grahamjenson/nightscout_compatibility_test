@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/profile/notFound",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/profile/notFound",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -16,31 +16,21 @@
     },
     "body": null
   },
-  "statusCode": 200,
+  "statusCode": 404,
   "headers": {
-    "Content-Length": [
-      "179"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:36 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
-    "result": {
-      "created_at": "1970-01-01T00:00:00Z",
-      "date": 0,
-      "identifier": "",
-      "isReadOnly": false,
-      "isValid": true,
-      "srvCreated": 0,
-      "srvModified": 0,
-      "subject": "",
-      "utcOffset": 0
-    },
-    "status": 200
+    "message": "record not found",
+    "status": 404
   },
   "durationMs": 0
 }

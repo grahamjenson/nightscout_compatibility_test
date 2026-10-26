@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/entries?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,14 +14,14 @@
     "body": [
       {
         "app": "test-app",
-        "date": 1788488999878,
+        "date": 1792616994140,
         "device": "test-device",
         "sgv": 101,
         "type": "sgv"
       },
       {
         "app": "test-app",
-        "date": 1788488879878,
+        "date": 1792616874140,
         "device": "test-device",
         "mbg": 102,
         "type": "mbg"
@@ -40,10 +40,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"155-oj1GYAr6hswTUtDZ22r2MeMbLUQ\""
+      "W/\"155-3DZdVeZhEnXaYdDxF6Z6EVwZT3U\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -57,25 +57,25 @@
   },
   "body": [
     {
-      "_id": "6a9a2f7f49a97a563d84f767",
+      "_id": "6ad92c7a35fb876db084a2c7",
       "app": "test-app",
-      "date": 1788488999878,
+      "date": 1792616994140,
       "device": "test-device",
       "sgv": 101,
-      "sysTime": "2026-09-04T02:29:59.878Z",
+      "sysTime": "2026-10-21T21:09:54.140Z",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "6a9a2f7f49a97a563d84f768",
+      "_id": "6ad92c7a35fb876db084a2c8",
       "app": "test-app",
-      "date": 1788488879878,
+      "date": 1792616874140,
       "device": "test-device",
       "mbg": 102,
-      "sysTime": "2026-09-04T02:27:59.878Z",
+      "sysTime": "2026-10-21T21:07:54.140Z",
       "type": "mbg",
       "utcOffset": 0
     }
   ],
-  "durationMs": 16
+  "durationMs": 4
 }

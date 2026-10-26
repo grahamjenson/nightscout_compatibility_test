@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbUpdate",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbUpdate",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbUpdate",
+    "connection": "ws_connect",
+    "ack": true,
+    "args": [
+      {
+        "_id": "K70E1N70",
+        "collection": "treatments",
+        "data": {
+          "notes": "updated over socket.io"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "success"
+  },
+  "durationMs": 0
+}

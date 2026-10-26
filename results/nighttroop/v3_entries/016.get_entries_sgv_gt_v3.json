@@ -1,0 +1,291 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/entries?sgv$gt=95",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Etag": [
+      "W/\"1793054915717\""
+    ],
+    "Last-Modified": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "created_at": "2026-10-26T22:48:35.717Z",
+        "date": 1793054915717,
+        "dateString": "2026-10-26T22:48:35.717Z",
+        "identifier": "xLe8C278",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 12.432,
+        "mills": 1793054915717,
+        "sgv": 12.432,
+        "srvCreated": 1793054915717,
+        "srvModified": 1793054915717,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "units": "mmol/L",
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-10-26T22:48:35.499Z",
+        "date": 1793054915499,
+        "dateString": "2026-10-26T22:48:35.499Z",
+        "identifier": "P83P8d5X",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 5.55,
+        "mills": 1793054915499,
+        "sgv": 5.55,
+        "srvCreated": 1793054915499,
+        "srvModified": 1793054915499,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "units": "mmol/L",
+        "utcOffset": 0
+      },
+      {
+        "app": "test-app",
+        "created_at": "2026-10-26T22:48:35Z",
+        "date": 1793054915000,
+        "dateString": "2026-10-27T11:48:35+13:00",
+        "device": "test-device",
+        "direction": "Flat",
+        "filtered": 139.2,
+        "identifier": "k698A7kJ",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 5.55,
+        "mills": 1793054915000,
+        "noise": 1,
+        "rssi": -62,
+        "sgv": 5.55,
+        "srvCreated": 1793054915500,
+        "srvModified": 1793054915500,
+        "subject": "pwd_phone",
+        "trend": 3,
+        "type": "sgv",
+        "unfiltered": 141.7,
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:47:35.514Z",
+        "date": 1793054855514,
+        "dateString": "2026-10-26T22:47:35.514Z",
+        "device": "bulk-delete-test",
+        "identifier": "7c4QitV3",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 8.3805,
+        "mills": 1793054855514,
+        "sgv": 8.3805,
+        "srvCreated": 1793054915515,
+        "srvModified": 1793054915515,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "units": "mmol/L",
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-10-26T22:47:35Z",
+        "date": 1793054855000,
+        "dateString": "2026-10-27T11:47:35+13:00",
+        "identifier": "3ToSyxvY",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 5.8,
+        "mills": 1793054855000,
+        "sgv": 5.8,
+        "srvCreated": 1793054915626,
+        "srvModified": 1793054915626,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:46:35.514Z",
+        "date": 1793054795514,
+        "dateString": "2026-10-26T22:46:35.514Z",
+        "device": "bulk-delete-test",
+        "identifier": "HWAJWXs4",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 8.325,
+        "mills": 1793054795514,
+        "sgv": 8.325,
+        "srvCreated": 1793054915514,
+        "srvModified": 1793054915514,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "units": "mmol/L",
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-10-26T22:46:35Z",
+        "date": 1793054795000,
+        "dateString": "2026-10-27T11:46:35+13:00",
+        "identifier": "05dEf7j7",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 8.0475,
+        "mills": 1793054795000,
+        "sgv": 8.0475,
+        "srvCreated": 1793054915627,
+        "srvModified": 1793054915627,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:43:35Z",
+        "date": 1793054615000,
+        "dateString": "2026-10-27T11:43:35+13:00",
+        "identifier": "ANb2O90I",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 13.2,
+        "mills": 1793054615000,
+        "sgv": 13.2,
+        "srvCreated": 1793054915629,
+        "srvModified": 1793054915629,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:42:35Z",
+        "date": 1793054555000,
+        "dateString": "2026-10-27T11:42:35+13:00",
+        "identifier": "AGJ58wnv",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 11.7,
+        "mills": 1793054555000,
+        "sgv": 11.7,
+        "srvCreated": 1793054915631,
+        "srvModified": 1793054915631,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:37:35Z",
+        "date": 1793054255000,
+        "dateString": "2026-10-27T11:37:35+13:00",
+        "identifier": "202Swcqo",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 6.8,
+        "mills": 1793054255000,
+        "sgv": 6.8,
+        "srvCreated": 1793054915604,
+        "srvModified": 1793054915604,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:36:35Z",
+        "date": 1793054195000,
+        "dateString": "2026-10-27T11:36:35+13:00",
+        "identifier": "ltQ9Sdz0",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 9.1,
+        "mills": 1793054195000,
+        "sgv": 9.1,
+        "srvCreated": 1793054915605,
+        "srvModified": 1793054915605,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:33:35Z",
+        "date": 1793054015000,
+        "dateString": "2026-10-27T11:33:35+13:00",
+        "identifier": "Rrw1vlLn",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 13.7,
+        "mills": 1793054015000,
+        "sgv": 13.7,
+        "srvCreated": 1793054915609,
+        "srvModified": 1793054915609,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:18:35Z",
+        "date": 1793053115000,
+        "dateString": "2026-10-27T11:18:35+13:00",
+        "identifier": "ZLGlTA56",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 6.2,
+        "mills": 1793053115000,
+        "sgv": 6.2,
+        "srvCreated": 1793054915655,
+        "srvModified": 1793054915655,
+        "subject": "pwd_phone",
+        "type": "mbg",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-01-02T12:13:14Z",
+        "date": 1767355994000,
+        "dateString": "2026-01-02T12:13:14Z",
+        "identifier": "hkU7j8Uq",
+        "isReadOnly": false,
+        "isValid": true,
+        "mbg": 5.55,
+        "mills": 1767355994000,
+        "sgv": 5.55,
+        "srvCreated": 1793054915687,
+        "srvModified": 1793054915687,
+        "subject": "pwd_phone",
+        "type": "sgv",
+        "units": "mmol/L",
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 0
+}

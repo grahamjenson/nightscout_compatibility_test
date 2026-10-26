@@ -11,18 +11,18 @@
   "statusCode": 200,
   "body": {
     "delta": true,
-    "lastUpdated": 1792578725547,
+    "lastUpdated": 1792617601520,
     "treatments": [
       {
-        "_id": "6ad894a554e1327fb959c5d6",
-        "created_at": "2026-10-21T10:32:05Z",
+        "_id": "6ad92c81b5c4915f41a3dcb0",
+        "created_at": "2026-10-22T10:20:01+13:00",
         "enteredBy": "socket-test",
         "eventType": "Note",
         "mgdl": 123,
-        "mills": 1792578725000,
+        "mills": 1792617601000,
         "notes": "added over socket.io"
       }
     ]
   },
-  "durationMs": 16
+  "durationMs": 20
 }

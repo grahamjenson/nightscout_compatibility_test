@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile/current?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/profile/current?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"c25-KWtYE0aZ1RXenMgXhltV4LyiZQ4\""
+      "W/\"c25-HaSy2I1bb1zxsF/6/xStwhEvcwQ\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -38,7 +38,7 @@
     ]
   },
   "body": {
-    "_id": "6a9a2f806e924a337c97e398",
+    "_id": "6ad92c7ab5c4915f41a3dc82",
     "app": "AAPS",
     "created_at": "2026-08-09T05:33:53.284Z",
     "date": 1786253633284,
@@ -338,5 +338,5 @@
     },
     "utcOffset": 720
   },
-  "durationMs": 2
+  "durationMs": 3
 }

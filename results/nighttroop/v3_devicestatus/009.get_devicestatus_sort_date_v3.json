@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/devicestatus?sort=date",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/devicestatus?sort=date",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -22,53 +22,80 @@
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611470\""
+      "W/\"1793054915700\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
     "result": [
       {
-        "created_at": "2026-09-04T02:39:11Z",
-        "date": 1788489551000,
-        "device": "aaps1",
-        "identifier": "X7CWSrIJ",
-        "isReadOnly": false,
-        "isValid": true,
-        "srvCreated": 1788489611368,
-        "srvModified": 1788489611368,
-        "subject": "pwd_phone",
-        "utcOffset": 720
-      },
-      {
         "app": "test-app",
-        "created_at": "2026-09-04T02:39:11Z",
-        "date": 1788489551000,
+        "created_at": "2026-10-26T22:47:35Z",
+        "date": 1793054855000,
         "device": "aapsv3",
-        "identifier": "VTTAnsLMcustom",
+        "identifier": "57v2e3vTcustom",
         "isReadOnly": false,
         "isValid": true,
-        "srvCreated": 1788489611470,
-        "srvModified": 1788489611470,
+        "srvCreated": 1793054915700,
+        "srvModified": 1793054915700,
         "subject": "pwd_phone",
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
-        "created_at": "2026-09-04T02:38:11Z",
-        "date": 1788489491000,
-        "device": "aaps",
-        "identifier": "q7k3z9sA",
+        "created_at": "2026-10-26T22:47:35Z",
+        "date": 1793054855000,
+        "device": "bulk-delete-test",
+        "identifier": "G8DwRU0q",
         "isReadOnly": false,
         "isValid": true,
-        "srvCreated": 1788489611368,
-        "srvModified": 1788489611368,
+        "srvCreated": 1793054915495,
+        "srvModified": 1793054915495,
         "subject": "pwd_phone",
-        "utcOffset": 720
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:47:35Z",
+        "date": 1793054855000,
+        "device": "aaps1",
+        "identifier": "Ba8U83tX",
+        "isReadOnly": false,
+        "isValid": true,
+        "srvCreated": 1793054915488,
+        "srvModified": 1793054915488,
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:46:35Z",
+        "date": 1793054795000,
+        "device": "bulk-delete-test",
+        "identifier": "9dVg72hS",
+        "isReadOnly": false,
+        "isValid": true,
+        "srvCreated": 1793054915495,
+        "srvModified": 1793054915495,
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      },
+      {
+        "created_at": "2026-10-26T22:46:35Z",
+        "date": 1793054795000,
+        "device": "aaps",
+        "identifier": "G2KozQ0c",
+        "isReadOnly": false,
+        "isValid": true,
+        "srvCreated": 1793054915489,
+        "srvModified": 1793054915489,
+        "subject": "pwd_phone",
+        "utcOffset": 780
       },
       {
         "app": "AAPS",
@@ -76,7 +103,7 @@
         "created_at": "2026-08-16T22:39:48.777Z",
         "date": 1786919988777,
         "device": "openaps://CUBOT KINGKONG MINI 3",
-        "identifier": "NvYe8ml4",
+        "identifier": "a1t8wKke",
         "isCharging": false,
         "isReadOnly": false,
         "isValid": true,
@@ -201,14 +228,133 @@
         "pump": {
           "reservoir": 38
         },
-        "srvCreated": 1788489611372,
-        "srvModified": 1788489611372,
+        "srvCreated": 1793054915492,
+        "srvModified": 1793054915492,
         "subject": "pwd_phone",
         "uploaderBattery": 88,
         "utcOffset": 720
+      },
+      {
+        "created_at": "2025-05-14T02:13:21Z",
+        "date": 1747188801000,
+        "device": "loop://iPhone",
+        "identifier": "dmO5JtY2",
+        "isReadOnly": false,
+        "isValid": true,
+        "loop": {
+          "automaticDoseRecommendation": {
+            "bolusVolume": 0.05,
+            "timestamp": "2025-05-14T02:13:21Z"
+          },
+          "cob": {
+            "cob": 5.0947962907626785,
+            "timestamp": "2025-05-14T02:10:00Z"
+          },
+          "enacted": {
+            "bolusVolume": 0,
+            "duration": 0,
+            "rate": 0,
+            "received": true,
+            "timestamp": "2025-05-14T02:13:13Z"
+          },
+          "iob": {
+            "iob": 1.0870623804830117,
+            "timestamp": "2025-05-14T02:10:00Z"
+          },
+          "name": "Loop",
+          "predicted": {
+            "startDate": "2025-05-14T02:13:07Z",
+            "values": [
+              114,
+              115.88,
+              120.29,
+              123.05,
+              123.98,
+              123.57,
+              122.9,
+              121.95,
+              120.71,
+              119.17,
+              117.34,
+              115.4,
+              113.75,
+              112.21,
+              110.79,
+              109.46,
+              108.24,
+              107.1,
+              106.05,
+              105.09,
+              104.19,
+              103.37,
+              102.62,
+              101.94,
+              101.31,
+              100.74,
+              100.23,
+              99.77,
+              99.37,
+              99,
+              98.69,
+              98.41,
+              98.18,
+              97.99,
+              97.83,
+              97.7,
+              97.6,
+              97.53,
+              97.48,
+              97.46,
+              97.46,
+              97.49,
+              97.53,
+              97.58,
+              97.66,
+              97.75,
+              97.86,
+              97.98,
+              98.11,
+              98.26,
+              98.41,
+              98.57,
+              98.75,
+              98.93,
+              99.11,
+              99.26,
+              99.4,
+              99.53,
+              99.63,
+              99.72,
+              99.8,
+              99.87,
+              99.93,
+              99.97,
+              100.01,
+              100.04,
+              100.06,
+              100.08,
+              100.09,
+              100.1,
+              100.11,
+              100.11,
+              100.12,
+              100.12,
+              100.12,
+              100.12
+            ]
+          },
+          "recommendedBolus": 0.15,
+          "timestamp": "2025-05-14T02:13:21Z",
+          "version": "3.2.2.65"
+        },
+        "srvCreated": 1793054915493,
+        "srvModified": 1793054915493,
+        "subject": "pwd_phone",
+        "uploaderBattery": 80,
+        "utcOffset": 0
       }
     ],
     "status": 200
   },
-  "durationMs": 1
+  "durationMs": 0
 }

@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbRemove",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbRemove",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbRemove",
+    "connection": "ws_clients_connect",
+    "ack": true,
+    "args": [
+      {
+        "_id": "aWW16BY4",
+        "collection": "food"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "success"
+  },
+  "durationMs": 0
+}

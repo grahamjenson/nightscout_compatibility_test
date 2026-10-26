@@ -2,13 +2,13 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/entries",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/entries",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -16,12 +16,12 @@
     },
     "body": {
       "app": "test-app",
-      "date": 1788489611508,
-      "dateString": "2026-09-04T14:40:11+12:00",
+      "date": 1793054915714,
+      "dateString": "2026-10-27T11:48:35+13:00",
       "device": "test-device",
       "direction": "Flat",
       "filtered": 139.2,
-      "mills": 1788489611508,
+      "mills": 1793054915714,
       "noise": 1,
       "rssi": -62,
       "sgv": 100,
@@ -32,54 +32,56 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "558"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611374\""
+      "W/\"1793054915500\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Location": [
-      "/api/v3/entries/8ruy1ZpE"
+      "/api/v3/entries/k698A7kJ"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
-    "deduplicatedIdentifier": "8ruy1ZpE",
-    "identifier": "8ruy1ZpE",
+    "deduplicatedIdentifier": "k698A7kJ",
+    "identifier": "k698A7kJ",
     "isDeduplication": true,
-    "lastModified": 1788489611374,
+    "lastModified": 1793054915500,
     "result": {
       "app": "test-app",
-      "created_at": "2026-09-04T02:40:11Z",
-      "date": 1788489611000,
-      "dateString": "2026-09-04T14:40:11+12:00",
+      "created_at": "2026-10-26T22:48:35Z",
+      "date": 1793054915000,
+      "dateString": "2026-10-27T11:48:35+13:00",
       "device": "test-device",
       "direction": "Flat",
       "filtered": 139.2,
-      "identifier": "8ruy1ZpE",
+      "identifier": "k698A7kJ",
       "isReadOnly": false,
       "isValid": true,
-      "mills": 1788489611000,
+      "mbg": 5.55,
+      "mills": 1793054915000,
       "noise": 1,
       "rssi": -62,
-      "sgv": 100,
-      "srvCreated": 1788489611374,
-      "srvModified": 1788489611374,
+      "sgv": 5.55,
+      "srvCreated": 1793054915500,
+      "srvModified": 1793054915500,
       "subject": "pwd_phone",
       "trend": 3,
       "type": "sgv",
       "unfiltered": 141.7,
-      "utcOffset": 720
+      "units": "mmol/L",
+      "utcOffset": 780
     },
     "status": 200
   },
-  "durationMs": 15
+  "durationMs": 0
 }

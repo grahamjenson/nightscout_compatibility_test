@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/storage/subscribe",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/storage/subscribe",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/storage",
+    "namespace": "/storage",
+    "event": "subscribe",
+    "connection": "storage_all_connect",
+    "ack": true,
+    "args": [
+      {
+        "accessToken": "QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "collections": [
+      "devicestatus",
+      "entries",
+      "food",
+      "profile",
+      "settings",
+      "treatments"
+    ],
+    "success": true
+  },
+  "durationMs": 0
+}

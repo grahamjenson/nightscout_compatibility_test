@@ -1,0 +1,899 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/treatments.json?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ&find[enteredBy]=socket-test-dedup",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:36 GMT"
+    ],
+    "Etag": [
+      "W/\"1793054916065\""
+    ],
+    "Last-Modified": [
+      "Mon, 26 Oct 2026 22:48:36 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": [
+    {
+      "_id": "T8600T74",
+      "created_at": "2026-10-26T22:48:36Z",
+      "date": 1793054916000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "notes": "dedup over socket.io",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "treatmentv3t1",
+      "app": "asd",
+      "created_at": "2026-10-26T22:48:35Z",
+      "date": 1793054915000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "insulin": 1,
+      "notes": "updated by update_put_treatments_v3",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "neNlpYlq",
+      "app": "asd",
+      "created_at": "2026-10-26T22:47:35Z",
+      "date": 1793054855000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Correction Bolus",
+      "insulin": 4.2,
+      "reason": "1",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "Dx7p81nQ",
+      "created_at": "2026-10-26T22:47:35Z",
+      "date": 1793054855000,
+      "enteredBy": "pwd_phone",
+      "eventType": "BG Check",
+      "glucose": 5.8,
+      "glucoseType": "Finger",
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    },
+    {
+      "_id": "Oa02L6Ci",
+      "app": "asd",
+      "created_at": "2026-10-26T22:46:35Z",
+      "date": 1793054795000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "insulin": 2,
+      "reason": "2",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "5FhdX7A0",
+      "created_at": "2026-10-26T22:46:35Z",
+      "date": 1793054795000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "notes": "bulk delete 2",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "bvw5Wt7K",
+      "created_at": "2026-10-26T22:46:35Z",
+      "date": 1793054795000,
+      "enteredBy": "pwd_phone",
+      "eventType": "BG Check",
+      "glucose": 8.0475,
+      "glucoseType": "Meter",
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    },
+    {
+      "_id": "SEQpVs84",
+      "app": "asd",
+      "created_at": "2026-10-26T22:45:35Z",
+      "date": 1793054735000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Carb Correction",
+      "reason": "3",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "68V9KDX1",
+      "created_at": "2026-10-26T22:45:35Z",
+      "date": 1793054735000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "notes": "bulk delete 1",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "QmDryUWP",
+      "carbs": 62,
+      "created_at": "2026-10-26T22:45:35Z",
+      "date": 1793054735000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "insulin": 6.2,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "xV4tSwDU",
+      "carbs": 18,
+      "created_at": "2026-10-26T22:44:35Z",
+      "date": 1793054675000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Snack Bolus",
+      "insulin": 1.6,
+      "notes": "Afternoon snack",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "476oG0Uw",
+      "absolute": 0.35,
+      "created_at": "2026-10-26T22:44:35Z",
+      "date": 1793054675000,
+      "duration": 60,
+      "durationInMilliseconds": 3600000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temp Basal",
+      "rate": 0.35,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "y9Yr3hPQ",
+      "app": "asd",
+      "created_at": "2026-10-26T22:43:35Z",
+      "date": 1793054615000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Profile Switch",
+      "reason": "5",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "grA07pgY",
+      "created_at": "2026-10-26T22:43:35Z",
+      "date": 1793054615000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Correction Bolus",
+      "glucose": 13.2,
+      "glucoseType": "Sensor",
+      "insulin": 1.3,
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    },
+    {
+      "_id": "DjP6kRo3",
+      "carbs": 70,
+      "created_at": "2026-10-26T22:42:35Z",
+      "date": 1793054555000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Bolus Wizard",
+      "glucose": 11.7,
+      "glucoseType": "Finger",
+      "insulin": 7.8,
+      "notes": "Suggested by pump wizard",
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    },
+    {
+      "_id": "ru5S5JOq",
+      "created_at": "2026-10-26T22:42:35Z",
+      "date": 1793054555000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Site Change",
+      "notes": "Pump cannula moved to left arm.",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "qkHQuyzt",
+      "carbs": 85,
+      "created_at": "2026-10-26T22:41:35Z",
+      "date": 1793054495000,
+      "duration": 180,
+      "enteredBy": "pwd_phone",
+      "eventType": "Combo Bolus",
+      "insulin": 8.4,
+      "splitExt": 60,
+      "splitNow": 40,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "6mEewt0o",
+      "created_at": "2026-10-26T22:41:35Z",
+      "date": 1793054495000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Sensor Start",
+      "notes": "Started new CGM sensor.",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "bTdY7ha5",
+      "absolute": 0.4,
+      "app": "AndroidAPS",
+      "created_at": "2026-10-26T22:40:35Z",
+      "date": 1793054435000,
+      "duration": 60,
+      "durationInMilliseconds": 3600000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temp Basal",
+      "rate": 0.4,
+      "reason": "Exercise",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "F589gPib",
+      "carbs": 16,
+      "created_at": "2026-10-26T22:40:35Z",
+      "date": 1793054435000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Carb Correction",
+      "notes": "Hypo treatment",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "3TRuJA6q",
+      "created_at": "2026-10-26T22:40:35Z",
+      "date": 1793054435000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "notes": "Running higher than usual after breakfast.",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "3OaoQk8S",
+      "absolute": 0.45,
+      "created_at": "2026-10-26T22:39:35Z",
+      "date": 1793054375000,
+      "duration": 30,
+      "durationInMilliseconds": 1800000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temp Basal",
+      "rate": 0.45,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "yNmRxrde",
+      "created_at": "2026-10-26T22:39:35Z",
+      "date": 1793054375000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Announcement",
+      "name": "Announcement",
+      "notes": "School swimming lesson today.",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "drgSKQZ7",
+      "app": "AndroidAPS",
+      "correctionRange": [
+        7,
+        8
+      ],
+      "created_at": "2026-10-26T22:38:35Z",
+      "date": 1793054315000,
+      "duration": 120,
+      "durationInMilliseconds": 7200000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temporary Target",
+      "reason": "Exercise",
+      "subject": "pwd_phone",
+      "targetBottom": 7,
+      "targetTop": 8,
+      "utcOffset": 780
+    },
+    {
+      "_id": "i4cShNYW",
+      "app": "asd",
+      "created_at": "2026-10-26T22:38:35Z",
+      "date": 1793054315000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Question",
+      "name": "Question",
+      "reason": "10",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "d0C1CkGy",
+      "absolute": 0,
+      "created_at": "2026-10-26T22:38:35Z",
+      "date": 1793054315000,
+      "duration": 90,
+      "durationInMilliseconds": 5400000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temp Basal",
+      "rate": 0,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "CJyrf26v",
+      "app": "AndroidAPS",
+      "created_at": "2026-10-26T22:37:35Z",
+      "date": 1793054255000,
+      "duration": 0,
+      "durationInMilliseconds": 0,
+      "enteredBy": "pwd_phone",
+      "eventType": "Profile Switch",
+      "name": "Weekend",
+      "profile": "Weekend",
+      "profileJson": "{\"units\":\"mmol/L\"}",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "QkZWwNuG",
+      "absolute": 1.2,
+      "created_at": "2026-10-26T22:37:35Z",
+      "date": 1793054255000,
+      "duration": 120,
+      "durationInMilliseconds": 7200000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temp Basal",
+      "rate": 1.2,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "XkzA6ddm",
+      "created_at": "2026-10-26T22:37:35Z",
+      "date": 1793054255000,
+      "enteredBy": "pwd_phone",
+      "eventType": "BG Check",
+      "glucose": 6.8,
+      "glucoseType": "Finger",
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    },
+    {
+      "_id": "Kad7fAQ0",
+      "app": "Carer",
+      "created_at": "2026-10-26T22:36:35Z",
+      "date": 1793054195000,
+      "duration": 45,
+      "enteredBy": "pwd_phone",
+      "eventType": "Exercise",
+      "notes": "Bike ride",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "4GFaYZ63",
+      "correctionRange": [
+        6,
+        7
+      ],
+      "created_at": "2026-10-26T22:36:35Z",
+      "date": 1793054195000,
+      "duration": 60,
+      "durationInMilliseconds": 3600000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temporary Target",
+      "reason": "Eating Soon",
+      "subject": "pwd_phone",
+      "targetBottom": 6,
+      "targetTop": 7,
+      "utcOffset": 780
+    },
+    {
+      "_id": "pl3y7a90",
+      "carbs": 48,
+      "created_at": "2026-10-26T22:36:35Z",
+      "date": 1793054195000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Bolus Wizard",
+      "glucose": 9.1,
+      "glucoseType": "Finger",
+      "insulin": 4.2,
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    },
+    {
+      "_id": "MEq4yzJ7",
+      "correctionRange": [
+        8,
+        9
+      ],
+      "created_at": "2026-10-26T22:35:35Z",
+      "date": 1793054135000,
+      "duration": 120,
+      "durationInMilliseconds": 7200000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temporary Target",
+      "reason": "Exercise",
+      "subject": "pwd_phone",
+      "targetBottom": 8,
+      "targetTop": 9,
+      "utcOffset": 780
+    },
+    {
+      "_id": "wZO5RnOy",
+      "carbs": 12,
+      "created_at": "2026-10-26T22:35:35Z",
+      "date": 1793054135000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Carb Correction",
+      "notes": "Treated mild low",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "5B9Rm9xc",
+      "app": "Carer",
+      "created_at": "2026-10-26T22:34:35Z",
+      "date": 1793054075000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "notes": "Running higher after lunch",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "sk5S3P70",
+      "created_at": "2026-10-26T22:34:35Z",
+      "date": 1793054075000,
+      "duration": 75,
+      "enteredBy": "pwd_phone",
+      "eventType": "Exercise",
+      "notes": "Mountain biking",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "25gWH9tx",
+      "carbs": 65,
+      "created_at": "2026-10-26T22:34:35Z",
+      "date": 1793054075000,
+      "duration": 120,
+      "enteredBy": "pwd_phone",
+      "eventType": "Combo Bolus",
+      "insulin": 6.5,
+      "splitExt": 50,
+      "splitNow": 50,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "t4O3P6YV",
+      "app": "Carer",
+      "created_at": "2026-10-26T22:33:35Z",
+      "date": 1793054015000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Announcement",
+      "name": "Announcement",
+      "notes": "Going swimming today",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "O7Dx3zS7",
+      "created_at": "2026-10-26T22:33:35Z",
+      "date": 1793054015000,
+      "duration": 0,
+      "durationInMilliseconds": 0,
+      "enteredBy": "pwd_phone",
+      "eventType": "Profile Switch",
+      "name": "Weekend",
+      "profile": "Weekend",
+      "profileJson": "{\"units\":\"mmol/L\"}",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "cOB0PYR3",
+      "created_at": "2026-10-26T22:33:35Z",
+      "date": 1793054015000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Correction Bolus",
+      "glucose": 13.7,
+      "insulin": 1.4,
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    },
+    {
+      "_id": "pn6Xd1Tb",
+      "app": "Carer",
+      "created_at": "2026-10-26T22:32:35Z",
+      "date": 1793053955000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Question",
+      "name": "Question",
+      "notes": "Should basal be adjusted overnight?",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "xOLzE0Eq",
+      "created_at": "2026-10-26T22:32:35Z",
+      "date": 1793053955000,
+      "duration": 0,
+      "durationInMilliseconds": 0,
+      "enteredBy": "pwd_phone",
+      "eventType": "Profile Switch",
+      "name": "Sick Day",
+      "notes": "Activated manually",
+      "profile": "Sick Day",
+      "profileJson": "{\"units\":\"mmol/L\"}",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "cnj3Zm12",
+      "created_at": "2026-10-26T22:32:35Z",
+      "date": 1793053955000,
+      "enteredBy": "pwd_phone",
+      "eventType": "D.A.D. Alert",
+      "notes": "Missed meal bolus detected.",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "6eIoJWlX",
+      "created_at": "2026-10-26T22:31:35Z",
+      "date": 1793053895000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Sensor Start",
+      "notes": "Dexcom G7",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "EZsgGaAK",
+      "created_at": "2026-10-26T22:31:35Z",
+      "date": 1793053895000,
+      "duration": 45,
+      "enteredBy": "pwd_phone",
+      "eventType": "Exercise",
+      "notes": "Soccer training",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "98P3Ogky",
+      "created_at": "2026-10-26T22:30:35Z",
+      "date": 1793053835000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Sensor Change",
+      "notes": "New sensor inserted",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "Jz4uUXAl",
+      "created_at": "2026-10-26T22:30:35Z",
+      "date": 1793053835000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Insulin Change",
+      "notes": "Started new insulin vial.",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "F8R9fNmI",
+      "created_at": "2026-10-26T22:29:35Z",
+      "date": 1793053775000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Site Change",
+      "notes": "Right thigh",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "s1oDVPyQ",
+      "carbs": 72,
+      "created_at": "2026-10-26T22:29:35Z",
+      "date": 1793053775000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "insulin": 7,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "nXtM8zas",
+      "created_at": "2026-10-26T22:28:35Z",
+      "date": 1793053715000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Pump Battery Change",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "8UbiKRoM",
+      "created_at": "2026-10-26T22:28:35Z",
+      "date": 1793053715000,
+      "enteredBy": "pwd_phone",
+      "eventType": "OpenAPS Offline",
+      "reason": "Phone battery depleted",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "r33hUEpn",
+      "app": "Pump",
+      "created_at": "2026-10-26T22:27:35Z",
+      "date": 1793053655000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Pump Battery Change",
+      "notes": "Battery replaced",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "0724LwyB",
+      "created_at": "2026-10-26T22:27:35Z",
+      "date": 1793053655000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Insulin Change",
+      "notes": "Started new pen",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "3YG9VK3f",
+      "created_at": "2026-10-26T22:27:35Z",
+      "date": 1793053655000,
+      "duration": 0,
+      "durationInMilliseconds": 0,
+      "enteredBy": "pwd_phone",
+      "eventType": "Profile Switch",
+      "name": "Weekend",
+      "profile": "Weekend",
+      "profileJson": "{\"units\":\"mmol/L\"}",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "83v3VZ2p",
+      "app": "AndroidAPS",
+      "created_at": "2026-10-26T22:26:35Z",
+      "date": 1793053595000,
+      "enteredBy": "pwd_phone",
+      "eventType": "OpenAPS Offline",
+      "reason": "Phone disconnected",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "rXdh245M",
+      "created_at": "2026-10-26T22:26:35Z",
+      "date": 1793053595000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Announcement",
+      "name": "Announcement",
+      "notes": "Travelling today",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "9yHij1BD",
+      "created_at": "2026-10-26T22:26:35Z",
+      "date": 1793053595000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Pump Battery Change",
+      "notes": "Battery replaced.",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "XK8AINmp",
+      "app": "AndroidAPS",
+      "created_at": "2026-10-26T22:25:35Z",
+      "date": 1793053535000,
+      "enteredBy": "pwd_phone",
+      "eventType": "D.A.D. Alert",
+      "notes": "Possible missed bolus",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "Ck5nCxZo",
+      "created_at": "2026-10-26T22:25:35Z",
+      "date": 1793053535000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Question",
+      "name": "Question",
+      "notes": "Should I reduce basal overnight?",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "KIMjME1e",
+      "created_at": "2026-10-26T22:24:35Z",
+      "date": 1793053475000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "notes": "Forgot pre-bolus",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "mNuioabp",
+      "created_at": "2026-10-26T22:24:35Z",
+      "date": 1793053475000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Sensor Change",
+      "notes": "Dexcom G7 sensor replaced.",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "4IxJQYwN",
+      "created_at": "2026-10-26T22:23:35Z",
+      "date": 1793053415000,
+      "enteredBy": "pwd_phone",
+      "eventType": "OpenAPS Offline",
+      "reason": "Rig lost WiFi",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "Zmo5U3Y6",
+      "carbs": 18,
+      "created_at": "2026-10-26T22:23:35Z",
+      "date": 1793053415000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Snack Bolus",
+      "insulin": 1.8,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "4EQwrK9a",
+      "created_at": "2026-10-26T22:22:35Z",
+      "date": 1793053355000,
+      "enteredBy": "pwd_phone",
+      "eventType": "D.A.D. Alert",
+      "notes": "Possible missed bolus",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "Ai3C2vR0",
+      "correctionRange": [
+        7,
+        8
+      ],
+      "created_at": "2026-10-26T22:22:35Z",
+      "date": 1793053355000,
+      "duration": 90,
+      "durationInMilliseconds": 5400000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Temporary Target",
+      "reason": "Exercise",
+      "subject": "pwd_phone",
+      "targetBottom": 7,
+      "targetTop": 8,
+      "utcOffset": 780
+    },
+    {
+      "_id": "H2A2HyVf",
+      "created_at": "2026-10-26T22:21:35Z",
+      "date": 1793053295000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Cannula Fill",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "CeFnHhfq",
+      "created_at": "2026-10-26T22:20:35Z",
+      "date": 1793053235000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Prime",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "mOC1V5Fp",
+      "created_at": "2026-10-26T22:19:35Z",
+      "date": 1793053175000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Reservoir Change",
+      "notes": "Filled with 200U",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "CrVxS5CW",
+      "created_at": "2026-10-26T22:18:35Z",
+      "date": 1793053115000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Calibration",
+      "glucose": 6.2,
+      "glucoseType": "Finger",
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    },
+    {
+      "_id": "3hKG98c7",
+      "created_at": "2026-10-26T22:17:35Z",
+      "date": 1793053055000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Bolus",
+      "insulin": 2.8,
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "kww7KBY5",
+      "created_at": "2026-10-26T22:16:35Z",
+      "date": 1793052995000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Correction Bolus",
+      "insulin": 2.1,
+      "notes": "Automatic correction",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "foYMx8XB",
+      "carbs": 95,
+      "created_at": "2026-10-26T22:15:35Z",
+      "date": 1793052935000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "insulin": 9.5,
+      "notes": "Pizza",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    },
+    {
+      "_id": "Y778rFAG",
+      "app": "AAPS",
+      "carbs": 25,
+      "created_at": "2026-08-25T02:17:57Z",
+      "date": 1787624277000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Meal Bolus",
+      "notes": "",
+      "subject": "pwd_phone",
+      "utcOffset": 720
+    }
+  ],
+  "durationMs": 3
+}

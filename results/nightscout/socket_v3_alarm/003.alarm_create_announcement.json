@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments?token=write-a373336b5d4c40ff",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -15,7 +15,7 @@
       "enteredBy": "socket-test",
       "eventType": "Announcement",
       "isAnnouncement": true,
-      "notes": "socket test announcement 1792578726655"
+      "notes": "socket test announcement 1792617602598"
     }
   },
   "statusCode": 200,
@@ -30,10 +30,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 10:32:06 GMT"
+      "Wed, 21 Oct 2026 21:20:02 GMT"
     ],
     "Etag": [
-      "W/\"d6-bNP2/GmzJxLRwVx58ig2iMPoXsI\""
+      "W/\"d6-zzOlJVL548VALDjxnRVGLSLK5dc\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -47,14 +47,14 @@
   },
   "body": [
     {
-      "_id": "6ad894a635ff2fed012a4322",
-      "created_at": "2026-10-21T10:32:06.656Z",
+      "_id": "6ad92c8235fb876db084a4f8",
+      "created_at": "2026-10-21T21:20:02.674Z",
       "enteredBy": "socket-test",
       "eventType": "Announcement",
       "isAnnouncement": true,
-      "notes": "socket test announcement 1792578726655",
+      "notes": "socket test announcement 1792617602598",
       "utcOffset": 0
     }
   ],
-  "durationMs": 4
+  "durationMs": 3
 }

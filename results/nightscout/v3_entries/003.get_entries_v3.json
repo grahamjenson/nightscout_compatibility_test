@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v3/entries/211d0d27-19a2-5b44-a6fc-32d8f7393a8f",
+    "url": "http://localhost:1337/api/v3/entries/b1d97b63-7739-5430-8748-3313c1d7f331",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
       ],
       "Content-Type": [
         "application/json"
@@ -28,13 +28,13 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Vary": [
       "Accept, Accept-Encoding"
@@ -43,19 +43,19 @@
   "body": {
     "result": {
       "app": "test-app",
-      "created_at": "2026-09-04T02:40:00.328Z",
-      "date": 1788489600328,
-      "dateString": "2026-09-04T14:40:00+12:00",
+      "created_at": "2026-10-21T21:19:54.503Z",
+      "date": 1792617594503,
+      "dateString": "2026-10-22T10:19:54+13:00",
       "device": "test-device",
       "direction": "Flat",
       "filtered": 139.2,
-      "identifier": "211d0d27-19a2-5b44-a6fc-32d8f7393a8f",
-      "mills": 1788489600328,
+      "identifier": "b1d97b63-7739-5430-8748-3313c1d7f331",
+      "mills": 1792617594503,
       "noise": 1,
       "rssi": -62,
       "sgv": 100,
-      "srvCreated": 1788489600387,
-      "srvModified": 1788489600387,
+      "srvCreated": 1792617594574,
+      "srvModified": 1792617594574,
       "subject": "write",
       "trend": 3,
       "type": "sgv",
@@ -64,5 +64,5 @@
     },
     "status": 200
   },
-  "durationMs": 2
+  "durationMs": 1
 }

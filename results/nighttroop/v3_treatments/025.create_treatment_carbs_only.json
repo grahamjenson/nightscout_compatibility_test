@@ -2,13 +2,13 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/treatments",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -17,51 +17,51 @@
     "body": {
       "app": "Carer",
       "carbs": 20,
-      "created_at": "2026-09-04T14:27:11+12:00",
+      "created_at": "2026-10-27T11:35:35+13:00",
       "eventType": "Carb Correction",
       "notes": "Hypoglycemia treatment"
     }
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "438"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611407\""
+      "W/\"1793054915606\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/CY090lk7"
+      "/api/v3/treatments/wZO5RnOy"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
-    "deduplicatedIdentifier": "CY090lk7",
-    "identifier": "CY090lk7",
+    "deduplicatedIdentifier": "wZO5RnOy",
+    "identifier": "wZO5RnOy",
     "isDeduplication": true,
-    "lastModified": 1788489611407,
+    "lastModified": 1793054915606,
     "result": {
       "carbs": 12,
-      "created_at": "2026-09-04T02:27:11Z",
-      "date": 1788488831000,
+      "created_at": "2026-10-26T22:35:35Z",
+      "date": 1793054135000,
       "enteredBy": "pwd_phone",
       "eventType": "Carb Correction",
-      "identifier": "CY090lk7",
+      "identifier": "wZO5RnOy",
       "isReadOnly": false,
       "isValid": true,
       "notes": "Treated mild low",
-      "srvCreated": 1788489611407,
-      "srvModified": 1788489611407,
+      "srvCreated": 1793054915606,
+      "srvModified": 1793054915606,
       "subject": "pwd_phone",
-      "utcOffset": 720
+      "utcOffset": 780
     },
     "status": 200
   },

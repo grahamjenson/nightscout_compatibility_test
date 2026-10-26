@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/storage/subscribe",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/storage/subscribe",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/storage",
+    "namespace": "/storage",
+    "event": "subscribe",
+    "connection": "storage_bad_connect",
+    "ack": true,
+    "args": [
+      {
+        "accessToken": "not-a-real-token",
+        "collections": [
+          "entries"
+        ]
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "message": "Missing or bad accessToken",
+    "success": false
+  },
+  "durationMs": 0
+}

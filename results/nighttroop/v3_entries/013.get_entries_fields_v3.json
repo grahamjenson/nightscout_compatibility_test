@@ -1,0 +1,103 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/entries?fields=date,sgv,notes",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Etag": [
+      "W/\"1793054915717\""
+    ],
+    "Last-Modified": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "date": 1793054915717,
+        "sgv": 12.432
+      },
+      {
+        "date": 1793054915499,
+        "sgv": 5.55
+      },
+      {
+        "date": 1793054915000,
+        "sgv": 4.995
+      },
+      {
+        "date": 1793054915000,
+        "sgv": 5.55
+      },
+      {
+        "date": 1793054855514,
+        "sgv": 8.3805
+      },
+      {
+        "date": 1793054855000,
+        "sgv": 5.8
+      },
+      {
+        "date": 1793054795514,
+        "sgv": 8.325
+      },
+      {
+        "date": 1793054795000,
+        "sgv": 8.0475
+      },
+      {
+        "date": 1793054615000,
+        "sgv": 13.2
+      },
+      {
+        "date": 1793054555000,
+        "sgv": 11.7
+      },
+      {
+        "date": 1793054255000,
+        "sgv": 6.8
+      },
+      {
+        "date": 1793054195000,
+        "sgv": 9.1
+      },
+      {
+        "date": 1793054015000,
+        "sgv": 13.7
+      },
+      {
+        "date": 1793053115000,
+        "sgv": 6.2
+      },
+      {
+        "date": 1767355994000,
+        "sgv": 5.55
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 0
+}

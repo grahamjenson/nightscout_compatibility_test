@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "CONNECT",
+    "path": "/socket.io/alarm/connect",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/alarm/connect",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/alarm",
+    "namespace": "/alarm",
+    "event": "connect",
+    "connection": "alarm_levels_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "sid": "QchjI4Plk598EjkCZOLS"
+  },
+  "durationMs": 1
+}

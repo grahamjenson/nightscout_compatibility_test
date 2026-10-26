@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v2/authorization/request/token=QWNlRzVYclBHSHJaQ1QySEVCdDJpTWpSc1dON0JHc3ZCb0lOam9RSFBzVmhjY1R3M3BpQ2JoZG9ESWhZQndkWVZydm9seEhTUHYvTzlYOWJiQnVEbjBaSFJFcXRKNjhE",
+    "url": "http://davezzzz.ns.localhost:8080/api/v2/authorization/request/token=QWNlRzVYcFVKT3h6ekZFMkRBOXdPL3F6UTBtN0daN0FZbkxma2ROYkN5RWtkUm9JcDd0QnpQOXpmWXNkMUtNQmxTOWpIVEd2QUtxVUwxUXNIU3lrcUVCdEdGaWFYREpt",
     "headers": {
       "Accept": [
         "application/json"
@@ -15,26 +15,26 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "333"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
-    "exp": 1788493211,
-    "iat": 1788489611,
+    "exp": 1793058515,
+    "iat": 1793054915,
     "permissionGroups": [
       [
         "api:*:read"
       ]
     ],
     "sub": "read_only",
-    "token": "eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcmVhZCIsICJzdWIiOiJyZWFkX29ubHkifQ.n1CbInLNwBFuVIjISC7zctFXHRNPdTyr1IC722k1Yg4"
+    "token": "eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcmVhZCIsICJzdWIiOiJyZWFkX29ubHkifQ.1LHmXMH_5yivc9lzjUqMdDFyDeBLan6M3ItpK-AFSgU"
   },
-  "durationMs": 1
+  "durationMs": 2
 }

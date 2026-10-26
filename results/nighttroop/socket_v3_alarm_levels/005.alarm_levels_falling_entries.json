@@ -1,0 +1,118 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/entries?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "date": 1793054018120,
+        "device": "alarm-test",
+        "sgv": 90,
+        "type": "sgv"
+      },
+      {
+        "date": 1793054318120,
+        "device": "alarm-test",
+        "sgv": 82,
+        "type": "sgv"
+      },
+      {
+        "date": 1793054618120,
+        "device": "alarm-test",
+        "sgv": 75,
+        "type": "sgv"
+      },
+      {
+        "date": 1793054918120,
+        "device": "alarm-test",
+        "sgv": 70,
+        "type": "sgv"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:38 GMT"
+    ],
+    "Etag": [
+      "W/\"1793054918122\""
+    ],
+    "Last-Modified": [
+      "Mon, 26 Oct 2026 22:48:38 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": [
+    {
+      "_id": "Al8sH3e5",
+      "created_at": "2026-10-26T22:33:38.12Z",
+      "date": 1793054018120,
+      "dateString": "2026-10-26T22:33:38.12Z",
+      "device": "alarm-test",
+      "mbg": 4.995,
+      "mills": 1793054018120,
+      "sgv": 4.995,
+      "subject": "pwd_phone",
+      "type": "sgv",
+      "units": "mmol/L",
+      "utcOffset": 0
+    },
+    {
+      "_id": "pd9U2Fet",
+      "created_at": "2026-10-26T22:38:38.12Z",
+      "date": 1793054318120,
+      "dateString": "2026-10-26T22:38:38.12Z",
+      "device": "alarm-test",
+      "mbg": 4.551,
+      "mills": 1793054318120,
+      "sgv": 4.551,
+      "subject": "pwd_phone",
+      "type": "sgv",
+      "units": "mmol/L",
+      "utcOffset": 0
+    },
+    {
+      "_id": "8V5iQ6xa",
+      "created_at": "2026-10-26T22:43:38.12Z",
+      "date": 1793054618120,
+      "dateString": "2026-10-26T22:43:38.12Z",
+      "device": "alarm-test",
+      "mbg": 4.1625,
+      "mills": 1793054618120,
+      "sgv": 4.1625,
+      "subject": "pwd_phone",
+      "type": "sgv",
+      "units": "mmol/L",
+      "utcOffset": 0
+    },
+    {
+      "_id": "150c72rl",
+      "created_at": "2026-10-26T22:48:38.12Z",
+      "date": 1793054918120,
+      "dateString": "2026-10-26T22:48:38.12Z",
+      "device": "alarm-test",
+      "mbg": 3.885,
+      "mills": 1793054918120,
+      "sgv": 3.885,
+      "subject": "pwd_phone",
+      "type": "sgv",
+      "units": "mmol/L",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 2
+}

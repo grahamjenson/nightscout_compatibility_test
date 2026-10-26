@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries.json?token=write-d1e2709a9d2611d2&count=1",
+    "url": "http://localhost:1337/api/v1/entries.json?token=write-749a8d3839b8b11c&count=1",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,16 +25,16 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"141-dm+Z2SSUlP2aYATE+6ZLn2EbMrU\""
+      "W/\"141-jbUCjkCz+X6VWOs3Kt+3az4oyq4\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Vary": [
       "Accept, Accept-Encoding"
@@ -45,23 +45,23 @@
   },
   "body": [
     {
-      "_id": "6a9a2f7f49a97a563d84f765",
+      "_id": "6ad92c7a35fb876db084a2c5",
       "app": "test-app",
-      "date": 1788489599863,
-      "dateString": "2026-09-04T02:39:59.000Z",
+      "date": 1792617594135,
+      "dateString": "2026-10-21T21:19:54.000Z",
       "device": "test-device",
       "direction": "Flat",
       "filtered": 139.2,
-      "mills": 1788489599863,
+      "mills": 1792617594135,
       "noise": 1,
       "rssi": -62,
       "sgv": 100,
-      "sysTime": "2026-09-04T02:39:59.000Z",
+      "sysTime": "2026-10-21T21:19:54.000Z",
       "trend": 3,
       "type": "sgv",
       "unfiltered": 141.7,
-      "utcOffset": 720
+      "utcOffset": 780
     }
   ],
-  "durationMs": 3
+  "durationMs": 2
 }

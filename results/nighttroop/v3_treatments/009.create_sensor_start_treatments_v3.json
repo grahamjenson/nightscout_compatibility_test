@@ -2,13 +2,13 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/treatments",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "asd",
-      "created_at": "2026-09-04T14:33:11+12:00",
+      "created_at": "2026-10-27T11:41:35+13:00",
       "eventType": "Sensor Start",
       "insulin": 2,
       "reason": "7"
@@ -24,43 +24,43 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "431"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611417\""
+      "W/\"1793054915619\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/G0tU86CI"
+      "/api/v3/treatments/6mEewt0o"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
-    "deduplicatedIdentifier": "G0tU86CI",
-    "identifier": "G0tU86CI",
+    "deduplicatedIdentifier": "6mEewt0o",
+    "identifier": "6mEewt0o",
     "isDeduplication": true,
-    "lastModified": 1788489611417,
+    "lastModified": 1793054915619,
     "result": {
-      "created_at": "2026-09-04T02:33:11Z",
-      "date": 1788489191000,
+      "created_at": "2026-10-26T22:41:35Z",
+      "date": 1793054495000,
       "enteredBy": "pwd_phone",
       "eventType": "Sensor Start",
-      "identifier": "G0tU86CI",
+      "identifier": "6mEewt0o",
       "isReadOnly": false,
       "isValid": true,
       "notes": "Started new CGM sensor.",
-      "srvCreated": 1788489611417,
-      "srvModified": 1788489611417,
+      "srvCreated": 1793054915619,
+      "srvModified": 1793054915619,
       "subject": "pwd_phone",
-      "utcOffset": 720
+      "utcOffset": 780
     },
     "status": 200
   },

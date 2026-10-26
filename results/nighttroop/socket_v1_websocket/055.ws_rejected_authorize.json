@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/authorize",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/authorize",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "authorize",
+    "connection": "ws_rejected_connect",
+    "args": [
+      {
+        "client": "web",
+        "history": 1,
+        "token": "not-a-real-token"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": null,
+  "durationMs": 0
+}

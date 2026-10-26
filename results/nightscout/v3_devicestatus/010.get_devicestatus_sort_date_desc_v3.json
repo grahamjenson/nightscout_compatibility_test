@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
       ],
       "Content-Type": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -38,10 +38,10 @@
     "result": [
       {
         "app": "test-app",
-        "created_at": "2026-09-04T02:40:00.000Z",
-        "date": 1788489600000,
+        "created_at": "2026-10-21T21:19:54.000Z",
+        "date": 1792617594000,
         "device": "aaps",
-        "identifier": "33a6c737-04a9-5d4a-886c-779e72b7a2c8",
+        "identifier": "ed3127fc-c514-5a19-8206-15dedafefc58",
         "loop": {
           "cob": {
             "cob": 18
@@ -93,29 +93,29 @@
             "suspended": false
           }
         },
-        "srvCreated": 1788489600300,
-        "srvModified": 1788489600300,
+        "srvCreated": 1792617594486,
+        "srvModified": 1792617594486,
         "subject": "write",
         "uploader": {
           "battery": 87,
           "batteryVoltage": 4.05
         },
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "app": "test-app",
-        "created_at": "2026-09-04T02:39:00.000Z",
-        "date": 1788489540000,
+        "created_at": "2026-10-21T21:18:54.000Z",
+        "date": 1792617534000,
         "device": "aapsv3",
-        "identifier": "33a6c737-04a9-5d4a-886c-779e72b7a2c8custom",
-        "srvCreated": 1788489600304,
-        "srvModified": 1788489600304,
+        "identifier": "ed3127fc-c514-5a19-8206-15dedafefc58custom",
+        "srvCreated": 1792617594489,
+        "srvModified": 1792617594489,
         "subject": "write",
         "uploader": {
           "battery": 87,
           "batteryVoltage": 4.05
         },
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "app": "AAPS",
@@ -123,7 +123,7 @@
         "created_at": "2026-08-16T22:39:48.777Z",
         "date": 1786919988777,
         "device": "openaps://CUBOT KINGKONG MINI 3",
-        "identifier": "6a9a2f7f6e924a337c97e393",
+        "identifier": "6ad92c7ab5c4915f41a3dc7d",
         "isCharging": false,
         "openaps": {
           "iob": {
@@ -269,31 +269,31 @@
         "utcOffset": 0
       },
       {
-        "created_at": "2026-09-04T02:38:59.000Z",
+        "created_at": "2026-10-21T21:18:54.000Z",
         "device": "aaps1",
-        "identifier": "6a9a2f7f6e924a337c97e391",
-        "srvCreated": 1788489539000,
-        "srvModified": 1788489539000,
+        "identifier": "6ad92c7ab5c4915f41a3dc7b",
+        "srvCreated": 1792617534000,
+        "srvModified": 1792617534000,
         "uploader": {
           "battery": 87,
           "batteryVoltage": 4.05
         },
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
-        "created_at": "2026-09-04T02:37:59.000Z",
+        "created_at": "2026-10-21T21:17:54.000Z",
         "device": "aaps",
-        "identifier": "6a9a2f7f6e924a337c97e392",
-        "srvCreated": 1788489479000,
-        "srvModified": 1788489479000,
+        "identifier": "6ad92c7ab5c4915f41a3dc7c",
+        "srvCreated": 1792617474000,
+        "srvModified": 1792617474000,
         "uploader": {
           "battery": 87,
           "batteryVoltage": 4.05
         },
-        "utcOffset": 720
+        "utcOffset": 780
       }
     ],
     "status": 200
   },
-  "durationMs": 3
+  "durationMs": 4
 }

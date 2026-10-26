@@ -1,0 +1,73 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v3/entries?sort$desc=date&limit=100&fields=sgv,date,direction",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "276"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Wed, 21 Oct 2026 21:19:54 GMT"
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept, Accept-Encoding"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "date": 1792617594514,
+        "sgv": 224
+      },
+      {
+        "date": 1792617594503,
+        "direction": "Flat",
+        "sgv": 100
+      },
+      {
+        "date": 1792617594135,
+        "direction": "Flat",
+        "sgv": 100
+      },
+      {
+        "date": 1792617594128,
+        "sgv": 100
+      },
+      {
+        "date": 1792617474507,
+        "direction": "Flat",
+        "sgv": 90
+      },
+      {
+        "date": 1767355994,
+        "sgv": 100
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 1
+}

@@ -1,0 +1,43 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/food?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "_id": "f8hU2m7o",
+      "carbs": 18,
+      "category": "Fruit",
+      "gi": 2,
+      "name": "Green Apple",
+      "portion": 1,
+      "subcategory": "Fresh",
+      "type": "food",
+      "unit": "pcs"
+    }
+  },
+  "statusCode": 400,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": {
+    "message": "Field name cannot be modified by the client",
+    "status": 400
+  },
+  "durationMs": 0
+}

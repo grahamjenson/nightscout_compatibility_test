@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbAdd",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_clients_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "treatments",
+        "data": {
+          "created_at": "2026-10-27T11:48:36+13:00",
+          "enteredBy": "socket-test-dedup",
+          "eventType": "Note",
+          "notes": "dedup over socket.io"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": [
+    {
+      "_id": "T8600T74",
+      "created_at": "2026-10-26T22:48:36Z",
+      "date": 1793054916000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "notes": "dedup over socket.io",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    }
+  ],
+  "durationMs": 1
+}

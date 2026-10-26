@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/activity?token=write-d1e2709a9d2611d2&find[activityType]=walking",
+    "url": "http://localhost:1337/api/v1/activity?token=write-749a8d3839b8b11c&find[activityType]=walking",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,16 +25,16 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"ae-Hv3hDsh971F2ZddAsnjGevWkowY\""
+      "W/\"ae-JMHWvTIlcURHERgAjD5igYwQy+A\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:53 GMT"
     ],
     "Vary": [
       "Accept-Encoding"
@@ -45,9 +45,9 @@
   },
   "body": [
     {
-      "_id": "6a9a2f7f49a97a563d84f740",
+      "_id": "6ad92c7a35fb876db084a2a2",
       "activityType": "walking",
-      "created_at": "2026-09-04T14:39:59+12:00",
+      "created_at": "2026-10-22T10:19:53+13:00",
       "duration": 3600,
       "heartRate": 120,
       "notes": "activity walking",

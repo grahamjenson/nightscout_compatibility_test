@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/alarm/subscribe",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/alarm/subscribe",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/alarm",
+    "namespace": "/alarm",
+    "event": "subscribe",
+    "connection": "alarm_jwt_connect",
+    "ack": true,
+    "args": [
+      {
+        "accessToken": "not-a-real-token"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "message": "Missing or bad accessToken",
+    "success": false
+  },
+  "durationMs": 0
+}

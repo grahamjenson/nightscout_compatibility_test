@@ -10,7 +10,7 @@
     "ack": true,
     "args": [
       {
-        "accessToken": "write-a373336b5d4c40ff",
+        "accessToken": "write-749a8d3839b8b11c",
         "collections": [
           "entries",
           "treatments"
@@ -26,5 +26,5 @@
     ],
     "success": true
   },
-  "durationMs": 0
+  "durationMs": 1
 }

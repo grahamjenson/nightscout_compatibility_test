@@ -1,0 +1,39 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbAdd",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_unset_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "treatments",
+        "data": {
+          "carbs": 5,
+          "created_at": "2026-10-27T11:48:36+13:00",
+          "enteredBy": "socket-test-unset",
+          "eventType": "Note",
+          "notes": "unset over socket.io"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": [
+    {
+      "_id": "25Du3tP5",
+      "carbs": 5,
+      "created_at": "2026-10-26T22:48:36Z",
+      "date": 1793054916000,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "notes": "unset over socket.io",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    }
+  ],
+  "durationMs": 1
+}

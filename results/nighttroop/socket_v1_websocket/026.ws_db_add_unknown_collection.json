@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbAdd",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_unset_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "notacollection",
+        "data": {
+          "a": 1
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "Wrong collection"
+  },
+  "durationMs": 0
+}

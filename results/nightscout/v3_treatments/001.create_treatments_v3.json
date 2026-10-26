@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWQxZTI3MDlhOWQyNjExZDIiLCJpYXQiOjE3ODg0ODk1OTksImV4cCI6MTc4ODUxODM5OX0.FFghRVmH0Ta1DiZcVy7AOdhTQjYZdoEGp6yTgqzP2NI"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
       ],
       "Content-Type": [
         "application/json"
@@ -18,7 +18,7 @@
       "absolute": null,
       "app": "asd",
       "carbs": 45,
-      "created_at": "2026-09-04T14:39:59+12:00",
+      "created_at": "2026-10-22T10:19:53+13:00",
       "duration": 0,
       "enteredBy": "aaps-loop",
       "eventType": "Meal Bolus",
@@ -45,25 +45,25 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/afe50424-623b-5047-9e42-ec9c8b5f8e18"
+      "/api/v3/treatments/cbc957e4-7b3d-572b-abd6-ab519a195fae"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "afe50424-623b-5047-9e42-ec9c8b5f8e18",
-    "lastModified": 1788489600653,
+    "identifier": "cbc957e4-7b3d-572b-abd6-ab519a195fae",
+    "lastModified": 1792617594844,
     "status": 201
   },
-  "durationMs": 6
+  "durationMs": 5
 }

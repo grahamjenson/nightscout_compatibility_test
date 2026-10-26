@@ -2,13 +2,13 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/treatments",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -18,7 +18,7 @@
       "absolute": null,
       "app": "asd",
       "carbs": 45,
-      "created_at": "2026-09-04T14:40:11+12:00",
+      "created_at": "2026-10-27T11:48:35+13:00",
       "duration": 0,
       "enteredBy": "aaps-loop",
       "eventType": "Meal Bolus",
@@ -35,44 +35,44 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "457"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611458\""
+      "W/\"1793054915669\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/R1eNolpU"
+      "/api/v3/treatments/treatmentv1t1"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
-    "deduplicatedIdentifier": "R1eNolpU",
-    "identifier": "R1eNolpU",
+    "deduplicatedIdentifier": "treatmentv1t1",
+    "identifier": "treatmentv1t1",
     "isDeduplication": true,
-    "lastModified": 1788489611458,
+    "lastModified": 1793054915669,
     "result": {
       "carbs": 1,
-      "created_at": "2026-09-04T02:40:11Z",
-      "date": 1788489611000,
+      "created_at": "2026-10-26T22:48:35Z",
+      "date": 1793054915000,
       "enteredBy": "pwd_phone",
       "eventType": "Meal Bolus",
-      "identifier": "R1eNolpU",
+      "identifier": "treatmentv1t1",
       "isReadOnly": false,
-      "isValid": false,
-      "notes": "updated by update_put_root_treatments_v1",
-      "srvCreated": 1788489611458,
-      "srvModified": 1788489611458,
+      "isValid": true,
+      "notes": "updated by update_put_root_treatments_noid_v1",
+      "srvCreated": 1793054915669,
+      "srvModified": 1793054915669,
       "subject": "pwd_phone",
-      "utcOffset": 720
+      "utcOffset": 780
     },
     "status": 200
   },

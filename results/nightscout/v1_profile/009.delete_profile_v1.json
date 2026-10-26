@@ -2,7 +2,7 @@
   "request": {
     "method": "DELETE",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile/6a9a2f806e924a337c97e394?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/profile/6ad92c7ab5c4915f41a3dc7e?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
       "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""

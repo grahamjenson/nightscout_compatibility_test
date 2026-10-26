@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/times/2026-01-02?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/times/2026-01-02?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,10 +25,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"a8-dYHaYI2APmq75IBu0GfY8FwkBZQ\""
+      "W/\"a8-YyfMyrVBx2Odz09k//T3NRQI1MI\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -45,7 +45,7 @@
   },
   "body": [
     {
-      "_id": "6a9a2f8049a97a563d84f7d7",
+      "_id": "6ad92c7a35fb876db084a336",
       "date": 1767355994,
       "dateString": "2026-01-02T12:13:14.000Z",
       "sgv": 100,
@@ -54,5 +54,5 @@
       "utcOffset": 0
     }
   ],
-  "durationMs": 21
+  "durationMs": 3
 }

@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/profile?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/profile?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -91,25 +91,25 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "842"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611392\""
+      "W/\"1793054915536\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": [
     {
-      "_id": "N5MHd2Tl",
+      "_id": "Qh3ugim6",
       "created_at": "2017-07-02T00:22:00Z",
       "date": 1498954920000,
       "defaultProfile": "Default",
@@ -156,6 +156,8 @@
               "value": 33
             }
           ],
+          "carbs_hr": 20,
+          "delay": 20,
           "dia": 5,
           "sens": [
             {
@@ -168,22 +170,22 @@
             {
               "time": "00:00",
               "timeAsSeconds": 0,
-              "value": 100
+              "value": 5.55
             }
           ],
           "target_low": [
             {
               "time": "00:00",
               "timeAsSeconds": 0,
-              "value": 100
+              "value": 5.55
             }
           ],
           "timezone": "US/Eastern",
-          "units": "mg/dL"
+          "units": "mmol/L"
         }
       },
       "subject": "pwd_phone",
-      "units": "mg/dL",
+      "units": "mmol/L",
       "utcOffset": 0
     }
   ],

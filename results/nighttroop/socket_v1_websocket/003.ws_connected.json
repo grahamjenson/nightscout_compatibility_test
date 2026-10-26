@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/connected",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/connected",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "connected",
+    "connection": "ws_connect"
+  },
+  "statusCode": 200,
+  "body": null,
+  "durationMs": 0
+}

@@ -24,6 +24,10 @@ NAME get_entries_v3_with_fields
 GET http://{{ .site }}/api/v3/entries/{{ dig "create_entries_v3.identifier"  }}?fields=date,sgv,notes
 H Authorization: Bearer {{ jwt }}
 
+NAME create_simple_entry_v1_test_get_in_v3
+POST http://{{ .site }}/api/v1/entries?token={{ token}}
+B {"sgv": 224, "date": {{ itime 0 }}, "type": "sgv" }
+
 NAME get_entriess_v3
 GET http://{{ .site }}/api/v3/entries
 H Authorization: Bearer {{ jwt }}

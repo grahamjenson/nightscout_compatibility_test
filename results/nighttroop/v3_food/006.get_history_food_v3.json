@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/food/history/1788487811611",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/food/history/1793053115744",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -18,20 +18,20 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "698"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611610\""
+      "W/\"1793054915742\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
@@ -40,17 +40,17 @@
         "app": "asd",
         "carbs": 27,
         "category": "Snacks",
-        "created_at": "2026-09-04T02:40:11.61Z",
-        "date": 1788489611610,
+        "created_at": "2026-10-26T22:48:35.742Z",
+        "date": 1793054915742,
         "energy": 105,
         "fat": 0.3,
-        "identifier": "OQyTiyy4custom",
+        "identifier": "3YMkE8SCcustom",
         "isReadOnly": false,
         "isValid": true,
         "name": "Banana2Again",
         "protein": 1.3,
-        "srvCreated": 1788489611610,
-        "srvModified": 1788489611610,
+        "srvCreated": 1793054915742,
+        "srvModified": 1793054915742,
         "subcategory": "Fruit",
         "subject": "pwd_phone",
         "utcOffset": 0
@@ -59,18 +59,46 @@
         "app": "asd",
         "carbs": 27,
         "category": "Snacks",
-        "created_at": "2026-09-04T02:40:11.609Z",
-        "date": 1788489611609,
+        "created_at": "2026-10-26T22:48:35.742Z",
+        "date": 1793054915742,
         "energy": 105,
         "fat": 0.3,
-        "identifier": "OQyTiyy4",
+        "identifier": "3YMkE8SC",
         "isReadOnly": false,
         "isValid": true,
         "name": "Banana2",
         "protein": 1.3,
-        "srvCreated": 1788489611609,
-        "srvModified": 1788489611609,
+        "srvCreated": 1793054915742,
+        "srvModified": 1793054915742,
         "subcategory": "Fruit",
+        "subject": "pwd_phone",
+        "utcOffset": 0
+      },
+      {
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-10-26T22:48:35.521Z",
+        "date": 1793054915521,
+        "identifier": "0GxptOv4",
+        "isReadOnly": false,
+        "isValid": true,
+        "name": "Banana3",
+        "srvCreated": 1793054915521,
+        "srvModified": 1793054915521,
+        "subject": "pwd_phone",
+        "utcOffset": 0
+      },
+      {
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-10-26T22:48:35.52Z",
+        "date": 1793054915520,
+        "identifier": "0j1mlrOf",
+        "isReadOnly": false,
+        "isValid": true,
+        "name": "Banana2",
+        "srvCreated": 1793054915520,
+        "srvModified": 1793054915520,
         "subject": "pwd_phone",
         "utcOffset": 0
       }

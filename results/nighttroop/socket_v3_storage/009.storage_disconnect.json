@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "DISCONNECT",
+    "path": "/socket.io/storage/disconnect",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/storage/disconnect",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/storage",
+    "namespace": "/storage",
+    "event": "disconnect",
+    "connection": "storage_connect"
+  },
+  "statusCode": 200,
+  "body": null,
+  "durationMs": 0
+}

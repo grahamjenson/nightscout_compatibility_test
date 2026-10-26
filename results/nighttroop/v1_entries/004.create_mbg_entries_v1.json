@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/entries?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/entries?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,7 +14,7 @@
     "body": [
       {
         "app": "test-app",
-        "date": 1788489011376,
+        "date": 1793054315501,
         "device": "test-device",
         "mbg": 110,
         "type": "mbg"
@@ -23,34 +23,36 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "243"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611376\""
+      "W/\"1793054915502\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": [
     {
-      "_id": "Y2Rbc115",
+      "_id": "7779j1RM",
       "app": "test-app",
-      "created_at": "2026-09-04T02:30:11.376Z",
-      "date": 1788489011376,
-      "dateString": "2026-09-04T02:30:11.376Z",
+      "created_at": "2026-10-26T22:38:35.501Z",
+      "date": 1793054315501,
+      "dateString": "2026-10-26T22:38:35.501Z",
       "device": "test-device",
-      "mbg": 110,
-      "mills": 1788489011376,
+      "mbg": 6.105,
+      "mills": 1793054315501,
+      "sgv": 6.105,
       "subject": "pwd_phone",
       "type": "mbg",
+      "units": "mmol/L",
       "utcOffset": 0
     }
   ],

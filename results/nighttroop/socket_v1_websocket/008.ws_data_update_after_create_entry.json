@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/dataUpdate",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dataUpdate",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dataUpdate",
+    "connection": "ws_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "delta": true,
+    "lastUpdated": 1793054916034,
+    "sgvs": [
+      {
+        "_id": "irBA17u4",
+        "device": "socket-test",
+        "mgdl": 123,
+        "mills": 1793054916033,
+        "type": "sgv"
+      }
+    ]
+  },
+  "durationMs": 0
+}

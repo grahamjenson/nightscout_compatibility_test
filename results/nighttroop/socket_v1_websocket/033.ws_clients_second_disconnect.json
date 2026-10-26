@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "DISCONNECT",
+    "path": "/socket.io/disconnect",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/disconnect",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "disconnect",
+    "connection": "ws_clients_second_connect"
+  },
+  "statusCode": 200,
+  "body": null,
+  "durationMs": 0
+}

@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbUpdateUnset",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbUpdateUnset",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbUpdateUnset",
+    "connection": "ws_unset_connect",
+    "ack": true,
+    "args": [
+      {
+        "_id": "25Du3tP5",
+        "collection": "treatments",
+        "data": {
+          "carbs": 1
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "success"
+  },
+  "durationMs": 1
+}

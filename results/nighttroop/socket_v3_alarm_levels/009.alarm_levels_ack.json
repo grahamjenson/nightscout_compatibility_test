@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/alarm/ack",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/alarm/ack",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/alarm",
+    "namespace": "/alarm",
+    "event": "ack",
+    "connection": "alarm_levels_connect",
+    "args": [
+      2,
+      "default",
+      60000
+    ]
+  },
+  "statusCode": 200,
+  "body": null,
+  "durationMs": 0
+}

@@ -1,0 +1,41 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v2/authorization/roles?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "_id": "\u003cno value\u003e",
+      "name": "compat-test-role",
+      "notes": "updated by the compatibility tests",
+      "permissions": [
+        "api:treatments:read",
+        "api:entries:read"
+      ]
+    }
+  },
+  "statusCode": 404,
+  "headers": {
+    "Content-Type": [
+      "text/plain; charset=utf-8"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ]
+  },
+  "body": "Not Found\n",
+  "durationMs": 0
+}

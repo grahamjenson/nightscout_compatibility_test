@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/devicestatus.json?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ&count=1",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Etag": [
+      "W/\"1793054915488\""
+    ],
+    "Last-Modified": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": [
+    {
+      "_id": "Ba8U83tX",
+      "created_at": "2026-10-26T22:47:35Z",
+      "date": 1793054855000,
+      "device": "aaps1",
+      "subject": "pwd_phone",
+      "utcOffset": 780
+    }
+  ],
+  "durationMs": 0
+}

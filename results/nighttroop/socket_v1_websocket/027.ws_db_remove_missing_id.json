@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbRemove",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbRemove",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbRemove",
+    "connection": "ws_unset_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "treatments"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "Missing or invalid _id"
+  },
+  "durationMs": 0
+}

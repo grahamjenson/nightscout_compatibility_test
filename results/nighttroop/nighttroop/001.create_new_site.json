@@ -15,23 +15,23 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "435"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
     "api_key": "password",
-    "backup_key": "alicezzz:v9Ne5S54ISuU",
-    "pwd_nstoken": "QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
-    "read_only_nstoken": "QWNlRzVYclBHSHJaQ1QySEVCdDJpTWpSc1dON0JHc3ZCb0lOam9RSFBzVmhjY1R3M3BpQ2JoZG9ESWhZQndkWVZydm9seEhTUHYvTzlYOWJiQnVEbjBaSFJFcXRKNjhE",
-    "site_subdomain": "alicezzz",
+    "backup_key": "davezzzz:LwYvdcxFbWYs",
+    "pwd_nstoken": "QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
+    "read_only_nstoken": "QWNlRzVYcFVKT3h6ekZFMkRBOXdPL3F6UTBtN0daN0FZbkxma2ROYkN5RWtkUm9JcDd0QnpQOXpmWXNkMUtNQmxTOWpIVEd2QUtxVUwxUXNIU3lrcUVCdEdGaWFYREpt",
+    "site_subdomain": "davezzzz",
     "totp_secret": "FakeTOTPSecretForDevOnly"
   },
-  "durationMs": 15
+  "durationMs": 23
 }

@@ -1,0 +1,41 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbAdd",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_clients_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "entries",
+        "data": {
+          "date": 1793054916061,
+          "device": "socket-test",
+          "sgv": 120,
+          "type": "sgv"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": [
+    {
+      "_id": "Q0wBqkqj",
+      "created_at": "2026-10-26T22:48:36.061Z",
+      "date": 1793054916061,
+      "dateString": "2026-10-26T22:48:36.061Z",
+      "device": "socket-test",
+      "mbg": 6.66,
+      "mills": 1793054916061,
+      "sgv": 6.66,
+      "subject": "pwd_phone",
+      "type": "sgv",
+      "units": "mmol/L",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 0
+}

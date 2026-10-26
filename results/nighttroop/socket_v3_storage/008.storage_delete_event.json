@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/storage/delete",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/storage/delete",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/storage",
+    "namespace": "/storage",
+    "event": "delete",
+    "connection": "storage_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "colName": "treatments",
+    "identifier": "mtdln4c2"
+  },
+  "durationMs": 0
+}

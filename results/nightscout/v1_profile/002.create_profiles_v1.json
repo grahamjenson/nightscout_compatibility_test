@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/profile?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -42,10 +42,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"111-5K2ckngof+HhtFQOxDedJsRnqiA\""
+      "W/\"111-2mIxLMD7s5e8u3QbR9QtZB2Mmw0\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -59,8 +59,8 @@
   },
   "body": [
     {
-      "_id": "6a9a2f806e924a337c97e395",
-      "created_at": "2026-09-04T02:40:00.068Z",
+      "_id": "6ad92c7ab5c4915f41a3dc7f",
+      "created_at": "2026-10-21T21:19:54.296Z",
       "defaultProfile": "profile_2",
       "store": {
         "profile_2": {
@@ -69,8 +69,8 @@
       }
     },
     {
-      "_id": "6a9a2f806e924a337c97e396",
-      "created_at": "2026-09-04T02:40:00.068Z",
+      "_id": "6ad92c7ab5c4915f41a3dc80",
+      "created_at": "2026-10-21T21:19:54.296Z",
       "defaultProfile": "profile_3",
       "store": {
         "profile_3": {
@@ -79,5 +79,5 @@
       }
     }
   ],
-  "durationMs": 5
+  "durationMs": 3
 }

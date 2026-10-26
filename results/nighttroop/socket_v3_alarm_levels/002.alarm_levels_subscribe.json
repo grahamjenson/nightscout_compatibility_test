@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/alarm/subscribe",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/alarm/subscribe",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/alarm",
+    "namespace": "/alarm",
+    "event": "subscribe",
+    "connection": "alarm_levels_connect",
+    "ack": true,
+    "args": [
+      {
+        "accessToken": "QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "message": "Subscribed for alarms",
+    "success": true
+  },
+  "durationMs": 0
+}

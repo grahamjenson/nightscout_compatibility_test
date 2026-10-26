@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ&find[_id]=VTTAnsLM",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/devicestatus?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ&find[_id]=57v2e3vT",
     "headers": {
       "Accept": [
         "application/json"
@@ -15,27 +15,27 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "452"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611367\""
+      "W/\"1793054915488\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": [
     {
-      "_id": "VTTAnsLM",
-      "created_at": "2026-09-04T02:40:11Z",
-      "date": 1788489611000,
+      "_id": "57v2e3vT",
+      "created_at": "2026-10-26T22:48:35Z",
+      "date": 1793054915000,
       "device": "aaps",
       "loop": {
         "cob": {
@@ -71,7 +71,7 @@
       },
       "subject": "pwd_phone",
       "uploaderBattery": 87,
-      "utcOffset": 720
+      "utcOffset": 780
     }
   ],
   "durationMs": 0

@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/entries?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -12,7 +12,7 @@
       ]
     },
     "body": {
-      "date": 1788489599857,
+      "date": 1792617594128,
       "sgv": 100,
       "type": "sgv"
     }
@@ -29,10 +29,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"83-7WbN5HgIjzgwsKrRFsxXKYIG7Ak\""
+      "W/\"83-qYfOg0NI3c1wb7Q7zUn+It5kvaQ\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -46,13 +46,13 @@
   },
   "body": [
     {
-      "_id": "6a9a2f7f49a97a563d84f763",
-      "date": 1788489599857,
+      "_id": "6ad92c7a35fb876db084a2c3",
+      "date": 1792617594128,
       "sgv": 100,
-      "sysTime": "2026-09-04T02:39:59.857Z",
+      "sysTime": "2026-10-21T21:19:54.128Z",
       "type": "sgv",
       "utcOffset": 0
     }
   ],
-  "durationMs": 5
+  "durationMs": 6
 }

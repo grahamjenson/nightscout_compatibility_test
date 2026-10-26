@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/profile?sgv$lte=120",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/profile?sgv$lte=120",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -22,28 +22,145 @@
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611394\""
+      "W/\"1793054915760\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
     "result": [
       {
+        "app": "asd",
+        "created_at": "2026-10-26T22:48:35Z",
+        "date": 1793054915000,
+        "defaultProfile": "profile_2",
+        "identifier": "e1mR2Zlz",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1793054915000,
+        "srvCreated": 1793054915760,
+        "srvModified": 1793054915760,
+        "startDate": "2026-10-26T22:48:35Z",
+        "store": {
+          "profile_2": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.9
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 12
+              }
+            ],
+            "dia": 7,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 2.5
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6.1
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 5
+              }
+            ],
+            "units": "mmol/L"
+          }
+        },
+        "subject": "pwd_phone",
+        "units": "mmol/L",
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-10-26T22:43:35Z",
+        "date": 1793054615000,
+        "defaultProfile": "Update",
+        "identifier": "3uEcuA4z",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1793054615000,
+        "srvCreated": 1793054915594,
+        "srvModified": 1793054915594,
+        "startDate": "2026-10-27T11:43:35+13:00",
+        "store": {
+          "Update": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.9
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 12
+              }
+            ],
+            "dia": 6,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 55
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6.66
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 4.995
+              }
+            ],
+            "timezone": "UTC",
+            "units": "mmol/L"
+          }
+        },
+        "subject": "pwd_phone",
+        "units": "mmol/L",
+        "utcOffset": 780
+      },
+      {
         "app": "AAPS",
         "created_at": "2026-08-09T05:33:53.284Z",
         "date": 1786253633284,
         "defaultProfile": "ArmDash-2025",
-        "identifier": "4C4u4Plx",
+        "identifier": "26YZqsgT",
         "isReadOnly": false,
         "isValid": true,
         "mills": 1786253633284,
-        "srvCreated": 1788489611394,
-        "srvModified": 1788489611394,
+        "srvCreated": 1793054915569,
+        "srvModified": 1793054915569,
         "startDate": "2026-08-09T17:33:53.284+12:00",
         "store": {
           "ArmDash-2025": {
@@ -345,12 +462,12 @@
         "created_at": "2017-07-02T00:22:00Z",
         "date": 1498954920000,
         "defaultProfile": "Default",
-        "identifier": "N5MHd2Tl",
+        "identifier": "Qh3ugim6",
         "isReadOnly": false,
         "isValid": true,
         "mills": 1498954920000,
-        "srvCreated": 1788489611392,
-        "srvModified": 1788489611392,
+        "srvCreated": 1793054915536,
+        "srvModified": 1793054915536,
         "startDate": "2017-07-02T00:22:00Z",
         "store": {
           "Default": {
@@ -393,6 +510,8 @@
                 "value": 33
               }
             ],
+            "carbs_hr": 20,
+            "delay": 20,
             "dia": 5,
             "sens": [
               {
@@ -405,35 +524,77 @@
               {
                 "time": "00:00",
                 "timeAsSeconds": 0,
-                "value": 100
+                "value": 5.55
               }
             ],
             "target_low": [
               {
                 "time": "00:00",
                 "timeAsSeconds": 0,
-                "value": 100
+                "value": 5.55
               }
             ],
             "timezone": "US/Eastern",
-            "units": "mg/dL"
+            "units": "mmol/L"
           }
         },
         "subject": "pwd_phone",
-        "units": "mg/dL",
+        "units": "mmol/L",
         "utcOffset": 0
       },
       {
-        "created_at": "2026-09-04T02:39:11Z",
-        "date": 1788489551000,
-        "defaultProfile": "profile_1",
-        "identifier": "pXR2QVlW",
+        "created_at": "2026-10-26T22:48:35.535Z",
+        "date": 1793054915535,
+        "defaultProfile": "profile_3",
+        "identifier": "iWcIv3LK",
         "isReadOnly": false,
         "isValid": true,
-        "mills": 1788489551000,
-        "srvCreated": 1788489611390,
-        "srvModified": 1788489611390,
-        "startDate": "2026-09-04T14:39:11+12:00",
+        "mills": 1793054915535,
+        "srvCreated": 1793054915535,
+        "srvModified": 1793054915535,
+        "startDate": "2026-10-26T22:48:35.535Z",
+        "store": {
+          "profile_3": {
+            "dia": 8,
+            "units": "mmol/L"
+          }
+        },
+        "subject": "pwd_phone",
+        "units": "mmol/L",
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-10-26T22:48:35.535Z",
+        "date": 1793054915535,
+        "defaultProfile": "profile_2",
+        "identifier": "kriOL2uU",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1793054915535,
+        "srvCreated": 1793054915535,
+        "srvModified": 1793054915535,
+        "startDate": "2026-10-26T22:48:35.535Z",
+        "store": {
+          "profile_2": {
+            "dia": 7,
+            "units": "mmol/L"
+          }
+        },
+        "subject": "pwd_phone",
+        "units": "mmol/L",
+        "utcOffset": 0
+      },
+      {
+        "created_at": "2026-10-26T22:47:35Z",
+        "date": 1793054855000,
+        "defaultProfile": "profile_1",
+        "identifier": "SwulqlT1",
+        "isReadOnly": false,
+        "isValid": true,
+        "mills": 1793054855000,
+        "srvCreated": 1793054915534,
+        "srvModified": 1793054915534,
+        "startDate": "2026-10-27T11:47:35+13:00",
         "store": {
           "profile_1": {
             "basal": [
@@ -558,7 +719,7 @@
         },
         "subject": "pwd_phone",
         "units": "mmol/L",
-        "utcOffset": 720
+        "utcOffset": 780
       }
     ],
     "status": 200

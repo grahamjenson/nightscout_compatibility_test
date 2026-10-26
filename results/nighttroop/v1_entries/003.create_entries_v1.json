@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/entries?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/entries?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,14 +14,14 @@
     "body": [
       {
         "app": "test-app",
-        "date": 1788489011374,
+        "date": 1793054315500,
         "device": "test-device",
         "sgv": 101,
         "type": "sgv"
       },
       {
         "app": "test-app",
-        "date": 1788488891374,
+        "date": 1793054195500,
         "device": "test-device",
         "mbg": 102,
         "type": "mbg"
@@ -30,47 +30,51 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "484"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611375\""
+      "W/\"1793054915501\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": [
     {
-      "_id": "ADw052QU",
+      "_id": "6w4h5Skf",
       "app": "test-app",
-      "created_at": "2026-09-04T02:30:11.374Z",
-      "date": 1788489011374,
-      "dateString": "2026-09-04T02:30:11.374Z",
+      "created_at": "2026-10-26T22:38:35.5Z",
+      "date": 1793054315500,
+      "dateString": "2026-10-26T22:38:35.5Z",
       "device": "test-device",
-      "mills": 1788489011374,
-      "sgv": 101,
+      "mbg": 5.6055,
+      "mills": 1793054315500,
+      "sgv": 5.6055,
       "subject": "pwd_phone",
       "type": "sgv",
+      "units": "mmol/L",
       "utcOffset": 0
     },
     {
-      "_id": "3F73Sfga",
+      "_id": "ZmwOT2W4",
       "app": "test-app",
-      "created_at": "2026-09-04T02:28:11.374Z",
-      "date": 1788488891374,
-      "dateString": "2026-09-04T02:28:11.374Z",
+      "created_at": "2026-10-26T22:36:35.5Z",
+      "date": 1793054195500,
+      "dateString": "2026-10-26T22:36:35.5Z",
       "device": "test-device",
-      "mbg": 102,
-      "mills": 1788488891374,
+      "mbg": 5.661,
+      "mills": 1793054195500,
+      "sgv": 5.661,
       "subject": "pwd_phone",
       "type": "mbg",
+      "units": "mmol/L",
       "utcOffset": 0
     }
   ],

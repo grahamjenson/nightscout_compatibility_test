@@ -1,0 +1,32 @@
+{
+  "request": {
+    "method": "DELETE",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/entries?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ&find[device]=bulk-delete-test",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 405,
+  "headers": {
+    "Allow": [
+      "GET",
+      "POST",
+      "PUT"
+    ],
+    "Content-Length": [
+      "0"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ]
+  },
+  "body": null,
+  "durationMs": 0
+}

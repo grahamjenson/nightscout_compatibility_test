@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/entries/current.json?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/entries/current.json?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
     "headers": {
       "Accept": [
         "application/json"
@@ -15,32 +15,34 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "203"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611373\""
+      "W/\"1793054915499\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": [
     {
-      "_id": "OWfKyKaD",
-      "created_at": "2026-09-04T02:40:11.373Z",
-      "date": 1788489611373,
-      "dateString": "2026-09-04T02:40:11.373Z",
-      "mills": 1788489611373,
-      "sgv": 100,
+      "_id": "P83P8d5X",
+      "created_at": "2026-10-26T22:48:35.499Z",
+      "date": 1793054915499,
+      "dateString": "2026-10-26T22:48:35.499Z",
+      "mbg": 5.55,
+      "mills": 1793054915499,
+      "sgv": 5.55,
       "subject": "pwd_phone",
       "type": "sgv",
+      "units": "mmol/L",
       "utcOffset": 0
     }
   ],

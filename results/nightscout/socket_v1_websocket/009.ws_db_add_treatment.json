@@ -12,7 +12,7 @@
       {
         "collection": "treatments",
         "data": {
-          "created_at": "2026-10-21T10:32:05Z",
+          "created_at": "2026-10-22T10:20:01+13:00",
           "enteredBy": "socket-test",
           "eventType": "Note",
           "notes": "added over socket.io"
@@ -23,12 +23,12 @@
   "statusCode": 200,
   "body": [
     {
-      "_id": "6ad894a554e1327fb959c5d6",
-      "created_at": "2026-10-21T10:32:05Z",
+      "_id": "6ad92c81b5c4915f41a3dcb0",
+      "created_at": "2026-10-22T10:20:01+13:00",
       "enteredBy": "socket-test",
       "eventType": "Note",
       "notes": "added over socket.io"
     }
   ],
-  "durationMs": 6
+  "durationMs": 12
 }

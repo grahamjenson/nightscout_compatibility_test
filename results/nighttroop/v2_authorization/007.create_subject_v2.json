@@ -1,0 +1,39 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v2/authorization/subjects?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "name": "compat-test-subject",
+      "notes": "created by the compatibility tests",
+      "roles": [
+        "compat-test-role"
+      ]
+    }
+  },
+  "statusCode": 404,
+  "headers": {
+    "Content-Type": [
+      "text/plain; charset=utf-8"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ]
+  },
+  "body": "Not Found\n",
+  "durationMs": 0
+}

@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -12,7 +12,7 @@
       ]
     },
     "body": {
-      "created_at": "2026-09-04T14:39:06+12:00",
+      "created_at": "2026-10-22T10:19:00+13:00",
       "eventType": "BAD TYPE",
       "insulin": 4.2,
       "reason": "1"
@@ -30,10 +30,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:06 GMT"
+      "Wed, 21 Oct 2026 21:20:00 GMT"
     ],
     "Etag": [
-      "W/\"8e-sv3Gr21KBjiNgGktdwDR4g7Wf8w\""
+      "W/\"8e-HszLgodaGQ6uh8JvkFOEb+6jn4M\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -47,13 +47,13 @@
   },
   "body": [
     {
-      "_id": "6a9a2f8649a97a563d84f938",
-      "created_at": "2026-09-04T02:39:06.000Z",
+      "_id": "6ad92c8035fb876db084a499",
+      "created_at": "2026-10-21T21:19:00.000Z",
       "eventType": "BAD TYPE",
       "insulin": 4.2,
       "reason": "1",
-      "utcOffset": 720
+      "utcOffset": 780
     }
   ],
-  "durationMs": 5
+  "durationMs": 2
 }

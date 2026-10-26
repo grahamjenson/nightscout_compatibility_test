@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "CONNECT",
+    "path": "/socket.io/storage/connect",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/storage/connect",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/storage",
+    "namespace": "/storage",
+    "event": "connect",
+    "connection": "storage_all_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "sid": "CKmDEABVjJnFECxBBk6-"
+  },
+  "durationMs": 1
+}

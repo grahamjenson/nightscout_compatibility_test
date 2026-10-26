@@ -2,13 +2,13 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/devicestatus",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/devicestatus",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -24,38 +24,38 @@
   },
   "statusCode": 201,
   "headers": {
-    "Content-Length": [
-      "329"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611791\""
+      "W/\"1793054915998\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Location": [
-      "/api/v3/devicestatus/qRbkpZ29"
+      "/api/v3/devicestatus/ZOcQq9ii"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "qRbkpZ29",
-    "lastModified": 1788489611791,
+    "identifier": "ZOcQq9ii",
+    "lastModified": 1793054915998,
     "result": {
       "app": "test-app",
-      "created_at": "2026-09-04T02:40:11.791Z",
-      "date": 1788489611791,
+      "created_at": "2026-10-26T22:48:35.998Z",
+      "date": 1793054915998,
       "device": "test-device",
-      "identifier": "qRbkpZ29",
+      "identifier": "ZOcQq9ii",
       "isReadOnly": false,
       "isValid": true,
-      "srvCreated": 1788489611791,
-      "srvModified": 1788489611791,
+      "srvCreated": 1793054915998,
+      "srvModified": 1793054915998,
       "subject": "pwd_phone",
       "utcOffset": 0
     },

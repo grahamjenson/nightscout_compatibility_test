@@ -1,0 +1,82 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/retroUpdate",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/retroUpdate",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "retroUpdate",
+    "connection": "ws_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "devicestatus": [
+      {
+        "_id": "G2KozQ0c",
+        "created_at": "2026-10-26T22:46:35Z",
+        "date": 1793054795000,
+        "device": "aaps",
+        "mills": 1793054795000,
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      },
+      {
+        "_id": "9dVg72hS",
+        "created_at": "2026-10-26T22:46:35Z",
+        "date": 1793054795000,
+        "device": "bulk-delete-test",
+        "mills": 1793054795000,
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      },
+      {
+        "_id": "Ba8U83tX",
+        "created_at": "2026-10-26T22:47:35Z",
+        "date": 1793054855000,
+        "device": "aaps1",
+        "mills": 1793054855000,
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      },
+      {
+        "_id": "G8DwRU0q",
+        "created_at": "2026-10-26T22:47:35Z",
+        "date": 1793054855000,
+        "device": "bulk-delete-test",
+        "mills": 1793054855000,
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      },
+      {
+        "_id": "JWRv5ZSH",
+        "created_at": "2026-10-26T22:48:35Z",
+        "date": 1793054915000,
+        "device": "test-device",
+        "mills": 1793054915000,
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      },
+      {
+        "_id": "ZOcQq9ii",
+        "app": "test-app",
+        "created_at": "2026-10-26T22:48:35.998Z",
+        "date": 1793054915998,
+        "device": "test-device",
+        "mills": 1793054915998,
+        "subject": "pwd_phone",
+        "utcOffset": 0
+      },
+      {
+        "_id": "Z6xWUhM4",
+        "app": "test-app",
+        "created_at": "2026-10-26T22:48:36Z",
+        "date": 1793054916000,
+        "device": "test-device",
+        "mills": 1793054916000,
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      }
+    ]
+  },
+  "durationMs": 0
+}

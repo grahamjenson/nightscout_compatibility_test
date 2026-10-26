@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/dataUpdate",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dataUpdate",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dataUpdate",
+    "connection": "ws_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "delta": true,
+    "lastUpdated": 1793054916036,
+    "treatments": [
+      {
+        "_id": "K70E1N70",
+        "action": "update",
+        "created_at": "2026-10-26T22:48:36Z",
+        "date": 1793054916000,
+        "enteredBy": "pwd_phone",
+        "eventType": "Note",
+        "mills": 1793054916000,
+        "notes": "updated over socket.io",
+        "subject": "pwd_phone",
+        "utcOffset": 780
+      }
+    ]
+  },
+  "durationMs": 0
+}

@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/loadRetro",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/loadRetro",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "loadRetro",
+    "connection": "ws_connect",
+    "ack": true,
+    "args": [
+      {}
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "result": "success"
+  },
+  "durationMs": 0
+}

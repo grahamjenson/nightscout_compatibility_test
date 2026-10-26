@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/storage/create",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/storage/create",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/storage",
+    "namespace": "/storage",
+    "event": "create",
+    "connection": "storage_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "colName": "treatments",
+    "doc": {
+      "app": "socket-test",
+      "created_at": "2026-10-26T22:48:38.097Z",
+      "date": 1793054918097,
+      "enteredBy": "pwd_phone",
+      "eventType": "Note",
+      "identifier": "mtdln4c2",
+      "isReadOnly": false,
+      "isValid": true,
+      "notes": "storage socket",
+      "srvCreated": 1793054918101,
+      "srvModified": 1793054918101,
+      "subject": "pwd_phone",
+      "utcOffset": 0
+    }
+  },
+  "durationMs": 0
+}

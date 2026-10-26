@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/authorize",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/authorize",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "authorize",
+    "connection": "ws_read_connect",
+    "ack": true,
+    "args": [
+      {
+        "client": "web",
+        "history": 1,
+        "token": "eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcmVhZCIsICJzdWIiOiJyZWFkX29ubHkifQ.1LHmXMH_5yivc9lzjUqMdDFyDeBLan6M3ItpK-AFSgU"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": {
+    "read": true,
+    "write": false,
+    "write_treatment": false
+  },
+  "durationMs": 4
+}

@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/alarm/urgent_alarm",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/alarm/urgent_alarm",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/alarm",
+    "namespace": "/alarm",
+    "event": "urgent_alarm",
+    "connection": "alarm_levels_connect"
+  },
+  "statusCode": 408,
+  "body": null,
+  "error": "waiting for \"urgent_alarm\": timed out",
+  "durationMs": 10001
+}

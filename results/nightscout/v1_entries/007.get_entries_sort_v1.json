@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries.json?token=write-d1e2709a9d2611d2&sort=date",
+    "url": "http://localhost:1337/api/v1/entries.json?token=write-749a8d3839b8b11c&sort=date",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,16 +25,16 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"3c1-AYT8Ov/wTYqraFZ0iiK8reD2uHc\""
+      "W/\"3c1-HOkjMmSe19sDFa82M2xaIh4ZHSE\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Vary": [
       "Accept, Accept-Encoding"
@@ -45,58 +45,58 @@
   },
   "body": [
     {
-      "_id": "6a9a2f7f49a97a563d84f765",
+      "_id": "6ad92c7a35fb876db084a2c5",
       "app": "test-app",
-      "date": 1788489599863,
-      "dateString": "2026-09-04T02:39:59.000Z",
+      "date": 1792617594135,
+      "dateString": "2026-10-21T21:19:54.000Z",
       "device": "test-device",
       "direction": "Flat",
       "filtered": 139.2,
-      "mills": 1788489599863,
+      "mills": 1792617594135,
       "noise": 1,
       "rssi": -62,
       "sgv": 100,
-      "sysTime": "2026-09-04T02:39:59.000Z",
+      "sysTime": "2026-10-21T21:19:54.000Z",
       "trend": 3,
       "type": "sgv",
       "unfiltered": 141.7,
-      "utcOffset": 720
+      "utcOffset": 780
     },
     {
-      "_id": "6a9a2f7f49a97a563d84f763",
-      "date": 1788489599857,
+      "_id": "6ad92c7a35fb876db084a2c3",
+      "date": 1792617594128,
       "sgv": 100,
-      "sysTime": "2026-09-04T02:39:59.857Z",
+      "sysTime": "2026-10-21T21:19:54.128Z",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "6a9a2f7f49a97a563d84f76a",
+      "_id": "6ad92c7a35fb876db084a2ca",
       "app": "test-app",
-      "date": 1788488999895,
+      "date": 1792616994145,
       "device": "test-device",
       "mbg": 110,
-      "sysTime": "2026-09-04T02:29:59.895Z",
+      "sysTime": "2026-10-21T21:09:54.145Z",
       "type": "mbg",
       "utcOffset": 0
     },
     {
-      "_id": "6a9a2f7f49a97a563d84f767",
+      "_id": "6ad92c7a35fb876db084a2c7",
       "app": "test-app",
-      "date": 1788488999878,
+      "date": 1792616994140,
       "device": "test-device",
       "sgv": 101,
-      "sysTime": "2026-09-04T02:29:59.878Z",
+      "sysTime": "2026-10-21T21:09:54.140Z",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "6a9a2f7f49a97a563d84f768",
+      "_id": "6ad92c7a35fb876db084a2c8",
       "app": "test-app",
-      "date": 1788488879878,
+      "date": 1792616874140,
       "device": "test-device",
       "mbg": 102,
-      "sysTime": "2026-09-04T02:27:59.878Z",
+      "sysTime": "2026-10-21T21:07:54.140Z",
       "type": "mbg",
       "utcOffset": 0
     }

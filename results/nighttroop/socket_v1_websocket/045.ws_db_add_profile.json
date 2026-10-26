@@ -1,0 +1,121 @@
+{
+  "request": {
+    "method": "EMIT",
+    "path": "/socket.io/dbAdd",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/dbAdd",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "dbAdd",
+    "connection": "ws_clients_connect",
+    "ack": true,
+    "args": [
+      {
+        "collection": "profile",
+        "data": {
+          "defaultProfile": "Socket",
+          "startDate": "2026-10-27T11:18:36+13:00",
+          "store": {
+            "Socket": {
+              "basal": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 0.8
+                }
+              ],
+              "carbratio": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 10
+                }
+              ],
+              "dia": 5,
+              "sens": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 50
+                }
+              ],
+              "target_high": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 120
+                }
+              ],
+              "target_low": [
+                {
+                  "time": "00:00",
+                  "timeAsSeconds": 0,
+                  "value": 90
+                }
+              ],
+              "timezone": "UTC",
+              "units": "mg/dl"
+            }
+          },
+          "units": "mg/dl"
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "body": [
+    {
+      "_id": "r0Ra92o5",
+      "created_at": "2026-10-26T22:18:36Z",
+      "date": 1793053116000,
+      "defaultProfile": "Socket",
+      "mills": 1793053116000,
+      "startDate": "2026-10-27T11:18:36+13:00",
+      "store": {
+        "Socket": {
+          "basal": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 0.8
+            }
+          ],
+          "carbratio": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 10
+            }
+          ],
+          "dia": 5,
+          "sens": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 50
+            }
+          ],
+          "target_high": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 6.66
+            }
+          ],
+          "target_low": [
+            {
+              "time": "00:00",
+              "timeAsSeconds": 0,
+              "value": 4.995
+            }
+          ],
+          "timezone": "UTC",
+          "units": "mmol/L"
+        }
+      },
+      "subject": "pwd_phone",
+      "units": "mmol/L",
+      "utcOffset": 780
+    }
+  ],
+  "durationMs": 0
+}

@@ -12,7 +12,8 @@ import (
 	"time"
 )
 
-const DefaultTimeout = 10 * time.Second
+const DefaultTimeout = 2 * time.Second
+const MaxTimeout = 10 * time.Second
 
 // Socket verbs. Any other verb (GET, POST, SET, ...) is an HTTP DSL request.
 const (
@@ -165,6 +166,13 @@ func parseBlock(block []string) (Step, error) {
 			d, err := time.ParseDuration(strings.TrimSpace(strings.TrimPrefix(line, "T ")))
 			if err != nil {
 				return Step{}, fmt.Errorf("step %q invalid timeout: %w", name, err)
+			}
+
+			if d <= 0 {
+				d = DefaultTimeout
+			}
+			if d > MaxTimeout {
+				d = MaxTimeout
 			}
 			step.Timeout = d
 

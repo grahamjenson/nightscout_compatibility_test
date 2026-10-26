@@ -1,0 +1,71 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/entries.json?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ&find[date][$gte]=1793051315513&find[date][$lte]=1793054975513&count=100",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json"
+    ],
+    "Date": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Etag": [
+      "W/\"1793054915500\""
+    ],
+    "Last-Modified": [
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "body": [
+    {
+      "_id": "P83P8d5X",
+      "created_at": "2026-10-26T22:48:35.499Z",
+      "date": 1793054915499,
+      "dateString": "2026-10-26T22:48:35.499Z",
+      "mbg": 5.55,
+      "mills": 1793054915499,
+      "sgv": 5.55,
+      "subject": "pwd_phone",
+      "type": "sgv",
+      "units": "mmol/L",
+      "utcOffset": 0
+    },
+    {
+      "_id": "k698A7kJ",
+      "app": "test-app",
+      "created_at": "2026-10-26T22:48:35Z",
+      "date": 1793054915000,
+      "dateString": "2026-10-27T11:48:35+13:00",
+      "device": "test-device",
+      "direction": "Flat",
+      "filtered": 139.2,
+      "mbg": 5.55,
+      "mills": 1793054915000,
+      "noise": 1,
+      "rssi": -62,
+      "sgv": 5.55,
+      "subject": "pwd_phone",
+      "trend": 3,
+      "type": "sgv",
+      "unfiltered": 141.7,
+      "units": "mmol/L",
+      "utcOffset": 780
+    }
+  ],
+  "durationMs": 0
+}

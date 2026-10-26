@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/entries?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,7 +14,7 @@
     "body": [
       {
         "app": "test-app",
-        "date": 1788488999895,
+        "date": 1792616994145,
         "device": "test-device",
         "mbg": 110,
         "type": "mbg"
@@ -33,10 +33,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:39:59 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"ab-W3GuVQGnen7AEEKEHJqDuW/zTtY\""
+      "W/\"ab-bdGScwp4BL5O3wCyclmTozdDpuk\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -50,15 +50,15 @@
   },
   "body": [
     {
-      "_id": "6a9a2f7f49a97a563d84f76a",
+      "_id": "6ad92c7a35fb876db084a2ca",
       "app": "test-app",
-      "date": 1788488999895,
+      "date": 1792616994145,
       "device": "test-device",
       "mbg": 110,
-      "sysTime": "2026-09-04T02:29:59.895Z",
+      "sysTime": "2026-10-21T21:09:54.145Z",
       "type": "mbg",
       "utcOffset": 0
     }
   ],
-  "durationMs": 8
+  "durationMs": 4
 }

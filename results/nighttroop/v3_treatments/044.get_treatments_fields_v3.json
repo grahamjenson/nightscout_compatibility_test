@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments?fields=date,sgv,notes",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/treatments?fields=date,sgv,notes",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -22,263 +22,270 @@
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611692\""
+      "W/\"1793054915828\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
     "result": [
       {
-        "date": 1788489611000,
-        "notes": "updated by update_put_root_treatments_v1"
-      },
-      {
-        "date": 1788489611000,
-        "notes": "updated by update_put_root_treatments_noid_v1"
-      },
-      {
-        "date": 1788489611000,
+        "date": 1793054915000,
         "notes": "Lunch pasta + insulin pre-bolus"
       },
       {
-        "date": 1788489551000
+        "date": 1793054915000,
+        "notes": "updated by update_put_root_treatments_noid_v1"
       },
       {
-        "date": 1788489551000
+        "date": 1793054855000
       },
       {
-        "date": 1788489491000
+        "date": 1793054855000
       },
       {
-        "date": 1788489491000
+        "date": 1793054795000
       },
       {
-        "date": 1788489431000
+        "date": 1793054795000,
+        "notes": "bulk delete 2"
       },
       {
-        "date": 1788489431000
+        "date": 1793054795000
       },
       {
-        "date": 1788489371000
+        "date": 1793054735000
       },
       {
-        "date": 1788489371000,
+        "date": 1793054735000,
+        "notes": "bulk delete 1"
+      },
+      {
+        "date": 1793054735000
+      },
+      {
+        "date": 1793054675000,
         "notes": "Afternoon snack"
       },
       {
-        "date": 1788489311000
+        "date": 1793054675000
       },
       {
-        "date": 1788489311000
+        "date": 1793054615000
       },
       {
-        "date": 1788489251000,
-        "notes": "Pump cannula moved to left arm."
+        "date": 1793054615000
       },
       {
-        "date": 1788489251000,
+        "date": 1793054555000,
         "notes": "Suggested by pump wizard"
       },
       {
-        "date": 1788489191000,
+        "date": 1793054555000,
+        "notes": "Pump cannula moved to left arm."
+      },
+      {
+        "date": 1793054495000
+      },
+      {
+        "date": 1793054495000,
         "notes": "Started new CGM sensor."
       },
       {
-        "date": 1788489191000
+        "date": 1793054435000
       },
       {
-        "date": 1788489131000,
-        "notes": "Running higher than usual after breakfast."
-      },
-      {
-        "date": 1788489131000,
+        "date": 1793054435000,
         "notes": "Hypo treatment"
       },
       {
-        "date": 1788489131000
+        "date": 1793054435000,
+        "notes": "Running higher than usual after breakfast."
       },
       {
-        "date": 1788489071000,
+        "date": 1793054375000
+      },
+      {
+        "date": 1793054375000,
         "notes": "School swimming lesson today."
       },
       {
-        "date": 1788489071000
+        "date": 1793054315000
       },
       {
-        "date": 1788489011000
+        "date": 1793054315000
       },
       {
-        "date": 1788489011000
+        "date": 1793054315000
       },
       {
-        "date": 1788489011000
+        "date": 1793054255000
       },
       {
-        "date": 1788488951000
+        "date": 1793054255000
       },
       {
-        "date": 1788488951000
+        "date": 1793054255000
       },
       {
-        "date": 1788488951000
-      },
-      {
-        "date": 1788488891000
-      },
-      {
-        "date": 1788488891000
-      },
-      {
-        "date": 1788488891000,
+        "date": 1793054195000,
         "notes": "Bike ride"
       },
       {
-        "date": 1788488831000,
+        "date": 1793054195000
+      },
+      {
+        "date": 1793054195000
+      },
+      {
+        "date": 1793054135000
+      },
+      {
+        "date": 1793054135000,
         "notes": "Treated mild low"
       },
       {
-        "date": 1788488831000
-      },
-      {
-        "date": 1788488771000
-      },
-      {
-        "date": 1788488771000,
-        "notes": "Mountain biking"
-      },
-      {
-        "date": 1788488771000,
+        "date": 1793054075000,
         "notes": "Running higher after lunch"
       },
       {
-        "date": 1788488711000
+        "date": 1793054075000,
+        "notes": "Mountain biking"
       },
       {
-        "date": 1788488711000
+        "date": 1793054075000
       },
       {
-        "date": 1788488711000,
+        "date": 1793054015000,
         "notes": "Going swimming today"
       },
       {
-        "date": 1788488651000,
-        "notes": "Missed meal bolus detected."
+        "date": 1793054015000
       },
       {
-        "date": 1788488651000,
-        "notes": "Activated manually"
+        "date": 1793054015000
       },
       {
-        "date": 1788488651000,
+        "date": 1793053955000,
         "notes": "Should basal be adjusted overnight?"
       },
       {
-        "date": 1788488591000,
-        "notes": "Soccer training"
+        "date": 1793053955000,
+        "notes": "Activated manually"
       },
       {
-        "date": 1788488591000,
+        "date": 1793053955000,
+        "notes": "Missed meal bolus detected."
+      },
+      {
+        "date": 1793053895000,
         "notes": "Dexcom G7"
       },
       {
-        "date": 1788488531000,
-        "notes": "Started new insulin vial."
+        "date": 1793053895000,
+        "notes": "Soccer training"
       },
       {
-        "date": 1788488531000,
+        "date": 1793053835000,
         "notes": "New sensor inserted"
       },
       {
-        "date": 1788488471000
+        "date": 1793053835000,
+        "notes": "Started new insulin vial."
       },
       {
-        "date": 1788488471000,
+        "date": 1793053775000,
         "notes": "Right thigh"
       },
       {
-        "date": 1788488411000
+        "date": 1793053775000
       },
       {
-        "date": 1788488411000
+        "date": 1793053715000
       },
       {
-        "date": 1788488351000
+        "date": 1793053715000
       },
       {
-        "date": 1788488351000,
-        "notes": "Started new pen"
-      },
-      {
-        "date": 1788488351000,
+        "date": 1793053655000,
         "notes": "Battery replaced"
       },
       {
-        "date": 1788488291000,
-        "notes": "Battery replaced."
+        "date": 1793053655000,
+        "notes": "Started new pen"
       },
       {
-        "date": 1788488291000,
+        "date": 1793053655000
+      },
+      {
+        "date": 1793053595000
+      },
+      {
+        "date": 1793053595000,
         "notes": "Travelling today"
       },
       {
-        "date": 1788488291000
+        "date": 1793053595000,
+        "notes": "Battery replaced."
       },
       {
-        "date": 1788488231000,
+        "date": 1793053535000,
+        "notes": "Possible missed bolus"
+      },
+      {
+        "date": 1793053535000,
         "notes": "Should I reduce basal overnight?"
       },
       {
-        "date": 1788488231000,
-        "notes": "Possible missed bolus"
-      },
-      {
-        "date": 1788488171000,
-        "notes": "Dexcom G7 sensor replaced."
-      },
-      {
-        "date": 1788488171000,
+        "date": 1793053475000,
         "notes": "Forgot pre-bolus"
       },
       {
-        "date": 1788488111000
+        "date": 1793053475000,
+        "notes": "Dexcom G7 sensor replaced."
       },
       {
-        "date": 1788488111000
+        "date": 1793053415000
       },
       {
-        "date": 1788488051000
+        "date": 1793053415000
       },
       {
-        "date": 1788488051000,
+        "date": 1793053355000,
         "notes": "Possible missed bolus"
       },
       {
-        "date": 1788487991000
+        "date": 1793053355000
       },
       {
-        "date": 1788487931000
+        "date": 1793053295000
       },
       {
-        "date": 1788487871000,
+        "date": 1793053235000
+      },
+      {
+        "date": 1793053175000,
         "notes": "Filled with 200U"
       },
       {
-        "date": 1788487811000
+        "date": 1793053115000
       },
       {
-        "date": 1788487751000
+        "date": 1793053055000
       },
       {
-        "date": 1788487691000,
+        "date": 1793052995000,
         "notes": "Automatic correction"
       },
       {
-        "date": 1788487631000,
+        "date": 1793052935000,
         "notes": "Pizza"
       }
     ],

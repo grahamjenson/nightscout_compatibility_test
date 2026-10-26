@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "WAIT",
+    "path": "/socket.io/alarm/announcement",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/alarm/announcement",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/alarm",
+    "namespace": "/alarm",
+    "event": "announcement",
+    "connection": "alarm_connect"
+  },
+  "statusCode": 408,
+  "body": null,
+  "error": "waiting for \"announcement\": timed out",
+  "durationMs": 10000
+}

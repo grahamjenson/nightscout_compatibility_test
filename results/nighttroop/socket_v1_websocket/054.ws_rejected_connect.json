@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "CONNECT",
+    "path": "/socket.io/connect",
+    "url": "http://davezzzz.ns.localhost:8080/socket.io/connect",
+    "connectUrl": "http://davezzzz.ns.localhost:8080/",
+    "namespace": "/",
+    "event": "connect",
+    "connection": "ws_rejected_connect"
+  },
+  "statusCode": 200,
+  "body": {
+    "sid": "31UVoA-IvnXihlWm8w6r"
+  },
+  "durationMs": 1
+}

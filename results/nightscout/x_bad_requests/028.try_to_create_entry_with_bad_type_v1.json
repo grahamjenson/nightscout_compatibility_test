@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=write-d1e2709a9d2611d2",
+    "url": "http://localhost:1337/api/v1/entries?token=write-749a8d3839b8b11c",
     "headers": {
       "Accept": [
         "application/json"
@@ -13,7 +13,7 @@
     },
     "body": {
       "app": "test-app",
-      "date": 1788488406025,
+      "date": 1792616400208,
       "sgv": 105,
       "type": "badentrytype"
     }
@@ -30,10 +30,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:06 GMT"
+      "Wed, 21 Oct 2026 21:20:00 GMT"
     ],
     "Etag": [
-      "W/\"9d-f+cQLXQ3mB9gxMHkUsoZT2ZdjaE\""
+      "W/\"9d-217lXmS/MPNM989j5xVg/Gg+NWc\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -47,14 +47,14 @@
   },
   "body": [
     {
-      "_id": "6a9a2f8649a97a563d84f916",
+      "_id": "6ad92c8035fb876db084a477",
       "app": "test-app",
-      "date": 1788488406025,
+      "date": 1792616400208,
       "sgv": 105,
-      "sysTime": "2026-09-04T02:20:06.025Z",
+      "sysTime": "2026-10-21T21:00:00.208Z",
       "type": "badentrytype",
       "utcOffset": 0
     }
   ],
-  "durationMs": 2
+  "durationMs": 3
 }

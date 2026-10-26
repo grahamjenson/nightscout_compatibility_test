@@ -11,14 +11,14 @@
   "statusCode": 200,
   "body": {
     "delta": true,
-    "lastUpdated": 1792578726589,
+    "lastUpdated": 1792617602594,
     "treatments": [
       {
-        "_id": "6ad894a554e1327fb959c5d6",
+        "_id": "6ad92c81b5c4915f41a3dcb0",
         "action": "remove",
-        "mills": 1792578725000
+        "mills": 1792617601000
       }
     ]
   },
-  "durationMs": 13
+  "durationMs": 20
 }

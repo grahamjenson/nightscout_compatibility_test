@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile?token=write-d1e2709a9d2611d2&find[_id]=6a9a2f806e924a337c97e394",
+    "url": "http://localhost:1337/api/v1/profile?token=write-749a8d3839b8b11c&find[_id]=6ad92c7ab5c4915f41a3dc7e",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:00 GMT"
+      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Etag": [
-      "W/\"145b-VhU8bhJywWrL95l9XjhrN4pgia8\""
+      "W/\"145b-3HzGD/bC7W5SHwMYWVatYHnR9e8\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -39,11 +39,11 @@
   },
   "body": [
     {
-      "_id": "6a9a2f806e924a337c97e394",
-      "created_at": "2026-09-04T02:40:00.063Z",
+      "_id": "6ad92c7ab5c4915f41a3dc7e",
+      "created_at": "2026-10-21T21:19:54.291Z",
       "defaultProfile": "profile_1",
-      "mills": 1788489600005,
-      "startDate": "2026-09-04T14:39:00+12:00",
+      "mills": 1792617594222,
+      "startDate": "2026-10-22T10:18:54+13:00",
       "store": {
         "profile_1": {
           "basal": [
@@ -147,7 +147,7 @@
       }
     },
     {
-      "_id": "6a9a2f806e924a337c97e398",
+      "_id": "6ad92c7ab5c4915f41a3dc82",
       "app": "AAPS",
       "created_at": "2026-08-09T05:33:53.284Z",
       "date": 1786253633284,
@@ -448,7 +448,7 @@
       "utcOffset": 720
     },
     {
-      "_id": "6a9a2f806e924a337c97e397",
+      "_id": "6ad92c7ab5c4915f41a3dc81",
       "created_at": "2017-07-02T00:25:33.154Z",
       "defaultProfile": "Default",
       "mills": "1498954920000",
@@ -526,8 +526,8 @@
       "units": "mg/dl"
     },
     {
-      "_id": "6a9a2f806e924a337c97e396",
-      "created_at": "2026-09-04T02:40:00.068Z",
+      "_id": "6ad92c7ab5c4915f41a3dc80",
+      "created_at": "2026-10-21T21:19:54.296Z",
       "defaultProfile": "profile_3",
       "store": {
         "profile_3": {
@@ -536,8 +536,8 @@
       }
     },
     {
-      "_id": "6a9a2f806e924a337c97e395",
-      "created_at": "2026-09-04T02:40:00.068Z",
+      "_id": "6ad92c7ab5c4915f41a3dc7f",
+      "created_at": "2026-10-21T21:19:54.296Z",
       "defaultProfile": "profile_2",
       "store": {
         "profile_2": {
@@ -546,5 +546,5 @@
       }
     }
   ],
-  "durationMs": 4
+  "durationMs": 3
 }

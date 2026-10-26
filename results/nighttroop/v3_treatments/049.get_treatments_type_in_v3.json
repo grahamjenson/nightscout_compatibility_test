@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v3/treatments?eventType$in=Temp%20Basal|Temporary%20Target",
+    "url": "http://davezzzz.ns.localhost:8080/api/v3/treatments?eventType$in=Temp%20Basal|Temporary%20Target",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc4ODQ5MzIxMSwgImlhdCI6MTc4ODQ4OTYxMSwgImlzcyI6ImFsaWNlenp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.l9cm0w4cbSHQotm9PIhJkOm9neFC2W69DG91UdjwHXg"
+        "Bearer eyJhbGciOiJIUzI1NiIsICJraWQiOiJNMGJSWFEifQ.eyJhdWQiOiJ1c2VyIiwgImV4cCI6MTc5MzA1ODUxNSwgImlhdCI6MTc5MzA1NDkxNSwgImlzcyI6ImRhdmV6enp6IiwgInJvbGUiOiJkZXZpY2VfcHdkX3Bob25lIiwgInN1YiI6InB3ZF9waG9uZSJ9.3oIqBm_liYOXyFLO_mLTBxMP1st-MiY8RMbe0Z2adv8"
       ],
       "Content-Type": [
         "application/json"
@@ -22,13 +22,16 @@
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611673\""
+      "W/\"1793054915811\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": {
@@ -36,93 +39,76 @@
       {
         "absolute": 0,
         "app": "asd",
-        "created_at": "2026-09-04T02:40:11Z",
-        "date": 1788489611000,
+        "created_at": "2026-10-26T22:48:35Z",
+        "date": 1793054915000,
         "duration": 0,
         "durationInMilliseconds": 0,
         "enteredBy": "pwd_phone",
         "eventType": "Temp Basal",
-        "identifier": "R1eNolpUcustom",
+        "identifier": "treatmentv1t1custom",
         "isReadOnly": false,
         "isValid": true,
         "notes": "Lunch pasta + insulin pre-bolus",
         "percentage": 10,
         "rate": 0,
         "reason": "lunch",
-        "srvCreated": 1788489611646,
-        "srvModified": 1788489611646,
+        "srvCreated": 1793054915780,
+        "srvModified": 1793054915780,
         "subject": "pwd_phone",
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "absolute": 0.35,
-        "created_at": "2026-09-04T02:36:11Z",
-        "date": 1788489371000,
+        "created_at": "2026-10-26T22:44:35Z",
+        "date": 1793054675000,
         "duration": 60,
         "durationInMilliseconds": 3600000,
         "enteredBy": "pwd_phone",
         "eventType": "Temp Basal",
-        "identifier": "UDFRE9Ei",
+        "identifier": "476oG0Uw",
         "isReadOnly": false,
         "isValid": true,
         "rate": 0.35,
-        "srvCreated": 1788489611420,
-        "srvModified": 1788489611420,
+        "srvCreated": 1793054915623,
+        "srvModified": 1793054915623,
         "subject": "pwd_phone",
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "absolute": 0.4,
         "app": "AndroidAPS",
-        "created_at": "2026-09-04T02:32:11Z",
-        "date": 1788489131000,
+        "created_at": "2026-10-26T22:40:35Z",
+        "date": 1793054435000,
         "duration": 60,
         "durationInMilliseconds": 3600000,
         "enteredBy": "pwd_phone",
         "eventType": "Temp Basal",
-        "identifier": "GhXAPsX0",
+        "identifier": "bTdY7ha5",
         "isReadOnly": false,
         "isValid": true,
         "rate": 0.4,
         "reason": "Exercise",
-        "srvCreated": 1788489611670,
-        "srvModified": 1788489611670,
+        "srvCreated": 1793054915808,
+        "srvModified": 1793054915808,
         "subject": "pwd_phone",
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "absolute": 0.45,
-        "created_at": "2026-09-04T02:31:11Z",
-        "date": 1788489071000,
+        "created_at": "2026-10-26T22:39:35Z",
+        "date": 1793054375000,
         "duration": 30,
         "durationInMilliseconds": 1800000,
         "enteredBy": "pwd_phone",
         "eventType": "Temp Basal",
-        "identifier": "s5JhrY2P",
+        "identifier": "3OaoQk8S",
         "isReadOnly": false,
         "isValid": true,
         "rate": 0.45,
-        "srvCreated": 1788489611430,
-        "srvModified": 1788489611430,
+        "srvCreated": 1793054915634,
+        "srvModified": 1793054915634,
         "subject": "pwd_phone",
-        "utcOffset": 720
-      },
-      {
-        "absolute": 0,
-        "created_at": "2026-09-04T02:30:11Z",
-        "date": 1788489011000,
-        "duration": 90,
-        "durationInMilliseconds": 5400000,
-        "enteredBy": "pwd_phone",
-        "eventType": "Temp Basal",
-        "identifier": "N7Jewp1w",
-        "isReadOnly": false,
-        "isValid": true,
-        "rate": 0,
-        "srvCreated": 1788489611430,
-        "srvModified": 1788489611430,
-        "subject": "pwd_phone",
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "app": "AndroidAPS",
@@ -130,105 +116,122 @@
           7,
           8
         ],
-        "created_at": "2026-09-04T02:30:11Z",
-        "date": 1788489011000,
+        "created_at": "2026-10-26T22:38:35Z",
+        "date": 1793054315000,
         "duration": 120,
         "durationInMilliseconds": 7200000,
         "enteredBy": "pwd_phone",
         "eventType": "Temporary Target",
-        "identifier": "Xsh96Kvm",
+        "identifier": "drgSKQZ7",
         "isReadOnly": false,
         "isValid": true,
         "reason": "Exercise",
-        "srvCreated": 1788489611673,
-        "srvModified": 1788489611673,
+        "srvCreated": 1793054915811,
+        "srvModified": 1793054915811,
         "subject": "pwd_phone",
         "targetBottom": 7,
         "targetTop": 8,
-        "utcOffset": 720
+        "utcOffset": 780
+      },
+      {
+        "absolute": 0,
+        "created_at": "2026-10-26T22:38:35Z",
+        "date": 1793054315000,
+        "duration": 90,
+        "durationInMilliseconds": 5400000,
+        "enteredBy": "pwd_phone",
+        "eventType": "Temp Basal",
+        "identifier": "d0C1CkGy",
+        "isReadOnly": false,
+        "isValid": true,
+        "rate": 0,
+        "srvCreated": 1793054915635,
+        "srvModified": 1793054915635,
+        "subject": "pwd_phone",
+        "utcOffset": 780
       },
       {
         "absolute": 1.2,
-        "created_at": "2026-09-04T02:29:11Z",
-        "date": 1788488951000,
+        "created_at": "2026-10-26T22:37:35Z",
+        "date": 1793054255000,
         "duration": 120,
         "durationInMilliseconds": 7200000,
         "enteredBy": "pwd_phone",
         "eventType": "Temp Basal",
-        "identifier": "dZcCt1TT",
+        "identifier": "QkZWwNuG",
         "isReadOnly": false,
         "isValid": true,
         "rate": 1.2,
-        "srvCreated": 1788489611431,
-        "srvModified": 1788489611431,
+        "srvCreated": 1793054915636,
+        "srvModified": 1793054915636,
         "subject": "pwd_phone",
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "correctionRange": [
           6,
           7
         ],
-        "created_at": "2026-09-04T02:28:11Z",
-        "date": 1788488891000,
+        "created_at": "2026-10-26T22:36:35Z",
+        "date": 1793054195000,
         "duration": 60,
         "durationInMilliseconds": 3600000,
         "enteredBy": "pwd_phone",
         "eventType": "Temporary Target",
-        "identifier": "370m8UpQ",
+        "identifier": "4GFaYZ63",
         "isReadOnly": false,
         "isValid": true,
         "reason": "Eating Soon",
-        "srvCreated": 1788489611432,
-        "srvModified": 1788489611432,
+        "srvCreated": 1793054915637,
+        "srvModified": 1793054915637,
         "subject": "pwd_phone",
         "targetBottom": 6,
         "targetTop": 7,
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "correctionRange": [
           8,
           9
         ],
-        "created_at": "2026-09-04T02:27:11Z",
-        "date": 1788488831000,
+        "created_at": "2026-10-26T22:35:35Z",
+        "date": 1793054135000,
         "duration": 120,
         "durationInMilliseconds": 7200000,
         "enteredBy": "pwd_phone",
         "eventType": "Temporary Target",
-        "identifier": "iR3BiH3u",
+        "identifier": "MEq4yzJ7",
         "isReadOnly": false,
         "isValid": true,
         "reason": "Exercise",
-        "srvCreated": 1788489611433,
-        "srvModified": 1788489611433,
+        "srvCreated": 1793054915639,
+        "srvModified": 1793054915639,
         "subject": "pwd_phone",
         "targetBottom": 8,
         "targetTop": 9,
-        "utcOffset": 720
+        "utcOffset": 780
       },
       {
         "correctionRange": [
           7,
           8
         ],
-        "created_at": "2026-09-04T02:14:11Z",
-        "date": 1788488051000,
+        "created_at": "2026-10-26T22:22:35Z",
+        "date": 1793053355000,
         "duration": 90,
         "durationInMilliseconds": 5400000,
         "enteredBy": "pwd_phone",
         "eventType": "Temporary Target",
-        "identifier": "X9NRd2sH",
+        "identifier": "Ai3C2vR0",
         "isReadOnly": false,
         "isValid": true,
         "reason": "Exercise",
-        "srvCreated": 1788489611420,
-        "srvModified": 1788489611420,
+        "srvCreated": 1793054915623,
+        "srvModified": 1793054915623,
         "subject": "pwd_phone",
         "targetBottom": 7,
         "targetTop": 8,
-        "utcOffset": 720
+        "utcOffset": 780
       }
     ],
     "status": 200

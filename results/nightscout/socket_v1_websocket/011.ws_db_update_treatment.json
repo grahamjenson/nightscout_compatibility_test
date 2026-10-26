@@ -10,7 +10,7 @@
     "ack": true,
     "args": [
       {
-        "_id": "6ad894a554e1327fb959c5d6",
+        "_id": "6ad92c81b5c4915f41a3dcb0",
         "collection": "treatments",
         "data": {
           "notes": "updated over socket.io"
@@ -22,5 +22,5 @@
   "body": {
     "result": "success"
   },
-  "durationMs": 4
+  "durationMs": 1
 }

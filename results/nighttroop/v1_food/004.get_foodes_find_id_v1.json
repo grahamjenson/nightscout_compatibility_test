@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://alicezzz.ns.localhost:8080/api/v1/food?token=QWNlRzVYcEtmMEhzdGtMS2R2NXJBRmkyS0lYdWw4MS9xY0ttNlhnb0luQVgzNStvVitmeFkrS28xS2p4aFY3d1AyQzZ1dzV4bzdiRUNmWE9BYXRrelprNGpiaFNac2VpdDVsejNaTQ&find[_id]=iqa67JBt",
+    "url": "http://davezzzz.ns.localhost:8080/api/v1/food?token=QWNlRzVYbzlqRjNzZWNDb1lFRkF2SS8vTmVaZjlwaDlTbE5TUWh2Nkk3QXlvVmwrZjBWVW5UbUZPdE9TVHFEUnZGUXJ0Kzdnd1VNUkpLY1cvVG5VSEpiZXBzTCtQU1hoRVBSMlcwRQ&find[_id]=gx9Ekvpt",
     "headers": {
       "Accept": [
         "application/json"
@@ -15,28 +15,28 @@
   },
   "statusCode": 200,
   "headers": {
-    "Content-Length": [
-      "203"
-    ],
     "Content-Type": [
       "application/json"
     ],
     "Date": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
     ],
     "Etag": [
-      "W/\"1788489611386\""
+      "W/\"1793054915520\""
     ],
     "Last-Modified": [
-      "Fri, 04 Sep 2026 02:40:11 GMT"
+      "Mon, 26 Oct 2026 22:48:35 GMT"
+    ],
+    "Vary": [
+      "Accept-Encoding"
     ]
   },
   "body": [
     {
-      "_id": "iqa67JBt",
+      "_id": "gx9Ekvpt",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-09-04T02:40:11.386Z",
+      "created_at": "2026-10-26T22:48:35.52Z",
       "energy": 105,
       "fat": 0.3,
       "name": "Banana",
