@@ -1,0 +1,112 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/authorization/roles?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "created": "2026-10-27T01:17:14.603441Z",
+      "modified": "2026-10-27T01:17:14.603441Z",
+      "name": "admin",
+      "notes": "Full administrative access",
+      "permissions": [
+        "*"
+      ]
+    },
+    {
+      "created": "2026-10-27T01:17:14.603441Z",
+      "modified": "2026-10-27T01:17:14.603441Z",
+      "name": "api",
+      "notes": "API access for devices and services",
+      "permissions": [
+        "api:entries:*",
+        "api:treatments:*",
+        "api:devicestatus:*",
+        "api:profile:read"
+      ]
+    },
+    {
+      "created": "2026-10-27T01:17:14.603441Z",
+      "modified": "2026-10-27T01:17:14.603441Z",
+      "name": "careportal",
+      "notes": "Care portal access for entering treatments",
+      "permissions": [
+        "api:entries:read",
+        "api:treatments:*",
+        "api:devicestatus:read",
+        "api:profile:read",
+        "careportal:*",
+        "api:trackers:*"
+      ]
+    },
+    {
+      "created": "2026-10-27T01:17:14.603441Z",
+      "modified": "2026-10-27T01:17:14.603441Z",
+      "name": "denied",
+      "notes": "No access",
+      "permissions": []
+    },
+    {
+      "created": "2026-10-27T01:17:14.603441Z",
+      "modified": "2026-10-27T01:17:14.603441Z",
+      "name": "public",
+      "notes": "Default permissions for unauthenticated access",
+      "permissions": [
+        "api:entries:read",
+        "api:treatments:read",
+        "api:devicestatus:read",
+        "api:profile:read",
+        "api:food:read",
+        "api:activity:read",
+        "api:trackers:read"
+      ]
+    },
+    {
+      "created": "2026-10-27T01:17:14.603441Z",
+      "modified": "2026-10-27T01:17:14.603441Z",
+      "name": "readable",
+      "notes": "Read-only access to all data",
+      "permissions": [
+        "api:entries:read",
+        "api:treatments:read",
+        "api:devicestatus:read",
+        "api:profile:read",
+        "api:food:read",
+        "api:activity:read",
+        "api:trackers:read"
+      ]
+    }
+  ],
+  "durationMs": 20
+}

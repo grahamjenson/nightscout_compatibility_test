@@ -1,0 +1,97 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/profile?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "defaultProfile": "profile_2",
+        "store": {
+          "profile_2": {
+            "dia": 7
+          }
+        }
+      },
+      {
+        "defaultProfile": "profile_3",
+        "store": {
+          "profile_3": {
+            "dia": 8
+          }
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:42 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aef-41bc-76af-b490-74199a439a78",
+      "created_at": "2026-10-27T01:17:42.716Z",
+      "defaultProfile": "profile_2",
+      "srvCreated": 1793063862716,
+      "srvModified": 1793063862716,
+      "store": {
+        "profile_2": {
+          "basal": [],
+          "carbratio": [],
+          "carbs_hr": 20,
+          "delay": 20,
+          "dia": 7,
+          "sens": [],
+          "target_high": [],
+          "target_low": []
+        }
+      },
+      "units": "mg/dL"
+    },
+    {
+      "_id": "01a17aef-41bc-7a3a-ae91-5abdbe1c7241",
+      "created_at": "2026-10-27T01:17:42.716Z",
+      "defaultProfile": "profile_3",
+      "srvCreated": 1793063862716,
+      "srvModified": 1793063862716,
+      "store": {
+        "profile_3": {
+          "basal": [],
+          "carbratio": [],
+          "carbs_hr": 20,
+          "delay": 20,
+          "dia": 8,
+          "sens": [],
+          "target_high": [],
+          "target_low": []
+        }
+      },
+      "units": "mg/dL"
+    }
+  ],
+  "durationMs": 107
+}

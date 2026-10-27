@@ -1,0 +1,54 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/devicestatus?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "created_at": "2026-10-27T01:17:08Z",
+      "device": "aaps1",
+      "random": 123
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:08 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aefa6a604e9a2ec6b26",
+      "created_at": "2026-10-27T01:17:08Z",
+      "device": "aaps1",
+      "random": 123,
+      "srvCreated": 1793063828000,
+      "srvModified": 1793063828000,
+      "uploaderBattery": null,
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 32
+}

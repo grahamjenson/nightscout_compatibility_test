@@ -1,0 +1,52 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/entries?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": "{\"}"
+  },
+  "statusCode": 400,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:08 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "errors": {
+      "$": [
+        "Expected end of string, but instead reached end of data. Path: $ | LineNumber: 0 | BytePositionInLine: 3."
+      ],
+      "entryData": [
+        "The entryData field is required."
+      ]
+    },
+    "status": 400,
+    "title": "One or more validation errors occurred.",
+    "traceId": "00-3472afdcf85e6758bfdf965500b57e59-4596c524e2ef9e6c-01",
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1"
+  },
+  "durationMs": 11
+}

@@ -1,0 +1,54 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/authorization/subjects?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "name": "compat-test-subject",
+      "notes": "created by the compatibility tests",
+      "roles": [
+        "compat-test-role"
+      ]
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "accessToken": "noc_WIEftcPNJ2fXFYHSCWj--yIWHEwVrWW0sthyZCLkcsQ",
+    "created": "2026-10-27T01:18:07.605377Z",
+    "modified": "2026-10-27T01:18:07.605377Z",
+    "name": "compat-test-subject",
+    "notes": "created by the compatibility tests",
+    "roles": [
+      "api:treatments:read"
+    ]
+  },
+  "durationMs": 40
+}

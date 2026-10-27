@@ -1,0 +1,156 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v3/profile",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMWExN2FlZi0yM2U0LTdiYmQtYjM3Mi05NTA1ZTVjMTY1YjEiLCJqdGkiOiIwMWExN2FlZi0yNGNjLTc0ODEtODE0YS1lY2M3NDY5N2JlODciLCJpYXQiOjE3OTMwNjM4NTUsIm5hbWUiOiJEZXZpY2VzIiwidGVuYW50X2lkIjoiMDFhMTdhZWYtMjAzYS03MGFkLWFmOWMtMmZjZjg3OWIwMmQ2IiwiZ3JhbnRfaWQiOiIwMWExN2FlZi0yNDAxLTdmNjgtYjY4My1mY2Q3NmMwY2YxMzMiLCJzY29wZSI6ImdsdWNvc2UucmVhZCBnbHVjb3NlLnJlYWR3cml0ZSB0cmVhdG1lbnRzLnJlYWQgdHJlYXRtZW50cy5yZWFkd3JpdGUgZGV2aWNlcy5yZWFkIGRldmljZXMucmVhZHdyaXRlIHRoZXJhcHkucmVhZCB0aGVyYXB5LnJlYWR3cml0ZSBhbGVydHMucmVhZCBhbGVydHMucmVhZHdyaXRlIGFsZXJ0cy5hY2tub3dsZWRnZSByZXBvcnRzLnJlYWQgaWRlbnRpdHkucmVhZCBoZWFydHJhdGUucmVhZCBoZWFydHJhdGUucmVhZHdyaXRlIHN0ZXBjb3VudC5yZWFkIHN0ZXBjb3VudC5yZWFkd3JpdGUgc2xlZXAucmVhZCBzbGVlcC5yZWFkd3JpdGUgZm9vZC5yZWFkIGZvb2QucmVhZHdyaXRlIHNoYXJpbmcucmVhZHdyaXRlIGRldmljZS5ub3RpZnkgZGV2aWNlLmFjdHVhdGUgKiIsIm5iZiI6MTc5MzA2Mzg1NSwiZXhwIjoxNzkzMDY3NDU1LCJpc3MiOiJub2N0dXJuZSIsImF1ZCI6Im5vY3R1cm5lLWFwaSJ9.kpF9SZnIh3Dt-iwGvdKnUApJEYqoTj5WBcOJM5wdGOA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "asd",
+      "date": "2026-10-27T01:17:57Z",
+      "defaultProfile": "profile_1",
+      "mills": 1793063877747,
+      "startDate": "2026-10-27T01:16:57Z",
+      "store": {
+        "profile_1": {
+          "basal": [
+            {
+              "time": "00:00",
+              "value": 0.9
+            },
+            {
+              "time": "03:00",
+              "value": 0.85
+            },
+            {
+              "time": "06:00",
+              "value": 0.8
+            },
+            {
+              "time": "12:00",
+              "value": 0.75
+            },
+            {
+              "time": "18:00",
+              "value": 0.85
+            }
+          ],
+          "carbratio": [
+            {
+              "time": "00:00",
+              "value": 12
+            },
+            {
+              "time": "06:00",
+              "value": 10
+            },
+            {
+              "time": "12:00",
+              "value": 11
+            },
+            {
+              "time": "18:00",
+              "value": 13
+            }
+          ],
+          "dia": 6,
+          "sens": [
+            {
+              "time": "00:00",
+              "value": 2.5
+            },
+            {
+              "time": "06:00",
+              "value": 2.2
+            },
+            {
+              "time": "12:00",
+              "value": 2
+            },
+            {
+              "time": "18:00",
+              "value": 2.3
+            }
+          ],
+          "target_high": [
+            {
+              "time": "00:00",
+              "value": 6.1
+            },
+            {
+              "time": "06:00",
+              "value": 5.8
+            },
+            {
+              "time": "12:00",
+              "value": 6.1
+            },
+            {
+              "time": "18:00",
+              "value": 6.7
+            }
+          ],
+          "target_low": [
+            {
+              "time": "00:00",
+              "value": 5
+            },
+            {
+              "time": "06:00",
+              "value": 4.7
+            },
+            {
+              "time": "12:00",
+              "value": 5
+            },
+            {
+              "time": "18:00",
+              "value": 5.3
+            }
+          ],
+          "timezone": "Pacific/Auckland",
+          "units": "mmol"
+        }
+      }
+    }
+  },
+  "statusCode": 201,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:57 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 27 Oct 2026 01:17:57 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "identifier": "88f84f8e4c96277a8444f965",
+    "lastModified": 1793063877850,
+    "status": 201
+  },
+  "durationMs": 103
+}

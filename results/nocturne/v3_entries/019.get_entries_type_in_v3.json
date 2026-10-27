@@ -1,0 +1,128 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v3/entries?type$in=sgv|mbg",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMWExN2FlZi0yM2U0LTdiYmQtYjM3Mi05NTA1ZTVjMTY1YjEiLCJqdGkiOiIwMWExN2FlZi0yNGNjLTc0ODEtODE0YS1lY2M3NDY5N2JlODciLCJpYXQiOjE3OTMwNjM4NTUsIm5hbWUiOiJEZXZpY2VzIiwidGVuYW50X2lkIjoiMDFhMTdhZWYtMjAzYS03MGFkLWFmOWMtMmZjZjg3OWIwMmQ2IiwiZ3JhbnRfaWQiOiIwMWExN2FlZi0yNDAxLTdmNjgtYjY4My1mY2Q3NmMwY2YxMzMiLCJzY29wZSI6ImdsdWNvc2UucmVhZCBnbHVjb3NlLnJlYWR3cml0ZSB0cmVhdG1lbnRzLnJlYWQgdHJlYXRtZW50cy5yZWFkd3JpdGUgZGV2aWNlcy5yZWFkIGRldmljZXMucmVhZHdyaXRlIHRoZXJhcHkucmVhZCB0aGVyYXB5LnJlYWR3cml0ZSBhbGVydHMucmVhZCBhbGVydHMucmVhZHdyaXRlIGFsZXJ0cy5hY2tub3dsZWRnZSByZXBvcnRzLnJlYWQgaWRlbnRpdHkucmVhZCBoZWFydHJhdGUucmVhZCBoZWFydHJhdGUucmVhZHdyaXRlIHN0ZXBjb3VudC5yZWFkIHN0ZXBjb3VudC5yZWFkd3JpdGUgc2xlZXAucmVhZCBzbGVlcC5yZWFkd3JpdGUgZm9vZC5yZWFkIGZvb2QucmVhZHdyaXRlIHNoYXJpbmcucmVhZHdyaXRlIGRldmljZS5ub3RpZnkgZGV2aWNlLmFjdHVhdGUgKiIsIm5iZiI6MTc5MzA2Mzg1NSwiZXhwIjoxNzkzMDY3NDU1LCJpc3MiOiJub2N0dXJuZSIsImF1ZCI6Im5vY3R1cm5lLWFwaSJ9.kpF9SZnIh3Dt-iwGvdKnUApJEYqoTj5WBcOJM5wdGOA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:56 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "_id": "01a17aef6c1d07d0aa9e2ce0",
+        "date": 1767355994,
+        "dateString": "1970-01-21T10:55:55.994Z",
+        "identifier": "01a17aef6c1d07d0aa9e2ce0",
+        "isValid": true,
+        "mgdl": 100,
+        "mills": 1767355994,
+        "mmol": 5.54994394556615,
+        "sgv": 100,
+        "srvCreated": 1793063873583,
+        "srvModified": 1793063873583,
+        "sysTime": "1970-01-21T10:55:55.994Z",
+        "type": "sgv",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef38490105a3745dba",
+        "app": "test-app",
+        "date": 1793063140212,
+        "dateString": "2026-10-27T01:05:40.212Z",
+        "device": "test-device",
+        "identifier": "01a17aef38490105a3745dba",
+        "isValid": true,
+        "mbg": 102,
+        "mgdl": 102,
+        "mills": 1793063140212,
+        "srvCreated": 1793063860427,
+        "srvModified": 1793063860427,
+        "sysTime": "2026-10-27T01:05:40.212Z",
+        "type": "mbg",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef390307f19f4472f0",
+        "app": "test-app",
+        "date": 1793063260471,
+        "dateString": "2026-10-27T01:07:40.471Z",
+        "device": "test-device",
+        "identifier": "01a17aef390307f19f4472f0",
+        "isValid": true,
+        "mbg": 110,
+        "mgdl": 110,
+        "mills": 1793063260471,
+        "srvCreated": 1793063860500,
+        "srvModified": 1793063860500,
+        "sysTime": "2026-10-27T01:07:40.471Z",
+        "type": "mbg",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef357109aaa05b60ee",
+        "date": 1793063859514,
+        "dateString": "2026-10-27T01:17:39.514Z",
+        "identifier": "01a17aef357109aaa05b60ee",
+        "isValid": true,
+        "mgdl": 100,
+        "mills": 1793063859514,
+        "mmol": 5.54994394556615,
+        "sgv": 100,
+        "srvCreated": 1793063859868,
+        "srvModified": 1793063859868,
+        "sysTime": "2026-10-27T01:17:39.514Z",
+        "type": "sgv",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef77b10f13a4841fee",
+        "date": 1793063876515,
+        "dateString": "2026-10-27T01:17:56.515Z",
+        "identifier": "01a17aef77b10f13a4841fee",
+        "isValid": true,
+        "mgdl": 224,
+        "mills": 1793063876515,
+        "mmol": 12.431874438068176,
+        "sgv": 224,
+        "srvCreated": 1793063876544,
+        "srvModified": 1793063876544,
+        "sysTime": "2026-10-27T01:17:56.515Z",
+        "type": "sgv",
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 22
+}

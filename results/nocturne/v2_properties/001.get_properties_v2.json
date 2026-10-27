@@ -1,0 +1,202 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/properties?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:06 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "bage": {
+      "age": 0,
+      "checkForAlert": false,
+      "days": 0,
+      "display": "0h",
+      "found": true,
+      "hours": 0,
+      "level": -3,
+      "minFractions": 20,
+      "treatmentDate": 1793062667000
+    },
+    "basal": {
+      "current": {
+        "basal": 0.9,
+        "combobolustreatment": null,
+        "totalbasal": 0.9,
+        "treatment": null
+      },
+      "display": "0.900U"
+    },
+    "bgnow": {
+      "displayLine": "BG Now: 224 mg/dl",
+      "last": 224,
+      "mean": 224,
+      "mgdl": 224,
+      "mills": 1793063876515,
+      "scaled": 224,
+      "sgvs": [
+        {
+          "_id": "01a17aef77b10f13a4841fee",
+          "date": 1793063876515,
+          "dateString": "2026-10-27T01:17:56.515Z",
+          "identifier": "01a17aef77b10f13a4841fee",
+          "isValid": true,
+          "mgdl": 224,
+          "mills": 1793063876515,
+          "mmol": 12.431874438068176,
+          "sgv": 224,
+          "srvCreated": 1793063876544,
+          "srvModified": 1793063876544,
+          "type": "sgv",
+          "utcOffset": 0
+        }
+      ]
+    },
+    "cage": {
+      "age": 0,
+      "checkForAlert": false,
+      "days": 0,
+      "display": "0h",
+      "found": true,
+      "hours": 0,
+      "level": -3,
+      "minFractions": 6,
+      "treatmentDate": 1793063519000
+    },
+    "cob": {
+      "activity": 0,
+      "cob": 561,
+      "display": "560.6",
+      "displayLine": "COB: 560.6g",
+      "source": "Care Portal",
+      "timestamp": 1793063886491
+    },
+    "dbsize": {
+      "display": "0%",
+      "percentage": 0,
+      "size": 6553600,
+      "status": "ok"
+    },
+    "devicestatus": {
+      "created_at": "2026-10-27T01:16:37.000Z",
+      "device": "aaps1",
+      "mills": 1793063797000,
+      "uploaderBattery": 87
+    },
+    "direction": {
+      "entity": "&#8700;",
+      "label": "⇼",
+      "value": "NONE"
+    },
+    "iage": {
+      "age": 0,
+      "checkForAlert": false,
+      "days": 0,
+      "display": "0h",
+      "found": true,
+      "hours": 0,
+      "level": -3,
+      "minFractions": 18,
+      "notes": "Started new insulin vial.",
+      "treatmentDate": 1793062784000
+    },
+    "iob": {
+      "activity": 1.6487311166149858,
+      "basalIob": 0.033,
+      "display": "69.24",
+      "displayLine": "IOB: 69.24U",
+      "iob": 69.24,
+      "lastBolus": 1793063687000,
+      "source": "Care Portal",
+      "timestamp": 1793063886491,
+      "treatmentIob": 0
+    },
+    "profile": {
+      "created_at": "2026-10-27T01:17:57.876Z",
+      "mills": 1793063877866,
+      "name": "profile_2"
+    },
+    "runtimestate": {
+      "state": "ok"
+    },
+    "sage": {
+      "Sensor Change": {
+        "age": 0,
+        "days": 0,
+        "display": "0h",
+        "displayLong": "0 hours",
+        "found": true,
+        "hours": 0,
+        "minFractions": 18,
+        "notes": "New CGM sensor inserted",
+        "treatmentDate": 1793062800000
+      },
+      "Sensor Start": {
+        "age": 0,
+        "days": 0,
+        "display": "0h",
+        "displayLong": "0 hours",
+        "found": true,
+        "hours": 0,
+        "level": -3,
+        "minFractions": 7,
+        "treatmentDate": 1793063459000
+      },
+      "min": "Sensor Start"
+    },
+    "upbat": {
+      "devices": [
+        {
+          "device": "aaps1",
+          "isCharging": null,
+          "mills": 1793063797000,
+          "name": "aaps1",
+          "temperature": null,
+          "value": 87,
+          "voltage": 4.05
+        },
+        {
+          "device": "aaps",
+          "isCharging": null,
+          "mills": 1793063737000,
+          "name": "aaps",
+          "temperature": null,
+          "value": 87,
+          "voltage": 4.05
+        }
+      ],
+      "display": "87%",
+      "displayLine": "Battery: 87%",
+      "level": 75
+    }
+  },
+  "durationMs": 514
+}

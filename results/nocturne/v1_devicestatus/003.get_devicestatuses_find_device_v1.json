@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/devicestatus?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ&find[device]=aaps",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:37 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aef2e020e8fb77c02f7",
+      "created_at": "2026-10-27T01:15:37.000Z",
+      "date": 1793063737000,
+      "device": "aaps",
+      "mills": 1793063737000,
+      "srvCreated": 1793063857744,
+      "srvModified": 1793063857744,
+      "uploader": {
+        "battery": 87,
+        "batteryVoltage": 4.05
+      },
+      "uploaderBattery": 87,
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 288
+}

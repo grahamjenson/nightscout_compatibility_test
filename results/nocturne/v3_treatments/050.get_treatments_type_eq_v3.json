@@ -1,0 +1,182 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v3/treatments?eventType$eq=Temp%20Basal",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMWExN2FlZi0yM2U0LTdiYmQtYjM3Mi05NTA1ZTVjMTY1YjEiLCJqdGkiOiIwMWExN2FlZi0yNGNjLTc0ODEtODE0YS1lY2M3NDY5N2JlODciLCJpYXQiOjE3OTMwNjM4NTUsIm5hbWUiOiJEZXZpY2VzIiwidGVuYW50X2lkIjoiMDFhMTdhZWYtMjAzYS03MGFkLWFmOWMtMmZjZjg3OWIwMmQ2IiwiZ3JhbnRfaWQiOiIwMWExN2FlZi0yNDAxLTdmNjgtYjY4My1mY2Q3NmMwY2YxMzMiLCJzY29wZSI6ImdsdWNvc2UucmVhZCBnbHVjb3NlLnJlYWR3cml0ZSB0cmVhdG1lbnRzLnJlYWQgdHJlYXRtZW50cy5yZWFkd3JpdGUgZGV2aWNlcy5yZWFkIGRldmljZXMucmVhZHdyaXRlIHRoZXJhcHkucmVhZCB0aGVyYXB5LnJlYWR3cml0ZSBhbGVydHMucmVhZCBhbGVydHMucmVhZHdyaXRlIGFsZXJ0cy5hY2tub3dsZWRnZSByZXBvcnRzLnJlYWQgaWRlbnRpdHkucmVhZCBoZWFydHJhdGUucmVhZCBoZWFydHJhdGUucmVhZHdyaXRlIHN0ZXBjb3VudC5yZWFkIHN0ZXBjb3VudC5yZWFkd3JpdGUgc2xlZXAucmVhZCBzbGVlcC5yZWFkd3JpdGUgZm9vZC5yZWFkIGZvb2QucmVhZHdyaXRlIHNoYXJpbmcucmVhZHdyaXRlIGRldmljZS5ub3RpZnkgZGV2aWNlLmFjdHVhdGUgKiIsIm5iZiI6MTc5MzA2Mzg1NSwiZXhwIjoxNzkzMDY3NDU1LCJpc3MiOiJub2N0dXJuZSIsImF1ZCI6Im5vY3R1cm5lLWFwaSJ9.kpF9SZnIh3Dt-iwGvdKnUApJEYqoTj5WBcOJM5wdGOA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:02 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "_id": "01a17aef58b97159bcfacb1c",
+        "absolute": 1.2,
+        "basalOrigin": "Manual",
+        "carbs": null,
+        "created_at": "2026-10-27T01:06:47.000Z",
+        "date": 1793063207000,
+        "duration": 120,
+        "enteredBy": null,
+        "eventType": "Temp Basal",
+        "identifier": "01a17aef58b97159bcfacb1c",
+        "mills": 1793063207000,
+        "originEvidence": "Uploader",
+        "rate": 1.2,
+        "relative": 1.2,
+        "srvCreated": 1793063868610,
+        "srvModified": 1793063868610,
+        "temp": "absolute",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef58117c75a5251e72",
+        "basalOrigin": "Manual",
+        "carbs": null,
+        "created_at": "2026-10-27T01:07:47.000Z",
+        "date": 1793063267000,
+        "duration": 90,
+        "enteredBy": null,
+        "eventType": "Temp Basal",
+        "identifier": "01a17aef58117c75a5251e72",
+        "mills": 1793063267000,
+        "originEvidence": "Uploader",
+        "percent": 50,
+        "scheduledRate": 0.3,
+        "srvCreated": 1793063868547,
+        "srvModified": 1793063868547,
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef57be7b6586e210b4",
+        "absolute": 0.45,
+        "basalOrigin": "Manual",
+        "carbs": null,
+        "created_at": "2026-10-27T01:08:47.000Z",
+        "date": 1793063327000,
+        "duration": 30,
+        "enteredBy": null,
+        "eventType": "Temp Basal",
+        "identifier": "01a17aef57be7b6586e210b4",
+        "mills": 1793063327000,
+        "originEvidence": "Uploader",
+        "rate": 0.45,
+        "relative": 0.45,
+        "srvCreated": 1793063868360,
+        "srvModified": 1793063868360,
+        "temp": "absolute",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef872c7d77b0ea5af8",
+        "basalOrigin": "Manual",
+        "carbs": null,
+        "created_at": "2026-10-27T01:09:00.000Z",
+        "date": 1793063340000,
+        "duration": 90,
+        "enteredBy": null,
+        "eventType": "Temp Basal",
+        "identifier": "01a17aef872c7d77b0ea5af8",
+        "mills": 1793063340000,
+        "originEvidence": "Uploader",
+        "percent": -50,
+        "scheduledRate": 0.3,
+        "srvCreated": 1793063880506,
+        "srvModified": 1793063880506,
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef86e770dba38043f0",
+        "absolute": 0.4,
+        "basalOrigin": "Manual",
+        "carbs": null,
+        "created_at": "2026-10-27T01:10:00.000Z",
+        "date": 1793063400000,
+        "duration": 60,
+        "enteredBy": null,
+        "eventType": "Temp Basal",
+        "identifier": "01a17aef86e770dba38043f0",
+        "mills": 1793063400000,
+        "originEvidence": "Uploader",
+        "rate": 0.4,
+        "relative": 0.4,
+        "srvCreated": 1793063880433,
+        "srvModified": 1793063880433,
+        "temp": "absolute",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef53b97b528dfb1ac8",
+        "absolute": 0.35,
+        "basalOrigin": "Manual",
+        "carbs": null,
+        "created_at": "2026-10-27T01:13:44.000Z",
+        "date": 1793063624000,
+        "duration": 60,
+        "enteredBy": null,
+        "eventType": "Temp Basal",
+        "identifier": "01a17aef53b97b528dfb1ac8",
+        "mills": 1793063624000,
+        "originEvidence": "Uploader",
+        "rate": 0.35,
+        "relative": 0.35,
+        "srvCreated": 1793063867473,
+        "srvModified": 1793063867473,
+        "temp": "absolute",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef83477fe5b09e5eca",
+        "absolute": 0,
+        "basalOrigin": "Manual",
+        "carbs": null,
+        "created_at": "2026-10-27T01:13:59.000Z",
+        "date": 1793063639000,
+        "duration": 0,
+        "enteredBy": null,
+        "eventType": "Temp Basal",
+        "identifier": "01a17aef83477fe5b09e5eca",
+        "mills": 1793063639000,
+        "originEvidence": "Uploader",
+        "rate": 0,
+        "relative": 0,
+        "srvCreated": 1793063879502,
+        "srvModified": 1793063879502,
+        "temp": "absolute",
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 54
+}

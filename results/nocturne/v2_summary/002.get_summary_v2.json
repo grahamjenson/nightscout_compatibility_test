@@ -1,0 +1,301 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/summary?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "profile": {
+      "basal": [
+        {
+          "time": "00:00",
+          "value": 0.9
+        }
+      ],
+      "carbratio": [
+        {
+          "time": "00:00",
+          "value": 12
+        }
+      ],
+      "carbs_hr": 20,
+      "carbs_hr_high": null,
+      "carbs_hr_low": null,
+      "carbs_hr_medium": null,
+      "delay": 20,
+      "delay_high": null,
+      "delay_low": null,
+      "delay_medium": null,
+      "dia": 7,
+      "perGIvalues": null,
+      "sens": [
+        {
+          "time": "00:00",
+          "value": 2.5
+        }
+      ],
+      "target_high": [
+        {
+          "time": "00:00",
+          "value": 6.1
+        }
+      ],
+      "target_low": [
+        {
+          "time": "00:00",
+          "value": 5
+        }
+      ],
+      "units": "mg/dL"
+    },
+    "sgvs": [
+      {
+        "mills": 1793063876515,
+        "sgv": 224
+      }
+    ],
+    "state": {
+      "bage": 0,
+      "battery": 75,
+      "bwp": 0,
+      "cage": 0,
+      "cob": 561,
+      "iage": 0,
+      "iob": 69.24
+    },
+    "treatments": {
+      "targets": [
+        {
+          "duration": 7200,
+          "mills": 1793063280000,
+          "targetBottom": 7,
+          "targetTop": 8
+        },
+        {
+          "duration": 3600,
+          "mills": 1793063147000,
+          "targetBottom": 6,
+          "targetTop": 7
+        },
+        {
+          "duration": 7200,
+          "mills": 1793063087000,
+          "targetBottom": 8,
+          "targetTop": 9
+        },
+        {
+          "duration": 5400,
+          "mills": 1793062304000,
+          "targetBottom": 7,
+          "targetTop": 8
+        }
+      ],
+      "tempBasals": [
+        {
+          "absolute": 1.2,
+          "duration": 60,
+          "start": 1793063207000
+        },
+        {
+          "absolute": 0.45,
+          "duration": 73,
+          "start": 1793063267000
+        },
+        {
+          "absolute": 0.15,
+          "duration": 60,
+          "start": 1793063340000
+        },
+        {
+          "absolute": 0.4,
+          "duration": 224,
+          "start": 1793063400000
+        },
+        {
+          "absolute": 0.35,
+          "duration": 15,
+          "start": 1793063624000
+        },
+        {
+          "absolute": 0.9,
+          "profile": 1,
+          "start": 1793063639000
+        }
+      ],
+      "treatments": [
+        {
+          "carbs": 95,
+          "insulin": 9.5,
+          "mills": 1793061887000
+        },
+        {
+          "insulin": 2.1,
+          "mills": 1793061947000
+        },
+        {
+          "insulin": 2.8,
+          "mills": 1793062007000
+        },
+        {
+          "insulin": 8.5,
+          "mills": 1793062187000
+        },
+        {
+          "insulin": 0.7,
+          "mills": 1793062247000
+        },
+        {
+          "carbs": 18,
+          "insulin": 1.8,
+          "mills": 1793062364000
+        },
+        {
+          "carbs": 72,
+          "insulin": 7,
+          "mills": 1793062724000
+        },
+        {
+          "insulin": 1.4,
+          "mills": 1793062964000
+        },
+        {
+          "carbs": 65,
+          "insulin": 6.5,
+          "mills": 1793063024000
+        },
+        {
+          "carbs": 12,
+          "mills": 1793063084000
+        },
+        {
+          "carbs": 20,
+          "mills": 1793063100000
+        },
+        {
+          "carbs": 48,
+          "insulin": 4.2,
+          "mills": 1793063144000
+        },
+        {
+          "carbs": 48,
+          "mills": 1793063144000
+        },
+        {
+          "insulin": 2,
+          "mills": 1793063279000
+        },
+        {
+          "carbs": 16,
+          "mills": 1793063387000
+        },
+        {
+          "carbs": 85,
+          "insulin": 8.4,
+          "mills": 1793063447000
+        },
+        {
+          "carbs": 90,
+          "insulin": 9,
+          "mills": 1793063460000
+        },
+        {
+          "carbs": 70,
+          "insulin": 7.8,
+          "mills": 1793063507000
+        },
+        {
+          "carbs": 70,
+          "mills": 1793063507000
+        },
+        {
+          "carbs": 75,
+          "insulin": 7.5,
+          "mills": 1793063520000
+        },
+        {
+          "carbs": 75,
+          "mills": 1793063520000
+        },
+        {
+          "insulin": 1.3,
+          "mills": 1793063567000
+        },
+        {
+          "insulin": 1.4,
+          "mills": 1793063580000
+        },
+        {
+          "carbs": 18,
+          "insulin": 1.6,
+          "mills": 1793063627000
+        },
+        {
+          "carbs": 18,
+          "insulin": 1.8,
+          "mills": 1793063640000
+        },
+        {
+          "carbs": 62,
+          "insulin": 6.2,
+          "mills": 1793063687000
+        },
+        {
+          "carbs": 62,
+          "insulin": 6.2,
+          "mills": 1793063699000
+        },
+        {
+          "insulin": 2,
+          "mills": 1793063699000
+        },
+        {
+          "insulin": 2,
+          "mills": 1793063759000
+        },
+        {
+          "insulin": 4.2,
+          "mills": 1793063819000
+        },
+        {
+          "carbs": 1,
+          "mills": 1793063871000
+        },
+        {
+          "carbs": 1,
+          "mills": 1793063871000
+        }
+      ]
+    }
+  },
+  "durationMs": 266
+}

@@ -1,0 +1,273 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v3/status",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMWExN2FlZi0yM2U0LTdiYmQtYjM3Mi05NTA1ZTVjMTY1YjEiLCJqdGkiOiIwMWExN2FlZi0yNGNjLTc0ODEtODE0YS1lY2M3NDY5N2JlODciLCJpYXQiOjE3OTMwNjM4NTUsIm5hbWUiOiJEZXZpY2VzIiwidGVuYW50X2lkIjoiMDFhMTdhZWYtMjAzYS03MGFkLWFmOWMtMmZjZjg3OWIwMmQ2IiwiZ3JhbnRfaWQiOiIwMWExN2FlZi0yNDAxLTdmNjgtYjY4My1mY2Q3NmMwY2YxMzMiLCJzY29wZSI6ImdsdWNvc2UucmVhZCBnbHVjb3NlLnJlYWR3cml0ZSB0cmVhdG1lbnRzLnJlYWQgdHJlYXRtZW50cy5yZWFkd3JpdGUgZGV2aWNlcy5yZWFkIGRldmljZXMucmVhZHdyaXRlIHRoZXJhcHkucmVhZCB0aGVyYXB5LnJlYWR3cml0ZSBhbGVydHMucmVhZCBhbGVydHMucmVhZHdyaXRlIGFsZXJ0cy5hY2tub3dsZWRnZSByZXBvcnRzLnJlYWQgaWRlbnRpdHkucmVhZCBoZWFydHJhdGUucmVhZCBoZWFydHJhdGUucmVhZHdyaXRlIHN0ZXBjb3VudC5yZWFkIHN0ZXBjb3VudC5yZWFkd3JpdGUgc2xlZXAucmVhZCBzbGVlcC5yZWFkd3JpdGUgZm9vZC5yZWFkIGZvb2QucmVhZHdyaXRlIHNoYXJpbmcucmVhZHdyaXRlIGRldmljZS5ub3RpZnkgZGV2aWNlLmFjdHVhdGUgKiIsIm5iZiI6MTc5MzA2Mzg1NSwiZXhwIjoxNzkzMDY3NDU1LCJpc3MiOiJub2N0dXJuZSIsImF1ZCI6Im5vY3R1cm5lLWFwaSJ9.kpF9SZnIh3Dt-iwGvdKnUApJEYqoTj5WBcOJM5wdGOA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:03 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "result": {
+      "apiEnabled": true,
+      "apiPermissions": {
+        "devicestatus": "crud",
+        "entries": "crud",
+        "food": "crud",
+        "profile": "crud",
+        "settings": "crud",
+        "treatments": "crud"
+      },
+      "apiVersion": "3.0.5",
+      "careportalEnabled": true,
+      "extended": {
+        "apiVersions": {
+          "v1": true,
+          "v2": true,
+          "v3": true
+        },
+        "authorization": {
+          "isAuthorized": true,
+          "roles": [],
+          "scope": [
+            "glucose.read",
+            "glucose.readwrite",
+            "treatments.read",
+            "treatments.readwrite",
+            "devices.read",
+            "devices.readwrite",
+            "therapy.read",
+            "therapy.readwrite",
+            "alerts.read",
+            "alerts.readwrite",
+            "alerts.acknowledge",
+            "reports.read",
+            "identity.read",
+            "heartrate.read",
+            "heartrate.readwrite",
+            "stepcount.read",
+            "stepcount.readwrite",
+            "sleep.read",
+            "sleep.readwrite",
+            "food.read",
+            "food.readwrite",
+            "sharing.readwrite",
+            "device.notify",
+            "device.actuate",
+            "*"
+          ],
+          "subject": "01a17aef-23e4-7bbd-b372-9505e5c165b1"
+        },
+        "collections": [
+          "entries",
+          "treatments",
+          "profile",
+          "devicestatus",
+          "food",
+          "settings",
+          "activity"
+        ],
+        "permissions": {
+          "admin": false,
+          "devicestatus:read": true,
+          "devicestatus:write": false,
+          "entries:read": true,
+          "entries:write": false,
+          "food:read": true,
+          "food:write": false,
+          "profile:read": true,
+          "profile:write": false,
+          "settings:read": true,
+          "settings:write": false,
+          "treatments:read": true,
+          "treatments:write": false
+        },
+        "uptimeMs": 96998
+      },
+      "head": "nocturne-dev",
+      "name": "nightscout",
+      "serverTime": "2026-10-27T01:18:03.7627794Z",
+      "settings": {
+        "DEFAULT_FEATURES": [
+          "bgnow",
+          "delta",
+          "direction",
+          "timeago",
+          "devicestatus",
+          "upbat",
+          "errorcodes",
+          "profile",
+          "bolus",
+          "dbsize",
+          "runtimestate",
+          "basal",
+          "careportal"
+        ],
+        "adminNotifiesEnabled": true,
+        "alarmHigh": true,
+        "alarmHighMins": [
+          30,
+          60,
+          90,
+          120
+        ],
+        "alarmLow": true,
+        "alarmLowMins": [
+          15,
+          30,
+          45,
+          60
+        ],
+        "alarmPumpBatteryLow": false,
+        "alarmTimeagoUrgent": true,
+        "alarmTimeagoUrgentMins": 30,
+        "alarmTimeagoWarn": true,
+        "alarmTimeagoWarnMins": 15,
+        "alarmTypes": [
+          "predict"
+        ],
+        "alarmUrgentHigh": true,
+        "alarmUrgentHighMins": [
+          30,
+          60,
+          90,
+          120
+        ],
+        "alarmUrgentLow": true,
+        "alarmUrgentLowMins": [
+          15,
+          30,
+          45
+        ],
+        "alarmUrgentMins": [
+          30,
+          60,
+          90,
+          120
+        ],
+        "alarmWarnMins": [
+          30,
+          60,
+          90,
+          120
+        ],
+        "authDefaultRoles": "readable",
+        "authFailDelay": 5000,
+        "authenticationPromptOnLoad": false,
+        "baseURL": "",
+        "customTitle": "Nightscout",
+        "dayEnd": 21,
+        "dayStart": 7,
+        "deNormalizeDates": false,
+        "editMode": true,
+        "enable": [
+          "careportal",
+          "basal",
+          "iob",
+          "cob",
+          "bwp",
+          "cage",
+          "sage",
+          "iage",
+          "bage",
+          "pump",
+          "openaps",
+          "loop",
+          "treatmentnotify",
+          "bgnow",
+          "delta",
+          "direction",
+          "timeago",
+          "devicestatus",
+          "upbat",
+          "errorcodes",
+          "profile",
+          "bolus",
+          "dbsize",
+          "runtimestate",
+          "ar2"
+        ],
+        "focusHours": 3,
+        "frameName1": "",
+        "frameName2": "",
+        "frameName3": "",
+        "frameName4": "",
+        "frameName5": "",
+        "frameName6": "",
+        "frameName7": "",
+        "frameName8": "",
+        "frameUrl1": "",
+        "frameUrl2": "",
+        "frameUrl3": "",
+        "frameUrl4": "",
+        "frameUrl5": "",
+        "frameUrl6": "",
+        "frameUrl7": "",
+        "frameUrl8": "",
+        "heartbeat": 60,
+        "insecureUseHttp": true,
+        "language": "en",
+        "nightMode": false,
+        "requireAuthentication": false,
+        "scaleY": "log",
+        "secureCsp": false,
+        "secureHstsHeader": false,
+        "secureHstsHeaderIncludeSubdomains": false,
+        "secureHstsHeaderPreload": false,
+        "showClockDelta": false,
+        "showClockLastTime": false,
+        "showForecast": "ar2",
+        "showPlugins": "dbsize delta direction upbat",
+        "showRawbg": "never",
+        "theme": "default",
+        "thresholds": {
+          "bgHigh": 260,
+          "bgLow": 55,
+          "bgTargetBottom": 80,
+          "bgTargetTop": 180
+        },
+        "timeFormat": 12,
+        "units": "mg/dl"
+      },
+      "srvDate": 1793063883762,
+      "status": "ok",
+      "storage": {
+        "storage": "postgresql",
+        "version": "17.6 (Debian 17.6-2.pgdg13+1)"
+      },
+      "version": "1.0.0"
+    },
+    "status": 200
+  },
+  "durationMs": 25
+}

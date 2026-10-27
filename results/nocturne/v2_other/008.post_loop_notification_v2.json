@@ -1,0 +1,49 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/notifications/loop?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "duration": 30,
+      "enteredBy": "compat-test",
+      "eventType": "Temporary Override",
+      "notes": "",
+      "reason": "compat test",
+      "reasonDisplay": "Compat test"
+    }
+  },
+  "statusCode": 500,
+  "headers": {
+    "Content-Length": [
+      "86"
+    ],
+    "Content-Type": [
+      "text/plain; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:08 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": "Loop notification failed: Invalid configuration - set Loop:ApnsKey (or LOOP_APNS_KEY).",
+  "durationMs": 30
+}

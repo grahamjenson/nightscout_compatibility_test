@@ -1,0 +1,61 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/treatments?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "created_at": "2026-10-27T01:17:09Z",
+      "eventType": "BAD TYPE",
+      "insulin": 4.2,
+      "reason": "1"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:09 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aefaa227db5a7c579bd",
+      "carbs": null,
+      "created_at": "2026-10-27T01:17:09.000Z",
+      "date": 1793063829000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "BAD TYPE",
+      "identifier": "01a17aefaa227db5a7c579bd",
+      "insulin": 4.2,
+      "mills": 1793063829000,
+      "reason": "1",
+      "srvCreated": 1793063829000,
+      "srvModified": 1793063829000,
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 77
+}

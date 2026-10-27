@@ -1,0 +1,72 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/pebble?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ&count=3&units=mmol",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:54 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "bgs": [
+      {
+        "battery": "87",
+        "bgdelta": "0.0",
+        "bwp": null,
+        "bwpo": null,
+        "cob": 560.6,
+        "datetime": 1793063859514,
+        "direction": "NONE",
+        "iob": "69.24",
+        "sgv": "5.5",
+        "trend": 8
+      },
+      {
+        "battery": null,
+        "bgdelta": null,
+        "bwp": null,
+        "bwpo": null,
+        "cob": null,
+        "datetime": 1767355994,
+        "direction": "NONE",
+        "iob": null,
+        "sgv": "5.5",
+        "trend": 8
+      }
+    ],
+    "cals": [],
+    "status": [
+      {
+        "now": 1793063875032
+      }
+    ]
+  },
+  "durationMs": 11
+}

@@ -1,0 +1,437 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v3/devicestatus/history/1793062075384",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMWExN2FlZi0yM2U0LTdiYmQtYjM3Mi05NTA1ZTVjMTY1YjEiLCJqdGkiOiIwMWExN2FlZi0yNGNjLTc0ODEtODE0YS1lY2M3NDY5N2JlODciLCJpYXQiOjE3OTMwNjM4NTUsIm5hbWUiOiJEZXZpY2VzIiwidGVuYW50X2lkIjoiMDFhMTdhZWYtMjAzYS03MGFkLWFmOWMtMmZjZjg3OWIwMmQ2IiwiZ3JhbnRfaWQiOiIwMWExN2FlZi0yNDAxLTdmNjgtYjY4My1mY2Q3NmMwY2YxMzMiLCJzY29wZSI6ImdsdWNvc2UucmVhZCBnbHVjb3NlLnJlYWR3cml0ZSB0cmVhdG1lbnRzLnJlYWQgdHJlYXRtZW50cy5yZWFkd3JpdGUgZGV2aWNlcy5yZWFkIGRldmljZXMucmVhZHdyaXRlIHRoZXJhcHkucmVhZCB0aGVyYXB5LnJlYWR3cml0ZSBhbGVydHMucmVhZCBhbGVydHMucmVhZHdyaXRlIGFsZXJ0cy5hY2tub3dsZWRnZSByZXBvcnRzLnJlYWQgaWRlbnRpdHkucmVhZCBoZWFydHJhdGUucmVhZCBoZWFydHJhdGUucmVhZHdyaXRlIHN0ZXBjb3VudC5yZWFkIHN0ZXBjb3VudC5yZWFkd3JpdGUgc2xlZXAucmVhZCBzbGVlcC5yZWFkd3JpdGUgZm9vZC5yZWFkIGZvb2QucmVhZHdyaXRlIHNoYXJpbmcucmVhZHdyaXRlIGRldmljZS5ub3RpZnkgZGV2aWNlLmFjdHVhdGUgKiIsIm5iZiI6MTc5MzA2Mzg1NSwiZXhwIjoxNzkzMDY3NDU1LCJpc3MiOiJub2N0dXJuZSIsImF1ZCI6Im5vY3R1cm5lLWFwaSJ9.kpF9SZnIh3Dt-iwGvdKnUApJEYqoTj5WBcOJM5wdGOA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:55 GMT"
+    ],
+    "Etag": [
+      "W/\"1793063859471\""
+    ],
+    "Last-Modified": [
+      "Tue, 27 Oct 2026 01:17:39 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "result": [
+      {
+        "_id": "01a17aef2e0205b9aecdf4cf",
+        "created_at": "2026-10-27T01:16:37.000Z",
+        "date": 1793063797000,
+        "device": "aaps1",
+        "identifier": "01a17aef2e0205b9aecdf4cf",
+        "mills": 1793063797000,
+        "srvCreated": 1793063857681,
+        "srvModified": 1793063857681,
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05
+        },
+        "uploaderBattery": 87,
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef2e020e8fb77c02f7",
+        "created_at": "2026-10-27T01:15:37.000Z",
+        "date": 1793063737000,
+        "device": "aaps",
+        "identifier": "01a17aef2e020e8fb77c02f7",
+        "mills": 1793063737000,
+        "srvCreated": 1793063857744,
+        "srvModified": 1793063857744,
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05
+        },
+        "uploaderBattery": 87,
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef2b520de2817585e3",
+        "created_at": "2026-06-16T08:42:00.000Z",
+        "date": 1781599320000,
+        "device": "aaps",
+        "identifier": "01a17aef2b520de2817585e3",
+        "isValid": false,
+        "mills": 1781599320000,
+        "openaps": {
+          "enacted": {
+            "duration": 30,
+            "rate": 1.2,
+            "timestamp": "2026-06-16T08:42:00Z"
+          },
+          "suggested": {
+            "duration": 30,
+            "rate": 1.2,
+            "reason": "Eventual BG 126",
+            "timestamp": "2026-06-16T08:41:55Z"
+          }
+        },
+        "pump": {
+          "battery": {
+            "percent": 68,
+            "voltage": 1.42
+          },
+          "clock": "2026-06-16T08:42:15Z",
+          "reservoir": 97.4,
+          "status": {
+            "bolusing": false,
+            "suspended": false
+          }
+        },
+        "srvCreated": 1793063857415,
+        "srvModified": 1793063858435,
+        "uploader": {
+          "battery": 87,
+          "batteryVoltage": 4.05
+        },
+        "uploaderBattery": 87,
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef31f00ac596a07f46",
+        "app": "AAPS",
+        "configuration": {},
+        "created_at": "2026-08-16T22:39:48.777Z",
+        "date": 1786919988777,
+        "device": "openaps://CUBOT KINGKONG MINI 3",
+        "identifier": "01a17aef31f00ac596a07f46",
+        "isCharging": false,
+        "mills": 1786919988777,
+        "openaps": {
+          "cob": 0,
+          "iob": {
+            "basaliob": -0.332,
+            "iob": 0.736
+          },
+          "suggested": {
+            "COB": 0,
+            "IOB": 0.736,
+            "algorithm": "SMB",
+            "bg": 150,
+            "consoleError": [
+              "---------------------------------------------------------",
+              " Dynamic ISF version 2.0 ",
+              "---------------------------------------------------------",
+              "CR:11.5",
+              "SMB enabled due to enableSMB_always",
+              "profile.sens: 134.4, sens: 134.4, CSF: 11.68695652173913",
+              "Last carbs 143minutes ago; remainingCATime:6.1hours;100% carbs absorbed",
+              "Carb Impact: -1.6 mg/dL per 5m; CI Duration: 0.0 hours; remaining CI (~2h peak): 0.0 mg/dL per 5m",
+              "UAM Impact: -1.6 mg/dL per 5m; UAM Duration: 0.0 hours",
+              " avgPredBG: 89.0 COB: 0.0 / 26.0",
+              "minGuardBG -1.1 projected below 4.5 - disabling SMB",
+              "BG projected to remain above 6.8 for 25 minutes",
+              "BG projected to remain above 4.5 for 65 minutes",
+              "naive_eventualBG: 51.0 bgUndershoot: 30.0 zeroTempDuration 65 zeroTempEffect: 51 carbsReq: -2"
+            ],
+            "consoleLog": [
+              "Autosens ratio: 1.2055221584632745; ",
+              "Adjusting basal from 0.35 to 0.42193275546214604; ",
+              "target_bg from 135.9 to 123.0; ",
+              "EventualBG is 41.0 ;",
+              "Future state sensitivity is 330.0 based on eventual bg due to -ve delta",
+              "minPredBG: 59.0 minIOBPredBG: 39.0 minZTGuardBG: 89.0",
+              " minUAMPredBG: 39.0"
+            ],
+            "deliverAt": "2026-08-16T22:39:41.740Z",
+            "duration": 120,
+            "eventualBG": 41,
+            "insulinReq": 0,
+            "isfMgdlForCarbs": 137.59339622641514,
+            "predBGs": {
+              "IOB": [
+                150,
+                144,
+                138,
+                132,
+                126,
+                120,
+                115,
+                109,
+                104,
+                99,
+                94,
+                89,
+                85,
+                80,
+                76,
+                71,
+                67,
+                62,
+                58,
+                53,
+                49,
+                44,
+                40,
+                39
+              ],
+              "ZT": [
+                150,
+                145,
+                141,
+                136,
+                131,
+                127,
+                123,
+                118,
+                114,
+                111,
+                107,
+                104,
+                101,
+                98,
+                95,
+                93,
+                92,
+                90,
+                89,
+                89,
+                89,
+                89,
+                90,
+                91,
+                92,
+                94,
+                96,
+                98,
+                101,
+                103,
+                106,
+                109,
+                112,
+                116,
+                119,
+                123
+              ]
+            },
+            "rate": 0,
+            "reason": "Dosing sensitivity: 330.0 using eventual BG;COB: 0, Dev: -0.6, BGI: -0.3, ISF: 7.5, CR: 11.5, Target: 6.8, minPredBG 3.3, minGuardBG -1.1, IOBpredBG 2.2; minGuardBG -1.1\u003c4.5",
+            "runningDynamicIsf": true,
+            "sensitivityRatio": 1.2055221584632745,
+            "targetBG": 123,
+            "tick": "-6",
+            "timestamp": "2026-08-16T22:39:43.738Z",
+            "variable_sens": 134.4
+          }
+        },
+        "pump": {
+          "clock": "2026-08-16T22:39:48.777Z",
+          "extended": {
+            "ActiveProfile": "Dash-2025",
+            "BaseBasalRate": 0.35,
+            "LastBolus": "17/08/26 10:22am",
+            "LastBolusAmount": 0.3,
+            "TempBasalAbsoluteRate": 0,
+            "TempBasalRemaining": 105,
+            "TempBasalStart": "17/08/26 10:24am",
+            "Version": "3.3.1.0-2ac634c908-2025.01.10"
+          },
+          "reservoir": 38,
+          "status": {
+            "status": "normal"
+          }
+        },
+        "srvCreated": 1793063858706,
+        "srvModified": 1793063858762,
+        "uploader": {
+          "battery": 88,
+          "isCharging": false
+        },
+        "uploaderBattery": 88,
+        "utcOffset": 720
+      },
+      {
+        "_id": "01a17aef326f0a66be7506ac",
+        "created_at": "2025-05-14T02:13:21.000Z",
+        "date": 1747188801000,
+        "device": "loop://iPhone",
+        "identifier": "01a17aef326f0a66be7506ac",
+        "loop": {
+          "automaticDoseRecommendation": {
+            "timestamp": "2025-05-14T02:13:21Z"
+          },
+          "cob": {
+            "cob": 5.0947962907626785,
+            "timestamp": "2025-05-14T02:10:00Z"
+          },
+          "enacted": {
+            "bolusVolume": 0,
+            "duration": 0,
+            "rate": 0,
+            "received": true,
+            "timestamp": "2025-05-14T02:13:13Z"
+          },
+          "iob": {
+            "iob": 1.0870623804830117,
+            "timestamp": "2025-05-14T02:10:00Z"
+          },
+          "name": "Loop",
+          "predicted": {
+            "startDate": "2025-05-14T02:13:07Z",
+            "values": [
+              114,
+              115.88,
+              120.29,
+              123.05,
+              123.98,
+              123.57,
+              122.9,
+              121.95,
+              120.71,
+              119.17,
+              117.34,
+              115.4,
+              113.75,
+              112.21,
+              110.79,
+              109.46,
+              108.24,
+              107.1,
+              106.05,
+              105.09,
+              104.19,
+              103.37,
+              102.62,
+              101.94,
+              101.31,
+              100.74,
+              100.23,
+              99.77,
+              99.37,
+              99,
+              98.69,
+              98.41,
+              98.18,
+              97.99,
+              97.83,
+              97.7,
+              97.6,
+              97.53,
+              97.48,
+              97.46,
+              97.46,
+              97.49,
+              97.53,
+              97.58,
+              97.66,
+              97.75,
+              97.86,
+              97.98,
+              98.11,
+              98.26,
+              98.41,
+              98.57,
+              98.75,
+              98.93,
+              99.11,
+              99.26,
+              99.4,
+              99.53,
+              99.63,
+              99.72,
+              99.8,
+              99.87,
+              99.93,
+              99.97,
+              100.01,
+              100.04,
+              100.06,
+              100.08,
+              100.09,
+              100.1,
+              100.11,
+              100.11,
+              100.12,
+              100.12,
+              100.12,
+              100.12
+            ]
+          },
+          "recommendedBolus": 0.15,
+          "timestamp": "2025-05-14T02:13:21Z",
+          "version": "3.2.2.65"
+        },
+        "mills": 1747188801000,
+        "pump": {
+          "clock": "2025-05-14T02:13:21Z",
+          "manufacturer": "Insulet",
+          "model": "Eros"
+        },
+        "srvCreated": 1793063858913,
+        "srvModified": 1793063858951,
+        "uploader": {
+          "battery": 80,
+          "name": "iPhone"
+        },
+        "uploaderBattery": 80,
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef347603ddaf2a7d3b",
+        "created_at": "2026-10-27T01:16:39.000Z",
+        "date": 1793063799000,
+        "device": "bulk-delete-test",
+        "identifier": "01a17aef347603ddaf2a7d3b",
+        "isValid": false,
+        "mills": 1793063799000,
+        "srvCreated": 1793063859352,
+        "srvModified": 1793063859436,
+        "uploader": {
+          "battery": 49
+        },
+        "uploaderBattery": 49,
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef347603b8ad3a16f4",
+        "created_at": "2026-10-27T01:15:39.000Z",
+        "date": 1793063739000,
+        "device": "bulk-delete-test",
+        "identifier": "01a17aef347603b8ad3a16f4",
+        "isValid": false,
+        "mills": 1793063739000,
+        "srvCreated": 1793063859327,
+        "srvModified": 1793063859471,
+        "uploader": {
+          "battery": 50
+        },
+        "uploaderBattery": 50,
+        "utcOffset": 0
+      }
+    ],
+    "status": 200
+  },
+  "durationMs": 306
+}

@@ -1,0 +1,68 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/activity?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ],
+      "If-Modified-Since": [
+        "Tue, 27 Oct 2026 02:17:36 GMT"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:36 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 27 Oct 2026 01:16:36 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aef-281d-7be7-a667-e5b6fa5139d7",
+      "activityType": "running",
+      "created_at": "2026-10-27T01:16:36.000Z",
+      "duration": 3600,
+      "enteredBy": "nightscout",
+      "mills": 1793063796000,
+      "notes": "activity running",
+      "type": "exercise",
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef-281e-76c7-af35-a524491b4af0",
+      "activityType": "running",
+      "created_at": "2026-10-27T01:15:36.000Z",
+      "duration": 3600,
+      "enteredBy": "nightscout",
+      "mills": 1793063736000,
+      "notes": "activity running 2",
+      "type": "exercise",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 21
+}

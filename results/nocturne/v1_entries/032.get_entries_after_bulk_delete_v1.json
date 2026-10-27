@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/entries.json?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ&find[device]=bulk-delete-test",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Cache-Control": [
+      "no-store,no-cache"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:41 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 27 Oct 2026 01:17:41 GMT"
+    ],
+    "Pragma": [
+      "no-cache"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [],
+  "durationMs": 22
+}

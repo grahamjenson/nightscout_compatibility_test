@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "DELETE",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/activity/6a7938cb537eacafae0eba5f?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:08 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "acknowledged": true,
+    "deletedCount": 0,
+    "n": 0,
+    "ok": 1,
+    "result": {
+      "n": 0,
+      "ok": 1
+    }
+  },
+  "durationMs": 47
+}

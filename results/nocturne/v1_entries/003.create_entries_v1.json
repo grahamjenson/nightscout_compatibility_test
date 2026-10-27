@@ -1,0 +1,81 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/entries?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "app": "test-app",
+        "date": 1793063260212,
+        "device": "test-device",
+        "sgv": 101,
+        "type": "sgv"
+      },
+      {
+        "app": "test-app",
+        "date": 1793063140212,
+        "device": "test-device",
+        "mbg": 102,
+        "type": "mbg"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:40 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aef384903a7b595eeb9",
+      "app": "test-app",
+      "created_at": "2026-10-27T01:07:40.212Z",
+      "date": 1793063260212,
+      "dateString": "2026-10-27T01:07:40.212Z",
+      "device": "test-device",
+      "mills": 1793063260212,
+      "sgv": 101,
+      "sysTime": "2026-10-27T01:07:40.212Z",
+      "type": "sgv",
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef38490105a3745dba",
+      "app": "test-app",
+      "created_at": "2026-10-27T01:05:40.212Z",
+      "date": 1793063140212,
+      "dateString": "2026-10-27T01:05:40.212Z",
+      "device": "test-device",
+      "mbg": 102,
+      "mills": 1793063140212,
+      "sysTime": "2026-10-27T01:05:40.212Z",
+      "type": "mbg",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 259
+}

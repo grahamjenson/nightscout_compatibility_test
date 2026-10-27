@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/authorization/subjects?token=noc_3JugNRS6BKQlBWkXlWBTYWM9YceP-dbfsHxfPmIN7RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 403,
+  "headers": {
+    "Content-Type": [
+      "application/problem+json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "status": 403,
+    "title": "Forbidden",
+    "traceId": "00-f9eb370eefb16d05f846a9b7fff0b48a-a8b9c76abf641961-01",
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.4"
+  },
+  "durationMs": 10
+}
