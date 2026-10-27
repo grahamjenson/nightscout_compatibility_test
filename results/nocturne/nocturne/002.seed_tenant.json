@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v4/dev-only/admin/seed-tenant",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "displayName": "Compat",
+      "ownerUsername": "compat",
+      "slug": "compat"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:34 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMWExN2FlZi0yMTcxLTcwNmEtODE3YS1mMGJiZGZmNzA5NWYiLCJqdGkiOiIwMWExN2FlZi0yMjRjLTdmMjctOGE4Yy1kMTQ3MTI3NmQ5ZjciLCJpYXQiOjE3OTMwNjM4NTQsIm5hbWUiOiJjb21wYXQiLCJzaWQiOiIwMWExN2FlZjIyNGI3NDE2ODc0MTIxNDlkYmVjYTYwZiIsIm5iZiI6MTc5MzA2Mzg1NCwiZXhwIjoxNzkzMDY0NzU0LCJpc3MiOiJub2N0dXJuZSIsImF1ZCI6Im5vY3R1cm5lLWFwaSJ9.aU3wwpUg-t73w-CQUUPzgvDXqmpFO1XtgsoScSdVk2U",
+    "entriesSeeded": 0,
+    "expiresInSeconds": 900,
+    "loginLink": "https://compat.nocturne.localhost/api/v4/dev-only/auth/login?redirect=%2F",
+    "refreshToken": "QbWHOUV7tjNbI7JzCoB61KM-D4dFJEZSg4WggHaILvH5yc4NTJhent-ictYOpNSA74eVPsESRKinz-K09joWOA",
+    "seeded": null,
+    "sleepSessionsSeeded": 0,
+    "subjectId": "01a17aef-2171-706a-817a-f0bbdff7095f",
+    "tenantId": "01a17aef-203a-70ad-af9c-2fcf879b02d6",
+    "treatmentsSeeded": 0,
+    "url": "https://compat.nocturne.localhost"
+  },
+  "durationMs": 792
+}

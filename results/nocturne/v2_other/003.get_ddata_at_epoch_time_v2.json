@@ -1,0 +1,719 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/ddata/at/1793060288062?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "activity": [
+      {
+        "_id": "01a17aef-281d-7be7-a667-e5b6fa5139d7",
+        "activityType": "running",
+        "created_at": "2026-10-27T01:16:36.000Z",
+        "duration": 3600,
+        "enteredBy": "nightscout",
+        "mills": 1793063796000,
+        "notes": "activity running",
+        "type": "exercise",
+        "utcOffset": 0
+      },
+      {
+        "_id": "01a17aef-281e-76c7-af35-a524491b4af0",
+        "activityType": "running",
+        "created_at": "2026-10-27T01:15:36.000Z",
+        "duration": 3600,
+        "enteredBy": "nightscout",
+        "mills": 1793063736000,
+        "notes": "activity running 2",
+        "type": "exercise",
+        "utcOffset": 0
+      }
+    ],
+    "batteryTreatments": [],
+    "cals": [],
+    "combobolusTreatments": [],
+    "dbstats": {
+      "collections": 84,
+      "dataSize": 925696,
+      "indexSize": 5627904,
+      "indexes": 479
+    },
+    "devicestatus": [],
+    "entries": [],
+    "food": [
+      {
+        "_id": "01a17aef-3d9d-72a7-9173-2cee5003e94b",
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-10-27T01:17:41.666Z",
+        "gi": 2,
+        "hidden": "false",
+        "hideafteruse": "false",
+        "name": "Banana2",
+        "position": 99999,
+        "srvCreated": 1793063861666,
+        "srvModified": 1793063861666,
+        "subcategory": "",
+        "type": "food",
+        "unit": "g"
+      },
+      {
+        "_id": "01a17aef-3d9f-7954-bbbe-9bca2f6d77eb",
+        "carbs": 27,
+        "category": "Snacks",
+        "created_at": "2026-10-27T01:17:41.666Z",
+        "gi": 2,
+        "hidden": "false",
+        "hideafteruse": "false",
+        "name": "Banana3",
+        "position": 99999,
+        "srvCreated": 1793063861666,
+        "srvModified": 1793063861666,
+        "subcategory": "",
+        "type": "food",
+        "unit": "g"
+      }
+    ],
+    "insulinchangeTreatments": [],
+    "lastProfileFromSwitch": null,
+    "lastUpdated": 1793060288062,
+    "mbgs": [],
+    "page": {
+      "after": 1793060288062,
+      "frame": true
+    },
+    "profileTreatments": [],
+    "profiles": [
+      {
+        "_id": "customIDForProfile",
+        "created_at": "2026-10-27T01:17:57.876Z",
+        "defaultProfile": "profile_2",
+        "mills": 1793063877866,
+        "srvCreated": 1793063877866,
+        "srvModified": 1793063878778,
+        "startDate": "2026-10-27T01:17:57.866Z",
+        "store": {
+          "profile_2": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.9
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 12
+              }
+            ],
+            "carbs_hr": 20,
+            "delay": 20,
+            "dia": 7,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 2.5
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6.1
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 5
+              }
+            ],
+            "units": "mg/dL"
+          }
+        },
+        "units": "mg/dL"
+      },
+      {
+        "_id": "01a17aef-41bc-76af-b490-74199a439a78",
+        "created_at": "2026-10-27T01:17:42.724Z",
+        "defaultProfile": "profile_2",
+        "mills": 1793063862716,
+        "srvCreated": 1793063862716,
+        "srvModified": 1793063862801,
+        "startDate": "2026-10-27T01:17:42.716Z",
+        "store": {
+          "profile_2": {
+            "basal": [],
+            "carbratio": [],
+            "carbs_hr": 20,
+            "delay": 20,
+            "dia": 7,
+            "sens": [],
+            "target_high": [],
+            "target_low": [],
+            "units": "mg/dL"
+          }
+        },
+        "units": "mg/dL"
+      },
+      {
+        "_id": "01a17aef-3f6b-7b55-9aab-99d7293d1ef1",
+        "created_at": "2026-10-27T01:17:42.274Z",
+        "defaultProfile": "profile_1",
+        "mills": 1793063802000,
+        "srvCreated": 1793063802000,
+        "srvModified": 1793063862728,
+        "startDate": "2026-10-27T01:16:42Z",
+        "store": {
+          "profile_1": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.9
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 0.85
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 0.8
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 0.75
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 0.85
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 12
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 10
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 11
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 13
+              }
+            ],
+            "carbs_hr": 20,
+            "delay": 20,
+            "dia": 6,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 2.5
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 2.2
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 2
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 2.3
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6.1
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 5.8
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 6.1
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 6.7
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 5
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 4.7
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 5
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 5.3
+              }
+            ],
+            "timezone": "Pacific/Auckland",
+            "units": "mmol"
+          }
+        },
+        "units": "mmol"
+      },
+      {
+        "_id": "01a17aef-4299-7ce3-89d5-84dc8ba411e7",
+        "created_at": "2026-10-27T01:17:42.947Z",
+        "defaultProfile": "ArmDash-2025",
+        "mills": 1786253633284,
+        "srvCreated": 1786253633284,
+        "srvModified": 1793063862976,
+        "startDate": "2026-08-09T05:33:53.2840000Z",
+        "store": {
+          "ArmDash-2025": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.25
+              },
+              {
+                "time": "01:00",
+                "timeAsSeconds": 3600,
+                "value": 0.25
+              },
+              {
+                "time": "02:00",
+                "timeAsSeconds": 7200,
+                "value": 0.25
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 0.25
+              },
+              {
+                "time": "04:00",
+                "timeAsSeconds": 14400,
+                "value": 0.35
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": 18000,
+                "value": 0.35
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 0.5
+              },
+              {
+                "time": "07:00",
+                "timeAsSeconds": 25200,
+                "value": 0.55
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 0.4
+              },
+              {
+                "time": "09:00",
+                "timeAsSeconds": 32400,
+                "value": 0.35
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 0.35
+              },
+              {
+                "time": "11:00",
+                "timeAsSeconds": 39600,
+                "value": 0.4
+              },
+              {
+                "time": "12:00",
+                "timeAsSeconds": 43200,
+                "value": 0.4
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 0.3
+              },
+              {
+                "time": "14:00",
+                "timeAsSeconds": 50400,
+                "value": 0.3
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 0.35
+              },
+              {
+                "time": "16:00",
+                "timeAsSeconds": 57600,
+                "value": 0.45
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 0.45
+              },
+              {
+                "time": "18:00",
+                "timeAsSeconds": 64800,
+                "value": 0.45
+              },
+              {
+                "time": "19:00",
+                "timeAsSeconds": 68400,
+                "value": 0.55
+              },
+              {
+                "time": "20:00",
+                "timeAsSeconds": 72000,
+                "value": 0.5
+              },
+              {
+                "time": "21:00",
+                "timeAsSeconds": 75600,
+                "value": 0.5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 0.4
+              },
+              {
+                "time": "23:00",
+                "timeAsSeconds": 82800,
+                "value": 0.3
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 16
+              },
+              {
+                "time": "02:00",
+                "timeAsSeconds": 7200,
+                "value": 16
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": 18000,
+                "value": 7.5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 11.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 12
+              },
+              {
+                "time": "20:00",
+                "timeAsSeconds": 72000,
+                "value": 14
+              }
+            ],
+            "carbs_hr": 20,
+            "delay": 20,
+            "dia": 6,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 12
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 12
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 8.5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 11
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 12
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 11
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 12
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 8.5
+              },
+              {
+                "time": "23:00",
+                "timeAsSeconds": 82800,
+                "value": 10
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 6.5
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 7.6
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 6.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 7
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 6
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 6
+              },
+              {
+                "time": "06:00",
+                "timeAsSeconds": 21600,
+                "value": 5
+              },
+              {
+                "time": "08:00",
+                "timeAsSeconds": 28800,
+                "value": 6.5
+              },
+              {
+                "time": "10:00",
+                "timeAsSeconds": 36000,
+                "value": 7.5
+              },
+              {
+                "time": "13:00",
+                "timeAsSeconds": 46800,
+                "value": 6.5
+              },
+              {
+                "time": "15:00",
+                "timeAsSeconds": 54000,
+                "value": 7
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 5
+              },
+              {
+                "time": "22:00",
+                "timeAsSeconds": 79200,
+                "value": 6
+              }
+            ],
+            "timezone": "Pacific/Auckland",
+            "units": "mmol"
+          }
+        },
+        "units": "mmol"
+      },
+      {
+        "_id": "01a17aef-4230-7848-9596-68032d2e8b4a",
+        "created_at": "2026-10-27T01:17:42.869Z",
+        "defaultProfile": "Default",
+        "mills": 1498954920000,
+        "srvCreated": 1498954920000,
+        "srvModified": 1793063862895,
+        "startDate": "2017-07-02T00:22:00.000Z",
+        "store": {
+          "Default": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 0.35
+              },
+              {
+                "time": "03:00",
+                "timeAsSeconds": 10800,
+                "value": 0.35
+              },
+              {
+                "time": "05:00",
+                "timeAsSeconds": 18000,
+                "value": 0.35
+              },
+              {
+                "time": "07:00",
+                "timeAsSeconds": 25200,
+                "value": 0.3
+              },
+              {
+                "time": "17:00",
+                "timeAsSeconds": 61200,
+                "value": 0.45
+              },
+              {
+                "time": "19:00",
+                "timeAsSeconds": 68400,
+                "value": 0.35
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 33
+              }
+            ],
+            "carbs_hr": 20,
+            "delay": 20,
+            "dia": 5,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 110
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 100
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 100
+              }
+            ],
+            "timezone": "US/Eastern",
+            "units": "mg/dl"
+          }
+        },
+        "units": "mg/dl"
+      }
+    ],
+    "sensorTreatments": [],
+    "sgvs": [],
+    "sitechangeTreatments": [],
+    "tempTargetTreatments": [],
+    "tempbasalTreatments": [],
+    "treatments": []
+  },
+  "durationMs": 84
+}

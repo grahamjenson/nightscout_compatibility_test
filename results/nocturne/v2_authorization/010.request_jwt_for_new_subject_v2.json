@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/authorization/request/",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 401,
+  "headers": {
+    "Content-Type": [
+      "application/problem+json"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "Www-Authenticate": [
+      "Bearer"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "status": 401,
+    "title": "Unauthorized",
+    "traceId": "00-532162cd91e2f5ed2a4620eb73686d5d-eff189dfa8aac860-01",
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2"
+  },
+  "durationMs": 4
+}

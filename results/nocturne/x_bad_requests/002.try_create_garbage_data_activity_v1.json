@@ -1,0 +1,60 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/activity?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "activityType": "walking",
+      "created_at": "2026-10-27T01:18:08Z",
+      "duration": 3600,
+      "heartRate": "NaN nope",
+      "notes": "activity walking",
+      "steps": 1000
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:08 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aef-a616-7528-a2af-9d59a0601ad9",
+      "activityType": "walking",
+      "created_at": "2026-10-27T01:18:08.000Z",
+      "duration": 3600,
+      "enteredBy": "nightscout",
+      "heartRate": "NaN nope",
+      "mills": 1793063888000,
+      "notes": "activity walking",
+      "steps": 1000,
+      "type": "exercise",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 69
+}

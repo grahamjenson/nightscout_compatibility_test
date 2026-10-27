@@ -1,0 +1,62 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/entries/current.json?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Cache-Control": [
+      "no-store,no-cache"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:40 GMT"
+    ],
+    "Last-Modified": [
+      "Tue, 27 Oct 2026 01:17:39 GMT"
+    ],
+    "Pragma": [
+      "no-cache"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aef357109aaa05b60ee",
+      "date": 1793063859514,
+      "dateString": "2026-10-27T01:17:39.514Z",
+      "isValid": true,
+      "mgdl": 100,
+      "mills": 1793063859514,
+      "mmol": 5.54994394556615,
+      "sgv": 100,
+      "sysTime": "2026-10-27T01:17:39.514Z",
+      "type": "sgv",
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 74
+}

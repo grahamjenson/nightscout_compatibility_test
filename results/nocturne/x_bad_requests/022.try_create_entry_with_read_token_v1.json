@@ -1,0 +1,49 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/entries?token=noc_3JugNRS6BKQlBWkXlWBTYWM9YceP-dbfsHxfPmIN7RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "test-app",
+      "date": 1793062688848,
+      "sgv": 105,
+      "type": "sgv"
+    }
+  },
+  "statusCode": 403,
+  "headers": {
+    "Content-Type": [
+      "application/problem+json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:08 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "status": 403,
+    "title": "Forbidden",
+    "traceId": "00-e99ad6bee478ff9b9fa75ef91e5c5732-29aff05e9e5772c4-01",
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.4"
+  },
+  "durationMs": 7
+}

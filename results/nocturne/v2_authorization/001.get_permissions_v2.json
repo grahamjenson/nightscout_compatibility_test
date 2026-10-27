@@ -1,0 +1,262 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/authorization/permissions?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "permissions": [
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "admin"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:*:admin"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:*:create"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:*:delete"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:*:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:*:update"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:activity:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:activity:create"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:activity:delete"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:activity:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:activity:update"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:devicestatus:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:devicestatus:create"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:devicestatus:delete"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:devicestatus:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:devicestatus:update"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:entries:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:entries:create"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:entries:delete"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:entries:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:entries:update"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:food:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:food:create"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:food:delete"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:food:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:food:update"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:profile:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:profile:create"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:profile:delete"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:profile:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:profile:update"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4483183Z",
+        "lastSeen": "2026-10-27T01:18:07.4483183Z",
+        "name": "api:trackers:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4483183Z",
+        "lastSeen": "2026-10-27T01:18:07.4483183Z",
+        "name": "api:trackers:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4483183Z",
+        "lastSeen": "2026-10-27T01:18:07.4483183Z",
+        "name": "api:trackers:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:treatments:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:treatments:create"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:treatments:delete"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:treatments:read"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "api:treatments:update"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4483183Z",
+        "lastSeen": "2026-10-27T01:18:07.4483183Z",
+        "name": "careportal:*"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "denied"
+      },
+      {
+        "firstSeen": "2026-10-27T01:18:07.4361336Z",
+        "lastSeen": "2026-10-27T01:18:07.4361336Z",
+        "name": "readable"
+      }
+    ]
+  },
+  "durationMs": 31
+}

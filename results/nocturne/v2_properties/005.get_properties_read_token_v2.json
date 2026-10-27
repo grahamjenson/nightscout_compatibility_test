@@ -1,0 +1,65 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/properties/bgnow?token=noc_3JugNRS6BKQlBWkXlWBTYWM9YceP-dbfsHxfPmIN7RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:06 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "bgnow": {
+      "displayLine": "BG Now: 224 mg/dl",
+      "last": 224,
+      "mean": 224,
+      "mgdl": 224,
+      "mills": 1793063876515,
+      "scaled": 224,
+      "sgvs": [
+        {
+          "_id": "01a17aef77b10f13a4841fee",
+          "date": 1793063876515,
+          "dateString": "2026-10-27T01:17:56.515Z",
+          "identifier": "01a17aef77b10f13a4841fee",
+          "isValid": true,
+          "mgdl": 224,
+          "mills": 1793063876515,
+          "mmol": 12.431874438068176,
+          "sgv": 224,
+          "srvCreated": 1793063876544,
+          "srvModified": 1793063876544,
+          "type": "sgv",
+          "utcOffset": 0
+        }
+      ]
+    }
+  },
+  "durationMs": 101
+}

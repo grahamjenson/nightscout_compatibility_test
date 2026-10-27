@@ -1,0 +1,71 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/times/echo/2026-01-02?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:53 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "pattern": [
+      ""
+    ],
+    "query": {
+      "$and": [
+        {
+          "dateString": {
+            "$regex": "^2026-01-02"
+          }
+        }
+      ]
+    },
+    "req": {
+      "params": {
+        "field": "dateString",
+        "prefix": "2026-01-02",
+        "regex": null,
+        "storage": "entries"
+      },
+      "query": {
+        "find": {
+          "dateString": {
+            "$in": [
+              {}
+            ],
+            "$regex": {}
+          }
+        },
+        "token": "noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ"
+      }
+    }
+  },
+  "durationMs": 27
+}

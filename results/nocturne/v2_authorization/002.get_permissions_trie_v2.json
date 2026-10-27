@@ -1,0 +1,282 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/authorization/permissions/trie?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "count": 43,
+    "root": {
+      "children": {
+        "*": {
+          "children": {},
+          "isLeaf": true,
+          "name": "*"
+        },
+        "admin": {
+          "children": {},
+          "isLeaf": true,
+          "name": "admin"
+        },
+        "api": {
+          "children": {
+            "*": {
+              "children": {
+                "admin": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "admin"
+                },
+                "create": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "create"
+                },
+                "delete": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "delete"
+                },
+                "read": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "read"
+                },
+                "update": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "update"
+                }
+              },
+              "isLeaf": true,
+              "name": "*"
+            },
+            "activity": {
+              "children": {
+                "*": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "*"
+                },
+                "create": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "create"
+                },
+                "delete": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "delete"
+                },
+                "read": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "read"
+                },
+                "update": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "update"
+                }
+              },
+              "name": "activity"
+            },
+            "devicestatus": {
+              "children": {
+                "*": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "*"
+                },
+                "create": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "create"
+                },
+                "delete": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "delete"
+                },
+                "read": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "read"
+                },
+                "update": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "update"
+                }
+              },
+              "name": "devicestatus"
+            },
+            "entries": {
+              "children": {
+                "*": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "*"
+                },
+                "create": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "create"
+                },
+                "delete": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "delete"
+                },
+                "read": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "read"
+                },
+                "update": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "update"
+                }
+              },
+              "name": "entries"
+            },
+            "food": {
+              "children": {
+                "*": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "*"
+                },
+                "create": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "create"
+                },
+                "delete": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "delete"
+                },
+                "read": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "read"
+                },
+                "update": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "update"
+                }
+              },
+              "name": "food"
+            },
+            "profile": {
+              "children": {
+                "*": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "*"
+                },
+                "create": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "create"
+                },
+                "delete": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "delete"
+                },
+                "read": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "read"
+                },
+                "update": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "update"
+                }
+              },
+              "name": "profile"
+            },
+            "treatments": {
+              "children": {
+                "*": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "*"
+                },
+                "create": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "create"
+                },
+                "delete": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "delete"
+                },
+                "read": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "read"
+                },
+                "update": {
+                  "children": {},
+                  "isLeaf": true,
+                  "name": "update"
+                }
+              },
+              "name": "treatments"
+            }
+          },
+          "name": "api"
+        },
+        "denied": {
+          "children": {},
+          "isLeaf": true,
+          "name": "denied"
+        },
+        "readable": {
+          "children": {},
+          "isLeaf": true,
+          "name": "readable"
+        }
+      },
+      "name": "root"
+    }
+  },
+  "durationMs": 21
+}

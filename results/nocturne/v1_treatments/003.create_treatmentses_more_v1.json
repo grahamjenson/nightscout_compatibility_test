@@ -1,0 +1,776 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/treatments?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "created_at": "2026-10-27T01:16:47Z",
+        "eventType": "BG Check",
+        "glucose": 5.8,
+        "glucoseType": "Finger",
+        "units": "mmol"
+      },
+      {
+        "created_at": "2026-10-27T01:15:47Z",
+        "eventType": "BG Check",
+        "glucose": 145,
+        "glucoseType": "Meter",
+        "units": "mg/dl"
+      },
+      {
+        "carbs": 62,
+        "created_at": "2026-10-27T01:14:47Z",
+        "eventType": "Meal Bolus",
+        "insulin": 6.2
+      },
+      {
+        "carbs": 18,
+        "created_at": "2026-10-27T01:13:47Z",
+        "eventType": "Snack Bolus",
+        "insulin": 1.6,
+        "notes": "Afternoon snack"
+      },
+      {
+        "created_at": "2026-10-27T01:12:47Z",
+        "eventType": "Correction Bolus",
+        "glucose": 13.2,
+        "glucoseType": "Sensor",
+        "insulin": 1.3
+      },
+      {
+        "carbs": 70,
+        "created_at": "2026-10-27T01:11:47Z",
+        "eventType": "Bolus Wizard",
+        "glucose": 11.7,
+        "glucoseType": "Finger",
+        "insulin": 7.8,
+        "notes": "Suggested by pump wizard"
+      },
+      {
+        "carbs": 85,
+        "created_at": "2026-10-27T01:10:47Z",
+        "duration": 180,
+        "eventType": "Combo Bolus",
+        "insulin": 8.4,
+        "splitExt": 60,
+        "splitNow": 40
+      },
+      {
+        "carbs": 16,
+        "created_at": "2026-10-27T01:09:47Z",
+        "eventType": "Carb Correction",
+        "notes": "Hypo treatment"
+      },
+      {
+        "absolute": 0.45,
+        "created_at": "2026-10-27T01:08:47Z",
+        "duration": 30,
+        "eventType": "Temp Basal"
+      },
+      {
+        "created_at": "2026-10-27T01:07:47Z",
+        "duration": 90,
+        "eventType": "Temp Basal",
+        "percent": 50
+      },
+      {
+        "absolute": 1.2,
+        "created_at": "2026-10-27T01:06:47Z",
+        "duration": 120,
+        "eventType": "Temp Basal",
+        "rate": 1.2
+      },
+      {
+        "created_at": "2026-10-27T01:05:47Z",
+        "duration": 60,
+        "eventType": "Temporary Target",
+        "reason": "Eating Soon",
+        "targetBottom": 6,
+        "targetTop": 7
+      },
+      {
+        "created_at": "2026-10-27T01:04:47Z",
+        "duration": 120,
+        "eventType": "Temporary Target",
+        "reason": "Exercise",
+        "targetBottom": 8,
+        "targetTop": 9
+      },
+      {
+        "created_at": "2026-10-27T01:03:47Z",
+        "duration": 75,
+        "eventType": "Exercise",
+        "notes": "Mountain biking"
+      },
+      {
+        "created_at": "2026-10-27T01:02:47Z",
+        "eventType": "Profile Switch",
+        "profile": "Weekend"
+      },
+      {
+        "created_at": "2026-10-27T01:01:47Z",
+        "eventType": "Profile Switch",
+        "notes": "Activated manually",
+        "profile": "Sick Day"
+      },
+      {
+        "created_at": "2026-10-27T01:00:47Z",
+        "eventType": "Sensor Start",
+        "notes": "Dexcom G7"
+      },
+      {
+        "created_at": "2026-10-27T00:59:47Z",
+        "enteredBy": "AndroidAPS",
+        "eventType": "Sensor Change",
+        "notes": "New sensor inserted"
+      },
+      {
+        "created_at": "2026-10-27T00:58:47Z",
+        "enteredBy": "Loop",
+        "eventType": "Site Change",
+        "notes": "Right thigh"
+      },
+      {
+        "created_at": "2026-10-27T00:57:47Z",
+        "enteredBy": "OpenAPS",
+        "eventType": "Pump Battery Change"
+      },
+      {
+        "created_at": "2026-10-27T00:56:47Z",
+        "eventType": "Insulin Change",
+        "insulin": 2.6,
+        "notes": "Started new pen"
+      },
+      {
+        "created_at": "2026-10-27T00:55:47Z",
+        "eventType": "Announcement",
+        "notes": "Travelling today"
+      },
+      {
+        "created_at": "2026-10-27T00:54:47Z",
+        "eventType": "Question",
+        "notes": "Should I extend temp target?"
+      },
+      {
+        "created_at": "2026-10-27T00:53:47Z",
+        "eventType": "Note",
+        "notes": "Forgot pre-bolus"
+      },
+      {
+        "created_at": "2026-10-27T00:52:47Z",
+        "eventType": "OpenAPS Offline",
+        "reason": "Rig lost WiFi"
+      },
+      {
+        "created_at": "2026-10-27T00:51:47Z",
+        "eventType": "D.A.D. Alert",
+        "notes": "Possible missed bolus"
+      },
+      {
+        "created_at": "2026-10-27T00:50:47Z",
+        "eventType": "Cannula Fill",
+        "insulin": 0.7
+      },
+      {
+        "created_at": "2026-10-27T00:49:47Z",
+        "eventType": "Prime",
+        "insulin": 8.5
+      },
+      {
+        "created_at": "2026-10-27T00:48:47Z",
+        "eventType": "Reservoir Change",
+        "notes": "Filled with 200U"
+      },
+      {
+        "created_at": "2026-10-27T00:47:47Z",
+        "eventType": "Calibration",
+        "glucose": 6.2,
+        "glucoseType": "Finger"
+      },
+      {
+        "created_at": "2026-10-27T00:46:47Z",
+        "eventType": "Bolus",
+        "insulin": 2.8
+      },
+      {
+        "created_at": "2026-10-27T00:45:47Z",
+        "enteredBy": "Loop",
+        "eventType": "Correction Bolus",
+        "insulin": 2.1,
+        "notes": "Automatic correction"
+      },
+      {
+        "carbs": 95,
+        "created_at": "2026-10-27T00:44:47Z",
+        "enteredBy": "AndroidAPS",
+        "eventType": "Meal Bolus",
+        "insulin": 9.5,
+        "notes": "Pizza"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:49 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aef555475958f602cb3",
+      "carbs": null,
+      "created_at": "2026-10-27T01:16:47.000Z",
+      "date": 1793063807000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "BG Check",
+      "glucose": 5.8,
+      "glucoseType": "Finger",
+      "identifier": "01a17aef555475958f602cb3",
+      "mills": 1793063807000,
+      "srvCreated": 1793063807000,
+      "srvModified": 1793063807000,
+      "units": "mmol",
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5588756cbbed06d0",
+      "carbs": null,
+      "created_at": "2026-10-27T01:15:47.000Z",
+      "date": 1793063747000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "BG Check",
+      "glucose": 145,
+      "glucoseType": "Meter",
+      "identifier": "01a17aef5588756cbbed06d0",
+      "mills": 1793063747000,
+      "srvCreated": 1793063747000,
+      "srvModified": 1793063747000,
+      "units": "mg/dl",
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef55c2763495ab4db4",
+      "carbs": 62,
+      "created_at": "2026-10-27T01:14:47.000Z",
+      "date": 1793063687000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Meal Bolus",
+      "identifier": "01a17aef55c2763495ab4db4",
+      "insulin": 6.2,
+      "mills": 1793063687000,
+      "srvCreated": 1793063687000,
+      "srvModified": 1793063687000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5610761aba0de06a",
+      "carbs": 18,
+      "created_at": "2026-10-27T01:13:47.000Z",
+      "date": 1793063627000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Snack Bolus",
+      "identifier": "01a17aef5610761aba0de06a",
+      "insulin": 1.6,
+      "mills": 1793063627000,
+      "notes": "Afternoon snack",
+      "srvCreated": 1793063627000,
+      "srvModified": 1793063627000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef566c790f84082c3c",
+      "carbs": null,
+      "created_at": "2026-10-27T01:12:47.000Z",
+      "date": 1793063567000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Correction Bolus",
+      "glucose": 13.2,
+      "glucoseType": "Sensor",
+      "identifier": "01a17aef566c790f84082c3c",
+      "insulin": 1.3,
+      "mills": 1793063567000,
+      "srvCreated": 1793063567000,
+      "srvModified": 1793063567000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef56a870aeb7ed7c6c",
+      "carbs": 70,
+      "created_at": "2026-10-27T01:11:47.000Z",
+      "date": 1793063507000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Bolus Wizard",
+      "glucose": 11.7,
+      "glucoseType": "Finger",
+      "identifier": "01a17aef56a870aeb7ed7c6c",
+      "insulin": 7.8,
+      "mills": 1793063507000,
+      "notes": "Suggested by pump wizard",
+      "srvCreated": 1793063507000,
+      "srvModified": 1793063507000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef572279df88241ace",
+      "absolute": 2.8000000000000003,
+      "carbs": 85,
+      "created_at": "2026-10-27T01:10:47.000Z",
+      "date": 1793063447000,
+      "duration": 180,
+      "enteredBy": null,
+      "eventType": "Combo Bolus",
+      "identifier": "01a17aef572279df88241ace",
+      "insulin": 8.4,
+      "mills": 1793063447000,
+      "rate": 2.8000000000000003,
+      "relative": 2.8000000000000003,
+      "splitExt": 60,
+      "splitNow": 40,
+      "srvCreated": 1793063447000,
+      "srvModified": 1793063447000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef576e77819ed94202",
+      "carbs": 16,
+      "created_at": "2026-10-27T01:09:47.000Z",
+      "date": 1793063387000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Carb Correction",
+      "identifier": "01a17aef576e77819ed94202",
+      "mills": 1793063387000,
+      "notes": "Hypo treatment",
+      "srvCreated": 1793063387000,
+      "srvModified": 1793063387000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef57be7b6586e210b4",
+      "absolute": 0.45,
+      "basalOrigin": "Manual",
+      "carbs": null,
+      "created_at": "2026-10-27T01:08:47.000Z",
+      "date": 1793063327000,
+      "duration": 30,
+      "enteredBy": null,
+      "eventType": "Temp Basal",
+      "identifier": "01a17aef57be7b6586e210b4",
+      "mills": 1793063327000,
+      "originEvidence": "Uploader",
+      "rate": 0.45,
+      "relative": 0.45,
+      "srvCreated": 1793063868360,
+      "srvModified": 1793063868360,
+      "temp": "absolute",
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef58117c75a5251e72",
+      "basalOrigin": "Manual",
+      "carbs": null,
+      "created_at": "2026-10-27T01:07:47.000Z",
+      "date": 1793063267000,
+      "duration": 90,
+      "enteredBy": null,
+      "eventType": "Temp Basal",
+      "identifier": "01a17aef58117c75a5251e72",
+      "mills": 1793063267000,
+      "originEvidence": "Uploader",
+      "percent": 50,
+      "scheduledRate": 0.3,
+      "srvCreated": 1793063868547,
+      "srvModified": 1793063868547,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef58b97159bcfacb1c",
+      "absolute": 1.2,
+      "basalOrigin": "Manual",
+      "carbs": null,
+      "created_at": "2026-10-27T01:06:47.000Z",
+      "date": 1793063207000,
+      "duration": 120,
+      "enteredBy": null,
+      "eventType": "Temp Basal",
+      "identifier": "01a17aef58b97159bcfacb1c",
+      "mills": 1793063207000,
+      "originEvidence": "Uploader",
+      "rate": 1.2,
+      "relative": 1.2,
+      "srvCreated": 1793063868610,
+      "srvModified": 1793063868610,
+      "temp": "absolute",
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef58f579e3b5ae9aeb",
+      "carbs": null,
+      "created_at": "2026-10-27T01:05:47.000Z",
+      "date": 1793063147000,
+      "duration": 60,
+      "enteredBy": null,
+      "eventType": "Temporary Target",
+      "identifier": "01a17aef58f579e3b5ae9aeb",
+      "mills": 1793063147000,
+      "reason": "Eating Soon",
+      "srvCreated": 1793063147000,
+      "srvModified": 1793063147000,
+      "targetBottom": 6,
+      "targetTop": 7,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef59367e7da8c50692",
+      "carbs": null,
+      "created_at": "2026-10-27T01:04:47.000Z",
+      "date": 1793063087000,
+      "duration": 120,
+      "enteredBy": null,
+      "eventType": "Temporary Target",
+      "identifier": "01a17aef59367e7da8c50692",
+      "mills": 1793063087000,
+      "reason": "Exercise",
+      "srvCreated": 1793063087000,
+      "srvModified": 1793063087000,
+      "targetBottom": 8,
+      "targetTop": 9,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef598f7b4aa8c00335",
+      "carbs": null,
+      "created_at": "2026-10-27T01:03:47.000Z",
+      "date": 1793063027000,
+      "duration": 75,
+      "enteredBy": null,
+      "eventType": "Exercise",
+      "identifier": "01a17aef598f7b4aa8c00335",
+      "mills": 1793063027000,
+      "notes": "Mountain biking",
+      "srvCreated": 1793063027000,
+      "srvModified": 1793063027000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5a177e56a38f8574",
+      "carbs": null,
+      "created_at": "2026-10-27T01:02:47.000Z",
+      "date": 1793062967000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Profile Switch",
+      "identifier": "01a17aef5a177e56a38f8574",
+      "mills": 1793062967000,
+      "profile": "Weekend",
+      "srvCreated": 1793062967000,
+      "srvModified": 1793062967000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5a9c7b6ba6bfe946",
+      "carbs": null,
+      "created_at": "2026-10-27T01:01:47.000Z",
+      "date": 1793062907000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Profile Switch",
+      "identifier": "01a17aef5a9c7b6ba6bfe946",
+      "mills": 1793062907000,
+      "notes": "Activated manually",
+      "profile": "Sick Day",
+      "srvCreated": 1793062907000,
+      "srvModified": 1793062907000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5b0b76e18c16961b",
+      "carbs": null,
+      "created_at": "2026-10-27T01:00:47.000Z",
+      "date": 1793062847000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Sensor Start",
+      "identifier": "01a17aef5b0b76e18c16961b",
+      "mills": 1793062847000,
+      "notes": "Dexcom G7",
+      "srvCreated": 1793062847000,
+      "srvModified": 1793062847000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5b47790fb0d4dd33",
+      "carbs": null,
+      "created_at": "2026-10-27T00:59:47.000Z",
+      "date": 1793062787000,
+      "duration": 0,
+      "enteredBy": "AndroidAPS",
+      "eventType": "Sensor Change",
+      "identifier": "01a17aef5b47790fb0d4dd33",
+      "mills": 1793062787000,
+      "notes": "New sensor inserted",
+      "srvCreated": 1793062787000,
+      "srvModified": 1793062787000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5b7a7885925b87c3",
+      "carbs": null,
+      "created_at": "2026-10-27T00:58:47.000Z",
+      "date": 1793062727000,
+      "duration": 0,
+      "enteredBy": "Loop",
+      "eventType": "Site Change",
+      "identifier": "01a17aef5b7a7885925b87c3",
+      "mills": 1793062727000,
+      "notes": "Right thigh",
+      "srvCreated": 1793062727000,
+      "srvModified": 1793062727000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5bb5784fb36e84c5",
+      "carbs": null,
+      "created_at": "2026-10-27T00:57:47.000Z",
+      "date": 1793062667000,
+      "duration": 0,
+      "enteredBy": "OpenAPS",
+      "eventType": "Pump Battery Change",
+      "identifier": "01a17aef5bb5784fb36e84c5",
+      "mills": 1793062667000,
+      "srvCreated": 1793062667000,
+      "srvModified": 1793062667000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5bfd7d25ac166e69",
+      "carbs": null,
+      "created_at": "2026-10-27T00:56:47.000Z",
+      "date": 1793062607000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Insulin Change",
+      "identifier": "01a17aef5bfd7d25ac166e69",
+      "insulin": 2.6,
+      "mills": 1793062607000,
+      "notes": "Started new pen",
+      "srvCreated": 1793062607000,
+      "srvModified": 1793062607000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5c3f7274b4e1f46e",
+      "carbs": null,
+      "created_at": "2026-10-27T00:55:47.000Z",
+      "date": 1793062547000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Announcement",
+      "identifier": "01a17aef5c3f7274b4e1f46e",
+      "mills": 1793062547000,
+      "notes": "Travelling today",
+      "srvCreated": 1793062547000,
+      "srvModified": 1793062547000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5c78736b836a3ec3",
+      "carbs": null,
+      "created_at": "2026-10-27T00:54:47.000Z",
+      "date": 1793062487000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Question",
+      "identifier": "01a17aef5c78736b836a3ec3",
+      "mills": 1793062487000,
+      "notes": "Should I extend temp target?",
+      "srvCreated": 1793062487000,
+      "srvModified": 1793062487000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5cb971fdbf5cea19",
+      "carbs": null,
+      "created_at": "2026-10-27T00:53:47.000Z",
+      "date": 1793062427000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Note",
+      "identifier": "01a17aef5cb971fdbf5cea19",
+      "mills": 1793062427000,
+      "notes": "Forgot pre-bolus",
+      "srvCreated": 1793062427000,
+      "srvModified": 1793062427000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "8707be361d560910ebfb0fd5",
+      "carbs": null,
+      "created_at": "2026-10-27T00:52:47.000Z",
+      "date": 1793062367000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "OpenAPS Offline",
+      "identifier": "8707be361d560910ebfb0fd5",
+      "mills": 1793062367000,
+      "reason": "Rig lost WiFi",
+      "srvCreated": 1793062367000,
+      "srvModified": 1793062367000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5d0d744985ca5c53",
+      "carbs": null,
+      "created_at": "2026-10-27T00:51:47.000Z",
+      "date": 1793062307000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "D.A.D. Alert",
+      "identifier": "01a17aef5d0d744985ca5c53",
+      "mills": 1793062307000,
+      "notes": "Possible missed bolus",
+      "srvCreated": 1793062307000,
+      "srvModified": 1793062307000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5d37799ab15f1d77",
+      "carbs": null,
+      "created_at": "2026-10-27T00:50:47.000Z",
+      "date": 1793062247000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Cannula Fill",
+      "identifier": "01a17aef5d37799ab15f1d77",
+      "insulin": 0.7,
+      "mills": 1793062247000,
+      "srvCreated": 1793062247000,
+      "srvModified": 1793062247000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5d667a1d9d829529",
+      "carbs": null,
+      "created_at": "2026-10-27T00:49:47.000Z",
+      "date": 1793062187000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Prime",
+      "identifier": "01a17aef5d667a1d9d829529",
+      "insulin": 8.5,
+      "mills": 1793062187000,
+      "srvCreated": 1793062187000,
+      "srvModified": 1793062187000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5dae7e9e966c4731",
+      "carbs": null,
+      "created_at": "2026-10-27T00:48:47.000Z",
+      "date": 1793062127000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Reservoir Change",
+      "identifier": "01a17aef5dae7e9e966c4731",
+      "mills": 1793062127000,
+      "notes": "Filled with 200U",
+      "srvCreated": 1793062127000,
+      "srvModified": 1793062127000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "50b842a2ad9d67dc8e688045",
+      "carbs": null,
+      "created_at": "2026-10-27T00:47:47.000Z",
+      "date": 1793062067000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Calibration",
+      "glucose": 6.2,
+      "glucoseType": "Finger",
+      "identifier": "50b842a2ad9d67dc8e688045",
+      "mills": 1793062067000,
+      "srvCreated": 1793062067000,
+      "srvModified": 1793062067000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5e0278acacc8ba7c",
+      "carbs": null,
+      "created_at": "2026-10-27T00:46:47.000Z",
+      "date": 1793062007000,
+      "duration": 0,
+      "enteredBy": null,
+      "eventType": "Bolus",
+      "identifier": "01a17aef5e0278acacc8ba7c",
+      "insulin": 2.8,
+      "mills": 1793062007000,
+      "srvCreated": 1793062007000,
+      "srvModified": 1793062007000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5e477e1a8324da5c",
+      "carbs": null,
+      "created_at": "2026-10-27T00:45:47.000Z",
+      "date": 1793061947000,
+      "duration": 0,
+      "enteredBy": "Loop",
+      "eventType": "Correction Bolus",
+      "identifier": "01a17aef5e477e1a8324da5c",
+      "insulin": 2.1,
+      "mills": 1793061947000,
+      "notes": "Automatic correction",
+      "srvCreated": 1793061947000,
+      "srvModified": 1793061947000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "01a17aef5e8d792a98e79d70",
+      "carbs": 95,
+      "created_at": "2026-10-27T00:44:47.000Z",
+      "date": 1793061887000,
+      "duration": 0,
+      "enteredBy": "AndroidAPS",
+      "eventType": "Meal Bolus",
+      "identifier": "01a17aef5e8d792a98e79d70",
+      "insulin": 9.5,
+      "mills": 1793061887000,
+      "notes": "Pizza",
+      "srvCreated": 1793061887000,
+      "srvModified": 1793061887000,
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 2474
+}

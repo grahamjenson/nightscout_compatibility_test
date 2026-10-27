@@ -1,0 +1,138 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1612/api/v1/devicestatus?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "created_at": "2026-10-27T01:17:36Z",
+      "device": "aaps",
+      "loop": {
+        "cob": {
+          "cob": 18
+        },
+        "enacted": {
+          "duration": 30,
+          "rate": 1.2,
+          "reason": "BG rising faster than expected"
+        },
+        "failureReason": "",
+        "iob": {
+          "devicestatus": 0.024,
+          "iob": 1.73
+        },
+        "predicted": {
+          "values": [
+            112,
+            114,
+            117,
+            120,
+            123,
+            126
+          ]
+        },
+        "timestamp": "2026-06-16T08:42:00Z"
+      },
+      "openaps": {
+        "enacted": {
+          "duration": 30,
+          "rate": 1.2,
+          "timestamp": "2026-06-16T08:42:00Z"
+        },
+        "suggested": {
+          "duration": 30,
+          "rate": 1.2,
+          "reason": "Eventual BG 126",
+          "timestamp": "2026-06-16T08:41:55Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 68,
+          "voltage": 1.42
+        },
+        "clock": "2026-06-16T08:42:15Z",
+        "reservoir": 97.4,
+        "status": {
+          "bolusing": false,
+          "suspended": false
+        }
+      },
+      "uploader": {
+        "battery": 87,
+        "batteryVoltage": 4.05
+      }
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:37 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "_id": "01a17aef2b520de2817585e3",
+      "created_at": "2026-06-16T08:42:00.000Z",
+      "date": 1781599320000,
+      "device": "aaps",
+      "mills": 1781599320000,
+      "openaps": {
+        "enacted": {
+          "duration": 30,
+          "rate": 1.2,
+          "timestamp": "2026-06-16T08:42:00Z"
+        },
+        "suggested": {
+          "duration": 30,
+          "rate": 1.2,
+          "reason": "Eventual BG 126",
+          "timestamp": "2026-06-16T08:41:55Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 68,
+          "voltage": 1.42
+        },
+        "clock": "2026-06-16T08:42:15Z",
+        "reservoir": 97.4,
+        "status": {
+          "bolusing": false,
+          "suspended": false
+        }
+      },
+      "srvCreated": 1793063857415,
+      "srvModified": 1793063857415,
+      "uploader": {
+        "battery": 87,
+        "batteryVoltage": 4.05
+      },
+      "uploaderBattery": 87,
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 741
+}

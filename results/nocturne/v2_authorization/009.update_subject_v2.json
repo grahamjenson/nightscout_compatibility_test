@@ -1,0 +1,52 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/authorization/subjects?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "_id": "\u003cno value\u003e",
+      "name": "compat-test-subject",
+      "notes": "updated by the compatibility tests",
+      "roles": [
+        "readable"
+      ]
+    }
+  },
+  "statusCode": 400,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "detail": "Subject ID is required for update",
+    "status": 400,
+    "title": "Bad Request",
+    "traceId": "00-3441883e7502d23e5a0d688903153d42-86a57c91a5ef5ee2-01",
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1"
+  },
+  "durationMs": 17
+}

@@ -1,0 +1,72 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1612/api/v2/authorization/subjects?token=noc_JhJ78ieCYipIGnFczx7epFibCuMunDKOpQEj234b6RQ",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:18:07 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": [
+    {
+      "accessToken": "",
+      "created": "2026-10-27T01:18:07.605377Z",
+      "modified": "2026-10-27T01:18:07.605377Z",
+      "name": "compat-test-subject",
+      "roles": [
+        "api:treatments:read"
+      ]
+    },
+    {
+      "accessToken": "",
+      "created": "2026-10-27T01:17:35.253771Z",
+      "modified": "2026-10-27T01:17:35.253771Z",
+      "name": "read",
+      "roles": [
+        "api:devicestatus:read",
+        "api:food:read",
+        "api:entries:read",
+        "api:activity:read",
+        "api:profile:read",
+        "api:treatments:read"
+      ]
+    },
+    {
+      "accessToken": "",
+      "created": "2026-10-27T01:17:35.166936Z",
+      "modified": "2026-10-27T01:17:35.166936Z",
+      "name": "write",
+      "roles": [
+        "*"
+      ]
+    }
+  ],
+  "durationMs": 36
+}

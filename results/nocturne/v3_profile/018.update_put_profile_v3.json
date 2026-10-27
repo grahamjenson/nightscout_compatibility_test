@@ -1,0 +1,201 @@
+{
+  "request": {
+    "method": "PUT",
+    "path": "",
+    "url": "http://localhost:1612/api/v3/profile/88f84f8e4c96277a8444f965",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMWExN2FlZi0yM2U0LTdiYmQtYjM3Mi05NTA1ZTVjMTY1YjEiLCJqdGkiOiIwMWExN2FlZi0yNGNjLTc0ODEtODE0YS1lY2M3NDY5N2JlODciLCJpYXQiOjE3OTMwNjM4NTUsIm5hbWUiOiJEZXZpY2VzIiwidGVuYW50X2lkIjoiMDFhMTdhZWYtMjAzYS03MGFkLWFmOWMtMmZjZjg3OWIwMmQ2IiwiZ3JhbnRfaWQiOiIwMWExN2FlZi0yNDAxLTdmNjgtYjY4My1mY2Q3NmMwY2YxMzMiLCJzY29wZSI6ImdsdWNvc2UucmVhZCBnbHVjb3NlLnJlYWR3cml0ZSB0cmVhdG1lbnRzLnJlYWQgdHJlYXRtZW50cy5yZWFkd3JpdGUgZGV2aWNlcy5yZWFkIGRldmljZXMucmVhZHdyaXRlIHRoZXJhcHkucmVhZCB0aGVyYXB5LnJlYWR3cml0ZSBhbGVydHMucmVhZCBhbGVydHMucmVhZHdyaXRlIGFsZXJ0cy5hY2tub3dsZWRnZSByZXBvcnRzLnJlYWQgaWRlbnRpdHkucmVhZCBoZWFydHJhdGUucmVhZCBoZWFydHJhdGUucmVhZHdyaXRlIHN0ZXBjb3VudC5yZWFkIHN0ZXBjb3VudC5yZWFkd3JpdGUgc2xlZXAucmVhZCBzbGVlcC5yZWFkd3JpdGUgZm9vZC5yZWFkIGZvb2QucmVhZHdyaXRlIHNoYXJpbmcucmVhZHdyaXRlIGRldmljZS5ub3RpZnkgZGV2aWNlLmFjdHVhdGUgKiIsIm5iZiI6MTc5MzA2Mzg1NSwiZXhwIjoxNzkzMDY3NDU1LCJpc3MiOiJub2N0dXJuZSIsImF1ZCI6Im5vY3R1cm5lLWFwaSJ9.kpF9SZnIh3Dt-iwGvdKnUApJEYqoTj5WBcOJM5wdGOA"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "app": "asd",
+      "date": "2026-10-27T01:17:58Z",
+      "defaultProfile": "updated_profile",
+      "store": {
+        "updated_profile": {
+          "basal": [
+            {
+              "time": "00:00",
+              "value": 0.9
+            }
+          ],
+          "carbratio": [
+            {
+              "time": "00:00",
+              "value": 12
+            }
+          ],
+          "dia": 7,
+          "sens": [
+            {
+              "time": "00:00",
+              "value": 2.5
+            }
+          ],
+          "target_high": [
+            {
+              "time": "00:00",
+              "value": 6.1
+            }
+          ],
+          "target_low": [
+            {
+              "time": "00:00",
+              "value": 5
+            }
+          ]
+        },
+        "updated_profile_2": {
+          "basal": [
+            {
+              "time": "00:00",
+              "value": 0.9
+            }
+          ],
+          "carbratio": [
+            {
+              "time": "00:00",
+              "value": 12
+            }
+          ],
+          "dia": 7,
+          "sens": [
+            {
+              "time": "00:00",
+              "value": 2.5
+            }
+          ],
+          "target_high": [
+            {
+              "time": "00:00",
+              "value": 6.1
+            }
+          ],
+          "target_low": [
+            {
+              "time": "00:00",
+              "value": 5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Tue, 27 Oct 2026 01:17:58 GMT"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "Server": [
+      "Kestrel"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Frame-Options": [
+      "DENY"
+    ]
+  },
+  "body": {
+    "_id": "profile-75F0CEA6",
+    "created_at": "2026-10-27T01:17:58.759Z",
+    "defaultProfile": "updated_profile",
+    "srvCreated": 1793063878759,
+    "srvModified": 1793063878759,
+    "store": {
+      "updated_profile": {
+        "basal": [
+          {
+            "time": "00:00",
+            "timeAsSeconds": 0,
+            "value": 0.9
+          }
+        ],
+        "carbratio": [
+          {
+            "time": "00:00",
+            "timeAsSeconds": 0,
+            "value": 12
+          }
+        ],
+        "carbs_hr": 20,
+        "delay": 20,
+        "dia": 7,
+        "sens": [
+          {
+            "time": "00:00",
+            "timeAsSeconds": 0,
+            "value": 2.5
+          }
+        ],
+        "target_high": [
+          {
+            "time": "00:00",
+            "value": 6.1
+          }
+        ],
+        "target_low": [
+          {
+            "time": "00:00",
+            "timeAsSeconds": 0,
+            "value": 5
+          }
+        ]
+      },
+      "updated_profile_2": {
+        "basal": [
+          {
+            "time": "00:00",
+            "timeAsSeconds": 0,
+            "value": 0.9
+          }
+        ],
+        "carbratio": [
+          {
+            "time": "00:00",
+            "timeAsSeconds": 0,
+            "value": 12
+          }
+        ],
+        "carbs_hr": 20,
+        "delay": 20,
+        "dia": 7,
+        "sens": [
+          {
+            "time": "00:00",
+            "timeAsSeconds": 0,
+            "value": 2.5
+          }
+        ],
+        "target_high": [
+          {
+            "time": "00:00",
+            "value": 6.1
+          }
+        ],
+        "target_low": [
+          {
+            "time": "00:00",
+            "timeAsSeconds": 0,
+            "value": 5
+          }
+        ]
+      }
+    },
+    "units": "mg/dL"
+  },
+  "durationMs": 266
+}
