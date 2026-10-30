@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments.json?token=write-2fa396b791909491&find[enteredBy]=socket-test-dedup",
+    "url": "http://localhost:1337/api/v1/treatments.json?token=write-a1552de38f339aba&find[enteredBy]=socket-test-dedup",
     "headers": {
       "Accept": [
         "application/json"
@@ -19,22 +19,22 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "182"
+      "237"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Thu, 22 Oct 2026 19:03:25 GMT"
+      "Fri, 30 Oct 2026 01:01:05 GMT"
     ],
     "Etag": [
-      "W/\"b6-Ky85IkXeVV3pazzCYOBdUy/L50A\""
+      "W/\"ed-kTBzAAz17sRxP0DgzHehQKIgcvs\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Thu, 22 Oct 2026 19:03:25 GMT"
+      "Fri, 30 Oct 2026 01:01:05 GMT"
     ],
     "Vary": [
       "Accept-Encoding"
@@ -45,14 +45,16 @@
   },
   "body": [
     {
-      "_id": "6ada5dfd6c7ffcd2f3a64d57",
+      "_id": "6ae3ec513259af060ec045ad",
       "carbs": null,
-      "created_at": "2026-10-22T19:03:25Z",
+      "created_at": "2026-10-30T01:01:05Z",
       "enteredBy": "socket-test-dedup",
       "eventType": "Note",
       "insulin": null,
-      "notes": "dedup over socket.io"
+      "notes": "dedup over socket.io",
+      "srvCreated": 1793322065936,
+      "srvModified": 1793322065936
     }
   ],
-  "durationMs": 4
+  "durationMs": 3
 }

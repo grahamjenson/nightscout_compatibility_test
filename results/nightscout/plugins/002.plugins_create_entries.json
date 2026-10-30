@@ -1,0 +1,200 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/entries?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "date": 1793318449835,
+        "device": "plugin-test",
+        "intercept": 30000,
+        "scale": 1,
+        "slope": 1000,
+        "type": "cal"
+      },
+      {
+        "date": 1793320849835,
+        "dateString": "2026-10-30T00:40:49Z",
+        "device": "plugin-test",
+        "direction": "FortyFiveUp",
+        "filtered": 130000,
+        "noise": 1,
+        "sgv": 100,
+        "type": "sgv",
+        "unfiltered": 130000
+      },
+      {
+        "date": 1793321149835,
+        "dateString": "2026-10-30T00:45:49Z",
+        "device": "plugin-test",
+        "direction": "FortyFiveUp",
+        "filtered": 140000,
+        "noise": 1,
+        "sgv": 110,
+        "type": "sgv",
+        "unfiltered": 140000
+      },
+      {
+        "date": 1793321449835,
+        "dateString": "2026-10-30T00:50:49Z",
+        "device": "plugin-test",
+        "direction": "FortyFiveUp",
+        "filtered": 150000,
+        "noise": 1,
+        "sgv": 120,
+        "type": "sgv",
+        "unfiltered": 150000
+      },
+      {
+        "date": 1793321749835,
+        "dateString": "2026-10-30T00:55:49Z",
+        "device": "plugin-test",
+        "direction": "FortyFiveUp",
+        "filtered": 160000,
+        "noise": 1,
+        "sgv": 130,
+        "type": "sgv",
+        "unfiltered": 160000
+      },
+      {
+        "date": 1793322049835,
+        "dateString": "2026-10-30T01:00:49Z",
+        "device": "plugin-test",
+        "direction": "FortyFiveUp",
+        "filtered": 170000,
+        "noise": 1,
+        "sgv": 140,
+        "type": "sgv",
+        "unfiltered": 170000
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:49 GMT"
+    ],
+    "Etag": [
+      "W/\"73a-7RlWAikPCoSSocLGCZUQNiuA2pI\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ae3ec41349e459fe3dd973f",
+      "date": 1793318449835,
+      "device": "plugin-test",
+      "intercept": 30000,
+      "scale": 1,
+      "slope": 1000,
+      "srvCreated": 1793322049842,
+      "srvModified": 1793322049842,
+      "sysTime": "2026-10-30T00:00:49.835Z",
+      "type": "cal",
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd9740",
+      "date": 1793320849835,
+      "dateString": "2026-10-30T00:40:49.000Z",
+      "device": "plugin-test",
+      "direction": "FortyFiveUp",
+      "filtered": 130000,
+      "noise": 1,
+      "sgv": 100,
+      "srvCreated": 1793322049843,
+      "srvModified": 1793322049843,
+      "sysTime": "2026-10-30T00:40:49.000Z",
+      "type": "sgv",
+      "unfiltered": 130000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd9741",
+      "date": 1793321149835,
+      "dateString": "2026-10-30T00:45:49.000Z",
+      "device": "plugin-test",
+      "direction": "FortyFiveUp",
+      "filtered": 140000,
+      "noise": 1,
+      "sgv": 110,
+      "srvCreated": 1793322049844,
+      "srvModified": 1793322049844,
+      "sysTime": "2026-10-30T00:45:49.000Z",
+      "type": "sgv",
+      "unfiltered": 140000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd9742",
+      "date": 1793321449835,
+      "dateString": "2026-10-30T00:50:49.000Z",
+      "device": "plugin-test",
+      "direction": "FortyFiveUp",
+      "filtered": 150000,
+      "noise": 1,
+      "sgv": 120,
+      "srvCreated": 1793322049845,
+      "srvModified": 1793322049845,
+      "sysTime": "2026-10-30T00:50:49.000Z",
+      "type": "sgv",
+      "unfiltered": 150000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd9743",
+      "date": 1793321749835,
+      "dateString": "2026-10-30T00:55:49.000Z",
+      "device": "plugin-test",
+      "direction": "FortyFiveUp",
+      "filtered": 160000,
+      "noise": 1,
+      "sgv": 130,
+      "srvCreated": 1793322049846,
+      "srvModified": 1793322049846,
+      "sysTime": "2026-10-30T00:55:49.000Z",
+      "type": "sgv",
+      "unfiltered": 160000,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd9744",
+      "date": 1793322049835,
+      "dateString": "2026-10-30T01:00:49.000Z",
+      "device": "plugin-test",
+      "direction": "FortyFiveUp",
+      "filtered": 170000,
+      "noise": 1,
+      "sgv": 140,
+      "srvCreated": 1793322049847,
+      "srvModified": 1793322049847,
+      "sysTime": "2026-10-30T01:00:49.000Z",
+      "type": "sgv",
+      "unfiltered": 170000,
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 13
+}

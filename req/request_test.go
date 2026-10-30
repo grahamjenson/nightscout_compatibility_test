@@ -264,6 +264,20 @@ func TestTemplateHTTPTime(t *testing.T) {
 	}
 }
 
+func TestTemplateSleep(t *testing.T) {
+	start := time.Now()
+	got, err := RenderTemplate(`{{ sleep "50ms" }}`, nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got != "50ms" || time.Since(start) < 50*time.Millisecond {
+		t.Errorf("sleep 50ms = %q after %v", got, time.Since(start))
+	}
+	if _, err := RenderTemplate(`{{ sleep "soon" }}`, nil); err == nil {
+		t.Error("sleep with a bad duration should fail")
+	}
+}
+
 func TestTemplateTokenByName(t *testing.T) {
 	subjects := []any{
 		"not an object",

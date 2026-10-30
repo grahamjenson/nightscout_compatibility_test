@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/ddata/at/1792614383176?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v2/ddata/at/1793318458525?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,7 +22,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:23 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -39,9 +39,9 @@
   },
   "body": {
     "error": {
-      "message": "Invalid time value",
-      "stack": "RangeError: Invalid time value\n    at Date.toISOString (\u003canonymous\u003e)\n    at loadTreatments (/opt/app/lib/data/dataloader.js:291:54)\n    at /opt/app/node_modules/async/lib/async.js:567:21\n    at /opt/app/node_modules/async/lib/async.js:246:17\n    at /opt/app/node_modules/async/lib/async.js:122:13\n    at _each (/opt/app/node_modules/async/lib/async.js:46:13)\n    at async.each (/opt/app/node_modules/async/lib/async.js:121:9)\n    at _asyncMap (/opt/app/node_modules/async/lib/async.js:245:13)\n    at Object.map (/opt/app/node_modules/async/lib/async.js:216:23)\n    at _parallel (/opt/app/node_modules/async/lib/async.js:565:20)"
+      "message": "Internal Server Error",
+      "status": 500
     }
   },
-  "durationMs": 4
+  "durationMs": 3
 }

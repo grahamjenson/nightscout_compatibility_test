@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries/sgv.txt?token=write-4d6054505d826635&count=2",
+    "url": "http://localhost:1337/api/v1/entries/sgv.txt?token=write-a1552de38f339aba&count=2",
     "headers": {
       "Accept": [
         "text/plain"
@@ -25,16 +25,16 @@
       "text/plain; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:21 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"57-NRwLGDXFEeNsj0N7MY8DaXRyM2o\""
+      "W/\"57-jdGrUn7bvlPQkHF+bPt0qZitZTA\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:26:21 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Vary": [
       "Accept, Accept-Encoding"
@@ -43,6 +43,6 @@
       "Express"
     ]
   },
-  "body": "\"2026-10-21T21:26:21.000Z\"\t1792617981732\t100\t\"Flat\"\t\"test-device\"\r\n\t1792617981727\t100\t\t",
+  "body": "\"2026-10-30T01:00:57.000Z\"\t1793322057198\t100\t\"Flat\"\t\"test-device\"\r\n\t1793322057194\t100\t\t",
   "durationMs": 3
 }

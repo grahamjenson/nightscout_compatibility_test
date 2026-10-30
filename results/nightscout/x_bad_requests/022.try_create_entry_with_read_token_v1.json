@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=read-e4bdccd1ce03d5db",
+    "url": "http://localhost:1337/api/v1/entries?token=read-79d324a94dd6b41e",
     "headers": {
       "Accept": [
         "application/json"
@@ -13,7 +13,7 @@
     },
     "body": {
       "app": "test-app",
-      "date": 1792616400194,
+      "date": 1793320863610,
       "sgv": 105,
       "type": "sgv"
     }
@@ -30,7 +30,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:20:00 GMT"
+      "Fri, 30 Oct 2026 01:01:03 GMT"
     ],
     "Etag": [
       "W/\"47-1uxWG1E9PBiq+oI2d0xBji/W9tM\""

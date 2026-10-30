@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/verifyauth?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v1/verifyauth?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
       "W/\"80-BD+8usVmezP6TKugKstxaQOiNKU\""
@@ -51,5 +51,5 @@
     },
     "status": 200
   },
-  "durationMs": 3
+  "durationMs": 1
 }

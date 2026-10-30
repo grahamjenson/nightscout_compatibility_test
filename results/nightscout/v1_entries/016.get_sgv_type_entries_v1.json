@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?type=sgv&token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/entries?type=sgv&token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -18,23 +18,20 @@
     "Connection": [
       "keep-alive"
     ],
-    "Content-Length": [
-      "961"
-    ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"3c1-HOkjMmSe19sDFa82M2xaIh4ZHSE\""
+      "W/\"4d2-nLsEOgABvBqwObnUPowSokbUMlA\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Vary": [
       "Accept, Accept-Encoding"
@@ -45,61 +42,71 @@
   },
   "body": [
     {
-      "_id": "6ad92c7a35fb876db084a2c5",
+      "_id": "6ae3ec49349e459fe3dd9793",
       "app": "test-app",
-      "date": 1792617594135,
-      "dateString": "2026-10-21T21:19:54.000Z",
+      "date": 1793322057198,
+      "dateString": "2026-10-30T01:00:57.000Z",
       "device": "test-device",
       "direction": "Flat",
       "filtered": 139.2,
-      "mills": 1792617594135,
+      "mills": 1793322057198,
       "noise": 1,
       "rssi": -62,
       "sgv": 100,
-      "sysTime": "2026-10-21T21:19:54.000Z",
+      "srvCreated": 1793322057200,
+      "srvModified": 1793322057200,
+      "sysTime": "2026-10-30T01:00:57.000Z",
       "trend": 3,
       "type": "sgv",
       "unfiltered": 141.7,
-      "utcOffset": 780
+      "utcOffset": 0
     },
     {
-      "_id": "6ad92c7a35fb876db084a2c3",
-      "date": 1792617594128,
+      "_id": "6ae3ec49349e459fe3dd9791",
+      "date": 1793322057194,
       "sgv": 100,
-      "sysTime": "2026-10-21T21:19:54.128Z",
+      "srvCreated": 1793322057196,
+      "srvModified": 1793322057196,
+      "sysTime": "2026-10-30T01:00:57.194Z",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "6ad92c7a35fb876db084a2ca",
+      "_id": "6ae3ec49349e459fe3dd9798",
       "app": "test-app",
-      "date": 1792616994145,
+      "date": 1793321457205,
       "device": "test-device",
       "mbg": 110,
-      "sysTime": "2026-10-21T21:09:54.145Z",
+      "srvCreated": 1793322057207,
+      "srvModified": 1793322057207,
+      "sysTime": "2026-10-30T00:50:57.205Z",
       "type": "mbg",
       "utcOffset": 0
     },
     {
-      "_id": "6ad92c7a35fb876db084a2c7",
+      "_id": "6ae3ec49349e459fe3dd9795",
       "app": "test-app",
-      "date": 1792616994140,
+      "date": 1793321457201,
       "device": "test-device",
       "sgv": 101,
-      "sysTime": "2026-10-21T21:09:54.140Z",
+      "srvCreated": 1793322057203,
+      "srvModified": 1793322057203,
+      "sysTime": "2026-10-30T00:50:57.201Z",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "6ad92c7a35fb876db084a2c8",
+      "_id": "6ae3ec49349e459fe3dd9796",
       "app": "test-app",
-      "date": 1792616874140,
+      "date": 1793321337201,
       "device": "test-device",
       "mbg": 102,
-      "sysTime": "2026-10-21T21:07:54.140Z",
+      "srvCreated": 1793322057204,
+      "srvModified": 1793322057204,
+      "sysTime": "2026-10-30T00:48:57.201Z",
       "type": "mbg",
       "utcOffset": 0
     }
   ],
-  "durationMs": 2
+  "durationMs": 3
 }

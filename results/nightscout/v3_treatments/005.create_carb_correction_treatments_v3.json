@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "asd",
-      "created_at": "2026-10-22T10:16:54+13:00",
+      "created_at": "2026-10-30T00:57:58Z",
       "eventType": "Carb Correction",
       "insulin": 2,
       "reason": "3"
@@ -34,24 +34,24 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/a70e3247-521a-5f79-89df-254dd3d971f5"
+      "/api/v3/treatments/d80af6f7-0226-538f-a696-ba54ec2131ed"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "a70e3247-521a-5f79-89df-254dd3d971f5",
-    "lastModified": 1792617594858,
+    "identifier": "d80af6f7-0226-538f-a696-ba54ec2131ed",
+    "lastModified": 1793322058049,
     "status": 201
   },
   "durationMs": 3

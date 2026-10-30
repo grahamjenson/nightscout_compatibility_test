@@ -12,7 +12,7 @@
       {
         "collection": "devicestatus",
         "data": {
-          "created_at": "2026-10-22T19:03:25Z",
+          "created_at": "2026-10-30T01:01:05Z",
           "device": "socket-test",
           "uploader": {
             "battery": 42
@@ -24,9 +24,11 @@
   "statusCode": 200,
   "body": [
     {
-      "_id": "6ada5dfd6c7ffcd2f3a64d52",
-      "created_at": "2026-10-22T19:03:25Z",
+      "_id": "6ae3ec513259af060ec045a8",
+      "created_at": "2026-10-30T01:01:05Z",
       "device": "socket-test",
+      "srvCreated": 1793322065909,
+      "srvModified": 1793322065909,
       "uploader": {
         "battery": 42
       }

@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/devicestatus?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v1/devicestatus?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -150,10 +150,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:21 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"564-zYsScJDEd3KLwej3U7Ayeai272c\""
+      "W/\"59b-+uheCFs5fQe+Ji9p9UP1+xge8bA\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -167,7 +167,7 @@
   },
   "body": [
     {
-      "_id": "6ad92dfd4fc2f9571e953cde",
+      "_id": "6ae3ec493259af060ec04553",
       "created_at": "2025-05-14T02:13:21.000Z",
       "device": "loop://iPhone",
       "loop": {
@@ -289,6 +289,8 @@
         "secondsFromGMT": 28800,
         "suspended": false
       },
+      "srvCreated": 1793322057175,
+      "srvModified": 1793322057175,
       "uploader": {
         "battery": 80,
         "name": "iPhone",
@@ -297,5 +299,5 @@
       "utcOffset": 0
     }
   ],
-  "durationMs": 5
+  "durationMs": 3
 }

@@ -12,9 +12,9 @@
   "body": {
     "group": "Announcement",
     "isAnnouncement": true,
-    "key": "1059763b6652756a04519919e2526a028c4f0a54",
+    "key": "2f7ac0a07c4a0e634c4ec10c30df61f814e26825",
     "level": 0,
-    "message": "socket test announcement 1792617602598",
+    "message": "socket test announcement 1793322073086",
     "plugin": {
       "enabled": true,
       "label": "Treatment Notifications",
@@ -23,5 +23,5 @@
     },
     "title": "Announcement"
   },
-  "durationMs": 1047
+  "durationMs": 1014
 }

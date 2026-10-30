@@ -19,6 +19,9 @@ func main() {
 	name := os.Args[1]
 
 	files := []string{
+		// plugins first, so only the data it creates (and then removes) drives them
+		"requests/plugins.http",
+
 		// v1
 		"requests/v1_activity.http",
 		"requests/v1_devicestatus.http",

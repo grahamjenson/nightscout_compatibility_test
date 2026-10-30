@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v3/devicestatus/ed3127fc-c514-5a19-8206-15dedafefc58",
+    "url": "http://localhost:1337/api/v3/devicestatus/24854bdd-630c-5340-8a3b-ffbd79761bdc",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -22,19 +22,19 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "308"
+      "306"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Vary": [
       "Accept, Accept-Encoding"
@@ -43,20 +43,20 @@
   "body": {
     "result": {
       "app": "test-app",
-      "created_at": "2026-10-21T21:19:54.000Z",
-      "date": 1792617594000,
+      "created_at": "2026-10-30T01:00:57.000Z",
+      "date": 1793322057000,
       "device": "aaps",
-      "identifier": "ed3127fc-c514-5a19-8206-15dedafefc58",
-      "srvCreated": 1792617594486,
-      "srvModified": 1792617594534,
+      "identifier": "24854bdd-630c-5340-8a3b-ffbd79761bdc",
+      "srvCreated": 1793322057652,
+      "srvModified": 1793322057699,
       "subject": "write",
       "uploader": {
         "battery": 100,
         "batteryVoltage": 3.2
       },
-      "utcOffset": 780
+      "utcOffset": 0
     },
     "status": 200
   },
-  "durationMs": 3
+  "durationMs": 2
 }

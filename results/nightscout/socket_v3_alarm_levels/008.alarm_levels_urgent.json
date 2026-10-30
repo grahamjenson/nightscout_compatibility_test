@@ -20,7 +20,7 @@
     "group": "default",
     "key": "ar2_2",
     "level": 2,
-    "message": "BG Now: 2.5 -1 - mmol/L\nBG 15m: 2.2 mmol/L",
+    "message": "BG Now: 2.5 -1 - mmol/L\nBG 15m: 2.2 mmol/L\nBWP: -128.36U\nIOB: 127.99U\nCOB: 0g",
     "plugin": {
       "enabled": true,
       "label": "AR2",
@@ -41,5 +41,5 @@
     "pushoverSound": "persistent",
     "title": "Urgent, LOW"
   },
-  "durationMs": 15
+  "durationMs": 8
 }

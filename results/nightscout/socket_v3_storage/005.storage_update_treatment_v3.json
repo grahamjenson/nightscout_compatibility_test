@@ -2,13 +2,13 @@
   "request": {
     "method": "PATCH",
     "path": "",
-    "url": "http://localhost:1337/api/v3/treatments/9ac74789-7aed-5dd3-8ebc-4be0bf527565",
+    "url": "http://localhost:1337/api/v3/treatments/cee13acb-588a-5b1e-9d8f-f83016310c68",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -30,13 +30,13 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:20:02 GMT"
+      "Fri, 30 Oct 2026 01:01:10 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:20:02 GMT"
+      "Fri, 30 Oct 2026 01:01:10 GMT"
     ],
     "Vary": [
       "Accept-Encoding"
@@ -45,5 +45,5 @@
   "body": {
     "status": 200
   },
-  "durationMs": 4
+  "durationMs": 21
 }

@@ -12,7 +12,7 @@
       {
         "collection": "treatments",
         "data": {
-          "created_at": "2026-10-22T10:20:02+13:00",
+          "created_at": "2026-10-30T01:01:05Z",
           "eventType": "Note",
           "notes": "should not be added"
         }
@@ -23,5 +23,5 @@
   "body": {
     "result": "Not permitted"
   },
-  "durationMs": 0
+  "durationMs": 1
 }

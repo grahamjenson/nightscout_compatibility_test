@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/properties/bgnow,delta,direction,iob,cob?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v2/properties/bgnow,delta,direction,iob,cob?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -19,16 +19,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "12"
+      "310"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:23 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Etag": [
-      "W/\"c-JIHHfcRoF8VnKYMlLrm1+MbOgLU\""
+      "W/\"136-pJXuVXjBC0tn+m2P8u5nJYBU4Os\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -41,7 +41,25 @@
     ]
   },
   "body": {
-    "bgnow": {}
+    "bgnow": {},
+    "cob": {
+      "cob": 20,
+      "device": "openaps://plugin-test",
+      "display": 20,
+      "displayLine": "COB: 20g",
+      "mills": 1793321989000,
+      "source": "OpenAPS",
+      "treatmentCOB": 30
+    },
+    "iob": {
+      "device": "loop://plugin-test",
+      "display": "1.20",
+      "displayLine": "IOB: 1.20U",
+      "iob": 1.2,
+      "mills": 1793321929000,
+      "source": "Loop",
+      "treatmentIob": 4.943
+    }
   },
-  "durationMs": 1
+  "durationMs": 2
 }

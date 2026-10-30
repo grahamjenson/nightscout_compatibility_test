@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments?token=write-749a8d3839b8b11c&find[_id]=6ad92c7a35fb876db084a2ef",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-a1552de38f339aba&find[_id]=6ae3ec49349e459fe3dd97de",
     "headers": {
       "Accept": [
         "application/json"
@@ -19,22 +19,22 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "366"
+      "419"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"16e-NqTob6V4h4RhhMDr0JzAN+N7bbc\""
+      "W/\"1a3-dneeOw1UIye5a/0+leMfZnKdna0\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Vary": [
       "Accept-Encoding"
@@ -45,10 +45,10 @@
   },
   "body": [
     {
-      "_id": "6ad92c7a35fb876db084a2ef",
+      "_id": "6ae3ec49349e459fe3dd97de",
       "absolute": 0,
       "carbs": 45,
-      "created_at": "2026-10-21T21:19:54.000Z",
+      "created_at": "2026-10-30T01:00:57.000Z",
       "duration": 0,
       "enteredBy": "aaps-loop",
       "eventType": "Meal Bolus",
@@ -58,11 +58,13 @@
       "notes": "Lunch pasta + insulin pre-bolus",
       "percentage": 10,
       "reason": "lunch",
+      "srvCreated": 1793322057430,
+      "srvModified": 1793322057430,
       "targetBottom": 85,
       "targetTop": 110,
       "treatments": "treatments_1",
-      "utcOffset": 780
+      "utcOffset": 0
     }
   ],
-  "durationMs": 13
+  "durationMs": 3
 }

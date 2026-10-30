@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile?token=write-749a8d3839b8b11c&find[defaultProfile]=profile_1",
+    "url": "http://localhost:1337/api/v1/profile?token=write-a1552de38f339aba&find[defaultProfile]=profile_1",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"145b-3HzGD/bC7W5SHwMYWVatYHnR9e8\""
+      "W/\"1569-fY/qml0AmkRCkvNEY4f8wdj6zsM\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -39,11 +39,13 @@
   },
   "body": [
     {
-      "_id": "6ad92c7ab5c4915f41a3dc7e",
-      "created_at": "2026-10-21T21:19:54.291Z",
+      "_id": "6ae3ec493259af060ec0455b",
+      "created_at": "2026-10-30T01:00:57.358Z",
       "defaultProfile": "profile_1",
-      "mills": 1792617594222,
-      "startDate": "2026-10-22T10:18:54+13:00",
+      "mills": 1793322057356,
+      "srvCreated": 1793322057358,
+      "srvModified": 1793322057358,
+      "startDate": "2026-10-30T00:59:57Z",
       "store": {
         "profile_1": {
           "basal": [
@@ -147,11 +149,13 @@
       }
     },
     {
-      "_id": "6ad92c7ab5c4915f41a3dc82",
+      "_id": "6ae3ec493259af060ec0455f",
       "app": "AAPS",
       "created_at": "2026-08-09T05:33:53.284Z",
       "date": 1786253633284,
       "defaultProfile": "ArmDash-2025",
+      "srvCreated": 1793322057371,
+      "srvModified": 1793322057371,
       "startDate": "2026-08-09T05:33:53.2840000Z",
       "store": {
         "ArmDash-2025": {
@@ -448,10 +452,12 @@
       "utcOffset": 720
     },
     {
-      "_id": "6ad92c7ab5c4915f41a3dc81",
+      "_id": "6ae3ec493259af060ec0455e",
       "created_at": "2017-07-02T00:25:33.154Z",
       "defaultProfile": "Default",
       "mills": "1498954920000",
+      "srvCreated": 1793322057366,
+      "srvModified": 1793322057366,
       "startDate": "2017-07-02T00:22:00.000Z",
       "store": {
         "Default": {
@@ -526,9 +532,11 @@
       "units": "mg/dl"
     },
     {
-      "_id": "6ad92c7ab5c4915f41a3dc80",
-      "created_at": "2026-10-21T21:19:54.296Z",
+      "_id": "6ae3ec493259af060ec0455d",
+      "created_at": "2026-10-30T01:00:57.362Z",
       "defaultProfile": "profile_3",
+      "srvCreated": 1793322057363,
+      "srvModified": 1793322057363,
       "store": {
         "profile_3": {
           "dia": 8
@@ -536,9 +544,11 @@
       }
     },
     {
-      "_id": "6ad92c7ab5c4915f41a3dc7f",
-      "created_at": "2026-10-21T21:19:54.296Z",
+      "_id": "6ae3ec493259af060ec0455c",
+      "created_at": "2026-10-30T01:00:57.362Z",
       "defaultProfile": "profile_2",
+      "srvCreated": 1793322057362,
+      "srvModified": 1793322057362,
       "store": {
         "profile_2": {
           "dia": 7

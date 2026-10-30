@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -17,7 +17,7 @@
     "body": {
       "app": "Pump",
       "carbs": 90,
-      "created_at": "2026-10-22T10:12:54+13:00",
+      "created_at": "2026-10-30T00:53:58Z",
       "duration": 120,
       "eventType": "Combo Bolus",
       "insulin": 9,
@@ -25,30 +25,37 @@
       "splitNow": 4.5
     }
   },
-  "statusCode": 400,
+  "statusCode": 201,
   "headers": {
     "Connection": [
       "keep-alive"
     ],
     "Content-Length": [
-      "70"
+      "95"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
+    ],
+    "Last-Modified": [
+      "Fri, 30 Oct 2026 01:00:58 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/e920d283-f4f8-521e-b9b4-0f926e4d3422"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "message": "Field date cannot be modified by the client",
-    "status": 400
+    "identifier": "e920d283-f4f8-521e-b9b4-0f926e4d3422",
+    "lastModified": 1793322058101,
+    "status": 201
   },
-  "durationMs": 1
+  "durationMs": 3
 }

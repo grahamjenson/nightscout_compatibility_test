@@ -1,0 +1,98 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/alexa?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "request": {
+        "intent": {
+          "name": "MetricNow",
+          "slots": {
+            "metric": {
+              "name": "metric",
+              "resolutions": {
+                "resolutionsPerAuthority": [
+                  {
+                    "status": {
+                      "code": "ER_SUCCESS_MATCH"
+                    },
+                    "values": [
+                      {
+                        "value": {
+                          "name": "db size"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "locale": "en-US",
+        "type": "IntentRequest"
+      },
+      "session": {
+        "new": true
+      },
+      "version": "1.0"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "324"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"144-NcSZfr9f2pEyRApzXKeEpF+ORTg\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "response": {
+      "card": {
+        "content": "0.25 MiB. That is 0% of available database space.",
+        "title": "Database file size",
+        "type": "Simple"
+      },
+      "outputSpeech": {
+        "text": "0.25 MiB. That is 0% of available database space.",
+        "type": "PlainText"
+      },
+      "reprompt": {
+        "outputSpeech": {
+          "text": "",
+          "type": "PlainText"
+        }
+      },
+      "shouldEndSession": true
+    },
+    "version": "1.0"
+  },
+  "durationMs": 2
+}

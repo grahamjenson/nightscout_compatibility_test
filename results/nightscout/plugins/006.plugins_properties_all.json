@@ -1,0 +1,706 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"2797-+4DvyVUhFBm91eCeraE/eLGBA+Q\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "ar2": {
+      "displayLine": "BG 15m: 8.8 mmol/L",
+      "forecast": {
+        "avgLoss": 0.017218142411112813,
+        "predicted": [
+          {
+            "color": "cyan",
+            "mgdl": 148,
+            "mills": 1793322351835,
+            "scaled": "8.2"
+          },
+          {
+            "color": "cyan",
+            "mgdl": 153,
+            "mills": 1793322651835,
+            "scaled": "8.5"
+          },
+          {
+            "color": "cyan",
+            "mgdl": 158,
+            "mills": 1793322951835,
+            "scaled": "8.8"
+          },
+          {
+            "color": "cyan",
+            "mgdl": 161,
+            "mills": 1793323251835,
+            "scaled": "8.9"
+          },
+          {
+            "color": "cyan",
+            "mgdl": 163,
+            "mills": 1793323551835,
+            "scaled": "9.0"
+          },
+          {
+            "color": "cyan",
+            "mgdl": 164,
+            "mills": 1793323851835,
+            "scaled": "9.1"
+          }
+        ]
+      }
+    },
+    "bage": {
+      "age": 84,
+      "checkForAlert": false,
+      "days": 3,
+      "display": "3d12h",
+      "found": true,
+      "hours": 12,
+      "level": -3,
+      "minFractions": 0,
+      "treatmentDate": 1793019649000
+    },
+    "basal": {
+      "current": {
+        "basal": 1,
+        "combobolusbasal": 0,
+        "combobolustreatment": null,
+        "tempbasal": 0.5,
+        "totalbasal": 0.5,
+        "treatment": {
+          "_id": "6ae3ec41349e459fe3dd9749",
+          "absolute": 0.5,
+          "created_at": "2026-10-30T00:55:49.000Z",
+          "duration": 30,
+          "endmills": 1793323549000,
+          "enteredBy": "plugin-test",
+          "eventType": "Temp Basal",
+          "mgdl": 125,
+          "mills": 1793321749000,
+          "rate": 0.5,
+          "srvCreated": 1793322049861,
+          "srvModified": 1793322049861,
+          "utcOffset": 0
+        }
+      },
+      "display": "T: 0.500U"
+    },
+    "bgnow": {
+      "last": 140,
+      "mean": 140,
+      "mills": 1793322049835,
+      "sgvs": [
+        {
+          "_id": "6ae3ec41349e459fe3dd9744",
+          "device": "plugin-test",
+          "direction": "FortyFiveUp",
+          "filtered": 170000,
+          "mgdl": 140,
+          "mills": 1793322049835,
+          "noise": 1,
+          "scaled": "7.8",
+          "type": "sgv",
+          "unfiltered": 170000
+        }
+      ]
+    },
+    "buckets": [
+      {
+        "fromMills": 1793321899835,
+        "index": 0,
+        "last": 140,
+        "mean": 140,
+        "mills": 1793322049835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9744",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 170000,
+            "mgdl": 140,
+            "mills": 1793322049835,
+            "noise": 1,
+            "scaled": "7.8",
+            "type": "sgv",
+            "unfiltered": 170000
+          }
+        ],
+        "toMills": 1793322199835
+      },
+      {
+        "fromMills": 1793321599835,
+        "index": 1,
+        "last": 130,
+        "mean": 130,
+        "mills": 1793321749835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9743",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 160000,
+            "mgdl": 130,
+            "mills": 1793321749835,
+            "noise": 1,
+            "scaled": "7.2",
+            "type": "sgv",
+            "unfiltered": 160000
+          }
+        ],
+        "toMills": 1793321899835
+      },
+      {
+        "fromMills": 1793321299835,
+        "index": 2,
+        "last": 120,
+        "mean": 120,
+        "mills": 1793321449835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9742",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 150000,
+            "mgdl": 120,
+            "mills": 1793321449835,
+            "noise": 1,
+            "scaled": "6.7",
+            "type": "sgv",
+            "unfiltered": 150000
+          }
+        ],
+        "toMills": 1793321599835
+      },
+      {
+        "fromMills": 1793320999835,
+        "index": 3,
+        "last": 110,
+        "mean": 110,
+        "mills": 1793321149835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9741",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 140000,
+            "mgdl": 110,
+            "mills": 1793321149835,
+            "noise": 1,
+            "scaled": "6.1",
+            "type": "sgv",
+            "unfiltered": 140000
+          }
+        ],
+        "toMills": 1793321299835
+      }
+    ],
+    "bwp": {
+      "aimTarget": 100,
+      "aimTargetString": "below low",
+      "belowLowTarget": true,
+      "bolusEstimate": -3.0439999999999996,
+      "bolusEstimateDisplay": "-3.05",
+      "displayIOB": "1.20",
+      "displayLine": "BWP: -3.05U",
+      "effect": 60,
+      "effectDisplay": 60,
+      "iob": 1.2,
+      "outcome": -52.2,
+      "outcomeDisplay": -52.2,
+      "recentCarbs": {
+        "_id": "6ae3ec41349e459fe3dd9748",
+        "carbs": 30,
+        "created_at": "2026-10-30T00:50:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Meal Bolus",
+        "insulin": 3,
+        "mgdl": 115,
+        "mills": 1793321449000,
+        "srvCreated": 1793322049860,
+        "srvModified": 1793322049860,
+        "utcOffset": 0
+      },
+      "scaledSGV": 7.8,
+      "tempBasalAdjustment": {
+        "onehour": -204,
+        "thirtymin": -509
+      }
+    },
+    "cage": {
+      "age": 24,
+      "checkForAlert": false,
+      "days": 1,
+      "display": "24h",
+      "found": true,
+      "hours": 0,
+      "level": -3,
+      "minFractions": 0,
+      "treatmentDate": 1793235649000
+    },
+    "cob": {
+      "cob": 20,
+      "device": "openaps://plugin-test",
+      "display": 20,
+      "displayLine": "COB: 20g",
+      "mills": 1793321989000,
+      "source": "OpenAPS",
+      "treatmentCOB": 30
+    },
+    "dbsize": {
+      "dataPercentage": 0,
+      "details": {
+        "dataSize": 0.25,
+        "maxSize": 496
+      },
+      "display": "0%",
+      "notificationLevel": 0,
+      "status": "current",
+      "totalDataSize": 0.24763202667236328
+    },
+    "delta": {
+      "absolute": 10,
+      "display": "+0.6",
+      "elapsedMins": 5,
+      "interpolated": false,
+      "mean5MinsAgo": 130,
+      "mgdl": 10,
+      "previous": {
+        "last": 130,
+        "mean": 130,
+        "mills": 1793321749835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9743",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 160000,
+            "mgdl": 130,
+            "mills": 1793321749835,
+            "noise": 1,
+            "scaled": "7.2",
+            "type": "sgv",
+            "unfiltered": 160000
+          }
+        ]
+      },
+      "scaled": 0.6,
+      "times": {
+        "previous": 1793321749835,
+        "recent": 1793322049835
+      }
+    },
+    "direction": {
+      "display": null,
+      "entity": "&#8599;",
+      "label": "↗",
+      "value": "FortyFiveUp"
+    },
+    "iage": {
+      "age": 72,
+      "days": 3,
+      "display": "3d0h",
+      "found": true,
+      "hours": 0,
+      "level": 2,
+      "minFractions": 0,
+      "treatmentDate": 1793062849000
+    },
+    "iob": {
+      "device": "loop://plugin-test",
+      "display": "1.20",
+      "displayLine": "IOB: 1.20U",
+      "iob": 1.2,
+      "mills": 1793321929000,
+      "source": "Loop",
+      "treatmentIob": 4.944
+    },
+    "loop": {
+      "display": {
+        "code": "enacted",
+        "label": "Enacted",
+        "symbol": "⌁"
+      },
+      "lastEnacted": {
+        "duration": 30,
+        "moment": "2026-10-30T00:58:49.000Z",
+        "rate": 0.5,
+        "received": true,
+        "timestamp": "2026-10-30T00:58:49Z"
+      },
+      "lastLoop": {
+        "cob": {
+          "cob": 15,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "enacted": {
+          "duration": 30,
+          "moment": "2026-10-30T00:58:49.000Z",
+          "rate": 0.5,
+          "received": true,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "iob": {
+          "iob": 1.2,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "moment": "2026-10-30T00:58:49.000Z",
+        "name": "Loop",
+        "predicted": {
+          "startDate": "2026-10-30T00:58:49Z",
+          "values": [
+            140,
+            138,
+            135,
+            130
+          ]
+        },
+        "recommendedBolus": 0.2,
+        "timestamp": "2026-10-30T00:58:49Z",
+        "version": "3.4"
+      },
+      "lastOkMoment": "2026-10-30T00:58:49.000Z",
+      "lastOverride": null,
+      "lastPredicted": {
+        "startDate": "2026-10-30T00:58:49Z",
+        "values": [
+          140,
+          138,
+          135,
+          130
+        ]
+      }
+    },
+    "openaps": {
+      "lastEnacted": {
+        "bg": 140,
+        "duration": 30,
+        "moment": "2026-10-30T00:59:49.000Z",
+        "rate": 0.5,
+        "reason": "plugin test",
+        "received": true,
+        "temp": "absolute",
+        "timestamp": "2026-10-30T00:59:49Z"
+      },
+      "lastEventualBG": 120,
+      "lastIOB": {
+        "basaliob": 0.5,
+        "iob": 1.5,
+        "moment": "2026-10-30T00:59:49.000Z",
+        "timestamp": "2026-10-30T00:59:49Z"
+      },
+      "lastLoopMoment": "2026-10-30T00:59:49.000Z",
+      "lastMMTune": null,
+      "lastNotEnacted": null,
+      "lastPredBGs": null,
+      "lastSuggested": {
+        "COB": 20,
+        "IOB": 1.5,
+        "bg": 140,
+        "duration": 30,
+        "eventualBG": 120,
+        "moment": "2026-10-30T00:59:49.000Z",
+        "rate": 0.5,
+        "reason": "plugin test",
+        "temp": "absolute",
+        "timestamp": "2026-10-30T00:59:49Z"
+      },
+      "seenDevices": {
+        "openaps://plugin-test": {
+          "name": "plugin-test",
+          "status": {
+            "code": "enacted",
+            "label": "Enacted",
+            "symbol": "⌁",
+            "when": "2026-10-30T00:59:49.000Z"
+          },
+          "uri": "openaps://plugin-test"
+        }
+      },
+      "status": {
+        "code": "enacted",
+        "label": "Enacted",
+        "symbol": "⌁"
+      }
+    },
+    "pump": {
+      "_id": "6ae3ec413259af060ec04549",
+      "clockMills": 1793321989000,
+      "created_at": "2026-10-30T00:59:49.000Z",
+      "data": {
+        "battery": {
+          "display": "75%",
+          "label": "Battery",
+          "level": -3,
+          "unit": "percent",
+          "value": 75
+        },
+        "clock": {
+          "display": "1m ago",
+          "label": "Last Clock",
+          "level": -3,
+          "value": "2026-10-30T00:59:49.000Z"
+        },
+        "device": {
+          "display": "openaps://plugin-test",
+          "label": "Device"
+        },
+        "extended": null,
+        "level": -3,
+        "reservoir": {
+          "display": "151U",
+          "label": "Reservoir",
+          "level": -3,
+          "value": 150.5
+        },
+        "reservoir_display_override": null,
+        "reservoir_level_override": null,
+        "status": {
+          "display": "normal",
+          "label": "Status",
+          "value": "normal"
+        },
+        "title": "Pump Status"
+      },
+      "device": "openaps://plugin-test",
+      "mills": 1793321989000,
+      "openaps": {
+        "enacted": {
+          "bg": 140,
+          "duration": 30,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "rate": 0.5,
+          "reason": "plugin test",
+          "received": true,
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "iob": {
+          "basaliob": 0.5,
+          "iob": 1.5,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "suggested": {
+          "COB": 20,
+          "IOB": 1.5,
+          "bg": 140,
+          "duration": 30,
+          "eventualBG": 120,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "rate": 0.5,
+          "reason": "plugin test",
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 75,
+          "voltage": 1.4
+        },
+        "clock": "2026-10-30T00:59:49Z",
+        "reservoir": 150.5,
+        "status": {
+          "bolusing": false,
+          "status": "normal",
+          "suspended": false
+        }
+      },
+      "srvCreated": 1793322049870,
+      "srvModified": 1793322049870,
+      "uploader": {
+        "battery": 55,
+        "display": "55%",
+        "level": 75,
+        "value": 55
+      },
+      "utcOffset": 0
+    },
+    "rawbg": {
+      "cal": {
+        "_id": "6ae3ec41349e459fe3dd973f",
+        "intercept": 30000,
+        "mills": 1793318449835,
+        "scale": 1,
+        "slope": 1000,
+        "type": "cal"
+      },
+      "displayLine": "Raw BG: 7.8 mmol/L Clean",
+      "mgdl": 140,
+      "noiseLabel": "Clean",
+      "sgv": {
+        "_id": "6ae3ec41349e459fe3dd9744",
+        "device": "plugin-test",
+        "direction": "FortyFiveUp",
+        "filtered": 170000,
+        "mgdl": 140,
+        "mills": 1793322049835,
+        "noise": 1,
+        "scaled": "7.8",
+        "type": "sgv",
+        "unfiltered": 170000
+      }
+    },
+    "runtimestate": {
+      "state": "loaded"
+    },
+    "sage": {
+      "Sensor Change": {
+        "found": false
+      },
+      "Sensor Start": {
+        "age": 48,
+        "days": 2,
+        "display": "2d0h",
+        "displayLong": "2 days 0 hours",
+        "found": true,
+        "hours": 0,
+        "level": -3,
+        "minFractions": 0,
+        "treatmentDate": 1793149249000
+      },
+      "min": "Sensor Start"
+    },
+    "sensorState": {
+      "lastBatteryTimestamp": 1793318449867,
+      "lastCalType": "LeastSquaresRegression",
+      "lastCalibrationDate": 1793278849867,
+      "lastDevice": null,
+      "lastFiltered": 170000,
+      "lastIntercept": 30000,
+      "lastMode": "expired",
+      "lastNoise": 1,
+      "lastNoiseString": "Clean",
+      "lastResistance": 1000,
+      "lastRssi": -80,
+      "lastSessionStart": 1793149249867,
+      "lastSlope": 1000,
+      "lastState": 6,
+      "lastStateString": "OK",
+      "lastStateStringShort": "OK",
+      "lastStateTime": "2026-10-30T00:57:49.867Z",
+      "lastTemperature": 32,
+      "lastTxActivation": 1792890049867,
+      "lastTxId": "8XXXXX",
+      "lastTxStatus": 0,
+      "lastTxStatusString": "OK",
+      "lastTxStatusStringShort": "OK",
+      "lastUnfiltered": 170000,
+      "lastVoltageA": 310,
+      "lastVoltageB": 300,
+      "latest": {
+        "_id": "6ae3ec413259af060ec0454b",
+        "created_at": "2026-10-30T00:57:49.000Z",
+        "device": "xdripjs://plugin-test",
+        "mills": 1793321869000,
+        "srvCreated": 1793322049872,
+        "srvModified": 1793322049872,
+        "utcOffset": 0,
+        "xdripjs": {
+          "batteryTimestamp": 1793318449867,
+          "calType": "LeastSquaresRegression",
+          "filtered": 170000,
+          "intercept": 30000,
+          "lastCalibrationDate": 1793278849867,
+          "mode": "expired",
+          "noise": 1,
+          "noiseString": "Clean",
+          "resistance": 1000,
+          "rssi": -80,
+          "sessionStart": 1793149249867,
+          "slope": 1000,
+          "state": 6,
+          "stateString": "OK",
+          "stateStringShort": "OK",
+          "temperature": 32,
+          "timestamp": 1793321869867,
+          "txActivation": 1792890049867,
+          "txId": "8XXXXX",
+          "txStatus": 0,
+          "txStatusString": "OK",
+          "txStatusStringShort": "OK",
+          "unfiltered": 170000,
+          "voltagea": 310,
+          "voltageb": 300
+        }
+      },
+      "level": -3,
+      "seenDevices": {
+        "xdripjs://plugin-test": {
+          "name": "plugin-test",
+          "uri": "xdripjs://plugin-test"
+        }
+      }
+    },
+    "upbat": {
+      "devices": {
+        "openaps://plugin-test": {
+          "min": {
+            "battery": 55,
+            "display": "55%",
+            "level": 75,
+            "value": 55
+          },
+          "name": "plugin-test",
+          "statuses": [
+            {
+              "_id": "6ae3ec413259af060ec04549",
+              "created_at": "2026-10-30T00:59:49.000Z",
+              "mills": 1793321989000,
+              "uploader": {
+                "battery": 55,
+                "display": "55%",
+                "level": 75,
+                "value": 55
+              }
+            }
+          ],
+          "uri": "openaps://plugin-test"
+        }
+      },
+      "display": "55%",
+      "level": 75,
+      "min": {
+        "battery": 55,
+        "display": "55%",
+        "level": 75,
+        "value": 55
+      },
+      "status": "current"
+    }
+  },
+  "durationMs": 8
+}

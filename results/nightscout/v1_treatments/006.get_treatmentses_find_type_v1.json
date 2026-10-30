@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments?token=write-749a8d3839b8b11c&find[eventType]=Meal%20Bolus",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-a1552de38f339aba&find[eventType]=Meal%20Bolus",
     "headers": {
       "Accept": [
         "application/json"
@@ -18,23 +18,20 @@
     "Connection": [
       "keep-alive"
     ],
-    "Content-Length": [
-      "828"
-    ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"33c-Ph04NucZATiq+HPbTayp0ujdgS0\""
+      "W/\"410-NTjoHymq0OjYswMAJ7q4eBEBCzU\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Vary": [
       "Accept-Encoding"
@@ -45,10 +42,10 @@
   },
   "body": [
     {
-      "_id": "6ad92c7a35fb876db084a2ef",
+      "_id": "6ae3ec49349e459fe3dd97de",
       "absolute": 0,
       "carbs": 45,
-      "created_at": "2026-10-21T21:19:54.000Z",
+      "created_at": "2026-10-30T01:00:57.000Z",
       "duration": 0,
       "enteredBy": "aaps-loop",
       "eventType": "Meal Bolus",
@@ -58,37 +55,45 @@
       "notes": "Lunch pasta + insulin pre-bolus",
       "percentage": 10,
       "reason": "lunch",
+      "srvCreated": 1793322057430,
+      "srvModified": 1793322057430,
       "targetBottom": 85,
       "targetTop": 110,
       "treatments": "treatments_1",
-      "utcOffset": 780
+      "utcOffset": 0
     },
     {
-      "_id": "6ad92c7a35fb876db084a309",
+      "_id": "6ae3ec49349e459fe3dd97fa",
       "carbs": 62,
-      "created_at": "2026-10-21T21:16:54.000Z",
+      "created_at": "2026-10-30T00:57:57.000Z",
       "eventType": "Meal Bolus",
       "insulin": 6.2,
-      "utcOffset": 780
+      "srvCreated": 1793322057472,
+      "srvModified": 1793322057472,
+      "utcOffset": 0
     },
     {
-      "_id": "6ad92c7a35fb876db084a2fa",
+      "_id": "6ae3ec49349e459fe3dd97ea",
       "carbs": 72,
-      "created_at": "2026-10-21T21:00:54.000Z",
+      "created_at": "2026-10-30T00:41:57.000Z",
       "eventType": "Meal Bolus",
       "insulin": 7,
-      "utcOffset": 780
+      "srvCreated": 1793322057453,
+      "srvModified": 1793322057453,
+      "utcOffset": 0
     },
     {
-      "_id": "6ad92c7a35fb876db084a326",
+      "_id": "6ae3ec49349e459fe3dd9817",
       "carbs": 95,
-      "created_at": "2026-10-21T20:46:54.000Z",
+      "created_at": "2026-10-30T00:27:57.000Z",
       "enteredBy": "AndroidAPS",
       "eventType": "Meal Bolus",
       "insulin": 9.5,
       "notes": "Pizza",
-      "utcOffset": 780
+      "srvCreated": 1793322057502,
+      "srvModified": 1793322057502,
+      "utcOffset": 0
     }
   ],
-  "durationMs": 2
+  "durationMs": 3
 }

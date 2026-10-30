@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=write-2fa396b791909491",
+    "url": "http://localhost:1337/api/v1/entries?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -13,7 +13,7 @@
     },
     "body": [
       {
-        "date": 1792695811568,
+        "date": 1793322072031,
         "device": "alarm-test",
         "sgv": 45,
         "type": "sgv"
@@ -26,16 +26,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "152"
+      "207"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Thu, 22 Oct 2026 19:03:31 GMT"
+      "Fri, 30 Oct 2026 01:01:12 GMT"
     ],
     "Etag": [
-      "W/\"98-OS/3w/SSFM1SBkfvq5bnhzwnEcY\""
+      "W/\"cf-TortNB/Ivkfn7WnK3QzZ3E2rNRQ\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -49,14 +49,16 @@
   },
   "body": [
     {
-      "_id": "6ada5e0397dd4aa50969eb41",
-      "date": 1792695811568,
+      "_id": "6ae3ec58349e459fe3dd9aa3",
+      "date": 1793322072031,
       "device": "alarm-test",
       "sgv": 45,
-      "sysTime": "2026-10-22T19:03:31.568Z",
+      "srvCreated": 1793322072036,
+      "srvModified": 1793322072036,
+      "sysTime": "2026-10-30T01:01:12.031Z",
       "type": "sgv",
       "utcOffset": 0
     }
   ],
-  "durationMs": 12
+  "durationMs": 7
 }

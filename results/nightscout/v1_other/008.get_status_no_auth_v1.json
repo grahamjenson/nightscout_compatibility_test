@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"7fe-Byd45lR2qmI/WQujjzxSRB4uJWA\""
+      "W/\"886-SsLTYSRzbqwHTwG/+M4lqDLDWGE\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -40,7 +40,7 @@
   "body": {
     "apiEnabled": true,
     "authorized": null,
-    "boluscalcEnabled": false,
+    "boluscalcEnabled": true,
     "careportalEnabled": true,
     "extendedSettings": {
       "devicestatus": {
@@ -50,8 +50,8 @@
     },
     "name": "nightscout",
     "runtimeState": "loaded",
-    "serverTime": "2026-10-21T21:26:22.110Z",
-    "serverTimeEpoch": 1792617982110,
+    "serverTime": "2026-10-30T01:00:57.604Z",
+    "serverTimeEpoch": 1793322057604,
     "settings": {
       "DEFAULT_FEATURES": [
         "bgnow",
@@ -134,6 +134,24 @@
         "upbat",
         "openaps",
         "profile",
+        "iob",
+        "cob",
+        "bwp",
+        "basal",
+        "ar2",
+        "rawbg",
+        "pump",
+        "loop",
+        "sage",
+        "cage",
+        "iage",
+        "bage",
+        "xdripjs",
+        "override",
+        "boluscalc",
+        "speech",
+        "alexa",
+        "googlehome",
         "treatmentnotify",
         "timeago",
         "devicestatus",
@@ -141,7 +159,6 @@
         "bolus",
         "dbsize",
         "runtimestate",
-        "basal",
         "ar2"
       ],
       "focusHours": 3,
@@ -186,7 +203,7 @@
       "units": "mmol"
     },
     "status": "ok",
-    "version": "15.0.8"
+    "version": "15.0.9"
   },
   "durationMs": 1
 }

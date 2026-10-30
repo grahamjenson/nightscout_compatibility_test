@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/food?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/food?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -30,16 +30,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "219"
+      "274"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"db-qihUrZN9iWIcLb7JOErAqhHlak4\""
+      "W/\"112-g6Hu22kSDOnwXTLwYuhnrL/EzPA\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -53,19 +53,21 @@
   },
   "body": [
     {
-      "_id": "6ad92c7a35fb876db084a2dc",
+      "_id": "6ae3ec493259af060ec04556",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-10-21T21:19:54.273Z",
+      "created_at": "2026-10-30T01:00:57.299Z",
       "energy": 105,
       "fat": 0.3,
       "gi": 51,
       "name": "Banana",
       "portion": 1,
       "protein": 1.3,
+      "srvCreated": 1793322057303,
+      "srvModified": 1793322057303,
       "subcategory": "Fruit",
       "unit": "serving"
     }
   ],
-  "durationMs": 3
+  "durationMs": 8
 }

@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments.json?token=write-4d6054505d826635&count=1",
+    "url": "http://localhost:1337/api/v1/treatments.json?token=write-a1552de38f339aba&count=1",
     "headers": {
       "Accept": [
         "application/json"
@@ -11,7 +11,7 @@
         "application/json"
       ],
       "If-Modified-Since": [
-        "Wed, 21 Oct 2026 22:26:22 GMT"
+        "Fri, 30 Oct 2026 02:00:57 GMT"
       ]
     },
     "body": null
@@ -22,7 +22,7 @@
       "keep-alive"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
       "W/\"39-+ccdCZ3QQbj4krSu1+mUQq9r3as\""
@@ -31,7 +31,7 @@
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "X-Powered-By": [
       "Express"

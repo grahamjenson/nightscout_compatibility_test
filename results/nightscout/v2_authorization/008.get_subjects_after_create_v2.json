@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/authorization/subjects?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v2/authorization/subjects?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -19,16 +19,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "353"
+      "398"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:23 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Etag": [
-      "W/\"161-YbGEiURdig1DZ6WGVcZXZ7m6u30\""
+      "W/\"18e-lzf1odcqkXCxgci1Os+nJiwqxec\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -42,24 +42,25 @@
   },
   "body": [
     {
-      "_id": "6ad92dff4fc2f9571e953d20",
-      "accessToken": "compattest-4159bf0712f4180c",
+      "_id": "6ae3ec4a3259af060ec04595",
+      "accessToken": "compattest-02c3a7790f98b5a6",
       "name": "compat-test-subject",
+      "notes": "created by the compatibility tests",
       "roles": [
         "compat-test-role"
       ]
     },
     {
-      "_id": "6ad92dfd4fc2f9571e953cd6",
-      "accessToken": "read-8e15b990cb8c5537",
+      "_id": "6ae3ec413259af060ec04547",
+      "accessToken": "read-79d324a94dd6b41e",
       "name": "read",
       "roles": [
         "readable"
       ]
     },
     {
-      "_id": "6ad92dfd4fc2f9571e953cd5",
-      "accessToken": "write-4d6054505d826635",
+      "_id": "6ae3ec413259af060ec04546",
+      "accessToken": "write-a1552de38f339aba",
       "name": "write",
       "roles": [
         "admin"

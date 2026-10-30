@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "test-app",
-      "created_at": "2026-10-22T10:20:00+13:00",
+      "created_at": "2026-10-30T01:01:03Z",
       "duration": 3600,
       "notes": "test profile missing device",
       "type": "walking"
@@ -34,25 +34,25 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:20:00 GMT"
+      "Fri, 30 Oct 2026 01:01:03 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:20:00 GMT"
+      "Fri, 30 Oct 2026 01:01:03 GMT"
     ],
     "Location": [
-      "/api/v3/profile/34e50922-e7e1-5058-bcf8-2910da03cf66"
+      "/api/v3/profile/4d6ed7e7-9f00-5a60-9595-704e7a232aa9"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "34e50922-e7e1-5058-bcf8-2910da03cf66",
-    "lastModified": 1792617600348,
+    "identifier": "4d6ed7e7-9f00-5a60-9595-704e7a232aa9",
+    "lastModified": 1793322063696,
     "status": 201
   },
-  "durationMs": 3
+  "durationMs": 2
 }

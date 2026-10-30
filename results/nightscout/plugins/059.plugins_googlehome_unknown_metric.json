@@ -1,0 +1,70 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/googlehome?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "queryResult": {
+        "intent": {
+          "displayName": "MetricNow"
+        },
+        "languageCode": "en",
+        "parameters": {
+          "metric": "not a metric"
+        }
+      }
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "163"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:57 GMT"
+    ],
+    "Etag": [
+      "W/\"a3-VPq/NU1xcMUohuDGSeh2BY3jx5w\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "payload": {
+      "google": {
+        "expectUserResponse": true,
+        "richResponse": {
+          "items": [
+            {
+              "simpleResponse": {
+                "textToSpeech": "I'm sorry, I don't know what you're asking for."
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "durationMs": 1
+}

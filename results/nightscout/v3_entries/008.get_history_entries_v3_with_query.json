@@ -2,13 +2,13 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v3/entries/history/1792615794523?sgv$lt=95&limit=1",
+    "url": "http://localhost:1337/api/v3/entries/history/1793320257748?sgv$lt=95&limit=1",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -22,22 +22,22 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "439"
+      "217"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"1792617594574\""
+      "W/\"1793322057196\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Vary": [
       "Accept, Accept-Encoding"
@@ -46,24 +46,13 @@
   "body": {
     "result": [
       {
-        "app": "test-app",
-        "created_at": "2026-10-21T21:19:54.503Z",
-        "date": 1792617594503,
-        "dateString": "2026-10-22T10:19:54+13:00",
-        "device": "test-device",
-        "direction": "Flat",
-        "filtered": 139.2,
-        "identifier": "b1d97b63-7739-5430-8748-3313c1d7f331",
-        "mills": 1792617594503,
-        "noise": 1,
-        "rssi": -62,
+        "date": 1793322057194,
+        "identifier": "6ae3ec49349e459fe3dd9791",
         "sgv": 100,
-        "srvCreated": 1792617594574,
-        "srvModified": 1792617594574,
-        "subject": "write",
-        "trend": 3,
+        "srvCreated": 1793322057196,
+        "srvModified": 1793322057196,
+        "sysTime": "2026-10-30T01:00:57.194Z",
         "type": "sgv",
-        "unfiltered": 141.7,
         "utcOffset": 0
       }
     ],

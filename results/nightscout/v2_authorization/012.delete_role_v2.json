@@ -2,7 +2,7 @@
   "request": {
     "method": "DELETE",
     "path": "",
-    "url": "http://localhost:1337/api/v2/authorization/roles/6ad92dff4fc2f9571e953d1f?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v2/authorization/roles/6ae3ec4a3259af060ec04594?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:23 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Etag": [
       "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
@@ -41,5 +41,5 @@
     ]
   },
   "body": {},
-  "durationMs": 16
+  "durationMs": 3
 }

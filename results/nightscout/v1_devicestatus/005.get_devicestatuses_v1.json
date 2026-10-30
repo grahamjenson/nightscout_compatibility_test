@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/devicestatus?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/devicestatus?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"413-pZw8YW7TeIGcySA5g3isSJghhWw\""
+      "W/\"4b2-U1UaVX4tYksNSqc9tk3OTwLnjng\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -39,8 +39,8 @@
   },
   "body": [
     {
-      "_id": "6ad92c7ab5c4915f41a3dc7a",
-      "created_at": "2026-10-21T21:19:54.000Z",
+      "_id": "6ae3ec493259af060ec0454f",
+      "created_at": "2026-10-30T01:00:57.000Z",
       "device": "aaps",
       "loop": {
         "cob": {
@@ -93,32 +93,38 @@
           "suspended": false
         }
       },
+      "srvCreated": 1793322057141,
+      "srvModified": 1793322057141,
       "uploader": {
         "battery": 87,
         "batteryVoltage": 4.05
       },
-      "utcOffset": 780
+      "utcOffset": 0
     },
     {
-      "_id": "6ad92c7ab5c4915f41a3dc7b",
-      "created_at": "2026-10-21T21:18:54.000Z",
+      "_id": "6ae3ec493259af060ec04550",
+      "created_at": "2026-10-30T00:59:57.000Z",
       "device": "aaps1",
+      "srvCreated": 1793322057146,
+      "srvModified": 1793322057146,
       "uploader": {
         "battery": 87,
         "batteryVoltage": 4.05
       },
-      "utcOffset": 780
+      "utcOffset": 0
     },
     {
-      "_id": "6ad92c7ab5c4915f41a3dc7c",
-      "created_at": "2026-10-21T21:17:54.000Z",
+      "_id": "6ae3ec493259af060ec04551",
+      "created_at": "2026-10-30T00:58:57.000Z",
       "device": "aaps",
+      "srvCreated": 1793322057147,
+      "srvModified": 1793322057147,
       "uploader": {
         "battery": 87,
         "batteryVoltage": 4.05
       },
-      "utcOffset": 780
+      "utcOffset": 0
     }
   ],
-  "durationMs": 46
+  "durationMs": 4
 }

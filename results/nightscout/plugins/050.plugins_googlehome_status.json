@@ -1,0 +1,68 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/googlehome?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "queryResult": {
+        "intent": {
+          "displayName": "NSStatus"
+        },
+        "languageCode": "en",
+        "parameters": {}
+      }
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "271"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:57 GMT"
+    ],
+    "Etag": [
+      "W/\"10f-/PZ2hKzBpXbAMJalTNpCSHQVZfQ\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "payload": {
+      "google": {
+        "expectUserResponse": false,
+        "richResponse": {
+          "items": [
+            {
+              "simpleResponse": {
+                "textToSpeech": "7.8 and slightly rising as of a few seconds ago. Your temp basal of 0.5 units per hour will end in 25 minutes and you have 1.20 units of insulin on board."
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "durationMs": 5
+}

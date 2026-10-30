@@ -33,10 +33,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:49 GMT"
     ],
     "Etag": [
-      "W/\"6d-gqgaz+Pe28ztUqEoeajCWDJU9jc\""
+      "W/\"6d-42DLPxiUke6A/GVUa1jLKwUeEKw\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -49,12 +49,12 @@
     ]
   },
   "body": {
-    "_id": "6ad92c7ab5c4915f41a3dc79",
-    "created_at": "2026-10-21T21:19:54.048Z",
+    "_id": "6ae3ec413259af060ec04547",
+    "created_at": "2026-10-30T01:00:49.801Z",
     "name": "read",
     "roles": [
       "readable"
     ]
   },
-  "durationMs": 6
+  "durationMs": 3
 }

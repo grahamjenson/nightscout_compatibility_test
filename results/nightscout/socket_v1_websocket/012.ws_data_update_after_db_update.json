@@ -11,19 +11,21 @@
   "statusCode": 200,
   "body": {
     "delta": true,
-    "lastUpdated": 1792617602548,
+    "lastUpdated": 1793322065809,
     "treatments": [
       {
-        "_id": "6ad92c81b5c4915f41a3dcb0",
+        "_id": "6ae3ec503259af060ec045a6",
         "action": "update",
-        "created_at": "2026-10-22T10:20:01+13:00",
+        "created_at": "2026-10-30T01:01:04Z",
         "enteredBy": "socket-test",
         "eventType": "Note",
         "mgdl": 123,
-        "mills": 1792617601000,
-        "notes": "updated over socket.io"
+        "mills": 1793322064000,
+        "notes": "updated over socket.io",
+        "srvCreated": 1793322064791,
+        "srvModified": 1793322064808
       }
     ]
   },
-  "durationMs": 1044
+  "durationMs": 1030
 }

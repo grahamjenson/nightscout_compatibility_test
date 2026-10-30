@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/profile?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -321,10 +321,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"c27-yqLpT52mQzty7yB87k5AzxXO0Tg\""
+      "W/\"c5e-7FHuz/1/evmdeMJdYY0jt+Idnng\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -338,11 +338,13 @@
   },
   "body": [
     {
-      "_id": "6ad92c7ab5c4915f41a3dc82",
+      "_id": "6ae3ec493259af060ec0455f",
       "app": "AAPS",
       "created_at": "2026-08-09T05:33:53.284Z",
       "date": 1786253633284,
       "defaultProfile": "ArmDash-2025",
+      "srvCreated": 1793322057371,
+      "srvModified": 1793322057371,
       "startDate": "2026-08-09T05:33:53.2840000Z",
       "store": {
         "ArmDash-2025": {
@@ -639,5 +641,5 @@
       "utcOffset": 720
     }
   ],
-  "durationMs": 3
+  "durationMs": 5
 }

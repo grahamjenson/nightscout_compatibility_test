@@ -1,0 +1,98 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/alexa?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "request": {
+        "intent": {
+          "name": "MetricNow",
+          "slots": {
+            "metric": {
+              "name": "metric",
+              "resolutions": {
+                "resolutionsPerAuthority": [
+                  {
+                    "status": {
+                      "code": "ER_SUCCESS_MATCH"
+                    },
+                    "values": [
+                      {
+                        "value": {
+                          "name": "raw bg"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "locale": "en-US",
+        "type": "IntentRequest"
+      },
+      "session": {
+        "new": true
+      },
+      "version": "1.0"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "258"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"102-D24VOJ9zRlXy9GmSOn1G5Yio9cI\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "response": {
+      "card": {
+        "content": "Your raw bg is 140",
+        "title": "Current Raw BG",
+        "type": "Simple"
+      },
+      "outputSpeech": {
+        "text": "Your raw bg is 140",
+        "type": "PlainText"
+      },
+      "reprompt": {
+        "outputSpeech": {
+          "text": "",
+          "type": "PlainText"
+        }
+      },
+      "shouldEndSession": true
+    },
+    "version": "1.0"
+  },
+  "durationMs": 1
+}

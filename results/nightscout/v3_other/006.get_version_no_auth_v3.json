@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -37,14 +37,14 @@
   "body": {
     "result": {
       "apiVersion": "3.0.5",
-      "srvDate": 1792617982956,
+      "srvDate": 1793322058347,
       "storage": {
         "storage": "mongodb",
         "version": "6.0.28"
       },
-      "version": "15.0.8"
+      "version": "15.0.9"
     },
     "status": 200
   },
-  "durationMs": 1
+  "durationMs": 0
 }

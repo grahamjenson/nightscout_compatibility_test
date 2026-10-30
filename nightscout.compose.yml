@@ -11,7 +11,7 @@ services:
       - MONGO_CONNECTION=mongodb://mongo_user:secure_password@mongo:27017/nightscout?authSource=admin
       - API_SECRET=aaaaaaaaaaaa
       - DISPLAY_UNITS=mmmol/L
-      - ENABLE=careportal treatmentprofile bgnow delta direction upbat openaps profile
+      - ENABLE=careportal treatmentprofile bgnow delta direction upbat openaps profile iob cob bwp basal ar2 rawbg pump loop sage cage iage bage xdripjs override boluscalc speech alexa googlehome
       - TZ=UTC
       - NODE_ENV=production
       - INSECURE_COOKIE=true

@@ -13,13 +13,13 @@
     "colName": "entries",
     "doc": {
       "app": "socket-test",
-      "created_at": "2026-10-21T21:26:30.586Z",
-      "date": 1792617990586,
+      "created_at": "2026-10-30T01:01:10.990Z",
+      "date": 1793322070990,
       "device": "socket-test",
-      "identifier": "79d1c87c-d17a-5b55-9b7f-8db28d4232da",
+      "identifier": "71ef10b2-aec7-5055-b1c0-a02a3f2fd818",
       "sgv": 133,
-      "srvCreated": 1792617990588,
-      "srvModified": 1792617990588,
+      "srvCreated": 1793322070993,
+      "srvModified": 1793322070993,
       "subject": "write",
       "type": "sgv",
       "utcOffset": 0

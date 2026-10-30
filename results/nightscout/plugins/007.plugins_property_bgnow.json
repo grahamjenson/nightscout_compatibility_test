@@ -1,0 +1,65 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/bgnow?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "257"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"101-9eOIKqfSsQCBVwAeTttldKeTyXg\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "bgnow": {
+      "last": 140,
+      "mean": 140,
+      "mills": 1793322049835,
+      "sgvs": [
+        {
+          "_id": "6ae3ec41349e459fe3dd9744",
+          "device": "plugin-test",
+          "direction": "FortyFiveUp",
+          "filtered": 170000,
+          "mgdl": 140,
+          "mills": 1793322049835,
+          "noise": 1,
+          "scaled": "7.8",
+          "type": "sgv",
+          "unfiltered": 170000
+        }
+      ]
+    }
+  },
+  "durationMs": 2
+}

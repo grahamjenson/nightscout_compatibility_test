@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/activity?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/activity?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -14,13 +14,13 @@
     "body": [
       {
         "activityType": "running",
-        "created_at": "2026-10-22T10:18:54+13:00",
+        "created_at": "2026-10-30T00:59:57Z",
         "duration": 3600,
         "notes": "activity running"
       },
       {
         "activityType": "running",
-        "created_at": "2026-10-22T10:17:54+13:00",
+        "created_at": "2026-10-30T00:58:57Z",
         "duration": 3600,
         "notes": "activity running 2"
       }
@@ -32,16 +32,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "291"
+      "281"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"123-9a7dy0pIyGs+kt47Mzkss4yfmO8\""
+      "W/\"119-tMsJybfv36Zev0qurEwLJOfr3Pc\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -55,19 +55,19 @@
   },
   "body": [
     {
-      "_id": "6ad92c7a35fb876db084a2a4",
+      "_id": "6ae3ec493259af060ec0454d",
       "activityType": "running",
-      "created_at": "2026-10-22T10:18:54+13:00",
+      "created_at": "2026-10-30T00:59:57Z",
       "duration": 3600,
       "notes": "activity running"
     },
     {
-      "_id": "6ad92c7a35fb876db084a2a5",
+      "_id": "6ae3ec493259af060ec0454e",
       "activityType": "running",
-      "created_at": "2026-10-22T10:17:54+13:00",
+      "created_at": "2026-10-30T00:58:57Z",
       "duration": 3600,
       "notes": "activity running 2"
     }
   ],
-  "durationMs": 3
+  "durationMs": 4
 }

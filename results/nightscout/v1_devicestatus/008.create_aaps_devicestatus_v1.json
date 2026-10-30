@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/devicestatus?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/devicestatus?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -169,10 +169,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"a25-h4KfQYQCy7KZHwjZRCcxJzt1Hi8\""
+      "W/\"a59-eRejHfZmRyZmgBTYMgB3GB4HDEY\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -186,7 +186,7 @@
   },
   "body": [
     {
-      "_id": "6ad92c7ab5c4915f41a3dc7d",
+      "_id": "6ae3ec493259af060ec04552",
       "app": "AAPS",
       "configuration": {},
       "created_at": "2026-08-16T22:39:48.777Z",
@@ -302,7 +302,7 @@
             ]
           },
           "rate": 0,
-          "reason": "Dosing sensitivity: 330.0 using eventual BG;COB: 0, Dev: -0.6, BGI: -0.3, ISF: 7.5, CR: 11.5, Target: 6.8, minPredBG 3.3, minGuardBG -1.1, IOBpredBG 2.2; minGuardBG -1.1&lt;4.5",
+          "reason": "Dosing sensitivity: 330.0 using eventual BG;COB: 0, Dev: -0.6, BGI: -0.3, ISF: 7.5, CR: 11.5, Target: 6.8, minPredBG 3.3, minGuardBG -1.1, IOBpredBG 2.2; minGuardBG -1.1\u003c4.5",
           "runningDynamicIsf": true,
           "sensitivityRatio": 1.2055221584632745,
           "targetBG": 123,
@@ -330,10 +330,12 @@
           "timestamp": "2026-08-16T22:24:50.892Z"
         }
       },
+      "srvCreated": 1793322057170,
+      "srvModified": 1793322057170,
       "uploader": {},
       "uploaderBattery": 88,
       "utcOffset": 0
     }
   ],
-  "durationMs": 10
+  "durationMs": 4
 }

@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -16,36 +16,43 @@
     },
     "body": {
       "app": "asd",
-      "created_at": "2026-10-22T10:13:54+13:00",
+      "created_at": "2026-10-30T00:54:58Z",
       "eventType": "Site Change",
       "insulin": 2,
       "reason": "6"
     }
   },
-  "statusCode": 400,
+  "statusCode": 201,
   "headers": {
     "Connection": [
       "keep-alive"
     ],
     "Content-Length": [
-      "70"
+      "95"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
+    ],
+    "Last-Modified": [
+      "Fri, 30 Oct 2026 01:00:58 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/0a9cea49-1f31-523e-88ce-293582f9f5d7"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "message": "Field date cannot be modified by the client",
-    "status": 400
+    "identifier": "0a9cea49-1f31-523e-88ce-293582f9f5d7",
+    "lastModified": 1793322058059,
+    "status": 201
   },
-  "durationMs": 2
+  "durationMs": 3
 }

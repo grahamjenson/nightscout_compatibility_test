@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/status.json?token=read-8e15b990cb8c5537",
+    "url": "http://localhost:1337/api/v1/status.json?token=read-79d324a94dd6b41e",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"90a-lB/LqIwP65DENm7ogFR2bqewbUg\""
+      "W/\"992-85ilmffdNAWioFq3KBBqaOneYto\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -40,17 +40,17 @@
   "body": {
     "apiEnabled": true,
     "authorized": {
-      "exp": 1792646782,
-      "iat": 1792617982,
+      "exp": 1793350857,
+      "iat": 1793322057,
       "permissionGroups": [
         [
           "*:*:read"
         ]
       ],
       "sub": "read",
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtOGUxNWI5OTBjYjhjNTUzNyIsImlhdCI6MTc5MjYxNzk4MiwiZXhwIjoxNzkyNjQ2NzgyfQ.N28z-uEfmekcH1SQTQKisLtutivgg92HSIuQ2xs2S6Q"
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtNzlkMzI0YTk0ZGQ2YjQxZSIsImlhdCI6MTc5MzMyMjA1NywiZXhwIjoxNzkzMzUwODU3fQ.dpnOzR14a4k1v4WTa3cbGyAd4d7d8egkDJoYZSg5aC4"
     },
-    "boluscalcEnabled": false,
+    "boluscalcEnabled": true,
     "careportalEnabled": true,
     "extendedSettings": {
       "devicestatus": {
@@ -60,8 +60,8 @@
     },
     "name": "nightscout",
     "runtimeState": "loaded",
-    "serverTime": "2026-10-21T21:26:22.114Z",
-    "serverTimeEpoch": 1792617982114,
+    "serverTime": "2026-10-30T01:00:57.606Z",
+    "serverTimeEpoch": 1793322057606,
     "settings": {
       "DEFAULT_FEATURES": [
         "bgnow",
@@ -144,6 +144,24 @@
         "upbat",
         "openaps",
         "profile",
+        "iob",
+        "cob",
+        "bwp",
+        "basal",
+        "ar2",
+        "rawbg",
+        "pump",
+        "loop",
+        "sage",
+        "cage",
+        "iage",
+        "bage",
+        "xdripjs",
+        "override",
+        "boluscalc",
+        "speech",
+        "alexa",
+        "googlehome",
         "treatmentnotify",
         "timeago",
         "devicestatus",
@@ -151,7 +169,6 @@
         "bolus",
         "dbsize",
         "runtimestate",
-        "basal",
         "ar2"
       ],
       "focusHours": 3,
@@ -196,7 +213,7 @@
       "units": "mmol"
     },
     "status": "ok",
-    "version": "15.0.8"
+    "version": "15.0.9"
   },
   "durationMs": 2
 }

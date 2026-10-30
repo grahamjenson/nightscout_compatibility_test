@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/food?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v1/food?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -33,16 +33,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "228"
+      "283"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:21 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"e4-4blkIWH2fb3CwYlog03arbEnJYA\""
+      "W/\"11b-nd2LhY6Ufb4UK2hBtdrurYlvBVk\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -56,9 +56,9 @@
   },
   "body": [
     {
-      "_id": "6ad92dfd4fc2f9571e953ce4",
+      "_id": "6ae3ec493259af060ec04559",
       "carbs": 30,
-      "created_at": "2026-10-21T21:26:21.870Z",
+      "created_at": "2026-10-30T01:00:57.324Z",
       "foods": [
         {
           "carbs": 15,
@@ -70,8 +70,10 @@
       "hideafteruse": "true",
       "name": "Breakfast",
       "position": 1,
+      "srvCreated": 1793322057325,
+      "srvModified": 1793322057325,
       "type": "quickpick"
     }
   ],
-  "durationMs": 4
+  "durationMs": 3
 }
