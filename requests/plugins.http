@@ -1,0 +1,332 @@
+#####
+# Nightscout plugins, through the API they show up in:
+# /api/v2/properties/<plugin> and the Alexa / Google Home virtual assistants.
+# Plugins only read the data Nightscout has loaded, so this file creates its own data at the current time,
+# waits for the reload, then deletes it again at the end.
+#####
+
+NAME plugins_create_profile
+POST http://{{ .site }}/api/v1/profile?token={{ token }}
+B {
+    "defaultProfile": "Plugins",
+    "startDate": "{{ time 1440 }}",
+    "created_at": "{{ time 1440 }}",
+    "units": "mg/dl",
+    "store": {
+      "Plugins": {
+        "dia": 3,
+        "carbs_hr": 20,
+        "delay": 20,
+        "timezone": "UTC",
+        "units": "mg/dl",
+        "carbratio": [{"time": "00:00", "value": 10, "timeAsSeconds": 0}],
+        "sens": [{"time": "00:00", "value": 50, "timeAsSeconds": 0}],
+        "basal": [{"time": "00:00", "value": 1.0, "timeAsSeconds": 0}],
+        "target_low": [{"time": "00:00", "value": 100, "timeAsSeconds": 0}],
+        "target_high": [{"time": "00:00", "value": 120, "timeAsSeconds": 0}]
+      }
+    }
+  }
+
+# bgnow, delta, direction, ar2 and rawbg (which needs a calibration and filtered/unfiltered values)
+NAME plugins_create_entries
+POST http://{{ .site }}/api/v1/entries?token={{ token }}
+B [
+    {"type": "cal", "date": {{ itime 60 }}, "slope": 1000, "intercept": 30000, "scale": 1, "device": "plugin-test"},
+    {"type": "sgv", "sgv": 100, "date": {{ itime 20 }}, "dateString": "{{ time 20 }}", "direction": "FortyFiveUp", "filtered": 130000, "unfiltered": 130000, "noise": 1, "device": "plugin-test"},
+    {"type": "sgv", "sgv": 110, "date": {{ itime 15 }}, "dateString": "{{ time 15 }}", "direction": "FortyFiveUp", "filtered": 140000, "unfiltered": 140000, "noise": 1, "device": "plugin-test"},
+    {"type": "sgv", "sgv": 120, "date": {{ itime 10 }}, "dateString": "{{ time 10 }}", "direction": "FortyFiveUp", "filtered": 150000, "unfiltered": 150000, "noise": 1, "device": "plugin-test"},
+    {"type": "sgv", "sgv": 130, "date": {{ itime 5 }}, "dateString": "{{ time 5 }}", "direction": "FortyFiveUp", "filtered": 160000, "unfiltered": 160000, "noise": 1, "device": "plugin-test"},
+    {"type": "sgv", "sgv": 140, "date": {{ itime 0 }}, "dateString": "{{ time 0 }}", "direction": "FortyFiveUp", "filtered": 170000, "unfiltered": 170000, "noise": 1, "device": "plugin-test"}
+  ]
+
+# iob, cob, bwp, basal (temp basal) and the sage, cage, iage and bage device ages
+NAME plugins_create_treatments
+POST http://{{ .site }}/api/v1/treatments?token={{ token }}
+B [
+    {"eventType": "Correction Bolus", "insulin": 2, "created_at": "{{ time 10 }}", "enteredBy": "plugin-test"},
+    {"eventType": "Meal Bolus", "carbs": 30, "insulin": 3, "created_at": "{{ time 10 }}", "enteredBy": "plugin-test"},
+    {"eventType": "Temp Basal", "rate": 0.5, "absolute": 0.5, "duration": 30, "created_at": "{{ time 5 }}", "enteredBy": "plugin-test"},
+    {"eventType": "Sensor Start", "created_at": "{{ time 2880 }}", "enteredBy": "plugin-test"},
+    {"eventType": "Site Change", "created_at": "{{ time 1440 }}", "enteredBy": "plugin-test"},
+    {"eventType": "Insulin Change", "created_at": "{{ time 4320 }}", "enteredBy": "plugin-test"},
+    {"eventType": "Pump Battery Change", "created_at": "{{ time 5040 }}", "enteredBy": "plugin-test"}
+  ]
+
+# pump, upbat, openaps, loop and xdripjs (sensorState)
+NAME plugins_create_devicestatus
+POST http://{{ .site }}/api/v1/devicestatus?token={{ token }}
+B [
+    {
+      "device": "openaps://plugin-test",
+      "created_at": "{{ time 1 }}",
+      "uploader": {"battery": 55},
+      "pump": {"clock": "{{ time 1 }}", "reservoir": 150.5, "battery": {"percent": 75, "voltage": 1.4}, "status": {"status": "normal", "bolusing": false, "suspended": false}},
+      "openaps": {
+        "iob": {"iob": 1.5, "basaliob": 0.5, "timestamp": "{{ time 1 }}"},
+        "suggested": {"bg": 140, "temp": "absolute", "rate": 0.5, "duration": 30, "reason": "plugin test", "eventualBG": 120, "COB": 20, "IOB": 1.5, "timestamp": "{{ time 1 }}"},
+        "enacted": {"bg": 140, "temp": "absolute", "rate": 0.5, "duration": 30, "reason": "plugin test", "received": true, "timestamp": "{{ time 1 }}"}
+      }
+    },
+    {
+      "device": "loop://plugin-test",
+      "created_at": "{{ time 2 }}",
+      "loop": {
+        "name": "Loop", "version": "3.4", "timestamp": "{{ time 2 }}",
+        "iob": {"iob": 1.2, "timestamp": "{{ time 2 }}"},
+        "cob": {"cob": 15, "timestamp": "{{ time 2 }}"},
+        "predicted": {"startDate": "{{ time 2 }}", "values": [140, 138, 135, 130]},
+        "enacted": {"rate": 0.5, "duration": 30, "received": true, "timestamp": "{{ time 2 }}"},
+        "recommendedBolus": 0.2
+      }
+    },
+    {
+      "device": "xdripjs://plugin-test",
+      "created_at": "{{ time 3 }}",
+      "xdripjs": {
+        "state": 6, "stateString": "OK", "stateStringShort": "OK", "txId": "8XXXXX", "txStatus": 0, "txStatusString": "OK", "txStatusStringShort": "OK",
+        "txActivation": {{ itime 7200 }}, "mode": "expired", "timestamp": {{ itime 3 }}, "rssi": -80,
+        "unfiltered": 170000, "filtered": 170000, "noise": 1, "noiseString": "Clean", "slope": 1000, "intercept": 30000, "calType": "LeastSquaresRegression",
+        "lastCalibrationDate": {{ itime 720 }}, "sessionStart": {{ itime 2880 }}, "batteryTimestamp": {{ itime 60 }}, "voltagea": 310, "voltageb": 300, "temperature": 32, "resistance": 1000
+      }
+    }
+  ]
+
+# Nightscout reloads its data in the background, within 5s of a write
+NAME plugins_wait_for_reload
+SET {{ sleep "7s" }}
+
+#####
+# /api/v2/properties for each plugin
+#####
+
+NAME plugins_properties_all
+GET http://{{ .site }}/api/v2/properties?token={{ token }}
+
+NAME plugins_property_bgnow
+GET http://{{ .site }}/api/v2/properties/bgnow?token={{ token }}
+
+NAME plugins_property_delta
+GET http://{{ .site }}/api/v2/properties/delta?token={{ token }}
+
+NAME plugins_property_buckets
+GET http://{{ .site }}/api/v2/properties/buckets?token={{ token }}
+
+NAME plugins_property_direction
+GET http://{{ .site }}/api/v2/properties/direction?token={{ token }}
+
+NAME plugins_property_ar2
+GET http://{{ .site }}/api/v2/properties/ar2?token={{ token }}
+
+NAME plugins_property_rawbg
+GET http://{{ .site }}/api/v2/properties/rawbg?token={{ token }}
+
+NAME plugins_property_iob
+GET http://{{ .site }}/api/v2/properties/iob?token={{ token }}
+
+NAME plugins_property_cob
+GET http://{{ .site }}/api/v2/properties/cob?token={{ token }}
+
+NAME plugins_property_bwp
+GET http://{{ .site }}/api/v2/properties/bwp?token={{ token }}
+
+NAME plugins_property_basal
+GET http://{{ .site }}/api/v2/properties/basal?token={{ token }}
+
+NAME plugins_property_sage
+GET http://{{ .site }}/api/v2/properties/sage?token={{ token }}
+
+NAME plugins_property_cage
+GET http://{{ .site }}/api/v2/properties/cage?token={{ token }}
+
+NAME plugins_property_iage
+GET http://{{ .site }}/api/v2/properties/iage?token={{ token }}
+
+NAME plugins_property_bage
+GET http://{{ .site }}/api/v2/properties/bage?token={{ token }}
+
+NAME plugins_property_pump
+GET http://{{ .site }}/api/v2/properties/pump?token={{ token }}
+
+NAME plugins_property_upbat
+GET http://{{ .site }}/api/v2/properties/upbat?token={{ token }}
+
+NAME plugins_property_openaps
+GET http://{{ .site }}/api/v2/properties/openaps?token={{ token }}
+
+NAME plugins_property_loop
+GET http://{{ .site }}/api/v2/properties/loop?token={{ token }}
+
+NAME plugins_property_xdripjs_sensor_state
+GET http://{{ .site }}/api/v2/properties/sensorState?token={{ token }}
+
+NAME plugins_property_dbsize
+GET http://{{ .site }}/api/v2/properties/dbsize?token={{ token }}
+
+NAME plugins_property_runtimestate
+GET http://{{ .site }}/api/v2/properties/runtimestate?token={{ token }}
+
+NAME plugins_properties_pump_status_subset
+GET http://{{ .site }}/api/v2/properties/pump,upbat,iob,cob,basal?token={{ token }}
+
+NAME plugins_property_iob_read_token
+GET http://{{ .site }}/api/v2/properties/iob?token={{ read_token }}
+
+#####
+# Alexa (alexa plugin): the intents and metrics the other plugins register
+#####
+
+NAME plugins_alexa_launch
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "LaunchRequest", "locale": "en-US"}}
+
+NAME plugins_alexa_status
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "NSStatus"}}}
+
+NAME plugins_alexa_metric_bg
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "bg"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_delta
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "delta"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_iob
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "iob"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_cob
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "cob"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_basal
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "basal"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_raw_bg
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "raw bg"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_forecast
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "forecast"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_pump_reservoir
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "pump reservoir"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_uploader_battery
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "uploader battery"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_cgm_status
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "cgm status"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_db_size
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_MATCH"}, "values": [{"value": {"name": "db size"}}]}]}}}}}}
+
+NAME plugins_alexa_metric_no_match
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "MetricNow", "slots": {"metric": {"name": "metric", "resolutions": {"resolutionsPerAuthority": [{"status": {"code": "ER_SUCCESS_NO_MATCH"}}]}}}}}}
+
+NAME plugins_alexa_last_loop
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "LastLoop"}}}
+
+NAME plugins_alexa_insulin_remaining
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "InsulinRemaining"}}}
+
+NAME plugins_alexa_pump_battery
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "PumpBattery"}}}
+
+NAME plugins_alexa_unknown_intent
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "NotAnIntent"}}}
+
+NAME plugins_alexa_session_ended
+POST http://{{ .site }}/api/v1/alexa?token={{ token }}
+B {"version": "1.0", "session": {"new": false}, "request": {"type": "SessionEndedRequest", "locale": "en-US"}}
+
+NAME plugins_alexa_read_token
+POST http://{{ .site }}/api/v1/alexa?token={{ read_token }}
+B {"version": "1.0", "session": {"new": true}, "request": {"type": "IntentRequest", "locale": "en-US", "intent": {"name": "NSStatus"}}}
+
+#####
+# Google Home (googlehome plugin)
+#####
+
+NAME plugins_googlehome_status
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "NSStatus"}, "parameters": {}, "languageCode": "en"}}
+
+NAME plugins_googlehome_metric_bg
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "MetricNow"}, "parameters": {"metric": "bg"}, "languageCode": "en"}}
+
+NAME plugins_googlehome_metric_iob
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "MetricNow"}, "parameters": {"metric": "iob"}, "languageCode": "en"}}
+
+NAME plugins_googlehome_metric_cob
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "MetricNow"}, "parameters": {"metric": "cob"}, "languageCode": "en"}}
+
+NAME plugins_googlehome_metric_basal
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "MetricNow"}, "parameters": {"metric": "basal"}, "languageCode": "en"}}
+
+NAME plugins_googlehome_metric_pump_battery
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "MetricNow"}, "parameters": {"metric": "pump battery"}, "languageCode": "en"}}
+
+NAME plugins_googlehome_metric_cgm_session_age
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "MetricNow"}, "parameters": {"metric": "cgm session age"}, "languageCode": "en"}}
+
+NAME plugins_googlehome_uploader_battery
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "UploaderBattery"}, "parameters": {}, "languageCode": "en"}}
+
+NAME plugins_googlehome_last_loop
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "LastLoop"}, "parameters": {}, "languageCode": "en"}}
+
+NAME plugins_googlehome_unknown_metric
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "MetricNow"}, "parameters": {"metric": "not a metric"}, "languageCode": "en"}}
+
+NAME plugins_googlehome_unknown_intent
+POST http://{{ .site }}/api/v1/googlehome?token={{ token }}
+B {"queryResult": {"intent": {"displayName": "NotAnIntent"}, "parameters": {}, "languageCode": "en"}}
+
+NAME plugins_googlehome_read_token
+POST http://{{ .site }}/api/v1/googlehome?token={{ read_token }}
+B {"queryResult": {"intent": {"displayName": "NSStatus"}, "parameters": {}, "languageCode": "en"}}
+
+#####
+# Clean up so later files see the data they expect
+#####
+
+# the calibration is deleted with the readings
+NAME plugins_delete_entries
+DELETE http://{{ .site }}/api/v1/entries?token={{ token }}&find[device]=plugin-test
+
+NAME plugins_delete_treatments
+DELETE http://{{ .site }}/api/v1/treatments?token={{ token }}&find[enteredBy]=plugin-test
+
+NAME plugins_delete_openaps_devicestatus
+DELETE http://{{ .site }}/api/v1/devicestatus/{{ dig "plugins_create_devicestatus.0._id" }}?token={{ token }}
+
+NAME plugins_delete_loop_devicestatus
+DELETE http://{{ .site }}/api/v1/devicestatus/{{ dig "plugins_create_devicestatus.1._id" }}?token={{ token }}
+
+NAME plugins_delete_xdripjs_devicestatus
+DELETE http://{{ .site }}/api/v1/devicestatus/{{ dig "plugins_create_devicestatus.2._id" }}?token={{ token }}
+
+NAME plugins_delete_profile
+DELETE http://{{ .site }}/api/v1/profile/{{ dig "plugins_create_profile.0._id" }}?token={{ token }}

@@ -20,7 +20,7 @@ H Authorization: Bearer {{ jwt }}
 ```
 
 It uses Go templates to replace parts of the request, e.g. `{{ jwt }}` replaces with jwt token, and `{{ time 0 }}` replaces with a time string `0` minutes ago.
-`{{ itime 5 }}` is epoch milliseconds 5 minutes ago and `{{ httptime -60 }}` is an HTTP date an hour from now, for headers like `If-Modified-Since`. `{{ tokenByName .subjects "read" }}` finds a subject's access token.
+`{{ itime 5 }}` is epoch milliseconds 5 minutes ago and `{{ httptime -60 }}` is an HTTP date an hour from now, for headers like `If-Modified-Since`. `{{ sleep "6s" }}` waits, e.g. `SET {{ sleep "6s" }}` gives Nightscout time to reload its data after a write. `{{ tokenByName .subjects "read" }}` finds a subject's access token.
 
 You can also reference previous requests output like:
 
@@ -31,6 +31,10 @@ H Authorization: Bearer {{ jwt }}
 ```
 
 Where `{{ dig "create_entries_v3.identifier"  }}` will do a json search through the previous output to get the identifier.
+
+# Plugins
+
+`requests/plugins.http` tests Nightscout's plugins through the API they show up in: `/api/v2/properties/<plugin>` (bgnow, delta, direction, ar2, rawbg, iob, cob, bwp, basal, sage, cage, iage, bage, pump, upbat, openaps, loop, xdripjs `sensorState`, dbsize, runtimestate) and the Alexa (`/api/v1/alexa`) and Google Home (`/api/v1/googlehome`) intents those plugins register. It runs first, creates its own profile, readings, treatments and devicestatus at the current time, waits for Nightscout to reload, and deletes them again at the end. `nightscout.compose.yml` enables every plugin it tests.
 
 # Socket.io (`.sio`) files
 

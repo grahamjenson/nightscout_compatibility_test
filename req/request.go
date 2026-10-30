@@ -161,6 +161,16 @@ func templateHTTPTime(offset int) string {
 	return t.UTC().Format(http.TimeFormat)
 }
 
+// templateSleep waits for a duration like "6s", for a service that applies writes in the background
+func templateSleep(duration string) (string, error) {
+	d, err := time.ParseDuration(duration)
+	if err != nil {
+		return "", err
+	}
+	time.Sleep(d)
+	return duration, nil
+}
+
 // templateTokenByName finds the accessToken of the subject called name in a
 // list of subjects, or "" so one odd response does not stop the whole file
 func templateTokenByName(list any, name string) string {
@@ -230,6 +240,7 @@ func RenderTemplate(input string, ctx map[string]any) (string, error) {
 			"itime":       templateITime,
 			"httptime":    templateHTTPTime,
 			"tokenByName": templateTokenByName,
+			"sleep":       templateSleep,
 		}).
 		Parse(input)
 	if err != nil {
