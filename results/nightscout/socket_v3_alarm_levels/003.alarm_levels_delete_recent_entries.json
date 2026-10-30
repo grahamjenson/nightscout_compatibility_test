@@ -2,7 +2,7 @@
   "request": {
     "method": "DELETE",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=write-2fa396b791909491&find[date][$gte]=1792694010530&count=1000",
+    "url": "http://localhost:1337/api/v1/entries?token=write-a1552de38f339aba&find[date][$gte]=1793320271007&count=1000",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,10 +25,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Thu, 22 Oct 2026 19:03:30 GMT"
+      "Fri, 30 Oct 2026 01:01:11 GMT"
     ],
     "Etag": [
-      "W/\"2e-wDVHeg2XPdCFFqHKwXcNyioJt5w\""
+      "W/\"2e-XbcBXuNiaacgFn1vGuqEurPG1LU\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -42,8 +42,8 @@
   },
   "body": {
     "acknowledged": true,
-    "deletedCount": 10,
-    "n": 10
+    "deletedCount": 11,
+    "n": 11
   },
-  "durationMs": 6
+  "durationMs": 3
 }

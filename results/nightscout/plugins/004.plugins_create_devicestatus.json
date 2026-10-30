@@ -1,0 +1,278 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/devicestatus?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "created_at": "2026-10-30T00:59:49Z",
+        "device": "openaps://plugin-test",
+        "openaps": {
+          "enacted": {
+            "bg": 140,
+            "duration": 30,
+            "rate": 0.5,
+            "reason": "plugin test",
+            "received": true,
+            "temp": "absolute",
+            "timestamp": "2026-10-30T00:59:49Z"
+          },
+          "iob": {
+            "basaliob": 0.5,
+            "iob": 1.5,
+            "timestamp": "2026-10-30T00:59:49Z"
+          },
+          "suggested": {
+            "COB": 20,
+            "IOB": 1.5,
+            "bg": 140,
+            "duration": 30,
+            "eventualBG": 120,
+            "rate": 0.5,
+            "reason": "plugin test",
+            "temp": "absolute",
+            "timestamp": "2026-10-30T00:59:49Z"
+          }
+        },
+        "pump": {
+          "battery": {
+            "percent": 75,
+            "voltage": 1.4
+          },
+          "clock": "2026-10-30T00:59:49Z",
+          "reservoir": 150.5,
+          "status": {
+            "bolusing": false,
+            "status": "normal",
+            "suspended": false
+          }
+        },
+        "uploader": {
+          "battery": 55
+        }
+      },
+      {
+        "created_at": "2026-10-30T00:58:49Z",
+        "device": "loop://plugin-test",
+        "loop": {
+          "cob": {
+            "cob": 15,
+            "timestamp": "2026-10-30T00:58:49Z"
+          },
+          "enacted": {
+            "duration": 30,
+            "rate": 0.5,
+            "received": true,
+            "timestamp": "2026-10-30T00:58:49Z"
+          },
+          "iob": {
+            "iob": 1.2,
+            "timestamp": "2026-10-30T00:58:49Z"
+          },
+          "name": "Loop",
+          "predicted": {
+            "startDate": "2026-10-30T00:58:49Z",
+            "values": [
+              140,
+              138,
+              135,
+              130
+            ]
+          },
+          "recommendedBolus": 0.2,
+          "timestamp": "2026-10-30T00:58:49Z",
+          "version": "3.4"
+        }
+      },
+      {
+        "created_at": "2026-10-30T00:57:49Z",
+        "device": "xdripjs://plugin-test",
+        "xdripjs": {
+          "batteryTimestamp": 1793318449867,
+          "calType": "LeastSquaresRegression",
+          "filtered": 170000,
+          "intercept": 30000,
+          "lastCalibrationDate": 1793278849867,
+          "mode": "expired",
+          "noise": 1,
+          "noiseString": "Clean",
+          "resistance": 1000,
+          "rssi": -80,
+          "sessionStart": 1793149249867,
+          "slope": 1000,
+          "state": 6,
+          "stateString": "OK",
+          "stateStringShort": "OK",
+          "temperature": 32,
+          "timestamp": 1793321869867,
+          "txActivation": 1792890049867,
+          "txId": "8XXXXX",
+          "txStatus": 0,
+          "txStatusString": "OK",
+          "txStatusStringShort": "OK",
+          "unfiltered": 170000,
+          "voltagea": 310,
+          "voltageb": 300
+        }
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:49 GMT"
+    ],
+    "Etag": [
+      "W/\"7c1-hFKbGpY6nZ4HobK4v9WWOcrw0xU\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ae3ec413259af060ec04549",
+      "created_at": "2026-10-30T00:59:49.000Z",
+      "device": "openaps://plugin-test",
+      "openaps": {
+        "enacted": {
+          "bg": 140,
+          "duration": 30,
+          "rate": 0.5,
+          "reason": "plugin test",
+          "received": true,
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "iob": {
+          "basaliob": 0.5,
+          "iob": 1.5,
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "suggested": {
+          "COB": 20,
+          "IOB": 1.5,
+          "bg": 140,
+          "duration": 30,
+          "eventualBG": 120,
+          "rate": 0.5,
+          "reason": "plugin test",
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 75,
+          "voltage": 1.4
+        },
+        "clock": "2026-10-30T00:59:49Z",
+        "reservoir": 150.5,
+        "status": {
+          "bolusing": false,
+          "status": "normal",
+          "suspended": false
+        }
+      },
+      "srvCreated": 1793322049870,
+      "srvModified": 1793322049870,
+      "uploader": {
+        "battery": 55
+      },
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec413259af060ec0454a",
+      "created_at": "2026-10-30T00:58:49.000Z",
+      "device": "loop://plugin-test",
+      "loop": {
+        "cob": {
+          "cob": 15,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "enacted": {
+          "duration": 30,
+          "rate": 0.5,
+          "received": true,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "iob": {
+          "iob": 1.2,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "name": "Loop",
+        "predicted": {
+          "startDate": "2026-10-30T00:58:49Z",
+          "values": [
+            140,
+            138,
+            135,
+            130
+          ]
+        },
+        "recommendedBolus": 0.2,
+        "timestamp": "2026-10-30T00:58:49Z",
+        "version": "3.4"
+      },
+      "srvCreated": 1793322049871,
+      "srvModified": 1793322049871,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec413259af060ec0454b",
+      "created_at": "2026-10-30T00:57:49.000Z",
+      "device": "xdripjs://plugin-test",
+      "srvCreated": 1793322049872,
+      "srvModified": 1793322049872,
+      "utcOffset": 0,
+      "xdripjs": {
+        "batteryTimestamp": 1793318449867,
+        "calType": "LeastSquaresRegression",
+        "filtered": 170000,
+        "intercept": 30000,
+        "lastCalibrationDate": 1793278849867,
+        "mode": "expired",
+        "noise": 1,
+        "noiseString": "Clean",
+        "resistance": 1000,
+        "rssi": -80,
+        "sessionStart": 1793149249867,
+        "slope": 1000,
+        "state": 6,
+        "stateString": "OK",
+        "stateStringShort": "OK",
+        "temperature": 32,
+        "timestamp": 1793321869867,
+        "txActivation": 1792890049867,
+        "txId": "8XXXXX",
+        "txStatus": 0,
+        "txStatusString": "OK",
+        "txStatusStringShort": "OK",
+        "unfiltered": 170000,
+        "voltagea": 310,
+        "voltageb": 300
+      }
+    }
+  ],
+  "durationMs": 6
+}

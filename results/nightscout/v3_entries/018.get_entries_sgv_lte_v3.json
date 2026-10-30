@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -39,59 +39,59 @@
       {
         "date": 1767355994,
         "dateString": "2026-01-02T12:13:14.000Z",
-        "identifier": "6ad92c7a35fb876db084a336",
+        "identifier": "6ae3ec49349e459fe3dd9834",
         "sgv": 100,
-        "srvCreated": 1767355994000,
-        "srvModified": 1767355994000,
+        "srvCreated": 1793322057577,
+        "srvModified": 1793322057577,
         "sysTime": "2026-01-02T12:13:14.000Z",
         "type": "sgv",
         "utcOffset": 0
       },
       {
-        "date": 1792617594128,
-        "identifier": "6ad92c7a35fb876db084a2c3",
+        "date": 1793322057194,
+        "identifier": "6ae3ec49349e459fe3dd9791",
         "sgv": 100,
-        "srvCreated": 1792617594128,
-        "srvModified": 1792617594128,
-        "sysTime": "2026-10-21T21:19:54.128Z",
+        "srvCreated": 1793322057196,
+        "srvModified": 1793322057196,
+        "sysTime": "2026-10-30T01:00:57.194Z",
         "type": "sgv",
         "utcOffset": 0
       },
       {
         "app": "test-app",
-        "date": 1792617594135,
-        "dateString": "2026-10-21T21:19:54.000Z",
+        "date": 1793322057198,
+        "dateString": "2026-10-30T01:00:57.000Z",
         "device": "test-device",
         "direction": "Flat",
         "filtered": 139.2,
-        "identifier": "6ad92c7a35fb876db084a2c5",
-        "mills": 1792617594135,
+        "identifier": "6ae3ec49349e459fe3dd9793",
+        "mills": 1793322057198,
         "noise": 1,
         "rssi": -62,
         "sgv": 100,
-        "srvCreated": 1792617594135,
-        "srvModified": 1792617594135,
-        "sysTime": "2026-10-21T21:19:54.000Z",
+        "srvCreated": 1793322057200,
+        "srvModified": 1793322057200,
+        "sysTime": "2026-10-30T01:00:57.000Z",
         "trend": 3,
         "type": "sgv",
         "unfiltered": 141.7,
-        "utcOffset": 780
+        "utcOffset": 0
       },
       {
         "app": "test-app",
-        "created_at": "2026-10-21T21:19:54.503Z",
-        "date": 1792617594503,
-        "dateString": "2026-10-22T10:19:54+13:00",
+        "created_at": "2026-10-30T01:00:57.725Z",
+        "date": 1793322057725,
+        "dateString": "2026-10-30T01:00:57Z",
         "device": "test-device",
         "direction": "Flat",
         "filtered": 139.2,
-        "identifier": "b1d97b63-7739-5430-8748-3313c1d7f331",
-        "mills": 1792617594503,
+        "identifier": "d5654378-b56d-5616-a560-32102b4bd731",
+        "mills": 1793322057725,
         "noise": 1,
         "rssi": -62,
         "sgv": 100,
-        "srvCreated": 1792617594574,
-        "srvModified": 1792617594574,
+        "srvCreated": 1793322057728,
+        "srvModified": 1793322057728,
         "subject": "write",
         "trend": 3,
         "type": "sgv",
@@ -100,19 +100,19 @@
       },
       {
         "app": "test-app",
-        "created_at": "2026-10-21T21:17:54.507Z",
-        "date": 1792617474507,
-        "dateString": "2026-10-22T10:19:54+13:00",
+        "created_at": "2026-10-30T00:58:57.729Z",
+        "date": 1793321937729,
+        "dateString": "2026-10-30T01:00:57Z",
         "device": "test-device",
         "direction": "Flat",
         "filtered": 139.2,
-        "identifier": "b1d97b63-7739-5430-8748-3313c1d7f331custom",
-        "mills": 1792617594507,
+        "identifier": "d5654378-b56d-5616-a560-32102b4bd731custom",
+        "mills": 1793322057729,
         "noise": 1,
         "rssi": -62,
         "sgv": 90,
-        "srvCreated": 1792617594577,
-        "srvModified": 1792617594577,
+        "srvCreated": 1793322057731,
+        "srvModified": 1793322057731,
         "subject": "write",
         "trend": 3,
         "type": "sgv",

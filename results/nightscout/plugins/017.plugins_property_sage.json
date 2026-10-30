@@ -1,0 +1,63 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/sage?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "227"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"e3-lTvOHYH4QKVlpq9C7YiyKhHPD4c\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "sage": {
+      "Sensor Change": {
+        "found": false
+      },
+      "Sensor Start": {
+        "age": 48,
+        "days": 2,
+        "display": "2d0h",
+        "displayLong": "2 days 0 hours",
+        "found": true,
+        "hours": 0,
+        "level": -3,
+        "minFractions": 0,
+        "treatmentDate": 1793149249000
+      },
+      "min": "Sensor Start"
+    }
+  },
+  "durationMs": 2
+}

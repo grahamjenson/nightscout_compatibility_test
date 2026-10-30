@@ -2,13 +2,13 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://localhost:1337/api/v3/profile/ebc3dc90-4035-5762-9178-e393b44fe375",
+    "url": "http://localhost:1337/api/v3/profile/c38d525c-badc-59ea-9cf5-4535266ff354",
     "headers": {
       "Accept": [
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "asd",
-      "date": "2026-10-22T10:19:54+13:00",
+      "date": "2026-10-30T01:00:58Z",
       "defaultProfile": "updated_profile",
       "store": {
         "updated_profile": {
@@ -88,33 +88,30 @@
       }
     }
   },
-  "statusCode": 200,
+  "statusCode": 400,
   "headers": {
     "Connection": [
       "keep-alive"
     ],
     "Content-Length": [
-      "43"
+      "70"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
-    ],
-    "Last-Modified": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "lastModified": 1792617594819,
-    "status": 200
+    "message": "Field date cannot be modified by the client",
+    "status": 400
   },
-  "durationMs": 3
+  "durationMs": 2
 }

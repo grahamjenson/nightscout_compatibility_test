@@ -13,7 +13,7 @@
     "group": "default",
     "key": "3568a77bdd5f5b38e1ba8c69da706104e8eb909e",
     "level": 0,
-    "message": "\nEntered By: alarm-test\nNotes: alarm levels note 1792695811599",
+    "message": "\nEntered By: alarm-test\nNotes: alarm levels note 1793322072050",
     "notifyhash": "3568a77bdd5f5b38e1ba8c69da706104e8eb909e",
     "plugin": {
       "enabled": true,
@@ -23,5 +23,5 @@
     },
     "title": "Note"
   },
-  "durationMs": 1021
+  "durationMs": 1012
 }

@@ -1,0 +1,74 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/alexa?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "request": {
+        "locale": "en-US",
+        "type": "LaunchRequest"
+      },
+      "session": {
+        "new": true
+      },
+      "version": "1.0"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "359"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"167-UonIrtf5Hkqe0C+7eOzzOKcBdI8\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "response": {
+      "card": {
+        "content": "What would you like to check on Nightscout?",
+        "title": "Welcome to Nightscout",
+        "type": "Simple"
+      },
+      "outputSpeech": {
+        "text": "What would you like to check on Nightscout?",
+        "type": "PlainText"
+      },
+      "reprompt": {
+        "outputSpeech": {
+          "text": "What would you like to check on Nightscout?",
+          "type": "PlainText"
+        }
+      },
+      "shouldEndSession": false
+    },
+    "version": "1.0"
+  },
+  "durationMs": 2
+}

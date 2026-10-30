@@ -1,0 +1,133 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/buckets?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"4dd-LnEOxw9XNmGYZh6RGQai6EJzvyw\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "buckets": [
+      {
+        "fromMills": 1793321899835,
+        "index": 0,
+        "last": 140,
+        "mean": 140,
+        "mills": 1793322049835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9744",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 170000,
+            "mgdl": 140,
+            "mills": 1793322049835,
+            "noise": 1,
+            "scaled": "7.8",
+            "type": "sgv",
+            "unfiltered": 170000
+          }
+        ],
+        "toMills": 1793322199835
+      },
+      {
+        "fromMills": 1793321599835,
+        "index": 1,
+        "last": 130,
+        "mean": 130,
+        "mills": 1793321749835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9743",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 160000,
+            "mgdl": 130,
+            "mills": 1793321749835,
+            "noise": 1,
+            "scaled": "7.2",
+            "type": "sgv",
+            "unfiltered": 160000
+          }
+        ],
+        "toMills": 1793321899835
+      },
+      {
+        "fromMills": 1793321299835,
+        "index": 2,
+        "last": 120,
+        "mean": 120,
+        "mills": 1793321449835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9742",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 150000,
+            "mgdl": 120,
+            "mills": 1793321449835,
+            "noise": 1,
+            "scaled": "6.7",
+            "type": "sgv",
+            "unfiltered": 150000
+          }
+        ],
+        "toMills": 1793321599835
+      },
+      {
+        "fromMills": 1793320999835,
+        "index": 3,
+        "last": 110,
+        "mean": 110,
+        "mills": 1793321149835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9741",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 140000,
+            "mgdl": 110,
+            "mills": 1793321149835,
+            "noise": 1,
+            "scaled": "6.1",
+            "type": "sgv",
+            "unfiltered": 140000
+          }
+        ],
+        "toMills": 1793321299835
+      }
+    ]
+  },
+  "durationMs": 2
+}

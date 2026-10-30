@@ -12,10 +12,12 @@
   "body": {
     "devicestatus": [
       {
-        "_id": "6ad92c7ab5c4915f41a3dc7c",
-        "created_at": "2026-10-21T21:17:54.000Z",
+        "_id": "6ae3ec493259af060ec04551",
+        "created_at": "2026-10-30T00:58:57.000Z",
         "device": "aaps",
-        "mills": 1792617474000,
+        "mills": 1793321937000,
+        "srvCreated": 1793322057147,
+        "srvModified": 1793322057147,
         "uploader": {
           "battery": 87,
           "batteryVoltage": 4.05,
@@ -25,37 +27,15 @@
           "voltage": 4.05,
           "voltageDisplay": "4.050v"
         },
-        "utcOffset": 780
+        "utcOffset": 0
       },
       {
-        "_id": "6ad92c7ab5c4915f41a3dc84",
-        "app": "test-app",
-        "created_at": "2026-10-21T21:18:54.000Z",
-        "date": 1792617534000,
-        "device": "aapsv3",
-        "identifier": "ed3127fc-c514-5a19-8206-15dedafefc58custom",
-        "isValid": false,
-        "mills": 1792617534000,
-        "modifiedBy": "write",
-        "srvCreated": 1792617594489,
-        "srvModified": 1792617594556,
-        "subject": "write",
-        "uploader": {
-          "battery": 87,
-          "batteryVoltage": 4.05,
-          "display": "87%",
-          "level": 75,
-          "value": 87,
-          "voltage": 4.05,
-          "voltageDisplay": "4.050v"
-        },
-        "utcOffset": 780
-      },
-      {
-        "_id": "6ad92c7ab5c4915f41a3dc7b",
-        "created_at": "2026-10-21T21:18:54.000Z",
+        "_id": "6ae3ec493259af060ec04550",
+        "created_at": "2026-10-30T00:59:57.000Z",
         "device": "aaps1",
-        "mills": 1792617534000,
+        "mills": 1793321997000,
+        "srvCreated": 1793322057146,
+        "srvModified": 1793322057146,
         "uploader": {
           "battery": 87,
           "batteryVoltage": 4.05,
@@ -65,77 +45,56 @@
           "voltage": 4.05,
           "voltageDisplay": "4.050v"
         },
-        "utcOffset": 780
+        "utcOffset": 0
       },
       {
-        "_id": "6ad92c7bb5c4915f41a3dca5",
-        "created_at": "2026-10-21T21:18:55.000Z",
+        "_id": "6ae3ec4a3259af060ec04599",
+        "created_at": "2026-10-30T00:59:58.000Z",
         "device": "aaps1",
-        "mills": 1792617535000,
+        "mills": 1793321998000,
         "random": 123,
-        "utcOffset": 780
+        "srvCreated": 1793322058559,
+        "srvModified": 1793322058559,
+        "utcOffset": 0
       },
       {
-        "_id": "6ad92c7bb5c4915f41a3dca4",
-        "created_at": "2026-10-21T21:18:55.000Z",
+        "_id": "6ae3ec4a3259af060ec04598",
+        "created_at": "2026-10-30T00:59:58.000Z",
         "device": "aaps1",
-        "mills": 1792617535000,
+        "mills": 1793321998000,
+        "srvCreated": 1793322058556,
+        "srvModified": 1793322058556,
         "uploader": "not an object",
-        "utcOffset": 780
+        "utcOffset": 0
       },
       {
-        "_id": "6ad92c7ab5c4915f41a3dc83",
+        "_id": "6ae3ec4f3259af060ec0459b",
         "app": "test-app",
-        "created_at": "2026-10-21T21:19:54.000Z",
-        "date": 1792617594000,
-        "device": "aaps",
-        "identifier": "ed3127fc-c514-5a19-8206-15dedafefc58",
-        "isValid": false,
-        "mills": 1792617594000,
-        "modifiedBy": "write",
-        "notes": "updated by update_patch_devicestatus_v3",
-        "srvCreated": 1792617594486,
-        "srvModified": 1792617594551,
-        "subject": "write",
-        "uploader": {
-          "battery": 100,
-          "batteryVoltage": 3.2,
-          "display": "100%",
-          "level": 100,
-          "value": 100,
-          "voltage": 3.2,
-          "voltageDisplay": "3.200v"
-        },
-        "utcOffset": 780
-      },
-      {
-        "_id": "6ad92c80b5c4915f41a3dca7",
-        "app": "test-app",
-        "created_at": "2026-10-21T21:19:55.000Z",
-        "date": 1792617595000,
+        "created_at": "2026-10-30T01:00:58.000Z",
+        "date": 1793322058000,
         "device": "test-device",
-        "identifier": "59a24cf5-75de-5a4a-a5cc-0663d9722941",
-        "mills": 1792617595000,
-        "srvCreated": 1792617600187,
-        "srvModified": 1792617600187,
+        "identifier": "1bd71325-b5d3-5b0b-9976-3dcda8fd3a2c",
+        "mills": 1793322058000,
+        "srvCreated": 1793322063584,
+        "srvModified": 1793322063584,
         "subject": "write",
-        "utcOffset": 780
+        "utcOffset": 0
       },
       {
-        "_id": "6ad92c7bb5c4915f41a3dca6",
+        "_id": "6ae3ec4a3259af060ec0459a",
         "app": "test-app",
-        "created_at": "2026-10-21T21:19:55.000Z",
-        "date": 1792617595000,
+        "created_at": "2026-10-30T01:00:58.000Z",
+        "date": 1793322058000,
         "duration": 3600,
-        "endmills": 1792833595000,
-        "identifier": "0c0554ff-1560-5699-8ed3-7e7413e5a64a",
-        "mills": 1792617595000,
+        "endmills": 1793538058000,
+        "identifier": "e0b1c16a-b5bc-5a26-87d7-b66a5340ec11",
+        "mills": 1793322058000,
         "notes": "test devicestatus missing device",
-        "srvCreated": 1792617595153,
-        "srvModified": 1792617595153,
+        "srvCreated": 1793322058575,
+        "srvModified": 1793322058575,
         "subject": "write",
         "type": "walking",
-        "utcOffset": 780
+        "utcOffset": 0
       }
     ]
   },

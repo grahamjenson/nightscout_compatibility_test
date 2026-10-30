@@ -10,7 +10,7 @@
     "ack": true,
     "args": [
       {
-        "accessToken": "write-749a8d3839b8b11c"
+        "accessToken": "write-a1552de38f339aba"
       }
     ]
   },
@@ -19,5 +19,5 @@
     "message": "Subscribed for alarms",
     "success": true
   },
-  "durationMs": 1
+  "durationMs": 0
 }

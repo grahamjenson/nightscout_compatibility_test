@@ -1,0 +1,98 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/openaps?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "872"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"368-KkqWSgHGY7Gkxn/6aqzsiy+zRF8\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "openaps": {
+      "lastEnacted": {
+        "bg": 140,
+        "duration": 30,
+        "moment": "2026-10-30T00:59:49.000Z",
+        "rate": 0.5,
+        "reason": "plugin test",
+        "received": true,
+        "temp": "absolute",
+        "timestamp": "2026-10-30T00:59:49Z"
+      },
+      "lastEventualBG": 120,
+      "lastIOB": {
+        "basaliob": 0.5,
+        "iob": 1.5,
+        "moment": "2026-10-30T00:59:49.000Z",
+        "timestamp": "2026-10-30T00:59:49Z"
+      },
+      "lastLoopMoment": "2026-10-30T00:59:49.000Z",
+      "lastMMTune": null,
+      "lastNotEnacted": null,
+      "lastPredBGs": null,
+      "lastSuggested": {
+        "COB": 20,
+        "IOB": 1.5,
+        "bg": 140,
+        "duration": 30,
+        "eventualBG": 120,
+        "moment": "2026-10-30T00:59:49.000Z",
+        "rate": 0.5,
+        "reason": "plugin test",
+        "temp": "absolute",
+        "timestamp": "2026-10-30T00:59:49Z"
+      },
+      "seenDevices": {
+        "openaps://plugin-test": {
+          "name": "plugin-test",
+          "status": {
+            "code": "enacted",
+            "label": "Enacted",
+            "symbol": "⌁",
+            "when": "2026-10-30T00:59:49.000Z"
+          },
+          "uri": "openaps://plugin-test"
+        }
+      },
+      "status": {
+        "code": "enacted",
+        "label": "Enacted",
+        "symbol": "⌁"
+      }
+    }
+  },
+  "durationMs": 2
+}

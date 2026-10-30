@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v2/notifications/loop?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v2/notifications/loop?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,11 +25,17 @@
     "Connection": [
       "keep-alive"
     ],
+    "Content-Length": [
+      "109"
+    ],
     "Content-Type": [
-      "application/json; charset=utf-8"
+      "text/html; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:23 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
+    ],
+    "Etag": [
+      "W/\"6d-YKbmT3FVgRwDDhI6luMWdkgewZ4\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -37,18 +43,10 @@
     "Vary": [
       "Accept-Encoding"
     ],
-    "X-Content-Type-Options": [
-      "nosniff"
-    ],
     "X-Powered-By": [
       "Express"
     ]
   },
-  "body": {
-    "error": {
-      "message": "Cannot read properties of undefined (reading 'apnsKey')",
-      "stack": "TypeError: Cannot read properties of undefined (reading 'apnsKey')\n    at Function.sendNotification (/opt/app/lib/server/loop.js:16:35)\n    at /opt/app/lib/api2/notifications-v2.js:18:14\n    at Layer.handle [as handle_request] (/opt/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/opt/app/node_modules/express/lib/router/route.js:149:13)\n    at check (/opt/app/lib/authorization/index.js:263:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)"
-    }
-  },
-  "durationMs": 3
+  "body": "Loop notification failed unexpectedly. Ask the Nightscout administrator to check the server logs for details.",
+  "durationMs": 2
 }

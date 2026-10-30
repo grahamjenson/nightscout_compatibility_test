@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/ddata/at?token=read-8e15b990cb8c5537",
+    "url": "http://localhost:1337/api/v2/ddata/at?token=read-79d324a94dd6b41e",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:23 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Etag": [
-      "W/\"572-NMIaQNB2tORdooI2zi27u5wsab4\""
+      "W/\"1a54-+pwI1gkenrMR6iT7s+mJ3rgWJBE\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -38,106 +38,403 @@
     ]
   },
   "body": {
-    "activity": [
+    "activity": [],
+    "batteryTreatments": [
       {
-        "mills": "2026-10-21T21:24:21.000Z"
-      },
-      {
-        "mills": "2026-10-21T21:25:21.000Z"
+        "_id": "6ae3ec41349e459fe3dd974d",
+        "created_at": "2026-10-26T13:00:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Pump Battery Change",
+        "mgdl": 180,
+        "mills": 1793019649000,
+        "srvCreated": 1793322049865,
+        "srvModified": 1793322049865,
+        "utcOffset": 0
       }
     ],
-    "batteryTreatments": [],
     "cals": [],
     "combobolusTreatments": [],
     "dbstats": {
-      "dataSize": 1242,
+      "dataSize": 4070,
       "indexSize": 253952
     },
     "devicestatus": [
       {
-        "_id": "6ad92dfd4fc2f9571e953cda",
-        "created_at": "2026-10-21T21:26:21.000Z",
-        "device": "aaps",
+        "_id": "6ae3ec413259af060ec0454b",
+        "created_at": "2026-10-30T00:57:49.000Z",
+        "device": "xdripjs://plugin-test",
+        "mills": 1793321869000,
+        "srvCreated": 1793322049872,
+        "srvModified": 1793322049872,
+        "utcOffset": 0,
+        "xdripjs": {
+          "batteryTimestamp": 1793318449867,
+          "calType": "LeastSquaresRegression",
+          "filtered": 170000,
+          "intercept": 30000,
+          "lastCalibrationDate": 1793278849867,
+          "mode": "expired",
+          "noise": 1,
+          "noiseString": "Clean",
+          "resistance": 1000,
+          "rssi": -80,
+          "sessionStart": 1793149249867,
+          "slope": 1000,
+          "state": 6,
+          "stateString": "OK",
+          "stateStringShort": "OK",
+          "temperature": 32,
+          "timestamp": 1793321869867,
+          "txActivation": 1792890049867,
+          "txId": "8XXXXX",
+          "txStatus": 0,
+          "txStatusString": "OK",
+          "txStatusStringShort": "OK",
+          "unfiltered": 170000,
+          "voltagea": 310,
+          "voltageb": 300
+        }
+      },
+      {
+        "_id": "6ae3ec413259af060ec0454a",
+        "created_at": "2026-10-30T00:58:49.000Z",
+        "device": "loop://plugin-test",
         "loop": {
           "cob": {
-            "cob": 18
+            "cob": 15,
+            "timestamp": "2026-10-30T00:58:49Z"
           },
           "enacted": {
             "duration": 30,
-            "rate": 1.2,
-            "reason": "BG rising faster than expected"
+            "moment": "2026-10-30T00:58:49.000Z",
+            "rate": 0.5,
+            "received": true,
+            "timestamp": "2026-10-30T00:58:49Z"
           },
-          "failureReason": "",
           "iob": {
-            "devicestatus": 0.024,
-            "iob": 1.73
+            "iob": 1.2,
+            "timestamp": "2026-10-30T00:58:49Z"
           },
+          "moment": "2026-10-30T00:58:49.000Z",
+          "name": "Loop",
           "predicted": {
+            "startDate": "2026-10-30T00:58:49Z",
             "values": [
-              112,
-              114,
-              117,
-              120,
-              123,
-              126
+              140,
+              138,
+              135,
+              130
             ]
           },
-          "timestamp": "2026-06-16T08:42:00Z"
+          "recommendedBolus": 0.2,
+          "timestamp": "2026-10-30T00:58:49Z",
+          "version": "3.4"
         },
-        "mills": 1792617981000,
+        "mills": 1793321929000,
+        "srvCreated": 1793322049871,
+        "srvModified": 1793322049871,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ae3ec413259af060ec04549",
+        "clockMills": 1793321989000,
+        "created_at": "2026-10-30T00:59:49.000Z",
+        "data": {
+          "battery": {
+            "display": "75%",
+            "label": "Battery",
+            "level": -3,
+            "unit": "percent",
+            "value": 75
+          },
+          "clock": {
+            "display": "1m ago",
+            "label": "Last Clock",
+            "level": -3,
+            "value": "2026-10-30T00:59:49.000Z"
+          },
+          "device": {
+            "display": "openaps://plugin-test",
+            "label": "Device"
+          },
+          "extended": null,
+          "level": -3,
+          "reservoir": {
+            "display": "151U",
+            "label": "Reservoir",
+            "level": -3,
+            "value": 150.5
+          },
+          "reservoir_display_override": null,
+          "reservoir_level_override": null,
+          "status": {
+            "display": "normal",
+            "label": "Status",
+            "value": "normal"
+          },
+          "title": "Pump Status"
+        },
+        "device": "openaps://plugin-test",
+        "mills": 1793321989000,
         "openaps": {
           "enacted": {
+            "bg": 140,
             "duration": 30,
-            "moment": "2026-06-16T08:42:00.000Z",
-            "rate": 1.2,
-            "timestamp": "2026-06-16T08:42:00Z"
+            "moment": "2026-10-30T00:59:49.000Z",
+            "rate": 0.5,
+            "reason": "plugin test",
+            "received": true,
+            "temp": "absolute",
+            "timestamp": "2026-10-30T00:59:49Z"
+          },
+          "iob": {
+            "basaliob": 0.5,
+            "iob": 1.5,
+            "moment": "2026-10-30T00:59:49.000Z",
+            "timestamp": "2026-10-30T00:59:49Z"
           },
           "suggested": {
+            "COB": 20,
+            "IOB": 1.5,
+            "bg": 140,
             "duration": 30,
-            "moment": "2026-06-16T08:41:55.000Z",
-            "rate": 1.2,
-            "reason": "Eventual BG 126",
-            "timestamp": "2026-06-16T08:41:55Z"
+            "eventualBG": 120,
+            "moment": "2026-10-30T00:59:49.000Z",
+            "rate": 0.5,
+            "reason": "plugin test",
+            "temp": "absolute",
+            "timestamp": "2026-10-30T00:59:49Z"
           }
         },
         "pump": {
           "battery": {
-            "percent": 68,
-            "voltage": 1.42
+            "percent": 75,
+            "voltage": 1.4
           },
-          "clock": "2026-06-16T08:42:15Z",
-          "reservoir": 97.4,
+          "clock": "2026-10-30T00:59:49Z",
+          "reservoir": 150.5,
           "status": {
             "bolusing": false,
+            "status": "normal",
             "suspended": false
           }
         },
+        "srvCreated": 1793322049870,
+        "srvModified": 1793322049870,
         "uploader": {
-          "battery": 87,
-          "batteryVoltage": 4.05,
-          "display": "87%",
+          "battery": 55,
+          "display": "55%",
           "level": 75,
-          "value": 87,
-          "voltage": 4.05,
-          "voltageDisplay": "4.050v"
+          "value": 55
         },
         "utcOffset": 0
       }
     ],
     "entries": [],
     "food": [],
-    "insulinchangeTreatments": [],
+    "insulinchangeTreatments": [
+      {
+        "_id": "6ae3ec41349e459fe3dd974c",
+        "created_at": "2026-10-27T01:00:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Insulin Change",
+        "mgdl": 180,
+        "mills": 1793062849000,
+        "srvCreated": 1793322049864,
+        "srvModified": 1793322049864,
+        "utcOffset": 0
+      }
+    ],
     "lastProfileFromSwitch": null,
-    "lastUpdated": 1792617981659,
+    "lastUpdated": 1793322057049,
     "mbgs": [],
     "profileTreatments": [],
-    "profiles": [],
-    "sensorTreatments": [],
+    "profiles": [
+      {
+        "_id": "6ae3ec413259af060ec04548",
+        "created_at": "2026-10-29T01:00:49Z",
+        "defaultProfile": "Plugins",
+        "srvCreated": 1793322049822,
+        "srvModified": 1793322049822,
+        "startDate": "2026-10-29T01:00:49Z",
+        "store": {
+          "Plugins": {
+            "basal": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 1
+              }
+            ],
+            "carbratio": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 10
+              }
+            ],
+            "carbs_hr": 20,
+            "delay": 20,
+            "dia": 3,
+            "sens": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 50
+              }
+            ],
+            "target_high": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 120
+              }
+            ],
+            "target_low": [
+              {
+                "time": "00:00",
+                "timeAsSeconds": 0,
+                "value": 100
+              }
+            ],
+            "timezone": "UTC",
+            "units": "mg/dl"
+          }
+        },
+        "units": "mg/dl"
+      }
+    ],
+    "sensorTreatments": [
+      {
+        "_id": "6ae3ec41349e459fe3dd974a",
+        "created_at": "2026-10-28T01:00:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Sensor Start",
+        "mgdl": 180,
+        "mills": 1793149249000,
+        "srvCreated": 1793322049862,
+        "srvModified": 1793322049862,
+        "utcOffset": 0
+      }
+    ],
     "sgvs": [],
-    "sitechangeTreatments": [],
+    "sitechangeTreatments": [
+      {
+        "_id": "6ae3ec41349e459fe3dd974b",
+        "created_at": "2026-10-29T01:00:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Site Change",
+        "mgdl": 180,
+        "mills": 1793235649000,
+        "srvCreated": 1793322049863,
+        "srvModified": 1793322049863,
+        "utcOffset": 0
+      }
+    ],
     "tempTargetTreatments": [],
-    "tempbasalTreatments": [],
-    "treatments": []
+    "tempbasalTreatments": [
+      {
+        "_id": "6ae3ec41349e459fe3dd9749",
+        "absolute": 0.5,
+        "created_at": "2026-10-30T00:55:49.000Z",
+        "duration": 30,
+        "endmills": 1793323549000,
+        "enteredBy": "plugin-test",
+        "eventType": "Temp Basal",
+        "mgdl": 180,
+        "mills": 1793321749000,
+        "rate": 0.5,
+        "srvCreated": 1793322049861,
+        "srvModified": 1793322049861,
+        "utcOffset": 0
+      }
+    ],
+    "treatments": [
+      {
+        "_id": "6ae3ec41349e459fe3dd974d",
+        "created_at": "2026-10-26T13:00:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Pump Battery Change",
+        "mgdl": 180,
+        "mills": 1793019649000,
+        "srvCreated": 1793322049865,
+        "srvModified": 1793322049865,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ae3ec41349e459fe3dd974c",
+        "created_at": "2026-10-27T01:00:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Insulin Change",
+        "mgdl": 180,
+        "mills": 1793062849000,
+        "srvCreated": 1793322049864,
+        "srvModified": 1793322049864,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ae3ec41349e459fe3dd974a",
+        "created_at": "2026-10-28T01:00:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Sensor Start",
+        "mgdl": 180,
+        "mills": 1793149249000,
+        "srvCreated": 1793322049862,
+        "srvModified": 1793322049862,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ae3ec41349e459fe3dd974b",
+        "created_at": "2026-10-29T01:00:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Site Change",
+        "mgdl": 180,
+        "mills": 1793235649000,
+        "srvCreated": 1793322049863,
+        "srvModified": 1793322049863,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ae3ec41349e459fe3dd9747",
+        "created_at": "2026-10-30T00:50:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Correction Bolus",
+        "insulin": 2,
+        "mgdl": 180,
+        "mills": 1793321449000,
+        "srvCreated": 1793322049859,
+        "srvModified": 1793322049859,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ae3ec41349e459fe3dd9748",
+        "carbs": 30,
+        "created_at": "2026-10-30T00:50:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Meal Bolus",
+        "insulin": 3,
+        "mgdl": 180,
+        "mills": 1793321449000,
+        "srvCreated": 1793322049860,
+        "srvModified": 1793322049860,
+        "utcOffset": 0
+      },
+      {
+        "_id": "6ae3ec41349e459fe3dd9749",
+        "absolute": 0.5,
+        "created_at": "2026-10-30T00:55:49.000Z",
+        "duration": 30,
+        "endmills": 1793323549000,
+        "enteredBy": "plugin-test",
+        "eventType": "Temp Basal",
+        "mgdl": 180,
+        "mills": 1793321749000,
+        "rate": 0.5,
+        "srvCreated": 1793322049861,
+        "srvModified": 1793322049861,
+        "utcOffset": 0
+      }
+    ]
   },
   "durationMs": 2
 }

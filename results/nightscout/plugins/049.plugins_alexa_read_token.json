@@ -1,0 +1,77 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/alexa?token=read-79d324a94dd6b41e",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "request": {
+        "intent": {
+          "name": "NSStatus"
+        },
+        "locale": "en-US",
+        "type": "IntentRequest"
+      },
+      "session": {
+        "new": true
+      },
+      "version": "1.0"
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "527"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:57 GMT"
+    ],
+    "Etag": [
+      "W/\"20f-OKOAS7hwccQ0o0rwSTXTAPE8I9s\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "response": {
+      "card": {
+        "content": "7.8 and slightly rising as of a few seconds ago. Your temp basal of 0.5 units per hour will end in 25 minutes and you have 1.20 units of insulin on board.",
+        "title": "Full Status",
+        "type": "Simple"
+      },
+      "outputSpeech": {
+        "text": "7.8 and slightly rising as of a few seconds ago. Your temp basal of 0.5 units per hour will end in 25 minutes and you have 1.20 units of insulin on board.",
+        "type": "PlainText"
+      },
+      "reprompt": {
+        "outputSpeech": {
+          "text": "",
+          "type": "PlainText"
+        }
+      },
+      "shouldEndSession": true
+    },
+    "version": "1.0"
+  },
+  "durationMs": 9
+}

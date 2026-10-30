@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/properties?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v2/properties?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,10 +22,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:55 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Etag": [
-      "W/\"6ba-JuM5U2tmNyqmhhP46gje4OXt8F0\""
+      "W/\"1bfc-Un1oaQvAWRVCXSv1ag1qiffgNjQ\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -43,6 +43,42 @@
         "avgLoss": 0,
         "predicted": []
       }
+    },
+    "bage": {
+      "age": 84,
+      "checkForAlert": false,
+      "days": 3,
+      "display": "3d12h",
+      "found": true,
+      "hours": 12,
+      "level": -3,
+      "minFractions": 0,
+      "treatmentDate": 1793019649000
+    },
+    "basal": {
+      "current": {
+        "basal": 1,
+        "combobolusbasal": 0,
+        "combobolustreatment": null,
+        "tempbasal": 0.5,
+        "totalbasal": 0.5,
+        "treatment": {
+          "_id": "6ae3ec41349e459fe3dd9749",
+          "absolute": 0.5,
+          "created_at": "2026-10-30T00:55:49.000Z",
+          "duration": 30,
+          "endmills": 1793323549000,
+          "enteredBy": "plugin-test",
+          "eventType": "Temp Basal",
+          "mgdl": 180,
+          "mills": 1793321749000,
+          "rate": 0.5,
+          "srvCreated": 1793322049861,
+          "srvModified": 1793322049861,
+          "utcOffset": 0
+        }
+      },
+      "display": "T: 0.500U"
     },
     "bgnow": {},
     "buckets": [
@@ -75,99 +111,396 @@
         "toMills": null
       }
     ],
+    "bwp": {
+      "bolusEstimate": 0,
+      "bolusEstimateDisplay": "0",
+      "displayIOB": "0",
+      "displayLine": "BWP: 0U",
+      "effect": 0,
+      "effectDisplay": "0",
+      "errors": [
+        "Data isn't current"
+      ],
+      "outcome": 0,
+      "outcomeDisplay": "0"
+    },
+    "cage": {
+      "age": 24,
+      "checkForAlert": false,
+      "days": 1,
+      "display": "24h",
+      "found": true,
+      "hours": 0,
+      "level": -3,
+      "minFractions": 0,
+      "treatmentDate": 1793235649000
+    },
+    "cob": {
+      "cob": 20,
+      "device": "openaps://plugin-test",
+      "display": 20,
+      "displayLine": "COB: 20g",
+      "mills": 1793321989000,
+      "source": "OpenAPS",
+      "treatmentCOB": 30
+    },
     "dbsize": {
       "dataPercentage": 0,
       "details": {
-        "dataSize": 0.22,
+        "dataSize": 0.25,
         "maxSize": 496
       },
       "display": "0%",
       "notificationLevel": 0,
       "status": "current",
-      "totalDataSize": 0.21994400024414062
+      "totalDataSize": 0.24606895446777344
+    },
+    "iage": {
+      "age": 72,
+      "days": 3,
+      "display": "3d0h",
+      "found": true,
+      "hours": 0,
+      "level": 2,
+      "minFractions": 0,
+      "treatmentDate": 1793062849000
+    },
+    "iob": {
+      "device": "loop://plugin-test",
+      "display": "1.20",
+      "displayLine": "IOB: 1.20U",
+      "iob": 1.2,
+      "mills": 1793321929000,
+      "source": "Loop",
+      "treatmentIob": 4.943
+    },
+    "loop": {
+      "display": {
+        "code": "enacted",
+        "label": "Enacted",
+        "symbol": "⌁"
+      },
+      "lastEnacted": {
+        "duration": 30,
+        "moment": "2026-10-30T00:58:49.000Z",
+        "rate": 0.5,
+        "received": true,
+        "timestamp": "2026-10-30T00:58:49Z"
+      },
+      "lastLoop": {
+        "cob": {
+          "cob": 15,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "enacted": {
+          "duration": 30,
+          "moment": "2026-10-30T00:58:49.000Z",
+          "rate": 0.5,
+          "received": true,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "iob": {
+          "iob": 1.2,
+          "timestamp": "2026-10-30T00:58:49Z"
+        },
+        "moment": "2026-10-30T00:58:49.000Z",
+        "name": "Loop",
+        "predicted": {
+          "startDate": "2026-10-30T00:58:49Z",
+          "values": [
+            140,
+            138,
+            135,
+            130
+          ]
+        },
+        "recommendedBolus": 0.2,
+        "timestamp": "2026-10-30T00:58:49Z",
+        "version": "3.4"
+      },
+      "lastOkMoment": "2026-10-30T00:58:49.000Z",
+      "lastOverride": null,
+      "lastPredicted": {
+        "startDate": "2026-10-30T00:58:49Z",
+        "values": [
+          140,
+          138,
+          135,
+          130
+        ]
+      }
     },
     "openaps": {
-      "lastEnacted": null,
-      "lastIOB": null,
-      "lastLoopMoment": "2026-06-16T08:41:55.000Z",
-      "lastMMTune": null,
-      "lastNotEnacted": {
+      "lastEnacted": {
+        "bg": 140,
         "duration": 30,
-        "moment": "2026-06-16T08:42:00.000Z",
-        "rate": 1.2,
-        "timestamp": "2026-06-16T08:42:00Z"
+        "moment": "2026-10-30T00:59:49.000Z",
+        "rate": 0.5,
+        "reason": "plugin test",
+        "received": true,
+        "temp": "absolute",
+        "timestamp": "2026-10-30T00:59:49Z"
       },
+      "lastEventualBG": 120,
+      "lastIOB": {
+        "basaliob": 0.5,
+        "iob": 1.5,
+        "moment": "2026-10-30T00:59:49.000Z",
+        "timestamp": "2026-10-30T00:59:49Z"
+      },
+      "lastLoopMoment": "2026-10-30T00:59:49.000Z",
+      "lastMMTune": null,
+      "lastNotEnacted": null,
       "lastPredBGs": null,
       "lastSuggested": {
+        "COB": 20,
+        "IOB": 1.5,
+        "bg": 140,
         "duration": 30,
-        "moment": "2026-06-16T08:41:55.000Z",
-        "rate": 1.2,
-        "reason": "Eventual BG 126",
-        "timestamp": "2026-06-16T08:41:55Z"
+        "eventualBG": 120,
+        "moment": "2026-10-30T00:59:49.000Z",
+        "rate": 0.5,
+        "reason": "plugin test",
+        "temp": "absolute",
+        "timestamp": "2026-10-30T00:59:49Z"
       },
       "seenDevices": {
-        "aaps": {
-          "name": "aaps",
+        "openaps://plugin-test": {
+          "name": "plugin-test",
           "status": {
-            "code": "waiting",
-            "label": "Waiting",
-            "symbol": "◉",
-            "when": "2026-10-21T21:19:54.000Z"
+            "code": "enacted",
+            "label": "Enacted",
+            "symbol": "⌁",
+            "when": "2026-10-30T00:59:49.000Z"
           },
-          "uri": "aaps"
+          "uri": "openaps://plugin-test"
         }
       },
       "status": {
-        "code": "warning",
-        "label": "Warning",
-        "symbol": "⚠"
+        "code": "enacted",
+        "label": "Enacted",
+        "symbol": "⌁"
       }
     },
+    "pump": {
+      "_id": "6ae3ec413259af060ec04549",
+      "clockMills": 1793321989000,
+      "created_at": "2026-10-30T00:59:49.000Z",
+      "data": {
+        "battery": {
+          "display": "75%",
+          "label": "Battery",
+          "level": -3,
+          "unit": "percent",
+          "value": 75
+        },
+        "clock": {
+          "display": "1m ago",
+          "label": "Last Clock",
+          "level": -3,
+          "value": "2026-10-30T00:59:49.000Z"
+        },
+        "device": {
+          "display": "openaps://plugin-test",
+          "label": "Device"
+        },
+        "extended": null,
+        "level": -3,
+        "reservoir": {
+          "display": "151U",
+          "label": "Reservoir",
+          "level": -3,
+          "value": 150.5
+        },
+        "reservoir_display_override": null,
+        "reservoir_level_override": null,
+        "status": {
+          "display": "normal",
+          "label": "Status",
+          "value": "normal"
+        },
+        "title": "Pump Status"
+      },
+      "device": "openaps://plugin-test",
+      "mills": 1793321989000,
+      "openaps": {
+        "enacted": {
+          "bg": 140,
+          "duration": 30,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "rate": 0.5,
+          "reason": "plugin test",
+          "received": true,
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "iob": {
+          "basaliob": 0.5,
+          "iob": 1.5,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "suggested": {
+          "COB": 20,
+          "IOB": 1.5,
+          "bg": 140,
+          "duration": 30,
+          "eventualBG": 120,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "rate": 0.5,
+          "reason": "plugin test",
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 75,
+          "voltage": 1.4
+        },
+        "clock": "2026-10-30T00:59:49Z",
+        "reservoir": 150.5,
+        "status": {
+          "bolusing": false,
+          "status": "normal",
+          "suspended": false
+        }
+      },
+      "srvCreated": 1793322049870,
+      "srvModified": 1793322049870,
+      "uploader": {
+        "battery": 55,
+        "display": "55%",
+        "level": 75,
+        "value": 55
+      },
+      "utcOffset": 0
+    },
+    "rawbg": {},
     "runtimestate": {
       "state": "loaded"
     },
+    "sage": {
+      "Sensor Change": {
+        "found": false
+      },
+      "Sensor Start": {
+        "age": 48,
+        "days": 2,
+        "display": "2d0h",
+        "displayLong": "2 days 0 hours",
+        "found": true,
+        "hours": 0,
+        "level": -3,
+        "minFractions": 0,
+        "treatmentDate": 1793149249000
+      },
+      "min": "Sensor Start"
+    },
+    "sensorState": {
+      "lastBatteryTimestamp": 1793318449867,
+      "lastCalType": "LeastSquaresRegression",
+      "lastCalibrationDate": 1793278849867,
+      "lastDevice": null,
+      "lastFiltered": 170000,
+      "lastIntercept": 30000,
+      "lastMode": "expired",
+      "lastNoise": 1,
+      "lastNoiseString": "Clean",
+      "lastResistance": 1000,
+      "lastRssi": -80,
+      "lastSessionStart": 1793149249867,
+      "lastSlope": 1000,
+      "lastState": 6,
+      "lastStateString": "OK",
+      "lastStateStringShort": "OK",
+      "lastStateTime": "2026-10-30T00:57:49.867Z",
+      "lastTemperature": 32,
+      "lastTxActivation": 1792890049867,
+      "lastTxId": "8XXXXX",
+      "lastTxStatus": 0,
+      "lastTxStatusString": "OK",
+      "lastTxStatusStringShort": "OK",
+      "lastUnfiltered": 170000,
+      "lastVoltageA": 310,
+      "lastVoltageB": 300,
+      "latest": {
+        "_id": "6ae3ec413259af060ec0454b",
+        "created_at": "2026-10-30T00:57:49.000Z",
+        "device": "xdripjs://plugin-test",
+        "mills": 1793321869000,
+        "srvCreated": 1793322049872,
+        "srvModified": 1793322049872,
+        "utcOffset": 0,
+        "xdripjs": {
+          "batteryTimestamp": 1793318449867,
+          "calType": "LeastSquaresRegression",
+          "filtered": 170000,
+          "intercept": 30000,
+          "lastCalibrationDate": 1793278849867,
+          "mode": "expired",
+          "noise": 1,
+          "noiseString": "Clean",
+          "resistance": 1000,
+          "rssi": -80,
+          "sessionStart": 1793149249867,
+          "slope": 1000,
+          "state": 6,
+          "stateString": "OK",
+          "stateStringShort": "OK",
+          "temperature": 32,
+          "timestamp": 1793321869867,
+          "txActivation": 1792890049867,
+          "txId": "8XXXXX",
+          "txStatus": 0,
+          "txStatusString": "OK",
+          "txStatusStringShort": "OK",
+          "unfiltered": 170000,
+          "voltagea": 310,
+          "voltageb": 300
+        }
+      },
+      "level": -3,
+      "seenDevices": {
+        "xdripjs://plugin-test": {
+          "name": "plugin-test",
+          "uri": "xdripjs://plugin-test"
+        }
+      }
+    },
     "upbat": {
       "devices": {
-        "aaps": {
+        "openaps://plugin-test": {
           "min": {
-            "battery": 87,
-            "batteryVoltage": 4.05,
-            "display": "87%",
+            "battery": 55,
+            "display": "55%",
             "level": 75,
-            "value": 87,
-            "voltage": 4.05,
-            "voltageDisplay": "4.050v"
+            "value": 55
           },
-          "name": "aaps",
+          "name": "plugin-test",
           "statuses": [
             {
-              "_id": "6ad92c7ab5c4915f41a3dc7a",
-              "created_at": "2026-10-21T21:19:54.000Z",
-              "mills": 1792617594000,
+              "_id": "6ae3ec413259af060ec04549",
+              "created_at": "2026-10-30T00:59:49.000Z",
+              "mills": 1793321989000,
               "uploader": {
-                "battery": 87,
-                "batteryVoltage": 4.05,
-                "display": "87%",
+                "battery": 55,
+                "display": "55%",
                 "level": 75,
-                "value": 87,
-                "voltage": 4.05,
-                "voltageDisplay": "4.050v"
+                "value": 55
               }
             }
           ],
-          "uri": "aaps"
+          "uri": "openaps://plugin-test"
         }
       },
-      "display": "87%",
+      "display": "55%",
       "level": 75,
       "min": {
-        "battery": 87,
-        "batteryVoltage": 4.05,
-        "display": "87%",
+        "battery": 55,
+        "display": "55%",
         "level": 75,
-        "value": 87,
-        "voltage": 4.05,
-        "voltageDisplay": "4.050v"
+        "value": 55
       },
       "status": "current"
     }

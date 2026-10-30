@@ -1,0 +1,216 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/pump,upbat,iob,cob,basal?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"a42-lRKtWwH4/esaloV8b2VsobPAbrA\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "basal": {
+      "current": {
+        "basal": 1,
+        "combobolusbasal": 0,
+        "combobolustreatment": null,
+        "tempbasal": 0.5,
+        "totalbasal": 0.5,
+        "treatment": {
+          "_id": "6ae3ec41349e459fe3dd9749",
+          "absolute": 0.5,
+          "created_at": "2026-10-30T00:55:49.000Z",
+          "duration": 30,
+          "endmills": 1793323549000,
+          "enteredBy": "plugin-test",
+          "eventType": "Temp Basal",
+          "mgdl": 125,
+          "mills": 1793321749000,
+          "rate": 0.5,
+          "srvCreated": 1793322049861,
+          "srvModified": 1793322049861,
+          "utcOffset": 0
+        }
+      },
+      "display": "T: 0.500U"
+    },
+    "cob": {
+      "cob": 20,
+      "device": "openaps://plugin-test",
+      "display": 20,
+      "displayLine": "COB: 20g",
+      "mills": 1793321989000,
+      "source": "OpenAPS",
+      "treatmentCOB": 30
+    },
+    "iob": {
+      "device": "loop://plugin-test",
+      "display": "1.20",
+      "displayLine": "IOB: 1.20U",
+      "iob": 1.2,
+      "mills": 1793321929000,
+      "source": "Loop",
+      "treatmentIob": 4.944
+    },
+    "pump": {
+      "_id": "6ae3ec413259af060ec04549",
+      "clockMills": 1793321989000,
+      "created_at": "2026-10-30T00:59:49.000Z",
+      "data": {
+        "battery": {
+          "display": "75%",
+          "label": "Battery",
+          "level": -3,
+          "unit": "percent",
+          "value": 75
+        },
+        "clock": {
+          "display": "1m ago",
+          "label": "Last Clock",
+          "level": -3,
+          "value": "2026-10-30T00:59:49.000Z"
+        },
+        "device": {
+          "display": "openaps://plugin-test",
+          "label": "Device"
+        },
+        "extended": null,
+        "level": -3,
+        "reservoir": {
+          "display": "151U",
+          "label": "Reservoir",
+          "level": -3,
+          "value": 150.5
+        },
+        "reservoir_display_override": null,
+        "reservoir_level_override": null,
+        "status": {
+          "display": "normal",
+          "label": "Status",
+          "value": "normal"
+        },
+        "title": "Pump Status"
+      },
+      "device": "openaps://plugin-test",
+      "mills": 1793321989000,
+      "openaps": {
+        "enacted": {
+          "bg": 140,
+          "duration": 30,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "rate": 0.5,
+          "reason": "plugin test",
+          "received": true,
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "iob": {
+          "basaliob": 0.5,
+          "iob": 1.5,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "suggested": {
+          "COB": 20,
+          "IOB": 1.5,
+          "bg": 140,
+          "duration": 30,
+          "eventualBG": 120,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "rate": 0.5,
+          "reason": "plugin test",
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 75,
+          "voltage": 1.4
+        },
+        "clock": "2026-10-30T00:59:49Z",
+        "reservoir": 150.5,
+        "status": {
+          "bolusing": false,
+          "status": "normal",
+          "suspended": false
+        }
+      },
+      "srvCreated": 1793322049870,
+      "srvModified": 1793322049870,
+      "uploader": {
+        "battery": 55,
+        "display": "55%",
+        "level": 75,
+        "value": 55
+      },
+      "utcOffset": 0
+    },
+    "upbat": {
+      "devices": {
+        "openaps://plugin-test": {
+          "min": {
+            "battery": 55,
+            "display": "55%",
+            "level": 75,
+            "value": 55
+          },
+          "name": "plugin-test",
+          "statuses": [
+            {
+              "_id": "6ae3ec413259af060ec04549",
+              "created_at": "2026-10-30T00:59:49.000Z",
+              "mills": 1793321989000,
+              "uploader": {
+                "battery": 55,
+                "display": "55%",
+                "level": 75,
+                "value": 55
+              }
+            }
+          ],
+          "uri": "openaps://plugin-test"
+        }
+      },
+      "display": "55%",
+      "level": 75,
+      "min": {
+        "battery": 55,
+        "display": "55%",
+        "level": 75,
+        "value": 55
+      },
+      "status": "current"
+    }
+  },
+  "durationMs": 2
+}

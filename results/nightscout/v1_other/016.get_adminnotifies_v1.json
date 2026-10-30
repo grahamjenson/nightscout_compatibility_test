@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/adminnotifies?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v1/adminnotifies?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,10 +25,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"2d5-1sxZEu1JHDmwOvfzIDnDo21Qh8w\""
+      "W/\"2d5-8SYGsejc52hy9nG0zrooT9QMngM\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -45,14 +45,14 @@
       "notifies": [
         {
           "count": 1,
-          "lastRecorded": 1792617975455,
+          "lastRecorded": 1793322043664,
           "message": "Weak API_SECRET detected. Please use a mix of small and CAPITAL letters, numbers and non-alphanumeric characters such as !#%&/ to reduce the risk of unauthorized access. The minimum length of the API_SECRET is 12 characters.",
           "persistent": true,
           "title": "Security issue"
         },
         {
           "count": 1,
-          "lastRecorded": 1792617975463,
+          "lastRecorded": 1793322043671,
           "message": "Your Nightscout installation is readable by anyone who knows the web page URL. Please consider closing access by following the Nightscout documentation: https://nightscout.github.io/nightscout/security/#how-to-turn-off-unauthorized-access",
           "persistent": true,
           "title": "Nightscout readable by world"

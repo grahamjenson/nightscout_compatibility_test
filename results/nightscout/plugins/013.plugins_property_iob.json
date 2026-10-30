@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/iob?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "152"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"98-yLC5xSuDu0O0rpK5SLST0vH4ORU\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "iob": {
+      "device": "loop://plugin-test",
+      "display": "1.20",
+      "displayLine": "IOB: 1.20U",
+      "iob": 1.2,
+      "mills": 1793321929000,
+      "source": "Loop",
+      "treatmentIob": 4.944
+    }
+  },
+  "durationMs": 1
+}

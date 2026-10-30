@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/entries?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,7 +22,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:20:00 GMT"
+      "Fri, 30 Oct 2026 01:01:03 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -39,13 +39,8 @@
   },
   "body": {
     "error": {
-      "body": "{\"}",
-      "expose": true,
       "message": "Unterminated string in JSON at position 3 (line 1 column 4)",
-      "stack": "SyntaxError: Unterminated string in JSON at position 3 (line 1 column 4)\n    at JSON.parse (\u003canonymous\u003e)\n    at parse (/opt/app/node_modules/body-parser/lib/types/json.js:92:19)\n    at /opt/app/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (/opt/app/node_modules/raw-body/index.js:238:16)\n    at done (/opt/app/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/opt/app/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:519:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)",
-      "status": 400,
-      "statusCode": 400,
-      "type": "entity.parse.failed"
+      "status": 400
     }
   },
   "durationMs": 2

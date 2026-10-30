@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -16,37 +16,44 @@
     },
     "body": {
       "app": "AndroidAPS",
-      "created_at": "2026-10-22T10:14:54+13:00",
+      "created_at": "2026-10-30T00:55:58Z",
       "eventType": "Correction Bolus",
       "glucose": 13.5,
       "insulin": 1.4,
       "notes": "High glucose correction"
     }
   },
-  "statusCode": 400,
+  "statusCode": 201,
   "headers": {
     "Connection": [
       "keep-alive"
     ],
     "Content-Length": [
-      "70"
+      "95"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
+    ],
+    "Last-Modified": [
+      "Fri, 30 Oct 2026 01:00:58 GMT"
+    ],
+    "Location": [
+      "/api/v3/treatments/281b03a8-c3a6-59a5-ad56-68c99503b0de"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "message": "Field date cannot be modified by the client",
-    "status": 400
+    "identifier": "281b03a8-c3a6-59a5-ad56-68c99503b0de",
+    "lastModified": 1793322058093,
+    "status": 201
   },
-  "durationMs": 1
+  "durationMs": 3
 }

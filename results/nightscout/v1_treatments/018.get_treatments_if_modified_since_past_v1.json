@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments.json?token=write-4d6054505d826635&count=1",
+    "url": "http://localhost:1337/api/v1/treatments.json?token=write-a1552de38f339aba&count=1",
     "headers": {
       "Accept": [
         "application/json"
@@ -11,7 +11,7 @@
         "application/json"
       ],
       "If-Modified-Since": [
-        "Tue, 20 Oct 2026 21:26:22 GMT"
+        "Thu, 29 Oct 2026 01:00:57 GMT"
       ]
     },
     "body": null
@@ -22,22 +22,22 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "225"
+      "280"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"e1-gN8eH9B55T1+9nfHhTzySuBnN9E\""
+      "W/\"118-GoeA67T72etFoM7ZnFtjVSCPKQ0\""
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Vary": [
       "Accept-Encoding"
@@ -48,15 +48,17 @@
   },
   "body": [
     {
-      "_id": "6ad92dfe6b4f3a493ba54407",
+      "_id": "6ae3ec49349e459fe3dd9823",
       "carbs": 1,
-      "created_at": "2026-10-21T21:26:22.000Z",
+      "created_at": "2026-10-30T01:00:57.000Z",
       "eventType": "Meal Bolus",
       "identifier": "treatmentv1t1",
       "insulin": null,
       "notes": "updated by update_put_root_treatments_noid_v1",
+      "srvCreated": 1793322057515,
+      "srvModified": 1793322057515,
       "utcOffset": 0
     }
   ],
-  "durationMs": 2
+  "durationMs": 4
 }

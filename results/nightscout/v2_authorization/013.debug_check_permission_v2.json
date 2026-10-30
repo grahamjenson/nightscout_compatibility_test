@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/authorization/debug/check/api:entries:read?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v2/authorization/debug/check/api:entries:read?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:23 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Etag": [
       "W/\"e-ClTWm/mn99wZcRpUos7szIA0MMQ\""
@@ -43,5 +43,5 @@
   "body": {
     "check": true
   },
-  "durationMs": 2
+  "durationMs": 1
 }

@@ -1,0 +1,68 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/googlehome?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": {
+      "queryResult": {
+        "intent": {
+          "displayName": "LastLoop"
+        },
+        "languageCode": "en",
+        "parameters": {}
+      }
+    }
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "159"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:57 GMT"
+    ],
+    "Etag": [
+      "W/\"9f-rroNUyx9ne/k83gz3nodOZE1u5g\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "payload": {
+      "google": {
+        "expectUserResponse": false,
+        "richResponse": {
+          "items": [
+            {
+              "simpleResponse": {
+                "textToSpeech": "The last successful loop was 2 minutes ago"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "durationMs": 1
+}

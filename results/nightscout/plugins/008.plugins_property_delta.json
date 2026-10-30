@@ -1,0 +1,78 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/delta?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "438"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"1b6-yoqUzUJRAbPDHOKoLBtlxslq0NU\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "delta": {
+      "absolute": 10,
+      "display": "+0.6",
+      "elapsedMins": 5,
+      "interpolated": false,
+      "mean5MinsAgo": 130,
+      "mgdl": 10,
+      "previous": {
+        "last": 130,
+        "mean": 130,
+        "mills": 1793321749835,
+        "sgvs": [
+          {
+            "_id": "6ae3ec41349e459fe3dd9743",
+            "device": "plugin-test",
+            "direction": "FortyFiveUp",
+            "filtered": 160000,
+            "mgdl": 130,
+            "mills": 1793321749835,
+            "noise": 1,
+            "scaled": "7.2",
+            "type": "sgv",
+            "unfiltered": 160000
+          }
+        ]
+      },
+      "scaled": 0.6,
+      "times": {
+        "previous": 1793321749835,
+        "recent": 1793322049835
+      }
+    }
+  },
+  "durationMs": 2
+}

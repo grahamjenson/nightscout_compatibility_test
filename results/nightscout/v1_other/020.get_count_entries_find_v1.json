@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/count/entries/where?token=write-4d6054505d826635&find[sgv][$gte]=100",
+    "url": "http://localhost:1337/api/v1/count/entries/where?token=write-a1552de38f339aba&find[sgv][$gte]=100",
     "headers": {
       "Accept": [
         "application/json"
@@ -19,16 +19,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "2"
+      "24"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+      "W/\"18-wxlVNjBFjhvWqsaEMy8WUajIDhA\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -40,6 +40,11 @@
       "Express"
     ]
   },
-  "body": [],
-  "durationMs": 3
+  "body": [
+    {
+      "_id": null,
+      "count": 2
+    }
+  ],
+  "durationMs": 2
 }

@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries?token=write-2fa396b791909491",
+    "url": "http://localhost:1337/api/v1/entries?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -13,25 +13,25 @@
     },
     "body": [
       {
-        "date": 1792694910541,
+        "date": 1793321171015,
         "device": "alarm-test",
         "sgv": 90,
         "type": "sgv"
       },
       {
-        "date": 1792695210541,
+        "date": 1793321471015,
         "device": "alarm-test",
         "sgv": 82,
         "type": "sgv"
       },
       {
-        "date": 1792695510541,
+        "date": 1793321771015,
         "device": "alarm-test",
         "sgv": 75,
         "type": "sgv"
       },
       {
-        "date": 1792695810541,
+        "date": 1793322071015,
         "device": "alarm-test",
         "sgv": 70,
         "type": "sgv"
@@ -44,16 +44,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "605"
+      "825"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Thu, 22 Oct 2026 19:03:30 GMT"
+      "Fri, 30 Oct 2026 01:01:11 GMT"
     ],
     "Etag": [
-      "W/\"25d-t860YjwNShfZstsgTCh9WxrJIBo\""
+      "W/\"339-Jio5JCrm11K6w969go0ydKBhm7k\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -67,41 +67,49 @@
   },
   "body": [
     {
-      "_id": "6ada5e0297dd4aa50969eb2e",
-      "date": 1792694910541,
+      "_id": "6ae3ec57349e459fe3dd9a90",
+      "date": 1793321171015,
       "device": "alarm-test",
       "sgv": 90,
-      "sysTime": "2026-10-22T18:48:30.541Z",
+      "srvCreated": 1793322071016,
+      "srvModified": 1793322071016,
+      "sysTime": "2026-10-30T00:46:11.015Z",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "6ada5e0297dd4aa50969eb2f",
-      "date": 1792695210541,
+      "_id": "6ae3ec57349e459fe3dd9a91",
+      "date": 1793321471015,
       "device": "alarm-test",
       "sgv": 82,
-      "sysTime": "2026-10-22T18:53:30.541Z",
+      "srvCreated": 1793322071017,
+      "srvModified": 1793322071017,
+      "sysTime": "2026-10-30T00:51:11.015Z",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "6ada5e0297dd4aa50969eb30",
-      "date": 1792695510541,
+      "_id": "6ae3ec57349e459fe3dd9a92",
+      "date": 1793321771015,
       "device": "alarm-test",
       "sgv": 75,
-      "sysTime": "2026-10-22T18:58:30.541Z",
+      "srvCreated": 1793322071018,
+      "srvModified": 1793322071018,
+      "sysTime": "2026-10-30T00:56:11.015Z",
       "type": "sgv",
       "utcOffset": 0
     },
     {
-      "_id": "6ada5e0297dd4aa50969eb31",
-      "date": 1792695810541,
+      "_id": "6ae3ec57349e459fe3dd9a93",
+      "date": 1793322071015,
       "device": "alarm-test",
       "sgv": 70,
-      "sysTime": "2026-10-22T19:03:30.541Z",
+      "srvCreated": 1793322071019,
+      "srvModified": 1793322071019,
+      "sysTime": "2026-10-30T01:01:11.015Z",
       "type": "sgv",
       "utcOffset": 0
     }
   ],
-  "durationMs": 8
+  "durationMs": 3
 }

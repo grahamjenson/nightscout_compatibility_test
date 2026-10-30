@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/entries/preview?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v1/entries/preview?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -13,7 +13,7 @@
     },
     "body": [
       {
-        "date": 1792617981809,
+        "date": 1793322057261,
         "device": "preview-test",
         "direction": "Flat",
         "sgv": 111,
@@ -33,10 +33,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:21 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"5a-uyKrD6X08He8UXvRA+3guPfwgyE\""
+      "W/\"5a-AAB0KikVP+nxZkkhenwXAtHdSbc\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -50,7 +50,7 @@
   },
   "body": [
     {
-      "date": 1792617981809,
+      "date": 1793322057261,
       "device": "preview-test",
       "direction": "Flat",
       "sgv": 111,

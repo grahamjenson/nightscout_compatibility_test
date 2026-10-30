@@ -1,0 +1,154 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": [
+      {
+        "created_at": "2026-10-30T00:50:49Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Correction Bolus",
+        "insulin": 2
+      },
+      {
+        "carbs": 30,
+        "created_at": "2026-10-30T00:50:49Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Meal Bolus",
+        "insulin": 3
+      },
+      {
+        "absolute": 0.5,
+        "created_at": "2026-10-30T00:55:49Z",
+        "duration": 30,
+        "enteredBy": "plugin-test",
+        "eventType": "Temp Basal",
+        "rate": 0.5
+      },
+      {
+        "created_at": "2026-10-28T01:00:49Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Sensor Start"
+      },
+      {
+        "created_at": "2026-10-29T01:00:49Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Site Change"
+      },
+      {
+        "created_at": "2026-10-27T01:00:49Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Insulin Change"
+      },
+      {
+        "created_at": "2026-10-26T13:00:49Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Pump Battery Change"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:49 GMT"
+    ],
+    "Etag": [
+      "W/\"5b7-vrcWobeXFwxJYZ4RyJfFaIxEh7Q\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": [
+    {
+      "_id": "6ae3ec41349e459fe3dd9747",
+      "created_at": "2026-10-30T00:50:49.000Z",
+      "enteredBy": "plugin-test",
+      "eventType": "Correction Bolus",
+      "insulin": 2,
+      "srvCreated": 1793322049859,
+      "srvModified": 1793322049859,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd9748",
+      "carbs": 30,
+      "created_at": "2026-10-30T00:50:49.000Z",
+      "enteredBy": "plugin-test",
+      "eventType": "Meal Bolus",
+      "insulin": 3,
+      "srvCreated": 1793322049860,
+      "srvModified": 1793322049860,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd9749",
+      "absolute": 0.5,
+      "created_at": "2026-10-30T00:55:49.000Z",
+      "duration": 30,
+      "enteredBy": "plugin-test",
+      "eventType": "Temp Basal",
+      "rate": 0.5,
+      "srvCreated": 1793322049861,
+      "srvModified": 1793322049861,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd974a",
+      "created_at": "2026-10-28T01:00:49.000Z",
+      "enteredBy": "plugin-test",
+      "eventType": "Sensor Start",
+      "srvCreated": 1793322049862,
+      "srvModified": 1793322049862,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd974b",
+      "created_at": "2026-10-29T01:00:49.000Z",
+      "enteredBy": "plugin-test",
+      "eventType": "Site Change",
+      "srvCreated": 1793322049863,
+      "srvModified": 1793322049863,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd974c",
+      "created_at": "2026-10-27T01:00:49.000Z",
+      "enteredBy": "plugin-test",
+      "eventType": "Insulin Change",
+      "srvCreated": 1793322049864,
+      "srvModified": 1793322049864,
+      "utcOffset": 0
+    },
+    {
+      "_id": "6ae3ec41349e459fe3dd974d",
+      "created_at": "2026-10-26T13:00:49.000Z",
+      "enteredBy": "plugin-test",
+      "eventType": "Pump Battery Change",
+      "srvCreated": 1793322049865,
+      "srvModified": 1793322049865,
+      "utcOffset": 0
+    }
+  ],
+  "durationMs": 17
+}

@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/pebble?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/pebble?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,7 +22,7 @@
       "application/json"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -39,7 +39,7 @@
     "cals": [],
     "status": [
       {
-        "now": 1792617982160
+        "now": 1793322057643
       }
     ]
   },

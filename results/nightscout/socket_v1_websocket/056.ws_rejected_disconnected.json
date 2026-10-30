@@ -10,5 +10,5 @@
   },
   "statusCode": 200,
   "body": "io server disconnect",
-  "durationMs": 1
+  "durationMs": 0
 }

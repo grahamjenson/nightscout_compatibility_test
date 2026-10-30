@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:55 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -37,132 +37,190 @@
   "body": {
     "result": [
       {
-        "created_at": "2026-10-21T20:49:54.000Z",
+        "created_at": "2026-10-30T00:30:57.000Z",
         "eventType": "Calibration",
         "glucose": 6.2,
         "glucoseType": "Finger",
-        "identifier": "6ad92c7a35fb876db084a323",
-        "srvCreated": 1792615794000,
-        "srvModified": 1792615794000,
-        "utcOffset": 780
+        "identifier": "6ae3ec49349e459fe3dd9814",
+        "srvCreated": 1793322057499,
+        "srvModified": 1793322057499,
+        "utcOffset": 0
       },
       {
-        "created_at": "2026-10-21T21:04:54.000Z",
+        "created_at": "2026-10-30T00:45:57.000Z",
         "eventType": "Correction Bolus",
         "glucose": 13.7,
-        "identifier": "6ad92c7a35fb876db084a2f6",
+        "identifier": "6ae3ec49349e459fe3dd97e6",
         "insulin": 1.4,
-        "srvCreated": 1792616694000,
-        "srvModified": 1792616694000,
-        "utcOffset": 780
+        "srvCreated": 1793322057449,
+        "srvModified": 1793322057449,
+        "utcOffset": 0
       },
       {
         "carbs": 48,
-        "created_at": "2026-10-21T21:07:54.000Z",
+        "created_at": "2026-10-30T00:48:57.000Z",
         "eventType": "Bolus Wizard",
         "glucose": 9.1,
         "glucoseType": "Finger",
-        "identifier": "6ad92c7a35fb876db084a2f3",
+        "identifier": "6ae3ec49349e459fe3dd97e3",
         "insulin": 4.2,
-        "srvCreated": 1792616874000,
-        "srvModified": 1792616874000,
-        "utcOffset": 780
+        "srvCreated": 1793322057446,
+        "srvModified": 1793322057446,
+        "utcOffset": 0
       },
       {
-        "created_at": "2026-10-21T21:08:54.000Z",
+        "created_at": "2026-10-30T00:49:57.000Z",
         "eventType": "BG Check",
         "glucose": 6.8,
         "glucoseType": "Finger",
-        "identifier": "6ad92c7a35fb876db084a2f2",
-        "srvCreated": 1792616934000,
-        "srvModified": 1792616934000,
-        "utcOffset": 780
+        "identifier": "6ae3ec49349e459fe3dd97e2",
+        "srvCreated": 1793322057445,
+        "srvModified": 1793322057445,
+        "utcOffset": 0
       },
       {
         "carbs": 70,
-        "created_at": "2026-10-21T21:13:54.000Z",
+        "created_at": "2026-10-30T00:54:57.000Z",
         "eventType": "Bolus Wizard",
         "glucose": 11.7,
         "glucoseType": "Finger",
-        "identifier": "6ad92c7a35fb876db084a30c",
+        "identifier": "6ae3ec49349e459fe3dd97fd",
         "insulin": 7.8,
         "notes": "Suggested by pump wizard",
-        "srvCreated": 1792617234000,
-        "srvModified": 1792617234000,
-        "utcOffset": 780
+        "srvCreated": 1793322057475,
+        "srvModified": 1793322057475,
+        "utcOffset": 0
       },
       {
-        "created_at": "2026-10-21T21:14:54.000Z",
+        "created_at": "2026-10-30T00:55:57.000Z",
         "eventType": "Correction Bolus",
         "glucose": 13.2,
         "glucoseType": "Sensor",
-        "identifier": "6ad92c7a35fb876db084a30b",
+        "identifier": "6ae3ec49349e459fe3dd97fc",
         "insulin": 1.3,
-        "srvCreated": 1792617294000,
-        "srvModified": 1792617294000,
-        "utcOffset": 780
+        "srvCreated": 1793322057474,
+        "srvModified": 1793322057474,
+        "utcOffset": 0
       },
       {
-        "created_at": "2026-10-21T21:18:54.000Z",
+        "created_at": "2026-10-30T00:59:57.000Z",
         "eventType": "BG Check",
         "glucose": 5.8,
         "glucoseType": "Finger",
-        "identifier": "6ad92c7a35fb876db084a307",
-        "srvCreated": 1792617534000,
-        "srvModified": 1792617534000,
+        "identifier": "6ae3ec49349e459fe3dd97f8",
+        "srvCreated": 1793322057470,
+        "srvModified": 1793322057470,
         "units": "mmol",
-        "utcOffset": 780
+        "utcOffset": 0
+      },
+      {
+        "app": "Carer",
+        "created_at": "2026-10-30T00:59:58.000Z",
+        "date": 1793321998000,
+        "eventType": "BG Check",
+        "glucose": 5.8,
+        "glucoseType": "Sensor",
+        "identifier": "0bdd453d-9c96-52b2-ace5-9507a3756da1",
+        "notes": "Routine glucose check",
+        "srvCreated": 1793322058078,
+        "srvModified": 1793322058078,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "app": "AndroidAPS",
+        "created_at": "2026-10-30T00:55:58.000Z",
+        "date": 1793321758000,
+        "eventType": "Correction Bolus",
+        "glucose": 13.5,
+        "identifier": "281b03a8-c3a6-59a5-ad56-68c99503b0de",
+        "insulin": 1.4,
+        "notes": "High glucose correction",
+        "srvCreated": 1793322058093,
+        "srvModified": 1793322058093,
+        "subject": "write",
+        "utcOffset": 0
       },
       {
         "absolute": null,
         "app": "asd",
         "carbs": 45,
-        "created_at": "2026-10-21T21:19:53.000Z",
-        "date": 1792617593000,
+        "created_at": "2026-10-30T01:00:49.000Z",
+        "date": 1793322049000,
         "duration": 0,
         "enteredBy": "aaps-loop",
         "eventType": "Meal Bolus",
         "glucose": 90,
         "glucoseType": "Sensor",
-        "identifier": "cbc957e4-7b3d-572b-abd6-ab519a195fae",
+        "identifier": "3a7cc6a3-6197-5a97-9191-a2cfb75daa7d",
         "insulin": 4.2,
         "notes": "Lunch pasta + insulin pre-bolus",
         "percentage": 10,
         "reason": "lunch",
-        "srvCreated": 1792617594844,
-        "srvModified": 1792617594844,
+        "srvCreated": 1793322058034,
+        "srvModified": 1793322058034,
         "subject": "write",
         "targetBottom": 85,
         "targetTop": 110,
         "treatments": "treatments_1",
-        "utcOffset": 780
+        "utcOffset": 0
       },
       {
         "absolute": null,
         "app": "asd",
         "carbs": 45,
-        "created_at": "2026-10-21T21:19:54.000Z",
-        "date": 1792617594000,
+        "created_at": "2026-10-30T01:00:58.000Z",
+        "date": 1793322058000,
         "duration": 0,
         "enteredBy": "aaps-loop",
         "eventType": "Temp Basal",
         "glucose": 100,
         "glucoseType": "Sensor",
-        "identifier": "cbc957e4-7b3d-572b-abd6-ab519a195faecustom",
+        "identifier": "3a7cc6a3-6197-5a97-9191-a2cfb75daa7dcustom",
         "insulin": 4.2,
         "notes": "Lunch pasta + insulin pre-bolus",
         "percentage": 10,
         "reason": "lunch",
-        "srvCreated": 1792617594848,
-        "srvModified": 1792617594848,
+        "srvCreated": 1793322058037,
+        "srvModified": 1793322058037,
         "subject": "write",
         "targetBottom": 85,
         "targetTop": 110,
         "treatments": "treatments_1",
-        "utcOffset": 780
+        "utcOffset": 0
+      },
+      {
+        "app": "Carer",
+        "created_at": "2026-10-30T00:58:58.000Z",
+        "date": 1793321938000,
+        "eventType": "BG Check",
+        "glucose": 6.4,
+        "glucoseType": "Finger",
+        "identifier": "74575ba0-ce5d-5825-ba56-26af2b8ece75",
+        "notes": "Fingerstick confirmation",
+        "srvCreated": 1793322058082,
+        "srvModified": 1793322058082,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "app": "Pump",
+        "carbs": 75,
+        "created_at": "2026-10-30T00:54:58.000Z",
+        "date": 1793321698000,
+        "eventType": "Bolus Wizard",
+        "glucose": 9.2,
+        "identifier": "e45075c0-6523-5245-9396-9bdfb37b8481",
+        "insulin": 7.5,
+        "insulinOnBoard": 1.1,
+        "notes": "Wizard calculation",
+        "srvCreated": 1793322058097,
+        "srvModified": 1793322058097,
+        "subject": "write",
+        "utcOffset": 0
       }
     ],
     "status": 200
   },
-  "durationMs": 4
+  "durationMs": 5
 }

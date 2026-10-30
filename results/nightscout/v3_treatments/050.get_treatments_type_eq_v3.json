@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -25,7 +25,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:55 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -38,85 +38,112 @@
     "result": [
       {
         "absolute": 1.2,
-        "created_at": "2026-10-21T21:08:54.000Z",
+        "created_at": "2026-10-30T00:49:57.000Z",
         "duration": 120,
         "eventType": "Temp Basal",
-        "identifier": "6ad92c7a35fb876db084a311",
+        "identifier": "6ae3ec49349e459fe3dd9802",
         "rate": 1.2,
-        "srvCreated": 1792616934000,
-        "srvModified": 1792616934000,
-        "utcOffset": 780
+        "srvCreated": 1793322057480,
+        "srvModified": 1793322057480,
+        "utcOffset": 0
       },
       {
-        "created_at": "2026-10-21T21:09:54.000Z",
+        "created_at": "2026-10-30T00:50:57.000Z",
         "duration": 90,
         "eventType": "Temp Basal",
-        "identifier": "6ad92c7a35fb876db084a310",
+        "identifier": "6ae3ec49349e459fe3dd9801",
         "percent": 50,
-        "srvCreated": 1792616994000,
-        "srvModified": 1792616994000,
-        "utcOffset": 780
+        "srvCreated": 1793322057479,
+        "srvModified": 1793322057479,
+        "utcOffset": 0
       },
       {
         "absolute": 0.45,
-        "created_at": "2026-10-21T21:10:54.000Z",
+        "created_at": "2026-10-30T00:51:57.000Z",
         "duration": 30,
         "eventType": "Temp Basal",
-        "identifier": "6ad92c7a35fb876db084a30f",
-        "srvCreated": 1792617054000,
-        "srvModified": 1792617054000,
-        "utcOffset": 780
+        "identifier": "6ae3ec49349e459fe3dd9800",
+        "srvCreated": 1793322057478,
+        "srvModified": 1793322057478,
+        "utcOffset": 0
       },
       {
         "absolute": 0.35,
-        "created_at": "2026-10-21T21:15:54.000Z",
+        "created_at": "2026-10-30T00:56:57.000Z",
         "duration": 60,
         "eventType": "Temp Basal",
-        "identifier": "6ad92c7a35fb876db084a304",
-        "srvCreated": 1792617354000,
-        "srvModified": 1792617354000,
-        "utcOffset": 780
+        "identifier": "6ae3ec49349e459fe3dd97f4",
+        "srvCreated": 1793322057463,
+        "srvModified": 1793322057463,
+        "utcOffset": 0
       },
       {
-        "absolute": 0.4,
         "app": "AndroidAPS",
-        "created_at": "2026-10-21T21:11:54.000Z",
-        "date": 1792617114000,
-        "duration": 60,
+        "created_at": "2026-10-30T00:51:58.000Z",
+        "date": 1793321518000,
+        "duration": 90,
         "eventType": "Temp Basal",
-        "identifier": "02ae0e9f-af8f-5dac-870f-d6581f8e6822",
-        "reason": "Exercise",
-        "srvCreated": 1792617594895,
-        "srvModified": 1792617594895,
+        "identifier": "0536eccc-bfab-57ea-ae7f-f81045b10ac4",
+        "percent": -50,
+        "reason": "Activity",
+        "srvCreated": 1793322058111,
+        "srvModified": 1793322058111,
         "subject": "write",
-        "utcOffset": 780
+        "utcOffset": 0
       },
       {
         "absolute": null,
         "app": "asd",
         "carbs": 45,
-        "created_at": "2026-10-21T21:19:54.000Z",
-        "date": 1792617594000,
+        "created_at": "2026-10-30T01:00:58.000Z",
+        "date": 1793322058000,
         "duration": 0,
         "enteredBy": "aaps-loop",
         "eventType": "Temp Basal",
         "glucose": 100,
         "glucoseType": "Sensor",
-        "identifier": "cbc957e4-7b3d-572b-abd6-ab519a195faecustom",
+        "identifier": "3a7cc6a3-6197-5a97-9191-a2cfb75daa7dcustom",
         "insulin": 4.2,
         "notes": "Lunch pasta + insulin pre-bolus",
         "percentage": 10,
         "reason": "lunch",
-        "srvCreated": 1792617594848,
-        "srvModified": 1792617594848,
+        "srvCreated": 1793322058037,
+        "srvModified": 1793322058037,
         "subject": "write",
         "targetBottom": 85,
         "targetTop": 110,
         "treatments": "treatments_1",
-        "utcOffset": 780
+        "utcOffset": 0
+      },
+      {
+        "app": "asd",
+        "created_at": "2026-10-30T00:56:58.000Z",
+        "date": 1793321818000,
+        "eventType": "Temp Basal",
+        "identifier": "cde78921-05ee-5226-ac67-ab78ec1cf0fc",
+        "insulin": 2,
+        "reason": "4",
+        "srvCreated": 1793322058052,
+        "srvModified": 1793322058052,
+        "subject": "write",
+        "utcOffset": 0
+      },
+      {
+        "absolute": 0.4,
+        "app": "AndroidAPS",
+        "created_at": "2026-10-30T00:52:58.000Z",
+        "date": 1793321578000,
+        "duration": 60,
+        "eventType": "Temp Basal",
+        "identifier": "f95c1f6d-9268-5a18-b974-faa85896c2ca",
+        "reason": "Exercise",
+        "srvCreated": 1793322058105,
+        "srvModified": 1793322058105,
+        "subject": "write",
+        "utcOffset": 0
       }
     ],
     "status": 200
   },
-  "durationMs": 2
+  "durationMs": 3
 }

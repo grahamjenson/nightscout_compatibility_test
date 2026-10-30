@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/food?token=write-4d6054505d826635&find[_id]=6ad92dfd4fc2f9571e953ce5",
+    "url": "http://localhost:1337/api/v1/food?token=write-a1552de38f339aba&find[_id]=6ae3ec493259af060ec0455a",
     "headers": {
       "Accept": [
         "application/json"
@@ -19,16 +19,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "668"
+      "888"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:21 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"29c-nh4v2RtwdaO9rFexAoA5jKfNiB0\""
+      "W/\"378-bK1K16CzOT0+fcZFf3oprJHM1Wg\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -42,23 +42,27 @@
   },
   "body": [
     {
-      "_id": "6ad92dfd4fc2f9571e953ce2",
+      "_id": "6ae3ec493259af060ec04557",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-10-21T21:26:21.853Z",
-      "name": "Banana2"
+      "created_at": "2026-10-30T01:00:57.307Z",
+      "name": "Banana2",
+      "srvCreated": 1793322057309,
+      "srvModified": 1793322057309
     },
     {
-      "_id": "6ad92dfd4fc2f9571e953ce3",
+      "_id": "6ae3ec493259af060ec04558",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-10-21T21:26:21.853Z",
-      "name": "Banana3"
+      "created_at": "2026-10-30T01:00:57.307Z",
+      "name": "Banana3",
+      "srvCreated": 1793322057310,
+      "srvModified": 1793322057310
     },
     {
-      "_id": "6ad92dfd4fc2f9571e953ce4",
+      "_id": "6ae3ec493259af060ec04559",
       "carbs": 30,
-      "created_at": "2026-10-21T21:26:21.870Z",
+      "created_at": "2026-10-30T01:00:57.324Z",
       "foods": [
         {
           "carbs": 15,
@@ -70,20 +74,24 @@
       "hideafteruse": "true",
       "name": "Breakfast",
       "position": 1,
+      "srvCreated": 1793322057325,
+      "srvModified": 1793322057325,
       "type": "quickpick"
     },
     {
-      "_id": "6ad92dfd4fc2f9571e953ce5",
+      "_id": "6ae3ec493259af060ec0455a",
       "carbs": 18,
       "category": "Fruit",
-      "created_at": "2026-10-21T21:26:21.885Z",
+      "created_at": "2026-10-30T01:00:57.341Z",
       "gi": 2,
       "name": "Green Apple",
       "portion": 1,
+      "srvCreated": 1793322057333,
+      "srvModified": 1793322057343,
       "subcategory": "Fresh",
       "type": "food",
       "unit": "pcs"
     }
   ],
-  "durationMs": 2
+  "durationMs": 3
 }

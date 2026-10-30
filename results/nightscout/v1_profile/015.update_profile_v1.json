@@ -2,7 +2,7 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v1/profile?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -12,9 +12,9 @@
       ]
     },
     "body": {
-      "_id": "6ad92dfd4fc2f9571e953ceb",
+      "_id": "6ae3ec493259af060ec04560",
       "defaultProfile": "Update",
-      "startDate": "2026-10-21T21:21:21Z",
+      "startDate": "2026-10-30T00:55:57Z",
       "store": {
         "Update": {
           "basal": [
@@ -66,16 +66,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "509"
+      "564"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:21 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"1fd-Yd4XRohc+b6XYYnhNvmXnUIBbjI\""
+      "W/\"234-KS7EsFQALolTv4EVvpb/NZNtrmA\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -88,10 +88,12 @@
     ]
   },
   "body": {
-    "_id": "6ad92dfd4fc2f9571e953ceb",
-    "created_at": "2026-10-21T21:26:21.961Z",
+    "_id": "6ae3ec493259af060ec04560",
+    "created_at": "2026-10-30T01:00:57.413Z",
     "defaultProfile": "Update",
-    "startDate": "2026-10-21T21:21:21Z",
+    "srvCreated": 1793322057409,
+    "srvModified": 1793322057414,
+    "startDate": "2026-10-30T00:55:57Z",
     "store": {
       "Update": {
         "basal": [
@@ -136,5 +138,5 @@
     },
     "units": "mg/dl"
   },
-  "durationMs": 4
+  "durationMs": 5
 }

@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "AndroidAPS",
-      "created_at": "2026-10-22T10:08:54+13:00",
+      "created_at": "2026-10-30T00:49:58Z",
       "eventType": "Profile Switch",
       "profile": "Weekend"
     }
@@ -33,24 +33,24 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
     ],
     "Last-Modified": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Location": [
-      "/api/v3/treatments/bd72d264-1d4f-5f40-b378-ecb9a51207fa"
+      "/api/v3/treatments/e8f61763-a083-51bf-80c0-46c03e69ec80"
     ],
     "Vary": [
       "Accept-Encoding"
     ]
   },
   "body": {
-    "identifier": "bd72d264-1d4f-5f40-b378-ecb9a51207fa",
-    "lastModified": 1792617594904,
+    "identifier": "e8f61763-a083-51bf-80c0-46c03e69ec80",
+    "lastModified": 1793322058118,
     "status": 201
   },
   "durationMs": 3

@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/times/echo/2026-01-02?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v1/times/echo/2026-01-02?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -25,10 +25,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"93-6fMiinnKZXm3KhomM/kBpi9rLho\""
+      "W/\"93-L3eA30yXzNFjv2H0BTFeCgNvRkY\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -57,9 +57,9 @@
             "$regex": {}
           }
         },
-        "token": "write-4d6054505d826635"
+        "token": "write-a1552de38f339aba"
       }
     }
   },
-  "durationMs": 4
+  "durationMs": 1
 }

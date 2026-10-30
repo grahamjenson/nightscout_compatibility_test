@@ -10,7 +10,7 @@
     "ack": true,
     "args": [
       {
-        "_id": "6ada5dfd6c7ffcd2f3a64d54",
+        "_id": "6ae3ec513259af060ec045aa",
         "collection": "food"
       }
     ]
@@ -19,5 +19,5 @@
   "body": {
     "result": "success"
   },
-  "durationMs": 3
+  "durationMs": 1
 }

@@ -2,7 +2,7 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://localhost:1337/api/v2/authorization/roles?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v2/authorization/roles?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -12,7 +12,7 @@
       ]
     },
     "body": {
-      "_id": "6ad92dff4fc2f9571e953d1f",
+      "_id": "6ae3ec4a3259af060ec04594",
       "name": "compat-test-role",
       "notes": "updated by the compatibility tests",
       "permissions": [
@@ -33,10 +33,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:23 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Etag": [
-      "W/\"ca-qOfktKDXNBZZHhVEkFCIWHsEUNs\""
+      "W/\"ca-UGHxk0PRaRaaWe0e1RIAVkAkbow\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -49,8 +49,8 @@
     ]
   },
   "body": {
-    "_id": "6ad92dff4fc2f9571e953d1f",
-    "created_at": "2026-10-21T21:26:23.105Z",
+    "_id": "6ae3ec4a3259af060ec04594",
+    "created_at": "2026-10-30T01:00:58.466Z",
     "name": "compat-test-role",
     "notes": "updated by the compatibility tests",
     "permissions": [

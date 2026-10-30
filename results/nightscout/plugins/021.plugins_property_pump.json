@@ -1,0 +1,137 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/pump?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"5ac-4z1EMmutLx7zVBMaJ4HSOUqbOUg\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "pump": {
+      "_id": "6ae3ec413259af060ec04549",
+      "clockMills": 1793321989000,
+      "created_at": "2026-10-30T00:59:49.000Z",
+      "data": {
+        "battery": {
+          "display": "75%",
+          "label": "Battery",
+          "level": -3,
+          "unit": "percent",
+          "value": 75
+        },
+        "clock": {
+          "display": "1m ago",
+          "label": "Last Clock",
+          "level": -3,
+          "value": "2026-10-30T00:59:49.000Z"
+        },
+        "device": {
+          "display": "openaps://plugin-test",
+          "label": "Device"
+        },
+        "extended": null,
+        "level": -3,
+        "reservoir": {
+          "display": "151U",
+          "label": "Reservoir",
+          "level": -3,
+          "value": 150.5
+        },
+        "reservoir_display_override": null,
+        "reservoir_level_override": null,
+        "status": {
+          "display": "normal",
+          "label": "Status",
+          "value": "normal"
+        },
+        "title": "Pump Status"
+      },
+      "device": "openaps://plugin-test",
+      "mills": 1793321989000,
+      "openaps": {
+        "enacted": {
+          "bg": 140,
+          "duration": 30,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "rate": 0.5,
+          "reason": "plugin test",
+          "received": true,
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "iob": {
+          "basaliob": 0.5,
+          "iob": 1.5,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "timestamp": "2026-10-30T00:59:49Z"
+        },
+        "suggested": {
+          "COB": 20,
+          "IOB": 1.5,
+          "bg": 140,
+          "duration": 30,
+          "eventualBG": 120,
+          "moment": "2026-10-30T00:59:49.000Z",
+          "rate": 0.5,
+          "reason": "plugin test",
+          "temp": "absolute",
+          "timestamp": "2026-10-30T00:59:49Z"
+        }
+      },
+      "pump": {
+        "battery": {
+          "percent": 75,
+          "voltage": 1.4
+        },
+        "clock": "2026-10-30T00:59:49Z",
+        "reservoir": 150.5,
+        "status": {
+          "bolusing": false,
+          "status": "normal",
+          "suspended": false
+        }
+      },
+      "srvCreated": 1793322049870,
+      "srvModified": 1793322049870,
+      "uploader": {
+        "battery": 55,
+        "display": "55%",
+        "level": 75,
+        "value": 55
+      },
+      "utcOffset": 0
+    }
+  },
+  "durationMs": 2
+}

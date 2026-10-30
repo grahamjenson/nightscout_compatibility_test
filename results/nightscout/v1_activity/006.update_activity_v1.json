@@ -2,7 +2,7 @@
   "request": {
     "method": "PUT",
     "path": "",
-    "url": "http://localhost:1337/api/v1/activity?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/activity?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -12,7 +12,7 @@
       ]
     },
     "body": {
-      "_id": "6ad92c7a35fb876db084a2a2",
+      "_id": "6ae3ec493259af060ec0454c",
       "duration": 30
     }
   },
@@ -28,10 +28,10 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"58-zsSeH+HfB5q6XmDLFhVj50kHNHs\""
+      "W/\"58-d+oj/TaMoipXDxxOw/X6maRgiWk\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -44,9 +44,9 @@
     ]
   },
   "body": {
-    "_id": "6ad92c7a35fb876db084a2a2",
-    "created_at": "2026-10-21T21:19:54.087Z",
+    "_id": "6ae3ec493259af060ec0454c",
+    "created_at": "2026-10-30T01:00:57.123Z",
     "duration": 30
   },
-  "durationMs": 3
+  "durationMs": 4
 }

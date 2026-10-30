@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/activity?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/activity?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -13,7 +13,7 @@
     },
     "body": {
       "activityType": "walking",
-      "created_at": "2026-10-22T10:19:53+13:00",
+      "created_at": "2026-10-30T01:00:57Z",
       "duration": 3600,
       "heartRate": 120,
       "notes": "activity walking",
@@ -26,16 +26,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "174"
+      "169"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"ae-QjYW2nlmB6SiFl2eFHNymmOWyEc\""
+      "W/\"a9-zyL3RqjVf8BVC6ETXi0V656l26I\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -49,14 +49,14 @@
   },
   "body": [
     {
-      "_id": "6ad92c7a35fb876db084a2a2",
+      "_id": "6ae3ec493259af060ec0454c",
       "activityType": "walking",
-      "created_at": "2026-10-22T10:19:53+13:00",
+      "created_at": "2026-10-30T01:00:57Z",
       "duration": 3600,
       "heartRate": 120,
       "notes": "activity walking",
       "steps": 1000
     }
   ],
-  "durationMs": 6
+  "durationMs": 5
 }

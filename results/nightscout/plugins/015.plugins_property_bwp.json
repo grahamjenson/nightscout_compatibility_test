@@ -1,0 +1,78 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/bwp?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "609"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"261-tk7Q8c43f/p5Fvk5xzI1vdZVZTw\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "bwp": {
+      "aimTarget": 100,
+      "aimTargetString": "below low",
+      "belowLowTarget": true,
+      "bolusEstimate": -3.0439999999999996,
+      "bolusEstimateDisplay": "-3.05",
+      "displayIOB": "1.20",
+      "displayLine": "BWP: -3.05U",
+      "effect": 60,
+      "effectDisplay": 60,
+      "iob": 1.2,
+      "outcome": -52.2,
+      "outcomeDisplay": -52.2,
+      "recentCarbs": {
+        "_id": "6ae3ec41349e459fe3dd9748",
+        "carbs": 30,
+        "created_at": "2026-10-30T00:50:49.000Z",
+        "enteredBy": "plugin-test",
+        "eventType": "Meal Bolus",
+        "insulin": 3,
+        "mgdl": 115,
+        "mills": 1793321449000,
+        "srvCreated": 1793322049860,
+        "srvModified": 1793322049860,
+        "utcOffset": 0
+      },
+      "scaledSGV": 7.8,
+      "tempBasalAdjustment": {
+        "onehour": -204,
+        "thirtymin": -509
+      }
+    }
+  },
+  "durationMs": 1
+}

@@ -1,0 +1,114 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/sensorState?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"5d6-d+itrn5+81gkS7KteF7qI2zZIsA\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "sensorState": {
+      "lastBatteryTimestamp": 1793318449867,
+      "lastCalType": "LeastSquaresRegression",
+      "lastCalibrationDate": 1793278849867,
+      "lastDevice": null,
+      "lastFiltered": 170000,
+      "lastIntercept": 30000,
+      "lastMode": "expired",
+      "lastNoise": 1,
+      "lastNoiseString": "Clean",
+      "lastResistance": 1000,
+      "lastRssi": -80,
+      "lastSessionStart": 1793149249867,
+      "lastSlope": 1000,
+      "lastState": 6,
+      "lastStateString": "OK",
+      "lastStateStringShort": "OK",
+      "lastStateTime": "2026-10-30T00:57:49.867Z",
+      "lastTemperature": 32,
+      "lastTxActivation": 1792890049867,
+      "lastTxId": "8XXXXX",
+      "lastTxStatus": 0,
+      "lastTxStatusString": "OK",
+      "lastTxStatusStringShort": "OK",
+      "lastUnfiltered": 170000,
+      "lastVoltageA": 310,
+      "lastVoltageB": 300,
+      "latest": {
+        "_id": "6ae3ec413259af060ec0454b",
+        "created_at": "2026-10-30T00:57:49.000Z",
+        "device": "xdripjs://plugin-test",
+        "mills": 1793321869000,
+        "srvCreated": 1793322049872,
+        "srvModified": 1793322049872,
+        "utcOffset": 0,
+        "xdripjs": {
+          "batteryTimestamp": 1793318449867,
+          "calType": "LeastSquaresRegression",
+          "filtered": 170000,
+          "intercept": 30000,
+          "lastCalibrationDate": 1793278849867,
+          "mode": "expired",
+          "noise": 1,
+          "noiseString": "Clean",
+          "resistance": 1000,
+          "rssi": -80,
+          "sessionStart": 1793149249867,
+          "slope": 1000,
+          "state": 6,
+          "stateString": "OK",
+          "stateStringShort": "OK",
+          "temperature": 32,
+          "timestamp": 1793321869867,
+          "txActivation": 1792890049867,
+          "txId": "8XXXXX",
+          "txStatus": 0,
+          "txStatusString": "OK",
+          "txStatusStringShort": "OK",
+          "unfiltered": 170000,
+          "voltagea": 310,
+          "voltageb": 300
+        }
+      },
+      "level": -3,
+      "seenDevices": {
+        "xdripjs://plugin-test": {
+          "name": "plugin-test",
+          "uri": "xdripjs://plugin-test"
+        }
+      }
+    }
+  },
+  "durationMs": 2
+}

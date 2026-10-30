@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtZTRiZGNjZDFjZTAzZDVkYiIsImlhdCI6MTc5MjYxNzU5NCwiZXhwIjoxNzkyNjQ2Mzk0fQ.5WO6ytUIJIMTegk12mpczgLv2YLFTbeBoPb-x2YRKrI"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtNzlkMzI0YTk0ZGQ2YjQxZSIsImlhdCI6MTc5MzMyMjA0OSwiZXhwIjoxNzkzMzUwODQ5fQ.Gx6jPWq0ed_duMzheJTxqRPk5aw8SHYp3wlC7loMCQM"
       ],
       "Content-Type": [
         "application/json"
@@ -16,7 +16,7 @@
     },
     "body": {
       "app": "test-app",
-      "created_at": "2026-10-22T10:20:00+13:00",
+      "created_at": "2026-10-30T01:01:03Z",
       "device": "test-device",
       "duration": 3600,
       "notes": "test profile with jwt read token",
@@ -35,7 +35,7 @@
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:20:00 GMT"
+      "Fri, 30 Oct 2026 01:01:03 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -48,5 +48,5 @@
     "message": "Missing permission api:profile:create",
     "status": 403
   },
-  "durationMs": 1
+  "durationMs": 0
 }

@@ -10,7 +10,7 @@
     "ack": true,
     "args": [
       {
-        "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtOGUxNWI5OTBjYjhjNTUzNyIsImlhdCI6MTc5MjYxNzk4MSwiZXhwIjoxNzkyNjQ2NzgxfQ.2nVQP_kCXLolRw736rZCPONeH2jGUfkWxKTPqCXdCac"
+        "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6InJlYWQtNzlkMzI0YTk0ZGQ2YjQxZSIsImlhdCI6MTc5MzMyMjA0OSwiZXhwIjoxNzkzMzUwODQ5fQ.Gx6jPWq0ed_duMzheJTxqRPk5aw8SHYp3wlC7loMCQM"
       }
     ]
   },

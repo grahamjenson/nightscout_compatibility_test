@@ -13,7 +13,7 @@
         "collection": "profile",
         "data": {
           "defaultProfile": "Socket",
-          "startDate": "2026-10-22T18:33:25Z",
+          "startDate": "2026-10-30T00:31:05Z",
           "store": {
             "Socket": {
               "basal": [
@@ -64,10 +64,12 @@
   "statusCode": 200,
   "body": [
     {
-      "_id": "6ada5dfd6c7ffcd2f3a64d55",
-      "created_at": "2026-10-22T19:03:25.426Z",
+      "_id": "6ae3ec513259af060ec045ab",
+      "created_at": "2026-10-30T01:01:05.926Z",
       "defaultProfile": "Socket",
-      "startDate": "2026-10-22T18:33:25Z",
+      "srvCreated": 1793322065927,
+      "srvModified": 1793322065927,
+      "startDate": "2026-10-30T00:31:05Z",
       "store": {
         "Socket": {
           "basal": [
@@ -113,5 +115,5 @@
       "units": "mg/dl"
     }
   ],
-  "durationMs": 3
+  "durationMs": 2
 }

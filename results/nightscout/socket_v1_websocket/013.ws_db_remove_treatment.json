@@ -10,7 +10,7 @@
     "ack": true,
     "args": [
       {
-        "_id": "6ad92c81b5c4915f41a3dcb0",
+        "_id": "6ae3ec503259af060ec045a6",
         "collection": "treatments"
       }
     ]
@@ -19,5 +19,5 @@
   "body": {
     "result": "success"
   },
-  "durationMs": 3
+  "durationMs": 10
 }

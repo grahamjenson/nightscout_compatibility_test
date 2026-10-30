@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/profile?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v1/profile?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -95,16 +95,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "920"
+      "975"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"398-KyKFKA72Hxit+0umDoIOVxWFDno\""
+      "W/\"3cf-d/E2kDDVHf28fgSzige3Ztw3TvU\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -118,10 +118,12 @@
   },
   "body": [
     {
-      "_id": "6ad92c7ab5c4915f41a3dc81",
+      "_id": "6ae3ec493259af060ec0455e",
       "created_at": "2017-07-02T00:25:33.154Z",
       "defaultProfile": "Default",
       "mills": "1498954920000",
+      "srvCreated": 1793322057366,
+      "srvModified": 1793322057366,
       "startDate": "2017-07-02T00:22:00.000Z",
       "store": {
         "Default": {
@@ -196,5 +198,5 @@
       "units": "mg/dl"
     }
   ],
-  "durationMs": 2
+  "durationMs": 3
 }

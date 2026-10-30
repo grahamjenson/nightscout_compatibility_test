@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments?token=write-4d6054505d826635",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -13,13 +13,13 @@
     },
     "body": [
       {
-        "created_at": "2026-10-21T21:23:22Z",
+        "created_at": "2026-10-30T00:57:57Z",
         "enteredBy": "bulk-delete-test",
         "eventType": "Note",
         "notes": "bulk delete 1"
       },
       {
-        "created_at": "2026-10-21T21:24:22Z",
+        "created_at": "2026-10-30T00:58:57Z",
         "enteredBy": "bulk-delete-test",
         "eventType": "Note",
         "notes": "bulk delete 2"
@@ -32,16 +32,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "327"
+      "437"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:26:22 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"147-2uUMIYL+u8DQiMZnvSKyK6z9T0w\""
+      "W/\"1b5-L42GSWPR8EWecAMzbjwOIDVCcdw\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -55,21 +55,25 @@
   },
   "body": [
     {
-      "_id": "6ad92dfe6b4f3a493ba54412",
-      "created_at": "2026-10-21T21:23:22.000Z",
+      "_id": "6ae3ec49349e459fe3dd982f",
+      "created_at": "2026-10-30T00:57:57.000Z",
       "enteredBy": "bulk-delete-test",
       "eventType": "Note",
       "notes": "bulk delete 1",
+      "srvCreated": 1793322057561,
+      "srvModified": 1793322057561,
       "utcOffset": 0
     },
     {
-      "_id": "6ad92dfe6b4f3a493ba54413",
-      "created_at": "2026-10-21T21:24:22.000Z",
+      "_id": "6ae3ec49349e459fe3dd9830",
+      "created_at": "2026-10-30T00:58:57.000Z",
       "enteredBy": "bulk-delete-test",
       "eventType": "Note",
       "notes": "bulk delete 2",
+      "srvCreated": 1793322057562,
+      "srvModified": 1793322057562,
       "utcOffset": 0
     }
   ],
-  "durationMs": 4
+  "durationMs": 5
 }

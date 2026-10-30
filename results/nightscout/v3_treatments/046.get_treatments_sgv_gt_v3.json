@@ -8,7 +8,7 @@
         "application/json"
       ],
       "Authorization": [
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLTc0OWE4ZDM4MzliOGIxMWMiLCJpYXQiOjE3OTI2MTc1OTQsImV4cCI6MTc5MjY0NjM5NH0.R0368nrd09sn8qJvWMC5DLm1KEYFDGT_Wqc4zcsOfhg"
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NUb2tlbiI6IndyaXRlLWExNTUyZGUzOGYzMzlhYmEiLCJpYXQiOjE3OTMzMjIwNDksImV4cCI6MTc5MzM1MDg0OX0.sJrbPLzI1He9qNQiE7pBySzYw-EP1vsWCStnKh_fcJc"
       ],
       "Content-Type": [
         "application/json"
@@ -22,13 +22,13 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "752"
+      "748"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:55 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -40,39 +40,39 @@
   "body": {
     "result": [
       {
-        "created_at": "2026-10-21T21:17:54.000Z",
+        "created_at": "2026-10-30T00:58:57.000Z",
         "eventType": "BG Check",
         "glucose": 145,
         "glucoseType": "Meter",
-        "identifier": "6ad92c7a35fb876db084a308",
-        "srvCreated": 1792617474000,
-        "srvModified": 1792617474000,
+        "identifier": "6ae3ec49349e459fe3dd97f9",
+        "srvCreated": 1793322057471,
+        "srvModified": 1793322057471,
         "units": "mg/dl",
-        "utcOffset": 780
+        "utcOffset": 0
       },
       {
         "absolute": null,
         "app": "asd",
         "carbs": 45,
-        "created_at": "2026-10-21T21:19:54.000Z",
-        "date": 1792617594000,
+        "created_at": "2026-10-30T01:00:58.000Z",
+        "date": 1793322058000,
         "duration": 0,
         "enteredBy": "aaps-loop",
         "eventType": "Temp Basal",
         "glucose": 100,
         "glucoseType": "Sensor",
-        "identifier": "cbc957e4-7b3d-572b-abd6-ab519a195faecustom",
+        "identifier": "3a7cc6a3-6197-5a97-9191-a2cfb75daa7dcustom",
         "insulin": 4.2,
         "notes": "Lunch pasta + insulin pre-bolus",
         "percentage": 10,
         "reason": "lunch",
-        "srvCreated": 1792617594848,
-        "srvModified": 1792617594848,
+        "srvCreated": 1793322058037,
+        "srvModified": 1793322058037,
         "subject": "write",
         "targetBottom": 85,
         "targetTop": 110,
         "treatments": "treatments_1",
-        "utcOffset": 780
+        "utcOffset": 0
       }
     ],
     "status": 200

@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/food?token=write-749a8d3839b8b11c&find[_id]=6ad92c7a35fb876db084a2dc",
+    "url": "http://localhost:1337/api/v1/food?token=write-a1552de38f339aba&find[_id]=6ae3ec493259af060ec04556",
     "headers": {
       "Accept": [
         "application/json"
@@ -19,16 +19,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "465"
+      "630"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"1d1-L9p9SETx0lCgVC12LY/Vvp2hyMM\""
+      "W/\"276-vae7+LKLlarZ93JLt+bL0QuImDU\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -42,32 +42,38 @@
   },
   "body": [
     {
-      "_id": "6ad92c7a35fb876db084a2dc",
+      "_id": "6ae3ec493259af060ec04556",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-10-21T21:19:54.273Z",
+      "created_at": "2026-10-30T01:00:57.299Z",
       "energy": 105,
       "fat": 0.3,
       "gi": 51,
       "name": "Banana",
       "portion": 1,
       "protein": 1.3,
+      "srvCreated": 1793322057303,
+      "srvModified": 1793322057303,
       "subcategory": "Fruit",
       "unit": "serving"
     },
     {
-      "_id": "6ad92c7a35fb876db084a2de",
+      "_id": "6ae3ec493259af060ec04557",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-10-21T21:19:54.276Z",
-      "name": "Banana2"
+      "created_at": "2026-10-30T01:00:57.307Z",
+      "name": "Banana2",
+      "srvCreated": 1793322057309,
+      "srvModified": 1793322057309
     },
     {
-      "_id": "6ad92c7a35fb876db084a2df",
+      "_id": "6ae3ec493259af060ec04558",
       "carbs": 27,
       "category": "Snacks",
-      "created_at": "2026-10-21T21:19:54.276Z",
-      "name": "Banana3"
+      "created_at": "2026-10-30T01:00:57.307Z",
+      "name": "Banana3",
+      "srvCreated": 1793322057310,
+      "srvModified": 1793322057310
     }
   ],
   "durationMs": 2

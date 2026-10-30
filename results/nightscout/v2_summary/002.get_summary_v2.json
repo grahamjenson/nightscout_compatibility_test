@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v2/summary?token=write-749a8d3839b8b11c",
+    "url": "http://localhost:1337/api/v2/summary?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -22,7 +22,7 @@
       "application/json"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:55 GMT"
+      "Fri, 30 Oct 2026 01:00:58 GMT"
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -35,18 +35,67 @@
     ]
   },
   "body": {
-    "profile": {},
+    "profile": {
+      "basal": [
+        {
+          "time": "00:00",
+          "value": 1
+        }
+      ],
+      "carbratio": [
+        {
+          "time": "00:00",
+          "value": 10
+        }
+      ],
+      "carbs_hr": 20,
+      "delay": 20,
+      "dia": 3,
+      "sens": [
+        {
+          "time": "00:00",
+          "value": 50
+        }
+      ],
+      "target_high": [
+        {
+          "time": "00:00",
+          "value": 120
+        }
+      ],
+      "target_low": [
+        {
+          "time": "00:00",
+          "value": 100
+        }
+      ],
+      "timezone": "UTC",
+      "units": "mg/dl"
+    },
     "sgvs": [],
     "state": {
+      "bage": 84,
       "battery": 75,
-      "bwp": null,
-      "cob": null,
-      "iob": null
+      "bwp": 0,
+      "cage": 24,
+      "cob": 20,
+      "iage": 72,
+      "iob": 1.2
     },
     "treatments": {
       "targets": [],
       "tempBasals": [],
-      "treatments": []
+      "treatments": [
+        {
+          "insulin": 2,
+          "mills": 1793321449000
+        },
+        {
+          "carbs": 30,
+          "insulin": 3,
+          "mills": 1793321449000
+        }
+      ]
     }
   },
   "durationMs": 2

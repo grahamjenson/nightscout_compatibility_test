@@ -2,7 +2,7 @@
   "request": {
     "method": "POST",
     "path": "",
-    "url": "http://localhost:1337/api/v1/treatments?token=write-2fa396b791909491",
+    "url": "http://localhost:1337/api/v1/treatments?token=write-a1552de38f339aba",
     "headers": {
       "Accept": [
         "application/json"
@@ -17,7 +17,7 @@
       "glucose": 100,
       "glucoseType": "Finger",
       "isAnnouncement": true,
-      "notes": "alarm levels 1792695810536",
+      "notes": "alarm levels 1793322071010",
       "units": "mg/dl"
     }
   },
@@ -27,16 +27,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "254"
+      "309"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Thu, 22 Oct 2026 19:03:30 GMT"
+      "Fri, 30 Oct 2026 01:01:11 GMT"
     ],
     "Etag": [
-      "W/\"fe-Sr8dfyyraugivoU3wUbNBY/Ao+w\""
+      "W/\"135-S6/FXJJoFQkX2oy4wsl+1kZIRlI\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -50,14 +50,16 @@
   },
   "body": [
     {
-      "_id": "6ada5e0297dd4aa50969eb2c",
-      "created_at": "2026-10-22T19:03:30.538Z",
+      "_id": "6ae3ec57349e459fe3dd9a8e",
+      "created_at": "2026-10-30T01:01:11.011Z",
       "enteredBy": "alarm-test",
       "eventType": "Announcement",
       "glucose": 100,
       "glucoseType": "Finger",
       "isAnnouncement": true,
-      "notes": "alarm levels 1792695810536",
+      "notes": "alarm levels 1793322071010",
+      "srvCreated": 1793322071013,
+      "srvModified": 1793322071013,
       "units": "mg/dl",
       "utcOffset": 0
     }

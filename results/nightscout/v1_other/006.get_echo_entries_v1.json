@@ -2,7 +2,7 @@
   "request": {
     "method": "GET",
     "path": "",
-    "url": "http://localhost:1337/api/v1/echo/entries/sgv?token=write-749a8d3839b8b11c&find[sgv][$gte]=100",
+    "url": "http://localhost:1337/api/v1/echo/entries/sgv?token=write-a1552de38f339aba&find[sgv][$gte]=100",
     "headers": {
       "Accept": [
         "application/json"
@@ -19,16 +19,16 @@
       "keep-alive"
     ],
     "Content-Length": [
-      "221"
+      "245"
     ],
     "Content-Type": [
       "application/json; charset=utf-8"
     ],
     "Date": [
-      "Wed, 21 Oct 2026 21:19:54 GMT"
+      "Fri, 30 Oct 2026 01:00:57 GMT"
     ],
     "Etag": [
-      "W/\"dd-tOKnsZlwyfeQ7CR051QDomSEfqg\""
+      "W/\"f5-LSNWocdlI/isYjG0OMXlV4vI+1A\""
     ],
     "Keep-Alive": [
       "timeout=5"
@@ -48,7 +48,7 @@
         },
         "type": "sgv"
       },
-      "token": "write-749a8d3839b8b11c"
+      "token": "write-a1552de38f339aba"
     },
     "params": {
       "echo": "entries",
@@ -56,7 +56,10 @@
     },
     "query": {
       "date": {
-        "$gte": 1792271994481
+        "$gte": 1792976457600
+      },
+      "isValid": {
+        "$ne": false
       },
       "sgv": {
         "$gte": 100

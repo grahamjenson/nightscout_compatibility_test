@@ -1,0 +1,57 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "",
+    "url": "http://localhost:1337/api/v2/properties/dbsize?token=write-a1552de38f339aba",
+    "headers": {
+      "Accept": [
+        "application/json"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "body": null
+  },
+  "statusCode": 200,
+  "headers": {
+    "Connection": [
+      "keep-alive"
+    ],
+    "Content-Length": [
+      "165"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Date": [
+      "Fri, 30 Oct 2026 01:00:56 GMT"
+    ],
+    "Etag": [
+      "W/\"a5-WsL2bPP6ZRdGEpr10pFCG3PyNpY\""
+    ],
+    "Keep-Alive": [
+      "timeout=5"
+    ],
+    "Vary": [
+      "Accept-Encoding"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ]
+  },
+  "body": {
+    "dbsize": {
+      "dataPercentage": 0,
+      "details": {
+        "dataSize": 0.25,
+        "maxSize": 496
+      },
+      "display": "0%",
+      "notificationLevel": 0,
+      "status": "current",
+      "totalDataSize": 0.24763202667236328
+    }
+  },
+  "durationMs": 1
+}
