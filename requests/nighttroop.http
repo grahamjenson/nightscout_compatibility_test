@@ -30,3 +30,15 @@ SET {{ time 0 }}
 # This assigns the jwt variable in context
 NAME read_jwt
 SET {{ .jwtreadauth.token }}
+
+# Nightscout raises alarms from the AR2 forecast (ALARM_TYPES=predict by default), nighttroop's
+# are the identity's and off until it turns them on, so turn on the ones socket_v3_alarm_levels.sio waits for
+NAME alarm_low_prediction_on
+PATCH http://{{ .site }}/api/v3/settings/alarm_low_prediction_enabled
+H Authorization: Bearer {{ .jwt }}
+B { "value": true }
+
+NAME alarm_urgent_low_on
+PATCH http://{{ .site }}/api/v3/settings/alarm_urgent_low_enabled
+H Authorization: Bearer {{ .jwt }}
+B { "value": true }
